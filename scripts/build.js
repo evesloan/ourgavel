@@ -19,9 +19,16 @@ const read = p => JSON.parse(fs.readFileSync(p, 'utf8'));
 const fmtDate = iso => new Date(iso + (iso.length === 10 ? 'T12:00:00Z' : '')).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric', timeZone: 'UTC' });
 const fmtTs = iso => new Date(iso).toLocaleString('en-US', { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit', timeZone: 'America/New_York' }) + ' ET';
 
+// Only http(s) URLs may reach an href — blocks javascript:/data: from community submissions.
+const safeUrl = u => /^https?:\/\//i.test(String(u || '')) ? String(u) : '#';
+// JSON embedded in a <script> block: neutralize tag breakout and JS line terminators.
+const jsonScript = o => JSON.stringify(o)
+  .replace(/</g, '\\u003c').replace(/>/g, '\\u003e').replace(/&/g, '\\u0026')
+  .replace(/\u2028/g, '\\u2028').replace(/\u2029/g, '\\u2029');
+
 function srcLinks(sources) {
   if (!sources || !sources.length) return '';
-  return `<span class="srcs">— ${sources.map(s => `<a href="${esc(s.url)}" rel="noopener" target="_blank">${esc(s.outlet)}</a>`).join(' · ')}</span>`;
+  return `<span class="srcs">— ${sources.map(s => `<a href="${esc(safeUrl(s.url))}" rel="noopener" target="_blank">${esc(s.outlet)}</a>`).join(' · ')}</span>`;
 }
 
 const CSS = `
@@ -424,16 +431,28 @@ ${commentChip}
   ];
   const listHtml = listGroups.filter(([, ns]) => ns.length).map(([title, ns]) => `<h3>${title}</h3>` + ns.map(n => {
     const [bcls, blabel] = badgeFor(n);
-    return `<div class="card"><span class="badge ${bcls}">${blabel}</span><h4 style="font-family:var(--serif);margin:8px 0 4px">${esc(n.title)}</h4><p style="font-size:14px">${esc(n.body)}</p>${n.sources && n.sources.length ? `<p style="margin-top:6px">${srcLinks(n.sources)}</p>` : ''}${connHtml(n.id)}${n.traction ? `<p style="color:var(--mut);font-size:12.5px;margin-top:6px">Corroborated by ${n.traction.up} · disputed by ${n.traction.down}${n.issue ? ` · <a href="${esc(n.issue)}" target="_blank" rel="noopener">discussion</a>` : ''}</p>` : ''}</div>`;
+    return `<div class="card"><span class="badge ${bcls}">${blabel}</span><h4 style="font-family:var(--serif);margin:8px 0 4px">${esc(n.title)}</h4><p style="font-size:14px">${esc(n.body)}</p>${n.sources && n.sources.length ? `<p style="margin-top:6px">${srcLinks(n.sources)}</p>` : ''}${connHtml(n.id)}${n.traction ? `<p style="color:var(--mut);font-size:12.5px;margin-top:6px">Corroborated by ${n.traction.up} · disputed by ${n.traction.down}${n.issue ? ` · <a href="${esc(safeUrl(n.issue))}" target="_blank" rel="noopener">discussion</a>` : ''}</p>` : ''}</div>`;
   }).join('\n')).join('\n');
 
-  const detailData = JSON.stringify(Object.fromEntries(nodes.map(n => {
+  // Every field here is injected via innerHTML on the client, so it is escaped HERE,
+  // and the whole blob is embedded with jsonScript() so no value can break out of <script>.
+  const detailData = jsonScript(Object.fromEntries(nodes.map(n => {
     const [bcls, blabel] = badgeFor(n);
     const th = threads[n.id] || null;
-    return [n.id, { title: n.title, body: n.body, bcls, blabel, sources: n.sources || [], traction: n.traction || null, issue: n.issue || null, conns: connHtml(n.id), thread: th }];
+    const safeThread = th ? {
+      url: esc(safeUrl(th.url)), count: Number(th.count) || 0,
+      comments: (th.comments || []).map(cm => ({ user: esc(cm.user), ts: esc(String(cm.ts || '')), body: esc(cm.body) })),
+    } : null;
+    return [n.id, {
+      title: esc(n.title), body: esc(n.body), bcls, blabel,
+      sources: (n.sources || []).map(s => ({ outlet: esc(s.outlet), url: esc(safeUrl(s.url)) })),
+      traction: n.traction ? { up: Number(n.traction.up) || 0, down: Number(n.traction.down) || 0 } : null,
+      issue: n.issue ? esc(safeUrl(n.issue)) : null,
+      conns: connHtml(n.id), thread: safeThread,
+    }];
   })));
   const central = nodes.find(n => n.central) || nodes.find(n => n.type === 'question');
-  const edgeData = JSON.stringify(edges.filter(e => byId[e.from] && byId[e.to]).map(e => ({ f: e.from, t: e.to })));
+  const edgeData = jsonScript(edges.filter(e => byId[e.from] && byId[e.to]).map(e => ({ f: e.from, t: e.to })));
   const newThreadUrl = id => `https://github.com/${REPO}/issues/new?title=${encodeURIComponent('Discussion: ' + (byId[id] ? byId[id].title.slice(0, 60) : id))}&body=${encodeURIComponent(`<!--node:${id} case:${c.slug}-->\n\n`)}`;
   const connectUrl = `https://github.com/${REPO}/issues/new?template=connection.yml&case=${c.slug}`;
 
@@ -509,8 +528,9 @@ wrap.addEventListener('touchstart',function(e){if(e.touches.length===1){touch={x
 wrap.addEventListener('touchmove',function(e){if(touch&&e.touches.length===1){tx=e.touches[0].clientX-touch.x;ty=e.touches[0].clientY-touch.y;applyView()}},{passive:true});
 wrap.addEventListener('touchend',function(){touch=null});
 var connectFrom=null;
+function unesc(s){var d=document.createElement('textarea');d.innerHTML=String(s);return d.value}
 function say(html,sticky){toast.innerHTML=html;toast.style.display='block';if(!sticky){clearTimeout(say._t);say._t=setTimeout(function(){toast.style.display='none'},6000)}}
-function esc2(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;')}
+function esc2(s){return String(s)} // server pre-escapes every interpolated field
 function threadHtml(id,n){
   var t=n.thread;var out='<div class="conns" style="border-top-style:solid"><b>Discussion</b>';
   if(t&&t.comments&&t.comments.length){
@@ -518,7 +538,7 @@ function threadHtml(id,n){
     out+='<a href="'+t.url+'" target="_blank" rel="noopener">Reply — '+t.count+' comment'+(t.count===1?'':'s')+' →</a>';
   } else if(t){out+='<br><a href="'+t.url+'" target="_blank" rel="noopener">Be the first to comment →</a>';}
   else{
-    var u='https://github.com/'+REPO+'/issues/new?title='+encodeURIComponent('Discussion: '+n.title.slice(0,60))+'&body='+encodeURIComponent('<!--node:'+id+' case:'+SLUG+'-->\\n\\n');
+    var u='https://github.com/'+REPO+'/issues/new?title='+encodeURIComponent('Discussion: '+unesc(n.title).slice(0,60))+'&body='+encodeURIComponent('<!--node:'+id+' case:'+SLUG+'-->\\n\\n');
     out+='<br><a href="'+u+'" target="_blank" rel="noopener">Start the discussion →</a>';
   }
   return out+'</div>';
@@ -546,8 +566,8 @@ svg.addEventListener('click',function(e){
   var id=g.getAttribute('data-id');
   if(connectFrom&&connectFrom!==id){
     var u='https://github.com/'+REPO+'/issues/new?template=connection.yml&case='+SLUG
-      +'&from='+encodeURIComponent(connectFrom+' — '+DATA[connectFrom].title.slice(0,60))
-      +'&to='+encodeURIComponent(id+' — '+DATA[id].title.slice(0,60));
+      +'&from='+encodeURIComponent(connectFrom+' — '+unesc(DATA[connectFrom].title).slice(0,60))
+      +'&to='+encodeURIComponent(id+' — '+unesc(DATA[id].title).slice(0,60));
     window.open(u,'_blank');
     connectFrom=null;wrap.classList.remove('connecting');
     say('Proposed connection opened in a new tab — pick the relation, say why, submit. It joins the Board after the next pulse.');

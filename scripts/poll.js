@@ -10,6 +10,7 @@
    No dependencies. Node 18+ (global fetch). */
 const fs = require('fs');
 const path = require('path');
+const { assess, OUTCOME_LABEL, MIN_OUTLETS } = require('./verdict.js');
 
 const ROOT = path.join(__dirname, '..');
 const DATA = path.join(ROOT, 'data');
@@ -109,24 +110,88 @@ async function pollCase(slug) {
     console.log(slug + ':', fresh.length, 'new items');
   } else console.log(slug + ': no new items');
 
-  // Verdict circuit-breaker: >=2 distinct outlets with verdict-flagged items in the last 3 hours.
-  const cutoff = Date.now() - 3 * 3600 * 1000;
-  const recentV = T.items.filter(i => i.flag === 'verdict-watch' && new Date(i.ts).getTime() > cutoff);
-  const outlets = [...new Set(recentV.map(i => i.outlet))];
-  if (outlets.length >= 2 && TOKEN) {
-    const marker = path.join(dir, '.verdict-alerted');
-    const key = hash(recentV.map(i => i.url).sort().join('|'));
-    const prev = fs.existsSync(marker) ? fs.readFileSync(marker, 'utf8').trim() : '';
-    if (prev !== key) {
-      try {
-        await gh(`/repos/${REPO}/issues`, { method: 'POST', body: {
-          title: `🚨 VERDICT WATCH: ${CASE.shortTitle} — ${outlets.length} outlets reporting verdict-related news`,
-          body: `Automated alert from the 15-minute pulse.\n\nOutlets: ${outlets.join(', ')}\n\n` + recentV.map(i => `- [${i.outlet}] ${i.headline}\n  ${i.url}`).join('\n') + `\n\nPer EDITORIAL.md this is RED LANE: the site's own record must not state a verdict until the review session verifies 2+ independent credentialed reports AND the operator approves. The ticker already carries the attributed headlines.`,
-          labels: ['verdict-watch', 'red-lane'] } });
-        fs.writeFileSync(marker, key);
-        console.log('VERDICT WATCH issue opened for', slug);
-      } catch (e) { console.error('verdict issue fail', e.message); }
+  // ---- verdict -------------------------------------------------------------
+  // As of 2026-08-22 the site publishes verdicts without a human, so this is the most
+  // consequential code here. Three gates (see scripts/verdict.js): the language must be
+  // indicative, MIN_OUTLETS independent newsrooms must agree, and that agreement must
+  // survive a second pulse cycle. Disagreement never publishes — it escalates.
+  const statePath = path.join(dir, 'verdict-state.json');
+  const state = fs.existsSync(statePath) ? read(statePath) : {};
+  const v = assess(T.items);
+
+  if (v.status === 'conflict') {
+    if (TOKEN && state.alerted !== 'conflict') {
+      await gh(`/repos/${REPO}/issues`, { method: 'POST', body: {
+        title: `CONFLICT: outlets disagree on the ${CASE.shortTitle} verdict — nothing published`,
+        body: `Newsrooms are reporting different outcomes. The site has published NOTHING and will not until this resolves.\n\n`
+          + `Leading: **${v.outcome}** (${v.outlets.join(', ')})\n`
+          + v.conflict.map(c => `Contradicted by **${c.outcome}** (${c.outlets.join(', ')})`).join('\n')
+          + `\n\nA human should look at this now.`,
+        labels: ['verdict-watch', 'red-lane'] } });
     }
+    write(statePath, { ...state, alerted: 'conflict', outcome: null });
+    console.log(slug + ': VERDICT CONFLICT — withholding');
+  } else if (v.status === 'ready') {
+    if (state.pending === v.outcome) {
+      // Second consecutive cycle agreeing. Publish.
+      if (!CASE.verdict) {
+        const sources = v.items.map(i => ({ outlet: i.outlet, url: i.url }));
+        CASE.verdict = {
+          outcome: v.outcome,
+          label: OUTCOME_LABEL[v.outcome] || v.outcome,
+          publishedAt: NOW,
+          confirmedBy: v.outlets.length,
+          sources,
+        };
+        CASE.phase = 'Verdict returned';
+        CASE.statusNow = `The jury returned its verdict: ${OUTCOME_LABEL[v.outcome] || v.outcome}. `
+          + `Confirmed by ${v.outlets.length} independent newsrooms, listed below. Sentencing and any appeal follow separately.`;
+        CASE.statusNowSources = sources;
+        write(path.join(dir, 'case.json'), CASE);
+
+        const daysPath = path.join(dir, 'days.json');
+        if (fs.existsSync(daysPath)) {
+          const D = read(daysPath);
+          const last = (D.days || []).reduce((m, d) => Math.max(m, d.day || 0), 0);
+          D.days = D.days || [];
+          D.days.push({
+            day: last + 1, date: NOW.slice(0, 10), phase: 'Verdict',
+            headline: `Verdict: ${OUTCOME_LABEL[v.outcome] || v.outcome}`,
+            summary: `The jury returned its verdict. Reported independently by ${v.outlets.join(', ')}. `
+              + `This entry was published automatically once ${MIN_OUTLETS}+ newsrooms agreed and that agreement held across two checks.`,
+            sources, witnesses: [],
+          });
+          write(daysPath, D);
+        }
+        console.log(slug + ': VERDICT PUBLISHED —', v.outcome);
+        if (TOKEN) {
+          await gh(`/repos/${REPO}/issues`, { method: 'POST', body: {
+            title: `Verdict published: ${CASE.shortTitle} — ${OUTCOME_LABEL[v.outcome] || v.outcome}`,
+            body: `Published automatically after ${v.outlets.length} independent newsrooms agreed across two consecutive checks.\n\n`
+              + sources.map(x => `- ${x.outlet}: ${x.url}`).join('\n')
+              + `\n\nNext: the review session should resolve the board's central question, add the sentencing date if known, and archive the case when it is over.`,
+            labels: ['verdict-watch'] } });
+        }
+      }
+      write(statePath, { ...state, published: v.outcome, pending: null, alerted: 'published' });
+    } else {
+      // First sighting of a qualifying consensus. Hold one cycle.
+      write(statePath, { ...state, pending: v.outcome, firstSeen: NOW });
+      console.log(slug + ': verdict consensus seen (' + v.outcome + ') — holding one cycle to confirm');
+    }
+  } else if (v.status === 'watch') {
+    write(statePath, { ...state, pending: null });
+    console.log(slug + ': verdict signal below threshold (' + v.outlets.length + '/' + MIN_OUTLETS + ')');
+  }
+
+  // A published verdict that later contradicts the newsroom picture must be flagged loudly.
+  if (CASE.verdict && v.status !== 'none' && v.outcome && v.outcome !== CASE.verdict.outcome && TOKEN && state.alerted !== 'disputed') {
+    await gh(`/repos/${REPO}/issues`, { method: 'POST', body: {
+      title: `DISPUTED: published ${CASE.shortTitle} verdict contradicted by later reporting`,
+      body: `The site published **${CASE.verdict.outcome}**. Newsrooms are now reporting **${v.outcome}** (${v.outlets.join(', ')}).\n\nCorrect or retract immediately.`,
+      labels: ['verdict-watch', 'red-lane'] } });
+    write(statePath, { ...state, alerted: 'disputed' });
+    console.log(slug + ': VERDICT DISPUTED');
   }
 }
 

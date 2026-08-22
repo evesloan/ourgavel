@@ -205,6 +205,38 @@ nav.casenav a.on:hover{color:#14161a}
 .linklist li:last-child{border-bottom:none}
 .lnote{color:var(--mut);font-size:12.5px}
 .afflabel{font-family:var(--sans);font-size:9px;font-weight:700;letter-spacing:1.1px;text-transform:uppercase;color:var(--mut);border:1px solid var(--line);border-radius:2px;padding:1px 5px;vertical-align:1px}
+.verdictbox{border:2px solid var(--acc);border-left-width:6px;border-radius:3px;background:var(--panel);padding:14px 18px;margin:14px 0;box-shadow:inset 0 0 0 1px rgba(255,255,255,.35)}
+.verdictbox .vlabel{font-family:var(--sans);font-size:10.5px;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;color:var(--acc)}
+.verdictbox .voutcome{font-family:var(--serif);font-size:26px;font-weight:700;line-height:1.15;margin:4px 0 2px}
+.verdictbox .vconf{font-size:13.5px;color:var(--mut);margin-top:8px}
+.badge.verdictchip{background:var(--acc);color:var(--panel);border:1px solid var(--acc)}
+@media(max-width:760px){.verdictbox .voutcome{font-size:21px}}
+.promos{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:14px 0 6px}
+@media(max-width:760px){.promos{grid-template-columns:1fr;gap:12px}}
+a.promo{display:block;background:var(--panel);border:1px solid var(--line);border-left:5px solid var(--acc);border-radius:3px;padding:16px 18px;color:inherit;box-shadow:inset 0 0 0 1px rgba(255,255,255,.35);transition:transform .15s ease,box-shadow .15s ease}
+a.promo:hover{text-decoration:none;transform:translateY(-2px);box-shadow:inset 0 0 0 1px rgba(255,255,255,.35),0 6px 18px rgba(90,70,40,.16)}
+.promo-top{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin-bottom:9px}
+.promo-case{font-family:var(--sans);font-size:11px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:var(--mut)}
+.promo-q{font-family:var(--serif);font-size:20px;font-weight:700;line-height:1.22}
+.promo-meta{font-family:var(--sans);font-size:12px;letter-spacing:.4px;color:var(--mut);margin-top:8px}
+.promo-cta{font-family:var(--sans);font-size:12.5px;font-weight:700;letter-spacing:.7px;text-transform:uppercase;color:var(--acc);margin-top:12px}
+.allcases{margin:14px 0 4px;font-size:15px}
+.allcases a{font-weight:600}
+@media(max-width:760px){.promo-q{font-size:18px}a.promo:hover{transform:none}}
+@media (prefers-reduced-motion: reduce){a.promo{transition:none}}
+#composer{position:absolute;left:12px;bottom:12px;width:360px;max-height:calc(100% - 24px);overflow:auto;background:var(--panel);border:1px solid var(--line);border-left:5px solid var(--amber);border-radius:3px;padding:16px 18px;z-index:7;box-shadow:0 10px 34px rgba(60,45,25,.3),inset 0 0 0 1px rgba(255,255,255,.4)}
+#composer h4{font-family:var(--serif);font-size:18px;margin:2px 0 4px}
+#composer .grab{display:none}
+#composer .x{float:right;cursor:pointer;color:var(--mut);font-size:20px;line-height:1}
+.clab{display:block;font-family:var(--sans);font-size:10.5px;font-weight:700;letter-spacing:1.1px;text-transform:uppercase;color:var(--mut);margin:12px 0 4px}
+.copt{text-transform:none;letter-spacing:0;font-weight:400;font-style:italic}
+#composer input,#composer textarea{width:100%;font-family:var(--serif);font-size:14.5px;padding:9px 11px;border:1px solid var(--line);border-radius:2px;background:var(--bg);color:var(--ink);resize:vertical}
+#composer input:focus,#composer textarea:focus{outline:2px solid var(--acc);outline-offset:1px}
+.chint{font-size:12.5px;color:var(--mut)}
+.crow{display:flex;align-items:center;gap:12px;margin-top:14px;flex-wrap:wrap}
+.ghostnode{pointer-events:none;opacity:.95}
+@media(max-width:760px){#composer{left:0;right:0;bottom:0;top:auto;width:auto;max-height:86%;border-radius:14px 14px 0 0;border-left:0;border-top:4px solid var(--amber);padding:10px 16px 20px}
+  #composer .grab{display:block;width:42px;height:4px;border-radius:2px;background:var(--line);margin:2px auto 8px}}
 /* --- board interaction + mobile sheet: last in the cascade so these win --- */
 #detail{transform:translateY(6px) scale(.99);opacity:0;pointer-events:none;transition:opacity .2s ease,transform .2s ease;display:block}
 #detail.open{opacity:1;pointer-events:auto;transform:none}
@@ -271,36 +303,25 @@ body{background:var(--bg)}
 
 
 <h1>Read the trial,<br>not the takes.</h1>
-<p class="sub" style="font-size:16.5px;max-width:600px">We keep the record of the cases people are arguing about. Who testified, what they said, what the jury has to decide. Every line says where it came from. Then you get a board to work out what it means.</p>
-<div class="card">
-  <span class="badge live">Now in court</span> <span class="badge phase">Prosecutors' last rebuttal witnesses — closings expecte…</span>
-  <h2 style="border:none;margin:10px 0 4px"><a href="#hub">Lindsay Clancy Trial</a></h2>
-  <p style="max-width:640px">She doesn't deny causing her three children's deaths. The whole trial is one question: was her mind gone — wrecked by postpartum psychosis, as her defense says — or working fine, as prosecutors say? The experts flatly contradict each other, and a verdict could land within days.</p>
-  <p style="margin-top:12px">
-    <a class="btn" href="#hub">Catch up</a>
-    <a class="btn ghost" href="#board">Open the Board</a>
-  </p>
+<p class="sub" style="font-size:16.5px;max-width:600px">Every case here becomes a board: the questions that have to be answered, the evidence pulling on each one, and what other people think it means. Every line says where it came from.</p>
+
+<h2 style="margin-top:28px">Boards people are working on</h2>
+<div class="promos">
+<a class="promo" href="#cases">
+  <div class="promo-top"><span class="badge live">Now in court</span><span class="promo-case">Tupac Shakur Murder Trial</span></div>
+  <div class="promo-q">Can his own words convict him, and nothing else?</div>
+  <div class="promo-meta">14 cards · 14 connections</div>
+  <div class="promo-cta">Open the board →</div>
+</a>
+<a class="promo" href="#cases">
+  <div class="promo-top"><span class="badge live">Now in court</span><span class="promo-case">Jared Bridegan Murder Trial</span></div>
+  <div class="promo-q">Did Mario Fernandez arrange and pay for this killing?</div>
+  <div class="promo-meta">14 cards · 14 connections</div>
+  <div class="promo-cta">Open the board →</div>
+</a>
 </div>
-<div class="card">
-  <span class="badge live">Now in court</span> <span class="badge phase">Prosecution case, week two — testimony resumes Monday</span>
-  <h2 style="border:none;margin:10px 0 4px"><a href="#cases">Tupac Shakur Murder Trial</a></h2>
-  <p style="max-width:640px">Tupac Shakur was 25 when someone in a white Cadillac fired into his car on a Las Vegas side street in September 1996. He died six days later, and for nearly thirty years nobody was charged. Duane &quot;Keffe D&quot; Davis is on trial now because of the one thing that finally cracked the case open: his own mouth. The jury's question is not really who was in that Cadillac — it is whether a man's own confessions, sold in a memoir and repeated on camera for years, are enough to convict him when almost everyone who could confirm or deny them is dead.</p>
-  <p style="margin-top:12px">
-    <a class="btn" href="#cases">Catch up</a>
-    <a class="btn ghost" href="#cases">Open the Board</a>
-  </p>
-</div>
-<div class="card">
-  <span class="badge live">Now in court</span> <span class="badge phase">Prosecution's case, week two</span>
-  <h2 style="border:none;margin:10px 0 4px"><a href="#cases">Jared Bridegan Murder Trial</a></h2>
-  <p style="max-width:640px">Jared Bridegan, a 33-year-old Microsoft manager, stopped his car on a dark Jacksonville Beach street to move a tire someone had dragged into the road. He was shot dead there, with his young daughter in the back seat. Nobody says Mario Fernandez — the man who married Bridegan's ex-wife — pulled the trigger; the single question for this jury is whether he was the one who arranged and paid for it.</p>
-  <p style="margin-top:12px">
-    <a class="btn" href="#cases">Catch up</a>
-    <a class="btn ghost" href="#cases">Open the Board</a>
-  </p>
-</div>
-<p><a href="#cases">All cases →</a></p>
-<div class="howstrip"><span><b>Three things here:</b></span><span>the record</span><span class="sep">·</span><span>the board</span><span class="sep">·</span><span>the people arguing about both</span></div>
+<p class="allcases"><a href="#cases">See all 5 cases we're following →</a></p>
+
 <h2>Off the wire</h2>
 <div class="feedhead"><span class="pulsedot" aria-hidden="true"></span><span id="feedstatus">Checking for updates every 30 seconds</span></div>
 <ul class="ticker" id="ticker" data-feed="/live.json" data-case="1"><li data-k="1p7ulwc"><span class="t" data-ts="2026-08-22T05:00:44.000Z">Aug 22, 1:00 AM ET</span> · <span class="o">Fox 5 Vegas</span> · <span class="t">Tupac Shakur Murder Trial</span><br><a href="https://www.fox5vegas.com/2026/08/22/tensions-flare-court-duane-keffe-d-davis-trial-wraps-up-week-one/" rel="noopener" target="_blank">Tensions flare in court as Duane ‘Keffe D’ Davis trial wraps up week one</a></li>
@@ -309,6 +330,7 @@ body{background:var(--bg)}
 <li data-k="c3qqcy"><span class="t" data-ts="2026-08-21T22:15:29.000Z">Aug 21, 6:15 PM ET</span> · <span class="o">Boston 25 News</span> · <span class="t">Lindsay Clancy Trial</span><br><a href="https://www.boston25news.com/news/local/defense-rests-lindsay-clancy-murder-trial/LWOMPUZ4DJE3ZKQFLW3PCVYBIE/" rel="noopener" target="_blank">Defense rests in Lindsay Clancy murder trial</a></li>
 <li data-k="9tuaxv"><span class="t" data-ts="2026-08-21T21:41:24.000Z">Aug 21, 5:41 PM ET</span> · <span class="o">News4Jax/WJXT — local</span> · <span class="t">Jared Bridegan Murder Trial</span><br><a href="https://www.news4jax.com/news/local/2026/08/21/drunken-dispute-under-jacksonville-beach-pier-ends-in-fatal-stabbing-murder-charge-arrest-report-reveals/" rel="noopener" target="_blank">Drunken dispute under Jacksonville Beach pier ends in fatal stabbing, murder charge, arrest report reveals</a></li>
 <li data-k="1gprkdh"><span class="t" data-ts="2026-08-21T21:40:00.000Z">Aug 21, 5:40 PM ET</span> · <span class="o">WCVB</span> · <span class="t">Lindsay Clancy Trial</span><br><a href="https://www.wcvb.com/article/lindsay-clancy-trial-key-takeaways/73276054" rel="noopener" target="_blank">What to know today from the Lindsay Clancy murder trial</a></li></ul>
+<p class="allcases" style="margin-top:14px"><a href="/creators/">Put a live board on your own site — free →</a></p>
 
 </div></main></section>
 
@@ -320,6 +342,7 @@ body{background:var(--bg)}
 <p class="sub">Active trials first. Concluded cases stay up — the record doesn't expire.</p>
 <div class="card">
   <span class="badge live">Now in court</span> <span class="badge phase">Prosecutors' last rebuttal witnesses — closings expecte…</span>
+  
   <h2 style="border:none;margin:10px 0 4px"><a href="#hub">Lindsay Clancy Trial</a></h2>
   <p style="max-width:640px">She doesn't deny causing her three children's deaths. The whole trial is one question: was her mind gone — wrecked by postpartum psychosis, as her defense says — or working fine, as prosecutors say? The experts flatly contradict each other, and a verdict could land within days.</p>
   <p style="margin-top:12px">
@@ -329,6 +352,7 @@ body{background:var(--bg)}
 </div>
 <div class="card">
   <span class="badge live">Now in court</span> <span class="badge phase">Prosecution case, week two — testimony resumes Monday</span>
+  
   <h2 style="border:none;margin:10px 0 4px"><a href="#cases">Tupac Shakur Murder Trial</a></h2>
   <p style="max-width:640px">Tupac Shakur was 25 when someone in a white Cadillac fired into his car on a Las Vegas side street in September 1996. He died six days later, and for nearly thirty years nobody was charged. Duane &quot;Keffe D&quot; Davis is on trial now because of the one thing that finally cracked the case open: his own mouth. The jury's question is not really who was in that Cadillac — it is whether a man's own confessions, sold in a memoir and repeated on camera for years, are enough to convict him when almost everyone who could confirm or deny them is dead.</p>
   <p style="margin-top:12px">
@@ -338,6 +362,7 @@ body{background:var(--bg)}
 </div>
 <div class="card">
   <span class="badge live">Now in court</span> <span class="badge phase">Prosecution's case, week two</span>
+  
   <h2 style="border:none;margin:10px 0 4px"><a href="#cases">Jared Bridegan Murder Trial</a></h2>
   <p style="max-width:640px">Jared Bridegan, a 33-year-old Microsoft manager, stopped his car on a dark Jacksonville Beach street to move a tire someone had dragged into the road. He was shot dead there, with his young daughter in the back seat. Nobody says Mario Fernandez — the man who married Bridegan's ex-wife — pulled the trigger; the single question for this jury is whether he was the one who arranged and paid for it.</p>
   <p style="margin-top:12px">
@@ -347,6 +372,7 @@ body{background:var(--bg)}
 </div>
 <div class="card">
   <span class="badge soon">Trial starts Aug 24, 2026</span> <span class="badge phase">Jury seated — opening statements Monday</span>
+  
   <h2 style="border:none;margin:10px 0 4px"><a href="#cases">Lil Durk Murder-for-Hire Trial</a></h2>
   <p style="max-width:640px">Federal prosecutors say Grammy-winning rapper Lil Durk put a bounty on a rival rapper's head to avenge the 2020 killing of his friend King Von, and that the gunmen who flew to Los Angeles in August 2022 shot the wrong man — killing Quando Rondo's cousin, Saviay'a Robinson. Durk Banks, 33, denies all of it and has been jailed without bail since October 2024. The trial's defining fight is whether his own songs and music videos can be used against him as proof of a real murder.</p>
   <p style="margin-top:12px">
@@ -356,6 +382,7 @@ body{background:var(--bg)}
 </div>
 <div class="card">
   <span class="badge archived">Pretrial · trial Apr 5, 2027</span> <span class="badge phase">Pretrial motions — retrial April 2027, venue county sti…</span>
+  
   <h2 style="border:none;margin:10px 0 4px"><a href="#cases">Alex Murdaugh Retrial</a></h2>
   <p style="max-width:640px">Alex Murdaugh was convicted in 2023 of murdering his wife and son — and then, in May 2026, the South Carolina Supreme Court unanimously threw the whole verdict out. The reason was not new evidence about the killings: it was that the elected Colleton County Clerk of Court, the official who handles the jury, had been talking to jurors during the trial while shopping a book about it. He now gets a second trial, starting April 5, 2027, in a county nobody has picked yet.</p>
   <p style="margin-top:12px">
@@ -377,6 +404,7 @@ body{background:var(--bg)}
 <a href="#timeline" class="">The Record</a>
 <a href="#board" class="">The Board</a>
 </nav>
+
 <div class="card" style="margin-top:16px">
 <p>The defense rested Friday after 10 witnesses, without putting Clancy on the stand. Prosecutors are now calling their final rebuttal experts — their last chance to convince the jury she wasn't psychotic. Closing arguments are expected Monday or Tuesday. Then the jury takes over. <span class="srcs">— <a href="https://www.wbur.org/news/2026/08/21/lindsay-clancy-defense-rests" rel="noopener" target="_blank">WBUR</a> · <a href="https://www.bostonglobe.com/2026/08/21/metro/lindsay-clancy-trial-mack-resnick/" rel="noopener" target="_blank">Boston Globe</a> · <a href="https://www.cbsnews.com/boston/news/lindsay-clancy-trial-watch-live-day-18-dr-phillip-resnick/" rel="noopener" target="_blank">CBS Boston</a></span></p>
 <p style="margin-top:8px"><b>Watch live:</b> <a href="https://www.courttv.com/news/lindsay-clancy-trial-opening-statements-set-for-mom-accused-of-killing-her-3-children/" target="_blank" rel="noopener">Court TV</a> · <a href="https://www.nbcboston.com/news/local/lindsay-clancy-trial-day-16-live-stream-live-updates/4000212/" target="_blank" rel="noopener">NBC Boston</a></p>
@@ -546,6 +574,24 @@ body{background:var(--bg)}
 <div class="bctrl"><button id="bz-in" title="Zoom in">+</button><button id="bz-out" title="Zoom out">−</button><button id="bz-fit" title="Reset view">⤢</button></div>
 <div id="btoast"></div>
 <div id="detail"><div class="grab"></div><span class="x" id="detail-close" role="button" tabindex="0" aria-label="Close">×</span><div id="detail-in"></div></div>
+<div id="composer" hidden>
+  <div class="grab"></div>
+  <span class="x" id="comp-close" role="button" tabindex="0" aria-label="Close">×</span>
+  <h4>Add a theory to this board</h4>
+  <p class="chint">It goes up labelled as a reader theory. Sources are what move it. Keep it about the case, not about people who haven't been charged.</p>
+  <label class="clab">Your theory, in one sentence</label>
+  <input id="c-claim" maxlength="220" placeholder="e.g. The timeline only works if the call came before the drive">
+  <label class="clab">Why do you think so?</label>
+  <textarea id="c-reason" rows="4" maxlength="1800" placeholder="What in the record points this way"></textarea>
+  <label class="clab">What would prove you wrong? <span class="copt">optional, but it's the mark of a good theory</span></label>
+  <input id="c-falsify" maxlength="400" placeholder="e.g. Phone records showing the call after 6pm">
+  <label class="clab">Name to post under <span class="copt">optional</span></label>
+  <input id="c-name" maxlength="40" placeholder="Leave blank to post anonymously">
+  <div class="crow">
+    <button class="btn sm" id="c-post">Post to the board</button>
+    <span id="c-status" class="chint"></span>
+  </div>
+</div>
 </div>
 <div id="boardlist"><h3>The questions</h3><div class="card"><span class="badge open">before the jury</span><h4 style="font-family:var(--serif);margin:8px 0 4px">The big question: could she have stopped herself?</h4><p style="font-size:14px">Massachusetts law (the McHoul rule): she is not guilty if mental illness took away her ability to know the act was wrong OR her ability to stop herself — either one is enough. And the burden runs the other way from what most people expect: prosecutors must prove her mind was working, beyond a reasonable doubt.</p><p style="margin-top:6px"><span class="srcs">— <a href="https://law.justia.com/cases/massachusetts/supreme-court/volumes/352/352mass544.html" rel="noopener" target="_blank">Commonwealth v. McHoul, 352 Mass. 544 (1967)</a></span></p><div class="conns">← Defense's famous expert: a psychotic break <b class="sup">supports</b> this <i>(the defense's expert says so)</i><br>← Her psychologist: she couldn't tell right from wrong <b class="sup">supports</b> this <i>(her psychologist says so)</i><br>← The voice she says commanded her <b class="sup">supports</b> this <i>(if the voice was real — contested on cross)</i><br>← 13 medications in four months <b class="sup">supports</b> this <i>(the over-medication theory)</i><br>← Prosecution's answer: depression, not psychosis <b class="con">disputes</b> this <i>(prosecution's expert says no)</i><br>← Her own psychiatrist saw no psychosis — the day before <b class="con">disputes</b> this <i>(no psychosis observed — but telehealth-only, says the defense)</i><br>← Her phone tells two stories <b class="mix">is contested on</b> this <i>(planning, says the state · illness, says the defense)</i><br>← The case for planning <b class="con">disputes</b> this <i>(prosecutors: planning means a working mind)</i><br>← The clinicians who never saw danger to the kids <b class="mix">is contested on</b> this <i>(nobody charted danger to the kids — missed, says the defense)</i><br>← Both sides agree: she did it <b class="ctx">gives context to</b> this <i>(why state of mind is the whole case)</i></div></div>
 <div class="card"><span class="badge open">before the jury</span><h4 style="font-family:var(--serif);margin:8px 0 4px">Will the jury get a middle option?</h4><p style="font-size:14px">The defense wants involuntary manslaughter on the verdict form — a landing spot between murder and full acquittal. Prosecutors say no: the evidence shows intent to kill. The judge hasn't ruled yet.</p><p style="margin-top:6px"><span class="srcs">— <a href="https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-defense-expected-call-final-witness-before-resting/3SY5KO3XLBG5NJ5F3S2VCFJKUY/" rel="noopener" target="_blank">Boston 25 News</a> · <a href="https://www.bostonglobe.com/2026/08/20/metro/lindsay-clancy-trial-live-updates/" rel="noopener" target="_blank">Boston Globe</a></span></p><div class="conns">← The case for planning <b class="con">disputes</b> this <i>(prosecutors: intent rules out the middle option)</i><br>← 13 medications in four months <b class="sup">supports</b> this <i>(defense: 'You can't try this case in a vacuum')</i></div></div>
@@ -567,10 +613,10 @@ body{background:var(--bg)}
 <p style="font-size:12.5px">Prefer the raw data? <a href="./data.json">board.json</a> is public and free to reuse with credit. Covering trials for a living? <a href="/creators/">There's more for you here.</a></p>
 </details>
 <p style="margin-top:12px">
-  <a class="btn sm" href="https://github.com/evesloan/ourgavel/issues/new?template=theory.yml&case=lindsay-clancy">🧵 Post a theory</a>
+  <button class="btn sm" id="open-composer" type="button">Post a theory</button>
   <a class="btn sm ghost" href="https://github.com/evesloan/ourgavel/issues/new?template=evidence.yml&case=lindsay-clancy">📎 Submit evidence</a>
   <a class="btn sm ghost" href="https://github.com/evesloan/ourgavel/issues/new?template=report.yml">🚩 Report</a>
-  <span style="color:var(--mut);font-size:12.5px">· 3 posts/day · posts about people get editor review first · <a href="#submit">details</a></span>
+  <span style="color:var(--mut);font-size:12.5px">· 25 posts a day, more once you have a track record · posts naming people get a look first · <a href="#submit">how it works</a></span>
 </p>
 <details class="howto"><summary>How to work the Board</summary>
 <p><b>Read it:</b> purple cards are the open questions that have to be decided. Blue cards are from the record — testimony, exhibits, rulings, each linked to its source. Amber cards are reader theories — this is your zone. Post one and it goes up labeled until real sourcing settles it. Strings show the pull: <span style="color:var(--green)">green supports</span>, <span style="color:var(--red)">red disputes</span>, <span style="color:var(--amber)">amber is contested</span> — both sides claim it. Disproven theories stay up, greyed, so you can see what was tested and settled.</p>
@@ -579,10 +625,10 @@ body{background:var(--bg)}
 </details>
 <script>
 (function(){
-var DATA={"q-responsibility":{"title":"The big question: could she have stopped herself?","body":"Massachusetts law (the McHoul rule): she is not guilty if mental illness took away her ability to know the act was wrong OR her ability to stop herself — either one is enough. And the burden runs the other way from what most people expect: prosecutors must prove her mind was working, beyond a reasonable doubt.","bcls":"open","blabel":"before the jury","sources":[{"outlet":"Commonwealth v. McHoul, 352 Mass. 544 (1967)","url":"https://law.justia.com/cases/massachusetts/supreme-court/volumes/352/352mass544.html"}],"traction":null,"issue":null,"conns":"\u003cdiv class=\"conns\"\u003e← Defense's famous expert: a psychotic break \u003cb class=\"sup\"\u003esupports\u003c/b\u003e this \u003ci\u003e(the defense's expert says so)\u003c/i\u003e\u003cbr\u003e← Her psychologist: she couldn't tell right from wrong \u003cb class=\"sup\"\u003esupports\u003c/b\u003e this \u003ci\u003e(her psychologist says so)\u003c/i\u003e\u003cbr\u003e← The voice she says commanded her \u003cb class=\"sup\"\u003esupports\u003c/b\u003e this \u003ci\u003e(if the voice was real — contested on cross)\u003c/i\u003e\u003cbr\u003e← 13 medications in four months \u003cb class=\"sup\"\u003esupports\u003c/b\u003e this \u003ci\u003e(the over-medication theory)\u003c/i\u003e\u003cbr\u003e← Prosecution's answer: depression, not psychosis \u003cb class=\"con\"\u003edisputes\u003c/b\u003e this \u003ci\u003e(prosecution's expert says no)\u003c/i\u003e\u003cbr\u003e← Her own psychiatrist saw no psychosis — the day before \u003cb class=\"con\"\u003edisputes\u003c/b\u003e this \u003ci\u003e(no psychosis observed — but telehealth-only, says the defense)\u003c/i\u003e\u003cbr\u003e← Her phone tells two stories \u003cb class=\"mix\"\u003eis contested on\u003c/b\u003e this \u003ci\u003e(planning, says the state · illness, says the defense)\u003c/i\u003e\u003cbr\u003e← The case for planning \u003cb class=\"con\"\u003edisputes\u003c/b\u003e this \u003ci\u003e(prosecutors: planning means a working mind)\u003c/i\u003e\u003cbr\u003e← The clinicians who never saw danger to the kids \u003cb class=\"mix\"\u003eis contested on\u003c/b\u003e this \u003ci\u003e(nobody charted danger to the kids — missed, says the defense)\u003c/i\u003e\u003cbr\u003e← Both sides agree: she did it \u003cb class=\"ctx\"\u003egives context to\u003c/b\u003e this \u003ci\u003e(why state of mind is the whole case)\u003c/i\u003e\u003c/div\u003e","thread":null},"q-slip":{"title":"Will the jury get a middle option?","body":"The defense wants involuntary manslaughter on the verdict form — a landing spot between murder and full acquittal. Prosecutors say no: the evidence shows intent to kill. The judge hasn't ruled yet.","bcls":"open","blabel":"before the jury","sources":[{"outlet":"Boston 25 News","url":"https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-defense-expected-call-final-witness-before-resting/3SY5KO3XLBG5NJ5F3S2VCFJKUY/"},{"outlet":"Boston Globe","url":"https://www.bostonglobe.com/2026/08/20/metro/lindsay-clancy-trial-live-updates/"}],"traction":null,"issue":null,"conns":"\u003cdiv class=\"conns\"\u003e← The case for planning \u003cb class=\"con\"\u003edisputes\u003c/b\u003e this \u003ci\u003e(prosecutors: intent rules out the middle option)\u003c/i\u003e\u003cbr\u003e← 13 medications in four months \u003cb class=\"sup\"\u003esupports\u003c/b\u003e this \u003ci\u003e(defense: 'You can't try this case in a vacuum')\u003c/i\u003e\u003c/div\u003e","thread":null},"f-uncontested":{"title":"Both sides agree: she did it","body":"Her own lawyer, in openings: she 'is aware that she killed her children and is not trying to deny that.' Identity was never the fight. Her state of mind is the whole case.","bcls":"verified","blabel":"from the record","sources":[{"outlet":"Court TV","url":"https://www.courttv.com/news/lindsay-clancy-trial-opening-statements-set-for-mom-accused-of-killing-her-3-children/"}],"traction":null,"issue":null,"conns":"\u003cdiv class=\"conns\"\u003e\u003cb class=\"ctx\"\u003egives context to\u003c/b\u003e → The big question: could she have stopped herself? \u003ci\u003e(why state of mind is the whole case)\u003c/i\u003e\u003c/div\u003e","thread":null},"f-resnick":{"title":"Defense's famous expert: a psychotic break","body":"Dr. Phillip Resnick — the forensic psychiatrist from the Andrea Yates case — concluded she had postpartum psychosis with command hallucinations: 'a puppet and someone else was pulling the strings.' He calls it 'altruistic filicide — a murder committed out of love, rather than hostility.' Prosecutors fired back with his own writing: command hallucinations 'are easy to fabricate.'","bcls":"verified","blabel":"from the record","sources":[{"outlet":"Boston Globe","url":"https://www.bostonglobe.com/2026/08/21/metro/lindsay-clancy-trial-mack-resnick/"},{"outlet":"Court TV","url":"https://www.courttv.com/news/she-was-a-puppet-and-someone-else-was-pulling-the-strings-lindsay-clancys-defense-rests-after-doctor-says-she-wasnt-psychotic-every-minute/"}],"traction":null,"issue":null,"conns":"\u003cdiv class=\"conns\"\u003e\u003cb class=\"sup\"\u003esupports\u003c/b\u003e → The big question: could she have stopped herself? \u003ci\u003e(the defense's expert says so)\u003c/i\u003e\u003c/div\u003e","thread":null},"f-zeizel":{"title":"Her psychologist: she couldn't tell right from wrong","body":"Dr. Paul Zeizel has seen her ~60 times since that night. 'Intrusive thoughts are unrelenting. They don't stop.' His conclusion: on Jan 24 she could not tell right from wrong and 'was unable to conform her behavior to the rule of law.'","bcls":"verified","blabel":"from the record","sources":[{"outlet":"PBS NewsHour","url":"https://www.pbs.org/newshour/nation/lindsay-clancys-defense-rests-at-trial-over-whether-postpartum-psychosis-drove-her-to-killings"},{"outlet":"ABC7","url":"https://abc7chicago.com/post/lindsay-clancy-trial-day-16-defense-expert-suggests-clancys-health-care-providers-missed-warning-signs/19702385/"}],"traction":null,"issue":null,"conns":"\u003cdiv class=\"conns\"\u003e\u003cb class=\"sup\"\u003esupports\u003c/b\u003e → The big question: could she have stopped herself? \u003ci\u003e(her psychologist says so)\u003c/i\u003e\u003c/div\u003e","thread":null},"f-voice":{"title":"The voice she says commanded her","body":"Zeizel: she reported 'a male voice ordering her' that she 'had no choice but to kill her children. And kill herself.' A hospital chaplain says Clancy described the same persistent voice. The catch, drawn out on cross: the chaplain's own notes never once mention it.","bcls":"verified","blabel":"from the record","sources":[{"outlet":"Boston 25 News","url":"https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-defense-continues-case-mother-in-law-expected-testify/KVMXBQP4DJHZZHO4FSXAGDC3TA/"},{"outlet":"Boston Globe","url":"https://www.bostonglobe.com/2026/08/20/metro/lindsay-clancy-trial-live-updates/"}],"traction":null,"issue":null,"conns":"\u003cdiv class=\"conns\"\u003e\u003cb class=\"sup\"\u003esupports\u003c/b\u003e → The big question: could she have stopped herself? \u003ci\u003e(if the voice was real — contested on cross)\u003c/i\u003e\u003c/div\u003e","thread":null},"f-mack":{"title":"Prosecution's answer: depression, not psychosis","body":"Dr. Avram Mack interviewed her twice this April. His conclusion: major depressive disorder — not psychosis — and she 'methodically killed her children one by one' while knowing it was wrong and able to stop. 'I don't know that that feeling or that belief is necessarily psychotic.'","bcls":"verified","blabel":"from the record","sources":[{"outlet":"Boston Globe","url":"https://www.bostonglobe.com/2026/08/21/metro/lindsay-clancy-trial-mack-resnick/"},{"outlet":"Court TV","url":"https://www.courttv.com/news/she-was-a-puppet-and-someone-else-was-pulling-the-strings-lindsay-clancys-defense-rests-after-doctor-says-she-wasnt-psychotic-every-minute/"}],"traction":null,"issue":null,"conns":"\u003cdiv class=\"conns\"\u003e\u003cb class=\"con\"\u003edisputes\u003c/b\u003e → The big question: could she have stopped herself? \u003ci\u003e(prosecution's expert says no)\u003c/i\u003e\u003c/div\u003e","thread":null},"f-tufts":{"title":"Her own psychiatrist saw no psychosis — the day before","body":"Dr. Jennifer Tufts treated her right up to Jan 23 and saw 'no signs of psychosis or mania' at that final appointment; Clancy denied any thoughts of harming herself or the kids. But the defense pulled the thread: 14 visits, every one by telehealth, barely any postpartum patients before her, and no records ever requested from her other providers.","bcls":"verified","blabel":"from the record","sources":[{"outlet":"CBS Boston","url":"https://www.cbsnews.com/boston/news/lindsay-clancy-trial-watch-live-day-10-jennifer-tufts/"},{"outlet":"CBS News","url":"https://www.cbsnews.com/news/lindsay-clancy-trial-key-moments/"}],"traction":null,"issue":null,"conns":"\u003cdiv class=\"conns\"\u003e\u003cb class=\"con\"\u003edisputes\u003c/b\u003e → The big question: could she have stopped herself? \u003ci\u003e(no psychosis observed — but telehealth-only, says the defense)\u003c/i\u003e\u003c/div\u003e","thread":null},"f-searches":{"title":"Her phone tells two stories","body":"The forensics: 'ketamine for suicide ideation' (Jan 18), 'symptoms of postpartum psychosis' (Jan 19), 'Can you treat a sociopath' (Jan 20), a suicide-methods page (Aug 2022), and an Oct 2022 note: 'I'm sad and depressed. I can't parent my 3rd child like my first.' Prosecutors read planning and awareness. The defense reads a sick mind searching for help. Same phone.","bcls":"verified","blabel":"from the record","sources":[{"outlet":"Boston 25 News","url":"https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-testimony-continues-after-jurors-see-autopsy-photos-children/XUFQLDRTGZGLJKNQXRXPFS5OAY/"},{"outlet":"Boston 25 News","url":"https://www.boston25news.com/news/local/lindsay-clancy-live-updates-trial-enters-4th-week-testimony/GS4743ZE7FBALCAAEY7VXSMUJ4/"}],"traction":null,"issue":null,"conns":"\u003cdiv class=\"conns\"\u003e\u003cb class=\"mix\"\u003eis contested on\u003c/b\u003e → The big question: could she have stopped herself? \u003ci\u003e(planning, says the state · illness, says the defense)\u003c/i\u003e\u003c/div\u003e","thread":null},"f-planning":{"title":"The case for planning","body":"Prosecutors' throughline: she arranged the evening — the takeout order, the CVS run for the kids' medicine, the route — then took the children to the basement. The Apple Health data puts stair climbs at 5:33 and 5:38 p.m. Their theory: she wanted to 'take them with her.'","bcls":"verified","blabel":"from the record","sources":[{"outlet":"Court TV","url":"https://www.courttv.com/news/lindsay-clancy-trial-opening-statements-set-for-mom-accused-of-killing-her-3-children/"},{"outlet":"WBUR","url":"https://www.wbur.org/news/2026/08/17/prosecution-rests-murder-trial-lindsay-clancy"}],"traction":null,"issue":null,"conns":"\u003cdiv class=\"conns\"\u003e\u003cb class=\"con\"\u003edisputes\u003c/b\u003e → The big question: could she have stopped herself? \u003ci\u003e(prosecutors: planning means a working mind)\u003c/i\u003e\u003cbr\u003e\u003cb class=\"con\"\u003edisputes\u003c/b\u003e → Will the jury get a middle option? \u003ci\u003e(prosecutors: intent rules out the middle option)\u003c/i\u003e\u003c/div\u003e","thread":null},"f-nurses":{"title":"The clinicians who never saw danger to the kids","body":"Nurse Jollotta documented persistent suicidal thoughts — but 'never had thoughts on harming her children,' noted repeatedly. The intake screening: no hallucinations, no delusions, sleep the big worry. The pediatrician saw Cora the morning of the deaths: routine. Whatever was coming, the system charted none of it.","bcls":"verified","blabel":"from the record","sources":[{"outlet":"Boston 25 News","url":"https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-more-medical-professionals-testify-today/3WYJV7DOCJEDLOHCHANTCDP6SQ/"},{"outlet":"Boston 25 News","url":"https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-medical-examiner-counselor-testify-12th-day-testimony/RBHOHTBAEVH5PK4L6Y3A5D7WSM/"}],"traction":null,"issue":null,"conns":"\u003cdiv class=\"conns\"\u003e\u003cb class=\"mix\"\u003eis contested on\u003c/b\u003e → The big question: could she have stopped herself? \u003ci\u003e(nobody charted danger to the kids — missed, says the defense)\u003c/i\u003e\u003c/div\u003e","thread":null},"f-meds":{"title":"13 medications in four months","body":"The defense counts 13 psychiatric medications prescribed across her treatment — and argues 'involuntary intoxication through over-prescription.' The lab found 4–5 benzodiazepines in her blood that night, mostly at normal doses, one 'a little elevated.' Her mother, from the stand: 'The medication was pretty much just destroying her mind.'","bcls":"verified","blabel":"from the record","sources":[{"outlet":"WBUR","url":"https://www.wbur.org/news/2026/07/27/lindsay-clancy-trial-opening-statements"},{"outlet":"Boston Globe","url":"https://www.bostonglobe.com/2026/08/05/metro/lindsay-clancy-trial-live-updates/"},{"outlet":"CBS News","url":"https://www.cbsnews.com/news/lindsay-clancy-trial-key-moments/"},{"outlet":"Fox News","url":"https://www.foxnews.com/live-news/lindsay-clancy-murder-trial-day-16"}],"traction":null,"issue":null,"conns":"\u003cdiv class=\"conns\"\u003e\u003cb class=\"sup\"\u003esupports\u003c/b\u003e → The big question: could she have stopped herself? \u003ci\u003e(the over-medication theory)\u003c/i\u003e\u003cbr\u003e\u003cb class=\"sup\"\u003esupports\u003c/b\u003e → Will the jury get a middle option? \u003ci\u003e(defense: 'You can't try this case in a vacuum')\u003c/i\u003e\u003c/div\u003e","thread":null},"r-mclean":{"title":"SETTLED: the TikTok challenge that reached the courtroom","body":"A former McLean social worker watched the livestream, posted a TikTok disputing the prosecution's 'premier medical institution' framing — and the defense actually tried to call her. The judge found her credible but kept her out: 'limited materiality.' A viral claim got a hearing, and a ruling. That's how it's supposed to work.","bcls":"verified","blabel":"settled","sources":[{"outlet":"NBC Boston","url":"https://www.nbcboston.com/news/local/lindsay-clancy-trial-day-16-live-stream-live-updates/4000212/"}],"traction":null,"issue":null,"conns":"","thread":null}};
+var DATA={"q-responsibility":{"title":"The big question: could she have stopped herself?","body":"Massachusetts law (the McHoul rule): she is not guilty if mental illness took away her ability to know the act was wrong OR her ability to stop herself — either one is enough. And the burden runs the other way from what most people expect: prosecutors must prove her mind was working, beyond a reasonable doubt.","bcls":"open","blabel":"before the jury","sources":[{"outlet":"Commonwealth v. McHoul, 352 Mass. 544 (1967)","url":"https://law.justia.com/cases/massachusetts/supreme-court/volumes/352/352mass544.html"}],"traction":null,"issue":null,"conns":"\u003cdiv class=\"conns\"\u003e← Defense's famous expert: a psychotic break \u003cb class=\"sup\"\u003esupports\u003c/b\u003e this \u003ci\u003e(the defense's expert says so)\u003c/i\u003e\u003cbr\u003e← Her psychologist: she couldn't tell right from wrong \u003cb class=\"sup\"\u003esupports\u003c/b\u003e this \u003ci\u003e(her psychologist says so)\u003c/i\u003e\u003cbr\u003e← The voice she says commanded her \u003cb class=\"sup\"\u003esupports\u003c/b\u003e this \u003ci\u003e(if the voice was real — contested on cross)\u003c/i\u003e\u003cbr\u003e← 13 medications in four months \u003cb class=\"sup\"\u003esupports\u003c/b\u003e this \u003ci\u003e(the over-medication theory)\u003c/i\u003e\u003cbr\u003e← Prosecution's answer: depression, not psychosis \u003cb class=\"con\"\u003edisputes\u003c/b\u003e this \u003ci\u003e(prosecution's expert says no)\u003c/i\u003e\u003cbr\u003e← Her own psychiatrist saw no psychosis — the day before \u003cb class=\"con\"\u003edisputes\u003c/b\u003e this \u003ci\u003e(no psychosis observed — but telehealth-only, says the defense)\u003c/i\u003e\u003cbr\u003e← Her phone tells two stories \u003cb class=\"mix\"\u003eis contested on\u003c/b\u003e this \u003ci\u003e(planning, says the state · illness, says the defense)\u003c/i\u003e\u003cbr\u003e← The case for planning \u003cb class=\"con\"\u003edisputes\u003c/b\u003e this \u003ci\u003e(prosecutors: planning means a working mind)\u003c/i\u003e\u003cbr\u003e← The clinicians who never saw danger to the kids \u003cb class=\"mix\"\u003eis contested on\u003c/b\u003e this \u003ci\u003e(nobody charted danger to the kids — missed, says the defense)\u003c/i\u003e\u003cbr\u003e← Both sides agree: she did it \u003cb class=\"ctx\"\u003egives context to\u003c/b\u003e this \u003ci\u003e(why state of mind is the whole case)\u003c/i\u003e\u003c/div\u003e","thread":null},"q-slip":{"title":"Will the jury get a middle option?","body":"The defense wants involuntary manslaughter on the verdict form — a landing spot between murder and full acquittal. Prosecutors say no: the evidence shows intent to kill. The judge hasn't ruled yet.","bcls":"open","blabel":"before the jury","sources":[{"outlet":"Boston 25 News","url":"https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-defense-expected-call-final-witness-before-resting/3SY5KO3XLBG5NJ5F3S2VCFJKUY/"},{"outlet":"Boston Globe","url":"https://www.bostonglobe.com/2026/08/20/metro/lindsay-clancy-trial-live-updates/"}],"traction":null,"issue":null,"conns":"\u003cdiv class=\"conns\"\u003e← The case for planning \u003cb class=\"con\"\u003edisputes\u003c/b\u003e this \u003ci\u003e(prosecutors: intent rules out the middle option)\u003c/i\u003e\u003cbr\u003e← 13 medications in four months \u003cb class=\"sup\"\u003esupports\u003c/b\u003e this \u003ci\u003e(defense: 'You can't try this case in a vacuum')\u003c/i\u003e\u003c/div\u003e","thread":null},"f-uncontested":{"title":"Both sides agree: she did it","body":"Her own lawyer, in openings: she 'is aware that she killed her children and is not trying to deny that.' Identity was never the fight. Her state of mind is the whole case.","bcls":"verified","blabel":"from the record","sources":[{"outlet":"Court TV","url":"https://www.courttv.com/news/lindsay-clancy-trial-opening-statements-set-for-mom-accused-of-killing-her-3-children/"}],"traction":null,"issue":null,"conns":"\u003cdiv class=\"conns\"\u003e\u003cb class=\"ctx\"\u003egives context to\u003c/b\u003e → The big question: could she have stopped herself? \u003ci\u003e(why state of mind is the whole case)\u003c/i\u003e\u003c/div\u003e","thread":null},"f-resnick":{"title":"Defense's famous expert: a psychotic break","body":"Dr. Phillip Resnick — the forensic psychiatrist from the Andrea Yates case — concluded she had postpartum psychosis with command hallucinations: 'a puppet and someone else was pulling the strings.' He calls it 'altruistic filicide — a murder committed out of love, rather than hostility.' Prosecutors fired back with his own writing: command hallucinations 'are easy to fabricate.'","bcls":"verified","blabel":"from the record","sources":[{"outlet":"Boston Globe","url":"https://www.bostonglobe.com/2026/08/21/metro/lindsay-clancy-trial-mack-resnick/"},{"outlet":"Court TV","url":"https://www.courttv.com/news/she-was-a-puppet-and-someone-else-was-pulling-the-strings-lindsay-clancys-defense-rests-after-doctor-says-she-wasnt-psychotic-every-minute/"}],"traction":null,"issue":null,"conns":"\u003cdiv class=\"conns\"\u003e\u003cb class=\"sup\"\u003esupports\u003c/b\u003e → The big question: could she have stopped herself? \u003ci\u003e(the defense's expert says so)\u003c/i\u003e\u003c/div\u003e","thread":null},"f-zeizel":{"title":"Her psychologist: she couldn't tell right from wrong","body":"Dr. Paul Zeizel has seen her ~60 times since that night. 'Intrusive thoughts are unrelenting. They don't stop.' His conclusion: on Jan 24 she could not tell right from wrong and 'was unable to conform her behavior to the rule of law.'","bcls":"verified","blabel":"from the record","sources":[{"outlet":"PBS NewsHour","url":"https://www.pbs.org/newshour/nation/lindsay-clancys-defense-rests-at-trial-over-whether-postpartum-psychosis-drove-her-to-killings"},{"outlet":"ABC7","url":"https://abc7chicago.com/post/lindsay-clancy-trial-day-16-defense-expert-suggests-clancys-health-care-providers-missed-warning-signs/19702385/"}],"traction":null,"issue":null,"conns":"\u003cdiv class=\"conns\"\u003e\u003cb class=\"sup\"\u003esupports\u003c/b\u003e → The big question: could she have stopped herself? \u003ci\u003e(her psychologist says so)\u003c/i\u003e\u003c/div\u003e","thread":null},"f-voice":{"title":"The voice she says commanded her","body":"Zeizel: she reported 'a male voice ordering her' that she 'had no choice but to kill her children. And kill herself.' A hospital chaplain says Clancy described the same persistent voice. The catch, drawn out on cross: the chaplain's own notes never once mention it.","bcls":"verified","blabel":"from the record","sources":[{"outlet":"Boston 25 News","url":"https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-defense-continues-case-mother-in-law-expected-testify/KVMXBQP4DJHZZHO4FSXAGDC3TA/"},{"outlet":"Boston Globe","url":"https://www.bostonglobe.com/2026/08/20/metro/lindsay-clancy-trial-live-updates/"}],"traction":null,"issue":null,"conns":"\u003cdiv class=\"conns\"\u003e\u003cb class=\"sup\"\u003esupports\u003c/b\u003e → The big question: could she have stopped herself? \u003ci\u003e(if the voice was real — contested on cross)\u003c/i\u003e\u003c/div\u003e","thread":{"url":"https://github.com/evesloan/ourgavel/issues/1","count":0,"comments":[]}},"f-mack":{"title":"Prosecution's answer: depression, not psychosis","body":"Dr. Avram Mack interviewed her twice this April. His conclusion: major depressive disorder — not psychosis — and she 'methodically killed her children one by one' while knowing it was wrong and able to stop. 'I don't know that that feeling or that belief is necessarily psychotic.'","bcls":"verified","blabel":"from the record","sources":[{"outlet":"Boston Globe","url":"https://www.bostonglobe.com/2026/08/21/metro/lindsay-clancy-trial-mack-resnick/"},{"outlet":"Court TV","url":"https://www.courttv.com/news/she-was-a-puppet-and-someone-else-was-pulling-the-strings-lindsay-clancys-defense-rests-after-doctor-says-she-wasnt-psychotic-every-minute/"}],"traction":null,"issue":null,"conns":"\u003cdiv class=\"conns\"\u003e\u003cb class=\"con\"\u003edisputes\u003c/b\u003e → The big question: could she have stopped herself? \u003ci\u003e(prosecution's expert says no)\u003c/i\u003e\u003c/div\u003e","thread":null},"f-tufts":{"title":"Her own psychiatrist saw no psychosis — the day before","body":"Dr. Jennifer Tufts treated her right up to Jan 23 and saw 'no signs of psychosis or mania' at that final appointment; Clancy denied any thoughts of harming herself or the kids. But the defense pulled the thread: 14 visits, every one by telehealth, barely any postpartum patients before her, and no records ever requested from her other providers.","bcls":"verified","blabel":"from the record","sources":[{"outlet":"CBS Boston","url":"https://www.cbsnews.com/boston/news/lindsay-clancy-trial-watch-live-day-10-jennifer-tufts/"},{"outlet":"CBS News","url":"https://www.cbsnews.com/news/lindsay-clancy-trial-key-moments/"}],"traction":null,"issue":null,"conns":"\u003cdiv class=\"conns\"\u003e\u003cb class=\"con\"\u003edisputes\u003c/b\u003e → The big question: could she have stopped herself? \u003ci\u003e(no psychosis observed — but telehealth-only, says the defense)\u003c/i\u003e\u003c/div\u003e","thread":null},"f-searches":{"title":"Her phone tells two stories","body":"The forensics: 'ketamine for suicide ideation' (Jan 18), 'symptoms of postpartum psychosis' (Jan 19), 'Can you treat a sociopath' (Jan 20), a suicide-methods page (Aug 2022), and an Oct 2022 note: 'I'm sad and depressed. I can't parent my 3rd child like my first.' Prosecutors read planning and awareness. The defense reads a sick mind searching for help. Same phone.","bcls":"verified","blabel":"from the record","sources":[{"outlet":"Boston 25 News","url":"https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-testimony-continues-after-jurors-see-autopsy-photos-children/XUFQLDRTGZGLJKNQXRXPFS5OAY/"},{"outlet":"Boston 25 News","url":"https://www.boston25news.com/news/local/lindsay-clancy-live-updates-trial-enters-4th-week-testimony/GS4743ZE7FBALCAAEY7VXSMUJ4/"}],"traction":null,"issue":null,"conns":"\u003cdiv class=\"conns\"\u003e\u003cb class=\"mix\"\u003eis contested on\u003c/b\u003e → The big question: could she have stopped herself? \u003ci\u003e(planning, says the state · illness, says the defense)\u003c/i\u003e\u003c/div\u003e","thread":null},"f-planning":{"title":"The case for planning","body":"Prosecutors' throughline: she arranged the evening — the takeout order, the CVS run for the kids' medicine, the route — then took the children to the basement. The Apple Health data puts stair climbs at 5:33 and 5:38 p.m. Their theory: she wanted to 'take them with her.'","bcls":"verified","blabel":"from the record","sources":[{"outlet":"Court TV","url":"https://www.courttv.com/news/lindsay-clancy-trial-opening-statements-set-for-mom-accused-of-killing-her-3-children/"},{"outlet":"WBUR","url":"https://www.wbur.org/news/2026/08/17/prosecution-rests-murder-trial-lindsay-clancy"}],"traction":null,"issue":null,"conns":"\u003cdiv class=\"conns\"\u003e\u003cb class=\"con\"\u003edisputes\u003c/b\u003e → The big question: could she have stopped herself? \u003ci\u003e(prosecutors: planning means a working mind)\u003c/i\u003e\u003cbr\u003e\u003cb class=\"con\"\u003edisputes\u003c/b\u003e → Will the jury get a middle option? \u003ci\u003e(prosecutors: intent rules out the middle option)\u003c/i\u003e\u003c/div\u003e","thread":null},"f-nurses":{"title":"The clinicians who never saw danger to the kids","body":"Nurse Jollotta documented persistent suicidal thoughts — but 'never had thoughts on harming her children,' noted repeatedly. The intake screening: no hallucinations, no delusions, sleep the big worry. The pediatrician saw Cora the morning of the deaths: routine. Whatever was coming, the system charted none of it.","bcls":"verified","blabel":"from the record","sources":[{"outlet":"Boston 25 News","url":"https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-more-medical-professionals-testify-today/3WYJV7DOCJEDLOHCHANTCDP6SQ/"},{"outlet":"Boston 25 News","url":"https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-medical-examiner-counselor-testify-12th-day-testimony/RBHOHTBAEVH5PK4L6Y3A5D7WSM/"}],"traction":null,"issue":null,"conns":"\u003cdiv class=\"conns\"\u003e\u003cb class=\"mix\"\u003eis contested on\u003c/b\u003e → The big question: could she have stopped herself? \u003ci\u003e(nobody charted danger to the kids — missed, says the defense)\u003c/i\u003e\u003c/div\u003e","thread":null},"f-meds":{"title":"13 medications in four months","body":"The defense counts 13 psychiatric medications prescribed across her treatment — and argues 'involuntary intoxication through over-prescription.' The lab found 4–5 benzodiazepines in her blood that night, mostly at normal doses, one 'a little elevated.' Her mother, from the stand: 'The medication was pretty much just destroying her mind.'","bcls":"verified","blabel":"from the record","sources":[{"outlet":"WBUR","url":"https://www.wbur.org/news/2026/07/27/lindsay-clancy-trial-opening-statements"},{"outlet":"Boston Globe","url":"https://www.bostonglobe.com/2026/08/05/metro/lindsay-clancy-trial-live-updates/"},{"outlet":"CBS News","url":"https://www.cbsnews.com/news/lindsay-clancy-trial-key-moments/"},{"outlet":"Fox News","url":"https://www.foxnews.com/live-news/lindsay-clancy-murder-trial-day-16"}],"traction":null,"issue":null,"conns":"\u003cdiv class=\"conns\"\u003e\u003cb class=\"sup\"\u003esupports\u003c/b\u003e → The big question: could she have stopped herself? \u003ci\u003e(the over-medication theory)\u003c/i\u003e\u003cbr\u003e\u003cb class=\"sup\"\u003esupports\u003c/b\u003e → Will the jury get a middle option? \u003ci\u003e(defense: 'You can't try this case in a vacuum')\u003c/i\u003e\u003c/div\u003e","thread":null},"r-mclean":{"title":"SETTLED: the TikTok challenge that reached the courtroom","body":"A former McLean social worker watched the livestream, posted a TikTok disputing the prosecution's 'premier medical institution' framing — and the defense actually tried to call her. The judge found her credible but kept her out: 'limited materiality.' A viral claim got a hearing, and a ruling. That's how it's supposed to work.","bcls":"verified","blabel":"settled","sources":[{"outlet":"NBC Boston","url":"https://www.nbcboston.com/news/local/lindsay-clancy-trial-day-16-live-stream-live-updates/4000212/"}],"traction":null,"issue":null,"conns":"","thread":null}};
 var EDGES=[{"f":"f-resnick","t":"q-responsibility"},{"f":"f-zeizel","t":"q-responsibility"},{"f":"f-voice","t":"q-responsibility"},{"f":"f-meds","t":"q-responsibility"},{"f":"f-mack","t":"q-responsibility"},{"f":"f-tufts","t":"q-responsibility"},{"f":"f-searches","t":"q-responsibility"},{"f":"f-planning","t":"q-responsibility"},{"f":"f-nurses","t":"q-responsibility"},{"f":"f-uncontested","t":"q-responsibility"},{"f":"f-planning","t":"q-slip"},{"f":"f-meds","t":"q-slip"}];
 var SLUG="lindsay-clancy",REPO="evesloan/ourgavel",NW=210,NH=78;
-var SERIAL="2026-08-22T06:42:37.360Z";
+var SERIAL="2026-08-22T07:27:08.944Z";
 var wrap=document.getElementById('boardwrap'),svg=document.getElementById('boardsvg'),vp=document.getElementById('viewport');
 var toast=document.getElementById('btoast'),detail=document.getElementById('detail');
 var REDUCED=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -597,10 +643,14 @@ document.querySelectorAll('.node').forEach(function(g){nodeEls[g.getAttribute('d
 document.querySelectorAll('path.edge').forEach(function(p){edgeEls.push(p)});
 function posOf(id){var g=nodeEls[id];if(!g)return null;var o=offsets[id]||{x:0,y:0};return{x:+g.getAttribute('data-bx')+o.x,y:+g.getAttribute('data-by')+o.y}}
 function applyNode(id){var g=nodeEls[id],p=posOf(id);if(g&&p)g.setAttribute('transform','translate('+p.x+','+p.y+')')}
-function drawEdges(){edgeEls.forEach(function(p){
+function drawEdges(dragging){edgeEls.forEach(function(p){
   var a=posOf(p.getAttribute('data-from')),b=posOf(p.getAttribute('data-to'));if(!a||!b)return;
   var x1=a.x+NW/2,y1=a.y+NH/2,x2=b.x+NW/2,y2=b.y+NH/2;
   p.setAttribute('d','M'+x1+','+y1+' Q'+((x1+x2)/2)+','+((y1+y2)/2+28)+' '+x2+','+y2);
+  // A stale dasharray would clip the stroke to its pre-drag length.
+  if(dragging&&p.style.strokeDasharray&&p.style.strokeDasharray!=='none'){
+    p.style.strokeDasharray='none';p.style.strokeDashoffset='0';p.style.transition='';
+  }
 })}
 Object.keys(nodeEls).forEach(applyNode);drawEdges();
 
@@ -611,7 +661,12 @@ if(!REDUCED){
     setTimeout(function(){g.style.opacity='1'},60+i*38)});
   edgeEls.forEach(function(p,i){try{var L=p.getTotalLength();p.style.strokeDasharray=L;p.style.strokeDashoffset=L;
     p.style.transition='stroke-dashoffset .9s ease '+(0.25+i*0.05)+'s, opacity .3s ease';
-    setTimeout(function(){p.style.strokeDashoffset='0'},40)}catch(e){}});
+    setTimeout(function(){p.style.strokeDashoffset='0'},40);
+    // Once drawn, drop the dash entirely. A dasharray is a FIXED length: if it survives,
+    // a dragged node lengthens the path but the stroke keeps the old length and the string
+    // visibly stops short of the card it connects to.
+    setTimeout(function(){p.style.strokeDasharray='none';p.style.strokeDashoffset='0';p.style.transition=''},1400+i*50);
+  }catch(e){}});
 }
 
 /* ---------- view transform ----------
@@ -663,7 +718,7 @@ function pointerMove(cx,cy){
   if(Math.abs(dx)+Math.abs(dy)>5)movedFar=true;
   var k=base();
   if(mode==='pan'){tx=startOff.x+dx/k;ty=startOff.y+dy/k;applyView()}
-  else{offsets[dragId]={x:startOff.x+dx/(k*scale),y:startOff.y+dy/(k*scale)};applyNode(dragId);drawEdges()}
+  else{offsets[dragId]={x:startOff.x+dx/(k*scale),y:startOff.y+dy/(k*scale)};applyNode(dragId);drawEdges(true)}
 }
 function pointerUp(){if(mode==='node'&&movedFar)saveOffsets();mode=null;dragId=null}
 wrap.addEventListener('mousedown',function(e){pointerDown(e,e.target,e.clientX,e.clientY)});
@@ -796,6 +851,82 @@ if(bm&&bl&&list){
   bl.onclick=function(){map.style.display='none';list.style.display='block';bl.classList.add('on');bm.classList.remove('on')};
 }
 
+/* ---------- composer: write it here, post it here ---------- */
+var ENDPOINT="";
+var comp=document.getElementById('composer'),cStatus=document.getElementById('c-status');
+var cClaim=document.getElementById('c-claim'),cReason=document.getElementById('c-reason'),
+    cFalsify=document.getElementById('c-falsify'),cName=document.getElementById('c-name');
+var openBtn=document.getElementById('open-composer'),ghost=null;
+
+// A live ghost card in the reader zone, so you are writing ON the board, not into a form.
+function ghostCard(){
+  if(!ghost){
+    var NS='http://www.w3.org/2000/svg';
+    ghost=document.createElementNS(NS,'g');
+    ghost.setAttribute('class','ghostnode');
+    var r=document.createElementNS(NS,'rect');
+    r.setAttribute('width',NW);r.setAttribute('height',NH);r.setAttribute('rx','6');
+    r.setAttribute('fill','var(--panel2)');r.setAttribute('stroke','var(--amber)');
+    r.setAttribute('stroke-width','2.5');r.setAttribute('stroke-dasharray','7 5');
+    var t=document.createElementNS(NS,'text');
+    t.setAttribute('x','12');t.setAttribute('y','26');t.setAttribute('font-size','12.5');
+    t.setAttribute('fill','var(--ink)');t.setAttribute('font-weight','600');
+    ghost.appendChild(r);ghost.appendChild(t);
+    vp.appendChild(ghost);
+  }
+  var p=posOf(CENTRAL_ID)||{x:500,y:340};
+  ghost.setAttribute('transform','translate('+(1160)+','+(Math.max(80,p.y-60))+')');
+  var t=ghost.querySelector('text');
+  while(t.firstChild)t.removeChild(t.firstChild);
+  var words=(cClaim.value||'Your theory appears here').split(' '),lines=[],cur='';
+  for(var i=0;i<words.length;i++){
+    if((cur+' '+words[i]).trim().length>30){lines.push(cur.trim());cur=words[i]}else cur+=' '+words[i];
+  }
+  if(cur.trim())lines.push(cur.trim());
+  lines.slice(0,3).forEach(function(l,i){
+    var ts=document.createElementNS('http://www.w3.org/2000/svg','tspan');
+    ts.setAttribute('x','12');ts.setAttribute('dy',i===0?'0':'15');
+    ts.textContent=l;t.appendChild(ts);
+  });
+}
+function openComposer(){
+  comp.hidden=false;detail.classList.remove('open');clearFocus();
+  ghostCard();setTimeout(function(){cClaim.focus()},60);
+  if(!mobile())centreOn(CENTRAL_ID,1.1);
+}
+function closeComposer(){comp.hidden=true;if(ghost){ghost.remove();ghost=null}}
+if(openBtn)openBtn.onclick=openComposer;
+document.getElementById('comp-close').onclick=closeComposer;
+[cClaim,cReason].forEach(function(el){el.addEventListener('input',ghostCard)});
+
+function fallbackUrl(){
+  return 'https://github.com/'+REPO+'/issues/new?template=theory.yml&case='+SLUG
+    +'&title='+encodeURIComponent('[theory] '+cClaim.value.slice(0,80));
+}
+document.getElementById('c-post').onclick=function(){
+  var claim=(cClaim.value||'').trim();
+  if(claim.length<8){cStatus.textContent='One clear sentence, at least.';cClaim.focus();return}
+  cStatus.textContent='Posting…';
+  if(!ENDPOINT){
+    // No relay configured yet — hand off with everything already typed rather than lose it.
+    cStatus.innerHTML='Opening the last step in a new tab — your text is ready to paste. <a href="'+fallbackUrl()+'" target="_blank" rel="noopener">Open</a>';
+    try{navigator.clipboard&&navigator.clipboard.writeText(claim+String.fromCharCode(10,10)+(cReason.value||''))}catch(e){}
+    window.open(fallbackUrl(),'_blank','noopener,noreferrer');
+    return;
+  }
+  fetch(ENDPOINT,{method:'POST',headers:{'content-type':'application/json'},
+    body:JSON.stringify({kind:'theory',case:SLUG,claim:claim,reasoning:cReason.value,falsify:cFalsify.value,name:cName.value})})
+  .then(function(r){return r.json().then(function(d){return{ok:r.ok,d:d}})})
+  .then(function(res){
+    if(!res.ok){cStatus.textContent=(res.d&&res.d.error)||'That did not go through. Try again shortly.';return}
+    cStatus.textContent='';
+    closeComposer();
+    say('Received, and noted. It appears on the Board shortly — sources are what move it.');
+    cClaim.value='';cReason.value='';cFalsify.value='';
+  })
+  .catch(function(){cStatus.textContent='No connection. Your text is still here — try again in a moment.'});
+};
+
 /* ---------- freshness ---------- */
 setInterval(function(){
   fetch('./board-data.json',{cache:'no-store'}).then(function(r){return r.json()}).then(function(d){
@@ -803,6 +934,7 @@ setInterval(function(){
   }).catch(function(){})
 },60000);
 
+var CENTRAL_ID="q-responsibility";
 var CENTRAL="q-responsibility";
 if(!mobile()){setTimeout(function(){show(CENTRAL)},REDUCED?0:700);}
 else{
@@ -1061,7 +1193,7 @@ else{
 <div class="card"><h3 style="margin-top:0">🔗 Propose a connection</h3><p style="font-size:14px">Two cards are linked — supports, disputes, explains? Say why. (Or use the Connect button on any card.)</p><p style="margin-top:10px"><a class="btn sm" href="https://github.com/evesloan/ourgavel/issues/new?template=connection.yml">Connect two cards</a></p></div>
 <div class="card"><h3 style="margin-top:0">🚩 Report a problem</h3><p style="font-size:14px">Names a private person, personal info, fake sourcing, harassment. Reports jump the queue.</p><p style="margin-top:10px"><a class="btn sm ghost" href="https://github.com/evesloan/ourgavel/issues/new?template=report.yml">Report content</a></p></div>
 </div>
-<div class="notice"><b>How it works:</b> theories about the case go live in ~15 minutes after an automated check; posts that discuss a specific person get editor eyes first (usually under an hour). 3 posts/day; posting uses a free GitHub account, reading never needs one. We don't publish accusations against the uncharged or anyone's personal info — <a href="#about">why</a>.</div>
+<div class="notice"><b>How it works:</b> write it straight on the board — the composer opens in place, no account needed. Theories about the case go live within about fifteen minutes after an automated check; anything naming a specific person gets human eyes first, usually inside the hour. Twenty-five posts a day, rising once you have a track record — if you're working through a case in bulk and hit the ceiling, just say so and we'll lift it. We don't publish accusations against people who haven't been charged, or anyone's personal information — <a href="#about">why</a>.</div>
 
 </div></main></section>
 
@@ -1092,5 +1224,5 @@ else{
 
 </div></main></section>
 <footer><div class="wrap">
-  <p class="disc" style="border:none;margin:0;padding:0">Every defendant is presumed innocent unless and until proven guilty. Community theories are labeled, not facts. Quoted material belongs to the cited outlets; nothing here is legal advice. <a href="#about">Full policies & corrections</a> · <span class="hb">◉ 2026-08-22 06:42 UTC</span></p>
+  <p class="disc" style="border:none;margin:0;padding:0">Every defendant is presumed innocent unless and until proven guilty. Community theories are labeled, not facts. Quoted material belongs to the cited outlets; nothing here is legal advice. <a href="#about">Full policies & corrections</a> · <span class="hb">◉ 2026-08-22 07:27 UTC</span></p>
 </div></footer>

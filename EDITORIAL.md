@@ -21,6 +21,36 @@ Every case page carries it. A defendant convicted at trial is "convicted"; until
 or "charged." An acquitted defendant's acquittal is stated wherever the accusation appears — the
 record page does not leave accusations standing bare after resolution.
 
+## 3b. Verdicts, pleas and sentences — published autonomously (authorised 2026-08-22)
+
+The operator authorised the site to publish verdicts without a human in the loop. Removing the
+person does not lower the bar; it raises it, because the evidence now has to carry the weight the
+person used to. Three gates, all of which must pass, enforced in `scripts/verdict.js`:
+
+1. **Indicative language.** The report must state an outcome that has already happened. Anything
+   conditional, predictive, procedural or advocatory proves nothing — "jury begins deliberating",
+   "if found guilty", "faces a guilty verdict", "prosecutors say he is guilty", "what a mistrial
+   would mean". Every one of those is in the test suite as a must-not-publish case.
+2. **Independent consensus.** At least three separate newsrooms must report the *same* outcome.
+   One newsroom filing three times is one source. Aggregators (Bing, Google News) are never
+   sources. If any credentialed outlet reports a *different* outcome, nothing publishes at all —
+   the split escalates to a human immediately.
+3. **A settling cycle.** The consensus must survive a second poll. A wire error retracted within
+   fifteen minutes never reaches the site.
+
+When all three pass, the site publishes the verdict, states on the page how many independent
+newsrooms confirmed it, and lists every one of them inline. The reader gets the evidence, not
+just the claim.
+
+If later reporting contradicts a published verdict, the case is flagged as disputed and a
+correction issue opens at once. Corrections are made in public, in place, with a note.
+
+**What is still never automated:** attributing a verdict to a single outlet; publishing a
+sentence as if it were a verdict; asserting guilt in the site's own voice beyond reporting what
+the jury found; and anything about jurors themselves. `scripts/verdict.test.js` must pass before
+any change to this machinery ships — a failing suite means verdict publishing is disabled, not
+that the tests get edited.
+
 ## 4. The rumor/record wall
 Community content is labeled UNVERIFIED, amber, at every point of display. It cannot cross into
 the record by popularity, traction, age, or repetition — only by the promotion standard: two or
@@ -48,10 +78,11 @@ published reporting — it enters the Board as sourced evidence under fair repor
 "no hard questions"; it is that questions travel on facts, not on names.
 
 ## 6. Verdicts
-A verdict, sentence, mistrial, or plea change enters the record only after verification against
-two or more independent credentialed outlets' own reporting AND operator approval. Until then the
-site carries only the attributed wire headlines and a verdict-watch notice. Being second and right
-beats being first and wrong, every single time, forever.
+See §3b — verdicts and mistrials publish autonomously once all three gates pass. Sentences and
+plea changes are NOT covered by that machinery: they are separate events, are never inferred from
+a verdict, and enter the record by the ordinary two-source rule. Being second and right beats
+being first and wrong, every single time, forever — which is exactly why the automated path
+demands three independent newsrooms and a settling cycle rather than two and a hunch.
 
 ## 7. Corrections
 Errors are corrected in place, visibly, with a dated note. The correction log is public in the

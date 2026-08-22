@@ -23,6 +23,14 @@ const CNAME = (() => {
   }
   return '';
 })();
+// Where the in-board composer posts. One file switches it on; without it the composer
+// still works and falls back to a prefilled GitHub issue.
+const SUBMIT_ENDPOINT = (() => {
+  const p = path.join(ROOT, 'SUBMIT_ENDPOINT');
+  if (!fs.existsSync(p)) return '';
+  const u = fs.readFileSync(p, 'utf8').trim().split(/\s+/)[0];
+  return /^https:\/\/[a-z0-9.-]+\.[a-z]{2,}(\/\S*)?$/i.test(u) ? u : '';
+})();
 const BASE = CNAME ? '' : (process.env.GB_BASE || '');
 const SITE = CNAME ? `https://${CNAME}` : (process.env.GB_SITE || 'https://evesloan.github.io/ourgavel'); // '/ourgavel' when served from project-pages subpath; '' on the custom domain
 const SITE_NAME = 'OurGavel';
@@ -292,6 +300,38 @@ nav.casenav a.on:hover{color:#14161a}
 .linklist li:last-child{border-bottom:none}
 .lnote{color:var(--mut);font-size:12.5px}
 .afflabel{font-family:var(--sans);font-size:9px;font-weight:700;letter-spacing:1.1px;text-transform:uppercase;color:var(--mut);border:1px solid var(--line);border-radius:2px;padding:1px 5px;vertical-align:1px}
+.verdictbox{border:2px solid var(--acc);border-left-width:6px;border-radius:3px;background:var(--panel);padding:14px 18px;margin:14px 0;box-shadow:inset 0 0 0 1px rgba(255,255,255,.35)}
+.verdictbox .vlabel{font-family:var(--sans);font-size:10.5px;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;color:var(--acc)}
+.verdictbox .voutcome{font-family:var(--serif);font-size:26px;font-weight:700;line-height:1.15;margin:4px 0 2px}
+.verdictbox .vconf{font-size:13.5px;color:var(--mut);margin-top:8px}
+.badge.verdictchip{background:var(--acc);color:var(--panel);border:1px solid var(--acc)}
+@media(max-width:760px){.verdictbox .voutcome{font-size:21px}}
+.promos{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:14px 0 6px}
+@media(max-width:760px){.promos{grid-template-columns:1fr;gap:12px}}
+a.promo{display:block;background:var(--panel);border:1px solid var(--line);border-left:5px solid var(--acc);border-radius:3px;padding:16px 18px;color:inherit;box-shadow:inset 0 0 0 1px rgba(255,255,255,.35);transition:transform .15s ease,box-shadow .15s ease}
+a.promo:hover{text-decoration:none;transform:translateY(-2px);box-shadow:inset 0 0 0 1px rgba(255,255,255,.35),0 6px 18px rgba(90,70,40,.16)}
+.promo-top{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin-bottom:9px}
+.promo-case{font-family:var(--sans);font-size:11px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:var(--mut)}
+.promo-q{font-family:var(--serif);font-size:20px;font-weight:700;line-height:1.22}
+.promo-meta{font-family:var(--sans);font-size:12px;letter-spacing:.4px;color:var(--mut);margin-top:8px}
+.promo-cta{font-family:var(--sans);font-size:12.5px;font-weight:700;letter-spacing:.7px;text-transform:uppercase;color:var(--acc);margin-top:12px}
+.allcases{margin:14px 0 4px;font-size:15px}
+.allcases a{font-weight:600}
+@media(max-width:760px){.promo-q{font-size:18px}a.promo:hover{transform:none}}
+@media (prefers-reduced-motion: reduce){a.promo{transition:none}}
+#composer{position:absolute;left:12px;bottom:12px;width:360px;max-height:calc(100% - 24px);overflow:auto;background:var(--panel);border:1px solid var(--line);border-left:5px solid var(--amber);border-radius:3px;padding:16px 18px;z-index:7;box-shadow:0 10px 34px rgba(60,45,25,.3),inset 0 0 0 1px rgba(255,255,255,.4)}
+#composer h4{font-family:var(--serif);font-size:18px;margin:2px 0 4px}
+#composer .grab{display:none}
+#composer .x{float:right;cursor:pointer;color:var(--mut);font-size:20px;line-height:1}
+.clab{display:block;font-family:var(--sans);font-size:10.5px;font-weight:700;letter-spacing:1.1px;text-transform:uppercase;color:var(--mut);margin:12px 0 4px}
+.copt{text-transform:none;letter-spacing:0;font-weight:400;font-style:italic}
+#composer input,#composer textarea{width:100%;font-family:var(--serif);font-size:14.5px;padding:9px 11px;border:1px solid var(--line);border-radius:2px;background:var(--bg);color:var(--ink);resize:vertical}
+#composer input:focus,#composer textarea:focus{outline:2px solid var(--acc);outline-offset:1px}
+.chint{font-size:12.5px;color:var(--mut)}
+.crow{display:flex;align-items:center;gap:12px;margin-top:14px;flex-wrap:wrap}
+.ghostnode{pointer-events:none;opacity:.95}
+@media(max-width:760px){#composer{left:0;right:0;bottom:0;top:auto;width:auto;max-height:86%;border-radius:14px 14px 0 0;border-left:0;border-top:4px solid var(--amber);padding:10px 16px 20px}
+  #composer .grab{display:block;width:42px;height:4px;border-radius:2px;background:var(--line);margin:2px auto 8px}}
 /* --- board interaction + mobile sheet: last in the cascade so these win --- */
 #detail{transform:translateY(6px) scale(.99);opacity:0;pointer-events:none;transition:opacity .2s ease,transform .2s ease;display:block}
 #detail.open{opacity:1;pointer-events:auto;transform:none}
@@ -335,7 +375,7 @@ function harden(html) {
     "style-src-attr 'unsafe-inline'",         // style="" attrs cannot execute script
     "img-src 'self' data:",
     "font-src 'self'",
-    "connect-src 'self'",
+    "connect-src 'self'" + (SUBMIT_ENDPOINT ? ' ' + new URL(SUBMIT_ENDPOINT).origin : ''),
     "form-action 'none'",
     "base-uri 'none'",
     "object-src 'none'",
@@ -479,6 +519,7 @@ const ACTIVE = CASES.filter(c => c.case.status !== 'archived');
 // Honest status chip: only say "now in court" when a trial is actually running.
 function statusChip(c) {
   const cc = c.case, ts = cc.trialStart || '';
+  if (cc.verdict) return '<span class="badge verdictchip">Verdict returned</span>';
   if (cc.status === 'archived') return '<span class="badge archived">Concluded</span>';
   if (ts && ts <= TODAY) return '<span class="badge live">Now in court</span>';
   if (ts) {
@@ -517,6 +558,7 @@ function caseCard(c, featured = false) {
   const cc = c.case;
   return `<div class="card">
   ${statusChip(c)} <span class="badge phase">${esc(shortPhase(cc.phase))}</span>
+  ${verdictBanner(c, true)}
   <h2 style="border:none;margin:10px 0 4px"><a href="${caseUrl(c)}">${esc(cc.shortTitle)}</a></h2>
   <p style="max-width:640px">${esc(cc.plainSummary || cc.charges + '. ' + cc.court + '.')}</p>
   <p style="margin-top:12px">
@@ -526,20 +568,54 @@ function caseCard(c, featured = false) {
 </div>`;
 }
 
+// The homepage sells BOARDS, not cases — a board is the thing that is ours, the thing people
+// embed, and the thing that makes someone stay. Ranked by genuine activity (reader theories,
+// discussion, evidence, recency of coverage), never by a number we cannot measure like "views".
+function boardActivity(c) {
+  const nodes = (c.board.nodes || []).length + (c.community.nodes || []).length;
+  const theories = (c.community.nodes || []).length;
+  const threads = Object.values((c.threads && c.threads.threads) || {}).reduce((n, t) => n + (t.count || 0), 0);
+  const newest = (c.ticker.items || [])[0];
+  const hours = newest ? (Date.now() - new Date(newest.ts).getTime()) / 3600000 : 999;
+  const freshness = hours < 6 ? 3 : hours < 24 ? 2 : hours < 72 ? 1 : 0;
+  return { nodes, theories, threads, freshness, score: theories * 4 + threads * 3 + freshness * 3 + Math.min(nodes, 20) };
+}
+function boardPromo(c) {
+  const a = boardActivity(c);
+  const central = [...c.board.nodes, ...(c.community.nodes || [])].find(n => n.central)
+    || (c.board.nodes || []).find(n => n.type === 'question');
+  const edges = (c.board.edges || []).length + (c.community.edges || []).length;
+  const bits = [`${a.nodes} cards`, `${edges} connections`];
+  if (a.theories) bits.push(`${a.theories} reader ${a.theories === 1 ? 'theory' : 'theories'}`);
+  if (a.threads) bits.push(`${a.threads} in discussion`);
+  return `<a class="promo" href="${caseUrl(c, 'board/')}">
+  <div class="promo-top">${statusChip(c)}<span class="promo-case">${esc(c.case.shortTitle)}</span></div>
+  <div class="promo-q">${esc(central ? central.title : 'Open the board')}</div>
+  <div class="promo-meta">${esc(bits.join(' · '))}</div>
+  <div class="promo-cta">Open the board →</div>
+</a>`;
+}
+
 // ---------- home ----------
 const allItems = ACTIVE.flatMap(c => (c.ticker.items || []).map(i => ({ ...i, _case: c.case.shortTitle }))).sort((a, b) => b.ts.localeCompare(a.ts));
+const RANKED = [...ACTIVE].sort((a, b) => boardActivity(b).score - boardActivity(a).score);
 const home = page({
-  title: "The facts of the trial, in everyone's hands",
-  desc: 'OurGavel follows the court cases everyone is watching and keeps the facts straight — every line linked to its source — with a community board for sharing and testing theories together.',
+  title: "Read the trial, not the takes",
+  desc: 'OurGavel keeps the record of the court cases people are arguing about — every fact linked to its source — and turns each one into a board you can work through and argue over.',
   active: '/',
   body: `
 <h1>Read the trial,<br>not the takes.</h1>
-<p class="sub" style="font-size:16.5px;max-width:600px">We keep the record of the cases people are arguing about. Who testified, what they said, what the jury has to decide. Every line says where it came from. Then you get a board to work out what it means.</p>
-${ACTIVE.slice(0, 3).map(c => caseCard(c, true)).join('\n')}
-${CASES.length > 3 ? `<p><a href="/cases/">All cases →</a></p>` : ''}
-<div class="howstrip"><span><b>Three things here:</b></span><span>the record</span><span class="sep">·</span><span>the board</span><span class="sep">·</span><span>the people arguing about both</span></div>
+<p class="sub" style="font-size:16.5px;max-width:600px">Every case here becomes a board: the questions that have to be answered, the evidence pulling on each one, and what other people think it means. Every line says where it came from.</p>
+
+<h2 style="margin-top:28px">Boards people are working on</h2>
+<div class="promos">
+${RANKED.slice(0, 2).map(boardPromo).join('\n')}
+</div>
+<p class="allcases"><a href="/cases/">See all ${esc(String(CASES.length))} cases we're following →</a></p>
+
 <h2>Off the wire</h2>
 ${tickerHtml(allItems, 6, ACTIVE.length > 1, '/live.json')}
+<p class="allcases" style="margin-top:14px"><a href="/creators/">Put a live board on your own site — free →</a></p>
 `});
 
 // ---------- cases index ----------
@@ -561,6 +637,22 @@ ${[...ACTIVE, ...CASES.filter(c => c.case.status === 'archived')].map(c => caseC
 function linkRow(l) {
   return `<li><a href="${esc(safeUrl(l.url))}" target="_blank" rel="noopener">${esc(l.outlet)}</a>${l.affiliate ? ' <span class="afflabel">affiliate</span>' : ''}${l.note ? `<br><span class="lnote">${esc(l.note)}</span>` : ''}</li>`;
 }
+// A verdict is the one fact people arrive for. It leads the case, states how many
+// independent newsrooms confirmed it, and shows every one of them inline — the site
+// publishes this without a human, so the reader gets the evidence, not just the claim.
+function verdictBanner(c, compact) {
+  const v = c.case.verdict;
+  if (!v) return '';
+  const srcs = (v.sources || []).map(s => `<a href="${esc(safeUrl(s.url))}" target="_blank" rel="noopener">${esc(s.outlet)}</a>`).join(' · ');
+  return `<div class="verdictbox">
+  <div class="vlabel">Verdict returned</div>
+  <div class="voutcome">${esc(v.label || v.outcome)}</div>
+  ${compact ? '' : `<p class="vconf">Published automatically after <b>${esc(String(v.confirmedBy || 0))} independent newsrooms</b> reported the same outcome, and that agreement held across two checks. Every one of them:</p>
+  <p class="srcs">${srcs}</p>
+  <p class="vconf" style="margin-top:8px">Sentencing and any appeal are separate proceedings, covered separately. If you believe this is wrong, <a href="https://github.com/${REPO}/issues/new?template=report.yml">tell us</a> — corrections are made in public.</p>`}
+</div>`;
+}
+
 function watchBlock(c) {
   const cc = c.case;
   const stream = (cc.livestream && cc.livestream.sources) || [];
@@ -588,6 +680,7 @@ function hubPage(c) {
 ${statusChip(c)} <span class="badge phase">${esc(shortPhase(cc.phase))}</span>
 <h1>${esc(cc.shortTitle)}</h1>
 ${caseNav(c, 'overview')}
+${verdictBanner(c)}
 <div class="card" style="margin-top:16px">
 <p>${esc(cc.statusNow || cc.phase)} ${srcLinks(cc.statusNowSources)}</p>
 ${cc.livestream ? `<p style="margin-top:8px"><b>Watch live:</b> ${cc.livestream.sources.map(s => `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.outlet)}</a>`).join(' · ')}</p>` : ''}
@@ -810,10 +903,14 @@ document.querySelectorAll('.node').forEach(function(g){nodeEls[g.getAttribute('d
 document.querySelectorAll('path.edge').forEach(function(p){edgeEls.push(p)});
 function posOf(id){var g=nodeEls[id];if(!g)return null;var o=offsets[id]||{x:0,y:0};return{x:+g.getAttribute('data-bx')+o.x,y:+g.getAttribute('data-by')+o.y}}
 function applyNode(id){var g=nodeEls[id],p=posOf(id);if(g&&p)g.setAttribute('transform','translate('+p.x+','+p.y+')')}
-function drawEdges(){edgeEls.forEach(function(p){
+function drawEdges(dragging){edgeEls.forEach(function(p){
   var a=posOf(p.getAttribute('data-from')),b=posOf(p.getAttribute('data-to'));if(!a||!b)return;
   var x1=a.x+NW/2,y1=a.y+NH/2,x2=b.x+NW/2,y2=b.y+NH/2;
   p.setAttribute('d','M'+x1+','+y1+' Q'+((x1+x2)/2)+','+((y1+y2)/2+28)+' '+x2+','+y2);
+  // A stale dasharray would clip the stroke to its pre-drag length.
+  if(dragging&&p.style.strokeDasharray&&p.style.strokeDasharray!=='none'){
+    p.style.strokeDasharray='none';p.style.strokeDashoffset='0';p.style.transition='';
+  }
 })}
 Object.keys(nodeEls).forEach(applyNode);drawEdges();
 
@@ -824,7 +921,12 @@ if(!REDUCED){
     setTimeout(function(){g.style.opacity='1'},60+i*38)});
   edgeEls.forEach(function(p,i){try{var L=p.getTotalLength();p.style.strokeDasharray=L;p.style.strokeDashoffset=L;
     p.style.transition='stroke-dashoffset .9s ease '+(0.25+i*0.05)+'s, opacity .3s ease';
-    setTimeout(function(){p.style.strokeDashoffset='0'},40)}catch(e){}});
+    setTimeout(function(){p.style.strokeDashoffset='0'},40);
+    // Once drawn, drop the dash entirely. A dasharray is a FIXED length: if it survives,
+    // a dragged node lengthens the path but the stroke keeps the old length and the string
+    // visibly stops short of the card it connects to.
+    setTimeout(function(){p.style.strokeDasharray='none';p.style.strokeDashoffset='0';p.style.transition=''},1400+i*50);
+  }catch(e){}});
 }
 
 /* ---------- view transform ----------
@@ -876,7 +978,7 @@ function pointerMove(cx,cy){
   if(Math.abs(dx)+Math.abs(dy)>5)movedFar=true;
   var k=base();
   if(mode==='pan'){tx=startOff.x+dx/k;ty=startOff.y+dy/k;applyView()}
-  else{offsets[dragId]={x:startOff.x+dx/(k*scale),y:startOff.y+dy/(k*scale)};applyNode(dragId);drawEdges()}
+  else{offsets[dragId]={x:startOff.x+dx/(k*scale),y:startOff.y+dy/(k*scale)};applyNode(dragId);drawEdges(true)}
 }
 function pointerUp(){if(mode==='node'&&movedFar)saveOffsets();mode=null;dragId=null}
 wrap.addEventListener('mousedown',function(e){pointerDown(e,e.target,e.clientX,e.clientY)});
@@ -1009,6 +1111,82 @@ if(bm&&bl&&list){
   bl.onclick=function(){map.style.display='none';list.style.display='block';bl.classList.add('on');bm.classList.remove('on')};
 }
 
+/* ---------- composer: write it here, post it here ---------- */
+var ENDPOINT=${JSON.stringify(SUBMIT_ENDPOINT)};
+var comp=document.getElementById('composer'),cStatus=document.getElementById('c-status');
+var cClaim=document.getElementById('c-claim'),cReason=document.getElementById('c-reason'),
+    cFalsify=document.getElementById('c-falsify'),cName=document.getElementById('c-name');
+var openBtn=document.getElementById('open-composer'),ghost=null;
+
+// A live ghost card in the reader zone, so you are writing ON the board, not into a form.
+function ghostCard(){
+  if(!ghost){
+    var NS='http://www.w3.org/2000/svg';
+    ghost=document.createElementNS(NS,'g');
+    ghost.setAttribute('class','ghostnode');
+    var r=document.createElementNS(NS,'rect');
+    r.setAttribute('width',NW);r.setAttribute('height',NH);r.setAttribute('rx','6');
+    r.setAttribute('fill','var(--panel2)');r.setAttribute('stroke','var(--amber)');
+    r.setAttribute('stroke-width','2.5');r.setAttribute('stroke-dasharray','7 5');
+    var t=document.createElementNS(NS,'text');
+    t.setAttribute('x','12');t.setAttribute('y','26');t.setAttribute('font-size','12.5');
+    t.setAttribute('fill','var(--ink)');t.setAttribute('font-weight','600');
+    ghost.appendChild(r);ghost.appendChild(t);
+    vp.appendChild(ghost);
+  }
+  var p=posOf(CENTRAL_ID)||{x:500,y:340};
+  ghost.setAttribute('transform','translate('+(1160)+','+(Math.max(80,p.y-60))+')');
+  var t=ghost.querySelector('text');
+  while(t.firstChild)t.removeChild(t.firstChild);
+  var words=(cClaim.value||'Your theory appears here').split(' '),lines=[],cur='';
+  for(var i=0;i<words.length;i++){
+    if((cur+' '+words[i]).trim().length>30){lines.push(cur.trim());cur=words[i]}else cur+=' '+words[i];
+  }
+  if(cur.trim())lines.push(cur.trim());
+  lines.slice(0,3).forEach(function(l,i){
+    var ts=document.createElementNS('http://www.w3.org/2000/svg','tspan');
+    ts.setAttribute('x','12');ts.setAttribute('dy',i===0?'0':'15');
+    ts.textContent=l;t.appendChild(ts);
+  });
+}
+function openComposer(){
+  comp.hidden=false;detail.classList.remove('open');clearFocus();
+  ghostCard();setTimeout(function(){cClaim.focus()},60);
+  if(!mobile())centreOn(CENTRAL_ID,1.1);
+}
+function closeComposer(){comp.hidden=true;if(ghost){ghost.remove();ghost=null}}
+if(openBtn)openBtn.onclick=openComposer;
+document.getElementById('comp-close').onclick=closeComposer;
+[cClaim,cReason].forEach(function(el){el.addEventListener('input',ghostCard)});
+
+function fallbackUrl(){
+  return 'https://github.com/'+REPO+'/issues/new?template=theory.yml&case='+SLUG
+    +'&title='+encodeURIComponent('[theory] '+cClaim.value.slice(0,80));
+}
+document.getElementById('c-post').onclick=function(){
+  var claim=(cClaim.value||'').trim();
+  if(claim.length<8){cStatus.textContent='One clear sentence, at least.';cClaim.focus();return}
+  cStatus.textContent='Posting…';
+  if(!ENDPOINT){
+    // No relay configured yet — hand off with everything already typed rather than lose it.
+    cStatus.innerHTML='Opening the last step in a new tab — your text is ready to paste. <a href="'+fallbackUrl()+'" target="_blank" rel="noopener">Open</a>';
+    try{navigator.clipboard&&navigator.clipboard.writeText(claim+String.fromCharCode(10,10)+(cReason.value||''))}catch(e){}
+    window.open(fallbackUrl(),'_blank','noopener,noreferrer');
+    return;
+  }
+  fetch(ENDPOINT,{method:'POST',headers:{'content-type':'application/json'},
+    body:JSON.stringify({kind:'theory',case:SLUG,claim:claim,reasoning:cReason.value,falsify:cFalsify.value,name:cName.value})})
+  .then(function(r){return r.json().then(function(d){return{ok:r.ok,d:d}})})
+  .then(function(res){
+    if(!res.ok){cStatus.textContent=(res.d&&res.d.error)||'That did not go through. Try again shortly.';return}
+    cStatus.textContent='';
+    closeComposer();
+    say('Received, and noted. It appears on the Board shortly — sources are what move it.');
+    cClaim.value='';cReason.value='';cFalsify.value='';
+  })
+  .catch(function(){cStatus.textContent='No connection. Your text is still here — try again in a moment.'});
+};
+
 /* ---------- freshness ---------- */
 setInterval(function(){
   fetch('./board-data.json',{cache:'no-store'}).then(function(r){return r.json()}).then(function(d){
@@ -1016,6 +1194,7 @@ setInterval(function(){
   }).catch(function(){})
 },60000);
 
+var CENTRAL_ID=${JSON.stringify(central ? central.id : (nodes[0] ? nodes[0].id : ''))};
 ${central ? `var CENTRAL=${JSON.stringify(central.id)};
 if(!mobile()){setTimeout(function(){show(CENTRAL)},REDUCED?0:700);}
 else{
@@ -1078,6 +1257,24 @@ ${caseNav(c, 'board')}
 <div class="bctrl"><button id="bz-in" title="Zoom in">+</button><button id="bz-out" title="Zoom out">−</button><button id="bz-fit" title="Reset view">⤢</button></div>
 <div id="btoast"></div>
 <div id="detail"><div class="grab"></div><span class="x" id="detail-close" role="button" tabindex="0" aria-label="Close">×</span><div id="detail-in"></div></div>
+<div id="composer" hidden>
+  <div class="grab"></div>
+  <span class="x" id="comp-close" role="button" tabindex="0" aria-label="Close">×</span>
+  <h4>Add a theory to this board</h4>
+  <p class="chint">It goes up labelled as a reader theory. Sources are what move it. Keep it about the case, not about people who haven't been charged.</p>
+  <label class="clab">Your theory, in one sentence</label>
+  <input id="c-claim" maxlength="220" placeholder="e.g. The timeline only works if the call came before the drive">
+  <label class="clab">Why do you think so?</label>
+  <textarea id="c-reason" rows="4" maxlength="1800" placeholder="What in the record points this way"></textarea>
+  <label class="clab">What would prove you wrong? <span class="copt">optional, but it's the mark of a good theory</span></label>
+  <input id="c-falsify" maxlength="400" placeholder="e.g. Phone records showing the call after 6pm">
+  <label class="clab">Name to post under <span class="copt">optional</span></label>
+  <input id="c-name" maxlength="40" placeholder="Leave blank to post anonymously">
+  <div class="crow">
+    <button class="btn sm" id="c-post">Post to the board</button>
+    <span id="c-status" class="chint"></span>
+  </div>
+</div>
 </div>
 <div id="boardlist">${listHtml}</div>
 <details class="howto" id="embedbox"><summary>📺 Put this board on your own site — free</summary>
@@ -1087,10 +1284,10 @@ ${caseNav(c, 'board')}
 <p style="font-size:12.5px">Prefer the raw data? <a href="./data.json">board.json</a> is public and free to reuse with credit. Covering trials for a living? <a href="/creators/">There's more for you here.</a></p>
 </details>
 <p style="margin-top:12px">
-  <a class="btn sm" href="https://github.com/${REPO}/issues/new?template=theory.yml&case=${c.slug}">🧵 Post a theory</a>
+  <button class="btn sm" id="open-composer" type="button">Post a theory</button>
   <a class="btn sm ghost" href="https://github.com/${REPO}/issues/new?template=evidence.yml&case=${c.slug}">📎 Submit evidence</a>
   <a class="btn sm ghost" href="https://github.com/${REPO}/issues/new?template=report.yml">🚩 Report</a>
-  <span style="color:var(--mut);font-size:12.5px">· 3 posts/day · posts about people get editor review first · <a href="/submit/">details</a></span>
+  <span style="color:var(--mut);font-size:12.5px">· 25 posts a day, more once you have a track record · posts naming people get a look first · <a href="/submit/">how it works</a></span>
 </p>
 <details class="howto"><summary>How to work the Board</summary>
 <p><b>Read it:</b> purple cards are the open questions that have to be decided. Blue cards are from the record — testimony, exhibits, rulings, each linked to its source. Amber cards are reader theories — this is your zone. Post one and it goes up labeled until real sourcing settles it. Strings show the pull: <span style="color:var(--green)">green supports</span>, <span style="color:var(--red)">red disputes</span>, <span style="color:var(--amber)">amber is contested</span> — both sides claim it. Disproven theories stay up, greyed, so you can see what was tested and settled.</p>
@@ -1117,7 +1314,7 @@ const submit = page({
 <div class="card"><h3 style="margin-top:0">🔗 Propose a connection</h3><p style="font-size:14px">Two cards are linked — supports, disputes, explains? Say why. (Or use the Connect button on any card.)</p><p style="margin-top:10px"><a class="btn sm" href="https://github.com/${REPO}/issues/new?template=connection.yml">Connect two cards</a></p></div>
 <div class="card"><h3 style="margin-top:0">🚩 Report a problem</h3><p style="font-size:14px">Names a private person, personal info, fake sourcing, harassment. Reports jump the queue.</p><p style="margin-top:10px"><a class="btn sm ghost" href="https://github.com/${REPO}/issues/new?template=report.yml">Report content</a></p></div>
 </div>
-<div class="notice"><b>How it works:</b> theories about the case go live in ~15 minutes after an automated check; posts that discuss a specific person get editor eyes first (usually under an hour). 3 posts/day; posting uses a free GitHub account, reading never needs one. We don't publish accusations against the uncharged or anyone's personal info — <a href="/about/">why</a>.</div>
+<div class="notice"><b>How it works:</b> write it straight on the board — the composer opens in place, no account needed. Theories about the case go live within about fifteen minutes after an automated check; anything naming a specific person gets human eyes first, usually inside the hour. Twenty-five posts a day, rising once you have a track record — if you're working through a case in bulk and hit the ceiling, just say so and we'll lift it. We don't publish accusations against people who haven't been charged, or anyone's personal information — <a href="/about/">why</a>.</div>
 `});
 
 // ---------- for creators ----------

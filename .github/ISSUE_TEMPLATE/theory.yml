@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        **House rules:** theories analyze the evidence, strategies, and rulings — they never accuse private individuals, name non-public people, or share personal information. Submissions that do are closed without publication. Everything is reviewed before it appears on the Board, usually within the hour.
+        Theories about the case publish to the Board within about 15 minutes. Anything that discusses a specific person is looked at by an editor first (usually under an hour). We don't publish accusations against people who haven't been charged, or anyone's personal information — question conduct and institutions freely. Limit: 3 posts per day.
   - type: input
     id: case
     attributes:

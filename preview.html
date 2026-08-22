@@ -24,6 +24,7 @@ h3{font-size:16px;margin:18px 0 6px}
 .badge{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;padding:2px 8px;border-radius:3px;vertical-align:middle}
 .badge.live{background:var(--red);color:#fff;animation:pulse 2.2s infinite}
 .badge.phase{background:var(--panel2);color:var(--amber);border:1px solid var(--amber)}
+.badge.archived{background:var(--panel2);color:var(--mut);border:1px solid var(--line)}
 .badge.verified{color:var(--green);border:1px solid var(--green);background:transparent}
 .badge.unverified{color:var(--amber);border:1px solid var(--amber);background:transparent}
 .badge.disproven{color:var(--red);border:1px solid var(--red);background:transparent}
@@ -59,9 +60,15 @@ footer .hb{color:var(--green)}
 .btn.ghost{background:transparent;color:var(--acc);border:1px solid var(--acc)}
 .legend{display:flex;gap:14px;flex-wrap:wrap;font-size:12.5px;color:var(--mut);margin:10px 0}
 .legend span::before{content:'';display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px;vertical-align:-1px}
-.lg-q::before{background:var(--violet)}.lg-f::before{background:var(--acc2)}.lg-c::before{background:var(--amber)}.lg-r::before{background:var(--green)}.lg-x::before{background:var(--red)}
-#boardwrap{position:relative;border:1px solid var(--line);border-radius:8px;background:var(--panel);overflow:hidden;height:640px;cursor:grab}
+.lg-q::before{background:var(--violet)}.lg-f::before{background:var(--acc2)}.lg-c::before{background:var(--amber)}
+#boardwrap{position:relative;border:1px solid var(--line);border-radius:8px;overflow:hidden;height:640px;cursor:grab;touch-action:none;background-color:var(--panel);background-image:radial-gradient(var(--line) 1px, transparent 1px);background-size:22px 22px}
 #boardwrap:active{cursor:grabbing}
+#boardwrap.connecting .node{cursor:crosshair}
+.node{cursor:move}
+#btoast{display:none;position:absolute;left:50%;transform:translateX(-50%);bottom:14px;background:var(--panel2);border:1px solid var(--acc);border-radius:8px;padding:9px 16px;font-size:13.5px;z-index:6;box-shadow:0 6px 24px rgba(0,0,0,.4);max-width:88%}
+.linkbtn{border:1px solid var(--acc);background:transparent;color:var(--acc);border-radius:6px;padding:6px 12px;font-size:13px;cursor:pointer;font-weight:600}
+.linkbtn:hover{background:var(--acc);color:#14161a}
+@media (prefers-reduced-motion: reduce){.badge.live{animation:none}}
 #detail{position:absolute;right:12px;top:12px;width:330px;max-height:calc(100% - 24px);overflow:auto;background:var(--panel2);border:1px solid var(--line);border-radius:8px;padding:14px;display:none;font-size:14px;box-shadow:0 8px 30px rgba(0,0,0,.35)}
 #detail h4{font-family:var(--serif);margin:6px 0}
 #detail .x{float:right;cursor:pointer;color:var(--mut);font-size:18px;line-height:1}
@@ -71,6 +78,26 @@ footer .hb{color:var(--green)}
 .edge-supports{stroke:var(--green)}.edge-contradicts{stroke:var(--red)}.edge-contested{stroke:var(--amber);stroke-dasharray:6 4}.edge-explains{stroke:var(--mut);stroke-dasharray:2 4}.edge-disproves{stroke:var(--red);stroke-width:3}
 .notice{background:var(--panel2);border:1px solid var(--line);border-left:4px solid var(--acc);border-radius:6px;padding:12px 16px;font-size:14px;margin:14px 0}
 .qa{margin:12px 0}.qa dt{font-weight:700;font-family:var(--serif);margin-top:14px}.qa dd{margin:4px 0 0;color:var(--ink)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:18px 0}
+@media(max-width:760px){.steps{grid-template-columns:1fr}}
+.step{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:16px 18px}
+.step .n{font-family:var(--serif);font-size:26px;color:var(--acc);font-weight:700}
+.step h3{margin:6px 0 4px}.step p{font-size:14px;color:var(--mut)}
+.bctrl{position:absolute;left:12px;top:12px;display:flex;flex-direction:column;gap:6px;z-index:5}
+.bctrl button{width:34px;height:34px;border-radius:8px;border:1px solid var(--line);background:var(--panel2);color:var(--ink);font-size:17px;cursor:pointer}
+.bctrl button:hover{border-color:var(--acc)}
+.vtoggle{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden;margin:0 0 10px}
+.vtoggle button{border:0;background:var(--panel);color:var(--mut);padding:8px 16px;font-size:13.5px;cursor:pointer;font-weight:600}
+.vtoggle button.on{background:var(--acc);color:#14161a}
+#boardlist{display:none}
+#boardlist .card{margin:10px 0}
+#boardlist h3{margin-top:22px}
+.conns{margin-top:8px;padding-top:8px;border-top:1px dashed var(--line);font-size:12.5px;color:var(--mut)}
+.conns b.sup{color:var(--green)}.conns b.con{color:var(--red)}.conns b.mix{color:var(--amber)}
+details.howto{background:var(--panel2);border:1px solid var(--line);border-radius:8px;padding:10px 16px;font-size:14px;margin:12px 0}
+details.howto summary{cursor:pointer;font-weight:700;color:var(--acc)}
+details.howto p{margin:8px 0}
+@media(max-width:760px){#detail{left:8px;right:8px;top:auto;bottom:8px;width:auto;max-height:46%}}
 
 :root[data-theme="light"]{--bg:#f7f5f0;--panel:#ffffff;--panel2:#f0ede6;--ink:#1a1d23;--mut:#5b6470;--line:#ddd8cc;--acc:#8a6d1d;--acc2:#2b5cad;--green:#25784f;--red:#b03a3a;--amber:#9a6d15;--violet:#6d4fc4}
 
@@ -84,26 +111,31 @@ body{background:var(--bg)}
 <header class="mast"><div class="wrap">
   <div class="logo"><a href="#home"><span class="gb">Gavel</span>Board</a></div>
   <div class="tag">The record. The rumors. The line between.</div>
-  <nav class="sitenav"><a href="#home" class="on">Home</a><a href="#hub" class="">Clancy Trial</a><a href="#board" class="">The Board</a><a href="#submit" class="">Contribute</a><a href="#about" class="">About</a></nav>
+  <nav class="sitenav"><a href="#home" class="on">Home</a><a href="#hub" class="">Cases</a><a href="#submit" class="">Share</a><a href="#about" class="">About</a></nav>
 </div></header>
 <section class="pv-sec" id="home"><span class="pv-label">Home</span>
 <main><div class="wrap">
 
 
-<h1>The trial, in order. <span style="color:var(--mut)">Not in 40 screens of liveblog.</span></h1>
-<p class="sub">GavelBoard keeps a structured, source-linked record of the court cases everyone is watching — what happened each day, who testified, what the jury must decide — and a community board where theories meet the record.</p>
+<h1>The facts of the trial,<br>in everyone's hands.</h1>
+<p class="sub" style="font-size:17px;max-width:640px">GavelBoard follows the big court cases and keeps the record straight — what happened, who said what, what the evidence shows — with every line linked to its source. Then it's your turn: share what you think, back up what you know, and test theories with everyone else watching.</p>
+<div class="steps">
+  <div class="step"><span class="n">1</span><h3>Get the facts</h3><p>The whole trial, day by day — every witness, every ruling, every fact linked to where it came from. Catch up in minutes, not forty screens of liveblog.</p></div>
+  <div class="step"><span class="n">2</span><h3>See the evidence</h3><p>The Board lays out what the jury must decide and the evidence pulling each way. Click anything to see its sources.</p></div>
+  <div class="step"><span class="n">3</span><h3>Build the case file</h3><p>Post a theory, connect the dots, discuss every card. The community builds the board together — and the best boards teach a case faster than any article.</p></div>
+</div>
 <div class="card">
-  <span class="badge live">Active</span> <span class="badge phase">Prosecution rebuttal — closings expected Mon Aug 24 or Tue Aug 25</span>
-  <h2 style="border:none;margin:10px 0 4px"><a href="#hub">Commonwealth v. Lindsay Clancy</a></h2>
-  <p>Three counts of first-degree murder (strangulation counts dropped July 9, 2026 as redundant). Plymouth County Superior Court, Massachusetts. Trial began Jul 27, 2026.</p>
-  <p style="margin-top:10px">
-    <a class="btn" href="#hub">Case hub</a>
-    <a class="btn ghost" href="#board">The Board</a>
-    <a class="btn ghost" href="#timeline">Day-by-day</a>
+  <span class="badge live">Now in court</span> <span class="badge phase">Prosecution rebuttal — closings expected Mon Aug 24 or Tue Aug 25</span>
+  <h2 style="border:none;margin:10px 0 4px"><a href="#hub">Lindsay Clancy Trial</a></h2>
+  <p style="max-width:640px">Three counts of first-degree murder (strangulation counts dropped July 9, 2026 as redundant). Plymouth County Superior Court, Massachusetts.</p>
+  <p style="margin-top:12px">
+    <a class="btn" href="#hub">Follow the trial</a>
+    <a class="btn ghost" href="#board">Open the Board</a>
   </p>
 </div>
-<h2>Latest from the wire</h2>
-<p class="sub">Headlines from credentialed outlets covering active cases, attributed and linked. Auto-refreshed every 15 minutes.</p>
+
+<h2>Latest updates</h2>
+<p class="sub">From the newsrooms covering each trial, linked to the original reporting. Refreshed every 15 minutes.</p>
 <ul class="ticker"><li><span class="t">Aug 21, 5:30 PM ET</span> · <span class="o">Court TV</span><br><a href="https://www.courttv.com/news/she-was-a-puppet-and-someone-else-was-pulling-the-strings-lindsay-clancys-defense-rests-after-doctor-says-she-wasnt-psychotic-every-minute/" rel="noopener" target="_blank">'She was a puppet and someone else was pulling the strings': Lindsay Clancy's defense rests after doctor says she wasn't psychotic every minute</a></li>
 <li><span class="t">Aug 21, 4:00 PM ET</span> · <span class="o">WBUR</span><br><a href="https://www.wbur.org/news/2026/08/21/lindsay-clancy-defense-rests" rel="noopener" target="_blank">Lindsay Clancy's defense rests after calling 10 witnesses</a></li>
 <li><span class="t">Aug 21, 3:00 PM ET</span> · <span class="o">Boston Globe</span><br><a href="https://www.bostonglobe.com/2026/08/21/metro/lindsay-clancy-trial-mack-resnick/" rel="noopener" target="_blank">Rebuttal witness Dr. Avram Mack: Clancy suffered major depressive disorder, not psychosis</a></li>
@@ -113,30 +145,27 @@ body{background:var(--bg)}
 
 <section class="pv-sec" id="hub"><span class="pv-label">Case hub</span>
 <main><div class="wrap">
-<nav class="crumbs"><a href="#home">Home</a> › Lindsay Clancy Trial</nav>
+<nav class="crumbs"><a href="#home">Home</a> › <a href="#hub">Cases</a> › Lindsay Clancy Trial</nav>
 
-<span class="badge live">Active</span> <span class="badge phase">Prosecution rebuttal — closings expected Mon Aug 24 or Tue Aug 25</span>
+<span class="badge live">Now in court</span> <span class="badge phase">Prosecution rebuttal — closings expected Mon Aug 24 or Tue Aug 25</span>
 <h1>Commonwealth v. Lindsay Clancy</h1>
-<p class="sub">Plymouth County Superior Court, Massachusetts · Judge William F. Sullivan · Incident: Jan 24, 2023 · Trial began Jul 27, 2026</p>
-<div class="grid2">
-<div class="card"><h3>The case</h3>
+<p class="sub">Plymouth County Superior Court, Massachusetts · Judge William F. Sullivan</p>
+<div class="card"><h3>Right now</h3>
+<p>Prosecution rebuttal — closings expected Mon Aug 24 or Tue Aug 25 </p>
+<p style="margin-top:8px"><b>Watch live:</b> <a href="https://www.courttv.com/news/lindsay-clancy-trial-opening-statements-set-for-mom-accused-of-killing-her-3-children/" target="_blank" rel="noopener">Court TV</a> · <a href="https://www.nbcboston.com/news/local/lindsay-clancy-trial-day-16-live-stream-live-updates/4000212/" target="_blank" rel="noopener">NBC Boston</a></p></div>
+<p style="margin-top:14px">
+  <a class="btn" href="#timeline">The record, day by day</a>
+  <a class="btn" href="#board">Open the Board</a>
+</p>
+<p class="sub" style="margin-top:8px">Also: <a href="#witnesses">every witness, indexed</a> · <a href="#standard">the law, in plain English</a></p>
+<div class="card"><h3>The basics</h3>
 <p><b>Defendant:</b> Lindsay Clancy, 36, of Duxbury, Massachusetts<br>
 <b>Charges:</b> Three counts of first-degree murder (strangulation counts dropped July 9, 2026 as redundant)<br>
 <b>Plea & defense:</b> Not guilty; defense of lack of criminal responsibility (postpartum psychosis, over-medication)<br>
 <b>Victims:</b> Cora Clancy (5), Dawson Clancy (3), Callan Clancy (8 months)<br>
 <b>Prosecution:</b> ADA Jennifer Sprague, Shanan Buckingham, ADA Amanda Fowle<br>
 <b>Defense:</b> Kevin J. Reddington</p></div>
-<div class="card"><h3>Where things stand</h3>
-<p>The defense rested Friday, Aug 21 after 10 witnesses, without calling the defendant. The Commonwealth's rebuttal is underway (Dr. Avram Mack testified Friday; three rebuttal experts expected). Closing arguments are expected Monday Aug 24 or Tuesday Aug 25, with deliberations to follow. <span class="srcs">— <a href="https://www.wbur.org/news/2026/08/21/lindsay-clancy-defense-rests" rel="noopener" target="_blank">WBUR</a> · <a href="https://www.cbsnews.com/boston/news/lindsay-clancy-trial-watch-live-day-18-dr-phillip-resnick/" rel="noopener" target="_blank">CBS Boston</a> · <a href="https://www.bostonglobe.com/2026/08/21/metro/lindsay-clancy-trial-mack-resnick/" rel="noopener" target="_blank">Boston Globe</a></span></p>
-<p style="margin-top:8px"><b>Watch live:</b> <a href="https://www.courttv.com/news/lindsay-clancy-trial-opening-statements-set-for-mom-accused-of-killing-her-3-children/" target="_blank" rel="noopener">Court TV</a> · <a href="https://www.nbcboston.com/news/local/lindsay-clancy-trial-day-16-live-stream-live-updates/4000212/" target="_blank" rel="noopener">NBC Boston</a></p></div>
-</div>
-<p style="margin-top:14px">
-  <a class="btn" href="#board">Open the Board</a>
-  <a class="btn ghost" href="#timeline">Day-by-day record</a>
-  <a class="btn ghost" href="#witnesses">Witness index</a>
-  <a class="btn ghost" href="#standard">The legal standard, explained</a>
-</p>
-<h2>What the jury can decide</h2>
+<h2>How this can end</h2>
 <div class="grid2">
 <div class="vopt"><b>Guilty of first-degree murder</b><br><span style="font-size:14px">Mandatory life in prison without possibility of parole.</span><br><span class="srcs">— <a href="https://www.newsnationnow.com/crime/lindsay-clancy-possible-verdicts/amp/" rel="noopener" target="_blank">NewsNation</a></span></div>
 <div class="vopt"><b>Guilty of second-degree murder</b><br><span style="font-size:14px">Life sentence with eventual parole eligibility.</span><br><span class="srcs">— <a href="https://www.newsnationnow.com/crime/lindsay-clancy-possible-verdicts/amp/" rel="noopener" target="_blank">NewsNation</a></span></div>
@@ -144,7 +173,7 @@ body{background:var(--bg)}
 <div class="vopt"><b>Hung jury / mistrial</b><br><span style="font-size:14px">Commonwealth may retry the case.</span><br><span class="srcs">— <a href="https://www.newsnationnow.com/crime/lindsay-clancy-possible-verdicts/amp/" rel="noopener" target="_blank">NewsNation</a></span></div>
 <div class="vopt"><b>Involuntary manslaughter (contested)</b><br><span style="font-size:14px">Defense has asked for it on the verdict slip; prosecution opposes; ruling pending.</span><br><span class="srcs">— <a href="https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-defense-expected-call-final-witness-before-resting/3SY5KO3XLBG5NJ5F3S2VCFJKUY/" rel="noopener" target="_blank">Boston 25 News</a></span></div>
 </div>
-<h2>Live wire</h2>
+<h2>Latest updates</h2>
 <ul class="ticker"><li><span class="t">Aug 21, 5:30 PM ET</span> · <span class="o">Court TV</span><br><a href="https://www.courttv.com/news/she-was-a-puppet-and-someone-else-was-pulling-the-strings-lindsay-clancys-defense-rests-after-doctor-says-she-wasnt-psychotic-every-minute/" rel="noopener" target="_blank">'She was a puppet and someone else was pulling the strings': Lindsay Clancy's defense rests after doctor says she wasn't psychotic every minute</a></li>
 <li><span class="t">Aug 21, 4:00 PM ET</span> · <span class="o">WBUR</span><br><a href="https://www.wbur.org/news/2026/08/21/lindsay-clancy-defense-rests" rel="noopener" target="_blank">Lindsay Clancy's defense rests after calling 10 witnesses</a></li>
 <li><span class="t">Aug 21, 3:00 PM ET</span> · <span class="o">Boston Globe</span><br><a href="https://www.bostonglobe.com/2026/08/21/metro/lindsay-clancy-trial-mack-resnick/" rel="noopener" target="_blank">Rebuttal witness Dr. Avram Mack: Clancy suffered major depressive disorder, not psychosis</a></li>
@@ -157,101 +186,229 @@ body{background:var(--bg)}
 <nav class="crumbs"><a href="#home">Home</a> › <a href="#hub">Lindsay Clancy Trial</a> › The Board</nav>
 
 <h1>The Board</h1>
-<p class="sub">The Board maps what is in dispute onto what is in the record. FACT nodes are events in the court record (that testimony occurred is a fact, whether it is TRUE is for the jury). QUESTION nodes are what the jury must decide. COMMUNITY nodes are user-submitted and appear only after review. An edge says how one node bears on another, and who advances that argument.</p>
-<div class="legend"><span class="lg-q">Question before the jury</span><span class="lg-f">Record: testimony & exhibits</span><span class="lg-c">Community (unverified)</span><span class="lg-r">Resolved</span><span class="lg-x">Disproven</span></div>
-<div class="legend"><span style="color:var(--green)">— supports</span><span style="color:var(--red)">— contradicts</span><span style="color:var(--amber)">-- contested</span><span>·· context</span></div>
-<div id="boardwrap"><svg id="boardsvg" viewBox="0 0 1080 900" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%"><g id="viewport"><path class="edge-supports" d="M255,337 Q430,327 605,377" fill="none" stroke-width="2" opacity="0.75"><title>supports: defense expert opinion</title></path>
-<path class="edge-supports" d="M255,507 Q430,412 605,377" fill="none" stroke-width="2" opacity="0.75"><title>supports: defense expert opinion</title></path>
-<path class="edge-supports" d="M255,677 Q430,497 605,377" fill="none" stroke-width="2" opacity="0.75"><title>supports: reported hallucination; contested on cross — chaplain's notes never recorded it</title></path>
-<path class="edge-supports" d="M285,837 Q445,577 605,377" fill="none" stroke-width="2" opacity="0.75"><title>supports: involuntary-intoxication theory</title></path>
-<path class="edge-contradicts" d="M955,297 Q780,307 605,377" fill="none" stroke-width="2" opacity="0.75"><title>contradicts: rebuttal expert opinion</title></path>
-<path class="edge-contradicts" d="M955,467 Q780,392 605,377" fill="none" stroke-width="2" opacity="0.75"><title>contradicts: no psychosis observed day before — but telehealth-only, per cross</title></path>
-<path class="edge-contested" d="M955,637 Q780,477 605,377" fill="none" stroke-width="2" opacity="0.75"><title>contested: prosecution: awareness &amp; planning · defense: evidence of illness</title></path>
-<path class="edge-contradicts" d="M605,137 Q605,227 605,377" fill="none" stroke-width="2" opacity="0.75"><title>contradicts: planning suggests capacity, per Commonwealth</title></path>
-<path class="edge-contested" d="M605,597 Q605,457 605,377" fill="none" stroke-width="2" opacity="0.75"><title>contested: no observed danger to children · defense: the system missed it</title></path>
-<path class="edge-explains" d="M285,157 Q445,237 605,377" fill="none" stroke-width="2" opacity="0.75"><title>explains: why responsibility is the only question</title></path>
-<path class="edge-contradicts" d="M605,137 Q605,417 605,757" fill="none" stroke-width="2" opacity="0.75"><title>contradicts: specific intent forecloses involuntary manslaughter, per Commonwealth</title></path>
-<path class="edge-supports" d="M285,837 Q445,767 605,757" fill="none" stroke-width="2" opacity="0.75"><title>supports: defense: 'You can't try this case in a vacuum'</title></path>
-<g class="node" data-id="q-responsibility">
-<rect x="500" y="340" width="210" height="74" rx="8" fill="var(--panel2)" stroke="var(--violet)" stroke-width="2"></rect>
-<text x="512" y="364" font-size="12.5" fill="var(--ink)" font-weight="600"><tspan x="512" dy="0">THE question: Was Clancy</tspan><tspan x="512" dy="15">criminally responsible on Jan</tspan><tspan x="512" dy="15">24, 2023?</tspan></text>
+<p class="sub" style="max-width:680px">The case file, laid out: what the jury must decide, the evidence pulling on each question, and the community's theories — clearly labeled. Click any card for sources and discussion. Arrange it your way; your layout is remembered on this device.</p>
+<details class="howto"><summary>How to work the Board</summary>
+<p><b>Read it:</b> purple cards are the open questions the jury must decide. Blue cards are from the record — testimony, exhibits, rulings, each linked to its source. Amber cards are community theories, labeled unverified until real sourcing lands. Strings show the pull: <span style="color:var(--green)">green supports</span>, <span style="color:var(--red)">red disputes</span>, <span style="color:var(--amber)">amber is contested</span>. Disproven theories stay up, greyed — you can see what was tested and settled.</p>
+<p><b>Build it:</b> drag cards to arrange your own reading of the case. Open a card and hit <b>Connect</b>, then click the card it relates to — your proposed string joins the Board once it clears the pulse. <b>Discuss</b> opens the card's thread. 👍 on a theory's thread corroborates it; 👎 disputes; sources settle.</p>
+<p><b>Share it:</b> every board is public — send the link. The best-argued boards are how new readers learn a case fast. <a href="#submit">Add your theory →</a></p>
+</details>
+<div class="vtoggle"><button id="vt-map" class="on">Map</button><button id="vt-list">List</button></div>
+<div class="legend"><span class="lg-q">Open question</span><span class="lg-f">From the record</span><span class="lg-c">Community theory</span><span style="margin-left:auto"><span style="color:var(--green)">— supports</span> · <span style="color:var(--red)">— disputes</span> · <span style="color:var(--amber)">– – contested</span></span></div>
+<div id="boardwrap"><svg id="boardsvg" viewBox="90 40 1030 898" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%"><defs>
+<filter id="cardshadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#000" flood-opacity="0.35"/></filter>
+<marker id="ah-sup" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="var(--green)"/></marker>
+<marker id="ah-con" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="var(--red)"/></marker>
+<marker id="ah-mix" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="var(--amber)"/></marker>
+<marker id="ah-ctx" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="var(--mut)"/></marker>
+</defs><g id="viewport"><path class="edge edge-supports" data-from="f-resnick" data-to="q-responsibility" fill="none" stroke-width="2.25" opacity="0.8" marker-end="url(#ah-sup)"><title>supports: defense expert opinion</title></path>
+<path class="edge edge-supports" data-from="f-zeizel" data-to="q-responsibility" fill="none" stroke-width="2.25" opacity="0.8" marker-end="url(#ah-sup)"><title>supports: defense expert opinion</title></path>
+<path class="edge edge-supports" data-from="f-voice" data-to="q-responsibility" fill="none" stroke-width="2.25" opacity="0.8" marker-end="url(#ah-sup)"><title>supports: reported hallucination; contested on cross — chaplain's notes never recorded it</title></path>
+<path class="edge edge-supports" data-from="f-meds" data-to="q-responsibility" fill="none" stroke-width="2.25" opacity="0.8" marker-end="url(#ah-sup)"><title>supports: involuntary-intoxication theory</title></path>
+<path class="edge edge-contradicts" data-from="f-mack" data-to="q-responsibility" fill="none" stroke-width="2.25" opacity="0.8" marker-end="url(#ah-con)"><title>contradicts: rebuttal expert opinion</title></path>
+<path class="edge edge-contradicts" data-from="f-tufts" data-to="q-responsibility" fill="none" stroke-width="2.25" opacity="0.8" marker-end="url(#ah-con)"><title>contradicts: no psychosis observed day before — but telehealth-only, per cross</title></path>
+<path class="edge edge-contested" data-from="f-searches" data-to="q-responsibility" fill="none" stroke-width="2.25" opacity="0.8" marker-end="url(#ah-mix)"><title>contested: prosecution: awareness &amp; planning · defense: evidence of illness</title></path>
+<path class="edge edge-contradicts" data-from="f-planning" data-to="q-responsibility" fill="none" stroke-width="2.25" opacity="0.8" marker-end="url(#ah-con)"><title>contradicts: planning suggests capacity, per Commonwealth</title></path>
+<path class="edge edge-contested" data-from="f-nurses" data-to="q-responsibility" fill="none" stroke-width="2.25" opacity="0.8" marker-end="url(#ah-mix)"><title>contested: no observed danger to children · defense: the system missed it</title></path>
+<path class="edge edge-explains" data-from="f-uncontested" data-to="q-responsibility" fill="none" stroke-width="2.25" opacity="0.8" marker-end="url(#ah-ctx)"><title>explains: why responsibility is the only question</title></path>
+<path class="edge edge-contradicts" data-from="f-planning" data-to="q-slip" fill="none" stroke-width="2.25" opacity="0.8" marker-end="url(#ah-con)"><title>contradicts: specific intent forecloses involuntary manslaughter, per Commonwealth</title></path>
+<path class="edge edge-supports" data-from="f-meds" data-to="q-slip" fill="none" stroke-width="2.25" opacity="0.8" marker-end="url(#ah-sup)"><title>supports: defense: 'You can't try this case in a vacuum'</title></path>
+<g class="node" data-id="q-responsibility" transform="translate(500,340)" data-bx="500" data-by="340">
+<rect width="210" height="78" rx="6" fill="var(--panel2)" stroke="var(--violet)" stroke-width="2" filter="url(#cardshadow)"></rect>
+<circle cx="105" cy="0" r="5.5" fill="var(--violet)" stroke="var(--bg)" stroke-width="1.5"></circle>
+<text x="12" y="26" font-size="12.5" fill="var(--ink)" font-weight="600"><tspan x="12" dy="0">THE question: Was Clancy</tspan><tspan x="12" dy="15">criminally responsible on Jan</tspan><tspan x="12" dy="15">24, 2023?</tspan></text>
+
 </g>
-<g class="node" data-id="q-slip">
-<rect x="500" y="720" width="210" height="74" rx="8" fill="var(--panel2)" stroke="var(--violet)" stroke-width="2"></rect>
-<text x="512" y="744" font-size="12.5" fill="var(--ink)" font-weight="600"><tspan x="512" dy="0">Will involuntary manslaughter</tspan><tspan x="512" dy="15">be on the verdict slip?</tspan></text>
+<g class="node" data-id="q-slip" transform="translate(500,720)" data-bx="500" data-by="720">
+<rect width="210" height="78" rx="6" fill="var(--panel2)" stroke="var(--violet)" stroke-width="2" filter="url(#cardshadow)"></rect>
+<circle cx="105" cy="0" r="5.5" fill="var(--violet)" stroke="var(--bg)" stroke-width="1.5"></circle>
+<text x="12" y="26" font-size="12.5" fill="var(--ink)" font-weight="600"><tspan x="12" dy="0">Will involuntary manslaughter</tspan><tspan x="12" dy="15">be on the verdict slip?</tspan></text>
+
 </g>
-<g class="node" data-id="f-uncontested">
-<rect x="180" y="120" width="210" height="74" rx="8" fill="var(--panel2)" stroke="var(--acc2)" stroke-width="2"></rect>
-<text x="192" y="144" font-size="12.5" fill="var(--ink)" font-weight="600"><tspan x="192" dy="0">Uncontested: Clancy caused the</tspan><tspan x="192" dy="15">deaths</tspan></text>
+<g class="node" data-id="f-uncontested" transform="translate(180,120)" data-bx="180" data-by="120">
+<rect width="210" height="78" rx="6" fill="var(--panel2)" stroke="var(--acc2)" stroke-width="2" filter="url(#cardshadow)"></rect>
+<circle cx="105" cy="0" r="5.5" fill="var(--acc2)" stroke="var(--bg)" stroke-width="1.5"></circle>
+<text x="12" y="26" font-size="12.5" fill="var(--ink)" font-weight="600"><tspan x="12" dy="0">Uncontested: Clancy caused the</tspan><tspan x="12" dy="15">deaths</tspan></text>
+
 </g>
-<g class="node" data-id="f-resnick">
-<rect x="150" y="300" width="210" height="74" rx="8" fill="var(--panel2)" stroke="var(--acc2)" stroke-width="2"></rect>
-<text x="162" y="324" font-size="12.5" fill="var(--ink)" font-weight="600"><tspan x="162" dy="0">Resnick (defense): postpartum</tspan><tspan x="162" dy="15">psychosis, command</tspan><tspan x="162" dy="15">hallucinations</tspan></text>
+<g class="node" data-id="f-resnick" transform="translate(150,300)" data-bx="150" data-by="300">
+<rect width="210" height="78" rx="6" fill="var(--panel2)" stroke="var(--acc2)" stroke-width="2" filter="url(#cardshadow)"></rect>
+<circle cx="105" cy="0" r="5.5" fill="var(--acc2)" stroke="var(--bg)" stroke-width="1.5"></circle>
+<text x="12" y="26" font-size="12.5" fill="var(--ink)" font-weight="600"><tspan x="12" dy="0">Resnick (defense): postpartum</tspan><tspan x="12" dy="15">psychosis, command</tspan><tspan x="12" dy="15">hallucinations</tspan></text>
+
 </g>
-<g class="node" data-id="f-zeizel">
-<rect x="150" y="470" width="210" height="74" rx="8" fill="var(--panel2)" stroke="var(--acc2)" stroke-width="2"></rect>
-<text x="162" y="494" font-size="12.5" fill="var(--ink)" font-weight="600"><tspan x="162" dy="0">Zeizel (defense): could not</tspan><tspan x="162" dy="15">tell right from wrong</tspan></text>
+<g class="node" data-id="f-zeizel" transform="translate(150,470)" data-bx="150" data-by="470">
+<rect width="210" height="78" rx="6" fill="var(--panel2)" stroke="var(--acc2)" stroke-width="2" filter="url(#cardshadow)"></rect>
+<circle cx="105" cy="0" r="5.5" fill="var(--acc2)" stroke="var(--bg)" stroke-width="1.5"></circle>
+<text x="12" y="26" font-size="12.5" fill="var(--ink)" font-weight="600"><tspan x="12" dy="0">Zeizel (defense): could not</tspan><tspan x="12" dy="15">tell right from wrong</tspan></text>
+
 </g>
-<g class="node" data-id="f-voice">
-<rect x="150" y="640" width="210" height="74" rx="8" fill="var(--panel2)" stroke="var(--acc2)" stroke-width="2"></rect>
-<text x="162" y="664" font-size="12.5" fill="var(--ink)" font-weight="600"><tspan x="162" dy="0">The reported voice</tspan></text>
+<g class="node" data-id="f-voice" transform="translate(150,640)" data-bx="150" data-by="640">
+<rect width="210" height="78" rx="6" fill="var(--panel2)" stroke="var(--acc2)" stroke-width="2" filter="url(#cardshadow)"></rect>
+<circle cx="105" cy="0" r="5.5" fill="var(--acc2)" stroke="var(--bg)" stroke-width="1.5"></circle>
+<text x="12" y="26" font-size="12.5" fill="var(--ink)" font-weight="600"><tspan x="12" dy="0">The reported voice</tspan></text>
+
 </g>
-<g class="node" data-id="f-mack">
-<rect x="850" y="260" width="210" height="74" rx="8" fill="var(--panel2)" stroke="var(--acc2)" stroke-width="2"></rect>
-<text x="862" y="284" font-size="12.5" fill="var(--ink)" font-weight="600"><tspan x="862" dy="0">Mack (rebuttal): depression,</tspan><tspan x="862" dy="15">not psychosis</tspan></text>
+<g class="node" data-id="f-mack" transform="translate(850,260)" data-bx="850" data-by="260">
+<rect width="210" height="78" rx="6" fill="var(--panel2)" stroke="var(--acc2)" stroke-width="2" filter="url(#cardshadow)"></rect>
+<circle cx="105" cy="0" r="5.5" fill="var(--acc2)" stroke="var(--bg)" stroke-width="1.5"></circle>
+<text x="12" y="26" font-size="12.5" fill="var(--ink)" font-weight="600"><tspan x="12" dy="0">Mack (rebuttal): depression,</tspan><tspan x="12" dy="15">not psychosis</tspan></text>
+
 </g>
-<g class="node" data-id="f-tufts">
-<rect x="850" y="430" width="210" height="74" rx="8" fill="var(--panel2)" stroke="var(--acc2)" stroke-width="2"></rect>
-<text x="862" y="454" font-size="12.5" fill="var(--ink)" font-weight="600"><tspan x="862" dy="0">Tufts: 'no signs of psychosis'</tspan><tspan x="862" dy="15">the day before</tspan></text>
+<g class="node" data-id="f-tufts" transform="translate(850,430)" data-bx="850" data-by="430">
+<rect width="210" height="78" rx="6" fill="var(--panel2)" stroke="var(--acc2)" stroke-width="2" filter="url(#cardshadow)"></rect>
+<circle cx="105" cy="0" r="5.5" fill="var(--acc2)" stroke="var(--bg)" stroke-width="1.5"></circle>
+<text x="12" y="26" font-size="12.5" fill="var(--ink)" font-weight="600"><tspan x="12" dy="0">Tufts: 'no signs of psychosis'</tspan><tspan x="12" dy="15">the day before</tspan></text>
+
 </g>
-<g class="node" data-id="f-searches">
-<rect x="850" y="600" width="210" height="74" rx="8" fill="var(--panel2)" stroke="var(--acc2)" stroke-width="2"></rect>
-<text x="862" y="624" font-size="12.5" fill="var(--ink)" font-weight="600"><tspan x="862" dy="0">The digital record</tspan></text>
+<g class="node" data-id="f-searches" transform="translate(850,600)" data-bx="850" data-by="600">
+<rect width="210" height="78" rx="6" fill="var(--panel2)" stroke="var(--acc2)" stroke-width="2" filter="url(#cardshadow)"></rect>
+<circle cx="105" cy="0" r="5.5" fill="var(--acc2)" stroke="var(--bg)" stroke-width="1.5"></circle>
+<text x="12" y="26" font-size="12.5" fill="var(--ink)" font-weight="600"><tspan x="12" dy="0">The digital record</tspan></text>
+
 </g>
-<g class="node" data-id="f-planning">
-<rect x="500" y="100" width="210" height="74" rx="8" fill="var(--panel2)" stroke="var(--acc2)" stroke-width="2"></rect>
-<text x="512" y="124" font-size="12.5" fill="var(--ink)" font-weight="600"><tspan x="512" dy="0">Prosecution's planning theory</tspan></text>
+<g class="node" data-id="f-planning" transform="translate(500,100)" data-bx="500" data-by="100">
+<rect width="210" height="78" rx="6" fill="var(--panel2)" stroke="var(--acc2)" stroke-width="2" filter="url(#cardshadow)"></rect>
+<circle cx="105" cy="0" r="5.5" fill="var(--acc2)" stroke="var(--bg)" stroke-width="1.5"></circle>
+<text x="12" y="26" font-size="12.5" fill="var(--ink)" font-weight="600"><tspan x="12" dy="0">Prosecution's planning theory</tspan></text>
+
 </g>
-<g class="node" data-id="f-nurses">
-<rect x="500" y="560" width="210" height="74" rx="8" fill="var(--panel2)" stroke="var(--acc2)" stroke-width="2"></rect>
-<text x="512" y="584" font-size="12.5" fill="var(--ink)" font-weight="600"><tspan x="512" dy="0">The clinicians who saw no</tspan><tspan x="512" dy="15">danger to the children</tspan></text>
+<g class="node" data-id="f-nurses" transform="translate(500,560)" data-bx="500" data-by="560">
+<rect width="210" height="78" rx="6" fill="var(--panel2)" stroke="var(--acc2)" stroke-width="2" filter="url(#cardshadow)"></rect>
+<circle cx="105" cy="0" r="5.5" fill="var(--acc2)" stroke="var(--bg)" stroke-width="1.5"></circle>
+<text x="12" y="26" font-size="12.5" fill="var(--ink)" font-weight="600"><tspan x="12" dy="0">The clinicians who saw no</tspan><tspan x="12" dy="15">danger to the children</tspan></text>
+
 </g>
-<g class="node" data-id="f-meds">
-<rect x="180" y="800" width="210" height="74" rx="8" fill="var(--panel2)" stroke="var(--acc2)" stroke-width="2"></rect>
-<text x="192" y="824" font-size="12.5" fill="var(--ink)" font-weight="600"><tspan x="192" dy="0">The medication thread</tspan></text>
+<g class="node" data-id="f-meds" transform="translate(180,800)" data-bx="180" data-by="800">
+<rect width="210" height="78" rx="6" fill="var(--panel2)" stroke="var(--acc2)" stroke-width="2" filter="url(#cardshadow)"></rect>
+<circle cx="105" cy="0" r="5.5" fill="var(--acc2)" stroke="var(--bg)" stroke-width="1.5"></circle>
+<text x="12" y="26" font-size="12.5" fill="var(--ink)" font-weight="600"><tspan x="12" dy="0">The medication thread</tspan></text>
+
 </g>
-<g class="node" data-id="r-mclean">
-<rect x="850" y="780" width="210" height="74" rx="8" fill="var(--panel2)" stroke="var(--green)" stroke-width="2"></rect>
-<text x="862" y="804" font-size="12.5" fill="var(--ink)" font-weight="600"><tspan x="862" dy="0">RESOLVED: the McLean TikTok</tspan><tspan x="862" dy="15">dispute</tspan></text>
+<g class="node" data-id="r-mclean" transform="translate(850,780)" data-bx="850" data-by="780">
+<rect width="210" height="78" rx="6" fill="var(--panel2)" stroke="var(--green)" stroke-width="2" filter="url(#cardshadow)"></rect>
+<circle cx="105" cy="0" r="5.5" fill="var(--green)" stroke="var(--bg)" stroke-width="1.5"></circle>
+<text x="12" y="26" font-size="12.5" fill="var(--ink)" font-weight="600"><tspan x="12" dy="0">RESOLVED: the McLean TikTok</tspan><tspan x="12" dy="15">dispute</tspan></text>
+
 </g></g></svg>
+<div class="bctrl"><button id="bz-in" title="Zoom in">+</button><button id="bz-out" title="Zoom out">−</button><button id="bz-fit" title="Reset view">⤢</button></div>
+<div id="btoast"></div>
 <div id="detail"><span class="x" onclick="document.getElementById('detail').style.display='none'">×</span><div id="detail-in"></div></div>
 </div>
-<p style="margin-top:12px"><a class="btn" href="#submit">Add a theory or connection</a> <span style="color:var(--mut);font-size:13px">Drag to pan · scroll to zoom · click a node for sources</span></p>
-<div class="notice"><b>How promotion works here:</b> community items enter amber (UNVERIFIED). Corroboration by other users raises traction — it never makes something a fact. Only sourcing does: two independent credentialed reports, or the court record itself, moves a node to the record. One verified fact pointing the other way marks it DISPROVEN, and it stays on the board — greyed, struck through, honest about what got ruled out.</div>
+<div id="boardlist"><h3>The questions</h3><div class="card"><span class="badge open">before the jury</span><h4 style="font-family:var(--serif);margin:8px 0 4px">THE question: Was Clancy criminally responsible on Jan 24, 2023?</h4><p style="font-size:14px">Under Commonwealth v. McHoul, she is not responsible if mental disease or defect left her without substantial capacity either to appreciate wrongfulness OR to conform her conduct to law. The Commonwealth must prove responsibility beyond a reasonable doubt.</p><p style="margin-top:6px"><span class="srcs">— <a href="https://law.justia.com/cases/massachusetts/supreme-court/volumes/352/352mass544.html" rel="noopener" target="_blank">Commonwealth v. McHoul, 352 Mass. 544 (1967)</a></span></p><div class="conns">← Resnick (defense): postpartum psychosis, command hallucinations <b class="sup">supports</b> this <i>(defense expert opinion)</i><br>← Zeizel (defense): could not tell right from wrong <b class="sup">supports</b> this <i>(defense expert opinion)</i><br>← The reported voice <b class="sup">supports</b> this <i>(reported hallucination; contested on cross — chaplain's notes never recorded it)</i><br>← The medication thread <b class="sup">supports</b> this <i>(involuntary-intoxication theory)</i><br>← Mack (rebuttal): depression, not psychosis <b class="con">disputes</b> this <i>(rebuttal expert opinion)</i><br>← Tufts: 'no signs of psychosis' the day before <b class="con">disputes</b> this <i>(no psychosis observed day before — but telehealth-only, per cross)</i><br>← The digital record <b class="mix">is contested on</b> this <i>(prosecution: awareness &amp; planning · defense: evidence of illness)</i><br>← Prosecution's planning theory <b class="con">disputes</b> this <i>(planning suggests capacity, per Commonwealth)</i><br>← The clinicians who saw no danger to the children <b class="mix">is contested on</b> this <i>(no observed danger to children · defense: the system missed it)</i><br>← Uncontested: Clancy caused the deaths <b class="ctx">gives context to</b> this <i>(why responsibility is the only question)</i></div></div>
+<div class="card"><span class="badge open">before the jury</span><h4 style="font-family:var(--serif);margin:8px 0 4px">Will involuntary manslaughter be on the verdict slip?</h4><p style="font-size:14px">Defense wants it as a lesser option; prosecution says specific intent to kill forecloses it. Ruling pending as jury instructions are finalized.</p><p style="margin-top:6px"><span class="srcs">— <a href="https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-defense-expected-call-final-witness-before-resting/3SY5KO3XLBG5NJ5F3S2VCFJKUY/" rel="noopener" target="_blank">Boston 25 News</a> · <a href="https://www.bostonglobe.com/2026/08/20/metro/lindsay-clancy-trial-live-updates/" rel="noopener" target="_blank">Boston Globe</a></span></p><div class="conns">← Prosecution's planning theory <b class="con">disputes</b> this <i>(specific intent forecloses involuntary manslaughter, per Commonwealth)</i><br>← The medication thread <b class="sup">supports</b> this <i>(defense: 'You can't try this case in a vacuum')</i></div></div>
+<h3>The evidence and testimony</h3><div class="card"><span class="badge verified">from the record</span><h4 style="font-family:var(--serif);margin:8px 0 4px">Uncontested: Clancy caused the deaths</h4><p style="font-size:14px">Defense counsel in openings: she 'is aware that she killed her children and is not trying to deny that.' The trial is about criminal responsibility, not identity.</p><p style="margin-top:6px"><span class="srcs">— <a href="https://www.courttv.com/news/lindsay-clancy-trial-opening-statements-set-for-mom-accused-of-killing-her-3-children/" rel="noopener" target="_blank">Court TV</a></span></p><div class="conns"><b class="ctx">gives context to</b> → THE question: Was Clancy criminally responsible on Jan 24, 2023? <i>(why responsibility is the only question)</i></div></div>
+<div class="card"><span class="badge verified">from the record</span><h4 style="font-family:var(--serif);margin:8px 0 4px">Resnick (defense): postpartum psychosis, command hallucinations</h4><p style="font-size:14px">'Altruistic filicide — a murder committed out of love, rather than hostility.' 'Psychosis can indeed wax and wane.' Evaluated her four months after the deaths.</p><p style="margin-top:6px"><span class="srcs">— <a href="https://www.bostonglobe.com/2026/08/21/metro/lindsay-clancy-trial-mack-resnick/" rel="noopener" target="_blank">Boston Globe</a> · <a href="https://www.courttv.com/news/she-was-a-puppet-and-someone-else-was-pulling-the-strings-lindsay-clancys-defense-rests-after-doctor-says-she-wasnt-psychotic-every-minute/" rel="noopener" target="_blank">Court TV</a></span></p><div class="conns"><b class="sup">supports</b> → THE question: Was Clancy criminally responsible on Jan 24, 2023? <i>(defense expert opinion)</i></div></div>
+<div class="card"><span class="badge verified">from the record</span><h4 style="font-family:var(--serif);margin:8px 0 4px">Zeizel (defense): could not tell right from wrong</h4><p style="font-size:14px">Saw Clancy ~60 times over three years. 'Intrusive thoughts are unrelenting.' Concluded she 'was unable to conform her behavior to the rule of law' on Jan 24.</p><p style="margin-top:6px"><span class="srcs">— <a href="https://www.pbs.org/newshour/nation/lindsay-clancys-defense-rests-at-trial-over-whether-postpartum-psychosis-drove-her-to-killings" rel="noopener" target="_blank">PBS NewsHour</a> · <a href="https://abc7chicago.com/post/lindsay-clancy-trial-day-16-defense-expert-suggests-clancys-health-care-providers-missed-warning-signs/19702385/" rel="noopener" target="_blank">ABC7</a></span></p><div class="conns"><b class="sup">supports</b> → THE question: Was Clancy criminally responsible on Jan 24, 2023? <i>(defense expert opinion)</i></div></div>
+<div class="card"><span class="badge verified">from the record</span><h4 style="font-family:var(--serif);margin:8px 0 4px">The reported voice</h4><p style="font-size:14px">Zeizel: she reported 'a male voice ordering her' that she 'had no choice but to kill her children. And kill herself.' Chaplain Cavanaugh: a 'persistent' male voice threatening her and the children's safety.</p><p style="margin-top:6px"><span class="srcs">— <a href="https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-defense-continues-case-mother-in-law-expected-testify/KVMXBQP4DJHZZHO4FSXAGDC3TA/" rel="noopener" target="_blank">Boston 25 News</a> · <a href="https://www.bostonglobe.com/2026/08/20/metro/lindsay-clancy-trial-live-updates/" rel="noopener" target="_blank">Boston Globe</a></span></p><div class="conns"><b class="sup">supports</b> → THE question: Was Clancy criminally responsible on Jan 24, 2023? <i>(reported hallucination; contested on cross — chaplain's notes never recorded it)</i></div></div>
+<div class="card"><span class="badge verified">from the record</span><h4 style="font-family:var(--serif);margin:8px 0 4px">Mack (rebuttal): depression, not psychosis</h4><p style="font-size:14px">Interviewed Clancy twice in April 2026. Major depressive disorder; she 'methodically killed her children one by one' while knowing it was wrong and could have stopped. 'I don't know that that feeling or that belief is necessarily psychotic.'</p><p style="margin-top:6px"><span class="srcs">— <a href="https://www.bostonglobe.com/2026/08/21/metro/lindsay-clancy-trial-mack-resnick/" rel="noopener" target="_blank">Boston Globe</a> · <a href="https://www.courttv.com/news/she-was-a-puppet-and-someone-else-was-pulling-the-strings-lindsay-clancys-defense-rests-after-doctor-says-she-wasnt-psychotic-every-minute/" rel="noopener" target="_blank">Court TV</a></span></p><div class="conns"><b class="con">disputes</b> → THE question: Was Clancy criminally responsible on Jan 24, 2023? <i>(rebuttal expert opinion)</i></div></div>
+<div class="card"><span class="badge verified">from the record</span><h4 style="font-family:var(--serif);margin:8px 0 4px">Tufts: 'no signs of psychosis' the day before</h4><p style="font-size:14px">Her treating psychiatrist saw no psychosis or mania at the Jan 23 telehealth visit; Clancy denied suicidal or homicidal ideation. Cross: 14 visits all telehealth, limited postpartum experience, never got other providers' records.</p><p style="margin-top:6px"><span class="srcs">— <a href="https://www.cbsnews.com/boston/news/lindsay-clancy-trial-watch-live-day-10-jennifer-tufts/" rel="noopener" target="_blank">CBS Boston</a> · <a href="https://www.cbsnews.com/news/lindsay-clancy-trial-key-moments/" rel="noopener" target="_blank">CBS News</a></span></p><div class="conns"><b class="con">disputes</b> → THE question: Was Clancy criminally responsible on Jan 24, 2023? <i>(no psychosis observed day before — but telehealth-only, per cross)</i></div></div>
+<div class="card"><span class="badge verified">from the record</span><h4 style="font-family:var(--serif);margin:8px 0 4px">The digital record</h4><p style="font-size:14px">Phone/laptop forensics: 'ketamine for suicide ideation' (Jan 18), 'symptoms of postpartum psychosis' (Jan 19), 'Can you treat a sociopath' (Jan 20), a suicide-methods page visit (Aug 2022), and an Oct 25, 2022 note: 'I'm sad and depressed. I can't parent my 3rd child like my first.'</p><p style="margin-top:6px"><span class="srcs">— <a href="https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-testimony-continues-after-jurors-see-autopsy-photos-children/XUFQLDRTGZGLJKNQXRXPFS5OAY/" rel="noopener" target="_blank">Boston 25 News</a> · <a href="https://www.boston25news.com/news/local/lindsay-clancy-live-updates-trial-enters-4th-week-testimony/GS4743ZE7FBALCAAEY7VXSMUJ4/" rel="noopener" target="_blank">Boston 25 News</a></span></p><div class="conns"><b class="mix">is contested on</b> → THE question: Was Clancy criminally responsible on Jan 24, 2023? <i>(prosecution: awareness &amp; planning · defense: evidence of illness)</i></div></div>
+<div class="card"><span class="badge verified">from the record</span><h4 style="font-family:var(--serif);margin:8px 0 4px">Prosecution's planning theory</h4><p style="font-size:14px">Openings: she searched routes and takeout, took the children to the basement, strangled them with exercise bands. Whiffin's Apple Health data: stair climbs 5:33/5:38 p.m. Theory: she wanted to 'take them with her.'</p><p style="margin-top:6px"><span class="srcs">— <a href="https://www.courttv.com/news/lindsay-clancy-trial-opening-statements-set-for-mom-accused-of-killing-her-3-children/" rel="noopener" target="_blank">Court TV</a> · <a href="https://www.wbur.org/news/2026/08/17/prosecution-rests-murder-trial-lindsay-clancy" rel="noopener" target="_blank">WBUR</a></span></p><div class="conns"><b class="con">disputes</b> → THE question: Was Clancy criminally responsible on Jan 24, 2023? <i>(planning suggests capacity, per Commonwealth)</i><br><b class="con">disputes</b> → Will involuntary manslaughter be on the verdict slip? <i>(specific intent forecloses involuntary manslaughter, per Commonwealth)</i></div></div>
+<div class="card"><span class="badge verified">from the record</span><h4 style="font-family:var(--serif);margin:8px 0 4px">The clinicians who saw no danger to the children</h4><p style="font-size:14px">Jollotta: suicidal ideation documented, but 'never had thoughts on harming her children.' Paul: intake denied ideation; sleep was the concern. Dukes: 'frequent suicide ideation' Dec 2, improved by Dec 9. The pediatrician saw Cora that morning — routine.</p><p style="margin-top:6px"><span class="srcs">— <a href="https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-more-medical-professionals-testify-today/3WYJV7DOCJEDLOHCHANTCDP6SQ/" rel="noopener" target="_blank">Boston 25 News</a> · <a href="https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-medical-examiner-counselor-testify-12th-day-testimony/RBHOHTBAEVH5PK4L6Y3A5D7WSM/" rel="noopener" target="_blank">Boston 25 News</a></span></p><div class="conns"><b class="mix">is contested on</b> → THE question: Was Clancy criminally responsible on Jan 24, 2023? <i>(no observed danger to children · defense: the system missed it)</i></div></div>
+<div class="card"><span class="badge verified">from the record</span><h4 style="font-family:var(--serif);margin:8px 0 4px">The medication thread</h4><p style="font-size:14px">Defense: '13 different psychiatric medications' prescribed; involuntary intoxication through over-prescription. Toxicology: 4–5 benzodiazepines in her system, mostly therapeutic levels; one 'a little elevated.' Her mother: 'The medication was pretty much just destroying her mind.'</p><p style="margin-top:6px"><span class="srcs">— <a href="https://www.wbur.org/news/2026/07/27/lindsay-clancy-trial-opening-statements" rel="noopener" target="_blank">WBUR</a> · <a href="https://www.bostonglobe.com/2026/08/05/metro/lindsay-clancy-trial-live-updates/" rel="noopener" target="_blank">Boston Globe</a> · <a href="https://www.cbsnews.com/news/lindsay-clancy-trial-key-moments/" rel="noopener" target="_blank">CBS News</a> · <a href="https://www.foxnews.com/live-news/lindsay-clancy-murder-trial-day-16" rel="noopener" target="_blank">Fox News</a></span></p><div class="conns"><b class="sup">supports</b> → THE question: Was Clancy criminally responsible on Jan 24, 2023? <i>(involuntary-intoxication theory)</i><br><b class="sup">supports</b> → Will involuntary manslaughter be on the verdict slip? <i>(defense: 'You can't try this case in a vacuum')</i></div></div>
+<div class="card"><span class="badge verified">resolved</span><h4 style="font-family:var(--serif);margin:8px 0 4px">RESOLVED: the McLean TikTok dispute</h4><p style="font-size:14px">A former McLean social worker posted a TikTok disputing the prosecution's 'premier medical institution' framing and was proposed as a defense witness. Judge Sullivan found her credible but excluded the testimony for 'limited materiality.' How a viral claim met the record: it got a hearing, and a ruling.</p><p style="margin-top:6px"><span class="srcs">— <a href="https://www.nbcboston.com/news/local/lindsay-clancy-trial-day-16-live-stream-live-updates/4000212/" rel="noopener" target="_blank">NBC Boston</a></span></p></div></div>
+<p style="margin-top:12px"><a class="btn" href="#submit">Add your theory</a> <span style="color:var(--mut);font-size:13px">Drag cards to arrange · drag the felt to pan · scroll or buttons to zoom</span></p>
 <script>
 (function(){
-var DATA={"q-responsibility":{"title":"THE question: Was Clancy criminally responsible on Jan 24, 2023?","body":"Under Commonwealth v. McHoul, she is not responsible if mental disease or defect left her without substantial capacity either to appreciate wrongfulness OR to conform her conduct to law. The Commonwealth must prove responsibility beyond a reasonable doubt.","status":"open","type":"question","sources":[{"outlet":"Commonwealth v. McHoul, 352 Mass. 544 (1967)","url":"https://law.justia.com/cases/massachusetts/supreme-court/volumes/352/352mass544.html"}],"traction":null,"issue":null},"q-slip":{"title":"Will involuntary manslaughter be on the verdict slip?","body":"Defense wants it as a lesser option; prosecution says specific intent to kill forecloses it. Ruling pending as jury instructions are finalized.","status":"open","type":"question","sources":[{"outlet":"Boston 25 News","url":"https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-defense-expected-call-final-witness-before-resting/3SY5KO3XLBG5NJ5F3S2VCFJKUY/"},{"outlet":"Boston Globe","url":"https://www.bostonglobe.com/2026/08/20/metro/lindsay-clancy-trial-live-updates/"}],"traction":null,"issue":null},"f-uncontested":{"title":"Uncontested: Clancy caused the deaths","body":"Defense counsel in openings: she 'is aware that she killed her children and is not trying to deny that.' The trial is about criminal responsibility, not identity.","status":"verified","type":"fact","sources":[{"outlet":"Court TV","url":"https://www.courttv.com/news/lindsay-clancy-trial-opening-statements-set-for-mom-accused-of-killing-her-3-children/"}],"traction":null,"issue":null},"f-resnick":{"title":"Resnick (defense): postpartum psychosis, command hallucinations","body":"'Altruistic filicide — a murder committed out of love, rather than hostility.' 'Psychosis can indeed wax and wane.' Evaluated her four months after the deaths.","status":"verified","type":"testimony","sources":[{"outlet":"Boston Globe","url":"https://www.bostonglobe.com/2026/08/21/metro/lindsay-clancy-trial-mack-resnick/"},{"outlet":"Court TV","url":"https://www.courttv.com/news/she-was-a-puppet-and-someone-else-was-pulling-the-strings-lindsay-clancys-defense-rests-after-doctor-says-she-wasnt-psychotic-every-minute/"}],"traction":null,"issue":null},"f-zeizel":{"title":"Zeizel (defense): could not tell right from wrong","body":"Saw Clancy ~60 times over three years. 'Intrusive thoughts are unrelenting.' Concluded she 'was unable to conform her behavior to the rule of law' on Jan 24.","status":"verified","type":"testimony","sources":[{"outlet":"PBS NewsHour","url":"https://www.pbs.org/newshour/nation/lindsay-clancys-defense-rests-at-trial-over-whether-postpartum-psychosis-drove-her-to-killings"},{"outlet":"ABC7","url":"https://abc7chicago.com/post/lindsay-clancy-trial-day-16-defense-expert-suggests-clancys-health-care-providers-missed-warning-signs/19702385/"}],"traction":null,"issue":null},"f-voice":{"title":"The reported voice","body":"Zeizel: she reported 'a male voice ordering her' that she 'had no choice but to kill her children. And kill herself.' Chaplain Cavanaugh: a 'persistent' male voice threatening her and the children's safety.","status":"verified","type":"testimony","sources":[{"outlet":"Boston 25 News","url":"https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-defense-continues-case-mother-in-law-expected-testify/KVMXBQP4DJHZZHO4FSXAGDC3TA/"},{"outlet":"Boston Globe","url":"https://www.bostonglobe.com/2026/08/20/metro/lindsay-clancy-trial-live-updates/"}],"traction":null,"issue":null},"f-mack":{"title":"Mack (rebuttal): depression, not psychosis","body":"Interviewed Clancy twice in April 2026. Major depressive disorder; she 'methodically killed her children one by one' while knowing it was wrong and could have stopped. 'I don't know that that feeling or that belief is necessarily psychotic.'","status":"verified","type":"testimony","sources":[{"outlet":"Boston Globe","url":"https://www.bostonglobe.com/2026/08/21/metro/lindsay-clancy-trial-mack-resnick/"},{"outlet":"Court TV","url":"https://www.courttv.com/news/she-was-a-puppet-and-someone-else-was-pulling-the-strings-lindsay-clancys-defense-rests-after-doctor-says-she-wasnt-psychotic-every-minute/"}],"traction":null,"issue":null},"f-tufts":{"title":"Tufts: 'no signs of psychosis' the day before","body":"Her treating psychiatrist saw no psychosis or mania at the Jan 23 telehealth visit; Clancy denied suicidal or homicidal ideation. Cross: 14 visits all telehealth, limited postpartum experience, never got other providers' records.","status":"verified","type":"testimony","sources":[{"outlet":"CBS Boston","url":"https://www.cbsnews.com/boston/news/lindsay-clancy-trial-watch-live-day-10-jennifer-tufts/"},{"outlet":"CBS News","url":"https://www.cbsnews.com/news/lindsay-clancy-trial-key-moments/"}],"traction":null,"issue":null},"f-searches":{"title":"The digital record","body":"Phone/laptop forensics: 'ketamine for suicide ideation' (Jan 18), 'symptoms of postpartum psychosis' (Jan 19), 'Can you treat a sociopath' (Jan 20), a suicide-methods page visit (Aug 2022), and an Oct 25, 2022 note: 'I'm sad and depressed. I can't parent my 3rd child like my first.'","status":"verified","type":"exhibit","sources":[{"outlet":"Boston 25 News","url":"https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-testimony-continues-after-jurors-see-autopsy-photos-children/XUFQLDRTGZGLJKNQXRXPFS5OAY/"},{"outlet":"Boston 25 News","url":"https://www.boston25news.com/news/local/lindsay-clancy-live-updates-trial-enters-4th-week-testimony/GS4743ZE7FBALCAAEY7VXSMUJ4/"}],"traction":null,"issue":null},"f-planning":{"title":"Prosecution's planning theory","body":"Openings: she searched routes and takeout, took the children to the basement, strangled them with exercise bands. Whiffin's Apple Health data: stair climbs 5:33/5:38 p.m. Theory: she wanted to 'take them with her.'","status":"verified","type":"testimony","sources":[{"outlet":"Court TV","url":"https://www.courttv.com/news/lindsay-clancy-trial-opening-statements-set-for-mom-accused-of-killing-her-3-children/"},{"outlet":"WBUR","url":"https://www.wbur.org/news/2026/08/17/prosecution-rests-murder-trial-lindsay-clancy"}],"traction":null,"issue":null},"f-nurses":{"title":"The clinicians who saw no danger to the children","body":"Jollotta: suicidal ideation documented, but 'never had thoughts on harming her children.' Paul: intake denied ideation; sleep was the concern. Dukes: 'frequent suicide ideation' Dec 2, improved by Dec 9. The pediatrician saw Cora that morning — routine.","status":"verified","type":"testimony","sources":[{"outlet":"Boston 25 News","url":"https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-more-medical-professionals-testify-today/3WYJV7DOCJEDLOHCHANTCDP6SQ/"},{"outlet":"Boston 25 News","url":"https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-medical-examiner-counselor-testify-12th-day-testimony/RBHOHTBAEVH5PK4L6Y3A5D7WSM/"}],"traction":null,"issue":null},"f-meds":{"title":"The medication thread","body":"Defense: '13 different psychiatric medications' prescribed; involuntary intoxication through over-prescription. Toxicology: 4–5 benzodiazepines in her system, mostly therapeutic levels; one 'a little elevated.' Her mother: 'The medication was pretty much just destroying her mind.'","status":"verified","type":"testimony","sources":[{"outlet":"WBUR","url":"https://www.wbur.org/news/2026/07/27/lindsay-clancy-trial-opening-statements"},{"outlet":"Boston Globe","url":"https://www.bostonglobe.com/2026/08/05/metro/lindsay-clancy-trial-live-updates/"},{"outlet":"CBS News","url":"https://www.cbsnews.com/news/lindsay-clancy-trial-key-moments/"},{"outlet":"Fox News","url":"https://www.foxnews.com/live-news/lindsay-clancy-murder-trial-day-16"}],"traction":null,"issue":null},"r-mclean":{"title":"RESOLVED: the McLean TikTok dispute","body":"A former McLean social worker posted a TikTok disputing the prosecution's 'premier medical institution' framing and was proposed as a defense witness. Judge Sullivan found her credible but excluded the testimony for 'limited materiality.' How a viral claim met the record: it got a hearing, and a ruling.","status":"resolved","type":"resolved","sources":[{"outlet":"NBC Boston","url":"https://www.nbcboston.com/news/local/lindsay-clancy-trial-day-16-live-stream-live-updates/4000212/"}],"traction":null,"issue":null}};
+var DATA={"q-responsibility":{"title":"THE question: Was Clancy criminally responsible on Jan 24, 2023?","body":"Under Commonwealth v. McHoul, she is not responsible if mental disease or defect left her without substantial capacity either to appreciate wrongfulness OR to conform her conduct to law. The Commonwealth must prove responsibility beyond a reasonable doubt.","bcls":"open","blabel":"before the jury","sources":[{"outlet":"Commonwealth v. McHoul, 352 Mass. 544 (1967)","url":"https://law.justia.com/cases/massachusetts/supreme-court/volumes/352/352mass544.html"}],"traction":null,"issue":null,"conns":"<div class=\"conns\">← Resnick (defense): postpartum psychosis, command hallucinations <b class=\"sup\">supports</b> this <i>(defense expert opinion)</i><br>← Zeizel (defense): could not tell right from wrong <b class=\"sup\">supports</b> this <i>(defense expert opinion)</i><br>← The reported voice <b class=\"sup\">supports</b> this <i>(reported hallucination; contested on cross — chaplain's notes never recorded it)</i><br>← The medication thread <b class=\"sup\">supports</b> this <i>(involuntary-intoxication theory)</i><br>← Mack (rebuttal): depression, not psychosis <b class=\"con\">disputes</b> this <i>(rebuttal expert opinion)</i><br>← Tufts: 'no signs of psychosis' the day before <b class=\"con\">disputes</b> this <i>(no psychosis observed day before — but telehealth-only, per cross)</i><br>← The digital record <b class=\"mix\">is contested on</b> this <i>(prosecution: awareness &amp; planning · defense: evidence of illness)</i><br>← Prosecution's planning theory <b class=\"con\">disputes</b> this <i>(planning suggests capacity, per Commonwealth)</i><br>← The clinicians who saw no danger to the children <b class=\"mix\">is contested on</b> this <i>(no observed danger to children · defense: the system missed it)</i><br>← Uncontested: Clancy caused the deaths <b class=\"ctx\">gives context to</b> this <i>(why responsibility is the only question)</i></div>","thread":null},"q-slip":{"title":"Will involuntary manslaughter be on the verdict slip?","body":"Defense wants it as a lesser option; prosecution says specific intent to kill forecloses it. Ruling pending as jury instructions are finalized.","bcls":"open","blabel":"before the jury","sources":[{"outlet":"Boston 25 News","url":"https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-defense-expected-call-final-witness-before-resting/3SY5KO3XLBG5NJ5F3S2VCFJKUY/"},{"outlet":"Boston Globe","url":"https://www.bostonglobe.com/2026/08/20/metro/lindsay-clancy-trial-live-updates/"}],"traction":null,"issue":null,"conns":"<div class=\"conns\">← Prosecution's planning theory <b class=\"con\">disputes</b> this <i>(specific intent forecloses involuntary manslaughter, per Commonwealth)</i><br>← The medication thread <b class=\"sup\">supports</b> this <i>(defense: 'You can't try this case in a vacuum')</i></div>","thread":null},"f-uncontested":{"title":"Uncontested: Clancy caused the deaths","body":"Defense counsel in openings: she 'is aware that she killed her children and is not trying to deny that.' The trial is about criminal responsibility, not identity.","bcls":"verified","blabel":"from the record","sources":[{"outlet":"Court TV","url":"https://www.courttv.com/news/lindsay-clancy-trial-opening-statements-set-for-mom-accused-of-killing-her-3-children/"}],"traction":null,"issue":null,"conns":"<div class=\"conns\"><b class=\"ctx\">gives context to</b> → THE question: Was Clancy criminally responsible on Jan 24, 2023? <i>(why responsibility is the only question)</i></div>","thread":null},"f-resnick":{"title":"Resnick (defense): postpartum psychosis, command hallucinations","body":"'Altruistic filicide — a murder committed out of love, rather than hostility.' 'Psychosis can indeed wax and wane.' Evaluated her four months after the deaths.","bcls":"verified","blabel":"from the record","sources":[{"outlet":"Boston Globe","url":"https://www.bostonglobe.com/2026/08/21/metro/lindsay-clancy-trial-mack-resnick/"},{"outlet":"Court TV","url":"https://www.courttv.com/news/she-was-a-puppet-and-someone-else-was-pulling-the-strings-lindsay-clancys-defense-rests-after-doctor-says-she-wasnt-psychotic-every-minute/"}],"traction":null,"issue":null,"conns":"<div class=\"conns\"><b class=\"sup\">supports</b> → THE question: Was Clancy criminally responsible on Jan 24, 2023? <i>(defense expert opinion)</i></div>","thread":null},"f-zeizel":{"title":"Zeizel (defense): could not tell right from wrong","body":"Saw Clancy ~60 times over three years. 'Intrusive thoughts are unrelenting.' Concluded she 'was unable to conform her behavior to the rule of law' on Jan 24.","bcls":"verified","blabel":"from the record","sources":[{"outlet":"PBS NewsHour","url":"https://www.pbs.org/newshour/nation/lindsay-clancys-defense-rests-at-trial-over-whether-postpartum-psychosis-drove-her-to-killings"},{"outlet":"ABC7","url":"https://abc7chicago.com/post/lindsay-clancy-trial-day-16-defense-expert-suggests-clancys-health-care-providers-missed-warning-signs/19702385/"}],"traction":null,"issue":null,"conns":"<div class=\"conns\"><b class=\"sup\">supports</b> → THE question: Was Clancy criminally responsible on Jan 24, 2023? <i>(defense expert opinion)</i></div>","thread":null},"f-voice":{"title":"The reported voice","body":"Zeizel: she reported 'a male voice ordering her' that she 'had no choice but to kill her children. And kill herself.' Chaplain Cavanaugh: a 'persistent' male voice threatening her and the children's safety.","bcls":"verified","blabel":"from the record","sources":[{"outlet":"Boston 25 News","url":"https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-defense-continues-case-mother-in-law-expected-testify/KVMXBQP4DJHZZHO4FSXAGDC3TA/"},{"outlet":"Boston Globe","url":"https://www.bostonglobe.com/2026/08/20/metro/lindsay-clancy-trial-live-updates/"}],"traction":null,"issue":null,"conns":"<div class=\"conns\"><b class=\"sup\">supports</b> → THE question: Was Clancy criminally responsible on Jan 24, 2023? <i>(reported hallucination; contested on cross — chaplain's notes never recorded it)</i></div>","thread":null},"f-mack":{"title":"Mack (rebuttal): depression, not psychosis","body":"Interviewed Clancy twice in April 2026. Major depressive disorder; she 'methodically killed her children one by one' while knowing it was wrong and could have stopped. 'I don't know that that feeling or that belief is necessarily psychotic.'","bcls":"verified","blabel":"from the record","sources":[{"outlet":"Boston Globe","url":"https://www.bostonglobe.com/2026/08/21/metro/lindsay-clancy-trial-mack-resnick/"},{"outlet":"Court TV","url":"https://www.courttv.com/news/she-was-a-puppet-and-someone-else-was-pulling-the-strings-lindsay-clancys-defense-rests-after-doctor-says-she-wasnt-psychotic-every-minute/"}],"traction":null,"issue":null,"conns":"<div class=\"conns\"><b class=\"con\">disputes</b> → THE question: Was Clancy criminally responsible on Jan 24, 2023? <i>(rebuttal expert opinion)</i></div>","thread":null},"f-tufts":{"title":"Tufts: 'no signs of psychosis' the day before","body":"Her treating psychiatrist saw no psychosis or mania at the Jan 23 telehealth visit; Clancy denied suicidal or homicidal ideation. Cross: 14 visits all telehealth, limited postpartum experience, never got other providers' records.","bcls":"verified","blabel":"from the record","sources":[{"outlet":"CBS Boston","url":"https://www.cbsnews.com/boston/news/lindsay-clancy-trial-watch-live-day-10-jennifer-tufts/"},{"outlet":"CBS News","url":"https://www.cbsnews.com/news/lindsay-clancy-trial-key-moments/"}],"traction":null,"issue":null,"conns":"<div class=\"conns\"><b class=\"con\">disputes</b> → THE question: Was Clancy criminally responsible on Jan 24, 2023? <i>(no psychosis observed day before — but telehealth-only, per cross)</i></div>","thread":null},"f-searches":{"title":"The digital record","body":"Phone/laptop forensics: 'ketamine for suicide ideation' (Jan 18), 'symptoms of postpartum psychosis' (Jan 19), 'Can you treat a sociopath' (Jan 20), a suicide-methods page visit (Aug 2022), and an Oct 25, 2022 note: 'I'm sad and depressed. I can't parent my 3rd child like my first.'","bcls":"verified","blabel":"from the record","sources":[{"outlet":"Boston 25 News","url":"https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-testimony-continues-after-jurors-see-autopsy-photos-children/XUFQLDRTGZGLJKNQXRXPFS5OAY/"},{"outlet":"Boston 25 News","url":"https://www.boston25news.com/news/local/lindsay-clancy-live-updates-trial-enters-4th-week-testimony/GS4743ZE7FBALCAAEY7VXSMUJ4/"}],"traction":null,"issue":null,"conns":"<div class=\"conns\"><b class=\"mix\">is contested on</b> → THE question: Was Clancy criminally responsible on Jan 24, 2023? <i>(prosecution: awareness &amp; planning · defense: evidence of illness)</i></div>","thread":null},"f-planning":{"title":"Prosecution's planning theory","body":"Openings: she searched routes and takeout, took the children to the basement, strangled them with exercise bands. Whiffin's Apple Health data: stair climbs 5:33/5:38 p.m. Theory: she wanted to 'take them with her.'","bcls":"verified","blabel":"from the record","sources":[{"outlet":"Court TV","url":"https://www.courttv.com/news/lindsay-clancy-trial-opening-statements-set-for-mom-accused-of-killing-her-3-children/"},{"outlet":"WBUR","url":"https://www.wbur.org/news/2026/08/17/prosecution-rests-murder-trial-lindsay-clancy"}],"traction":null,"issue":null,"conns":"<div class=\"conns\"><b class=\"con\">disputes</b> → THE question: Was Clancy criminally responsible on Jan 24, 2023? <i>(planning suggests capacity, per Commonwealth)</i><br><b class=\"con\">disputes</b> → Will involuntary manslaughter be on the verdict slip? <i>(specific intent forecloses involuntary manslaughter, per Commonwealth)</i></div>","thread":null},"f-nurses":{"title":"The clinicians who saw no danger to the children","body":"Jollotta: suicidal ideation documented, but 'never had thoughts on harming her children.' Paul: intake denied ideation; sleep was the concern. Dukes: 'frequent suicide ideation' Dec 2, improved by Dec 9. The pediatrician saw Cora that morning — routine.","bcls":"verified","blabel":"from the record","sources":[{"outlet":"Boston 25 News","url":"https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-more-medical-professionals-testify-today/3WYJV7DOCJEDLOHCHANTCDP6SQ/"},{"outlet":"Boston 25 News","url":"https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-medical-examiner-counselor-testify-12th-day-testimony/RBHOHTBAEVH5PK4L6Y3A5D7WSM/"}],"traction":null,"issue":null,"conns":"<div class=\"conns\"><b class=\"mix\">is contested on</b> → THE question: Was Clancy criminally responsible on Jan 24, 2023? <i>(no observed danger to children · defense: the system missed it)</i></div>","thread":null},"f-meds":{"title":"The medication thread","body":"Defense: '13 different psychiatric medications' prescribed; involuntary intoxication through over-prescription. Toxicology: 4–5 benzodiazepines in her system, mostly therapeutic levels; one 'a little elevated.' Her mother: 'The medication was pretty much just destroying her mind.'","bcls":"verified","blabel":"from the record","sources":[{"outlet":"WBUR","url":"https://www.wbur.org/news/2026/07/27/lindsay-clancy-trial-opening-statements"},{"outlet":"Boston Globe","url":"https://www.bostonglobe.com/2026/08/05/metro/lindsay-clancy-trial-live-updates/"},{"outlet":"CBS News","url":"https://www.cbsnews.com/news/lindsay-clancy-trial-key-moments/"},{"outlet":"Fox News","url":"https://www.foxnews.com/live-news/lindsay-clancy-murder-trial-day-16"}],"traction":null,"issue":null,"conns":"<div class=\"conns\"><b class=\"sup\">supports</b> → THE question: Was Clancy criminally responsible on Jan 24, 2023? <i>(involuntary-intoxication theory)</i><br><b class=\"sup\">supports</b> → Will involuntary manslaughter be on the verdict slip? <i>(defense: 'You can't try this case in a vacuum')</i></div>","thread":null},"r-mclean":{"title":"RESOLVED: the McLean TikTok dispute","body":"A former McLean social worker posted a TikTok disputing the prosecution's 'premier medical institution' framing and was proposed as a defense witness. Judge Sullivan found her credible but excluded the testimony for 'limited materiality.' How a viral claim met the record: it got a hearing, and a ruling.","bcls":"verified","blabel":"resolved","sources":[{"outlet":"NBC Boston","url":"https://www.nbcboston.com/news/local/lindsay-clancy-trial-day-16-live-stream-live-updates/4000212/"}],"traction":null,"issue":null,"conns":"","thread":null}};
+var EDGES=[{"f":"f-resnick","t":"q-responsibility"},{"f":"f-zeizel","t":"q-responsibility"},{"f":"f-voice","t":"q-responsibility"},{"f":"f-meds","t":"q-responsibility"},{"f":"f-mack","t":"q-responsibility"},{"f":"f-tufts","t":"q-responsibility"},{"f":"f-searches","t":"q-responsibility"},{"f":"f-planning","t":"q-responsibility"},{"f":"f-nurses","t":"q-responsibility"},{"f":"f-uncontested","t":"q-responsibility"},{"f":"f-planning","t":"q-slip"},{"f":"f-meds","t":"q-slip"}];
+var SLUG="lindsay-clancy",REPO="evesloan/gavelboard",NW=210,NH=78;
 var wrap=document.getElementById('boardwrap'),svg=document.getElementById('boardsvg'),vp=document.getElementById('viewport');
-var tx=0,ty=0,scale=1,dragging=false,sx=0,sy=0;
-function apply(){vp.setAttribute('transform','translate('+tx+','+ty+') scale('+scale+')')}
-wrap.addEventListener('mousedown',function(e){dragging=true;sx=e.clientX-tx;sy=e.clientY-ty});
-window.addEventListener('mousemove',function(e){if(dragging){tx=e.clientX-sx;ty=e.clientY-sy;apply()}});
-window.addEventListener('mouseup',function(){dragging=false});
-wrap.addEventListener('wheel',function(e){e.preventDefault();var d=e.deltaY<0?1.1:0.9;scale=Math.min(2.5,Math.max(0.4,scale*d));apply()},{passive:false});
+var toast=document.getElementById('btoast');
+var tx=0,ty=0,scale=1;
+var offsets={};try{offsets=JSON.parse(localStorage.getItem('gb-layout-'+SLUG)||'{}')}catch(e){offsets={}}
+function saveOffsets(){try{localStorage.setItem('gb-layout-'+SLUG,JSON.stringify(offsets))}catch(e){}}
+var nodeEls={};document.querySelectorAll('.node').forEach(function(g){nodeEls[g.getAttribute('data-id')]=g});
+function posOf(id){var g=nodeEls[id];if(!g)return null;var o=offsets[id]||{x:0,y:0};return{x:+g.getAttribute('data-bx')+o.x,y:+g.getAttribute('data-by')+o.y}}
+function applyNode(id){var g=nodeEls[id],p=posOf(id);if(g&&p)g.setAttribute('transform','translate('+p.x+','+p.y+')')}
+var edgeEls=document.querySelectorAll('path.edge');
+function drawEdges(){edgeEls.forEach(function(p){
+  var a=posOf(p.getAttribute('data-from')),b=posOf(p.getAttribute('data-to'));if(!a||!b)return;
+  var x1=a.x+NW/2,y1=a.y+NH/2,x2=b.x+NW/2,y2=b.y+NH/2;
+  p.setAttribute('d','M'+x1+','+y1+' Q'+((x1+x2)/2)+','+((y1+y2)/2+28)+' '+x2+','+y2);
+})}
+Object.keys(nodeEls).forEach(applyNode);drawEdges();
+function applyView(){vp.setAttribute('transform','translate('+tx+','+ty+') scale('+scale+')')}
+function zoom(f){scale=Math.min(2.5,Math.max(0.35,scale*f));applyView()}
+document.getElementById('bz-in').onclick=function(){zoom(1.25)};
+document.getElementById('bz-out').onclick=function(){zoom(0.8)};
+document.getElementById('bz-fit').onclick=function(){tx=0;ty=0;scale=1;offsets={};saveOffsets();Object.keys(nodeEls).forEach(applyNode);drawEdges();applyView()};
+var mode=null,sx=0,sy=0,startOff=null,dragId=null,movedFar=false;
+wrap.addEventListener('mousedown',function(e){
+  var g=e.target.closest('.node');movedFar=false;sx=e.clientX;sy=e.clientY;
+  if(g){mode='node';dragId=g.getAttribute('data-id');var o=offsets[dragId]||{x:0,y:0};startOff={x:o.x,y:o.y}}
+  else{mode='pan';startOff={x:tx,y:ty}}
+});
+window.addEventListener('mousemove',function(e){
+  if(!mode)return;var dx=e.clientX-sx,dy=e.clientY-sy;
+  if(Math.abs(dx)+Math.abs(dy)>4)movedFar=true;
+  if(mode==='pan'){tx=startOff.x+dx;ty=startOff.y+dy;applyView()}
+  else{offsets[dragId]={x:startOff.x+dx/scale,y:startOff.y+dy/scale};applyNode(dragId);drawEdges()}
+});
+window.addEventListener('mouseup',function(){if(mode==='node'&&movedFar)saveOffsets();mode=null;dragId=null});
+wrap.addEventListener('wheel',function(e){e.preventDefault();zoom(e.deltaY<0?1.1:0.9)},{passive:false});
 var touch=null;
 wrap.addEventListener('touchstart',function(e){if(e.touches.length===1){touch={x:e.touches[0].clientX-tx,y:e.touches[0].clientY-ty}}},{passive:true});
-wrap.addEventListener('touchmove',function(e){if(touch&&e.touches.length===1){tx=e.touches[0].clientX-touch.x;ty=e.touches[0].clientY-touch.y;apply()}},{passive:true});
+wrap.addEventListener('touchmove',function(e){if(touch&&e.touches.length===1){tx=e.touches[0].clientX-touch.x;ty=e.touches[0].clientY-touch.y;applyView()}},{passive:true});
 wrap.addEventListener('touchend',function(){touch=null});
-svg.addEventListener('click',function(e){
-  var g=e.target.closest('.node');if(!g)return;
-  var n=DATA[g.getAttribute('data-id')];if(!n)return;
+var connectFrom=null;
+function say(html,sticky){toast.innerHTML=html;toast.style.display='block';if(!sticky){clearTimeout(say._t);say._t=setTimeout(function(){toast.style.display='none'},6000)}}
+function esc2(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;')}
+function threadHtml(id,n){
+  var t=n.thread;var out='<div class="conns" style="border-top-style:solid"><b>Discussion</b>';
+  if(t&&t.comments&&t.comments.length){
+    out+=t.comments.map(function(cm){return '<p style="margin:6px 0"><b style="color:var(--acc)">'+esc2(cm.user)+'</b> <span style="font-size:11px">'+cm.ts.slice(0,10)+'</span><br>'+esc2(cm.body)+'</p>'}).join('');
+    out+='<a href="'+t.url+'" target="_blank" rel="noopener">Reply — '+t.count+' comment'+(t.count===1?'':'s')+' →</a>';
+  } else if(t){out+='<br><a href="'+t.url+'" target="_blank" rel="noopener">Be the first to comment →</a>';}
+  else{
+    var u='https://github.com/'+REPO+'/issues/new?title='+encodeURIComponent('Discussion: '+n.title.slice(0,60))+'&body='+encodeURIComponent('<!--node:'+id+' case:'+SLUG+'-->\n\n');
+    out+='<br><a href="'+u+'" target="_blank" rel="noopener">Start the discussion →</a>';
+  }
+  return out+'</div>';
+}
+function show(id){
+  var n=DATA[id];if(!n)return;
   var el=document.getElementById('detail-in');
-  var badge=n.type==='question'?'open':(n.status==='disproven'?'disproven':(n.type==='rumor'?'unverified':'verified'));
   var srcs=(n.sources||[]).map(function(s){return '<a href="'+s.url+'" target="_blank" rel="noopener">'+s.outlet+'</a>'}).join(' · ');
-  var extra=n.traction?('<p style="color:var(--mut);font-size:12.5px;margin-top:6px">Corroborated by '+n.traction.up+' · disputed by '+n.traction.down+(n.issue?' · <a href="'+n.issue+'" target="_blank" rel="noopener">discussion</a>':'')+'</p>'):'';
-  el.innerHTML='<span class="badge '+badge+'">'+(n.type==='question'?'before the jury':(n.status||n.type))+'</span><h4>'+n.title+'</h4><p>'+n.body+'</p>'+(srcs?'<p class="srcs" style="margin-top:8px">— '+srcs+'</p>':'')+extra;
+  var extra=n.traction?('<p style="color:var(--mut);font-size:12.5px;margin-top:6px">Corroborated by '+n.traction.up+' · disputed by '+n.traction.down+'</p>'):'';
+  el.innerHTML='<span class="badge '+n.bcls+'">'+n.blabel+'</span><h4>'+n.title+'</h4><p>'+n.body+'</p>'
+    +(srcs?'<p class="srcs" style="margin-top:8px">— '+srcs+'</p>':'')+n.conns+extra
+    +'<p style="margin-top:10px"><button class="linkbtn" id="connect-btn">🔗 Connect this card</button></p>'
+    +threadHtml(id,n);
   document.getElementById('detail').style.display='block';
+  document.getElementById('connect-btn').onclick=function(){
+    connectFrom=id;document.getElementById('detail').style.display='none';
+    wrap.classList.add('connecting');
+    say('<b>Connecting from:</b> '+esc2(n.title.slice(0,50))+'… — now click the card it relates to. <a href="#" id="cx">cancel</a>',true);
+    document.getElementById('cx').onclick=function(ev){ev.preventDefault();connectFrom=null;wrap.classList.remove('connecting');toast.style.display='none'};
+  };
+}
+svg.addEventListener('click',function(e){
+  if(movedFar)return;
+  var g=e.target.closest('.node');if(!g)return;
+  var id=g.getAttribute('data-id');
+  if(connectFrom&&connectFrom!==id){
+    var u='https://github.com/'+REPO+'/issues/new?template=connection.yml&case='+SLUG
+      +'&from='+encodeURIComponent(connectFrom+' — '+DATA[connectFrom].title.slice(0,60))
+      +'&to='+encodeURIComponent(id+' — '+DATA[id].title.slice(0,60));
+    window.open(u,'_blank');
+    connectFrom=null;wrap.classList.remove('connecting');
+    say('Proposed connection opened in a new tab — pick the relation, say why, submit. It joins the Board after the next pulse.');
+    return;
+  }
+  show(id);
 });
+var map=document.getElementById('boardwrap'),list=document.getElementById('boardlist');
+var bm=document.getElementById('vt-map'),bl=document.getElementById('vt-list');
+bm.onclick=function(){map.style.display='block';list.style.display='none';bm.classList.add('on');bl.classList.remove('on')};
+bl.onclick=function(){map.style.display='none';list.style.display='block';bl.classList.add('on');bm.classList.remove('on')};
+var SERIAL="2026-08-22T01:56:59.505Z";
+setInterval(function(){
+  fetch('./board-data.json',{cache:'no-store'}).then(function(r){return r.json()}).then(function(d){
+    if(d.serial&&d.serial!==SERIAL){say('The Board has been updated. <a href="#" onclick="location.reload();return false">Load the latest →</a>',true)}
+  }).catch(function(){})
+},60000);
+if(window.innerWidth>760){show("q-responsibility");}
 })();
 </script>
 
@@ -388,7 +545,7 @@ svg.addEventListener('click',function(e){
 <nav class="crumbs"><a href="#home">Home</a> › <a href="#hub">Lindsay Clancy Trial</a> › Witnesses</nav>
 
 <h1>Witness index</h1>
-<p class="sub">61 witnesses indexed from the day-by-day record (the Commonwealth called ~70 in total; days summarized only in aggregate by outlets are not itemized here). Click a day to jump to full context.</p>
+<p class="sub">61 witnesses indexed from the day-by-day record. Click a day for full context.</p>
 <div class="card" style="overflow-x:auto"><table class="witx">
 <tr><th>Witness</th><th>Role</th><th>Day</th><th>Testimony, in one line</th></tr>
 <tr><td><b>Allison Ozga</b></td><td>Sister (defense)</td><td><a href="#day-14">Day 14</a></td><td>Decline from Thanksgiving to Christmas 2022; suicidal thoughts at Christmastime after McLean discharge.</td></tr>
@@ -458,7 +615,7 @@ svg.addEventListener('click',function(e){
 
 <section class="pv-sec" id="standard"><span class="pv-label">Legal standard</span>
 <main><div class="wrap">
-<nav class="crumbs"><a href="#home">Home</a> › <a href="#hub">Lindsay Clancy Trial</a> › The legal standard</nav>
+<nav class="crumbs"><a href="#home">Home</a> › <a href="#hub">Lindsay Clancy Trial</a> › The law</nav>
 
 <h1>Lack of criminal responsibility — the McHoul standard</h1>
 <p class="sub">Plain-English explainer, drawn only from the case law, the statute, and the model jury instruction. Not legal advice.</p>
@@ -478,24 +635,17 @@ svg.addEventListener('click',function(e){
 
 <section class="pv-sec" id="submit"><span class="pv-label">Contribute</span>
 <main><div class="wrap">
-<nav class="crumbs"><a href="#home">Home</a> › Contribute</nav>
+<nav class="crumbs"><a href="#home">Home</a> › Share</nav>
 
-<h1>Add to the Board</h1>
-<p class="sub">The Board is built from the court record — and from you. Theories welcome. Accusations of uncharged people are not.</p>
+<h1>Share what you think — or what you know.</h1>
+<p class="sub" style="max-width:640px">The Board runs on two things: the record, and you. Post your read on the case, corroborate someone else's, or knock a theory down with a fact.</p>
 <div class="grid2">
-<div class="card"><h3>🧵 Post a theory</h3><p>A hypothesis about the case: what the evidence might mean, what a side's strategy is, what a ruling implies. It appears on the Board as an amber UNVERIFIED node after review.</p><p style="margin-top:10px"><a class="btn" href="https://github.com/evesloan/gavelboard/issues/new?template=theory.yml">Post a theory</a></p></div>
-<div class="card"><h3>🔗 Propose a connection</h3><p>Link two nodes: this testimony <i>supports</i> / <i>contradicts</i> / <i>explains</i> that question. Say why. Strong connections get drawn on the Board.</p><p style="margin-top:10px"><a class="btn" href="https://github.com/evesloan/gavelboard/issues/new?template=connection.yml">Propose a connection</a></p></div>
-<div class="card"><h3>📎 Submit evidence</h3><p>A published report or primary document that corroborates or disproves a node on the Board. This is the only thing that moves a node between UNVERIFIED, the record, and DISPROVEN.</p><p style="margin-top:10px"><a class="btn" href="https://github.com/evesloan/gavelboard/issues/new?template=evidence.yml">Submit evidence</a></p></div>
-<div class="card"><h3>🚩 Report something</h3><p>Doxxing, an accusation against a private person, fabricated sourcing, harassment. Reports are pulled every cycle and reviewed first.</p><p style="margin-top:10px"><a class="btn ghost" href="https://github.com/evesloan/gavelboard/issues/new?template=report.yml">Report content</a></p></div>
+<div class="card"><h3>🧵 Post a theory</h3><p>Your read on the case — what the evidence means, what a side is really doing, where this is heading. It joins the Board as a labeled theory for others to weigh in on.</p><p style="margin-top:10px"><a class="btn" href="https://github.com/evesloan/gavelboard/issues/new?template=theory.yml">Post a theory</a></p></div>
+<div class="card"><h3>📎 Back it up — or knock it down</h3><p>Found reporting or a court document that proves or disproves something on the Board? This is the move that settles arguments. Facts are the only thing that promote a theory — or retire one.</p><p style="margin-top:10px"><a class="btn" href="https://github.com/evesloan/gavelboard/issues/new?template=evidence.yml">Submit evidence</a></p></div>
+<div class="card"><h3>🔗 Connect the dots</h3><p>Think two things on the Board are linked — this testimony undercuts that question, this ruling explains that move? Propose the connection and say why.</p><p style="margin-top:10px"><a class="btn" href="https://github.com/evesloan/gavelboard/issues/new?template=connection.yml">Propose a connection</a></p></div>
+<div class="card"><h3>🚩 Report a problem</h3><p>Something that names a private person, shares personal info, fakes a source, or harasses anyone. Reports jump the queue.</p><p style="margin-top:10px"><a class="btn ghost" href="https://github.com/evesloan/gavelboard/issues/new?template=report.yml">Report content</a></p></div>
 </div>
-<h2>House rules</h2>
-<div class="card"><p>
-1. <b>Theories are about the case, not the crowd.</b> Analyze the evidence, strategies, and rulings. Do not accuse private individuals of crimes, publish anyone's personal information, or speculate about uncharged people.<br>
-2. <b>Corroboration is not verification.</b> Upvotes raise a theory's visibility. Only sources move it to the record.<br>
-3. <b>Getting disproven is honorable.</b> Disproven nodes stay on the Board, greyed out. That is the site working.<br>
-4. <b>Everything is reviewed before it appears.</b> Usually within the hour. Nothing posts to the Board unmoderated.<br>
-5. <b>A GitHub account is required to post.</b> That's the launch-version tradeoff for a board with no ads, no tracking, and no spam.
-</p></div>
+<div class="notice"><b>How posting works:</b> theories about the case itself go live within about 15 minutes after an automated check. Anything that discusses a specific person is looked at by an editor first — usually within the hour. Three posts per day per account; posting uses a free GitHub account (reading never requires one). We don't publish accusations against people who haven't been charged, or anyone's personal information — <a href="#about">here's why</a>.</div>
 
 </div></main></section>
 
@@ -504,22 +654,25 @@ svg.addEventListener('click',function(e){
 <nav class="crumbs"><a href="#home">Home</a> › About</nav>
 
 <h1>About GavelBoard</h1>
-<p class="sub">A structured, continuously re-verified record of the court cases everyone is watching.</p>
-<div class="card"><p>Liveblogs are written for the minute they're published. GavelBoard is written for the person who arrives on day 15 and asks: <i>what actually happened here?</i> We keep the running record — day by day, witness by witness, ruling by ruling — with every factual line linked to the credentialed outlet or primary legal source it came from. Around the record, the community explores what it might mean, on a Board where rumors are labeled, tested, and — when a fact lands — retired in public.</p></div>
+<p class="sub">Arming everyone watching a big trial with the same thing: the facts, sourced.</p>
+<div class="card"><p>Liveblogs are written for the minute they're published. GavelBoard is written for the person who arrives on day 15 and asks: <i>what actually happened here?</i> We keep the running record — day by day, witness by witness, ruling by ruling — with every factual line linked to the credentialed outlet or primary legal source it came from. Around the record, the community explores what it might mean, on a Board where theories are labeled, tested together, and — when a fact lands — settled in public.</p></div>
 <h2>The rules this site runs on</h2>
 <div class="card"><p>
 <b>Attribution, always.</b> Facts appear here only with a named source attached. If outlets disagree, we say so and show both.<br>
 <b>The presumption of innocence is not a formality.</b> Nothing on this site asserts a defendant's guilt. We report what is alleged, argued, and decided.<br>
-<b>Rumor and record never mix.</b> Community theories are amber and labeled UNVERIFIED wherever they appear. Popularity cannot promote them; only sourcing can.<br>
-<b>Verdicts get special handling.</b> A verdict is published as established fact only once multiple independent credentialed outlets report it — before that, you'll see the attributed wire items and a verdict-watch notice.<br>
+<b>Rumor and record never mix.</b> Community theories are amber and labeled wherever they appear. Popularity cannot promote them; only sourcing can.<br>
+<b>Verdicts get special handling.</b> A verdict is published as established fact only once multiple independent credentialed outlets report it — before that, you'll see the attributed headlines and a verdict-watch notice.<br>
 <b>Corrections are public.</b> Errors are fixed in place with a note, not silently.<br>
 <b>Dignity.</b> These cases involve real grief. We cover the proceeding — not autopsy detail beyond the legal facts, not the victims' worst day as content.
 </p></div>
+<h2>Why we don't host accusations against the uncharged</h2>
+<div class="card"><p>The hardest question a case like this raises is often about someone who isn't on trial — a spouse, an institution, an investigator. There's a right way and a wrong way to unpack that. The wrong way is a crowd naming a private person as a suspect: it's how an innocent student got named as the Boston Marathon bomber, and how a university professor with no connection to the Idaho murders ended up suing a TikTok sleuth for defamation — real damage, to real people, that no correction ever fully unwinds. So that's the one thing the Board doesn't do.</p>
+<p style="margin-top:8px">The right way is here, and it's powerful: question <b>conduct and institutions</b> freely — the prosecution's charging choices, the defense's strategy, a hospital system's failures, what investigators missed; all of that is on the Board now. And when scrutiny of a person is already part of the public record — a cross-examination, a court filing, published reporting — bring it as <a href="#submit">evidence</a>, and it enters the record with its source attached. Questions travel here on facts, not on names.</p></div>
 <h2>Who runs this</h2>
-<div class="card"><p>GavelBoard is operated by a small team using automated monitoring (the wire refreshes every 15 minutes) with human-reviewed publication for anything beyond attributed headlines. It is independent and unaffiliated with any court, party, or outlet. Contact / corrections: <a href="https://github.com/evesloan/gavelboard/issues">GitHub issues</a>.</p></div>
+<div class="card"><p>GavelBoard is operated by a small team using automated monitoring (updates refresh every 15 minutes), with editor review of community posts that discuss specific people, and removal power over everything. The site may run advertising and analytics; anything sponsored or affiliate-linked is labeled where it appears, and none of it touches the record. GavelBoard is independent and unaffiliated with any court, party, or outlet. Contact / corrections: <a href="https://github.com/evesloan/gavelboard/issues">GitHub issues</a>.</p></div>
 
 </div></main></section>
 <footer><div class="wrap">
-  <p><b>GavelBoard</b> is a structured, continuously re-verified record of high-attention court cases. Every factual line links to its source. <span class="hb">◉ Last build: 2026-08-22T01:33:20.495Z</span></p>
+  <p><b>GavelBoard</b> keeps a source-linked record of high-attention court cases, re-checked automatically around the clock. <span class="hb">◉ Last build: 2026-08-22T01:56:59.505Z</span></p>
   <p class="disc">GavelBoard reports on allegations and court proceedings; every defendant is presumed innocent unless and until proven guilty. Community items marked UNVERIFIED are submitted theories, not established facts, and are labeled as such. This site summarizes and links to coverage by credentialed news organizations and to primary legal sources; quoted material belongs to the cited outlets. Corrections: open an issue at <a href="https://github.com/evesloan/gavelboard/issues">github.com/evesloan/gavelboard</a>. Some outbound links may become affiliate links; if that happens they will be labeled. Nothing here is legal advice.</p>
 </div></footer>

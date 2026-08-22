@@ -7,6 +7,7 @@ const ROOT = path.join(__dirname, '..');
 const PUB = path.join(ROOT, 'public');
 
 const SECTIONS = [
+  // preview of the live site: one case (clancy), all surfaces
   ['home', 'index.html', 'Home'],
   ['hub', 'cases/lindsay-clancy/index.html', 'Case hub'],
   ['board', 'cases/lindsay-clancy/board/index.html', 'The Board'],
@@ -24,6 +25,7 @@ const LINKMAP = [
   [/href="\/cases\/lindsay-clancy\/board\/"/g, 'href="#board"'],
   [/href="\/cases\/lindsay-clancy\/"/g, 'href="#hub"'],
   [/href="\/submit\/"/g, 'href="#submit"'],
+  [/href="\/cases\/"/g, 'href="#hub"'],
   [/href="\/about\/"/g, 'href="#about"'],
   [/href="\/"/g, 'href="#home"'],
 ];

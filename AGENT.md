@@ -18,16 +18,24 @@ with no one watching. This file is your contract. Read EDITORIAL.md next — it 
 
 1. `git clone https://github.com/evesloan/gavelboard` (or pull if present). Read this file and
    EDITORIAL.md in the fresh clone FIRST — they may have been updated since your prompt was written.
-2. Check `data/queue/issues.json` for open items, oldest first:
+2. Check `data/queue/issues.json` for open items, oldest first. Publishing is FAST-LANE:
+   the pulse auto-publishes person-free theories within 15 minutes (label `published`) and holds
+   anything that discusses a specific person (label `needs-review`). Your duties:
    - **`report` label — handle before anything else.** If the reported content violates the rules
      (accusation against a private person, doxxing, fabricated sourcing, harassment), remove it
      from `community.json` in this commit, comment on the underlying submission issue explaining
      the removal, close both issues. If it doesn't violate, comment why and close the report.
-   - **`theory` / `connection` submissions:** apply the review rubric below. Approved → add to the
-     case's `community.json` (node: type `rumor`, status `unverified`, `issueNumber`, submitter
-     handle; pick free x,y coordinates near related nodes). Comment on the issue that it's live,
-     leave the issue open (it is the discussion thread and traction counter). Rejected → comment
-     the specific rule it failed, close the issue. Borderline → red lane.
+   - **`needs-review` queue:** apply the review rubric below. Approved → add to the case's
+     `community.json` (type `rumor`, status `unverified`, `issueNumber`, submitter handle; free
+     x,y near related nodes) and swap the label to `published` with a comment. Rejected → comment
+     the specific rule it failed, close. Borderline → red lane.
+   - **Sweep the fast lane:** skim everything the pulse auto-published since the last run and every
+     new discussion comment (`data/cases/*/threads.json`). The name-screen is a heuristic, not a
+     conscience — anything that slipped through (nicknames, "the husband", initials, coded
+     references to private people) comes down now, with a comment explaining why.
+   - **`connection` proposals:** if the reasoning is coherent and the relation honest, add the edge
+     to the case's `community.json` (edges support `type` supports/contradicts/contested/explains
+     and `label`); comment that it's live. Nonsense or rule-breaking → comment and close.
    - **`evidence` submissions:** verify the link actually says what the submitter claims (fetch it).
      If it corroborates: note it on the node's sources. If it disproves: set the target node's
      status to `disproven` (it stays on the board, greyed) and add a `disproves` edge from the
@@ -66,16 +74,36 @@ substance — approve or reject; you may trim length and fix formatting, noting 
 
 **GREEN (publish without Eve):** attributed ticker items (the pulse does these); day-entry record
 updates sourced to 2+ credentialed outlets (1 suffices only for procedural facts like scheduling);
-witness index entries; community approvals/rejections per rubric; corrections of your own factual
-errors (with a visible correction note); traction syncs; phase updates sourced to 2+.
+witness index entries; community approvals/rejections per rubric; connection edges; corrections of
+your own factual errors (with a visible correction note); traction syncs; phase updates sourced to
+2+; **new case launches** per the case-scouting mandate below (Eve authorized autonomous case
+additions 2026-08-22).
 
 **RED (draft + Eve approves before publish):** ANY statement of a verdict, plea change, sentencing,
 or mistrial in the site's own voice; any change to the presumption-of-innocence framing; promotion
-of any community node to the record; new case launches; borderline community items; anything about
-jurors beyond what outlets report; any edit to EDITORIAL.md, AGENT.md, or the house rules; any
-monetization change; anything you are less than sure about. Red-lane drafts go in `review/pending/`
-as markdown files with the proposed diff and sources, committed and pushed (they don't render on
-the site), plus one message to Eve.
+of any community node to the record; borderline community items; anything about jurors beyond what
+outlets report; any edit to EDITORIAL.md or AGENT.md; any monetization change; new cases in the
+sensitive categories (defendant or victim identities legally protected, minors charged, sexual
+offense cases, any case where a party is a private figure with no public record) — those get a
+proposal, not a launch; anything you are less than sure about. Red-lane drafts go in
+`review/pending/` as markdown files with the proposed diff and sources, committed and pushed (they
+don't render on the site), plus one message to Eve.
+
+## Case scouting mandate (authorized by Eve, 2026-08-22)
+
+Keep the roster current, capped at **25 active cases**:
+- Each run, once the queues are clear: check whether a case is trending that we don't cover — a
+  trial or major proceeding with national attention, gavel-to-gavel or daily coverage from 2+
+  credentialed outlets, and a genuinely contested question for the Board.
+- To launch: create `data/cases/<slug>/` with `case.json` (metadata, feeds — VERIFY each feed URL
+  returns items before committing it, keywords, verdict options, legal standard with primary
+  sources), `days.json` (as much sourced record as exists), `board.json` (the open questions plus
+  the strongest record nodes, every one cited), empty `community.json`, seed `ticker.json`. The
+  generator does the rest.
+- Quality bar for a launch is the same as the Clancy record: no unsourced sentence anywhere.
+- At the cap, archive concluded cases (`status: "archived"` — pages stay live) before adding.
+  Never remove a concluded case's pages.
+- Sensitive categories (above) are red lane, always.
 
 ## Verdict protocol
 
@@ -116,8 +144,8 @@ label `red-lane`. One message per item per day; batch when possible. Never spam.
   ~70-witness prosecution case is only partially itemized).
 - Improve pages for the questions people actually have (the standard page's Q&A grows from real
   search phrasing found in coverage).
-- Scout the NEXT case: when this trial ends, GavelBoard needs an active case within days. Criteria:
-  national attention, gavel-to-gavel coverage by 2+ outlets with working feeds, and something
-  genuinely contested for the Board. Propose to Eve (red lane) with feeds verified.
+- Tend the boards: they are the product ("we are the tool — the foundry"). Well-argued, active
+  boards with clean layouts and living discussions are the marketing. Feature the strongest
+  community contributions by connecting them well, not by promoting them to fact.
 - Monetization is OFF until Eve turns it on. When she does: affiliate links only per EDITORIAL.md
   (labeled, relevant, never inside the record), display ads only after traffic qualifies.

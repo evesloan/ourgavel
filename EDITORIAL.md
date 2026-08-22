@@ -28,12 +28,24 @@ more independent credentialed sources (or the court record itself) verifying the
 operator approval. Disproven items remain visible, marked DISPROVEN, with the disproving source —
 the site's memory of what got ruled out is part of its value.
 
+Publishing flow: theories that discuss the case without naming people publish automatically within
+minutes after a deterministic screen (rate limits, no personal information, no unlisted names);
+anything that discusses a specific person is held for editor review first, and everything —
+fast-lane included — is swept by an editor within the hour, with removal power. Speed is a
+courtesy; the labels and the wall are the contract.
+
 ## 5. What we will not host
 Accusations of crimes against people not charged. Identification of, or personal information
 about, private individuals — including jurors, witnesses' families, and submitters' targets.
 Graphic detail about victims beyond the legal facts of the charges. Content aimed at contacting,
 harassing, or "investigating" any real person. Fabricated or misattributed sourcing. These are
 removed on sight, whatever their traction, and repeat submitters are blocked.
+
+What IS open season: conduct and institutions. The prosecution's choices, the defense's strategy,
+an agency's failures, a hospital system's gaps, rulings, procedure — question all of it, hard.
+And where scrutiny of a person is already part of the public record — cross-examination, a filing,
+published reporting — it enters the Board as sourced evidence under fair report. The line is not
+"no hard questions"; it is that questions travel on facts, not on names.
 
 ## 6. Verdicts
 A verdict, sentence, mistrial, or plea change enters the record only after verification against

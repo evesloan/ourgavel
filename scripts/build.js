@@ -205,7 +205,25 @@ footer .hb{color:var(--green)}
 .legend{display:flex;gap:14px;flex-wrap:wrap;font-size:12.5px;color:var(--mut);margin:10px 0}
 .legend span::before{content:'';display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px;vertical-align:-1px}
 .lg-q::before{background:var(--violet)}.lg-f::before{background:var(--acc2)}.lg-c::before{background:var(--amber)}
-#boardwrap{position:relative;border:1px solid var(--line);border-radius:3px;overflow:hidden;height:clamp(420px,68vh,700px);cursor:grab;touch-action:none;background-color:var(--panel);background-image:repeating-linear-gradient(0deg,transparent,transparent 25px,rgba(120,95,55,.07) 25px,rgba(120,95,55,.07) 26px),repeating-linear-gradient(90deg,transparent,transparent 25px,rgba(120,95,55,.05) 25px,rgba(120,95,55,.05) 26px);box-shadow:inset 0 0 0 1px rgba(255,255,255,.3),inset 0 0 44px rgba(120,95,55,.09)}
+.bprev{padding:14px}
+.bprevlink{display:block;position:relative;margin-top:2px;border:1px solid var(--line);border-radius:3px;overflow:hidden;background:var(--panel2);text-decoration:none}
+.bprevlink svg{display:block;width:100%;height:clamp(180px,32vh,300px);pointer-events:none}
+.bprevlink:hover{border-color:var(--acc)}
+.bprevcta{position:absolute;right:10px;bottom:10px;background:var(--acc);color:#fff8ea;font-family:var(--sans);font-size:12px;font-weight:700;letter-spacing:.4px;padding:6px 12px;border-radius:2px;box-shadow:0 1px 4px rgba(40,28,10,.3)}
+.bprevlink:hover .bprevcta{background:var(--red)}
+@media(max-width:760px){.bprevlink svg{height:190px}.bprevcta{right:8px;bottom:8px;font-size:11px;padding:5px 10px}}
+#boardwrap{position:relative;border:1px solid var(--line);border-radius:3px;overflow:hidden;height:clamp(420px,68vh,700px);cursor:grab;touch-action:none;overscroll-behavior:contain;background-color:var(--panel);background-image:repeating-linear-gradient(0deg,transparent,transparent 25px,rgba(120,95,55,.07) 25px,rgba(120,95,55,.07) 26px),repeating-linear-gradient(90deg,transparent,transparent 25px,rgba(120,95,55,.05) 25px,rgba(120,95,55,.05) 26px);box-shadow:inset 0 0 0 1px rgba(255,255,255,.3),inset 0 0 44px rgba(120,95,55,.09)}
+/* On a phone the board is most of the screen, and touch-action:none meant a thumb landing
+   anywhere in it could never scroll the page -- the reader was simply stuck. So on coarse
+   pointers the browser keeps the vertical axis (page scroll, which is what a swipe up means
+   everywhere else) and we keep the horizontal one, which is the useful direction on a graph
+   this wide. Pinch still zooms. Cards keep touch-action:none of their own so dragging one
+   works in every direction -- the gesture is on an element, so there is no ambiguity. */
+@media (hover:none) and (pointer:coarse){
+  #boardwrap{touch-action:pan-y}
+  #boardsvg g.node,#boardsvg .ctanode{touch-action:none}
+}
+}
 .node rect{transition:filter .18s ease,stroke-width .18s ease}
 .node.sel rect{filter:brightness(1.3) drop-shadow(0 0 10px rgba(201,162,39,.55))}
 .node.hi rect{filter:brightness(1.12)}
@@ -1200,6 +1218,58 @@ function watchBlock(c) {
 </details>`;
 }
 
+// One definition, used by the full board and by the Overview preview. These drifting apart
+// would mean a reader sees a card in one colour on the Overview and another on the board.
+const nodeColour = n => n.type === 'question' ? 'var(--violet)'
+  : n.type === 'rumor' ? 'var(--amber)'
+  : n.status === 'disproven' ? 'var(--red)'
+  : n.type === 'resolved' ? 'var(--green)'
+  : 'var(--acc2)';
+
+/* A picture of the case's argument, on the page people actually land on.
+ * Deliberately inert: no pan, no zoom, no script, `pointer-events:none` on the drawing, and
+ * the whole thing wrapped in one link. That keeps the Overview page scrolling normally on a
+ * phone -- an interactive board here would reintroduce the exact trap we just removed from
+ * the board page -- while still showing that there is something worth opening.
+ */
+function boardPreview(c) {
+  const nodes = [...(c.board.nodes || []), ...((c.community && c.community.nodes) || [])];
+  const edges = [...(c.board.edges || []), ...((c.community && c.community.edges) || [])];
+  if (nodes.length < 2) return '';
+  const byId = Object.fromEntries(nodes.map(n => [n.id, n]));
+  const NW = 210, NH = 78;
+  const xs = nodes.map(n => n.x), ys = nodes.map(n => n.y);
+  const minX = Math.min(...xs) - 40, minY = Math.min(...ys) - 40;
+  const w = Math.max(...xs) + NW - minX + 40, h = Math.max(...ys) + NH - minY + 40;
+
+  const lines = edges.map(e => {
+    const a = byId[e.from], b = byId[e.to];
+    if (!a || !b) return '';
+    return `<line x1="${a.x + NW / 2}" y1="${a.y + NH / 2}" x2="${b.x + NW / 2}" y2="${b.y + NH / 2}" stroke="var(--line)" stroke-width="3"></line>`;
+  }).join('');
+
+  const cards = nodes.map(n => {
+    const t = String(n.title || '');
+    const clipped = t.length > 46 ? t.slice(0, 45).replace(/\s\S*$/, '') + '…' : t;
+    const words = clipped.split(' ');
+    const half = Math.ceil(words.length / 2);
+    const l1 = words.slice(0, half).join(' '), l2 = words.slice(half).join(' ');
+    return `<g><rect x="${n.x}" y="${n.y}" width="${NW}" height="${NH}" rx="6" fill="var(--panel)" stroke="${nodeColour(n)}" stroke-width="3"></rect>
+<text x="${n.x + 14}" y="${n.y + 32}" font-size="15" fill="var(--ink)">${esc(l1)}</text>
+<text x="${n.x + 14}" y="${n.y + 52}" font-size="15" fill="var(--ink)">${esc(l2)}</text></g>`;
+  }).join('');
+
+  const readerCount = nodes.filter(n => n.submittedBy).length;
+  return `<div class="card bprev" style="margin-top:16px">
+<h3 style="margin:0 0 2px">The Board</h3>
+<p class="lnote" style="margin:0 0 10px">${nodes.length} cards, ${edges.length} connections${readerCount ? `, ${readerCount} from readers` : ''} — every one carrying its own sources. This is a picture of it; open it to read the argument, connect cards, or add your own.</p>
+<a class="bprevlink" href="./board/" aria-label="Open the full board for this case">
+  <svg viewBox="${minX} ${minY} ${w} ${h}" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" role="img" aria-hidden="true" focusable="false">${lines}${cards}</svg>
+  <span class="bprevcta">Open the board &rarr;</span>
+</a>
+</div>`;
+}
+
 function hubPage(c) {
   const cc = c.case;
   const mod = modHub(c);
@@ -1225,6 +1295,7 @@ ${statusChip(c)} <span class="badge phase">${esc(shortPhase(cc.phase))}</span>
 <h1>${esc(cc.shortTitle)}</h1>
 ${caseNav(c, 'overview')}
 ${verdictBanner(c)}
+${boardPreview(c)}
 <div class="card" style="margin-top:16px">
 <p>${esc(cc.statusNow || cc.phase)} ${srcLinks(cc.statusNowSources)}</p>
 ${cc.livestream ? `<p style="margin-top:8px"><b>Watch live:</b> ${cc.livestream.sources.map(s => `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.outlet)}</a>`).join(' · ')}</p>` : ''}
@@ -1404,7 +1475,7 @@ function boardPage(c, opts = {}) {
   const xs = nodes.map(n => n.x), ys = nodes.map(n => n.y);
   const minX = Math.min(...xs) - 60, minY = Math.min(...ys) - 60;
   const w = Math.max(...xs) + NW - minX + 60, h = Math.max(...ys) + NH - minY + 60;
-  const colorFor = n => n.type === 'question' ? 'var(--violet)' : (n.type === 'rumor' ? 'var(--amber)' : n.status === 'disproven' ? 'var(--red)' : n.type === 'resolved' ? 'var(--green)' : 'var(--acc2)');
+  const colorFor = nodeColour;
   const markFor = t => t === 'supports' ? 'ah-sup' : (t === 'contradicts' || t === 'disproves') ? 'ah-con' : t === 'contested' ? 'ah-mix' : 'ah-ctx';
   const edgeEls = edges.map((e, i) => {
     const a = byId[e.from], b = byId[e.to];
@@ -1439,7 +1510,7 @@ ${commentChip}
 </defs>`;
   // The reader zone: labeled, and never empty — an invitation card sits there until theories arrive.
   const zoneX = 1160;
-  const zoneLabel = `<text x="${zoneX}" y="46" font-size="13" fill="var(--amber)" font-weight="700" letter-spacing="3" opacity="0.85">READER THEORIES</text><text x="${zoneX}" y="64" font-size="11" fill="var(--mut)">yours goes up here</text>`;
+  const zoneLabel = `<text x="${zoneX}" y="46" font-size="13" fill="var(--amber)" font-weight="700" letter-spacing="3" opacity="0.85">READERS</text><text x="${zoneX}" y="64" font-size="11" fill="var(--mut)">theories and questions go up here</text>`;
   // The composer dialog and its script are not shipped to the embed, so inside an embed every
   // one of these invitations was a dead button: tapping "tap to post" did nothing at all, with
   // no console error, on the creator's own page. Tested cross-origin in a real browser. In an
@@ -1449,17 +1520,19 @@ ${commentChip}
   const ctaLink = (hash, inner) => EMBED
     ? `<a href="${CTA_BOARD}#${hash}" target="_blank" rel="noopener">${inner}</a>`
     : inner;
+  // Two things were wrong here. A leftover transparent hit-rect at y=80 -- the THEORY card's
+  // position -- sat inside the QUESTION group, so tapping "your theory goes here" opened the
+  // question composer. And the mascot was drawn at y=170, straight across the question card,
+  // which starts at 172. Both are geometry, so both are now asserted by board-layout.test.js.
   const ctaCard = communityNodes.length ? '' : ctaLink('post=theory', `<g class="ctanode" data-compose="theory" data-case="${c.slug}" style="cursor:pointer">
-<rect x="${zoneX}" y="80" width="${NW}" height="${NH}" rx="6" fill="none" stroke="var(--amber)" stroke-width="2" stroke-dasharray="7 5"></rect>
+<rect x="${zoneX}" y="80" width="${NW}" height="${NH}" rx="6" fill="transparent" stroke="var(--amber)" stroke-width="2" stroke-dasharray="7 5"></rect>
 <text x="${zoneX + NW / 2}" y="106" font-size="13" fill="var(--amber)" font-weight="700" text-anchor="middle">+ Your theory goes here</text>
 <text x="${zoneX + NW / 2}" y="124" font-size="11" fill="var(--mut)" text-anchor="middle">${EMBED ? 'be the first — opens the board ↗' : 'be the first — tap to post'}</text>
 </g>`) + ctaLink('post=question', `<g class="ctanode" data-compose="question" data-case="${c.slug}" style="cursor:pointer">
-<rect x="${zoneX}" y="${80 + NH + 14}" width="${NW}" height="${NH}" rx="6" fill="none" stroke="var(--violet)" stroke-width="2" stroke-dasharray="7 5"></rect>
+<rect x="${zoneX}" y="${80 + NH + 14}" width="${NW}" height="${NH}" rx="6" fill="transparent" stroke="var(--violet)" stroke-width="2" stroke-dasharray="7 5"></rect>
 <text x="${zoneX + NW / 2}" y="${106 + NH + 14}" font-size="13" fill="var(--violet)" font-weight="700" text-anchor="middle">? Or just ask something</text>
 <text x="${zoneX + NW / 2}" y="${124 + NH + 14}" font-size="11" fill="var(--mut)" text-anchor="middle">no theory required</text>
-<rect x="${zoneX}" y="80" width="${NW}" height="${NH}" fill="transparent"></rect>
-<g transform="translate(${zoneX + NW / 2 - 22},${NH + 92}) scale(0.7)">${pip(64).replace(/^<svg[^>]*>/, "").replace(/<\/svg>$/, "")}</g>
-</g>`);
+</g>`) + `<g transform="translate(${zoneX + NW / 2 - 22},${80 + 2 * (NH + 14) + 16}) scale(0.7)">${pip(64).replace(/^<svg[^>]*>/, "").replace(/<\/svg>$/, "")}</g>`;
   const svg = `<svg id="boardsvg" viewBox="${minX} ${minY} ${w + (communityNodes.length ? 0 : 320)} ${h}" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%">${defs}<g id="viewport">${zoneLabel}${ctaCard}${edgeEls}\n${nodeEls}</g></svg>`;
 
   const verb = { supports: ['sup', 'supports'], contradicts: ['con', 'disputes'], disproves: ['con', 'disproves'], contested: ['mix', 'is contested on'], explains: ['ctx', 'gives context to'] };
@@ -1666,7 +1739,13 @@ wrap.addEventListener('touchmove',function(e){
     if(pinch.d>0)zoomAt(d/pinch.d,pinch.cx,pinch.cy);
     pinch.d=d;return;
   }
-  if(e.touches.length===1&&mode){e.preventDefault();pointerMove(e.touches[0].clientX,e.touches[0].clientY)}
+  // With touch-action:pan-y the browser claims vertical swipes and hands us a non-cancelable
+  // event. Calling preventDefault on one does nothing except log a warning, so don't: let go
+  // of the gesture and let the page scroll, which is what the reader meant by it.
+  if(e.touches.length===1&&mode){
+    if(!e.cancelable){pointerUp();return}
+    e.preventDefault();pointerMove(e.touches[0].clientX,e.touches[0].clientY);
+  }
 },{passive:false});
 wrap.addEventListener('touchend',function(e){if(e.touches.length===0){pinch=null;pointerUp()}});
 

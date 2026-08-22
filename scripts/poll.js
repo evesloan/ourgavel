@@ -410,14 +410,17 @@ const SUBMISSION_KINDS = {
     label: 'theory',
     claimLabels: ['Your theory, in one sentence', 'In one sentence'],
     node: { type: 'rumor', status: 'unverified' },
-    column: 1160,
+    column: 1160,   // runs to 1160 + 240 + NW(210) = 1610
     published: (slug) => `Live on the Board: https://ourgavel.com/cases/${slug}/board/ — 👍 reactions on this issue count as corroboration, 👎 as dispute; this thread is the theory's discussion page. Sources are what move it from amber; if you have one, submit evidence.`,
   },
   question: {
     label: 'question',
     claimLabels: ['What do you want to know?', 'Your question', 'In one sentence'],
     node: { type: 'question', status: 'open' },
-    column: 1470,
+    // Theory nodes occupy 1160 and 1160+240, each NW=210 wide, so they run to 1610.
+    // This was 1470, which put a question card straight through the second theory column --
+    // a 140px overlap the moment a case had two theories and one question. Keep a gutter.
+    column: 1680,
     published: (slug) => `Live on the Board: https://ourgavel.com/cases/${slug}/board/ — it sits in the reader zone as an open question. Anyone can answer it, and an answer backed by a filing or a report is what turns it into a card on the record side. This thread is where that discussion happens.`,
   },
 };

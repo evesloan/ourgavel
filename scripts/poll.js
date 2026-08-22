@@ -17,6 +17,7 @@ const { discoverCase, safeToDiscover } = require('./media-fetch.js');
 const { implicationReason, shouldEscalate } = require('./screen.js');
 const { resolveUrl, itemKey, dedupeItems } = require('./canonical.js');
 const { nameFor } = require('./outlets.js');
+const { applyHandoffs } = require('./apply.js');
 const DATA = path.join(ROOT, 'data');
 const REPO = process.env.GB_REPO || 'evesloan/ourgavel';
 const TOKEN = process.env.GITHUB_TOKEN || '';
@@ -577,6 +578,13 @@ async function discoverMedia(slug) {
 }
 
 (async () => {
+  // FIRST, before anything writes to the tree. The applier requires a clean working copy —
+  // it is the only way its revert path can be honest about what it undid — and the tree is
+  // only clean at the very top of a pulse. Applying here also means a plan that lands is
+  // built and deployed by this same run rather than waiting fifteen minutes for the next.
+  try { await applyHandoffs({ gh, repo: REPO, log: console.log }); }
+  catch (e) { console.error('applier failed (pulse continues):', e.message); }
+
   const cases = fs.readdirSync(path.join(DATA, 'cases')).filter(d => fs.existsSync(path.join(DATA, 'cases', d, 'case.json')));
   // One malformed case file used to kill the entire pulse on the first iteration — no feeds, no
   // verdict watch, no verdict publishing, for every other case too. That happened on 2026-08-22,

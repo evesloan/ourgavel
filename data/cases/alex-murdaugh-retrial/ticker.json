@@ -92,6 +92,13 @@
       "flag": "verdict-watch"
     },
     {
+      "ts": "2026-08-14T12:01:00.000Z",
+      "outlet": "Bing News — Murdaugh retrial",
+      "headline": "Judge moves Alex Murdaugh retrial from small county",
+      "url": "https://apnews.com/video/judge-moves-alex-murdaugh-retrial-from-small-county-ee4ead63ad964654b27c4c18fd8816d7",
+      "flag": null
+    },
+    {
       "ts": "2026-08-14T11:49:49.000Z",
       "outlet": "Bing News — Murdaugh retrial",
       "headline": "Judge moves Alex Murdaugh retrial from small county, but motion to toss out case will wait",
@@ -745,6 +752,7 @@
     "xtoahz",
     "agb9ss",
     "130sca1",
-    "11enx8i"
+    "11enx8i",
+    "c4a8gs"
   ]
 }

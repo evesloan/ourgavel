@@ -7,3 +7,6 @@ data/cases/zz-viewer-fixture/
 public/cases/zz-viewer-fixture/
 data/media/zz-viewer-fixture/
 public/media/zz-viewer-fixture/
+
+# Local alert written by autodeploy.bat when a pull leaves conflict markers.
+DEPLOY-BLOCKED.txt

@@ -5,6 +5,8 @@
 const fs = require('fs');
 const path = require('path');
 
+require('./preflight.js');
+
 const ROOT = path.join(__dirname, '..');
 const OUT = path.join(ROOT, 'public');
 const DATA = path.join(ROOT, 'data');

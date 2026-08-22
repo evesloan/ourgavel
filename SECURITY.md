@@ -94,10 +94,13 @@ The download path refuses anything that is not demonstrably an image: content-ty
 ## Verification
 
 ```
-node scripts/build.js                       # must build cleanly
+node scripts/preflight.js                   # record intact — no conflict markers, all JSON parses
+node scripts/build.js                       # must build cleanly (runs preflight itself)
 node scripts/media.test.js                  # rights logic — a failure means we may republish someone else's photo
 node scripts/media-fetch.test.js            # the gate — a failure means a stranger's face could reach a case page
 node scripts/media.viewer-test.js           # the viewer, in a real browser, desktop and mobile
+node scripts/composer.test.js               # every posting mode — two once shipped unable to post at all
+node scripts/submit.test.js                 # composer, relay and pulse still agree on kinds and headings
 grep -o 'onclick="[^"]*"' public/**/*.html  # must return nothing
 grep -o "img-src[^;]*" public/index.html    # must read exactly: img-src 'self' data:
 ```

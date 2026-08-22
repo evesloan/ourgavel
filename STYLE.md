@@ -144,7 +144,6 @@ Motion explains, or it does not ship.
 - Never assert guilt. Report what is alleged, argued, and decided.
 - Cover the proceeding, not the grief. No autopsy detail beyond the legal facts of the charge.
 - Never name minors, and never name private individuals as suspects. See EDITORIAL.md §5.
-<<<<<<< HEAD
 
 ---
 
@@ -179,5 +178,3 @@ better writing.
 that a person signs off on verdicts, plea changes and anything naming an uncharged individual.
 Never soften this into "a small team" or "our editorial process". Vagueness is what reads as a
 cover-up; specificity is what reads as true — and here it happens to be true.
-=======
->>>>>>> origin/main

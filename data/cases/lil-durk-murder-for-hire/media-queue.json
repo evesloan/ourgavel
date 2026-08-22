@@ -1,17 +1,34 @@
 {
-  "updated": "2026-08-22T09:28:18.510Z",
+  "updated": "2026-08-22T09:35:17.112Z",
   "published": [
     {
-      "local": "media/lil-durk-murder-for-hire/20e5fd12cf29.jpg",
-      "licence": "Public domain",
-      "credit": "Unknown author Unknown author"
+      "local": "media/lil-durk-murder-for-hire/9f29b77330b5.jpg",
+      "licence": "CC BY-SA 4.0",
+      "credit": "Daniel L. Lu (user:dllu)"
     },
     {
-      "local": "media/lil-durk-murder-for-hire/34d9d4d06c7b.jpg",
-      "licence": "Public domain",
-      "credit": "Unknown author Unknown author"
+      "local": "media/lil-durk-murder-for-hire/8e58f03588bf.jpg",
+      "licence": "CC BY-SA 4.0",
+      "credit": "DocFreeman24"
     }
   ],
   "heldForReview": [],
-  "refused": []
+  "refused": [
+    {
+      "title": "File:Panoramic view of downtown Los Angeles, looking south between Spring Street and Broadway from the Courthouse, ca.1905 (CHS-5066-p).jpg",
+      "reason": "archival image — it would read as the present-day venue"
+    },
+    {
+      "title": "File:Panoramic view of downtown Los Angeles, looking south between Spring Street and Broadway from the Courthouse, ca.1905 (CHS-5065).jpg",
+      "reason": "archival image — it would read as the present-day venue"
+    },
+    {
+      "title": "File:Panoramic view of downtown Los Angeles, looking south between Spring Street and Broadway from the Courthouse, ca.1905 (CHS-5066).jpg",
+      "reason": "archival image — it would read as the present-day venue"
+    },
+    {
+      "title": "File:Baist's real estate atlas of surveys of Los Angeles, California, 1921 (31294).jpg",
+      "reason": "filename dates the photograph to 1921"
+    }
+  ]
 }

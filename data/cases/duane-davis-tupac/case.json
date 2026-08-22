@@ -368,6 +368,21 @@
       "bytes": 283467,
       "addedAt": "2026-08-22T09:28:18.510Z",
       "verified": "commons-api"
+    },
+    {
+      "type": "image",
+      "local": "media/duane-davis-tupac/40c6d2ff793f.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Clark_County_Government_Center_Amphitheater.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Clark_County_Government_Center_Amphitheater.jpg",
+      "caption": "Clark County Government Center Amphitheater",
+      "alt": "Clark County Government Center Amphitheater",
+      "credit": "Coolcaesar",
+      "rights": "cc-licensed",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "bytes": 360484,
+      "addedAt": "2026-08-22T09:35:17.112Z",
+      "verified": "commons-api"
     }
   ]
 }

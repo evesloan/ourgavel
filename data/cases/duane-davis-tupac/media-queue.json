@@ -1,17 +1,17 @@
 {
-  "updated": "2026-08-22T09:28:18.510Z",
+  "updated": "2026-08-22T09:35:17.112Z",
   "published": [
     {
-      "local": "media/duane-davis-tupac/e963032d3c7e.jpg",
-      "licence": "CC BY 3.0",
-      "credit": "Alen Ištoković"
-    },
-    {
-      "local": "media/duane-davis-tupac/fa183a042222.jpg",
-      "licence": "CC BY-SA 2.0",
-      "credit": "Reinhard Link from Germany"
+      "local": "media/duane-davis-tupac/40c6d2ff793f.jpg",
+      "licence": "CC BY-SA 4.0",
+      "credit": "Coolcaesar"
     }
   ],
   "heldForReview": [],
-  "refused": []
+  "refused": [
+    {
+      "query": "Regional Justice Center Las Vegas Nevada",
+      "reason": "nothing publishable: 1 file(s) verified, none cleared the gate"
+    }
+  ]
 }

@@ -364,6 +364,36 @@
       "bytes": 206328,
       "addedAt": "2026-08-22T09:10:19.185Z",
       "verified": "commons-api"
+    },
+    {
+      "type": "image",
+      "local": "media/alex-murdaugh-retrial/93a14d00525a.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Walterboro_-_Colleton_County_Courthouse.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Walterboro_-_Colleton_County_Courthouse.jpg",
+      "caption": "Walterboro - Colleton County Courthouse",
+      "alt": "Walterboro - Colleton County Courthouse",
+      "credit": "P. Hughes",
+      "rights": "cc-licensed",
+      "licence": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+      "bytes": 403875,
+      "addedAt": "2026-08-22T09:35:17.112Z",
+      "verified": "commons-api"
+    },
+    {
+      "type": "image",
+      "local": "media/alex-murdaugh-retrial/ecce478f99df.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:SupremeCourtSCbuilding.JPG",
+      "source": "https://commons.wikimedia.org/wiki/File:SupremeCourtSCbuilding.JPG",
+      "caption": "The South Carolina Supreme Court, Columbia — which ordered the new trial",
+      "alt": "The South Carolina Supreme Court building in Columbia",
+      "credit": "Abductive",
+      "rights": "public-domain",
+      "licence": "CC0",
+      "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "bytes": 285575,
+      "addedAt": "2026-08-22T09:35:17.112Z",
+      "verified": "commons-api"
     }
   ]
 }

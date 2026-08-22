@@ -1,17 +1,30 @@
 {
-  "updated": "2026-08-22T09:28:18.510Z",
+  "updated": "2026-08-22T09:35:17.112Z",
   "published": [
     {
-      "local": "media/alex-murdaugh-retrial/cdb7d2e6f8cb.jpg",
-      "licence": "Public domain",
-      "credit": "Curt Teich &amp; Co., Chicago (publisher)"
+      "local": "media/alex-murdaugh-retrial/93a14d00525a.jpg",
+      "licence": "CC BY 4.0",
+      "credit": "P. Hughes"
     },
     {
-      "local": "media/alex-murdaugh-retrial/5cf100f2ad8d.jpg",
-      "licence": "Public domain",
-      "credit": "Curt Teich &amp; Co."
+      "local": "media/alex-murdaugh-retrial/ecce478f99df.jpg",
+      "licence": "CC0",
+      "credit": "Abductive"
     }
   ],
   "heldForReview": [],
-  "refused": []
+  "refused": [
+    {
+      "title": "File:Walterboro - Colleton County Court House.jpg",
+      "reason": "archival image — it would read as the present-day venue"
+    },
+    {
+      "title": "File:Walterboro - Colleton County Court House 02.jpg",
+      "reason": "archival image — it would read as the present-day venue"
+    },
+    {
+      "title": "File:Walterboro - Colleton County Court House 01.jpg",
+      "reason": "archival image — it would read as the present-day venue"
+    }
+  ]
 }

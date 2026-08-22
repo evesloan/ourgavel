@@ -318,6 +318,21 @@
       "bytes": 499387,
       "addedAt": "2026-08-22T09:10:19.185Z",
       "verified": "commons-api"
+    },
+    {
+      "type": "image",
+      "local": "media/lindsay-clancy/574335c35614.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Healey-driscoll-administration-celebrates-ceremonial-inauguration-of-supreme-judicial-court-justice-bessie-dewar_53500548152_o.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Healey-driscoll-administration-celebrates-ceremonial-inauguration-of-supreme-judicial-court-justice-bessie-dewar_53500548152_o.jpg",
+      "caption": "The Massachusetts Supreme Judicial Court, which sets the insanity standard applied here",
+      "alt": "The Massachusetts Supreme Judicial Court building in Boston",
+      "credit": "Joshua Qualls/Governor’s Press Office",
+      "rights": "public-domain",
+      "licence": "Public domain",
+      "licenceUrl": "",
+      "bytes": 193320,
+      "addedAt": "2026-08-22T09:35:17.112Z",
+      "verified": "commons-api"
     }
   ]
 }

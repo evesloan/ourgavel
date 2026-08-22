@@ -1,17 +1,21 @@
 {
-  "updated": "2026-08-22T09:28:18.510Z",
+  "updated": "2026-08-22T09:35:17.112Z",
   "published": [
     {
       "local": "media/lindsay-clancy/574335c35614.jpg",
       "licence": "Public domain",
       "credit": "Joshua Qualls/Governor’s Press Office"
-    },
-    {
-      "local": "media/lindsay-clancy/aa7746e3544f.jpg",
-      "licence": "Public domain",
-      "credit": "Joshua Qualls/Governor’s Press Office"
     }
   ],
   "heldForReview": [],
-  "refused": []
+  "refused": [
+    {
+      "query": "Plymouth County Superior Court Brockton Massachusetts",
+      "reason": "8 search result(s), none were usable images (wrong file type, or no image data)"
+    },
+    {
+      "query": "Duxbury Massachusetts town",
+      "reason": "nothing publishable: 2 file(s) verified, none cleared the gate"
+    }
+  ]
 }

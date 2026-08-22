@@ -362,6 +362,36 @@
       "bytes": 324743,
       "addedAt": "2026-08-22T09:10:19.185Z",
       "verified": "commons-api"
+    },
+    {
+      "type": "image",
+      "local": "media/lil-durk-murder-for-hire/9f29b77330b5.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Los_Angeles_Federal_Courthouse_127_S_Broadway_dllu.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Los_Angeles_Federal_Courthouse_127_S_Broadway_dllu.jpg",
+      "caption": "Los Angeles Federal Courthouse 127 S Broadway dllu",
+      "alt": "Los Angeles Federal Courthouse 127 S Broadway dllu",
+      "credit": "Daniel L. Lu (user:dllu)",
+      "rights": "cc-licensed",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "bytes": 307203,
+      "addedAt": "2026-08-22T09:35:17.112Z",
+      "verified": "commons-api"
+    },
+    {
+      "type": "image",
+      "local": "media/lil-durk-murder-for-hire/8e58f03588bf.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Roybal_Building.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Roybal_Building.jpg",
+      "caption": "The Roybal Federal Building, Los Angeles",
+      "alt": "The Edward R. Roybal Federal Building",
+      "credit": "DocFreeman24",
+      "rights": "cc-licensed",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "bytes": 643884,
+      "addedAt": "2026-08-22T09:35:17.112Z",
+      "verified": "commons-api"
     }
   ]
 }

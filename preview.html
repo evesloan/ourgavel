@@ -1,0 +1,525 @@
+<title>GavelBoard</title>
+<style>
+:root{--bg:#0e1116;--panel:#161b23;--panel2:#1b212b;--ink:#e8e6e1;--mut:#9aa3af;--line:#2a3240;--acc:#c9a227;--acc2:#8ab4f8;--green:#4caf7d;--red:#e05d5d;--amber:#e0a83d;--violet:#a78bfa;--serif:Georgia,'Times New Roman',serif;--sans:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif}
+@media (prefers-color-scheme: light){:root:not([data-theme="dark"]){--bg:#f7f5f0;--panel:#ffffff;--panel2:#f0ede6;--ink:#1a1d23;--mut:#5b6470;--line:#ddd8cc;--acc:#8a6d1d;--acc2:#2b5cad;--green:#25784f;--red:#b03a3a;--amber:#9a6d15;--violet:#6d4fc4}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.55;font-size:16px}
+a{color:var(--acc2);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header.mast{border-bottom:3px double var(--line);padding:18px 0 12px;background:var(--panel)}
+.mast .wrap{display:flex;align-items:baseline;gap:18px;flex-wrap:wrap}
+.logo{font-family:var(--serif);font-size:30px;font-weight:700;letter-spacing:.5px;color:var(--ink)}
+.logo a{color:inherit}.logo .gb{color:var(--acc)}
+.tag{color:var(--mut);font-size:13px;font-style:italic}
+nav.crumbs{font-size:13px;color:var(--mut);margin:14px 0 4px}
+nav.sitenav{display:flex;gap:4px;flex-wrap:wrap;margin-left:auto}
+nav.sitenav a{font-size:13px;color:var(--mut);padding:4px 10px;border-radius:4px}
+nav.sitenav a.on,nav.sitenav a:hover{color:var(--ink);background:var(--panel2);text-decoration:none}
+main{padding:24px 0 60px}
+h1{font-family:var(--serif);font-size:32px;line-height:1.2;margin:10px 0 6px}
+h2{font-family:var(--serif);font-size:22px;margin:34px 0 12px;padding-bottom:6px;border-bottom:1px solid var(--line)}
+h3{font-size:16px;margin:18px 0 6px}
+.sub{color:var(--mut);font-size:15px;margin-bottom:18px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:18px 20px;margin:14px 0}
+.badge{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;padding:2px 8px;border-radius:3px;vertical-align:middle}
+.badge.live{background:var(--red);color:#fff;animation:pulse 2.2s infinite}
+.badge.phase{background:var(--panel2);color:var(--amber);border:1px solid var(--amber)}
+.badge.verified{color:var(--green);border:1px solid var(--green);background:transparent}
+.badge.unverified{color:var(--amber);border:1px solid var(--amber);background:transparent}
+.badge.disproven{color:var(--red);border:1px solid var(--red);background:transparent}
+.badge.open{color:var(--violet);border:1px solid var(--violet);background:transparent}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.55}}
+.ticker{border-left:3px solid var(--acc);padding-left:0;list-style:none}
+.ticker li{padding:10px 0 10px 16px;border-bottom:1px solid var(--line)}
+.ticker li:last-child{border-bottom:none}
+.ticker .t{color:var(--mut);font-size:12px;white-space:nowrap}
+.ticker .o{color:var(--acc);font-weight:600;font-size:13px}
+.srcs{color:var(--mut);font-size:12.5px}
+.srcs a{color:var(--mut);text-decoration:underline dotted}
+.day{margin:0 0 10px;border-left:3px solid var(--line);padding:2px 0 14px 18px;position:relative}
+.day::before{content:'';position:absolute;left:-7px;top:8px;width:11px;height:11px;border-radius:50%;background:var(--bg);border:2px solid var(--acc)}
+.day .dh{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
+.day .dn{font-family:var(--serif);font-weight:700;font-size:17px}
+.day .dd{color:var(--mut);font-size:13px}
+.wit{margin:8px 0 0;padding-left:0;list-style:none}
+.wit li{padding:7px 10px;margin:6px 0;background:var(--panel2);border-radius:6px;font-size:14px}
+.wit .wn{font-weight:700}.wit .wr{color:var(--mut);font-size:12.5px}
+table.witx{width:100%;border-collapse:collapse;font-size:14px}
+table.witx th,table.witx td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+table.witx th{color:var(--mut);font-size:12px;text-transform:uppercase;letter-spacing:.6px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:760px){.grid2{grid-template-columns:1fr}}
+.vopt{border:1px solid var(--line);border-radius:8px;padding:12px 14px;background:var(--panel)}
+.vopt b{font-family:var(--serif)}
+footer{border-top:3px double var(--line);padding:22px 0 40px;color:var(--mut);font-size:13px;background:var(--panel)}
+footer .hb{color:var(--green)}
+.disc{font-size:12.5px;color:var(--mut);border-top:1px dashed var(--line);margin-top:16px;padding-top:10px}
+.btn{display:inline-block;background:var(--acc);color:#14161a;font-weight:700;padding:9px 16px;border-radius:6px;font-size:14px}
+.btn:hover{text-decoration:none;filter:brightness(1.08)}
+.btn.ghost{background:transparent;color:var(--acc);border:1px solid var(--acc)}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:12.5px;color:var(--mut);margin:10px 0}
+.legend span::before{content:'';display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px;vertical-align:-1px}
+.lg-q::before{background:var(--violet)}.lg-f::before{background:var(--acc2)}.lg-c::before{background:var(--amber)}.lg-r::before{background:var(--green)}.lg-x::before{background:var(--red)}
+#boardwrap{position:relative;border:1px solid var(--line);border-radius:8px;background:var(--panel);overflow:hidden;height:640px;cursor:grab}
+#boardwrap:active{cursor:grabbing}
+#detail{position:absolute;right:12px;top:12px;width:330px;max-height:calc(100% - 24px);overflow:auto;background:var(--panel2);border:1px solid var(--line);border-radius:8px;padding:14px;display:none;font-size:14px;box-shadow:0 8px 30px rgba(0,0,0,.35)}
+#detail h4{font-family:var(--serif);margin:6px 0}
+#detail .x{float:right;cursor:pointer;color:var(--mut);font-size:18px;line-height:1}
+.node{cursor:pointer}
+.node rect{transition:filter .15s}
+.node:hover rect{filter:brightness(1.25)}
+.edge-supports{stroke:var(--green)}.edge-contradicts{stroke:var(--red)}.edge-contested{stroke:var(--amber);stroke-dasharray:6 4}.edge-explains{stroke:var(--mut);stroke-dasharray:2 4}.edge-disproves{stroke:var(--red);stroke-width:3}
+.notice{background:var(--panel2);border:1px solid var(--line);border-left:4px solid var(--acc);border-radius:6px;padding:12px 16px;font-size:14px;margin:14px 0}
+.qa{margin:12px 0}.qa dt{font-weight:700;font-family:var(--serif);margin-top:14px}.qa dd{margin:4px 0 0;color:var(--ink)}
+
+:root[data-theme="light"]{--bg:#f7f5f0;--panel:#ffffff;--panel2:#f0ede6;--ink:#1a1d23;--mut:#5b6470;--line:#ddd8cc;--acc:#8a6d1d;--acc2:#2b5cad;--green:#25784f;--red:#b03a3a;--amber:#9a6d15;--violet:#6d4fc4}
+
+.pv-note{position:sticky;top:0;z-index:60;background:var(--acc);color:#14161a;font-size:13px;font-weight:700;padding:7px 14px;text-align:center}
+.pv-sec{border-top:6px solid var(--line);margin-top:50px;padding-top:6px}
+.pv-sec:first-of-type{border-top:none;margin-top:0}
+.pv-label{font-size:11px;letter-spacing:1.4px;text-transform:uppercase;color:var(--mut);background:var(--panel2);display:inline-block;padding:3px 10px;border-radius:0 0 6px 6px;margin-left:20px}
+body{background:var(--bg)}
+</style>
+<div class="pv-note">Preview build — this is exactly what ships to gavelboard.com. Links navigate within this page.</div>
+<header class="mast"><div class="wrap">
+  <div class="logo"><a href="#home"><span class="gb">Gavel</span>Board</a></div>
+  <div class="tag">The record. The rumors. The line between.</div>
+  <nav class="sitenav"><a href="#home" class="on">Home</a><a href="#hub" class="">Clancy Trial</a><a href="#board" class="">The Board</a><a href="#submit" class="">Contribute</a><a href="#about" class="">About</a></nav>
+</div></header>
+<section class="pv-sec" id="home"><span class="pv-label">Home</span>
+<main><div class="wrap">
+
+
+<h1>The trial, in order. <span style="color:var(--mut)">Not in 40 screens of liveblog.</span></h1>
+<p class="sub">GavelBoard keeps a structured, source-linked record of the court cases everyone is watching — what happened each day, who testified, what the jury must decide — and a community board where theories meet the record.</p>
+<div class="card">
+  <span class="badge live">Active</span> <span class="badge phase">Prosecution rebuttal — closings expected Mon Aug 24 or Tue Aug 25</span>
+  <h2 style="border:none;margin:10px 0 4px"><a href="#hub">Commonwealth v. Lindsay Clancy</a></h2>
+  <p>Three counts of first-degree murder (strangulation counts dropped July 9, 2026 as redundant). Plymouth County Superior Court, Massachusetts. Trial began Jul 27, 2026.</p>
+  <p style="margin-top:10px">
+    <a class="btn" href="#hub">Case hub</a>
+    <a class="btn ghost" href="#board">The Board</a>
+    <a class="btn ghost" href="#timeline">Day-by-day</a>
+  </p>
+</div>
+<h2>Latest from the wire</h2>
+<p class="sub">Headlines from credentialed outlets covering active cases, attributed and linked. Auto-refreshed every 15 minutes.</p>
+<ul class="ticker"><li><span class="t">Aug 21, 5:30 PM ET</span> · <span class="o">Court TV</span><br><a href="https://www.courttv.com/news/she-was-a-puppet-and-someone-else-was-pulling-the-strings-lindsay-clancys-defense-rests-after-doctor-says-she-wasnt-psychotic-every-minute/" rel="noopener" target="_blank">'She was a puppet and someone else was pulling the strings': Lindsay Clancy's defense rests after doctor says she wasn't psychotic every minute</a></li>
+<li><span class="t">Aug 21, 4:00 PM ET</span> · <span class="o">WBUR</span><br><a href="https://www.wbur.org/news/2026/08/21/lindsay-clancy-defense-rests" rel="noopener" target="_blank">Lindsay Clancy's defense rests after calling 10 witnesses</a></li>
+<li><span class="t">Aug 21, 3:00 PM ET</span> · <span class="o">Boston Globe</span><br><a href="https://www.bostonglobe.com/2026/08/21/metro/lindsay-clancy-trial-mack-resnick/" rel="noopener" target="_blank">Rebuttal witness Dr. Avram Mack: Clancy suffered major depressive disorder, not psychosis</a></li>
+<li><span class="t">Aug 21, 12:00 PM ET</span> · <span class="o">NBC Boston</span><br><a href="https://www.nbcboston.com/news/local/lindsay-clancy-murder-trial/" rel="noopener" target="_blank">Recap: Defense in Lindsay Clancy trial rests, prosecutors call 1st rebuttal witness</a></li></ul>
+
+</div></main></section>
+
+<section class="pv-sec" id="hub"><span class="pv-label">Case hub</span>
+<main><div class="wrap">
+<nav class="crumbs"><a href="#home">Home</a> › Lindsay Clancy Trial</nav>
+
+<span class="badge live">Active</span> <span class="badge phase">Prosecution rebuttal — closings expected Mon Aug 24 or Tue Aug 25</span>
+<h1>Commonwealth v. Lindsay Clancy</h1>
+<p class="sub">Plymouth County Superior Court, Massachusetts · Judge William F. Sullivan · Incident: Jan 24, 2023 · Trial began Jul 27, 2026</p>
+<div class="grid2">
+<div class="card"><h3>The case</h3>
+<p><b>Defendant:</b> Lindsay Clancy, 36, of Duxbury, Massachusetts<br>
+<b>Charges:</b> Three counts of first-degree murder (strangulation counts dropped July 9, 2026 as redundant)<br>
+<b>Plea & defense:</b> Not guilty; defense of lack of criminal responsibility (postpartum psychosis, over-medication)<br>
+<b>Victims:</b> Cora Clancy (5), Dawson Clancy (3), Callan Clancy (8 months)<br>
+<b>Prosecution:</b> ADA Jennifer Sprague, Shanan Buckingham, ADA Amanda Fowle<br>
+<b>Defense:</b> Kevin J. Reddington</p></div>
+<div class="card"><h3>Where things stand</h3>
+<p>The defense rested Friday, Aug 21 after 10 witnesses, without calling the defendant. The Commonwealth's rebuttal is underway (Dr. Avram Mack testified Friday; three rebuttal experts expected). Closing arguments are expected Monday Aug 24 or Tuesday Aug 25, with deliberations to follow. <span class="srcs">— <a href="https://www.wbur.org/news/2026/08/21/lindsay-clancy-defense-rests" rel="noopener" target="_blank">WBUR</a> · <a href="https://www.cbsnews.com/boston/news/lindsay-clancy-trial-watch-live-day-18-dr-phillip-resnick/" rel="noopener" target="_blank">CBS Boston</a> · <a href="https://www.bostonglobe.com/2026/08/21/metro/lindsay-clancy-trial-mack-resnick/" rel="noopener" target="_blank">Boston Globe</a></span></p>
+<p style="margin-top:8px"><b>Watch live:</b> <a href="https://www.courttv.com/news/lindsay-clancy-trial-opening-statements-set-for-mom-accused-of-killing-her-3-children/" target="_blank" rel="noopener">Court TV</a> · <a href="https://www.nbcboston.com/news/local/lindsay-clancy-trial-day-16-live-stream-live-updates/4000212/" target="_blank" rel="noopener">NBC Boston</a></p></div>
+</div>
+<p style="margin-top:14px">
+  <a class="btn" href="#board">Open the Board</a>
+  <a class="btn ghost" href="#timeline">Day-by-day record</a>
+  <a class="btn ghost" href="#witnesses">Witness index</a>
+  <a class="btn ghost" href="#standard">The legal standard, explained</a>
+</p>
+<h2>What the jury can decide</h2>
+<div class="grid2">
+<div class="vopt"><b>Guilty of first-degree murder</b><br><span style="font-size:14px">Mandatory life in prison without possibility of parole.</span><br><span class="srcs">— <a href="https://www.newsnationnow.com/crime/lindsay-clancy-possible-verdicts/amp/" rel="noopener" target="_blank">NewsNation</a></span></div>
+<div class="vopt"><b>Guilty of second-degree murder</b><br><span style="font-size:14px">Life sentence with eventual parole eligibility.</span><br><span class="srcs">— <a href="https://www.newsnationnow.com/crime/lindsay-clancy-possible-verdicts/amp/" rel="noopener" target="_blank">NewsNation</a></span></div>
+<div class="vopt"><b>Not guilty by reason of lack of criminal responsibility</b><br><span style="font-size:14px">Up to 40 days hospitalization for evaluation; state may petition for commitment (6 months, renewable yearly) under M.G.L. c.123 §16.</span><br><span class="srcs">— <a href="https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXVII/Chapter123/Section16" rel="noopener" target="_blank">Mass. General Laws c.123 §16</a> · <a href="https://www.newsnationnow.com/crime/lindsay-clancy-possible-verdicts/amp/" rel="noopener" target="_blank">NewsNation</a></span></div>
+<div class="vopt"><b>Hung jury / mistrial</b><br><span style="font-size:14px">Commonwealth may retry the case.</span><br><span class="srcs">— <a href="https://www.newsnationnow.com/crime/lindsay-clancy-possible-verdicts/amp/" rel="noopener" target="_blank">NewsNation</a></span></div>
+<div class="vopt"><b>Involuntary manslaughter (contested)</b><br><span style="font-size:14px">Defense has asked for it on the verdict slip; prosecution opposes; ruling pending.</span><br><span class="srcs">— <a href="https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-defense-expected-call-final-witness-before-resting/3SY5KO3XLBG5NJ5F3S2VCFJKUY/" rel="noopener" target="_blank">Boston 25 News</a></span></div>
+</div>
+<h2>Live wire</h2>
+<ul class="ticker"><li><span class="t">Aug 21, 5:30 PM ET</span> · <span class="o">Court TV</span><br><a href="https://www.courttv.com/news/she-was-a-puppet-and-someone-else-was-pulling-the-strings-lindsay-clancys-defense-rests-after-doctor-says-she-wasnt-psychotic-every-minute/" rel="noopener" target="_blank">'She was a puppet and someone else was pulling the strings': Lindsay Clancy's defense rests after doctor says she wasn't psychotic every minute</a></li>
+<li><span class="t">Aug 21, 4:00 PM ET</span> · <span class="o">WBUR</span><br><a href="https://www.wbur.org/news/2026/08/21/lindsay-clancy-defense-rests" rel="noopener" target="_blank">Lindsay Clancy's defense rests after calling 10 witnesses</a></li>
+<li><span class="t">Aug 21, 3:00 PM ET</span> · <span class="o">Boston Globe</span><br><a href="https://www.bostonglobe.com/2026/08/21/metro/lindsay-clancy-trial-mack-resnick/" rel="noopener" target="_blank">Rebuttal witness Dr. Avram Mack: Clancy suffered major depressive disorder, not psychosis</a></li>
+<li><span class="t">Aug 21, 12:00 PM ET</span> · <span class="o">NBC Boston</span><br><a href="https://www.nbcboston.com/news/local/lindsay-clancy-murder-trial/" rel="noopener" target="_blank">Recap: Defense in Lindsay Clancy trial rests, prosecutors call 1st rebuttal witness</a></li></ul>
+
+</div></main></section>
+
+<section class="pv-sec" id="board"><span class="pv-label">The Board</span>
+<main><div class="wrap">
+<nav class="crumbs"><a href="#home">Home</a> › <a href="#hub">Lindsay Clancy Trial</a> › The Board</nav>
+
+<h1>The Board</h1>
+<p class="sub">The Board maps what is in dispute onto what is in the record. FACT nodes are events in the court record (that testimony occurred is a fact, whether it is TRUE is for the jury). QUESTION nodes are what the jury must decide. COMMUNITY nodes are user-submitted and appear only after review. An edge says how one node bears on another, and who advances that argument.</p>
+<div class="legend"><span class="lg-q">Question before the jury</span><span class="lg-f">Record: testimony & exhibits</span><span class="lg-c">Community (unverified)</span><span class="lg-r">Resolved</span><span class="lg-x">Disproven</span></div>
+<div class="legend"><span style="color:var(--green)">— supports</span><span style="color:var(--red)">— contradicts</span><span style="color:var(--amber)">-- contested</span><span>·· context</span></div>
+<div id="boardwrap"><svg id="boardsvg" viewBox="0 0 1080 900" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%"><g id="viewport"><path class="edge-supports" d="M255,337 Q430,327 605,377" fill="none" stroke-width="2" opacity="0.75"><title>supports: defense expert opinion</title></path>
+<path class="edge-supports" d="M255,507 Q430,412 605,377" fill="none" stroke-width="2" opacity="0.75"><title>supports: defense expert opinion</title></path>
+<path class="edge-supports" d="M255,677 Q430,497 605,377" fill="none" stroke-width="2" opacity="0.75"><title>supports: reported hallucination; contested on cross — chaplain's notes never recorded it</title></path>
+<path class="edge-supports" d="M285,837 Q445,577 605,377" fill="none" stroke-width="2" opacity="0.75"><title>supports: involuntary-intoxication theory</title></path>
+<path class="edge-contradicts" d="M955,297 Q780,307 605,377" fill="none" stroke-width="2" opacity="0.75"><title>contradicts: rebuttal expert opinion</title></path>
+<path class="edge-contradicts" d="M955,467 Q780,392 605,377" fill="none" stroke-width="2" opacity="0.75"><title>contradicts: no psychosis observed day before — but telehealth-only, per cross</title></path>
+<path class="edge-contested" d="M955,637 Q780,477 605,377" fill="none" stroke-width="2" opacity="0.75"><title>contested: prosecution: awareness &amp; planning · defense: evidence of illness</title></path>
+<path class="edge-contradicts" d="M605,137 Q605,227 605,377" fill="none" stroke-width="2" opacity="0.75"><title>contradicts: planning suggests capacity, per Commonwealth</title></path>
+<path class="edge-contested" d="M605,597 Q605,457 605,377" fill="none" stroke-width="2" opacity="0.75"><title>contested: no observed danger to children · defense: the system missed it</title></path>
+<path class="edge-explains" d="M285,157 Q445,237 605,377" fill="none" stroke-width="2" opacity="0.75"><title>explains: why responsibility is the only question</title></path>
+<path class="edge-contradicts" d="M605,137 Q605,417 605,757" fill="none" stroke-width="2" opacity="0.75"><title>contradicts: specific intent forecloses involuntary manslaughter, per Commonwealth</title></path>
+<path class="edge-supports" d="M285,837 Q445,767 605,757" fill="none" stroke-width="2" opacity="0.75"><title>supports: defense: 'You can't try this case in a vacuum'</title></path>
+<g class="node" data-id="q-responsibility">
+<rect x="500" y="340" width="210" height="74" rx="8" fill="var(--panel2)" stroke="var(--violet)" stroke-width="2"></rect>
+<text x="512" y="364" font-size="12.5" fill="var(--ink)" font-weight="600"><tspan x="512" dy="0">THE question: Was Clancy</tspan><tspan x="512" dy="15">criminally responsible on Jan</tspan><tspan x="512" dy="15">24, 2023?</tspan></text>
+</g>
+<g class="node" data-id="q-slip">
+<rect x="500" y="720" width="210" height="74" rx="8" fill="var(--panel2)" stroke="var(--violet)" stroke-width="2"></rect>
+<text x="512" y="744" font-size="12.5" fill="var(--ink)" font-weight="600"><tspan x="512" dy="0">Will involuntary manslaughter</tspan><tspan x="512" dy="15">be on the verdict slip?</tspan></text>
+</g>
+<g class="node" data-id="f-uncontested">
+<rect x="180" y="120" width="210" height="74" rx="8" fill="var(--panel2)" stroke="var(--acc2)" stroke-width="2"></rect>
+<text x="192" y="144" font-size="12.5" fill="var(--ink)" font-weight="600"><tspan x="192" dy="0">Uncontested: Clancy caused the</tspan><tspan x="192" dy="15">deaths</tspan></text>
+</g>
+<g class="node" data-id="f-resnick">
+<rect x="150" y="300" width="210" height="74" rx="8" fill="var(--panel2)" stroke="var(--acc2)" stroke-width="2"></rect>
+<text x="162" y="324" font-size="12.5" fill="var(--ink)" font-weight="600"><tspan x="162" dy="0">Resnick (defense): postpartum</tspan><tspan x="162" dy="15">psychosis, command</tspan><tspan x="162" dy="15">hallucinations</tspan></text>
+</g>
+<g class="node" data-id="f-zeizel">
+<rect x="150" y="470" width="210" height="74" rx="8" fill="var(--panel2)" stroke="var(--acc2)" stroke-width="2"></rect>
+<text x="162" y="494" font-size="12.5" fill="var(--ink)" font-weight="600"><tspan x="162" dy="0">Zeizel (defense): could not</tspan><tspan x="162" dy="15">tell right from wrong</tspan></text>
+</g>
+<g class="node" data-id="f-voice">
+<rect x="150" y="640" width="210" height="74" rx="8" fill="var(--panel2)" stroke="var(--acc2)" stroke-width="2"></rect>
+<text x="162" y="664" font-size="12.5" fill="var(--ink)" font-weight="600"><tspan x="162" dy="0">The reported voice</tspan></text>
+</g>
+<g class="node" data-id="f-mack">
+<rect x="850" y="260" width="210" height="74" rx="8" fill="var(--panel2)" stroke="var(--acc2)" stroke-width="2"></rect>
+<text x="862" y="284" font-size="12.5" fill="var(--ink)" font-weight="600"><tspan x="862" dy="0">Mack (rebuttal): depression,</tspan><tspan x="862" dy="15">not psychosis</tspan></text>
+</g>
+<g class="node" data-id="f-tufts">
+<rect x="850" y="430" width="210" height="74" rx="8" fill="var(--panel2)" stroke="var(--acc2)" stroke-width="2"></rect>
+<text x="862" y="454" font-size="12.5" fill="var(--ink)" font-weight="600"><tspan x="862" dy="0">Tufts: 'no signs of psychosis'</tspan><tspan x="862" dy="15">the day before</tspan></text>
+</g>
+<g class="node" data-id="f-searches">
+<rect x="850" y="600" width="210" height="74" rx="8" fill="var(--panel2)" stroke="var(--acc2)" stroke-width="2"></rect>
+<text x="862" y="624" font-size="12.5" fill="var(--ink)" font-weight="600"><tspan x="862" dy="0">The digital record</tspan></text>
+</g>
+<g class="node" data-id="f-planning">
+<rect x="500" y="100" width="210" height="74" rx="8" fill="var(--panel2)" stroke="var(--acc2)" stroke-width="2"></rect>
+<text x="512" y="124" font-size="12.5" fill="var(--ink)" font-weight="600"><tspan x="512" dy="0">Prosecution's planning theory</tspan></text>
+</g>
+<g class="node" data-id="f-nurses">
+<rect x="500" y="560" width="210" height="74" rx="8" fill="var(--panel2)" stroke="var(--acc2)" stroke-width="2"></rect>
+<text x="512" y="584" font-size="12.5" fill="var(--ink)" font-weight="600"><tspan x="512" dy="0">The clinicians who saw no</tspan><tspan x="512" dy="15">danger to the children</tspan></text>
+</g>
+<g class="node" data-id="f-meds">
+<rect x="180" y="800" width="210" height="74" rx="8" fill="var(--panel2)" stroke="var(--acc2)" stroke-width="2"></rect>
+<text x="192" y="824" font-size="12.5" fill="var(--ink)" font-weight="600"><tspan x="192" dy="0">The medication thread</tspan></text>
+</g>
+<g class="node" data-id="r-mclean">
+<rect x="850" y="780" width="210" height="74" rx="8" fill="var(--panel2)" stroke="var(--green)" stroke-width="2"></rect>
+<text x="862" y="804" font-size="12.5" fill="var(--ink)" font-weight="600"><tspan x="862" dy="0">RESOLVED: the McLean TikTok</tspan><tspan x="862" dy="15">dispute</tspan></text>
+</g></g></svg>
+<div id="detail"><span class="x" onclick="document.getElementById('detail').style.display='none'">×</span><div id="detail-in"></div></div>
+</div>
+<p style="margin-top:12px"><a class="btn" href="#submit">Add a theory or connection</a> <span style="color:var(--mut);font-size:13px">Drag to pan · scroll to zoom · click a node for sources</span></p>
+<div class="notice"><b>How promotion works here:</b> community items enter amber (UNVERIFIED). Corroboration by other users raises traction — it never makes something a fact. Only sourcing does: two independent credentialed reports, or the court record itself, moves a node to the record. One verified fact pointing the other way marks it DISPROVEN, and it stays on the board — greyed, struck through, honest about what got ruled out.</div>
+<script>
+(function(){
+var DATA={"q-responsibility":{"title":"THE question: Was Clancy criminally responsible on Jan 24, 2023?","body":"Under Commonwealth v. McHoul, she is not responsible if mental disease or defect left her without substantial capacity either to appreciate wrongfulness OR to conform her conduct to law. The Commonwealth must prove responsibility beyond a reasonable doubt.","status":"open","type":"question","sources":[{"outlet":"Commonwealth v. McHoul, 352 Mass. 544 (1967)","url":"https://law.justia.com/cases/massachusetts/supreme-court/volumes/352/352mass544.html"}],"traction":null,"issue":null},"q-slip":{"title":"Will involuntary manslaughter be on the verdict slip?","body":"Defense wants it as a lesser option; prosecution says specific intent to kill forecloses it. Ruling pending as jury instructions are finalized.","status":"open","type":"question","sources":[{"outlet":"Boston 25 News","url":"https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-defense-expected-call-final-witness-before-resting/3SY5KO3XLBG5NJ5F3S2VCFJKUY/"},{"outlet":"Boston Globe","url":"https://www.bostonglobe.com/2026/08/20/metro/lindsay-clancy-trial-live-updates/"}],"traction":null,"issue":null},"f-uncontested":{"title":"Uncontested: Clancy caused the deaths","body":"Defense counsel in openings: she 'is aware that she killed her children and is not trying to deny that.' The trial is about criminal responsibility, not identity.","status":"verified","type":"fact","sources":[{"outlet":"Court TV","url":"https://www.courttv.com/news/lindsay-clancy-trial-opening-statements-set-for-mom-accused-of-killing-her-3-children/"}],"traction":null,"issue":null},"f-resnick":{"title":"Resnick (defense): postpartum psychosis, command hallucinations","body":"'Altruistic filicide — a murder committed out of love, rather than hostility.' 'Psychosis can indeed wax and wane.' Evaluated her four months after the deaths.","status":"verified","type":"testimony","sources":[{"outlet":"Boston Globe","url":"https://www.bostonglobe.com/2026/08/21/metro/lindsay-clancy-trial-mack-resnick/"},{"outlet":"Court TV","url":"https://www.courttv.com/news/she-was-a-puppet-and-someone-else-was-pulling-the-strings-lindsay-clancys-defense-rests-after-doctor-says-she-wasnt-psychotic-every-minute/"}],"traction":null,"issue":null},"f-zeizel":{"title":"Zeizel (defense): could not tell right from wrong","body":"Saw Clancy ~60 times over three years. 'Intrusive thoughts are unrelenting.' Concluded she 'was unable to conform her behavior to the rule of law' on Jan 24.","status":"verified","type":"testimony","sources":[{"outlet":"PBS NewsHour","url":"https://www.pbs.org/newshour/nation/lindsay-clancys-defense-rests-at-trial-over-whether-postpartum-psychosis-drove-her-to-killings"},{"outlet":"ABC7","url":"https://abc7chicago.com/post/lindsay-clancy-trial-day-16-defense-expert-suggests-clancys-health-care-providers-missed-warning-signs/19702385/"}],"traction":null,"issue":null},"f-voice":{"title":"The reported voice","body":"Zeizel: she reported 'a male voice ordering her' that she 'had no choice but to kill her children. And kill herself.' Chaplain Cavanaugh: a 'persistent' male voice threatening her and the children's safety.","status":"verified","type":"testimony","sources":[{"outlet":"Boston 25 News","url":"https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-defense-continues-case-mother-in-law-expected-testify/KVMXBQP4DJHZZHO4FSXAGDC3TA/"},{"outlet":"Boston Globe","url":"https://www.bostonglobe.com/2026/08/20/metro/lindsay-clancy-trial-live-updates/"}],"traction":null,"issue":null},"f-mack":{"title":"Mack (rebuttal): depression, not psychosis","body":"Interviewed Clancy twice in April 2026. Major depressive disorder; she 'methodically killed her children one by one' while knowing it was wrong and could have stopped. 'I don't know that that feeling or that belief is necessarily psychotic.'","status":"verified","type":"testimony","sources":[{"outlet":"Boston Globe","url":"https://www.bostonglobe.com/2026/08/21/metro/lindsay-clancy-trial-mack-resnick/"},{"outlet":"Court TV","url":"https://www.courttv.com/news/she-was-a-puppet-and-someone-else-was-pulling-the-strings-lindsay-clancys-defense-rests-after-doctor-says-she-wasnt-psychotic-every-minute/"}],"traction":null,"issue":null},"f-tufts":{"title":"Tufts: 'no signs of psychosis' the day before","body":"Her treating psychiatrist saw no psychosis or mania at the Jan 23 telehealth visit; Clancy denied suicidal or homicidal ideation. Cross: 14 visits all telehealth, limited postpartum experience, never got other providers' records.","status":"verified","type":"testimony","sources":[{"outlet":"CBS Boston","url":"https://www.cbsnews.com/boston/news/lindsay-clancy-trial-watch-live-day-10-jennifer-tufts/"},{"outlet":"CBS News","url":"https://www.cbsnews.com/news/lindsay-clancy-trial-key-moments/"}],"traction":null,"issue":null},"f-searches":{"title":"The digital record","body":"Phone/laptop forensics: 'ketamine for suicide ideation' (Jan 18), 'symptoms of postpartum psychosis' (Jan 19), 'Can you treat a sociopath' (Jan 20), a suicide-methods page visit (Aug 2022), and an Oct 25, 2022 note: 'I'm sad and depressed. I can't parent my 3rd child like my first.'","status":"verified","type":"exhibit","sources":[{"outlet":"Boston 25 News","url":"https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-testimony-continues-after-jurors-see-autopsy-photos-children/XUFQLDRTGZGLJKNQXRXPFS5OAY/"},{"outlet":"Boston 25 News","url":"https://www.boston25news.com/news/local/lindsay-clancy-live-updates-trial-enters-4th-week-testimony/GS4743ZE7FBALCAAEY7VXSMUJ4/"}],"traction":null,"issue":null},"f-planning":{"title":"Prosecution's planning theory","body":"Openings: she searched routes and takeout, took the children to the basement, strangled them with exercise bands. Whiffin's Apple Health data: stair climbs 5:33/5:38 p.m. Theory: she wanted to 'take them with her.'","status":"verified","type":"testimony","sources":[{"outlet":"Court TV","url":"https://www.courttv.com/news/lindsay-clancy-trial-opening-statements-set-for-mom-accused-of-killing-her-3-children/"},{"outlet":"WBUR","url":"https://www.wbur.org/news/2026/08/17/prosecution-rests-murder-trial-lindsay-clancy"}],"traction":null,"issue":null},"f-nurses":{"title":"The clinicians who saw no danger to the children","body":"Jollotta: suicidal ideation documented, but 'never had thoughts on harming her children.' Paul: intake denied ideation; sleep was the concern. Dukes: 'frequent suicide ideation' Dec 2, improved by Dec 9. The pediatrician saw Cora that morning — routine.","status":"verified","type":"testimony","sources":[{"outlet":"Boston 25 News","url":"https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-more-medical-professionals-testify-today/3WYJV7DOCJEDLOHCHANTCDP6SQ/"},{"outlet":"Boston 25 News","url":"https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-medical-examiner-counselor-testify-12th-day-testimony/RBHOHTBAEVH5PK4L6Y3A5D7WSM/"}],"traction":null,"issue":null},"f-meds":{"title":"The medication thread","body":"Defense: '13 different psychiatric medications' prescribed; involuntary intoxication through over-prescription. Toxicology: 4–5 benzodiazepines in her system, mostly therapeutic levels; one 'a little elevated.' Her mother: 'The medication was pretty much just destroying her mind.'","status":"verified","type":"testimony","sources":[{"outlet":"WBUR","url":"https://www.wbur.org/news/2026/07/27/lindsay-clancy-trial-opening-statements"},{"outlet":"Boston Globe","url":"https://www.bostonglobe.com/2026/08/05/metro/lindsay-clancy-trial-live-updates/"},{"outlet":"CBS News","url":"https://www.cbsnews.com/news/lindsay-clancy-trial-key-moments/"},{"outlet":"Fox News","url":"https://www.foxnews.com/live-news/lindsay-clancy-murder-trial-day-16"}],"traction":null,"issue":null},"r-mclean":{"title":"RESOLVED: the McLean TikTok dispute","body":"A former McLean social worker posted a TikTok disputing the prosecution's 'premier medical institution' framing and was proposed as a defense witness. Judge Sullivan found her credible but excluded the testimony for 'limited materiality.' How a viral claim met the record: it got a hearing, and a ruling.","status":"resolved","type":"resolved","sources":[{"outlet":"NBC Boston","url":"https://www.nbcboston.com/news/local/lindsay-clancy-trial-day-16-live-stream-live-updates/4000212/"}],"traction":null,"issue":null}};
+var wrap=document.getElementById('boardwrap'),svg=document.getElementById('boardsvg'),vp=document.getElementById('viewport');
+var tx=0,ty=0,scale=1,dragging=false,sx=0,sy=0;
+function apply(){vp.setAttribute('transform','translate('+tx+','+ty+') scale('+scale+')')}
+wrap.addEventListener('mousedown',function(e){dragging=true;sx=e.clientX-tx;sy=e.clientY-ty});
+window.addEventListener('mousemove',function(e){if(dragging){tx=e.clientX-sx;ty=e.clientY-sy;apply()}});
+window.addEventListener('mouseup',function(){dragging=false});
+wrap.addEventListener('wheel',function(e){e.preventDefault();var d=e.deltaY<0?1.1:0.9;scale=Math.min(2.5,Math.max(0.4,scale*d));apply()},{passive:false});
+var touch=null;
+wrap.addEventListener('touchstart',function(e){if(e.touches.length===1){touch={x:e.touches[0].clientX-tx,y:e.touches[0].clientY-ty}}},{passive:true});
+wrap.addEventListener('touchmove',function(e){if(touch&&e.touches.length===1){tx=e.touches[0].clientX-touch.x;ty=e.touches[0].clientY-touch.y;apply()}},{passive:true});
+wrap.addEventListener('touchend',function(){touch=null});
+svg.addEventListener('click',function(e){
+  var g=e.target.closest('.node');if(!g)return;
+  var n=DATA[g.getAttribute('data-id')];if(!n)return;
+  var el=document.getElementById('detail-in');
+  var badge=n.type==='question'?'open':(n.status==='disproven'?'disproven':(n.type==='rumor'?'unverified':'verified'));
+  var srcs=(n.sources||[]).map(function(s){return '<a href="'+s.url+'" target="_blank" rel="noopener">'+s.outlet+'</a>'}).join(' · ');
+  var extra=n.traction?('<p style="color:var(--mut);font-size:12.5px;margin-top:6px">Corroborated by '+n.traction.up+' · disputed by '+n.traction.down+(n.issue?' · <a href="'+n.issue+'" target="_blank" rel="noopener">discussion</a>':'')+'</p>'):'';
+  el.innerHTML='<span class="badge '+badge+'">'+(n.type==='question'?'before the jury':(n.status||n.type))+'</span><h4>'+n.title+'</h4><p>'+n.body+'</p>'+(srcs?'<p class="srcs" style="margin-top:8px">— '+srcs+'</p>':'')+extra;
+  document.getElementById('detail').style.display='block';
+});
+})();
+</script>
+
+</div></main></section>
+
+<section class="pv-sec" id="timeline"><span class="pv-label">Day-by-day</span>
+<main><div class="wrap">
+<nav class="crumbs"><a href="#home">Home</a> › <a href="#hub">Lindsay Clancy Trial</a> › Day-by-day</nav>
+
+<h1>Day-by-day record</h1>
+<p class="sub">Day numbering follows the consecutive count used by Boston 25, NBC Boston, Boston Globe and Fox News (Day 1 = July 27). CBS Boston used a divergent count in at least one headline.</p>
+<h2>Before trial</h2>
+<div class="day"><div class="dh"><span class="dd">Feb 7, 2023</span></div><p style="font-size:14.5px">District Court arraignment via Zoom from a Boston hospital; not guilty plea to three counts each of murder, strangulation, and assault and battery with a dangerous weapon. <span class="srcs">— <a href="https://plymouthda.com/wp-content/uploads/2023/02/DuxburyARR2.7.23.pdf" rel="noopener" target="_blank">Plymouth County DA</a></span></p></div>
+<div class="day"><div class="dh"><span class="dd">Sep 15, 2023</span></div><p style="font-size:14.5px">Plymouth County grand jury indicts on three counts each of murder and strangulation. <span class="srcs">— <a href="https://plymouthda.com/news/2023-press-releases/duxbury-woman-indicted-on-charges-that-she-murdered-her-three-children/" rel="noopener" target="_blank">Plymouth County DA</a></span></p></div>
+<div class="day"><div class="dh"><span class="dd">Oct 26, 2023</span></div><p style="font-size:14.5px">Superior Court arraignment held at Tewksbury State Hospital; not guilty plea; held without bail at the facility. Forensic psychologist Dr. Karin Towers reported continuing depression and suicidal ideation. <span class="srcs">— <a href="https://plymouthda.com/news/2023-press-releases/duxbury-woman-arraigned-on-charges-that-she-murdered-her-three-children/" rel="noopener" target="_blank">Plymouth County DA</a> · <a href="https://www.boston.com/news/crime/2023/10/26/what-we-learned-from-duxbury-mom-lindsay-clancys-superior-court-arraignment/" rel="noopener" target="_blank">Boston.com</a></span></p></div>
+<div class="day"><div class="dh"><span class="dd">Feb 7, 2025</span></div><p style="font-size:14.5px">Judge Sullivan orders The New Yorker to disclose reporter Eren Orbey's interview materials from his Patrick Clancy profile; subpoena later quashed June 2, 2025 on jurisdictional grounds with leave to reissue in New York. As of Oct 2025, no materials produced. <span class="srcs">— <a href="https://pressfreedomtracker.us/all-incidents/new-yorker-writer-subpoenaed-ahead-of-massachusetts-murder-trial/" rel="noopener" target="_blank">U.S. Press Freedom Tracker</a> · <a href="https://www.bostonglobe.com/2025/03/19/metro/lindsay-clancy-patrick-clancy-new-yorker-magazine-first-amendment/" rel="noopener" target="_blank">Boston Globe</a></span></p></div>
+<div class="day"><div class="dh"><span class="dd">Jul 9, 2026</span></div><p style="font-size:14.5px">Prosecutors move to drop strangulation counts as redundant; case proceeds on three counts of first-degree murder. <span class="srcs">— <a href="https://www.boston.com/news/crime/2026/07/09/lindsay-clancys-strangulation-charges-dropped-ahead-of-murder-trial/" rel="noopener" target="_blank">Boston.com</a></span></p></div>
+<div class="day"><div class="dh"><span class="dd">Jul 20, 2026</span></div><p style="font-size:14.5px">Jury selection begins; nearly 90 prospective jurors appear on day one. <span class="srcs">— <a href="https://www.nbcboston.com/news/local/lindsay-clancy-trial-jury-selection-starts-today-live-updates/3983979/" rel="noopener" target="_blank">NBC Boston</a></span></p></div>
+<div class="day"><div class="dh"><span class="dd">Jul 24, 2026</span></div><p style="font-size:14.5px">Jury seated: 18 jurors (12 women, 6 men; 12 deliberating + 6 alternates). Judge Sullivan rules autopsy photos and the father's 911 call audio impounded from public view. <span class="srcs">— <a href="https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-full-jury-seated-paving-way-opening-statements/D33V2BWSKNEKTKVQIX5JNWO5E4/" rel="noopener" target="_blank">Boston 25 News</a> · <a href="https://www.wbur.org/news/2026/07/24/jury-selected-lindsay-clancy-opening-statements-murder-trial" rel="noopener" target="_blank">WBUR</a></span></p></div>
+<h2>The trial</h2>
+<div class="day" id="day-1">
+  <div class="dh"><span class="dn">Day 1</span><span class="dd">Jul 27, 2026</span><span class="badge phase">openings</span></div>
+  <h3 style="margin:6px 0 4px">Opening statements; Patrick Clancy is the first witness</h3>
+  <p style="font-size:14.5px">Prosecutor Shanan Buckingham argued Clancy planned the killings, describing searches for takeout and the route between home, a restaurant and CVS, and saying she strangled the children with exercise bands in the basement. Defense attorney Kevin Reddington said Clancy 'is aware that she killed her children and is not trying to deny that' but was suffering postpartum psychosis and was over-prescribed — '13 different psychiatric medications.' <span class="srcs">— <a href="https://www.courttv.com/news/lindsay-clancy-trial-opening-statements-set-for-mom-accused-of-killing-her-3-children/" rel="noopener" target="_blank">Court TV</a> · <a href="https://www.nbcboston.com/news/local/lindsay-clancy-trial-opening-statements-live-updates/3987462/" rel="noopener" target="_blank">NBC Boston</a> · <a href="https://www.wbur.org/news/2026/07/27/lindsay-clancy-trial-opening-statements" rel="noopener" target="_blank">WBUR</a></span></p>
+  <ul class="wit"><li><span class="wn">Patrick Clancy</span> <span class="wr">— Children's father; then-husband</span><br>Called as the prosecution's first witness.</li></ul>
+</div>
+<div class="day" id="day-2">
+  <div class="dh"><span class="dn">Day 2</span><span class="dd">Jul 29, 2026</span><span class="badge phase">prosecution</span></div>
+  <h3 style="margin:6px 0 4px">Patrick Clancy describes the night; jury hears the 911 call</h3>
+  <p style="font-size:14.5px">Patrick Clancy testified to discovering the children in the basement and finding Lindsay injured outside; the jury heard his ~6-minute 911 call. A CVS manager and a restaurant hostess each described normal interactions with Lindsay that evening. <span class="srcs">— <a href="https://www.cbsnews.com/boston/live-updates/lindsay-clancy-trial-live-updates-patrick-clancy-day-2/" rel="noopener" target="_blank">CBS Boston</a></span></p>
+  <ul class="wit"><li><span class="wn">Patrick Clancy</span> <span class="wr">— Ex-husband</span><br>Described finding the children with exercise bands around their necks and Lindsay outside with cut wrists; recalled her saying 'I tried to kill myself'; the jury heard his 911 call.</li><li><span class="wn">Angela Krause</span> <span class="wr">— General manager, CVS Kingston</span><br>Lindsay's medication call was 'a very normal interaction.'</li><li><span class="wn">Sweeney Schelgren</span> <span class="wr">— Hostess, ThreeV restaurant</span><br>Took the takeout order; no signs of impairment.</li></ul>
+</div>
+<div class="day" id="day-3">
+  <div class="dh"><span class="dn">Day 3</span><span class="dd">Jul 30, 2026</span><span class="badge phase">prosecution</span></div>
+  <h3 style="margin:6px 0 4px">First responders describe the scene</h3>
+  <p style="font-size:14.5px">Duxbury police and fire personnel described the response: Clancy found injured outside; CPR performed; children transported. <span class="srcs">— <a href="https://www.cbsnews.com/boston/live-updates/lindsay-clancy-trial-live-updates-day-3-first-responders/" rel="noopener" target="_blank">CBS Boston</a></span></p>
+  <ul class="wit"><li><span class="wn">Stephen Hall</span> <span class="wr">— Duxbury police officer</span><br>Found Lindsay injured outside; heard Patrick screaming from the basement.</li><li><span class="wn">Brian Josephine</span> <span class="wr">— Duxbury police officer</span><br>Arrived during the initial response.</li><li><span class="wn">PJ Hussey</span> <span class="wr">— Duxbury fire captain/paramedic</span><br>'It turned very chaotic very quickly.'</li><li><span class="wn">Loring 'Chuck' Nudd</span> <span class="wr">— Duxbury firefighter/EMT</span><br>Performed CPR; transported Dawson to Plymouth hospital.</li><li><span class="wn">Keith Nette</span> <span class="wr">— Duxbury fire captain</span><br>Assisted with chest compressions.</li><li><span class="wn">Patrick Dwyer</span> <span class="wr">— Duxbury firefighter/paramedic</span><br>Part of the response.</li><li><span class="wn">Jennifer Stratton</span> <span class="wr">— Paramedic</span><br>Carried Callan to an ambulance.</li><li><span class="wn">Robert Costanzo</span> <span class="wr">— Pembroke FD paramedic</span><br>Treated Lindsay; administered Narcan; she remained unresponsive.</li><li><span class="wn">Daniel Dougherty</span> <span class="wr">— Witness</span><br>Final witnesses of the day.</li><li><span class="wn">Vincent Cahill</span> <span class="wr">— Witness</span><br>Final witnesses of the day.</li></ul>
+</div>
+<div class="day" id="day-4">
+  <div class="dh"><span class="dn">Day 4</span><span class="dd">Jul 31, 2026</span><span class="badge phase">prosecution</span></div>
+  <h3 style="margin:6px 0 4px">Jury views the Duxbury home; ER physicians testify</h3>
+  <p style="font-size:14.5px">Jurors inspected the home's exterior, basement and both floors, and were driven past ThreeV and the Kingston CVS. ER physicians described treating Dawson and Callan. <span class="srcs">— <a href="https://www.cbsnews.com/boston/news/lindsay-clancy-trial-day-4-jury-view-home-duxbury/" rel="noopener" target="_blank">CBS Boston</a> · <a href="https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-jury-visit-home-where-prosecutors-say-3-kids-were-killed/R7IMUB2WKVDLDI463UICV2SHG4/" rel="noopener" target="_blank">Boston 25 News</a></span></p>
+  <ul class="wit"><li><span class="wn">Dr. Mark Tenerowicz</span> <span class="wr">— ER physician, BID Plymouth</span><br>Treated Dawson, who arrived without pulse; declared him dead at 7:28 p.m.</li><li><span class="wn">Dr. Benjamin Kaufman</span> <span class="wr">— ER physician, BID Plymouth</span><br>Restored Callan's heartbeat but 'at no time did he have any brain function'; transferred to Boston Children's.</li><li><span class="wn">Marcanthony Maffeo</span> <span class="wr">— Duxbury police</span><br>Accompanied the sedated Clancy by medical flight to Brigham and Women's.</li><li><span class="wn">Richard Lippard</span> <span class="wr">— Duxbury police officer</span><br>Described Clancy 'sedated, not speaking.'</li><li><span class="wn">Melissa Arcadipane</span> <span class="wr">— Lab tech supervisor, South Shore Hospital</span><br>Processed blood/urine samples for State Police.</li></ul>
+</div>
+<div class="day" id="day-5">
+  <div class="dh"><span class="dn">Day 5</span><span class="dd">Aug 3, 2026</span><span class="badge phase">prosecution</span></div>
+  <h3 style="margin:6px 0 4px">Treating psychiatrist; journal entries read aloud</h3>
+  <p style="font-size:14.5px">A psychiatrist who treated Clancy testified along with doctors, nurses and police from the immediate response. Excerpts from Clancy's journal, chronicling desperation and 'brain fog,' were read in court. <span class="srcs">— <a href="https://www.nbcboston.com/news/local/lindsay-clancy-trial-day-5-live-stream-live-updates/" rel="noopener" target="_blank">NBC Boston</a></span></p>
+  
+</div>
+<div class="day" id="day-6">
+  <div class="dh"><span class="dn">Day 6</span><span class="dd">Aug 4, 2026</span><span class="badge phase">prosecution</span></div>
+  <h3 style="margin:6px 0 4px">Toxicology: drugs in Clancy's system, none in the children</h3>
+  <p style="font-size:14.5px">A surgeon described Clancy's spinal injuries from the fall. State Police testified to finding prescription bottles; eight crime-lab witnesses covered toxicology — prescription drugs detected in Clancy's blood and urine, nothing in the children. The parties stipulated the children's toxicology testing was done correctly. (Date per CBS 'Day 6' label; CBS's own dating was internally inconsistent.) <span class="srcs">— <a href="https://www.cbsnews.com/boston/news/lindsay-clancy-murder-trial-watch-live-day-6/" rel="noopener" target="_blank">CBS Boston</a></span></p>
+  <ul class="wit"><li><span class="wn">Dr. Cristina Karpio</span> <span class="wr">— General surgeon, South Shore Hospital</span><br>Described complex spinal injuries from the second-story fall.</li><li><span class="wn">Lt. Joseph Rabbit</span> <span class="wr">— Mass. State Police</span><br>Found four prescription bottles in a kitchen cabinet during the search.</li></ul>
+</div>
+<div class="day" id="day-7">
+  <div class="dh"><span class="dn">Day 7</span><span class="dd">Aug 5, 2026</span><span class="badge phase">prosecution</span></div>
+  <h3 style="margin:6px 0 4px">Toxicology detail, DNA on the exercise bands, the former nanny</h3>
+  <p style="font-size:14.5px">Analysts detailed benzodiazepines in Clancy's system at largely therapeutic levels; DNA from the exercise bands included Dawson, Callan and Patrick Clancy. The former nanny called Clancy 'a wonderful mom who loved her kids' who had shared she was suffering postpartum issues. <span class="srcs">— <a href="https://www.bostonglobe.com/2026/08/05/metro/lindsay-clancy-trial-live-updates/" rel="noopener" target="_blank">Boston Globe</a></span></p>
+  <ul class="wit"><li><span class="wn">Eitan Negri</span> <span class="wr">— Physician assistant, Brigham and Women's</span><br>Repaired wrist lacerations Jan 25, 2023; neck cuts 'superficial.'</li><li><span class="wn">Nicholas Roberts</span> <span class="wr">— State Police crime lab analyst</span><br>Detected 'at least four or five' benzodiazepines; no alcohol.</li><li><span class="wn">Dr. Justin Brower</span> <span class="wr">— Forensic toxicologist</span><br>One drug 'a little elevated'; the rest therapeutic; not at suicidal levels.</li><li><span class="wn">Katarina Stashyn</span> <span class="wr">— Forensic scientist (ex-State Police DNA)</span><br>Mixed DNA profiles on exercise bands; Lindsay's DNA on shingles outside the home.</li><li><span class="wn">Elaine Rossi</span> <span class="wr">— Former nanny (Sept–Dec 2022)</span><br>'A wonderful mom'; Clancy shared postpartum struggles and sleep difficulties; no concerns about the children's safety.</li></ul>
+</div>
+<div class="day" id="day-8">
+  <div class="dh"><span class="dn">Day 8</span><span class="dd">Aug 6, 2026</span><span class="badge phase">prosecution</span></div>
+  <h3 style="margin:6px 0 4px">Medical examiner; pediatrician; family and friends</h3>
+  <p style="font-size:14.5px">The medical examiner who performed the autopsies testified (Callan's cause of death: complications of mechanical asphyxia). The children's pediatrician saw Cora the morning of the deaths in a routine visit and 'never saw signs of postpartum issues' in Lindsay. The former father-in-law described 'an all-American family' and Lindsay's 'blank stare' at Thanksgiving. <span class="srcs">— <a href="https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-medical-examiner-testify-about-deaths-3-young-kids/ORMYDXSPZZCP5H3FNZ45ZTAMYU/" rel="noopener" target="_blank">Boston 25 News</a> · <a href="https://www.nbcboston.com/news/local/lindsay-clancy-trial-day-8-live-stream-live-updates/3993075/" rel="noopener" target="_blank">NBC Boston</a></span></p>
+  <ul class="wit"><li><span class="wn">Dr. Kimberly Springer</span> <span class="wr">— State medical examiner</span><br>Performed the autopsies; Callan's cause of death 'complications of mechanical asphyxia.'</li><li><span class="wn">Dr. Lindsay Rosshirt</span> <span class="wr">— Pediatrician</span><br>Children healthy; examined Cora that morning; saw no postpartum signs in Lindsay.</li><li><span class="wn">Christopher Clancy</span> <span class="wr">— Former father-in-law</span><br>Devoted mother; 'blank stare' at Thanksgiving; his overnight offer declined; Patrick very concerned for his wife.</li><li><span class="wn">Susan Fraone</span> <span class="wr">— Preschool teacher</span><br>Dawson had difficult drop-offs starting Oct 2022.</li><li><span class="wn">Susan Bertolo</span> <span class="wr">— Preschool teacher</span><br>Testified about the day before the deaths.</li><li><span class="wn">Bethany DeCollibus</span> <span class="wr">— Family therapist; friend</span><br>Knew of insomnia; never heard suicidal ideation.</li><li><span class="wn">Andrea Hennigan</span> <span class="wr">— RN, MGH labor &amp; delivery</span><br>Texted with Lindsay the day before about medication adjustments.</li><li><span class="wn">Kyle Carney</span> <span class="wr">— Friend of Patrick Clancy</span><br>Testified about a Jan 22, 2023 social gathering.</li><li><span class="wn">Det. Sgt. Andrew Chiachio</span> <span class="wr">— Mass. State Police</span><br>Recovered surveillance footage, DNA samples, search-warrant evidence.</li></ul>
+</div>
+<div class="day" id="day-9">
+  <div class="dh"><span class="dn">Day 9</span><span class="dd">Aug 7, 2026</span><span class="badge phase">prosecution</span></div>
+  <h3 style="margin:6px 0 4px">Treating psychiatrists; heated exchange over a hot mic</h3>
+  <p style="font-size:14.5px">Psychiatrists who treated Clancy in the months before the deaths testified, including Dr. Jennifer Tufts. The day included a heated exchange referencing a hot mic, with the defense raising accusations against prosecutors. <span class="srcs">— <a href="https://www.nbcboston.com/news/local/lindsay-clancy-trial-day-9-live-stream-live-updates/3993819/" rel="noopener" target="_blank">NBC Boston</a></span></p>
+  <ul class="wit"><li><span class="wn">Dr. Jennifer Tufts</span> <span class="wr">— Psychiatrist, Aster Mental Health</span><br>Testimony began; continued Day 10.</li></ul>
+</div>
+<div class="day" id="day-10">
+  <div class="dh"><span class="dn">Day 10</span><span class="dd">Aug 10, 2026</span><span class="badge phase">prosecution</span></div>
+  <h3 style="margin:6px 0 4px">Tufts: 'no signs of psychosis' the day before the killings</h3>
+  <p style="font-size:14.5px">Dr. Jennifer Tufts, who treated Clancy across 14 telehealth visits through Jan 23, 2023, said she found no signs of psychosis or mania at the final appointment and that Clancy denied suicidal or homicidal ideation. The defense pressed her limited experience and that she never obtained other providers' records. Nurse practitioner Julie Paul described the November 2022 intake: ideation denied; sleep the main concern. <span class="srcs">— <a href="https://www.cbsnews.com/boston/news/lindsay-clancy-trial-watch-live-day-10-jennifer-tufts/" rel="noopener" target="_blank">CBS Boston</a> · <a href="https://www.bostonglobe.com/2026/08/10/metro/lindsay-clancy-trial-live-updates/" rel="noopener" target="_blank">Boston Globe</a> · <a href="https://www.cbsnews.com/news/lindsay-clancy-trial-key-moments/" rel="noopener" target="_blank">CBS News</a></span></p>
+  <ul class="wit"><li><span class="wn">Dr. Jennifer Tufts</span> <span class="wr">— Psychiatrist, Aster Mental Health</span><br>'No signs of psychosis or mania' Jan 23; Clancy denied suicidal/homicidal ideation but felt 'close to feeling suicidal'; ~10 medications tried; cross highlighted her limited postpartum caseload and missing records.</li><li><span class="wn">Julie Paul</span> <span class="wr">— Psychiatric NP; ex-director, perinatal behavioral health, South Shore Health</span><br>Nov 22, 2022 screening: ideation denied, no hallucinations/delusions; sleep the main concern; prescribed Prozac 10mg; transferred care Nov 30.</li></ul>
+</div>
+<div class="day" id="day-11">
+  <div class="dh"><span class="dn">Day 11</span><span class="dd">Aug 11, 2026</span><span class="badge phase">prosecution</span></div>
+  <h3 style="margin:6px 0 4px">Psychiatric nurse: suicidal thoughts documented, 'never thoughts of harming her children'</h3>
+  <p style="font-size:14.5px">Nurse Rebecca Jollotta testified Clancy had persistent, intrusive suicidal thoughts but — documented repeatedly — never thoughts of harming her children. She suspected possible bipolar disorder; prescribed Seroquel, Valium, Lamictal; expressed reluctance when Clancy asked to taper Seroquel but sent the prescription. Final clinic contact: Patrick's Dec 30 call seeking a McLean bed. <span class="srcs">— <a href="https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-more-medical-professionals-testify-today/3WYJV7DOCJEDLOHCHANTCDP6SQ/" rel="noopener" target="_blank">Boston 25 News</a></span></p>
+  <ul class="wit"><li><span class="wn">Rebecca Jollotta</span> <span class="wr">— Psychiatric nurse, South Shore Health perinatal program</span><br>Persistent suicidal ideation; 'never had thoughts on harming her children'; suspected bipolar; taper reluctance; cross noted records she never received.</li></ul>
+</div>
+<div class="day" id="day-12">
+  <div class="dh"><span class="dn">Day 12</span><span class="dd">Aug 12, 2026</span><span class="badge phase">prosecution</span></div>
+  <h3 style="margin:6px 0 4px">Counselor's notes; medical examiners on the autopsies</h3>
+  <p style="font-size:14.5px">Counselor Latiesha Dukes saw Clancy four times in December 2022 — first visit noted 'frequent suicide ideation,' final visit showed improvement; referred to higher-level care. Medical examiners testified on autopsy findings for all three children. <span class="srcs">— <a href="https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-medical-examiner-counselor-testify-12th-day-testimony/RBHOHTBAEVH5PK4L6Y3A5D7WSM/" rel="noopener" target="_blank">Boston 25 News</a></span></p>
+  <ul class="wit"><li><span class="wn">Sgt. Daniel Lawlor</span> <span class="wr">— Mass. State Police</span><br>Evidence officer; hospital observation.</li><li><span class="wn">Latiesha Dukes</span> <span class="wr">— Mental health counselor, South Shore perinatal clinic</span><br>Dec 2: depression symptoms, frequent suicidal ideation → postpartum anxiety diagnosis; Dec 9: improved; referred to Women and Infants.</li><li><span class="wn">Nicole Bradley</span> <span class="wr">— Plymouth County Sheriff field services</span><br>Hospital watch duty.</li><li><span class="wn">Dr. Renee Stonebridge</span> <span class="wr">— Medical examiner</span><br>Autopsy findings for all three children.</li><li><span class="wn">Dr. Barbara Olson</span> <span class="wr">— Medical examiner</span><br>External examination of Cora.</li></ul>
+</div>
+<div class="day" id="day-13">
+  <div class="dh"><span class="dn">Day 13</span><span class="dd">Aug 13, 2026</span><span class="badge phase">prosecution</span></div>
+  <h3 style="margin:6px 0 4px">Digital forensics: the searches and the October note</h3>
+  <p style="font-size:14.5px">State Police digital forensics presented: an Aug 23, 2022 laptop visit to a suicide-methods page; a Jan 20, 2023 phone search 'Can you treat a sociopath'; an Oct 25, 2022 note beginning 'I'm sad and depressed. I can't parent my 3rd child like my first'; and Jan 23–24 texts and calls. No court Friday Aug 14. <span class="srcs">— <a href="https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-testimony-continues-after-jurors-see-autopsy-photos-children/XUFQLDRTGZGLJKNQXRXPFS5OAY/" rel="noopener" target="_blank">Boston 25 News</a></span></p>
+  <ul class="wit"><li><span class="wn">Sgt. Kyle Pavao</span> <span class="wr">— Mass. State Police digital forensics</span><br>Laptop history: suicide-methods page visit Aug 23, 2022.</li><li><span class="wn">Timothy Chiappini</span> <span class="wr">— Mass. State Police digital forensics</span><br>Phone extraction: 'Can you treat a sociopath' search (Jan 20, 2023); Oct 25, 2022 note; Jan 23–24 messages.</li><li><span class="wn">Joshua McKelligan</span> <span class="wr">— Mass. State Police case officer</span><br>Described the bedroom scene and stains on ledge/shingles; Museum of Science surveillance video.</li></ul>
+</div>
+<div class="day" id="day-14">
+  <div class="dh"><span class="dn">Day 14</span><span class="dd">Aug 17, 2026</span><span class="badge phase">prosecution-rests</span></div>
+  <h3 style="margin:6px 0 4px">Prosecution rests after ~70 witnesses; defense begins</h3>
+  <p style="font-size:14.5px">Cellebrite expert Ian Whiffin closed the Commonwealth's case with iPhone data from Jan 24, 2023: stair climbs at 5:33 and 5:38 p.m., a final heart-rate reading at 5:23 p.m., and searches including 'ketamine for suicide ideation' (Jan 18) and 'symptoms of postpartum psychosis' (Jan 19). The Commonwealth rested Monday morning. The defense opened with character and family witnesses: nurse colleague Margaret Hamp, sister Allison Ozga, and mother Paula Musgrove — who read an October 2022 text, 'Mom will you please come up and stay with me…Something is wrong,' and said Lindsay disclosed 'thoughts of harming the children' in late December. <span class="srcs">— <a href="https://www.boston25news.com/news/local/lindsay-clancy-live-updates-trial-enters-4th-week-testimony/GS4743ZE7FBALCAAEY7VXSMUJ4/" rel="noopener" target="_blank">Boston 25 News</a> · <a href="https://www.nbcboston.com/news/local/lindsay-clancy-trial-day-14-live-stream-live-updates-defense-witnesses-next/3998775/" rel="noopener" target="_blank">NBC Boston</a> · <a href="https://www.wbur.org/news/2026/08/17/prosecution-rests-murder-trial-lindsay-clancy" rel="noopener" target="_blank">WBUR</a> · <a href="https://www.cbsnews.com/news/lindsay-clancy-trial-key-moments/" rel="noopener" target="_blank">CBS News</a></span></p>
+  <ul class="wit"><li><span class="wn">Ian Whiffin</span> <span class="wr">— Cellebrite digital forensics (prosecution)</span><br>Apple Health data; stair climbs 5:33/5:38 p.m.; searches re: ketamine and postpartum psychosis; data stops at 5:38 p.m. per cross.</li><li><span class="wn">Margaret Hamp</span> <span class="wr">— L&amp;D nurse, MGH (defense)</span><br>'The kind of nurse you want taking care of you'; once called police for a wellness check over a baby-cam concern.</li><li><span class="wn">Allison Ozga</span> <span class="wr">— Sister (defense)</span><br>Decline from Thanksgiving to Christmas 2022; suicidal thoughts at Christmastime after McLean discharge.</li><li><span class="wn">Paula Musgrove</span> <span class="wr">— Mother (defense)</span><br>'Things changed in October'; the 'Something is wrong' text; late-Dec disclosure of thoughts of harming the children; cross: she didn't consider commitment or separation. Also: 'The medication was pretty much just destroying her mind.'</li><li><span class="wn">Michael Vulfovich</span> <span class="wr">— ER physician (defense expert)</span><br>Reviewed Clancy's Jan 24 injuries.</li></ul>
+</div>
+<div class="day" id="day-15">
+  <div class="dh"><span class="dn">Day 15</span><span class="dd">Aug 18, 2026</span><span class="badge phase">defense</span></div>
+  <h3 style="margin:6px 0 4px">'She was begging for help'; the psychologist and the voice</h3>
+  <p style="font-size:14.5px">Former mother-in-law Sue Clancy (a 38-year L&amp;D nurse practitioner) said Lindsay 'was begging for help' in November 2022. Psychiatrist Dr. Donald Condie called the records 'somewhat sparse' and described postpartum psychosis symptoms. Forensic pathologist Dr. Elizabeth Laposata described a 'freefall dive headfirst.' Dr. Paul Zeizel, who had seen Clancy 45+ times, said she reported hearing 'a male voice ordering her' that she 'had no choice but to kill her children. And kill herself.' <span class="srcs">— <a href="https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-defense-continues-case-mother-in-law-expected-testify/KVMXBQP4DJHZZHO4FSXAGDC3TA/" rel="noopener" target="_blank">Boston 25 News</a></span></p>
+  <ul class="wit"><li><span class="wn">Sue Clancy</span> <span class="wr">— Former mother-in-law; NP, South Shore L&amp;D</span><br>'Begging for help' Nov 2022; referred her to the postpartum program; 'very nurturing, very loving, wonderful mother.'</li><li><span class="wn">Dr. Donald Condie</span> <span class="wr">— Psychiatrist, Cambridge Health Alliance (defense)</span><br>Records 'somewhat sparse'; Zoloft increase left her 'numb, not herself'; described postpartum psychosis symptoms.</li><li><span class="wn">Dr. Elizabeth Laposata</span> <span class="wr">— Forensic pathologist (defense, via Zoom)</span><br>'Freefall dive headfirst' causing spinal compression/paralysis; Callan's bruising attributed to medical equipment.</li><li><span class="wn">Dr. Paul Zeizel</span> <span class="wr">— Psychologist (defense)</span><br>45 visits since the incident; she reported a male voice ordering the killings.</li></ul>
+</div>
+<div class="day" id="day-16">
+  <div class="dh"><span class="dn">Day 16</span><span class="dd">Aug 19, 2026</span><span class="badge phase">defense</span></div>
+  <h3 style="margin:6px 0 4px">Zeizel: she could not tell right from wrong; TikTok witness excluded</h3>
+  <p style="font-size:14.5px">Dr. Zeizel concluded Clancy 'was unable to conform her behavior to the rule of law' and experienced derealization and psychosis in late 2022; she has not heard voices since 2023. Proposed witness Emily Thorndike (a former McLean social worker who posted a TikTok disputing the prosecution's characterization of McLean) was ruled inadmissible for 'limited materiality.' Jury sent home early over an undisclosed 'unforeseen circumstance.' <span class="srcs">— <a href="https://abc7chicago.com/post/lindsay-clancy-trial-day-16-defense-expert-suggests-clancys-health-care-providers-missed-warning-signs/19702385/" rel="noopener" target="_blank">ABC7</a> · <a href="https://www.nbcboston.com/news/local/lindsay-clancy-trial-day-16-live-stream-live-updates/4000212/" rel="noopener" target="_blank">NBC Boston</a> · <a href="https://www.pbs.org/newshour/nation/lindsay-clancys-defense-rests-at-trial-over-whether-postpartum-psychosis-drove-her-to-killings" rel="noopener" target="_blank">PBS NewsHour</a></span></p>
+  <ul class="wit"><li><span class="wn">Dr. Paul Zeizel</span> <span class="wr">— Clinical/forensic psychologist (defense)</span><br>~60 meetings over three years; 'Intrusive thoughts are unrelenting'; opined she could not determine right from wrong on Jan 24, 2023.</li><li><span class="wn">Emily Thorndike</span> <span class="wr">— Proposed defense witness (excluded)</span><br>Questioned outside the jury; ruled inadmissible — 'limited materiality.'</li></ul>
+</div>
+<div class="day" id="day-17">
+  <div class="dh"><span class="dn">Day 17</span><span class="dd">Aug 20, 2026</span><span class="badge phase">defense</span></div>
+  <h3 style="margin:6px 0 4px">The chaplain and the voice; pink-clad supporters outside</h3>
+  <p style="font-size:14.5px">Chaplain Sheila Cavanaugh testified Clancy's first words after her breathing tube was removed were 'I am so glad my children are safe,' and that Clancy described a persistent male voice threatening her and the children's safety. On cross, ADA Sprague noted the chaplain's notes never once recorded the voice. Outside, hundreds of pink-clad supporters gathered; Judge Sullivan questioned jurors individually to confirm impartiality. (Outlets differ on her visit count: Globe/WBUR reported 200+; Boston 25 reported at least 14.) <span class="srcs">— <a href="https://www.bostonglobe.com/2026/08/20/metro/lindsay-clancy-trial-live-updates/" rel="noopener" target="_blank">Boston Globe</a> · <a href="https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-judge-sends-jury-home-early-after-hospital-chaplains-testimony/UYC36IIX6ZFKVIO44HAP2OHKGE/" rel="noopener" target="_blank">Boston 25 News</a> · <a href="https://www.wbur.org/news/2026/08/21/lindsay-clancy-defense-rests" rel="noopener" target="_blank">WBUR</a></span></p>
+  <ul class="wit"><li><span class="wn">Sheila Cavanaugh</span> <span class="wr">— Chaplain, Brigham and Women's (defense)</span><br>First words after extubation; the reported voice; cross: no note of it in her records.</li></ul>
+</div>
+<div class="day" id="day-18">
+  <div class="dh"><span class="dn">Day 18</span><span class="dd">Aug 21, 2026</span><span class="badge phase">defense-rests</span></div>
+  <h3 style="margin:6px 0 4px">Resnick: 'altruistic filicide.' Defense rests; rebuttal begins with Mack</h3>
+  <p style="font-size:14.5px">Dr. Phillip Resnick — who testified in the Andrea Yates case — concluded Clancy experienced postpartum psychosis with command hallucinations: 'a puppet and someone else was pulling the strings.' On cross, Sprague cited his own writing that command hallucinations 'are easy to fabricate.' The defense rested (10 witnesses) without calling Clancy. The Commonwealth opened rebuttal with forensic psychiatrist Dr. Avram Mack: major depressive disorder, not psychosis — she 'methodically killed her children one by one' knowing it was wrong. Three rebuttal experts expected in total. <span class="srcs">— <a href="https://www.courttv.com/news/she-was-a-puppet-and-someone-else-was-pulling-the-strings-lindsay-clancys-defense-rests-after-doctor-says-she-wasnt-psychotic-every-minute/" rel="noopener" target="_blank">Court TV</a> · <a href="https://www.bostonglobe.com/2026/08/21/metro/lindsay-clancy-trial-mack-resnick/" rel="noopener" target="_blank">Boston Globe</a> · <a href="https://www.wbur.org/news/2026/08/21/lindsay-clancy-defense-rests" rel="noopener" target="_blank">WBUR</a> · <a href="https://abc7ny.com/post/lindsay-clancy-trial-day-18-defense-could-rest-case-friday/19713230/" rel="noopener" target="_blank">ABC7</a> · <a href="https://www.foxnews.com/live-news/lindsay-clancy-murder-trial-day-18" rel="noopener" target="_blank">Fox News</a></span></p>
+  <ul class="wit"><li><span class="wn">Dr. Phillip Resnick</span> <span class="wr">— Forensic psychiatrist (defense, via Zoom)</span><br>Evaluated Clancy 4 months after the deaths; postpartum psychosis, command hallucinations, 'altruistic filicide'; cross: his own work says such hallucinations are easy to fabricate.</li><li><span class="wn">Dr. Avram Mack</span> <span class="wr">— Forensic psychiatrist (prosecution rebuttal)</span><br>Two April 2026 interviews; major depressive disorder, not psychosis; testified she said 'Go to God' during the killings and could have stopped.</li></ul>
+</div>
+
+</div></main></section>
+
+<section class="pv-sec" id="witnesses"><span class="pv-label">Witnesses</span>
+<main><div class="wrap">
+<nav class="crumbs"><a href="#home">Home</a> › <a href="#hub">Lindsay Clancy Trial</a> › Witnesses</nav>
+
+<h1>Witness index</h1>
+<p class="sub">61 witnesses indexed from the day-by-day record (the Commonwealth called ~70 in total; days summarized only in aggregate by outlets are not itemized here). Click a day to jump to full context.</p>
+<div class="card" style="overflow-x:auto"><table class="witx">
+<tr><th>Witness</th><th>Role</th><th>Day</th><th>Testimony, in one line</th></tr>
+<tr><td><b>Allison Ozga</b></td><td>Sister (defense)</td><td><a href="#day-14">Day 14</a></td><td>Decline from Thanksgiving to Christmas 2022; suicidal thoughts at Christmastime after McLean discharge.</td></tr>
+<tr><td><b>Andrea Hennigan</b></td><td>RN, MGH labor &amp; delivery</td><td><a href="#day-8">Day 8</a></td><td>Texted with Lindsay the day before about medication adjustments.</td></tr>
+<tr><td><b>Angela Krause</b></td><td>General manager, CVS Kingston</td><td><a href="#day-2">Day 2</a></td><td>Lindsay's medication call was 'a very normal interaction.'</td></tr>
+<tr><td><b>Bethany DeCollibus</b></td><td>Family therapist; friend</td><td><a href="#day-8">Day 8</a></td><td>Knew of insomnia; never heard suicidal ideation.</td></tr>
+<tr><td><b>Brian Josephine</b></td><td>Duxbury police officer</td><td><a href="#day-3">Day 3</a></td><td>Arrived during the initial response.</td></tr>
+<tr><td><b>Christopher Clancy</b></td><td>Former father-in-law</td><td><a href="#day-8">Day 8</a></td><td>Devoted mother; 'blank stare' at Thanksgiving; his overnight offer declined; Patrick very concerned for his wife.</td></tr>
+<tr><td><b>Daniel Dougherty</b></td><td>Witness</td><td><a href="#day-3">Day 3</a></td><td>Final witnesses of the day.</td></tr>
+<tr><td><b>Det. Sgt. Andrew Chiachio</b></td><td>Mass. State Police</td><td><a href="#day-8">Day 8</a></td><td>Recovered surveillance footage, DNA samples, search-warrant evidence.</td></tr>
+<tr><td><b>Dr. Avram Mack</b></td><td>Forensic psychiatrist (prosecution rebuttal)</td><td><a href="#day-18">Day 18</a></td><td>Two April 2026 interviews; major depressive disorder, not psychosis; testified she said 'Go to God' during the killings and could have stopped.</td></tr>
+<tr><td><b>Dr. Barbara Olson</b></td><td>Medical examiner</td><td><a href="#day-12">Day 12</a></td><td>External examination of Cora.</td></tr>
+<tr><td><b>Dr. Benjamin Kaufman</b></td><td>ER physician, BID Plymouth</td><td><a href="#day-4">Day 4</a></td><td>Restored Callan's heartbeat but 'at no time did he have any brain function'; transferred to Boston Children's.</td></tr>
+<tr><td><b>Dr. Cristina Karpio</b></td><td>General surgeon, South Shore Hospital</td><td><a href="#day-6">Day 6</a></td><td>Described complex spinal injuries from the second-story fall.</td></tr>
+<tr><td><b>Dr. Donald Condie</b></td><td>Psychiatrist, Cambridge Health Alliance (defense)</td><td><a href="#day-15">Day 15</a></td><td>Records 'somewhat sparse'; Zoloft increase left her 'numb, not herself'; described postpartum psychosis symptoms.</td></tr>
+<tr><td><b>Dr. Elizabeth Laposata</b></td><td>Forensic pathologist (defense, via Zoom)</td><td><a href="#day-15">Day 15</a></td><td>'Freefall dive headfirst' causing spinal compression/paralysis; Callan's bruising attributed to medical equipment.</td></tr>
+<tr><td><b>Dr. Jennifer Tufts</b></td><td>Psychiatrist, Aster Mental Health</td><td><a href="#day-9">Day 9</a></td><td>Testimony began; continued Day 10.</td></tr>
+<tr><td><b>Dr. Jennifer Tufts</b></td><td>Psychiatrist, Aster Mental Health</td><td><a href="#day-10">Day 10</a></td><td>'No signs of psychosis or mania' Jan 23; Clancy denied suicidal/homicidal ideation but felt 'close to feeling suicidal'; ~10 medications tried; cross highlighted her limited postpartum caseload and missing records.</td></tr>
+<tr><td><b>Dr. Justin Brower</b></td><td>Forensic toxicologist</td><td><a href="#day-7">Day 7</a></td><td>One drug 'a little elevated'; the rest therapeutic; not at suicidal levels.</td></tr>
+<tr><td><b>Dr. Kimberly Springer</b></td><td>State medical examiner</td><td><a href="#day-8">Day 8</a></td><td>Performed the autopsies; Callan's cause of death 'complications of mechanical asphyxia.'</td></tr>
+<tr><td><b>Dr. Lindsay Rosshirt</b></td><td>Pediatrician</td><td><a href="#day-8">Day 8</a></td><td>Children healthy; examined Cora that morning; saw no postpartum signs in Lindsay.</td></tr>
+<tr><td><b>Dr. Mark Tenerowicz</b></td><td>ER physician, BID Plymouth</td><td><a href="#day-4">Day 4</a></td><td>Treated Dawson, who arrived without pulse; declared him dead at 7:28 p.m.</td></tr>
+<tr><td><b>Dr. Paul Zeizel</b></td><td>Psychologist (defense)</td><td><a href="#day-15">Day 15</a></td><td>45 visits since the incident; she reported a male voice ordering the killings.</td></tr>
+<tr><td><b>Dr. Paul Zeizel</b></td><td>Clinical/forensic psychologist (defense)</td><td><a href="#day-16">Day 16</a></td><td>~60 meetings over three years; 'Intrusive thoughts are unrelenting'; opined she could not determine right from wrong on Jan 24, 2023.</td></tr>
+<tr><td><b>Dr. Phillip Resnick</b></td><td>Forensic psychiatrist (defense, via Zoom)</td><td><a href="#day-18">Day 18</a></td><td>Evaluated Clancy 4 months after the deaths; postpartum psychosis, command hallucinations, 'altruistic filicide'; cross: his own work says such hallucinations are easy to fabricate.</td></tr>
+<tr><td><b>Dr. Renee Stonebridge</b></td><td>Medical examiner</td><td><a href="#day-12">Day 12</a></td><td>Autopsy findings for all three children.</td></tr>
+<tr><td><b>Eitan Negri</b></td><td>Physician assistant, Brigham and Women's</td><td><a href="#day-7">Day 7</a></td><td>Repaired wrist lacerations Jan 25, 2023; neck cuts 'superficial.'</td></tr>
+<tr><td><b>Elaine Rossi</b></td><td>Former nanny (Sept–Dec 2022)</td><td><a href="#day-7">Day 7</a></td><td>'A wonderful mom'; Clancy shared postpartum struggles and sleep difficulties; no concerns about the children's safety.</td></tr>
+<tr><td><b>Emily Thorndike</b></td><td>Proposed defense witness (excluded)</td><td><a href="#day-16">Day 16</a></td><td>Questioned outside the jury; ruled inadmissible — 'limited materiality.'</td></tr>
+<tr><td><b>Ian Whiffin</b></td><td>Cellebrite digital forensics (prosecution)</td><td><a href="#day-14">Day 14</a></td><td>Apple Health data; stair climbs 5:33/5:38 p.m.; searches re: ketamine and postpartum psychosis; data stops at 5:38 p.m. per cross.</td></tr>
+<tr><td><b>Jennifer Stratton</b></td><td>Paramedic</td><td><a href="#day-3">Day 3</a></td><td>Carried Callan to an ambulance.</td></tr>
+<tr><td><b>Joshua McKelligan</b></td><td>Mass. State Police case officer</td><td><a href="#day-13">Day 13</a></td><td>Described the bedroom scene and stains on ledge/shingles; Museum of Science surveillance video.</td></tr>
+<tr><td><b>Julie Paul</b></td><td>Psychiatric NP; ex-director, perinatal behavioral health, South Shore Health</td><td><a href="#day-10">Day 10</a></td><td>Nov 22, 2022 screening: ideation denied, no hallucinations/delusions; sleep the main concern; prescribed Prozac 10mg; transferred care Nov 30.</td></tr>
+<tr><td><b>Katarina Stashyn</b></td><td>Forensic scientist (ex-State Police DNA)</td><td><a href="#day-7">Day 7</a></td><td>Mixed DNA profiles on exercise bands; Lindsay's DNA on shingles outside the home.</td></tr>
+<tr><td><b>Keith Nette</b></td><td>Duxbury fire captain</td><td><a href="#day-3">Day 3</a></td><td>Assisted with chest compressions.</td></tr>
+<tr><td><b>Kyle Carney</b></td><td>Friend of Patrick Clancy</td><td><a href="#day-8">Day 8</a></td><td>Testified about a Jan 22, 2023 social gathering.</td></tr>
+<tr><td><b>Latiesha Dukes</b></td><td>Mental health counselor, South Shore perinatal clinic</td><td><a href="#day-12">Day 12</a></td><td>Dec 2: depression symptoms, frequent suicidal ideation → postpartum anxiety diagnosis; Dec 9: improved; referred to Women and Infants.</td></tr>
+<tr><td><b>Loring 'Chuck' Nudd</b></td><td>Duxbury firefighter/EMT</td><td><a href="#day-3">Day 3</a></td><td>Performed CPR; transported Dawson to Plymouth hospital.</td></tr>
+<tr><td><b>Lt. Joseph Rabbit</b></td><td>Mass. State Police</td><td><a href="#day-6">Day 6</a></td><td>Found four prescription bottles in a kitchen cabinet during the search.</td></tr>
+<tr><td><b>Marcanthony Maffeo</b></td><td>Duxbury police</td><td><a href="#day-4">Day 4</a></td><td>Accompanied the sedated Clancy by medical flight to Brigham and Women's.</td></tr>
+<tr><td><b>Margaret Hamp</b></td><td>L&amp;D nurse, MGH (defense)</td><td><a href="#day-14">Day 14</a></td><td>'The kind of nurse you want taking care of you'; once called police for a wellness check over a baby-cam concern.</td></tr>
+<tr><td><b>Melissa Arcadipane</b></td><td>Lab tech supervisor, South Shore Hospital</td><td><a href="#day-4">Day 4</a></td><td>Processed blood/urine samples for State Police.</td></tr>
+<tr><td><b>Michael Vulfovich</b></td><td>ER physician (defense expert)</td><td><a href="#day-14">Day 14</a></td><td>Reviewed Clancy's Jan 24 injuries.</td></tr>
+<tr><td><b>Nicholas Roberts</b></td><td>State Police crime lab analyst</td><td><a href="#day-7">Day 7</a></td><td>Detected 'at least four or five' benzodiazepines; no alcohol.</td></tr>
+<tr><td><b>Nicole Bradley</b></td><td>Plymouth County Sheriff field services</td><td><a href="#day-12">Day 12</a></td><td>Hospital watch duty.</td></tr>
+<tr><td><b>Patrick Clancy</b></td><td>Children's father; then-husband</td><td><a href="#day-1">Day 1</a></td><td>Called as the prosecution's first witness.</td></tr>
+<tr><td><b>Patrick Clancy</b></td><td>Ex-husband</td><td><a href="#day-2">Day 2</a></td><td>Described finding the children with exercise bands around their necks and Lindsay outside with cut wrists; recalled her saying 'I tried to kill myself'; the jury heard his 911 call.</td></tr>
+<tr><td><b>Patrick Dwyer</b></td><td>Duxbury firefighter/paramedic</td><td><a href="#day-3">Day 3</a></td><td>Part of the response.</td></tr>
+<tr><td><b>Paula Musgrove</b></td><td>Mother (defense)</td><td><a href="#day-14">Day 14</a></td><td>'Things changed in October'; the 'Something is wrong' text; late-Dec disclosure of thoughts of harming the children; cross: she didn't consider commitment or separation. Also: 'The medication was pretty much just destroying her mind.'</td></tr>
+<tr><td><b>PJ Hussey</b></td><td>Duxbury fire captain/paramedic</td><td><a href="#day-3">Day 3</a></td><td>'It turned very chaotic very quickly.'</td></tr>
+<tr><td><b>Rebecca Jollotta</b></td><td>Psychiatric nurse, South Shore Health perinatal program</td><td><a href="#day-11">Day 11</a></td><td>Persistent suicidal ideation; 'never had thoughts on harming her children'; suspected bipolar; taper reluctance; cross noted records she never received.</td></tr>
+<tr><td><b>Richard Lippard</b></td><td>Duxbury police officer</td><td><a href="#day-4">Day 4</a></td><td>Described Clancy 'sedated, not speaking.'</td></tr>
+<tr><td><b>Robert Costanzo</b></td><td>Pembroke FD paramedic</td><td><a href="#day-3">Day 3</a></td><td>Treated Lindsay; administered Narcan; she remained unresponsive.</td></tr>
+<tr><td><b>Sgt. Daniel Lawlor</b></td><td>Mass. State Police</td><td><a href="#day-12">Day 12</a></td><td>Evidence officer; hospital observation.</td></tr>
+<tr><td><b>Sgt. Kyle Pavao</b></td><td>Mass. State Police digital forensics</td><td><a href="#day-13">Day 13</a></td><td>Laptop history: suicide-methods page visit Aug 23, 2022.</td></tr>
+<tr><td><b>Sheila Cavanaugh</b></td><td>Chaplain, Brigham and Women's (defense)</td><td><a href="#day-17">Day 17</a></td><td>First words after extubation; the reported voice; cross: no note of it in her records.</td></tr>
+<tr><td><b>Stephen Hall</b></td><td>Duxbury police officer</td><td><a href="#day-3">Day 3</a></td><td>Found Lindsay injured outside; heard Patrick screaming from the basement.</td></tr>
+<tr><td><b>Sue Clancy</b></td><td>Former mother-in-law; NP, South Shore L&amp;D</td><td><a href="#day-15">Day 15</a></td><td>'Begging for help' Nov 2022; referred her to the postpartum program; 'very nurturing, very loving, wonderful mother.'</td></tr>
+<tr><td><b>Susan Bertolo</b></td><td>Preschool teacher</td><td><a href="#day-8">Day 8</a></td><td>Testified about the day before the deaths.</td></tr>
+<tr><td><b>Susan Fraone</b></td><td>Preschool teacher</td><td><a href="#day-8">Day 8</a></td><td>Dawson had difficult drop-offs starting Oct 2022.</td></tr>
+<tr><td><b>Sweeney Schelgren</b></td><td>Hostess, ThreeV restaurant</td><td><a href="#day-2">Day 2</a></td><td>Took the takeout order; no signs of impairment.</td></tr>
+<tr><td><b>Timothy Chiappini</b></td><td>Mass. State Police digital forensics</td><td><a href="#day-13">Day 13</a></td><td>Phone extraction: 'Can you treat a sociopath' search (Jan 20, 2023); Oct 25, 2022 note; Jan 23–24 messages.</td></tr>
+<tr><td><b>Vincent Cahill</b></td><td>Witness</td><td><a href="#day-3">Day 3</a></td><td>Final witnesses of the day.</td></tr>
+</table></div>
+
+</div></main></section>
+
+<section class="pv-sec" id="standard"><span class="pv-label">Legal standard</span>
+<main><div class="wrap">
+<nav class="crumbs"><a href="#home">Home</a> › <a href="#hub">Lindsay Clancy Trial</a> › The legal standard</nav>
+
+<h1>Lack of criminal responsibility — the McHoul standard</h1>
+<p class="sub">Plain-English explainer, drawn only from the case law, the statute, and the model jury instruction. Not legal advice.</p>
+<div class="card"><h3>The test</h3><p>A person is not responsible for criminal conduct if at the time of such conduct, as a result of mental disease or defect, they lack substantial capacity either to appreciate the wrongfulness of their conduct or to conform their conduct to the requirements of law. The two prongs are alternatives — either one suffices.</p></div>
+<div class="card"><h3>Who has to prove what</h3><p>The Commonwealth must prove the defendant WAS criminally responsible, beyond a reasonable doubt. The defense does not have to prove insanity. Under <i>Commonwealth v. Lawson</i> (2016), the mere fact that most people are sane is not, by itself, enough to carry that burden once mental-illness evidence is in the case — the Commonwealth may rely on the circumstances of the offense and the defendant's words and conduct before, during, and after.</p></div>
+<dl class="qa card">
+<dt>Does "she knew what she was doing" end the inquiry?</dt>
+<dd>No. The test has two independent prongs. Even a defendant who appreciated wrongfulness is not responsible if disease left her without substantial capacity to <i>conform her conduct</i> to the law. That is the prong defense expert Dr. Zeizel invoked.</dd>
+<dt>If the jury acquits on lack of criminal responsibility, does she walk free?</dt>
+<dd>No. Under M.G.L. c.123 §16, the court may order up to 40 days of hospitalization for evaluation, and the DA or facility may petition for commitment — six months initially, renewable in one-year periods. The model instruction notes a person who remains mentally ill and dangerous "may remain committed for the duration of his [or her] life."</dd>
+<dt>What are the jury's options here?</dt>
+<dd>First-degree murder (life without parole), second-degree murder (life with parole eligibility), not guilty by reason of lack of criminal responsibility, or no unanimous verdict (mistrial; retrial possible). Whether involuntary manslaughter joins the slip is still being argued.</dd>
+</dl>
+<p><span class="srcs">— <a href="https://law.justia.com/cases/massachusetts/supreme-court/volumes/352/352mass544.html" rel="noopener" target="_blank">Commonwealth v. McHoul, 352 Mass. 544 (1967)</a> · <a href="https://law.justia.com/cases/massachusetts/supreme-court/volumes/416/416mass574.html" rel="noopener" target="_blank">Commonwealth v. Kappler, 416 Mass. 574 (1993) (quoting Kostka)</a> · <a href="https://www.mass.gov/doc/9200-lack-of-criminal-responsibility/download" rel="noopener" target="_blank">Mass. Model Jury Instruction 9.200</a> · <a href="https://law.justia.com/cases/massachusetts/supreme-court/volumes/475/475mass806.html" rel="noopener" target="_blank">Commonwealth v. Lawson, 475 Mass. 806 (2016)</a></span></p>
+
+</div></main></section>
+
+<section class="pv-sec" id="submit"><span class="pv-label">Contribute</span>
+<main><div class="wrap">
+<nav class="crumbs"><a href="#home">Home</a> › Contribute</nav>
+
+<h1>Add to the Board</h1>
+<p class="sub">The Board is built from the court record — and from you. Theories welcome. Accusations of uncharged people are not.</p>
+<div class="grid2">
+<div class="card"><h3>🧵 Post a theory</h3><p>A hypothesis about the case: what the evidence might mean, what a side's strategy is, what a ruling implies. It appears on the Board as an amber UNVERIFIED node after review.</p><p style="margin-top:10px"><a class="btn" href="https://github.com/evesloan/gavelboard/issues/new?template=theory.yml">Post a theory</a></p></div>
+<div class="card"><h3>🔗 Propose a connection</h3><p>Link two nodes: this testimony <i>supports</i> / <i>contradicts</i> / <i>explains</i> that question. Say why. Strong connections get drawn on the Board.</p><p style="margin-top:10px"><a class="btn" href="https://github.com/evesloan/gavelboard/issues/new?template=connection.yml">Propose a connection</a></p></div>
+<div class="card"><h3>📎 Submit evidence</h3><p>A published report or primary document that corroborates or disproves a node on the Board. This is the only thing that moves a node between UNVERIFIED, the record, and DISPROVEN.</p><p style="margin-top:10px"><a class="btn" href="https://github.com/evesloan/gavelboard/issues/new?template=evidence.yml">Submit evidence</a></p></div>
+<div class="card"><h3>🚩 Report something</h3><p>Doxxing, an accusation against a private person, fabricated sourcing, harassment. Reports are pulled every cycle and reviewed first.</p><p style="margin-top:10px"><a class="btn ghost" href="https://github.com/evesloan/gavelboard/issues/new?template=report.yml">Report content</a></p></div>
+</div>
+<h2>House rules</h2>
+<div class="card"><p>
+1. <b>Theories are about the case, not the crowd.</b> Analyze the evidence, strategies, and rulings. Do not accuse private individuals of crimes, publish anyone's personal information, or speculate about uncharged people.<br>
+2. <b>Corroboration is not verification.</b> Upvotes raise a theory's visibility. Only sources move it to the record.<br>
+3. <b>Getting disproven is honorable.</b> Disproven nodes stay on the Board, greyed out. That is the site working.<br>
+4. <b>Everything is reviewed before it appears.</b> Usually within the hour. Nothing posts to the Board unmoderated.<br>
+5. <b>A GitHub account is required to post.</b> That's the launch-version tradeoff for a board with no ads, no tracking, and no spam.
+</p></div>
+
+</div></main></section>
+
+<section class="pv-sec" id="about"><span class="pv-label">About</span>
+<main><div class="wrap">
+<nav class="crumbs"><a href="#home">Home</a> › About</nav>
+
+<h1>About GavelBoard</h1>
+<p class="sub">A structured, continuously re-verified record of the court cases everyone is watching.</p>
+<div class="card"><p>Liveblogs are written for the minute they're published. GavelBoard is written for the person who arrives on day 15 and asks: <i>what actually happened here?</i> We keep the running record — day by day, witness by witness, ruling by ruling — with every factual line linked to the credentialed outlet or primary legal source it came from. Around the record, the community explores what it might mean, on a Board where rumors are labeled, tested, and — when a fact lands — retired in public.</p></div>
+<h2>The rules this site runs on</h2>
+<div class="card"><p>
+<b>Attribution, always.</b> Facts appear here only with a named source attached. If outlets disagree, we say so and show both.<br>
+<b>The presumption of innocence is not a formality.</b> Nothing on this site asserts a defendant's guilt. We report what is alleged, argued, and decided.<br>
+<b>Rumor and record never mix.</b> Community theories are amber and labeled UNVERIFIED wherever they appear. Popularity cannot promote them; only sourcing can.<br>
+<b>Verdicts get special handling.</b> A verdict is published as established fact only once multiple independent credentialed outlets report it — before that, you'll see the attributed wire items and a verdict-watch notice.<br>
+<b>Corrections are public.</b> Errors are fixed in place with a note, not silently.<br>
+<b>Dignity.</b> These cases involve real grief. We cover the proceeding — not autopsy detail beyond the legal facts, not the victims' worst day as content.
+</p></div>
+<h2>Who runs this</h2>
+<div class="card"><p>GavelBoard is operated by a small team using automated monitoring (the wire refreshes every 15 minutes) with human-reviewed publication for anything beyond attributed headlines. It is independent and unaffiliated with any court, party, or outlet. Contact / corrections: <a href="https://github.com/evesloan/gavelboard/issues">GitHub issues</a>.</p></div>
+
+</div></main></section>
+<footer><div class="wrap">
+  <p><b>GavelBoard</b> is a structured, continuously re-verified record of high-attention court cases. Every factual line links to its source. <span class="hb">◉ Last build: 2026-08-22T01:33:20.495Z</span></p>
+  <p class="disc">GavelBoard reports on allegations and court proceedings; every defendant is presumed innocent unless and until proven guilty. Community items marked UNVERIFIED are submitted theories, not established facts, and are labeled as such. This site summarizes and links to coverage by credentialed news organizations and to primary legal sources; quoted material belongs to the cited outlets. Corrections: open an issue at <a href="https://github.com/evesloan/gavelboard/issues">github.com/evesloan/gavelboard</a>. Some outbound links may become affiliate links; if that happens they will be labeled. Nothing here is legal advice.</p>
+</div></footer>

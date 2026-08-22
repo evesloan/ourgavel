@@ -2,189 +2,175 @@
   "items": [
     {
       "ts": "2026-08-21T02:30:00.000Z",
-      "outlet": "Bing News — Murdaugh venue",
+      "outlet": "via MSN",
       "headline": "Murdaugh prosecutor Creighton Waters says he'll let judge decide on new trial site",
       "url": "https://www.msn.com/en-us/crime/general/murdaugh-prosecutor-creighton-waters-says-he-ll-let-judge-decide-on-new-trial-site/ar-AA2aEqDv",
       "flag": null
     },
     {
       "ts": "2026-08-20T06:54:00.000Z",
-      "outlet": "Bing News — Murdaugh retrial",
+      "outlet": "Primetimer",
       "headline": "Why is Alex Murdaugh pushing Richland County over Charleston for his retrial?",
       "url": "https://www.primetimer.com/features/why-is-alex-murdaugh-pushing-richland-county-over-charleston-for-his-retrial",
       "flag": null
     },
     {
       "ts": "2026-08-18T07:21:00.000Z",
-      "outlet": "Bing News — Murdaugh retrial",
+      "outlet": "via MSN",
       "headline": "Alex Murdaugh now wants double-murder retrial moved to Columbia",
       "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-now-wants-double-murder-retrial-moved-to-columbia/ar-AA2aofar",
       "flag": null
     },
     {
       "ts": "2026-08-18T03:22:00.000Z",
-      "outlet": "Bing News — Murdaugh retrial",
+      "outlet": "via Yahoo News",
       "headline": "Alex Murdaugh defense asks judge to move retrial to Richland County",
       "url": "https://www.yahoo.com/news/us/articles/alex-murdaugh-defense-asks-judge-102259187.html",
       "flag": null
     },
     {
       "ts": "2026-08-17T14:01:00.000Z",
-      "outlet": "Bing News — Murdaugh retrial",
+      "outlet": "WLTX News19",
       "headline": "Alex Murdaugh defense suggests Richland County for murder retrial",
       "url": "https://www.wltx.com/article/news/special-reports/alex-murdaugh/alex-murdaugh-defense-suggests-richland-county-murder-retrial/101-a19643e3-5fa3-49e2-97a0-815bd5f6ff5e",
       "flag": null
     },
     {
       "ts": "2026-08-17T05:11:03.000Z",
-      "outlet": "Bing News — Murdaugh retrial",
+      "outlet": "via MSN",
       "headline": "Judge rules Alex Murdaugh's trial testimony allowed in upcoming double murder retrial",
       "url": "https://www.msn.com/en-us/news/crime/judge-rules-alex-murdaughs-trial-testimony-allowed-in-upcoming-double-murder-retrial/vi-AA2ahFaE",
       "flag": null
     },
     {
       "ts": "2026-08-17T05:10:00.000Z",
-      "outlet": "Bing News — Murdaugh retrial",
+      "outlet": "via Yahoo News",
       "headline": "Judge rules Alex Murdaugh's trial testimony allowed in upcoming double murder retrial",
       "url": "https://www.yahoo.com/news/videos/judge-rules-alex-murdaughs-trial-121103616.html",
       "flag": null
     },
     {
       "ts": "2026-08-14T15:52:23.000Z",
-      "outlet": "Bing News — Murdaugh venue",
+      "outlet": "via MSN",
       "headline": "Key rulings shake up Alex Murdaugh retrial: Venue disputed, prior testimony and fingernail DNA approved",
       "url": "https://www.msn.com/en-us/news/crime/key-rulings-shake-up-alex-murdaugh-retrial-venue-disputed-prior-testimony-and-fingernail-dna-approved/ar-AA2a9274",
       "flag": "verdict-watch"
     },
     {
       "ts": "2026-08-14T13:58:15.000Z",
-      "outlet": "Bing News — Murdaugh venue",
+      "outlet": "via MSN",
       "headline": "South Carolina judge grants Alex Murdaugh change of venue for murder retrial",
       "url": "https://www.msn.com/en-us/news/other/south-carolina-judge-grants-alex-murdaugh-change-of-venue-for-murder-retrial/ar-AA2a8D3Q",
       "flag": "verdict-watch"
     },
     {
       "ts": "2026-08-14T13:06:00.000Z",
-      "outlet": "Bing News — Murdaugh retrial",
+      "outlet": "via MSN",
       "headline": "Alex Murdaugh’s retrial will be relocated, and his original testimony can be used conditionally, judge rules",
       "url": "https://www.msn.com/en-us/news/crime/alex-murdaugh-s-retrial-will-be-relocated-and-his-original-testimony-can-be-used-conditionally-judge-rules/ar-AA2a5Bz6",
       "flag": null
     },
     {
       "ts": "2026-08-14T12:22:00.000Z",
-      "outlet": "Bing News — Murdaugh retrial",
+      "outlet": "via Yahoo News",
       "headline": "Alex Murdaugh's double murder retrial to be moved over jury fairness concerns, judge rules",
       "url": "https://www.yahoo.com/news/us/article/alex-murdaughs-double-murder-retrial-to-be-moved-over-jury-fairness-concerns-judge-rules-161302163.html",
       "flag": null
     },
     {
       "ts": "2026-08-14T12:10:51.000Z",
-      "outlet": "Bing News — Murdaugh retrial",
+      "outlet": "via MSN",
       "headline": "Alex Murdaugh granted change of venue for murder retrial, past testimony allowed",
       "url": "https://www.msn.com/en-us/news/crime/alex-murdaugh-granted-change-of-venue-for-murder-retrial-past-testimony-allowed/ar-AA2a8EDl",
       "flag": "verdict-watch"
     },
     {
       "ts": "2026-08-14T12:08:19.000Z",
-      "outlet": "Bing News — Murdaugh venue",
+      "outlet": "via MSN",
       "headline": "Can Alex Murdaugh get a fair trial? Judge to make key venue decision",
       "url": "https://www.msn.com/en-us/news/crime/can-alex-murdaugh-get-a-fair-trial-judge-to-make-key-venue-decision/ar-AA2a7iJK",
       "flag": "verdict-watch"
     },
     {
-      "ts": "2026-08-14T12:07:23.000Z",
-      "outlet": "Bing News — Murdaugh retrial",
-      "headline": "Alex Murdaugh’s retrial will be relocated, and his original testimony can be used conditionally, judge rules",
-      "url": "https://www.msn.com/en-us/news/crime/alex-murdaugh-s-testimony-at-first-murder-trial-can-be-used-conditionally-in-retrial-judge-rules/ar-AA2a5Bz6",
-      "flag": null
-    },
-    {
       "ts": "2026-08-14T12:01:00.000Z",
-      "outlet": "Bing News — Murdaugh retrial",
+      "outlet": "AP",
       "headline": "Judge moves Alex Murdaugh retrial from small county",
       "url": "https://apnews.com/video/judge-moves-alex-murdaugh-retrial-from-small-county-ee4ead63ad964654b27c4c18fd8816d7",
       "flag": null
     },
     {
       "ts": "2026-08-14T11:49:49.000Z",
-      "outlet": "Bing News — Murdaugh retrial",
+      "outlet": "via MSN",
       "headline": "Judge moves Alex Murdaugh retrial from small county, but motion to toss out case will wait",
       "url": "https://www.msn.com/en-us/news/crime/judge-moves-alex-murdaugh-retrial-from-small-county-but-motion-to-toss-out-case-will-wait/ar-AA2a87pN",
       "flag": null
     },
     {
       "ts": "2026-08-14T10:57:56.000Z",
-      "outlet": "Bing News — Murdaugh venue",
+      "outlet": "via MSN",
       "headline": "Alex Murdaugh scores victory in court as judge allows change of venue for upcoming double murder retrial",
       "url": "https://www.msn.com/en-us/news/crime/alex-murdaugh-scores-victory-in-court-as-judge-allows-change-of-venue-for-upcoming-double-murder-retrial/ar-AA2a7DE3",
       "flag": "verdict-watch"
     },
     {
       "ts": "2026-08-14T10:27:00.000Z",
-      "outlet": "Bing News — Murdaugh retrial",
+      "outlet": "KRCR",
       "headline": "Judge orders Alex Murdaugh retrial moved outside 14th Circuit over jury fairness concerns",
       "url": "https://krcrtv.com/news/nation-world/judge-orders-alex-murdaugh-retrial-moved-outside-14th-circuit-over-jury-fairness-concerns",
       "flag": null
     },
     {
-      "ts": "2026-08-14T07:54:58.000Z",
-      "outlet": "Bing News — Murdaugh retrial",
-      "headline": "Alex Murdaugh’s retrial will be relocated, and his original testimony can be used conditionally, judge rules",
-      "url": "https://www.msn.com/en-us/news/news/alex-murdaugh-s-testimony-at-first-murder-trial-can-be-used-conditionally-in-retrial-judge-rules/ar-AA2a5Bz6",
-      "flag": null
-    },
-    {
       "ts": "2026-08-14T03:06:00.000Z",
-      "outlet": "Bing News — Murdaugh retrial",
+      "outlet": "The Greenville News",
       "headline": "Alex Murdaugh returns to court as judge weighs key retrial motions",
       "url": "https://www.greenvilleonline.com/story/news/crime/2026/08/14/alex-murdaugh-retrial-hearing/91291455007/",
       "flag": null
     },
     {
       "ts": "2026-08-14T02:30:00.000Z",
-      "outlet": "Bing News — Murdaugh retrial",
+      "outlet": "via Yahoo News",
       "headline": "Judge orders Alex Murdaugh’s murder retrial moved out of Colleton",
       "url": "https://www.yahoo.com/news/us/articles/alex-murdaugh-friday-murder-hearing-093000305.html",
       "flag": null
     },
     {
       "ts": "2026-08-14T02:10:00.000Z",
-      "outlet": "Bing News — Murdaugh venue",
+      "outlet": "via MSN",
       "headline": "Judge rules Alex Murdaugh's retrial will have a change of venue, but no location set",
       "url": "https://www.msn.com/en-us/crime/general/alex-murdaugh-due-back-in-court-ahead-of-retrial/ar-AA2a5rCd",
       "flag": "verdict-watch"
     },
     {
       "ts": "2026-08-12T14:30:07.000Z",
-      "outlet": "Bing News — Murdaugh retrial",
+      "outlet": "via MSN",
       "headline": "Why Does Alex Murdaugh Want His Murder Retrial Moved?",
       "url": "https://www.msn.com/en-us/news/crime/why-does-alex-murdaugh-want-his-murder-retrial-moved/ar-AA29XJJB",
       "flag": null
     },
     {
       "ts": "2026-08-12T08:35:00.000Z",
-      "outlet": "Bing News — Murdaugh retrial",
+      "outlet": "The Post and Courier",
       "headline": "Alex Murdaugh wants to bring murder retrial and media circus to Charleston. Prosecutors disagree.",
       "url": "https://www.postandcourier.com/murdaugh-updates/alex-murdaugh-murder-retrial-venue-charleston-sc/article_c55c896f-cb6d-4af4-afa9-64bf5cd40279.html",
       "flag": null
     },
     {
       "ts": "2026-07-30T22:00:00.000Z",
-      "outlet": "Bing News — Murdaugh retrial",
+      "outlet": "The Post and Courier",
       "headline": "Murdaugh defense lawyers and prosecutors hit snag over fingernail DNA evidence",
       "url": "https://www.postandcourier.com/murdaugh-updates/alex-murdaugh-retrial-dna-evidence-maggie-fingernail/article_c33e7323-1b36-4b45-92c4-19061ac84f24.html",
       "flag": null
     },
     {
       "ts": "2026-06-30T14:50:00.000Z",
-      "outlet": "Bing News — Murdaugh retrial",
+      "outlet": "WIS News 10",
       "headline": "What’s next in the Alex Murdaugh case? What a legal expert told us.",
       "url": "https://www.wistv.com/2026/06/30/legal-expert-weighs-murdaugh-retrial/",
       "flag": null
     },
     {
       "ts": "2026-06-28T21:07:00.000Z",
-      "outlet": "Bing News — Murdaugh retrial",
+      "outlet": "10TV Columbus",
       "headline": "Alex Murdaugh's true crime saga returns as the date for his new murder trial is set",
       "url": "https://www.10tv.com/article/syndication/associatedpress/alex-murdaughs-true-crime-saga-continues-as-he-heads-to-court-for-hearing-on-murder-retrial/616-29b580c5-0fe6-4bd9-b6fa-bf22f946e388",
       "flag": null
@@ -761,6 +747,17 @@
     "130sca1",
     "11enx8i",
     "c4a8gs",
-    "1p7oq8x"
+    "1p7oq8x",
+    "1gasnsl",
+    "1gaytfj",
+    "1g9z8j1",
+    "1g9zmkh",
+    "1g9xps0",
+    "1g9zoh8",
+    "1g9z4lm",
+    "1g9yqno",
+    "1g9z0qa",
+    "1g9y14l",
+    "1fp4vqx"
   ]
 }

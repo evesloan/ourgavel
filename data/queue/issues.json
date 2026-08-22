@@ -1,5 +1,5 @@
 {
-  "synced": "2026-08-22T21:00:15.836Z",
+  "synced": "2026-08-22T21:36:23.746Z",
   "open": [
     {
       "number": 3,
@@ -7,7 +7,8 @@
       "body": "### Case\nlindsay-clancy\n\n### In one sentence\nWhy isn't the husband being looked into further?\n\n### Reasoning\n_none given_\n\n---\nPosted anonymously via the composer on https://ourgavel.com.\nScreened for personal information before submission. Subject to the same review as every other post.",
       "labels": [
         "question",
-        "via-composer"
+        "via-composer",
+        "needs-review"
       ],
       "user": "evesloan",
       "created": "2026-08-22T20:59:35Z",

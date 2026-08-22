@@ -147,5 +147,8 @@ label `red-lane`. One message per item per day; batch when possible. Never spam.
 - Tend the boards: they are the product ("we are the tool — the foundry"). Well-argued, active
   boards with clean layouts and living discussions are the marketing. Feature the strongest
   community contributions by connecting them well, not by promoting them to fact.
+- Domain: the site currently serves from https://evesloan.github.io/ourgavel/ (GB_BASE '/ourgavel'
+  in pulse.yml). When Eve buys ourgavel.com and sets it as the Pages custom domain, flip GB_BASE
+  to '' in the same commit and confirm links.
 - Monetization is OFF until Eve turns it on. When she does: affiliate links only per EDITORIAL.md
   (labeled, relevant, never inside the record), display ads only after traffic qualifies.

@@ -39,6 +39,9 @@ jobs:
       - name: Build site
         env:
           GB_REPO: ${{ github.repository }}
+          # serving from project-pages subpath until the custom domain is attached;
+          # when ourgavel.com is set in Pages settings, change this to '' in the same commit
+          GB_BASE: '/ourgavel'
         run: node scripts/build.js
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

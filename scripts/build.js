@@ -10,6 +10,7 @@ const OUT = path.join(ROOT, 'public');
 const DATA = path.join(ROOT, 'data');
 const BUILT_AT = new Date().toISOString();
 const REPO = process.env.GB_REPO || 'evesloan/ourgavel';
+const BASE = process.env.GB_BASE || ''; // '/ourgavel' when served from project-pages subpath; '' on the custom domain
 const SITE_NAME = 'OurGavel';
 const TAGLINE = 'The record. The rumors. The line between.';
 
@@ -624,7 +625,7 @@ for (const c of CASES) {
 for (const [rel, html] of Object.entries(files)) {
   const p = path.join(OUT, rel);
   fs.mkdirSync(path.dirname(p), { recursive: true });
-  fs.writeFileSync(p, html);
+  fs.writeFileSync(p, BASE ? html.replace(/href="\//g, `href="${BASE}/`) : html);
 }
 for (const c of CASES) {
   fs.writeFileSync(path.join(OUT, 'cases', c.slug, 'board', 'board-data.json'), JSON.stringify({ serial: BUILT_AT }));

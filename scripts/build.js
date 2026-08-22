@@ -14,6 +14,9 @@ const REPO = process.env.GB_REPO || 'evesloan/ourgavel';
 // on a custom domain: links are root-relative and absolute URLs use it. Otherwise we fall back
 // to the project-pages subpath. This deliberately outranks GB_BASE so the domain can be switched
 // on by adding one file, without touching the workflow.
+// Hosts we are permitted to load images from, derived from declared media. Nothing is
+// allowed implicitly: an image host only appears here because a case declared it.
+const IMG_HOSTS = [];
 const CNAME = (() => {
   for (const p of [path.join(ROOT, 'CNAME'), path.join(ROOT, 'public', 'CNAME')]) {
     if (fs.existsSync(p)) {
@@ -348,6 +351,57 @@ a.promo:hover{text-decoration:none;transform:translateY(-2px);box-shadow:inset 0
   #gbc .grab{display:block;width:42px;height:4px;border-radius:2px;background:var(--line);margin:2px auto 8px}
   #layoutpill{font-size:11.5px;padding:7px 11px;top:8px}
 }
+#caseviewer{border:1px solid var(--line);border-radius:3px;background:var(--panel);box-shadow:inset 0 0 0 1px rgba(255,255,255,.35);margin:14px 0 6px;outline:none}
+#caseviewer:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+.cvhead{display:flex;align-items:center;gap:10px;padding:8px 10px 8px 12px;border-bottom:1px solid var(--line);background:var(--panel2);flex-wrap:wrap}
+.cvtabs{display:flex;gap:4px;flex:1;min-width:0;overflow-x:auto;scrollbar-width:none}
+.cvtabs::-webkit-scrollbar{display:none}
+.cvdot{display:inline-flex;align-items:center;gap:6px;white-space:nowrap;border:1px solid transparent;background:none;cursor:pointer;font-family:var(--sans);font-size:11px;font-weight:700;letter-spacing:.7px;text-transform:uppercase;color:var(--mut);padding:5px 9px;border-radius:2px}
+.cvdot span{width:7px;height:7px;border-radius:50%;background:var(--line);flex:0 0 auto}
+.cvdot:hover{color:var(--ink)}
+.cvdot.on{color:var(--ink);border-color:var(--line);background:var(--panel)}
+.cvdot.on span{background:var(--acc)}
+.cvnav{display:flex;gap:4px;flex:0 0 auto}
+.cvnav button{width:32px;height:32px;border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:2px;font-size:18px;line-height:1;cursor:pointer}
+.cvnav button:hover{border-color:var(--acc);color:var(--acc)}
+.cvbody{padding:18px 20px 20px}
+.cvtop{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin-bottom:8px}
+.cvphase{font-family:var(--sans);font-size:11px;letter-spacing:.8px;text-transform:uppercase;color:var(--mut)}
+.cvtitle{font-family:var(--serif);font-size:23px;margin:0 0 6px}
+.cvtitle a{color:var(--ink)}
+.cvsum{font-size:15px;max-width:62ch;margin:0}
+.cvq{margin:12px 0 0;font-family:var(--serif);font-size:16.5px;border-left:3px solid var(--violet);padding:2px 0 2px 12px}
+.cvqlab{display:block;font-family:var(--sans);font-size:10px;font-weight:700;letter-spacing:1.3px;text-transform:uppercase;color:var(--violet);margin-bottom:2px}
+.cvstats{display:flex;gap:16px;flex-wrap:wrap;margin:14px 0 0;font-family:var(--sans);font-size:12px;letter-spacing:.4px;color:var(--mut)}
+.cvstat b{color:var(--ink);font-size:15px;font-family:var(--serif)}
+.cvcta{margin:16px 0 0}
+@media(max-width:760px){
+  .cvbody{padding:14px 15px 16px}
+  .cvtitle{font-size:19px}
+  .cvsum{font-size:14.5px}
+  .cvq{font-size:15px}
+  .cvstats{gap:12px;font-size:11.5px}
+  .cvdot{font-size:10px;padding:5px 7px}
+  .cvnav button{width:36px;height:36px}
+}
+.mgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:12px;margin-top:12px}
+.mcard{display:flex;flex-direction:column;gap:5px;text-align:left;background:var(--panel);border:1px solid var(--line);border-radius:3px;padding:10px;cursor:pointer;font-family:inherit;color:inherit;box-shadow:inset 0 0 0 1px rgba(255,255,255,.3)}
+.mcard:hover{border-color:var(--acc)}
+.mcard img{width:100%;height:130px;object-fit:cover;border-radius:2px;background:var(--panel2);display:block}
+.mkind{font-family:var(--sans);font-size:9.5px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:var(--acc)}
+.mcap{font-size:13.5px;line-height:1.35}
+.mcredit{font-family:var(--sans);font-size:10.5px;letter-spacing:.4px;color:var(--mut)}
+.mlink{text-decoration:none;min-height:96px;justify-content:space-between}
+.mlink:hover{text-decoration:none}
+#lightbox{position:fixed;inset:0;z-index:80;background:rgba(20,14,8,.9);display:flex;align-items:center;justify-content:center;gap:8px;padding:16px}
+#lightbox figure{margin:0;max-width:min(1100px,92vw);max-height:88vh;display:flex;flex-direction:column;gap:8px}
+#lightbox img{max-width:100%;max-height:78vh;object-fit:contain;border:1px solid var(--line);background:var(--panel)}
+#lightbox figcaption{display:flex;flex-direction:column;gap:2px;color:#f0e6d2;font-size:14px}
+#lbcredit{font-family:var(--sans);font-size:11px;letter-spacing:.5px;opacity:.75}
+#lightbox button{background:rgba(0,0,0,.35);border:1px solid rgba(240,230,210,.35);color:#f0e6d2;border-radius:2px;cursor:pointer;font-size:26px;line-height:1;width:44px;height:44px;flex:0 0 auto}
+#lightbox button:hover{border-color:var(--acc);color:var(--acc)}
+#lbclose{position:absolute;top:14px;right:14px;font-size:24px}
+@media(max-width:760px){.mgrid{grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:10px}.mcard img{height:96px}#lightbox{padding:8px;gap:4px}#lightbox button{width:40px;height:40px}}
 /* --- board interaction + mobile sheet: last in the cascade so these win --- */
 #detail{transform:translateY(6px) scale(.99);opacity:0;pointer-events:none;transition:opacity .2s ease,transform .2s ease;display:block}
 #detail.open{opacity:1;pointer-events:auto;transform:none}
@@ -391,7 +445,7 @@ function harden(html) {
     "style-src " + (styles.join(' ') || "'none'"),
     "style-src-elem " + (styles.join(' ') || "'none'"),
     "style-src-attr 'unsafe-inline'",         // style="" attrs cannot execute script
-    "img-src 'self' data:",
+    "img-src 'self' data:" + (IMG_HOSTS.length ? ' ' + IMG_HOSTS.join(' ') : ''),
     "font-src 'self'",
     "connect-src 'self'" + (SUBMIT_ENDPOINT ? ' ' + new URL(SUBMIT_ENDPOINT).origin : ''),
     "form-action 'none'",
@@ -628,6 +682,7 @@ ${crumbs ? `<nav class="crumbs">${crumbs}</nav>` : ''}
 ${body}
 </div></main>
 ${COMPOSER_MARKUP}
+${body.includes('id="caseviewer"') ? `<script>${CASEVIEWER_SCRIPT}</script>` : ''}
 ${body.includes('id="ticker"') ? `<script>${LIVE_SCRIPT}</script>` : ''}
 <script>${COMPOSER_SCRIPT}</script>
 <footer><div class="wrap">
@@ -638,6 +693,12 @@ ${body.includes('id="ticker"') ? `<script>${LIVE_SCRIPT}</script>` : ''}
 
 // ---------- load all cases ----------
 const caseSlugs = fs.readdirSync(path.join(DATA, 'cases')).filter(d => fs.existsSync(path.join(DATA, 'cases', d, 'case.json')));
+for (const slug of caseSlugs) {
+  const f = path.join(DATA, 'cases', slug, 'case.json');
+  for (const m of (JSON.parse(fs.readFileSync(f, 'utf8')).media || [])) {
+    try { const o = new URL(m.thumb || m.url).origin; if (o.startsWith('https://') && !IMG_HOSTS.includes(o)) IMG_HOSTS.push(o); } catch (e) { /* skip */ }
+  }
+}
 const CASES = caseSlugs.map(slug => {
   const dir = path.join(DATA, 'cases', slug);
   const load = (f, fb) => fs.existsSync(path.join(dir, f)) ? read(path.join(dir, f)) : fb;
@@ -745,6 +806,68 @@ function boardPromo(c) {
 </a>`;
 }
 
+// The Case Viewer. The homepage promotes boards, but a first-time reader still needs to see
+// the whole docket without committing to a click. This flips through every case in place:
+// status, the question at stake, and how much is actually there.
+function caseViewer(list) {
+  if (!list.length) return '';
+  const slides = list.map((c, i) => {
+    const cc = c.case;
+    const a = boardActivity(c);
+    const central = [...c.board.nodes, ...(c.community.nodes || [])].find(n => n.central)
+      || (c.board.nodes || []).find(n => n.type === 'question');
+    const edges = (c.board.edges || []).length + (c.community.edges || []).length;
+    const days = (c.days.days || []).length;
+    const wits = (c.days.days || []).reduce((n, d) => n + (d.witnesses || []).length, 0);
+    const stat = (n, label) => `<span class="cvstat"><b>${esc(String(n))}</b> ${esc(label)}</span>`;
+    return `<article class="cvslide" data-i="${i}"${i ? ' hidden' : ''} aria-roledescription="slide" aria-label="${esc(cc.shortTitle)}">
+  <div class="cvtop">${statusChip(c)}<span class="cvphase">${esc(shortPhase(cc.phase))}</span></div>
+  <h3 class="cvtitle"><a href="${caseUrl(c)}">${esc(cc.shortTitle)}</a></h3>
+  <p class="cvsum">${esc(cc.plainSummary || cc.charges)}</p>
+  ${central ? `<p class="cvq"><span class="cvqlab">The question</span>${esc(central.title)}</p>` : ''}
+  <p class="cvstats">${stat(days, days === 1 ? 'trial day' : 'trial days')}${stat(wits, wits === 1 ? 'witness' : 'witnesses')}${stat(a.nodes, 'board cards')}${stat(edges, 'connections')}</p>
+  <p class="cvcta"><a class="btn sm" href="${caseUrl(c, 'board/')}">Open the board</a> <a class="btn sm ghost" href="${caseUrl(c)}">Catch up on the case</a></p>
+</article>`;
+  }).join('\n');
+  const dots = list.map((c, i) =>
+    `<button class="cvdot${i ? '' : ' on'}" data-go="${i}" type="button" aria-label="${esc(c.case.shortTitle)}"><span></span>${esc(c.case.shortTitle)}</button>`).join('');
+  return `<section id="caseviewer" aria-roledescription="carousel" aria-label="Cases we're following">
+  <div class="cvhead">
+    <div class="cvtabs" role="tablist">${dots}</div>
+    <div class="cvnav"><button id="cvprev" type="button" aria-label="Previous case">‹</button><button id="cvnext" type="button" aria-label="Next case">›</button></div>
+  </div>
+  <div class="cvbody">${slides}</div>
+</section>`;
+}
+
+const CASEVIEWER_SCRIPT = `(function(){
+var wrap=document.getElementById('caseviewer');if(!wrap)return;
+var slides=[].slice.call(wrap.querySelectorAll('.cvslide')),
+    dots=[].slice.call(wrap.querySelectorAll('.cvdot')),cur=0;
+function go(n){
+  cur=(n+slides.length)%slides.length;
+  slides.forEach(function(s,i){s.hidden=i!==cur});
+  dots.forEach(function(d,i){d.classList.toggle('on',i===cur)});
+}
+document.getElementById('cvprev').onclick=function(){go(cur-1)};
+document.getElementById('cvnext').onclick=function(){go(cur+1)};
+dots.forEach(function(d){d.onclick=function(){go(+d.getAttribute('data-go'))}});
+wrap.addEventListener('keydown',function(e){
+  if(e.key==='ArrowLeft'){e.preventDefault();go(cur-1)}
+  if(e.key==='ArrowRight'){e.preventDefault();go(cur+1)}
+});
+wrap.setAttribute('tabindex','0');
+// Swipe on touch, without hijacking a vertical scroll.
+var x0=null,y0=null;
+wrap.addEventListener('touchstart',function(e){x0=e.touches[0].clientX;y0=e.touches[0].clientY},{passive:true});
+wrap.addEventListener('touchend',function(e){
+  if(x0===null)return;
+  var dx=e.changedTouches[0].clientX-x0,dy=e.changedTouches[0].clientY-y0;
+  if(Math.abs(dx)>44&&Math.abs(dx)>Math.abs(dy)*1.6)go(cur+(dx<0?1:-1));
+  x0=null;y0=null;
+});
+})();`;
+
 // ---------- home ----------
 const allItems = ACTIVE.flatMap(c => (c.ticker.items || []).map(i => ({ ...i, _case: c.case.shortTitle }))).sort((a, b) => b.ts.localeCompare(a.ts));
 const RANKED = [...ACTIVE].sort((a, b) => boardActivity(b).score - boardActivity(a).score);
@@ -768,6 +891,9 @@ const home = page({
 ${RANKED.slice(0, 2).map(boardPromo).join('\n')}
 </div>
 <p class="allcases"><a href="/cases/">See all ${esc(String(CASES.length))} cases we're following →</a></p>
+
+<h2>Every case we're following</h2>
+${caseViewer(CASES)}
 
 <h2>Off the wire</h2>
 ${tickerHtml(allItems, 6, ACTIVE.length > 1, '/live.json')}
@@ -806,6 +932,82 @@ function verdictBanner(c, compact) {
   <p class="srcs">${srcs}</p>
   <p class="vconf" style="margin-top:8px">Sentencing and any appeal are separate proceedings, covered separately. If you believe this is wrong, <button class="linkbtn" type="button" data-compose="report" data-case="${c.slug}">tell us</button> — corrections are made in public.</p>`}
 </div>`;
+}
+
+// ---- the media gallery ------------------------------------------------------
+// Press photographs are licensed and we may not embed them, and EDITORIAL.md §8 rules out
+// victim-photo galleries regardless. What IS ours to show is the public record: exhibits
+// entered into evidence, official releases, filings, and properly-licensed images.
+// Every item must declare a rights basis. Items we may host render inline in a lightbox
+// that never leaves the page; everything else renders as a labelled card that opens the
+// source. An item with no rights basis does not render at all.
+const HOSTABLE = ['public-record', 'court-exhibit', 'government-release', 'public-domain', 'cc-licensed', 'own-work'];
+const RIGHTS_LABEL = {
+  'public-record': 'Public record',
+  'court-exhibit': 'Court exhibit',
+  'government-release': 'Official release',
+  'public-domain': 'Public domain',
+  'cc-licensed': 'Creative Commons',
+  'own-work': 'OurGavel',
+  'linked-only': 'Rights reserved — opens at the source',
+};
+function mediaBlock(c) {
+  const items = (c.case.media || []).filter(m => m && m.url && m.rights && RIGHTS_LABEL[m.rights]);
+  if (!items.length) return '';
+  const cards = items.map((m, i) => {
+    const hostable = HOSTABLE.includes(m.rights) && m.type !== 'document';
+    const credit = `${esc(m.credit || 'Source unstated')} · ${esc(RIGHTS_LABEL[m.rights])}`;
+    if (!hostable) {
+      return `<a class="mcard mlink" href="${esc(safeUrl(m.url))}" target="_blank" rel="noopener">
+  <span class="mkind">${m.type === 'document' ? 'Document' : 'Image'}</span>
+  <span class="mcap">${esc(m.caption || 'Untitled')}</span>
+  <span class="mcredit">${credit} ↗</span></a>`;
+    }
+    return `<button class="mcard" type="button" data-mi="${i}" aria-label="${esc(m.caption || 'Open image')}">
+  <img src="${esc(safeUrl(m.thumb || m.url))}" alt="${esc(m.alt || m.caption || '')}" loading="lazy">
+  <span class="mcap">${esc(m.caption || '')}</span>
+  <span class="mcredit">${credit}</span></button>`;
+  }).join('\n');
+  const data = jsonScript(items.map(m => ({
+    url: esc(safeUrl(m.url)), caption: esc(m.caption || ''), alt: esc(m.alt || m.caption || ''),
+    credit: esc(m.credit || ''), rights: esc(RIGHTS_LABEL[m.rights] || ''),
+    hostable: HOSTABLE.includes(m.rights) && m.type !== 'document',
+  })));
+  return `<details class="fold" open><summary>From the record — images and documents</summary>
+<p class="lnote" style="margin:8px 0 10px">Exhibits, filings and official releases. We don't republish press photography; where an image belongs to a newsroom, the card opens it at the source instead.</p>
+<div class="mgrid">${cards}</div>
+<div id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Image viewer">
+  <button id="lbclose" type="button" aria-label="Close">&times;</button>
+  <button id="lbprev" type="button" aria-label="Previous">&lsaquo;</button>
+  <figure><img id="lbimg" src="" alt=""><figcaption><span id="lbcap"></span><span id="lbcredit"></span></figcaption></figure>
+  <button id="lbnext" type="button" aria-label="Next">&rsaquo;</button>
+</div>
+<script>(function(){
+var DATA=${data};
+var box=document.getElementById('lightbox');if(!box)return;
+var img=document.getElementById('lbimg'),cap=document.getElementById('lbcap'),cr=document.getElementById('lbcredit'),cur=0;
+function show(i){
+  cur=(i+DATA.length)%DATA.length;
+  var m=DATA[cur];
+  if(!m.hostable){window.open(m.url,'_blank','noopener,noreferrer');return}
+  img.src=m.url;img.alt=m.alt;cap.textContent=m.caption;cr.textContent=m.credit+' · '+m.rights;
+  box.hidden=false;document.addEventListener('keydown',key);
+}
+function close(){box.hidden=true;img.src='';document.removeEventListener('keydown',key)}
+function key(e){
+  if(e.key==='Escape')close();
+  if(e.key==='ArrowLeft'){e.preventDefault();show(cur-1)}
+  if(e.key==='ArrowRight'){e.preventDefault();show(cur+1)}
+}
+document.getElementById('lbclose').onclick=close;
+document.getElementById('lbprev').onclick=function(){show(cur-1)};
+document.getElementById('lbnext').onclick=function(){show(cur+1)};
+box.addEventListener('click',function(e){if(e.target===box)close()});
+document.querySelectorAll('.mcard[data-mi]').forEach(function(b){
+  b.onclick=function(){show(+b.getAttribute('data-mi'))};
+});
+})();</script>
+</details>`;
 }
 
 function watchBlock(c) {
@@ -851,6 +1053,7 @@ ${verdictBanner(c)}
 ${cc.livestream ? `<p style="margin-top:8px"><b>Watch live:</b> ${cc.livestream.sources.map(s => `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.outlet)}</a>`).join(' · ')}</p>` : ''}
 <p class="factline" style="margin-top:10px"><b>${esc(cc.defendant)}</b> · ${esc(cc.charges)}<br>${esc(cc.plea)}<br>${esc(cc.court)} · ${esc(cc.judge)} · Prosecution: ${esc(cc.prosecution.join(', '))} · Defense: ${esc(cc.defense.join(', '))}</p>
 </div>
+${mediaBlock(c)}
 ${watchBlock(c)}
 <details class="fold"><summary>How this can end</summary>
 <div class="grid2" style="margin-top:10px">

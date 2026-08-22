@@ -219,5 +219,42 @@
       "url": "https://www.masscourts.org/",
       "note": "Criminal dockets need the case number; name search is civil-only."
     }
+  ],
+  "media": [
+    {
+      "type": "document",
+      "url": "https://law.justia.com/cases/massachusetts/supreme-court/volumes/352/352mass544.html",
+      "caption": "Commonwealth v. McHoul, 352 Mass. 544 (1967)",
+      "credit": "Primary legal source",
+      "rights": "public-record"
+    },
+    {
+      "type": "document",
+      "url": "https://law.justia.com/cases/massachusetts/supreme-court/volumes/416/416mass574.html",
+      "caption": "Commonwealth v. Kappler, 416 Mass. 574 (1993) (quoting Kostka)",
+      "credit": "Primary legal source",
+      "rights": "public-record"
+    },
+    {
+      "type": "document",
+      "url": "https://www.mass.gov/doc/9200-lack-of-criminal-responsibility/download",
+      "caption": "Mass. Model Jury Instruction 9.200",
+      "credit": "Primary legal source",
+      "rights": "public-record"
+    },
+    {
+      "type": "document",
+      "url": "https://law.justia.com/cases/massachusetts/supreme-court/volumes/475/475mass806.html",
+      "caption": "Commonwealth v. Lawson, 475 Mass. 806 (2016)",
+      "credit": "Primary legal source",
+      "rights": "public-record"
+    },
+    {
+      "type": "document",
+      "url": "https://www.masscourts.org/",
+      "caption": "Massachusetts Trial Court \u2014 public docket search",
+      "credit": "Criminal dockets need the case number; name search is civil-only.",
+      "rights": "public-record"
+    }
   ]
 }

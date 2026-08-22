@@ -290,5 +290,42 @@
       "url": "https://pacer.uscourts.gov/",
       "note": "Official, but charges per page."
     }
+  ],
+  "media": [
+    {
+      "type": "document",
+      "url": "https://www.law.cornell.edu/uscode/text/18/1958",
+      "caption": "18 U.S.C. \u00a7 1958",
+      "credit": "Primary legal source",
+      "rights": "public-record"
+    },
+    {
+      "type": "document",
+      "url": "https://www.law.cornell.edu/uscode/text/18/2261A",
+      "caption": "18 U.S.C. \u00a7 2261A",
+      "credit": "Primary legal source",
+      "rights": "public-record"
+    },
+    {
+      "type": "document",
+      "url": "https://www.law.cornell.edu/rules/fre/rule_403",
+      "caption": "Fed. R. Evid. 403",
+      "credit": "Primary legal source",
+      "rights": "public-record"
+    },
+    {
+      "type": "document",
+      "url": "https://www.courtlistener.com/",
+      "caption": "CourtListener / RECAP \u2014 federal dockets, free",
+      "credit": "Free mirror of PACER. Search the case name; no PACER account needed.",
+      "rights": "public-record"
+    },
+    {
+      "type": "document",
+      "url": "https://pacer.uscourts.gov/",
+      "caption": "PACER \u2014 official federal records",
+      "credit": "Official, but charges per page.",
+      "rights": "public-record"
+    }
   ]
 }

@@ -268,5 +268,49 @@
       "url": "https://core.duvalclerk.com/",
       "note": "Florida is a strong public-records state; filings are usually viewable."
     }
+  ],
+  "media": [
+    {
+      "type": "document",
+      "url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0700-0799/0777/Sections/0777.011.html",
+      "caption": "Fla. Stat. \u00a7 777.011 \u2014 Principal in first degree",
+      "credit": "Primary legal source",
+      "rights": "public-record"
+    },
+    {
+      "type": "document",
+      "url": "https://forms.justia.com/florida/criminal/final-charge-to-the-jury/5-a-principals-80774.html",
+      "caption": "Fla. Std. Jury Instr. (Crim.) 3.5(a) \u2014 Principals",
+      "credit": "Primary legal source",
+      "rights": "public-record"
+    },
+    {
+      "type": "document",
+      "url": "https://forms.justia.com/florida/criminal/final-charge-to-the-jury/5-b-principals-when-active-participant-hired-80912.html",
+      "caption": "Fla. Std. Jury Instr. (Crim.) 3.5(b) \u2014 Principals, when the active participant was hired by the defendant",
+      "credit": "Primary legal source",
+      "rights": "public-record"
+    },
+    {
+      "type": "document",
+      "url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0700-0799/0782/Sections/0782.04.html",
+      "caption": "Fla. Stat. \u00a7 782.04(1)(a) \u2014 premeditated first-degree murder",
+      "credit": "Primary legal source",
+      "rights": "public-record"
+    },
+    {
+      "type": "document",
+      "url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0700-0799/0777/Sections/0777.04.html",
+      "caption": "Fla. Stat. \u00a7 777.04 \u2014 criminal solicitation",
+      "credit": "Primary legal source",
+      "rights": "public-record"
+    },
+    {
+      "type": "document",
+      "url": "https://core.duvalclerk.com/",
+      "caption": "Duval County Clerk \u2014 CORE case search",
+      "credit": "Florida is a strong public-records state; filings are usually viewable.",
+      "rights": "public-record"
+    }
   ]
 }

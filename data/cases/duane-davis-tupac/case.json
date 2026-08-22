@@ -265,5 +265,28 @@
       "url": "https://www.clarkcountycourts.us/",
       "note": "Nevada Eighth Judicial District Court records."
     }
+  ],
+  "media": [
+    {
+      "type": "document",
+      "url": "https://law.justia.com/cases/nevada/supreme-court/1999/32564-1.html",
+      "caption": "Sheriff, Clark County v. Dhadda, 115 Nev. 175 (1999)",
+      "credit": "Primary legal source",
+      "rights": "public-record"
+    },
+    {
+      "type": "document",
+      "url": "https://law.justia.com/codes/nevada/chapter-193/statute-193-168/",
+      "caption": "NRS 193.168 \u2014 Criminal gang enhancement (\"beyond a reasonable doubt\")",
+      "credit": "Primary legal source",
+      "rights": "public-record"
+    },
+    {
+      "type": "document",
+      "url": "https://www.clarkcountycourts.us/",
+      "caption": "Clark County Courts \u2014 case lookup",
+      "credit": "Nevada Eighth Judicial District Court records.",
+      "rights": "public-record"
+    }
   ]
 }

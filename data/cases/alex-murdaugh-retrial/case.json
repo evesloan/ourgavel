@@ -297,5 +297,21 @@
       "url": "https://publicindex.sccourts.org/",
       "note": "Search by county once the retrial venue is set."
     }
+  ],
+  "media": [
+    {
+      "type": "document",
+      "url": "https://www.sccourts.org/media/opinions/HTMLFiles/SC/28329.pdf",
+      "caption": "S.C. Supreme Court opinion (official PDF, Op. No. 28329)",
+      "credit": "Primary legal source",
+      "rights": "public-record"
+    },
+    {
+      "type": "document",
+      "url": "https://publicindex.sccourts.org/",
+      "caption": "South Carolina Judicial Branch \u2014 public index",
+      "credit": "Search by county once the retrial venue is set.",
+      "rights": "public-record"
+    }
   ]
 }

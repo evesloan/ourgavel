@@ -310,8 +310,26 @@
       {
         "outlet": "FITSNews",
         "url": "https://www.fitsnews.com/2026/05/13/s-c-supreme-court-strikes-down-alex-murdaughs-murder-convictions/"
+      },
+      {
+        "outlet": "Constitution Annotated (Library of Congress) — Re-Prosecution After Conviction",
+        "url": "https://constitution.congress.gov/browse/essay/amdt5-3-5/ALDE_00000862/"
       }
-    ]
+    ],
+    "qa": [
+      {
+        "q": "Why doesn’t double jeopardy stop a second trial?",
+        "a": "Because he is the one who won the reversal. A defendant who successfully appeals and has a conviction set aside can generally be tried again for the same offence, a rule running back to United States v. Ball in 1896. There is one exception. If an appeals court throws a conviction out because the evidence was insufficient, Burks v. United States (1978) bars a retry, since the state does not get a second chance to supply proof it failed to muster the first time. That exception never came into play here. The South Carolina Supreme Court granted a new trial on the jury-interference question and expressly declined to reach the evidence challenges, so it never ruled the proof was too thin."
+      },
+      {
+        "q": "Will the second trial look like the 2023 one?",
+        "a": "Not in one respect the court singled out. It held the financial-crimes evidence was properly admitted to show motive, then warned that the State had gone far past what that justified: about twelve and a half hours of testimony it described as having little to no probative value, at a cost in unfair prejudice. The opinion tells the trial court to restrict that material next time. Where the line falls is for Judge McCaslin, and it is one of the things the parties will fight over before April 2027."
+      }
+    ],
+    "correction": {
+      "date": "2026-08-22",
+      "note": "This page carried a burden-of-proof note and three questions about the Massachusetts insanity defence — material belonging to the Lindsay Clancy case, left over from when the site covered one case. It rendered here in error. The Massachusetts material was removed on 2026-08-22 and the questions below were written from this case’s own statute and model jury instruction. Nothing else on this page changed."
+    }
   },
   "courtRecords": [
     {

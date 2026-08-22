@@ -668,9 +668,28 @@ document.getElementById('gbc-post').onclick=function(){
   if(words.length<3){elStatus.textContent=words.length?'Three words at least — enough to make the point.':'Nothing to send yet.';return}
   if(mode==='evidence'&&!/^https?:\\/\\//i.test(payload.url)){elStatus.textContent='Evidence needs a link to the source.';return}
   if(!ENDPOINT){
-    var text=[payload.claim,payload.url,payload.reasoning,payload.falsify].filter(Boolean).join(String.fromCharCode(10,10));
-    try{navigator.clipboard&&navigator.clipboard.writeText(text)}catch(err){}
-    elStatus.textContent='Posting switches on shortly. Your text is copied to your clipboard so nothing is lost.';
+    // Build the copy from the mode's OWN field list, exactly like the payload above. This was a
+    // hardcoded [claim,url,reasoning,falsify], so a report's category and a connection's relation
+    // were silently dropped, and nothing ever recorded WHICH case or WHICH card the reader was
+    // writing about -- while the status line promised "nothing is lost". A comment pasted back
+    // later read as a bare paragraph about no card in particular. One list, written in one place.
+    var lines=[],where=[];
+    if(ctx.caseSlug)where.push('Case: '+ctx.caseSlug);
+    if(ctx.nodeTitle)where.push('Card: '+ctx.nodeTitle);
+    if(ctx.fromTitle&&ctx.toTitle)where.push('Cards: '+ctx.fromTitle+' -> '+ctx.toTitle);
+    if(where.length)lines.push(where.join(String.fromCharCode(10)));
+    lines.push(m.t);
+    (m.f||[]).forEach(function(k){var f=FIELDS[k];if(!f)return;var v=val(k);if(v)lines.push(f.label+': '+v)});
+    var text=lines.join(String.fromCharCode(10,10));
+    // writeText REJECTS, it does not throw, so the old try/catch never fired: a failed copy still
+    // told the reader their words were safe. Only claim success once the write actually resolved.
+    var good=function(){elStatus.textContent='Posting switches on shortly. Your text, and which card it was about, is on your clipboard so nothing is lost.'};
+    var bad=function(){elStatus.textContent='Posting switches on shortly. Your browser would not let us copy it — please copy your text before you close this.'};
+    elStatus.textContent='Saving your text…';
+    try{
+      if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(text).then(good,bad);
+      else bad();
+    }catch(err){bad()}
     return;
   }
   elStatus.textContent='Posting…';
@@ -696,23 +715,52 @@ document.getElementById('gbc-post').onclick=function(){
 function jsonLd(obj) {
   return `<script type="application/ld+json">${JSON.stringify(obj).replace(/</g, '\\u003c')}</script>`;
 }
-function page({ title, desc, crumbs, body, active, canonical, ld }) {
+// BreadcrumbList, read straight out of the rendered crumb trail. Every page already draws
+// "Home > Case > Witnesses"; nothing was telling a crawler that is what it means. Parsing the
+// same string the reader sees is the point - a hand-written second copy is how markup ends up
+// claiming a trail that is not on the page, and that is the one thing we will not do.
+function unesc(x) {
+  return String(x).replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&amp;/g, '&');
+}
+function breadcrumbLd(crumbs, selfUrl) {
+  const parts = String(crumbs).split('\u203a').map(x => x.trim()).filter(Boolean);
+  if (parts.length < 2) return null;
+  const items = parts.map((part, i) => {
+    const a = part.match(/^<a href="([^"]+)"[^>]*>([\s\S]*?)<\/a>$/);
+    const name = unesc((a ? a[2] : part).replace(/<[^>]+>/g, '')).trim();
+    // The last crumb is the page itself and is rendered as plain text, not a link.
+    const url = a ? (/^https?:/i.test(a[1]) ? a[1] : SITE + a[1]) : (i === parts.length - 1 ? selfUrl : '');
+    if (!name || !url) return null;
+    return { '@type': 'ListItem', position: i + 1, name, item: url };
+  });
+  return items.every(Boolean)
+    ? { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: items }
+    : null;
+}
+function page({ title, desc, crumbs, body, active, canonical, ld, ogType, modified }) {
   const nav = NAV_ITEMS.map(([href, label]) => `<a href="${href}" class="${active === href ? 'on' : ''}">${label}</a>`).join('');
+  // One string feeds both the canonical and og:url. They disagreed before this: og:url named
+  // the homepage on all 34 pages, so anything reading og:url to decide what had been shared -
+  // social cards, scrapers, some crawlers - was told every page was the front door.
+  const selfUrl = SITE + (canonical || (active === '/' ? '/' : active || '/'));
+  // The trail is marked up from the very string that renders it, so the markup cannot
+  // describe a trail the reader does not see. Nothing here is authored twice.
+  const ldAll = [].concat(ld || [], crumbs ? [breadcrumbLd(crumbs, selfUrl)] : []).filter(Boolean);
   return `<!doctype html>
 <html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>${esc(title)} — ${SITE_NAME}</title>
 <meta name="description" content="${esc(desc)}">
-<meta property="og:url" content="${SITE}">
+<meta property="og:url" content="${selfUrl}">
 <meta property="og:site_name" content="${SITE_NAME}">
-<meta property="og:type" content="website">
+<meta property="og:type" content="${esc(ogType || 'website')}">
 <meta property="og:title" content="${esc(title)}">
 <meta property="og:description" content="${esc(desc)}">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="${esc(title)}">
 <meta name="twitter:description" content="${esc(desc)}">
-<link rel="canonical" href="${SITE}${canonical || (active === '/' ? '/' : active || '/')}">
-${ld ? jsonLd(ld) : ''}
+${modified ? `<meta property="article:modified_time" content="${esc(modified)}">\n` : ''}<link rel="canonical" href="${selfUrl}">
+${ldAll.map(jsonLd).join('\n')}
 <link rel="icon" href="data:image/svg+xml,${encodeURIComponent(pip(64, { alt: 'OurGavel' }).replace(/ class="pip"/, '').replace(/ role="img"[^>]*?focusable="false"/, ''))}">
 <style>${CSS}</style>
 </head><body>
@@ -798,6 +846,27 @@ function byDocket(a, b) {
 }
 CASES.sort(byDocket);
 const ACTIVE = CASES.filter(c => c.case.status !== 'archived');
+
+// ---- Freshness that is true ----------------------------------------------------------
+// lastmod and dateModified must move because the record moved, not because the pulse ran.
+// Every date below is read off dated content the page actually renders. Where a page has no
+// dated content it emits no date at all: "unknown" is honest and "today" is not, and a
+// sitemap that stamps all 29 URLs with the build timestamp is exactly how a site teaches a
+// crawler to stop believing its lastmod.
+const _max = (...xs) => xs.filter(Boolean).map(x => String(x).slice(0, 10)).sort().pop() || '';
+const lastDay = c => _max(...(c.days.days || []).map(d => d.date));
+const lastPretrial = c => _max(...(c.days.pretrial || []).map(d => d.date));
+const lastTicker = c => _max(...(c.ticker.items || []).map(i => i.ts));
+const lastCommunity = c => _max(...[...(c.community.nodes || []), ...(c.community.edges || [])]
+  .map(n => n.ts || n.added || n.date || ''));
+// The day the record last gained a witness - the witness index changes on that day and no other.
+const lastWitnessDay = c => _max(...(c.days.days || []).filter(d => (d.witnesses || []).length).map(d => d.date));
+const modHub = c => _max(lastTicker(c), lastDay(c));
+const modRecord = c => _max(lastDay(c), lastPretrial(c));
+const modWitnesses = c => lastWitnessDay(c);
+const modBoard = c => lastCommunity(c);
+// Schema.org wants a datetime; the sitemap wants a date. Same source, two shapes.
+const asDateTime = d => d ? d + 'T00:00:00Z' : '';
 // Honest status chip: only say "now in court" when a trial is actually running.
 function statusChip(c) {
   const cc = c.case, ts = cc.trialStart || '';
@@ -818,10 +887,15 @@ if (ACTIVE.length === 1) {
 } else if (ACTIVE.length > 1) {
   NAV_ITEMS = [['/', 'Home'], ['/cases/', 'Cases'], ['/about/', 'About']];
 }
+// Two pages carrying our most specific long-tail answers - who testified, and what each
+// verdict would mean - were reachable only from a sentence in the body of two other pages.
+// Every other page of the case linked past them. They are in the tab strip now, on all five.
 const caseNav = (c, on) => `<nav class="casenav">
 <a href="/cases/${c.slug}/" class="${on === 'overview' ? 'on' : ''}">Overview</a>
 <a href="/cases/${c.slug}/timeline/" class="${on === 'record' ? 'on' : ''}">The Record</a>
-<a href="/cases/${c.slug}/board/" class="${on === 'board' ? 'on' : ''}">The Board</a>
+<a href="/cases/${c.slug}/witnesses/" class="${on === 'witnesses' ? 'on' : ''}">Witnesses</a>
+<a href="/cases/${c.slug}/board/" class="${on === 'board' ? 'on' : ''}">The Board</a>${c.case.legalStandard ? `
+<a href="/cases/${c.slug}/standard/" class="${on === 'law' ? 'on' : ''}">The Law</a>` : ''}
 </nav>`;
 
 // ---------- shared bits ----------
@@ -1128,7 +1202,10 @@ function watchBlock(c) {
 
 function hubPage(c) {
   const cc = c.case;
+  const mod = modHub(c);
   return page({
+    ogType: 'article',
+    modified: asDateTime(mod),
     title: cc.shortTitle,
     desc: `Follow ${cc.title}: what's happening now, the day-by-day record, the evidence board, and how the case can end.`,
     canonical: `/cases/${c.slug}/`,
@@ -1136,7 +1213,7 @@ function hubPage(c) {
       '@context': 'https://schema.org', '@type': 'NewsArticle',
       headline: cc.shortTitle, description: cc.plainSummary || cc.charges,
       mainEntityOfPage: `${SITE}/cases/${c.slug}/`,
-      dateModified: BUILT_AT, isAccessibleForFree: true,
+      ...(mod ? { dateModified: mod } : {}), isAccessibleForFree: true,
       publisher: { '@type': 'Organization', name: SITE_NAME, url: SITE },
       about: { '@type': 'Event', name: cc.title, location: { '@type': 'Place', name: cc.court } },
       citation: (cc.statusNowSources || []).slice(0, 6).map(x => ({ '@type': 'CreativeWork', name: x.outlet, url: safeUrl(x.url) })),
@@ -1177,12 +1254,15 @@ function dayBlock(c, d) {
 </div>`;
 }
 function timelinePage(c) {
+  const mod = modRecord(c);
   return page({
+    ogType: 'article',
+    modified: asDateTime(mod),
     canonical: `/cases/${c.slug}/timeline/`,
     ld: {
       '@context': 'https://schema.org', '@type': 'LiveBlogPosting',
       headline: c.case.shortTitle + ' — the record, day by day',
-      coverageStartTime: c.case.trialStart, dateModified: BUILT_AT,
+      coverageStartTime: c.case.trialStart, ...(mod ? { dateModified: mod } : {}),
       mainEntityOfPage: `${SITE}/cases/${c.slug}/timeline/`,
       publisher: { '@type': 'Organization', name: SITE_NAME, url: SITE },
       liveBlogUpdate: (c.days.days || []).slice(-12).map(d => ({
@@ -1211,14 +1291,34 @@ function witnessesPage(c) {
   const allWits = [];
   for (const d of c.days.days) for (const w of (d.witnesses || [])) allWits.push({ ...w, day: d.day });
   allWits.sort((a, b) => a.name.localeCompare(b.name));
+  const mod = modWitnesses(c);
   return page({
+    // This page used to canonicalise itself to /cases/, which asks Google to drop it and
+    // credit the index instead. It is the page that answers "who testified on day 12".
+    canonical: `/cases/${c.slug}/witnesses/`,
+    modified: asDateTime(mod),
+    ld: allWits.length ? {
+      '@context': 'https://schema.org', '@type': 'ItemList',
+      name: `Witnesses in ${c.case.shortTitle}`,
+      description: `Every witness who has testified in ${c.case.title}, with role and the trial day they were called.`,
+      mainEntityOfPage: `${SITE}/cases/${c.slug}/witnesses/`,
+      numberOfItems: allWits.length,
+      itemListOrder: 'https://schema.org/ItemListOrderAscending',
+      itemListElement: allWits.map((w, i) => ({
+        '@type': 'ListItem', position: i + 1,
+        item: {
+          '@type': 'Person', name: w.name, description: `${w.role} — ${w.gist}`,
+          url: `${SITE}/cases/${c.slug}/timeline/#day-${w.day}`,
+        },
+      })),
+    } : null,
     title: 'Witness index — ' + c.case.shortTitle,
     desc: `Alphabetical index of witnesses in ${c.case.shortTitle}, with role, day called, and a one-line summary of testimony.`,
     active: '/cases/',
     crumbs: `<a href="/">Home</a> › <a href="${caseUrl(c)}">${esc(c.case.shortTitle)}</a> › Witnesses`,
     body: `
 <h1>Witness index</h1>
-${caseNav(c, 'record')}
+${caseNav(c, 'witnesses')}
 <p class="sub" style="margin-top:12px">${allWits.length} witnesses indexed from the day-by-day record. Click a day for full context.</p>
 <div class="card" style="overflow-x:auto"><table class="witx">
 <tr><th>Witness</th><th>Role</th><th>Day</th><th>Testimony, in one line</th></tr>
@@ -1230,26 +1330,65 @@ ${allWits.map(w => `<tr><td><b>${esc(w.name)}</b></td><td>${esc(w.role)}</td><td
 function standardPage(c) {
   const std = c.case.legalStandard;
   if (!std) return null;
+  // Everything on this page is now the case's own. It was not: the burden note and the whole
+  // Q&A were hard-coded Massachusetts insanity-defence text from the case the site launched
+  // with, and they rendered under all five headings - so the Nevada, Florida, federal and
+  // South Carolina explainers each told readers about M.G.L. c.123 s.16, under four real
+  // defendants' names. Corrected 2026-08-22; the text moved into the Clancy record, where it
+  // is true. EDITORIAL.md s.7: corrected in place, visibly, dated.
+  const qa = Array.isArray(std.qa) ? std.qa : [];
+  // The sentencing exposure, per outcome, sourced to the statute. It existed already - inside
+  // a collapsed fold on the case hub - while the page whose title promises "what each verdict
+  // means" rendered nothing of the kind. Same sourced text, on the page that claims it.
+  const vopts = c.case.verdictOptions || [];
   return page({
+    canonical: `/cases/${c.slug}/standard/`,
+    ld: [
+      qa.length ? {
+        '@context': 'https://schema.org', '@type': 'FAQPage',
+        name: std.name,
+        mainEntityOfPage: `${SITE}/cases/${c.slug}/standard/`,
+        mainEntity: qa.map(x => ({
+          '@type': 'Question', name: x.q,
+          acceptedAnswer: { '@type': 'Answer', text: x.a },
+        })),
+      } : {
+        '@context': 'https://schema.org', '@type': 'WebPage',
+        name: std.name,
+        description: `What the jury in ${c.case.shortTitle} must decide, and who has to prove it.`,
+        mainEntityOfPage: `${SITE}/cases/${c.slug}/standard/`,
+      },
+      vopts.length ? {
+        '@context': 'https://schema.org', '@type': 'ItemList',
+        name: `Possible verdicts in ${c.case.shortTitle}, and what each would mean`,
+        mainEntityOfPage: `${SITE}/cases/${c.slug}/standard/#verdicts`,
+        numberOfItems: vopts.length,
+        itemListElement: vopts.map((v, i) => ({
+          '@type': 'ListItem', position: i + 1, name: v.option, description: v.consequence,
+        })),
+      } : null,
+    ].filter(Boolean),
     title: 'The law, in plain English — ' + c.case.shortTitle,
     desc: std.name + ' — what the jury must decide, who has to prove what, and what each verdict means.',
     active: '/cases/',
     crumbs: `<a href="/">Home</a> › <a href="${caseUrl(c)}">${esc(c.case.shortTitle)}</a> › The law`,
     body: `
 <h1>${esc(std.name)}</h1>
-${caseNav(c, 'overview')}
+${caseNav(c, 'law')}
 <p class="sub" style="margin-top:12px">Plain-English explainer, drawn only from the case law, the statute, and the model jury instruction. Not legal advice.</p>
+${std.correction ? `<div class="card"><p class="lnote"><b>Correction, ${esc(fmtDate(std.correction.date))}.</b> ${esc(std.correction.note)}</p></div>` : ''}
 <div class="card"><h3>The test</h3><p>${esc(std.test)}</p></div>
-<div class="card"><h3>Who has to prove what</h3><p>${esc(std.burden)} Under <i>Commonwealth v. Lawson</i> (2016), the mere fact that most people are sane is not, by itself, enough to carry that burden once mental-illness evidence is in the case — the Commonwealth may rely on the circumstances of the offense and the defendant's words and conduct before, during, and after.</p></div>
-<dl class="qa card">
-<dt>Does "she knew what she was doing" end the inquiry?</dt>
-<dd>No. The test has two independent prongs. Even a defendant who appreciated wrongfulness is not responsible if disease left her without substantial capacity to <i>conform her conduct</i> to the law. That is the prong defense expert Dr. Zeizel invoked.</dd>
-<dt>If the jury acquits on lack of criminal responsibility, does she walk free?</dt>
-<dd>No. Under M.G.L. c.123 §16, the court may order up to 40 days of hospitalization for evaluation, and the DA or facility may petition for commitment — six months initially, renewable in one-year periods. The model instruction notes a person who remains mentally ill and dangerous "may remain committed for the duration of his [or her] life."</dd>
-<dt>What are the jury's options here?</dt>
-<dd>First-degree murder (life without parole), second-degree murder (life with parole eligibility), not guilty by reason of lack of criminal responsibility, or no unanimous verdict (mistrial; retrial possible). Whether involuntary manslaughter joins the slip is still being argued.</dd>
-</dl>
+<div class="card"><h3>Who has to prove what</h3><p>${esc(std.burden)}${std.burdenNote ? ' ' + esc(std.burdenNote) : ''}</p></div>
+${qa.length ? `<dl class="qa card">
+${qa.map(x => `<dt>${esc(x.q)}</dt>\n<dd>${esc(x.a)}</dd>`).join('\n')}
+</dl>` : ''}
 <p>${srcLinks(std.sources)}</p>
+${vopts.length ? `<h2 id="verdicts">What each verdict means</h2>
+<p class="sub">Every outcome the jury can return in this case, and what it would mean. Each one carries the statute or the reporting it rests on.</p>
+<div class="grid2" style="margin-top:10px">
+${vopts.map(v => `<div class="vopt"><b>${esc(v.option)}</b><br><span style="font-size:14px">${esc(v.consequence)}</span><br>${srcLinks(v.sources)}</div>`).join('\n')}
+</div>` : ''}
+<p class="sub" style="margin-top:14px"><a href="${caseUrl(c, 'timeline/')}">The day-by-day record →</a> · <a href="${caseUrl(c, 'witnesses/')}">Every witness who has testified →</a></p>
 `});
 }
 
@@ -1301,18 +1440,26 @@ ${commentChip}
   // The reader zone: labeled, and never empty — an invitation card sits there until theories arrive.
   const zoneX = 1160;
   const zoneLabel = `<text x="${zoneX}" y="46" font-size="13" fill="var(--amber)" font-weight="700" letter-spacing="3" opacity="0.85">READER THEORIES</text><text x="${zoneX}" y="64" font-size="11" fill="var(--mut)">yours goes up here</text>`;
-  const ctaCard = communityNodes.length ? '' : `<g class="ctanode" data-compose="theory" data-case="${c.slug}" style="cursor:pointer">
+  // The composer dialog and its script are not shipped to the embed, so inside an embed every
+  // one of these invitations was a dead button: tapping "tap to post" did nothing at all, with
+  // no console error, on the creator's own page. Tested cross-origin in a real browser. In an
+  // embed they become links to the full board, where posting actually works -- which is also
+  // what the embed is FOR: it should send a creator's readers to us, not swallow their tap.
+  const CTA_BOARD = `${SITE}/cases/${c.slug}/board/`;
+  const ctaLink = (hash, inner) => EMBED
+    ? `<a href="${CTA_BOARD}#${hash}" target="_blank" rel="noopener">${inner}</a>`
+    : inner;
+  const ctaCard = communityNodes.length ? '' : ctaLink('post=theory', `<g class="ctanode" data-compose="theory" data-case="${c.slug}" style="cursor:pointer">
 <rect x="${zoneX}" y="80" width="${NW}" height="${NH}" rx="6" fill="none" stroke="var(--amber)" stroke-width="2" stroke-dasharray="7 5"></rect>
 <text x="${zoneX + NW / 2}" y="106" font-size="13" fill="var(--amber)" font-weight="700" text-anchor="middle">+ Your theory goes here</text>
-<text x="${zoneX + NW / 2}" y="124" font-size="11" fill="var(--mut)" text-anchor="middle">be the first — tap to post</text>
-</g>
-<g class="ctanode" data-compose="question" data-case="${c.slug}" style="cursor:pointer">
+<text x="${zoneX + NW / 2}" y="124" font-size="11" fill="var(--mut)" text-anchor="middle">${EMBED ? 'be the first — opens the board ↗' : 'be the first — tap to post'}</text>
+</g>`) + ctaLink('post=question', `<g class="ctanode" data-compose="question" data-case="${c.slug}" style="cursor:pointer">
 <rect x="${zoneX}" y="${80 + NH + 14}" width="${NW}" height="${NH}" rx="6" fill="none" stroke="var(--violet)" stroke-width="2" stroke-dasharray="7 5"></rect>
 <text x="${zoneX + NW / 2}" y="${106 + NH + 14}" font-size="13" fill="var(--violet)" font-weight="700" text-anchor="middle">? Or just ask something</text>
 <text x="${zoneX + NW / 2}" y="${124 + NH + 14}" font-size="11" fill="var(--mut)" text-anchor="middle">no theory required</text>
 <rect x="${zoneX}" y="80" width="${NW}" height="${NH}" fill="transparent"></rect>
 <g transform="translate(${zoneX + NW / 2 - 22},${NH + 92}) scale(0.7)">${pip(64).replace(/^<svg[^>]*>/, "").replace(/<\/svg>$/, "")}</g>
-</g>`;
+</g>`);
   const svg = `<svg id="boardsvg" viewBox="${minX} ${minY} ${w + (communityNodes.length ? 0 : 320)} ${h}" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%">${defs}<g id="viewport">${zoneLabel}${ctaCard}${edgeEls}\n${nodeEls}</g></svg>`;
 
   const verb = { supports: ['sup', 'supports'], contradicts: ['con', 'disputes'], disproves: ['con', 'disproves'], contested: ['mix', 'is contested on'], explains: ['ctx', 'gives context to'] };
@@ -1350,6 +1497,7 @@ ${commentChip}
     const th = threads[n.id] || null;
     const safeThread = th ? {
       count: Number(th.count) || 0,
+      held: Number(th.held) || 0,
       comments: (th.comments || []).map(cm => ({ user: esc(cm.user), ts: esc(String(cm.ts || '')), body: esc(cm.body) })),
     } : null;
     return [n.id, {
@@ -1374,6 +1522,7 @@ ${commentChip}
 var DATA=${detailData};
 var EDGES=${edgeData};
 var SLUG=${JSON.stringify(c.slug)},REPO=${JSON.stringify(REPO)},NW=${NW},NH=${NH};
+var EMBEDDED=${EMBED ? "true" : "false"},BOARD_URL=${JSON.stringify(`${SITE}/cases/${c.slug}/board/`)};
 var SERIAL=${JSON.stringify(BUILT_AT)};
 var wrap=document.getElementById('boardwrap'),svg=document.getElementById('boardsvg'),vp=document.getElementById('viewport');
 var toast=document.getElementById('btoast'),detail=document.getElementById('detail');
@@ -1561,8 +1710,18 @@ function threadHtml(id,n){
   }else{
     out+='<p style="margin:6px 0;color:var(--mut)">No comments yet.</p>';
   }
-  out+='<p style="margin-top:8px"><button class="linkbtn" data-compose="comment" data-case="'+SLUG+'" data-node="'+id+'" data-node-title="'+esc2(n.title)+'">'
-    +((t&&t.count)?'Join the discussion ('+t.count+')':'Start the discussion')+'</button></p>';
+  /* Held replies are counted in the open, not disappeared. A reader who posted one can see that
+     it exists and is waiting on a person, and a reader who did not can see the screen is real. */
+  if(t&&t.held){
+    out+='<p style="margin:6px 0;color:var(--mut);font-size:12.5px">'+t.held+' repl'+(t.held===1?'y is':'ies are')
+      +' held for editor review \u2014 replies that point at someone who has not been charged wait for a person.</p>';
+  }
+  // Same defect as the reader-zone cards: in an embed there is no composer to open, so this
+  // button did nothing when a creator's reader pressed it. Link to the card on the full board.
+  var label=(t&&t.count)?'Join the discussion ('+t.count+')':'Start the discussion';
+  out+= EMBEDDED
+    ? '<p style="margin-top:8px"><a class="linkbtn" style="text-decoration:none" target="_blank" rel="noopener" href="'+BOARD_URL+'#card='+encodeURIComponent(id)+'&post=comment">'+label+' &#8599;</a></p>'
+    : '<p style="margin-top:8px"><button class="linkbtn" data-compose="comment" data-case="'+SLUG+'" data-node="'+id+'" data-node-title="'+esc2(n.title)+'">'+label+'</button></p>';
   return out+'</div>';
 }
 
@@ -1652,20 +1811,47 @@ function ghostCard(text){
 function clearGhost(){if(ghost){ghost.remove();ghost=null}}
 window.gbGhost=ghostCard; window.gbGhostClear=clearGhost;
 
-/* ---------- freshness ---------- */
+/* ---------- freshness ----------
+   The embed lives one directory deeper than the board (board/embed/ vs board/), and this script
+   is shared verbatim by both, so the path has to be written per page. It was './' for both, which
+   404'd on every embed every 60s and meant "every update appears in your embed automatically" —
+   the promise printed above the embed code — could never come true. scripts/embed.test.js. */
 setInterval(function(){
-  fetch('./board-data.json',{cache:'no-store'}).then(function(r){return r.json()}).then(function(d){
+  fetch('${EMBED ? '../' : './'}board-data.json',{cache:'no-store'}).then(function(r){return r.json()}).then(function(d){
     if(d.serial&&d.serial!==SERIAL){say(${JSON.stringify(PIP.updated)}+' <a href="#" data-reload>Load the latest &rarr;</a>',true)}
   }).catch(function(){})
 },60000);
 
+// A reader arriving from an embed asked for a specific card, or to post. Honour it, or the
+// link we just handed the creator is only half-true: it would drop them on a cold board.
+function fromHash(){
+  var h=String(location.hash||'').replace(/^#/,'');if(!h)return false;
+  var q={};h.split('&').forEach(function(kv){var i=kv.indexOf('=');if(i>0)q[kv.slice(0,i)]=decodeURIComponent(kv.slice(i+1))});
+  var card=q.card&&DATA[q.card]?q.card:'';
+  if(card)show(card);
+  if(q.post){
+    // The composer is a separate script tag and may not have run yet, so do NOT test for
+    // window.gbCompose now -- that check was the whole reason the card opened and the composer
+    // did not. Wait for it, briefly, then give up quietly rather than throwing at the reader.
+    var opts={caseSlug:SLUG},tries=0;
+    var openIt=function(){
+      if(window.gbCompose){window.gbCompose(q.post,opts);return}
+      if(++tries<40)setTimeout(openIt,50);
+    };
+    if(card){opts.node=card;opts.nodeTitle=DATA[card].title}
+    setTimeout(openIt,card?420:120);
+  }
+  return !!(card||q.post);
+}
 var CENTRAL_ID=${JSON.stringify(central ? central.id : (nodes[0] ? nodes[0].id : ''))};
 ${central ? `var CENTRAL=${JSON.stringify(central.id)};
-if(!mobile()){setTimeout(function(){show(CENTRAL)},REDUCED?0:700);}
+if(fromHash()){/* the reader asked for something specific; do not override it */}
+else if(!mobile()){setTimeout(function(){show(CENTRAL)},REDUCED?0:700);}
 else{
   // A whole graph shrunk onto a phone is unreadable — open on the question, at reading size.
   setTimeout(function(){centreOn(CENTRAL,2.3);say(${JSON.stringify(PIP.pinch)});},REDUCED?0:500);
-}` : ''}
+}
+window.addEventListener('hashchange',fromHash);` : ''}
 })();`;
   if (EMBED) {
     return `<!doctype html>
@@ -1712,7 +1898,8 @@ ${scriptBlock}
       '@context': 'https://schema.org', '@type': 'WebPage',
       name: c.case.shortTitle + ' — evidence board',
       description: `The questions the jury must answer in ${c.case.shortTitle}, the evidence pulling on each, and reader theories — every card sourced.`,
-      mainEntityOfPage: `${SITE}/cases/${c.slug}/board/`, dateModified: BUILT_AT,
+      mainEntityOfPage: `${SITE}/cases/${c.slug}/board/`,
+      ...(modBoard(c) ? { dateModified: modBoard(c) } : {}),
       publisher: { '@type': 'Organization', name: SITE_NAME, url: SITE },
     },
     title: 'The Board — ' + c.case.shortTitle,
@@ -1844,29 +2031,49 @@ for (const c of CASES) {
 }
 fs.writeFileSync(path.join(OUT, '.nojekyll'), '');
 if (CNAME) fs.writeFileSync(path.join(OUT, 'CNAME'), CNAME + '\n');
+// IndexNow. Bing, Yandex and Seznam accept a push the moment a page changes instead of waiting
+// to be crawled - which is the whole game on breaking coverage, where our edge is having the
+// structured version up minutes after the newsroom filed. Ownership is proved by serving the key
+// back at /<key>.txt. One root file switches it on; no file, no key, no-op.
+const INDEXNOW_KEY = (() => {
+  const f = path.join(ROOT, 'INDEXNOW_KEY');
+  if (!fs.existsSync(f)) return '';
+  const k = fs.readFileSync(f, 'utf8').trim();
+  return /^[a-f0-9]{8,128}$/i.test(k) ? k : '';
+})();
+if (INDEXNOW_KEY) fs.writeFileSync(path.join(OUT, INDEXNOW_KEY + '.txt'), INDEXNOW_KEY + '\n');
+
 fs.writeFileSync(path.join(OUT, 'robots.txt'),
-  ['User-agent: *', 'Allow: /', '', '# Embeds are duplicates of their board; index the board instead.',
-   'Disallow: /*/board/embed/', '', 'Sitemap: ' + SITE + '/sitemap.xml', ''].join('\n'));
+  ['User-agent: *', 'Allow: /', '', '# Embeds are duplicates of their board and each one canonicals to it.',
+   '# They are crawlable on purpose: a canonical on a URL we disallow is never',
+   '# read, so blocking them here would strand both the canonical and every',
+   '# link an embed sends back to us.',
+   '', 'Sitemap: ' + SITE + '/sitemap.xml', ''].join('\n'));
 
 // Sitemap. Boards and records change constantly; static pages do not, and saying so
 // honestly is what stops a crawler wasting its budget on the About page.
 const urls = [];
-const addUrl = (loc, freq, pri) => urls.push({ loc: SITE + loc, freq, pri });
-addUrl('/', 'hourly', '1.0');
-addUrl('/cases/', 'hourly', '0.9');
+const addUrl = (loc, freq, pri, mod) => urls.push({ loc: SITE + loc, freq, pri, mod: mod || '' });
+const siteMod = _max(...CASES.map(modHub));
+addUrl('/', 'hourly', '1.0', siteMod);
+addUrl('/cases/', 'hourly', '0.9', siteMod);
+// /submit/ and /about/ carry no dated content, so they carry no lastmod. An unknown date is
+// honest; stamping them with today's build is the lie that makes a crawler discount every
+// other date in the file.
 addUrl('/submit/', 'monthly', '0.4');
 addUrl('/about/', 'monthly', '0.4');
 for (const c of CASES) {
   const live = c.case.status !== 'archived';
-  addUrl(`/cases/${c.slug}/`, live ? 'hourly' : 'monthly', live ? '0.9' : '0.6');
-  addUrl(`/cases/${c.slug}/timeline/`, live ? 'hourly' : 'monthly', live ? '0.8' : '0.6');
-  addUrl(`/cases/${c.slug}/board/`, live ? 'hourly' : 'weekly', '0.8');
-  addUrl(`/cases/${c.slug}/witnesses/`, live ? 'daily' : 'monthly', '0.6');
+  addUrl(`/cases/${c.slug}/`, live ? 'hourly' : 'monthly', live ? '0.9' : '0.6', modHub(c));
+  addUrl(`/cases/${c.slug}/timeline/`, live ? 'hourly' : 'monthly', live ? '0.8' : '0.6', modRecord(c));
+  addUrl(`/cases/${c.slug}/board/`, live ? 'hourly' : 'weekly', '0.8', modBoard(c));
+  addUrl(`/cases/${c.slug}/witnesses/`, live ? 'daily' : 'monthly', '0.6', modWitnesses(c));
   if (c.case.legalStandard) addUrl(`/cases/${c.slug}/standard/`, 'weekly', '0.6');
 }
 fs.writeFileSync(path.join(OUT, 'sitemap.xml'),
   '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-  + urls.map(u => `  <url><loc>${u.loc}</loc><lastmod>${BUILT_AT.slice(0, 10)}</lastmod><changefreq>${u.freq}</changefreq><priority>${u.pri}</priority></url>`).join('\n')
+  + urls.map(u => `  <url><loc>${u.loc}</loc>${u.mod ? `<lastmod>${u.mod}</lastmod>` : ''}<changefreq>${u.freq}</changefreq><priority>${u.pri}</priority></url>`).join('\n')
   + '\n</urlset>\n');
-console.log('sitemap:', urls.length, 'urls');
+console.log('sitemap:', urls.length, 'urls,', urls.filter(u => u.mod).length, 'with a real lastmod');
+if (INDEXNOW_KEY) console.log('indexnow: key file served at /' + INDEXNOW_KEY + '.txt');
 console.log('Built', Object.keys(files).length, 'pages,', CASES.length, 'case(s), at', BUILT_AT);

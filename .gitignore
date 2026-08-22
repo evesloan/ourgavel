@@ -10,3 +10,6 @@ public/media/zz-viewer-fixture/
 
 # Local alert written by autodeploy.bat when a pull leaves conflict markers.
 DEPLOY-BLOCKED.txt
+
+# Held by the shipper task while it works; autodeploy stands aside.
+SHIPPING.lock

@@ -328,6 +328,12 @@
       "to": "q-slip",
       "type": "supports",
       "label": "defense: 'You can't try this case in a vacuum'"
+    },
+    {
+      "from": "r-mclean",
+      "to": "f-nurses",
+      "type": "explains",
+      "label": "a viral claim about the care, heard and ruled on"
     }
   ]
 }

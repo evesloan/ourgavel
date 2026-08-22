@@ -297,8 +297,30 @@
       {
         "outlet": "University of Cincinnati Law Review — Bars Behind Bars: when song lyrics become criminal evidence",
         "url": "https://uclawreview.org/2025/10/17/bars-behind-bars-when-song-lyrics-become-criminal-evidence/"
+      },
+      {
+        "outlet": "Fed. R. Evid. 404(b) — other crimes, wrongs or acts",
+        "url": "https://www.law.cornell.edu/rules/fre/rule_404"
       }
-    ]
+    ],
+    "qa": [
+      {
+        "q": "California passed a law about rap lyrics in court. Why hasn’t it helped him?",
+        "a": "AB 2799 is a California evidence rule, and this is a federal prosecution. Federal courts run on the Federal Rules of Evidence, so a state statute written to curb this exact practice carries no force in the case, even though the courthouse trying it stands in Los Angeles."
+      },
+      {
+        "q": "What is the line the judge draws between lyrics that come in and lyrics that stay out?",
+        "a": "Rule 404(b)(1) forbids using another act to prove “a person’s character in order to show that on a particular occasion the person acted in accordance with the character”. Rule 404(b)(2) allows the very same evidence for “another purpose, such as proving motive, opportunity, intent, preparation, plan, knowledge, identity, absence of mistake, or lack of accident”. Lyrics that track this feud and this revenge motive fall on the second side. Lyrics showing only that Banks raps about violence fall on the first, which is what Judge Fitzgerald meant by “sheer propensity”."
+      },
+      {
+        "q": "If jurors decide he wanted the man dead, does that make it murder-for-hire?",
+        "a": "Not on its own. 18 U.S.C. § 1958 requires that the killing be arranged as consideration for something of pecuniary value, which in plain terms means money or something worth money had to be on the table. Revenge with no payment promised is not this crime, whatever else it may be. That is why the money trail carries more weight on this count than the motive does."
+      }
+    ],
+    "correction": {
+      "date": "2026-08-22",
+      "note": "This page carried a burden-of-proof note and three questions about the Massachusetts insanity defence — material belonging to the Lindsay Clancy case, left over from when the site covered one case. It rendered here in error. The Massachusetts material was removed on 2026-08-22 and the questions below were written from this case’s own statute and model jury instruction. Nothing else on this page changed."
+    }
   },
   "courtRecords": [
     {

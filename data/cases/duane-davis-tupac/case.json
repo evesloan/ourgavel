@@ -283,8 +283,30 @@
       {
         "outlet": "Fox 5 Vegas (medical examiner testimony)",
         "url": "https://www.fox5vegas.com/2026/08/18/live-witnesses-continue-take-stand-day-two-tupac-murder-trial/"
+      },
+      {
+        "outlet": "Gallego v. State, Nev. Supreme Court (1985) — corroboration of accomplice testimony",
+        "url": "https://law.justia.com/cases/nevada/supreme-court/1985/15932-1.html"
       }
-    ]
+    ],
+    "qa": [
+      {
+        "q": "Davis described the shooting himself. Why isn’t that enough to convict him?",
+        "a": "Nevada’s corpus delicti rule says a conviction cannot rest on an uncorroborated confession. In a killing, the state has to prove with evidence that did not come out of the defendant’s mouth that there was a death, and that the death came about through the criminal act of another person. The Nevada Supreme Court set out both halves in Sheriff v. Dhadda, and explained the reason plainly: confessions get misreported, coerced, misremembered, or made by people who are not well."
+      },
+      {
+        "q": "So does the state need independent proof that Davis himself was there?",
+        "a": "Not under that rule, and this is the part most readers get wrong. Corpus delicti covers the fact of the killing, not who did it. The rule that does the identity work in this trial is NRS 175.291. Where a witness could have been charged with the same crime, a jury cannot convict on that witness’s word alone unless other evidence “tends to connect the defendant with the commission of the offense”, and the statute says evidence that merely shows the offence happened does not count."
+      },
+      {
+        "q": "How much corroboration is enough?",
+        "a": "It does not have to prove guilt by itself. In Gallego v. State the Nevada Supreme Court upheld a conviction on the cumulative weight of circumstantial items, among them uncommon rope matching what bound the victims and proof the defendant was in Nevada around the time. Taken together they tended to tie him to the killings, and that is the test. Corroboration can be circumstantial and it can be modest, so long as it points at this defendant rather than only at the crime."
+      }
+    ],
+    "correction": {
+      "date": "2026-08-22",
+      "note": "This page carried a burden-of-proof note and three questions about the Massachusetts insanity defence — material belonging to the Lindsay Clancy case, left over from when the site covered one case. It rendered here in error. The Massachusetts material was removed on 2026-08-22 and the questions below were written from this case’s own statute and model jury instruction. Nothing else on this page changed."
+    }
   },
   "courtRecords": [
     {

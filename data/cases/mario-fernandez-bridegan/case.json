@@ -284,8 +284,30 @@
       {
         "outlet": "Fla. Stat. § 777.04 — criminal solicitation",
         "url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0700-0799/0777/Sections/0777.04.html"
+      },
+      {
+        "outlet": "Standard Jury Instructions in Criminal Cases, Fla. Supreme Court No. 82,438 (1994) — premeditation",
+        "url": "https://law.justia.com/cases/florida/supreme-court/1994/82438-0.html"
       }
-    ]
+    ],
+    "qa": [
+      {
+        "q": "He was not at the scene. How can that be first-degree murder?",
+        "a": "Florida treats the person who procures a killing as guilty of the killing itself. The standard instruction the jury will hear breaks it into two findings: that Fernandez had a conscious intent that the criminal act be done, and that he did some act or said some word intended to, and which did, “incite, cause, encourage, assist or advise” Henry Tenon to commit it. The same instruction says in terms that a principal “does not have to be present when the crime is committed”."
+      },
+      {
+        "q": "What does premeditation actually require?",
+        "a": "Less time than most people assume, and more thought. The instruction defines killing with premeditation as killing after consciously deciding to do so, with that decision present in the mind at the time of the killing. There is no clock in the law. The instruction says only that the period “must be long enough to allow reflection by the defendant”. The state does not have to show months of planning, but it does have to show a decision made before the act rather than in the moment."
+      },
+      {
+        "q": "Do jurors have to believe money changed hands?",
+        "a": "For the murder count they have to find the two things above. There is a second version of the principals instruction written for the situation alleged here, where the defendant is said to have hired the person who did it, and it asks whether he made or promised payment in exchange for the killing and whether the killing then happened. Solicitation is charged separately and answered separately, so jurors can go one way on the murder count and the other way on solicitation."
+      }
+    ],
+    "correction": {
+      "date": "2026-08-22",
+      "note": "This page carried a burden-of-proof note and three questions about the Massachusetts insanity defence — material belonging to the Lindsay Clancy case, left over from when the site covered one case. It rendered here in error. The Massachusetts material was removed on 2026-08-22 and the questions below were written from this case’s own statute and model jury instruction. Nothing else on this page changed."
+    }
   },
   "courtRecords": [
     {

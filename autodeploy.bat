@@ -3,10 +3,28 @@ REM OurGavel autodeploy — runs silently on a schedule. Do not double-click thi
 REM run install-autodeploy.bat once instead.
 REM Picks up anything Claude wrote into this folder, syncs with the site's own
 REM robot commits, and pushes. A push triggers the build and deploy.
-setlocal
+setlocal enabledelayedexpansion
 cd /d "%~dp0"
 set LOG=%~dp0autodeploy.log
 set BLOCKED=%~dp0DEPLOY-BLOCKED.txt
+
+REM The shipper task mutates the tree over several minutes: apply a patch, build, run the
+REM suite, then commit only if it all passed. This script runs every five minutes and would
+REM otherwise `git add -A` that half-finished state and push it -- committing unverified work
+REM and defeating the gate entirely. So it stands aside while the lock is held.
+REM A lock older than 45 minutes is treated as abandoned, because a shipper that died holding
+REM one must not stop deploys forever.
+set LOCK=%~dp0SHIPPING.lock
+if exist "%LOCK%" (
+  for /f %%A in ('powershell -NoProfile -Command "[int](((Get-Date) - (Get-Item ''%LOCK%'').LastWriteTime).TotalMinutes)" 2^>nul') do set LOCKAGE=%%A
+  if not defined LOCKAGE set LOCKAGE=0
+  if !LOCKAGE! LSS 45 (
+    echo [%DATE% %TIME%] shipper holds the lock ^(!LOCKAGE!m^) - standing aside >>"%LOG%"
+    exit /b 0
+  )
+  echo [%DATE% %TIME%] STALE lock ^(!LOCKAGE!m^) - removing and proceeding >>"%LOG%"
+  del /q "%LOCK%" >nul 2>&1
+)
 
 git config user.name "Eve Sloan" >nul 2>&1
 git config user.email "evesloan@users.noreply.github.com" >nul 2>&1

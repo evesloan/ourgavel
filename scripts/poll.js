@@ -14,6 +14,8 @@ const { assess, OUTCOME_LABEL, MIN_OUTLETS } = require('./verdict.js');
 
 const ROOT = path.join(__dirname, '..');
 const { discoverCase, safeToDiscover } = require('./media-fetch.js');
+const { implicationReason, shouldEscalate } = require('./screen.js');
+const { resolveUrl, itemKey, dedupeItems } = require('./canonical.js');
 const DATA = path.join(ROOT, 'data');
 const REPO = process.env.GB_REPO || 'evesloan/ourgavel';
 const TOKEN = process.env.GITHUB_TOKEN || '';
@@ -84,6 +86,16 @@ async function pollCase(slug) {
   const tickerPath = path.join(dir, 'ticker.json');
   const T = fs.existsSync(tickerPath) ? read(tickerPath) : { items: [], seen: [] };
   const seen = new Set(T.seen);
+  // Heal what the rotating-token bug already wrote: canonicalise and collapse the
+  // stored list before polling, so a case that accumulated 100 copies of 23
+  // stories converges on the next pulse instead of needing a data patch.
+  const before = (T.items || []).length;
+  T.items = dedupeItems(T.items);
+  const healed = before - T.items.length;
+  // `seen` is capped at 600 ids; the redirector churn used to blow that cap in a
+  // few polls and take real dedupe memory with it. The stored list is the durable
+  // second check.
+  const have = new Set(T.items.map(i => itemKey(i.url)));
   const kws = CASE.keywords.map(k => k.toLowerCase());
   const vkws = (CASE.verdictKeywords || []).map(k => k.toLowerCase());
   const fresh = [];
@@ -93,22 +105,29 @@ async function pollCase(slug) {
       for (const it of parseRss(xml).slice(0, 40)) {
         const tl = it.title.toLowerCase();
         if (!kws.some(k => tl.includes(k))) continue;
-        const id = hash(it.link);
-        if (seen.has(id)) continue;
+        // Identity is the ARTICLE, not the feed's link to it: Bing wraps every
+        // item in a redirector whose token rotates each request, so hashing the
+        // raw link re-ingested the same story every 15 minutes. See canonical.js.
+        const url = resolveUrl(it.link);
+        const id = hash(itemKey(url));
+        if (seen.has(id) || have.has(itemKey(url))) continue;
         seen.add(id);
         const isVerdicty = vkws.some(k => tl.includes(k));
         const ts = it.date ? new Date(it.date).toISOString() : NOW;
-        fresh.push({ ts, outlet: feed.outlet, headline: it.title, url: it.link, flag: isVerdicty ? 'verdict-watch' : null });
+        fresh.push({ ts, outlet: feed.outlet, headline: it.title, url, flag: isVerdicty ? 'verdict-watch' : null });
       }
       feed._ok = true;
     } catch (e) { feed._ok = false; console.error('feed fail', feed.outlet, e.message); }
   }
-  if (fresh.length) {
+  if (fresh.length || healed) {
     fresh.sort((a, b) => b.ts.localeCompare(a.ts));
-    T.items = [...fresh, ...T.items].slice(0, 100);
-    T.seen = [...seen].slice(-600);
+    // Sorted, not just prepended: the ticker is rendered as "latest", and with
+    // duplicates gone a mis-ordered row is now plainly visible in a four-row list.
+    T.items = dedupeItems([...fresh, ...T.items])
+      .sort((a, b) => String(b.ts).localeCompare(String(a.ts))).slice(0, 100);
+    T.seen = [...new Set([...seen, ...T.items.map(i => hash(itemKey(i.url)))])].slice(-600);
     write(tickerPath, T);
-    console.log(slug + ':', fresh.length, 'new items');
+    console.log(slug + ':', fresh.length, 'new items' + (healed ? ', ' + healed + ' duplicate(s) collapsed' : ''));
   } else console.log(slug + ': no new items');
 
   // ---- verdict -------------------------------------------------------------
@@ -241,29 +260,70 @@ async function syncThreads(openIssues) {
     const C = fs.existsSync(cPath) ? read(cPath) : { nodes: [] };
     for (const n of C.nodes || []) if (n.issueNumber) byCase[slug].threads['c-' + n.issueNumber] = { number: n.issueNumber, url: n.issue };
   }
+  // The question that opens a thread is held to the same rule as the replies in it. An issue
+  // whose body implicates someone who has not been charged does not get to become a discussion
+  // page on a public board and collect answers to itself.
+  const heldSeeds = [];
   for (const iss of openIssues) {
     const m = (iss.body || '').match(/<!--node:([\w-]+)\s+case:([\w-]+)-->/);
-    if (m && byCase[m[2]] && !byCase[m[2]].threads[m[1]]) byCase[m[2]].threads[m[1]] = { number: iss.number, url: iss.url };
+    if (!(m && byCase[m[2]] && !byCase[m[2]].threads[m[1]])) continue;
+    const seed = (iss.body || '').replace(/<!--[\s\S]*?-->/g, '').trim();
+    const why = implicationReason(seed);
+    if (why) { heldSeeds.push({ kind: 'thread-opener', case: m[2], node: m[1], issue: iss.number, url: iss.url, user: iss.user, escalate: shouldEscalate(seed), why, body: seed.slice(0, 400) }); continue; }
+    byCase[m[2]].threads[m[1]] = { number: iss.number, url: iss.url };
   }
+  // Comments used to render with no screening at all: only the PII regexes in redact() stood
+  // between a GitHub reply and a public board, on a 15-minute cycle. A theory saying "it was the
+  // husband" was held for review; the identical sentence posted as a comment on the same node
+  // published itself. The composer promises "Replies appear on this card once reviewed", so the
+  // screen below is the code catching up with what the site already told readers it does.
+  // Hold is not reject. `cleared` is how a human puts one back: an editor adds the comment id
+  // to cleared[] in data/queue/held-comments.json and the next pulse renders it.
+  const HELD_PATH = path.join(DATA, 'queue', 'held-comments.json');
+  const prevHeld = fs.existsSync(HELD_PATH) ? read(HELD_PATH) : {};
+  const cleared = new Set((prevHeld.cleared || []).map(String));
+  const held = [];
   for (const [slug, { threads }] of Object.entries(byCase)) {
     const out = {};
     const ids = Object.keys(threads).slice(0, 40);
+    const cDir = path.join(DATA, 'cases', slug);
+    const names = buildNameSets(read(path.join(cDir, 'case.json')),
+      fs.existsSync(path.join(cDir, 'days.json')) ? read(path.join(cDir, 'days.json')) : { days: [] });
     for (const nodeId of ids) {
       const t = threads[nodeId];
       try {
         const comments = await gh(`/repos/${REPO}/issues/${t.number}/comments?per_page=30`);
+        const human = comments.filter(c => c.user && c.user.type !== 'Bot' && !/^(Live on the Board|Thanks —)/.test(c.body || ''));
+        const shown = [];
+        for (const c of human) {
+          const body = redact((c.body || '').replace(/<[^>]+>/g, ''), 400);
+          const mentioned = personMentions(body, names);
+          const why = PII.some(re => re.test(body)) ? 'it looks like it contains contact or address details'
+            : mentioned.length ? `it names a specific person (${mentioned.slice(0, 3).join(', ')})`
+            : implicationReason(body);
+          if (why && !cleared.has(String(c.id))) {
+            // The body is stored because the reviewing session cannot read the GitHub API, and a
+            // queue it cannot read is not a queue. It adds no exposure the public issue thread
+            // does not already have, and nothing in data/queue/ is rendered onto the site.
+            held.push({ kind: 'comment', case: slug, node: nodeId, issue: t.number, id: String(c.id),
+              url: c.html_url || t.url, user: (c.user || {}).login || '?', ts: c.created_at,
+              escalate: shouldEscalate(body), why, body: body.slice(0, 400) });
+          } else {
+            shown.push({ user: c.user.login, ts: c.created_at, body });
+          }
+        }
         out[nodeId] = {
           url: t.url,
-          count: comments.filter(c => !/^(Live on the Board|Thanks —)/.test(c.body || '')).length,
-          comments: comments
-            .filter(c => c.user && c.user.type !== 'Bot' && !/^(Live on the Board|Thanks —)/.test(c.body || ''))
-            .slice(-4)
-            .map(c => ({ user: c.user.login, ts: c.created_at, body: redact((c.body || '').replace(/<[^>]+>/g, ''), 400) })),
+          count: shown.length,
+          held: human.length - shown.length,
+          comments: shown.slice(-4),
         };
       } catch (e) { console.error('thread sync fail', nodeId, e.message); }
     }
     write(path.join(DATA, 'cases', slug, 'threads.json'), { synced: NOW, threads: out });
   }
+  write(HELD_PATH, { synced: NOW, cleared: [...cleared], held, heldSeeds });
+  if (held.length || heldSeeds.length) console.log('held ' + held.length + ' comment(s) and ' + heldSeeds.length + ' thread seed(s) for editor review');
 }
 
 // ---- fast-lane theory ingest -------------------------------------------------
@@ -398,9 +458,13 @@ async function ingestTheories() {
       const names = buildNameSets(CASE, days);
       const mentioned = personMentions(all, names);
       const pii = PII.some(re => re.test(all));
-      if (!claim || claim.length > 220 || all.length > 3000 || pii || mentioned.length) {
+      // The name screen only catches proper nouns. "Her husband", "the neighbour", "P.C." and
+      // "why was he never charged" all name somebody just as effectively, and all of them
+      // cleared the name screen when this was tested against real text. See screen.js.
+      const implied = implicationReason(all);
+      if (!claim || claim.length > 220 || all.length > 3000 || pii || mentioned.length || implied) {
         await gh(`/repos/${REPO}/issues/${iss.number}/labels`, { method: 'POST', body: { labels: ['needs-review'] } });
-        const why = pii ? 'it looks like it contains contact or address details' : mentioned.length ? `it discusses a specific person (${mentioned.slice(0, 3).join(', ')}) — posts about people always get human eyes first` : 'of length/format';
+        const why = pii ? 'it looks like it contains contact or address details' : mentioned.length ? `it discusses a specific person (${mentioned.slice(0, 3).join(', ')}) — posts about people always get human eyes first` : implied ? `it ${implied} — posts about people always get human eyes first, however they are phrased` : 'of length/format';
         await gh(`/repos/${REPO}/issues/${iss.number}/comments`, { method: 'POST', body: { body: `Thanks — holding this for editor review because ${why}. Usually under an hour.` } });
         continue;
       }
@@ -492,9 +556,25 @@ async function discoverMedia(slug) {
 
 (async () => {
   const cases = fs.readdirSync(path.join(DATA, 'cases')).filter(d => fs.existsSync(path.join(DATA, 'cases', d, 'case.json')));
-  for (const slug of cases) await pollCase(slug);
-  for (const slug of cases) await discoverMedia(slug);
+  // One malformed case file used to kill the entire pulse on the first iteration — no feeds, no
+  // verdict watch, no verdict publishing, for every other case too. That happened on 2026-08-22,
+  // when a merge-conflict marker reached data/cases/alex-murdaugh-retrial/case.json: the pulse
+  // crashed on JSON.parse before polling anything, and because the pulse is what rewrites these
+  // files, it could not heal itself either. The verdict path is the last thing that should share
+  // a fate with a caption. A broken case is now loud and isolated.
+  const broken = [];
+  for (const slug of cases) {
+    try { await pollCase(slug); }
+    catch (e) { broken.push(slug); console.error('CASE FAILED (skipped, pulse continues):', slug, e.message); }
+  }
+  for (const slug of cases) if (!broken.includes(slug)) await discoverMedia(slug);
   await syncIssues();
   await ingestTheories();
   console.log('pulse complete', NOW);
+  // Deliberately exit 0 even when a case failed. The commit step runs after this one, so a
+  // non-zero exit would throw away the data every HEALTHY case just polled — punishing four
+  // cases for the fifth. Visibility comes from this file instead: it is committed, so the next
+  // session reads the degradation on its first look rather than inferring it from silence.
+  write(path.join(DATA, 'queue', 'health.json'), { checked: NOW, brokenCases: broken });
+  if (broken.length) console.error('PULSE DEGRADED — broken case file(s): ' + broken.join(', '));
 })();

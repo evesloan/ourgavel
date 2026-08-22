@@ -213,6 +213,21 @@
         "outlet": "Commonwealth v. Lawson, 475 Mass. 806 (2016)",
         "url": "https://law.justia.com/cases/massachusetts/supreme-court/volumes/475/475mass806.html"
       }
+    ],
+    "burdenNote": "Under Commonwealth v. Lawson (2016), the mere fact that most people are sane is not, by itself, enough to carry that burden once mental-illness evidence is in the case — the Commonwealth may rely on the circumstances of the offense and the defendant's words and conduct before, during, and after.",
+    "qa": [
+      {
+        "q": "Does “she knew what she was doing” end the inquiry?",
+        "a": "No. The test has two independent prongs. Even a defendant who appreciated wrongfulness is not responsible if disease left her without substantial capacity to conform her conduct to the law. That is the prong defense expert Dr. Zeizel invoked."
+      },
+      {
+        "q": "If the jury acquits on lack of criminal responsibility, does she walk free?",
+        "a": "No. Under M.G.L. c.123 §16, the court may order up to 40 days of hospitalization for evaluation, and the DA or facility may petition for commitment — six months initially, renewable in one-year periods. The model instruction notes a person who remains mentally ill and dangerous “may remain committed for the duration of his [or her] life.”"
+      },
+      {
+        "q": "What are the jury's options here?",
+        "a": "First-degree murder (life without parole), second-degree murder (life with parole eligibility), not guilty by reason of lack of criminal responsibility, or no unanimous verdict (mistrial; retrial possible). Whether involuntary manslaughter joins the slip is still being argued."
+      }
     ]
   },
   "plainSummary": "She doesn't deny causing her three children's deaths. The whole trial is one question: was her mind gone — wrecked by postpartum psychosis, as her defense says — or working fine, as prosecutors say? The experts flatly contradict each other, and a verdict could land within days.",

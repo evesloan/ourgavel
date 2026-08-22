@@ -51,6 +51,34 @@ const OUTCOMES = [
   ['GUILTY', new RegExp('\\b(?:(?:found|finds|find|convicts?|convicted)\\s+' + SUBJ + '(?<!not\\s)guilty|convicted (?:of|on)\\b|guilty verdict|verdict of guilty)', 'i')],
 ];
 
+// Coverage of a RETRIAL constantly references the verdict that was overturned, and a
+// retrospective reads exactly like a fresh conviction. Three newsrooms running the same
+// retrospective would otherwise reach "consensus" and publish a verdict that has not
+// happened. Any of this vocabulary anywhere in the headline means it is about a past or
+// undone outcome, so it proves nothing about today.
+const HISTORICAL = new RegExp([
+  'overturn\\w*', 'vacat\\w*', 'thrown out', 'tossed', 'revers\\w*', 'quash\\w*',
+  'set aside', 'first trial', 'first jury', 'previous trial', 'prior conviction',
+  'original (?:conviction|verdict|trial)', 'earlier conviction', 'new trial',
+  'retrial(?:\\s*:|\\s+set|\\s+ordered|\\s+granted)', 'appeal\\w*', 'post-?conviction',
+].map(w => '\\b' + w + '\\b').join('|'), 'i');
+
+// A past year sitting right after the outcome usually dates the VERDICT ("convicted ... in
+// 2023"). A past year followed by a crime noun dates the CRIME ("guilty in the 1996
+// killing"), which is normal in a real verdict headline and must still pass.
+// The crime noun often sits a few words after the year — "in the 2022 Bridegan shooting" —
+// so allow a short run of words between. 'trial' and 'case' are deliberately NOT here:
+// "convicted in 2023 after a long trial" dates the verdict, not the crime.
+const CRIME_NOUN = /^\s*(?:[\w.'\u2019-]+\s+){0,3}(?:killing|killings|murder|murders|shooting|shootings|death|deaths|slaying|slayings|homicide|stabbing|crash|fire|disappearance|kidnapping|attack|assault|robbery|bombing)\b/i;
+function datesThePastVerdict(text, at, len) {
+  const tail = text.slice(at + len, at + len + 48);
+  const m = tail.match(/\b(19|20)\d{2}\b/);
+  if (!m) return false;
+  const thisYear = new Date().getUTCFullYear();
+  if (parseInt(m[0], 10) >= thisYear) return false;
+  return !CRIME_NOUN.test(tail.slice(m.index + m[0].length));
+}
+
 const OUTCOME_LABEL = {
   GUILTY: 'Guilty',
   NOT_GUILTY: 'Not guilty',
@@ -91,6 +119,8 @@ function classify(text) {
     const at = m.index || 0;
     const clause = t.slice(Math.max(0, at - 120), at + m[0].length + 70);
     if (HYPOTHETICAL.test(clause)) return null;
+    if (HISTORICAL.test(t)) return null;
+    if (datesThePastVerdict(t, at, m[0].length)) return null;
     return tag;
   }
   return null;

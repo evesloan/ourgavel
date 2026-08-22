@@ -47,6 +47,30 @@ const now = Date.parse('2026-08-22T12:00:00Z');
 const at = (mins, outlet, headline) =>
   ({ ts: new Date(now - mins * 60000).toISOString(), outlet, headline, url: 'https://x/' + Math.random() });
 
+console.log('--- Gate 1b: retrial coverage of a VACATED verdict must never publish ---');
+// Found by running the classifier over real Murdaugh coverage: retrospectives about the
+// overturned 2023 conviction read exactly like a fresh one. Three newsrooms running the
+// same retrospective would have reached "consensus" on a verdict that has not happened.
+const historical = [
+  'Alex Murdaugh was convicted of murdering his wife and son in 2023',
+  'Murdaugh found guilty in 2023; conviction thrown out in 2026',
+  'Why the South Carolina Supreme Court vacated the guilty verdict',
+  'Murdaugh retrial: how the first jury found him guilty',
+  'Appeals court reverses guilty verdict',
+  'Retrial set after conviction overturned',
+  'Davis was convicted in 2009 after a lengthy trial',
+];
+for (const h of historical) ok(classify(h) === null, 'read a past verdict as current: ' + h);
+
+console.log('--- and a real verdict citing the CRIME year must still publish ---');
+const withCrimeYear = [
+  ['Jury finds Duane Davis guilty in the 1996 killing of Tupac Shakur', 'GUILTY'],
+  ['Fernandez convicted of murder in the 2022 Bridegan shooting', 'GUILTY'],
+  ['Jury finds Alex Murdaugh guilty at retrial', 'GUILTY'],
+  ['Murdaugh acquitted at retrial', 'NOT_GUILTY'],
+];
+for (const [h, want] of withCrimeYear) ok(classify(h) === want, 'want ' + want + ', got ' + classify(h) + ': ' + h);
+
 console.log('--- Gate 2: consensus ---');
 ok(assess([], now).status === 'none', 'empty feed should be none');
 

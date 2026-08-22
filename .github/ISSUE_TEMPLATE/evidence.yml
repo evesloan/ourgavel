@@ -1,0 +1,42 @@
+name: 📎 Submit evidence
+description: A published report or primary document that corroborates or disproves a Board node.
+title: "[evidence] "
+labels: ["community", "evidence", "pending-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Evidence is the only thing that moves a node between UNVERIFIED, the record, and DISPROVEN. Credentialed outlets and primary documents (court filings, official releases) carry weight; screenshots and anonymous posts don't.
+  - type: input
+    id: case
+    attributes:
+      label: Case
+      placeholder: lindsay-clancy
+    validations:
+      required: true
+  - type: input
+    id: node
+    attributes:
+      label: Which Board node does this bear on?
+    validations:
+      required: true
+  - type: dropdown
+    id: direction
+    attributes:
+      label: This evidence…
+      options: ["corroborates the node", "disproves the node", "adds context"]
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Link to the source
+      placeholder: https://…
+    validations:
+      required: true
+  - type: textarea
+    id: quote
+    attributes:
+      label: The relevant passage (quote it)
+    validations:
+      required: true

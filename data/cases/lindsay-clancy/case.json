@@ -1,0 +1,58 @@
+{
+  "slug": "lindsay-clancy",
+  "title": "Commonwealth v. Lindsay Clancy",
+  "shortTitle": "Lindsay Clancy Trial",
+  "status": "active",
+  "phase": "Prosecution rebuttal — closings expected Mon Aug 24 or Tue Aug 25",
+  "court": "Plymouth County Superior Court, Massachusetts",
+  "judge": "Judge William F. Sullivan",
+  "incidentDate": "2023-01-24",
+  "trialStart": "2026-07-27",
+  "charges": "Three counts of first-degree murder (strangulation counts dropped July 9, 2026 as redundant)",
+  "defendant": "Lindsay Clancy, 36, of Duxbury, Massachusetts",
+  "plea": "Not guilty; defense of lack of criminal responsibility (postpartum psychosis, over-medication)",
+  "prosecution": ["ADA Jennifer Sprague", "Shanan Buckingham", "ADA Amanda Fowle"],
+  "defense": ["Kevin J. Reddington"],
+  "victims": "Cora Clancy (5), Dawson Clancy (3), Callan Clancy (8 months)",
+  "livestream": {
+    "note": "Cameras permitted; livestreamed on Court TV's YouTube channel and NBC Boston.",
+    "sources": [
+      {"outlet": "Court TV", "url": "https://www.courttv.com/news/lindsay-clancy-trial-opening-statements-set-for-mom-accused-of-killing-her-3-children/"},
+      {"outlet": "NBC Boston", "url": "https://www.nbcboston.com/news/local/lindsay-clancy-trial-day-16-live-stream-live-updates/4000212/"}
+    ]
+  },
+  "keywords": ["clancy", "duxbury", "plymouth superior", "reddington", "postpartum psychosis trial"],
+  "verdictKeywords": ["verdict", "guilty", "not guilty", "acquit", "convict", "mistrial", "hung jury", "deliberat"],
+  "feeds": [
+    {"outlet": "Boston 25 News", "url": "https://www.boston25news.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml", "verified": true},
+    {"outlet": "NBC Boston", "url": "https://www.nbcboston.com/?rss=y", "verified": true},
+    {"outlet": "Court TV", "url": "https://www.courttv.com/feed/", "verified": true},
+    {"outlet": "Law & Crime", "url": "https://lawandcrime.com/feed/", "verified": true},
+    {"outlet": "Boston.com", "url": "https://www.boston.com/feed/", "verified": true},
+    {"outlet": "The Patriot Ledger", "url": "https://www.patriotledger.com/arc/outboundfeeds/rss/category/news/?outputType=xml", "verified": false, "note": "untested from build env; test in Actions"},
+    {"outlet": "WCVB", "url": "https://www.wcvb.com/topstories-rss", "verified": false, "note": "untested from build env; test in Actions"}
+  ],
+  "watchPages": [
+    {"outlet": "Court TV tag page", "url": "https://www.courttv.com/tag/lindsay-clancy/"},
+    {"outlet": "NBC Boston case hub", "url": "https://www.nbcboston.com/news/local/lindsay-clancy-murder-trial/"},
+    {"outlet": "CBS Boston key moments", "url": "https://www.cbsnews.com/news/lindsay-clancy-trial-key-moments/"}
+  ],
+  "verdictOptions": [
+    {"option": "Guilty of first-degree murder", "consequence": "Mandatory life in prison without possibility of parole.", "sources": [{"outlet": "NewsNation", "url": "https://www.newsnationnow.com/crime/lindsay-clancy-possible-verdicts/amp/"}]},
+    {"option": "Guilty of second-degree murder", "consequence": "Life sentence with eventual parole eligibility.", "sources": [{"outlet": "NewsNation", "url": "https://www.newsnationnow.com/crime/lindsay-clancy-possible-verdicts/amp/"}]},
+    {"option": "Not guilty by reason of lack of criminal responsibility", "consequence": "Up to 40 days hospitalization for evaluation; state may petition for commitment (6 months, renewable yearly) under M.G.L. c.123 §16.", "sources": [{"outlet": "Mass. General Laws c.123 §16", "url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXVII/Chapter123/Section16"}, {"outlet": "NewsNation", "url": "https://www.newsnationnow.com/crime/lindsay-clancy-possible-verdicts/amp/"}]},
+    {"option": "Hung jury / mistrial", "consequence": "Commonwealth may retry the case.", "sources": [{"outlet": "NewsNation", "url": "https://www.newsnationnow.com/crime/lindsay-clancy-possible-verdicts/amp/"}]},
+    {"option": "Involuntary manslaughter (contested)", "consequence": "Defense has asked for it on the verdict slip; prosecution opposes; ruling pending.", "sources": [{"outlet": "Boston 25 News", "url": "https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-defense-expected-call-final-witness-before-resting/3SY5KO3XLBG5NJ5F3S2VCFJKUY/"}]}
+  ],
+  "legalStandard": {
+    "name": "Lack of criminal responsibility — the McHoul standard",
+    "test": "A person is not responsible for criminal conduct if at the time of such conduct, as a result of mental disease or defect, they lack substantial capacity either to appreciate the wrongfulness of their conduct or to conform their conduct to the requirements of law. The two prongs are alternatives — either one suffices.",
+    "burden": "The Commonwealth must prove the defendant WAS criminally responsible, beyond a reasonable doubt. The defense does not have to prove insanity.",
+    "sources": [
+      {"outlet": "Commonwealth v. McHoul, 352 Mass. 544 (1967)", "url": "https://law.justia.com/cases/massachusetts/supreme-court/volumes/352/352mass544.html"},
+      {"outlet": "Commonwealth v. Kappler, 416 Mass. 574 (1993) (quoting Kostka)", "url": "https://law.justia.com/cases/massachusetts/supreme-court/volumes/416/416mass574.html"},
+      {"outlet": "Mass. Model Jury Instruction 9.200", "url": "https://www.mass.gov/doc/9200-lack-of-criminal-responsibility/download"},
+      {"outlet": "Commonwealth v. Lawson, 475 Mass. 806 (2016)", "url": "https://law.justia.com/cases/massachusetts/supreme-court/volumes/475/475mass806.html"}
+    ]
+  }
+}

@@ -1,0 +1,42 @@
+name: 🧵 Post a theory
+description: A hypothesis about the case, for the Board. Reviewed before it appears.
+title: "[theory] "
+labels: ["community", "theory", "pending-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **House rules:** theories analyze the evidence, strategies, and rulings — they never accuse private individuals, name non-public people, or share personal information. Submissions that do are closed without publication. Everything is reviewed before it appears on the Board, usually within the hour.
+  - type: input
+    id: case
+    attributes:
+      label: Case
+      placeholder: lindsay-clancy
+    validations:
+      required: true
+  - type: input
+    id: claim
+    attributes:
+      label: Your theory, in one sentence
+      placeholder: "The rebuttal experts' timing suggests…"
+    validations:
+      required: true
+  - type: textarea
+    id: reasoning
+    attributes:
+      label: Reasoning
+      description: What in the record points this way? Reference Board nodes or trial days where you can.
+    validations:
+      required: true
+  - type: textarea
+    id: falsify
+    attributes:
+      label: What would disprove it?
+      description: The Board's favorite question. A theory that can't be wrong can't be interesting.
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Supporting link (optional)
+      placeholder: https://…

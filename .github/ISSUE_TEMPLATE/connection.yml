@@ -1,0 +1,37 @@
+name: 🔗 Propose a connection
+description: Link two Board nodes — supports, contradicts, or explains. Reviewed before it appears.
+title: "[connection] "
+labels: ["community", "connection", "pending-review"]
+body:
+  - type: input
+    id: case
+    attributes:
+      label: Case
+      placeholder: lindsay-clancy
+    validations:
+      required: true
+  - type: input
+    id: from
+    attributes:
+      label: From (node title or id)
+    validations:
+      required: true
+  - type: input
+    id: to
+    attributes:
+      label: To (node title or id)
+    validations:
+      required: true
+  - type: dropdown
+    id: relation
+    attributes:
+      label: Relation
+      options: ["supports", "contradicts", "explains", "contested"]
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why?
+    validations:
+      required: true

@@ -332,6 +332,22 @@ a.promo:hover{text-decoration:none;transform:translateY(-2px);box-shadow:inset 0
 .ghostnode{pointer-events:none;opacity:.95}
 @media(max-width:760px){#composer{left:0;right:0;bottom:0;top:auto;width:auto;max-height:86%;border-radius:14px 14px 0 0;border-left:0;border-top:4px solid var(--amber);padding:10px 16px 20px}
   #composer .grab{display:block;width:42px;height:4px;border-radius:2px;background:var(--line);margin:2px auto 8px}}
+#gbc{position:fixed;left:24px;bottom:24px;width:392px;max-height:min(78vh,720px);overflow:auto;z-index:60;background:var(--panel);border:1px solid var(--line);border-left:5px solid var(--amber);border-radius:3px;padding:16px 18px;box-shadow:0 14px 44px rgba(60,45,25,.34),inset 0 0 0 1px rgba(255,255,255,.4)}
+#gbc h4{font-family:var(--serif);font-size:19px;margin:2px 0 4px}
+#gbc .grab{display:none}
+.gbc-x{float:right;background:none;border:0;cursor:pointer;color:var(--mut);font-size:22px;line-height:1;padding:0 2px}
+.gbc-ctx{font-size:13px;color:var(--mut);background:var(--panel2);border-radius:2px;padding:8px 10px;margin:10px 0 2px;text-align:center}
+#gbc input,#gbc textarea,#gbc select{width:100%;font-family:var(--serif);font-size:14.5px;padding:9px 11px;border:1px solid var(--line);border-radius:2px;background:var(--bg);color:var(--ink);resize:vertical}
+#gbc select{font-family:var(--sans);font-size:13.5px}
+#gbc input:focus,#gbc textarea:focus,#gbc select:focus{outline:2px solid var(--acc);outline-offset:1px}
+#layoutpill{position:absolute;left:50%;transform:translateX(-50%);top:12px;z-index:6;background:var(--panel);border:1px solid var(--line);border-radius:2px;padding:8px 14px;font-size:12.5px;color:var(--mut);box-shadow:0 4px 16px rgba(60,45,25,.22);max-width:92%;text-align:center}
+#layoutpill .linkbtn{padding:4px 9px;font-size:11px;margin-left:6px}
+.footbtn{padding:3px 8px;font-size:10.5px}
+@media(max-width:760px){
+  #gbc{left:0;right:0;bottom:0;top:auto;width:auto;max-height:88%;border-radius:14px 14px 0 0;border-left:0;border-top:4px solid var(--amber);padding:10px 16px 22px}
+  #gbc .grab{display:block;width:42px;height:4px;border-radius:2px;background:var(--line);margin:2px auto 8px}
+  #layoutpill{font-size:11.5px;padding:7px 11px;top:8px}
+}
 /* --- board interaction + mobile sheet: last in the cascade so these win --- */
 #detail{transform:translateY(6px) scale(.99);opacity:0;pointer-events:none;transition:opacity .2s ease,transform .2s ease;display:block}
 #detail.open{opacity:1;pointer-events:auto;transform:none}
@@ -364,11 +380,13 @@ const sha = src => "'sha256-" + crypto.createHash('sha256').update(src, 'utf8').
 function harden(html) {
   const styles = [...html.matchAll(/<style>([\s\S]*?)<\/style>/g)].map(m => sha(m[1]));
   const scripts = [...html.matchAll(/<script>([\s\S]*?)<\/script>/g)].map(m => sha(m[1]));
+  // Structured data blocks carry a type attribute, so they need their own hashes.
+  const ldBlocks = [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)].map(m => sha(m[1]));
   const csp = [
     "default-src 'none'",
     // Elements are hash-locked; attributes are governed separately below.
-    "script-src " + (scripts.join(' ') || "'none'"),
-    "script-src-elem " + (scripts.join(' ') || "'none'"),
+    "script-src " + ([...scripts, ...ldBlocks].join(' ') || "'none'"),
+    "script-src-elem " + ([...scripts, ...ldBlocks].join(' ') || "'none'"),
     "script-src-attr 'none'",                 // no inline event handlers, ever
     "style-src " + (styles.join(' ') || "'none'"),
     "style-src-elem " + (styles.join(' ') || "'none'"),
@@ -453,7 +471,134 @@ setTimeout(tick,2500);
 document.addEventListener('visibilitychange',function(){if(!document.hidden)tick()});
 })();`;
 
-function page({ title, desc, crumbs, body, active }) {
+// ---- the composer -----------------------------------------------------------
+// Every way a reader contributes — theories, evidence, connections, discussion,
+// reports, corrections, case requests — happens here, on the page they are already on.
+// Nothing sends anyone to GitHub. One component, field-driven, on every page.
+const COMPOSER_MARKUP = `
+<div id="gbc" hidden role="dialog" aria-modal="true" aria-labelledby="gbc-title">
+  <div class="grab"></div>
+  <button class="gbc-x" id="gbc-close" type="button" aria-label="Close">&times;</button>
+  <h4 id="gbc-title"></h4>
+  <p class="chint" id="gbc-hint"></p>
+  <div id="gbc-fields"></div>
+  <div class="crow">
+    <button class="btn sm" id="gbc-post" type="button">Post</button>
+    <button class="linkbtn" id="gbc-cancel" type="button">Cancel</button>
+    <span id="gbc-status" class="chint" role="status"></span>
+  </div>
+</div>`;
+
+const COMPOSER_SCRIPT = `(function(){
+var ENDPOINT=${JSON.stringify(SUBMIT_ENDPOINT)};
+var box=document.getElementById('gbc');if(!box)return;
+var elTitle=document.getElementById('gbc-title'),elHint=document.getElementById('gbc-hint'),
+    elFields=document.getElementById('gbc-fields'),elStatus=document.getElementById('gbc-status');
+var ctx={},mode='theory';
+
+var FIELDS={
+  claim:{el:'input',label:'In one sentence',ph:'The single thing you want to say'},
+  url:{el:'input',label:'Link to the source',ph:'https://…',type:'url'},
+  reasoning:{el:'textarea',label:'Why do you think so?',ph:'What in the record points this way',rows:4},
+  comment:{el:'textarea',label:'Your comment',ph:'Add to the discussion',rows:4,key:'reasoning'},
+  detail:{el:'textarea',label:'What is wrong?',ph:'As specific as you can be',rows:3,key:'reasoning'},
+  falsify:{el:'input',label:'What would prove you wrong?',ph:'e.g. Phone records showing the call after 6pm',opt:'optional, but it is the mark of a good theory'},
+  relation:{el:'select',label:'How are they related?',opts:[['supports','the first supports the second'],['contradicts','the first disputes the second'],['contested','both sides claim it'],['explains','the first gives context to the second']]},
+  reason:{el:'select',label:'What kind of problem?',opts:[['names an uncharged person','It accuses someone who has not been charged'],['personal information','It contains personal information'],['fabricated source','The source does not say what it claims'],['harassment','It targets or harasses someone'],['other','Something else']]},
+  name:{el:'input',label:'Name to post under',ph:'Leave blank to post anonymously',opt:'optional'}
+};
+var MODES={
+  theory:{t:'Add a theory to this board',h:'It goes up labelled as a reader theory. Sources are what move it. Keep it about the case, not about people who have not been charged.',f:['claim','reasoning','falsify','name'],cta:'Post to the board'},
+  evidence:{t:'Submit evidence',h:'Reporting or a court document that proves — or disproves — something here. This is the move that settles arguments.',f:['url','claim','reasoning','name'],cta:'Submit evidence'},
+  connection:{t:'Connect two cards',h:'Say how these two relate and why. It joins the board once reviewed.',f:['relation','reasoning','name'],cta:'Propose the connection'},
+  comment:{t:'Join the discussion',h:'Replies appear on this card once reviewed. Same rules as everywhere: no accusations against people who have not been charged.',f:['comment','name'],cta:'Post comment'},
+  report:{t:'Report a problem',h:'Reports jump the queue. Thank you for flagging it.',f:['reason','detail'],cta:'Send report'},
+  correction:{t:'Suggest a correction',h:'If we got a fact wrong we fix it in public, with a note saying what changed.',f:['claim','url','detail','name'],cta:'Send correction'},
+  request:{t:'Request a case',h:'Tell us what to cover. We add cases anyway — we would rather add the ones people are actually following.',f:['claim','reasoning','name'],cta:'Send request'}
+};
+function esc(x){return String(x==null?'':x).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}
+function render(){
+  var m=MODES[mode]||MODES.theory;
+  elTitle.textContent=m.t;elHint.textContent=m.h;elStatus.textContent='';
+  document.getElementById('gbc-post').textContent=m.cta;
+  var html='';
+  if(ctx.nodeTitle)html+='<p class="gbc-ctx">On: <b>'+esc(ctx.nodeTitle)+'</b></p>';
+  if(ctx.fromTitle&&ctx.toTitle)html+='<p class="gbc-ctx"><b>'+esc(ctx.fromTitle)+'</b><br>&darr;<br><b>'+esc(ctx.toTitle)+'</b></p>';
+  m.f.forEach(function(key){
+    var f=FIELDS[key];if(!f)return;
+    var id='gbcf-'+key;
+    html+='<label class="clab" for="'+id+'">'+esc(f.label)+(f.opt?' <span class="copt">'+esc(f.opt)+'</span>':'')+'</label>';
+    if(f.el==='textarea')html+='<textarea id="'+id+'" rows="'+(f.rows||3)+'" maxlength="1800" placeholder="'+esc(f.ph||'')+'"></textarea>';
+    else if(f.el==='select'){html+='<select id="'+id+'">';f.opts.forEach(function(o){html+='<option value="'+esc(o[0])+'">'+esc(o[1])+'</option>'});html+='</select>';}
+    else html+='<input id="'+id+'" type="'+(f.type||'text')+'" maxlength="400" placeholder="'+esc(f.ph||'')+'">';
+  });
+  elFields.innerHTML=html;
+  var first=elFields.querySelector('input,textarea,select');
+  // Live ghost preview on board pages, so you can see the card you are writing.
+  var claimEl=document.getElementById('gbcf-claim');
+  if(claimEl&&window.gbGhost){window.gbGhost('');claimEl.addEventListener('input',function(){window.gbGhost(claimEl.value)})}
+  if(first)setTimeout(function(){first.focus()},60);
+}
+function val(key){var e=document.getElementById('gbcf-'+key);return e?e.value:''}
+function open(m,c){
+  mode=MODES[m]?m:'theory';ctx=c||{};box.hidden=false;render();
+  document.addEventListener('keydown',onKey);
+}
+function close(){box.hidden=true;if(window.gbGhostClear)window.gbGhostClear();document.removeEventListener('keydown',onKey)}
+function onKey(e){if(e.key==='Escape')close()}
+document.getElementById('gbc-close').onclick=close;
+document.getElementById('gbc-cancel').onclick=close;
+window.gbCompose=open;
+
+document.addEventListener('click',function(e){
+  var t=e.target.closest('[data-compose]');if(!t)return;
+  e.preventDefault();
+  open(t.getAttribute('data-compose'),{
+    caseSlug:t.getAttribute('data-case')||'',
+    node:t.getAttribute('data-node')||'',
+    nodeTitle:t.getAttribute('data-node-title')||''
+  });
+});
+
+document.getElementById('gbc-post').onclick=function(){
+  var m=MODES[mode];
+  var payload={kind:mode,case:ctx.caseSlug||'',claim:val('claim'),reasoning:val('reasoning'),
+    falsify:val('falsify'),name:val('name'),url:val('url'),reason:val('reason'),
+    relation:val('relation'),node:ctx.node||'',nodeTitle:ctx.nodeTitle||'',
+    from:ctx.from||'',to:ctx.to||''};
+  var primary=(mode==='comment'||mode==='report')?payload.reasoning:payload.claim;
+  if(mode==='connection')primary=payload.reasoning;
+  if(!primary||primary.trim().length<8){elStatus.textContent='A little more detail, please.';return}
+  if(mode==='evidence'&&!/^https?:\\/\\//i.test(payload.url)){elStatus.textContent='Evidence needs a link to the source.';return}
+  if(!ENDPOINT){
+    var text=[payload.claim,payload.url,payload.reasoning,payload.falsify].filter(Boolean).join(String.fromCharCode(10,10));
+    try{navigator.clipboard&&navigator.clipboard.writeText(text)}catch(err){}
+    elStatus.textContent='Posting switches on shortly. Your text is copied to your clipboard so nothing is lost.';
+    return;
+  }
+  elStatus.textContent='Posting…';
+  fetch(ENDPOINT,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(payload)})
+    .then(function(r){return r.json().then(function(d){return{ok:r.ok,d:d}})})
+    .then(function(res){
+      if(!res.ok){elStatus.textContent=(res.d&&res.d.error)||'That did not go through. Try again shortly.';return}
+      close();
+      var say=window.gbSay;
+      var msg=mode==='report'?'Reported. Thank you — that jumps the queue.'
+        :mode==='correction'?'Correction received. If we got it wrong we fix it in public.'
+        :'Received, and noted. It appears once reviewed.';
+      if(say)say(msg);else alert(msg);
+    })
+    .catch(function(){elStatus.textContent='No connection. Your text is still here — try again in a moment.'});
+};
+})();`;
+
+// Search engines need three things this site was not giving them: a canonical URL, a
+// machine-readable description of what each page IS, and a sitemap. Without those, a
+// 35-page site of primary-source court records looks like 35 orphan documents.
+function jsonLd(obj) {
+  return `<script type="application/ld+json">${JSON.stringify(obj).replace(/</g, '\\u003c')}</script>`;
+}
+function page({ title, desc, crumbs, body, active, canonical, ld }) {
   const nav = NAV_ITEMS.map(([href, label]) => `<a href="${href}" class="${active === href ? 'on' : ''}">${label}</a>`).join('');
   return `<!doctype html>
 <html lang="en"><head>
@@ -468,6 +613,8 @@ function page({ title, desc, crumbs, body, active }) {
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="${esc(title)}">
 <meta name="twitter:description" content="${esc(desc)}">
+<link rel="canonical" href="${SITE}${canonical || (active === '/' ? '/' : active || '/')}">
+${ld ? jsonLd(ld) : ''}
 <link rel="icon" href="data:image/svg+xml,${encodeURIComponent(pip(64, { alt: 'OurGavel' }).replace(/ class="pip"/, '').replace(/ role="img"[^>]*?focusable="false"/, ''))}">
 <style>${CSS}</style>
 </head><body>
@@ -480,9 +627,11 @@ function page({ title, desc, crumbs, body, active }) {
 ${crumbs ? `<nav class="crumbs">${crumbs}</nav>` : ''}
 ${body}
 </div></main>
+${COMPOSER_MARKUP}
 ${body.includes('id="ticker"') ? `<script>${LIVE_SCRIPT}</script>` : ''}
+<script>${COMPOSER_SCRIPT}</script>
 <footer><div class="wrap">
-  <p class="disc" style="border:none;margin:0;padding:0">Every defendant is presumed innocent unless and until proven guilty. Community theories are labeled, not facts. Quoted material belongs to the cited outlets; nothing here is legal advice. <a href="/about/">Full policies & corrections</a> · <span class="hb">◉ ${esc(BUILT_AT.slice(0, 16).replace('T', ' '))} UTC</span></p>
+  <p class="disc" style="border:none;margin:0;padding:0">Every defendant is presumed innocent unless and until proven guilty. Community theories are labeled, not facts. Quoted material belongs to the cited outlets; nothing here is legal advice. <a href="/about/">Full policies</a> · <button class="linkbtn footbtn" type="button" data-compose="correction">Suggest a correction</button> · <span class="hb">◉ ${esc(BUILT_AT.slice(0, 16).replace('T', ' '))} UTC</span></p>
 </div></footer>
 </body></html>`;
 }
@@ -532,9 +681,9 @@ function statusChip(c) {
 const shortPhase = p => { const t = String(p || ''); return t.length > 58 ? t.slice(0, 55).replace(/[\s,—-]+$/, '') + '…' : t; };
 // Simple menus: with one active case, the nav goes straight to it.
 if (ACTIVE.length === 1) {
-  NAV_ITEMS = [['/', 'Home'], [`/cases/${ACTIVE[0].slug}/`, 'The Trial'], [`/cases/${ACTIVE[0].slug}/board/`, 'The Board'], ['/creators/', 'Creators'], ['/about/', 'About']];
+  NAV_ITEMS = [['/', 'Home'], [`/cases/${ACTIVE[0].slug}/`, 'The Trial'], [`/cases/${ACTIVE[0].slug}/board/`, 'The Board'], ['/about/', 'About']];
 } else if (ACTIVE.length > 1) {
-  NAV_ITEMS = [['/', 'Home'], ['/cases/', 'Cases'], ['/creators/', 'Creators'], ['/about/', 'About']];
+  NAV_ITEMS = [['/', 'Home'], ['/cases/', 'Cases'], ['/about/', 'About']];
 }
 const caseNav = (c, on) => `<nav class="casenav">
 <a href="/cases/${c.slug}/" class="${on === 'overview' ? 'on' : ''}">Overview</a>
@@ -600,6 +749,13 @@ function boardPromo(c) {
 const allItems = ACTIVE.flatMap(c => (c.ticker.items || []).map(i => ({ ...i, _case: c.case.shortTitle }))).sort((a, b) => b.ts.localeCompare(a.ts));
 const RANKED = [...ACTIVE].sort((a, b) => boardActivity(b).score - boardActivity(a).score);
 const home = page({
+  canonical: '/',
+  ld: {
+    '@context': 'https://schema.org', '@type': 'WebSite',
+    name: SITE_NAME, url: SITE,
+    description: 'A source-linked record of high-attention court cases, with a community evidence board for each.',
+    publisher: { '@type': 'Organization', name: SITE_NAME, url: SITE },
+  },
   title: "Read the trial, not the takes",
   desc: 'OurGavel keeps the record of the court cases people are arguing about — every fact linked to its source — and turns each one into a board you can work through and argue over.',
   active: '/',
@@ -615,7 +771,6 @@ ${RANKED.slice(0, 2).map(boardPromo).join('\n')}
 
 <h2>Off the wire</h2>
 ${tickerHtml(allItems, 6, ACTIVE.length > 1, '/live.json')}
-<p class="allcases" style="margin-top:14px"><a href="/creators/">Put a live board on your own site — free →</a></p>
 `});
 
 // ---------- cases index ----------
@@ -649,7 +804,7 @@ function verdictBanner(c, compact) {
   <div class="voutcome">${esc(v.label || v.outcome)}</div>
   ${compact ? '' : `<p class="vconf">Published automatically after <b>${esc(String(v.confirmedBy || 0))} independent newsrooms</b> reported the same outcome, and that agreement held across two checks. Every one of them:</p>
   <p class="srcs">${srcs}</p>
-  <p class="vconf" style="margin-top:8px">Sentencing and any appeal are separate proceedings, covered separately. If you believe this is wrong, <a href="https://github.com/${REPO}/issues/new?template=report.yml">tell us</a> — corrections are made in public.</p>`}
+  <p class="vconf" style="margin-top:8px">Sentencing and any appeal are separate proceedings, covered separately. If you believe this is wrong, <button class="linkbtn" type="button" data-compose="report" data-case="${c.slug}">tell us</button> — corrections are made in public.</p>`}
 </div>`;
 }
 
@@ -674,6 +829,16 @@ function hubPage(c) {
   return page({
     title: cc.shortTitle,
     desc: `Follow ${cc.title}: what's happening now, the day-by-day record, the evidence board, and how the case can end.`,
+    canonical: `/cases/${c.slug}/`,
+    ld: {
+      '@context': 'https://schema.org', '@type': 'NewsArticle',
+      headline: cc.shortTitle, description: cc.plainSummary || cc.charges,
+      mainEntityOfPage: `${SITE}/cases/${c.slug}/`,
+      dateModified: BUILT_AT, isAccessibleForFree: true,
+      publisher: { '@type': 'Organization', name: SITE_NAME, url: SITE },
+      about: { '@type': 'Event', name: cc.title, location: { '@type': 'Place', name: cc.court } },
+      citation: (cc.statusNowSources || []).slice(0, 6).map(x => ({ '@type': 'CreativeWork', name: x.outlet, url: safeUrl(x.url) })),
+    },
     active: `/cases/${c.slug}/`,
     crumbs: `<a href="/">Home</a> › ${esc(cc.shortTitle)}`,
     body: `
@@ -710,6 +875,18 @@ function dayBlock(c, d) {
 }
 function timelinePage(c) {
   return page({
+    canonical: `/cases/${c.slug}/timeline/`,
+    ld: {
+      '@context': 'https://schema.org', '@type': 'LiveBlogPosting',
+      headline: c.case.shortTitle + ' — the record, day by day',
+      coverageStartTime: c.case.trialStart, dateModified: BUILT_AT,
+      mainEntityOfPage: `${SITE}/cases/${c.slug}/timeline/`,
+      publisher: { '@type': 'Organization', name: SITE_NAME, url: SITE },
+      liveBlogUpdate: (c.days.days || []).slice(-12).map(d => ({
+        '@type': 'BlogPosting', headline: `Day ${d.day}: ${d.headline}`,
+        datePublished: d.date, articleBody: d.summary,
+      })),
+    },
     title: 'The Record — ' + c.case.shortTitle,
     desc: `Every trial day of ${c.case.title}: witnesses, testimony, rulings — each entry cited to its source.`,
     active: '/cases/',
@@ -821,12 +998,13 @@ ${commentChip}
   // The reader zone: labeled, and never empty — an invitation card sits there until theories arrive.
   const zoneX = 1160;
   const zoneLabel = `<text x="${zoneX}" y="46" font-size="13" fill="var(--amber)" font-weight="700" letter-spacing="3" opacity="0.85">READER THEORIES</text><text x="${zoneX}" y="64" font-size="11" fill="var(--mut)">yours goes up here</text>`;
-  const ctaCard = communityNodes.length ? '' : `<a href="https://github.com/${REPO}/issues/new?template=theory.yml&case=${c.slug}"><g class="ctanode" style="cursor:pointer">
+  const ctaCard = communityNodes.length ? '' : `<g class="ctanode" data-compose="theory" data-case="${c.slug}" style="cursor:pointer">
 <rect x="${zoneX}" y="80" width="${NW}" height="${NH}" rx="6" fill="none" stroke="var(--amber)" stroke-width="2" stroke-dasharray="7 5"></rect>
 <text x="${zoneX + NW / 2}" y="112" font-size="13" fill="var(--amber)" font-weight="700" text-anchor="middle">+ Your theory goes here</text>
 <text x="${zoneX + NW / 2}" y="130" font-size="11" fill="var(--mut)" text-anchor="middle">be the first — tap to post</text>
+<rect x="${zoneX}" y="80" width="${NW}" height="${NH}" fill="transparent"></rect>
 <g transform="translate(${zoneX + NW / 2 - 22},${NH + 92}) scale(0.7)">${pip(64).replace(/^<svg[^>]*>/, "").replace(/<\/svg>$/, "")}</g>
-</g></a>`;
+</g>`;
   const svg = `<svg id="boardsvg" viewBox="${minX} ${minY} ${w + (communityNodes.length ? 0 : 320)} ${h}" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%">${defs}<g id="viewport">${zoneLabel}${ctaCard}${edgeEls}\n${nodeEls}</g></svg>`;
 
   const verb = { supports: ['sup', 'supports'], contradicts: ['con', 'disputes'], disproves: ['con', 'disproves'], contested: ['mix', 'is contested on'], explains: ['ctx', 'gives context to'] };
@@ -854,7 +1032,7 @@ ${commentChip}
   ];
   const listHtml = listGroups.filter(([, ns]) => ns.length).map(([title, ns]) => `<h3>${title}</h3>` + ns.map(n => {
     const [bcls, blabel] = badgeFor(n);
-    return `<div class="card"><span class="badge ${bcls}">${blabel}</span><h4 style="font-family:var(--serif);margin:8px 0 4px">${esc(n.title)}</h4><p style="font-size:14px">${esc(n.body)}</p>${n.sources && n.sources.length ? `<p style="margin-top:6px">${srcLinks(n.sources)}</p>` : ''}${connHtml(n.id)}${n.traction ? `<p style="color:var(--mut);font-size:12.5px;margin-top:6px">Corroborated by ${n.traction.up} · disputed by ${n.traction.down}${n.issue ? ` · <a href="${esc(safeUrl(n.issue))}" target="_blank" rel="noopener">discussion</a>` : ''}</p>` : ''}</div>`;
+    return `<div class="card"><span class="badge ${bcls}">${blabel}</span><h4 style="font-family:var(--serif);margin:8px 0 4px">${esc(n.title)}</h4><p style="font-size:14px">${esc(n.body)}</p>${n.sources && n.sources.length ? `<p style="margin-top:6px">${srcLinks(n.sources)}</p>` : ''}${connHtml(n.id)}${n.traction ? `<p style="color:var(--mut);font-size:12.5px;margin-top:6px">Corroborated by ${n.traction.up} · disputed by ${n.traction.down}${n.issue ? `` : ''}</p>` : ''}</div>`;
   }).join('\n')).join('\n');
 
   // Every field here is injected via innerHTML on the client, so it is escaped HERE,
@@ -863,7 +1041,7 @@ ${commentChip}
     const [bcls, blabel] = badgeFor(n);
     const th = threads[n.id] || null;
     const safeThread = th ? {
-      url: esc(safeUrl(th.url)), count: Number(th.count) || 0,
+      count: Number(th.count) || 0,
       comments: (th.comments || []).map(cm => ({ user: esc(cm.user), ts: esc(String(cm.ts || '')), body: esc(cm.body) })),
     } : null;
     return [n.id, {
@@ -960,9 +1138,15 @@ function centreOn(id,targetScale){
 }
 document.getElementById('bz-in').onclick=function(){zoomAt(1.3)};
 document.getElementById('bz-out').onclick=function(){zoomAt(1/1.3)};
+var lr=document.getElementById('layoutreset');
+if(lr)lr.onclick=function(){
+  tx=0;ty=0;scale=1;offsets={};saveOffsets();
+  Object.keys(nodeEls).forEach(applyNode);drawEdges(true);applyView();clearFocus();hideLayoutPill();
+  say('Back to the published arrangement.');
+};
 document.getElementById('bz-fit').onclick=function(){
   tx=0;ty=0;scale=1;offsets={};saveOffsets();
-  Object.keys(nodeEls).forEach(applyNode);drawEdges();applyView();clearFocus();
+  Object.keys(nodeEls).forEach(applyNode);drawEdges(true);applyView();clearFocus();hideLayoutPill();
   say(${JSON.stringify(PIP.reset)});
 };
 
@@ -980,7 +1164,24 @@ function pointerMove(cx,cy){
   if(mode==='pan'){tx=startOff.x+dx/k;ty=startOff.y+dy/k;applyView()}
   else{offsets[dragId]={x:startOff.x+dx/(k*scale),y:startOff.y+dy/(k*scale)};applyNode(dragId);drawEdges(true)}
 }
-function pointerUp(){if(mode==='node'&&movedFar)saveOffsets();mode=null;dragId=null}
+function pointerUp(){
+  if(mode==='node'&&movedFar){
+    // Snap to a light grid so a dragged board stays legible rather than drifting askew.
+    var o=offsets[dragId];
+    if(o){o.x=Math.round(o.x/10)*10;o.y=Math.round(o.y/10)*10;applyNode(dragId);drawEdges(true)}
+    saveOffsets();showLayoutPill();
+  }
+  mode=null;dragId=null;
+}
+// Moving cards only ever changes YOUR view — layout lives in this browser and is never
+// sent anywhere, so no reader can disturb the board for anyone else. The pill makes that
+// explicit and offers the way back, which is the actual anxiety people have.
+function showLayoutPill(){
+  var pill=document.getElementById('layoutpill');if(!pill)return;
+  pill.hidden=false;
+}
+function hideLayoutPill(){var pill=document.getElementById('layoutpill');if(pill)pill.hidden=true}
+if(Object.keys(offsets).length)setTimeout(showLayoutPill,900);
 wrap.addEventListener('mousedown',function(e){pointerDown(e,e.target,e.clientX,e.clientY)});
 window.addEventListener('mousemove',function(e){pointerMove(e.clientX,e.clientY)});
 window.addEventListener('mouseup',pointerUp);
@@ -1042,20 +1243,21 @@ function say(html,sticky){toast.innerHTML='<span class="pipwrap">'+PIPMARK+'</sp
   var rl=toast.querySelector('[data-reload]');if(rl)rl.onclick=function(e){e.preventDefault();location.reload()};
   clearTimeout(say._t);if(!sticky){say._t=setTimeout(function(){toast.classList.remove('on')},5500)}}
 function hush(){toast.classList.remove('on')}
+window.gbSay=say;
 function esc2(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;')}
 function closeDetail(){detail.classList.remove('open');clearFocus()}
 function threadHtml(id,n){
   var t=n.thread;var out='<div class="conns" style="border-top-style:solid"><b>Discussion</b>';
   if(t&&t.comments&&t.comments.length){
     out+=t.comments.map(function(cm){return '<p style="margin:6px 0"><b style="color:var(--acc)">'+esc2(cm.user)+'</b> <span style="font-size:11px">'+cm.ts.slice(0,10)+'</span><br>'+esc2(cm.body)+'</p>'}).join('');
-    out+='<a href="'+t.url+'" target="_blank" rel="noopener">Reply — '+t.count+' comment'+(t.count===1?'':'s')+' &rarr;</a>';
-  } else if(t){out+='<br><a href="'+t.url+'" target="_blank" rel="noopener">Be the first to comment &rarr;</a>';}
-  else{
-    var u='https://github.com/'+REPO+'/issues/new?title='+encodeURIComponent('Discussion: '+n.title.slice(0,60))+'&body='+encodeURIComponent('<!--node:'+id+' case:'+SLUG+'-->')+'%0A%0A';
-    out+='<br><a href="'+u+'" target="_blank" rel="noopener">Start the discussion &rarr;</a>';
+  }else{
+    out+='<p style="margin:6px 0;color:var(--mut)">No comments yet.</p>';
   }
+  out+='<p style="margin-top:8px"><button class="linkbtn" data-compose="comment" data-case="'+SLUG+'" data-node="'+id+'" data-node-title="'+esc2(n.title)+'">'
+    +((t&&t.count)?'Join the discussion ('+t.count+')':'Start the discussion')+'</button></p>';
   return out+'</div>';
 }
+
 function show(id){
   var n=DATA[id];if(!n)return;
   focusNode(id);
@@ -1085,12 +1287,10 @@ svg.addEventListener('click',function(e){
   if(!g){if(!connectFrom){closeDetail()}return}
   var id=g.getAttribute('data-id');
   if(connectFrom&&connectFrom!==id){
-    var u='https://github.com/'+REPO+'/issues/new?template=connection.yml&case='+SLUG
-      +'&from='+encodeURIComponent(connectFrom+' - '+DATA[connectFrom].title.slice(0,60))
-      +'&to='+encodeURIComponent(id+' - '+DATA[id].title.slice(0,60));
-    window.open(u,'_blank','noopener,noreferrer');
-    connectFrom=null;wrap.classList.remove('connecting');clearFocus();
-    say(${JSON.stringify(PIP.connected)});
+    var a=connectFrom,b=id;
+    connectFrom=null;wrap.classList.remove('connecting');clearFocus();hush();
+    window.gbCompose('connection',{caseSlug:SLUG,from:a,to:b,
+      fromTitle:DATA[a]?DATA[a].title:a,toTitle:DATA[b]?DATA[b].title:b});
     return;
   }
   show(id);
@@ -1111,19 +1311,12 @@ if(bm&&bl&&list){
   bl.onclick=function(){map.style.display='none';list.style.display='block';bl.classList.add('on');bm.classList.remove('on')};
 }
 
-/* ---------- composer: write it here, post it here ---------- */
-var ENDPOINT=${JSON.stringify(SUBMIT_ENDPOINT)};
-var comp=document.getElementById('composer'),cStatus=document.getElementById('c-status');
-var cClaim=document.getElementById('c-claim'),cReason=document.getElementById('c-reason'),
-    cFalsify=document.getElementById('c-falsify'),cName=document.getElementById('c-name');
-var openBtn=document.getElementById('open-composer'),ghost=null;
-
-// A live ghost card in the reader zone, so you are writing ON the board, not into a form.
-function ghostCard(){
+/* ---------- ghost preview: your card, live on the board ---------- */
+var ghost=null;
+function ghostCard(text){
+  var NS='http://www.w3.org/2000/svg';
   if(!ghost){
-    var NS='http://www.w3.org/2000/svg';
-    ghost=document.createElementNS(NS,'g');
-    ghost.setAttribute('class','ghostnode');
+    ghost=document.createElementNS(NS,'g');ghost.setAttribute('class','ghostnode');
     var r=document.createElementNS(NS,'rect');
     r.setAttribute('width',NW);r.setAttribute('height',NH);r.setAttribute('rx','6');
     r.setAttribute('fill','var(--panel2)');r.setAttribute('stroke','var(--amber)');
@@ -1131,61 +1324,25 @@ function ghostCard(){
     var t=document.createElementNS(NS,'text');
     t.setAttribute('x','12');t.setAttribute('y','26');t.setAttribute('font-size','12.5');
     t.setAttribute('fill','var(--ink)');t.setAttribute('font-weight','600');
-    ghost.appendChild(r);ghost.appendChild(t);
-    vp.appendChild(ghost);
+    ghost.appendChild(r);ghost.appendChild(t);vp.appendChild(ghost);
   }
   var p=posOf(CENTRAL_ID)||{x:500,y:340};
-  ghost.setAttribute('transform','translate('+(1160)+','+(Math.max(80,p.y-60))+')');
+  ghost.setAttribute('transform','translate(1160,'+Math.max(80,p.y-60)+')');
   var t=ghost.querySelector('text');
   while(t.firstChild)t.removeChild(t.firstChild);
-  var words=(cClaim.value||'Your theory appears here').split(' '),lines=[],cur='';
+  var words=(text||'Your card appears here').split(' '),lines=[],cur='';
   for(var i=0;i<words.length;i++){
     if((cur+' '+words[i]).trim().length>30){lines.push(cur.trim());cur=words[i]}else cur+=' '+words[i];
   }
   if(cur.trim())lines.push(cur.trim());
   lines.slice(0,3).forEach(function(l,i){
-    var ts=document.createElementNS('http://www.w3.org/2000/svg','tspan');
+    var ts=document.createElementNS(NS,'tspan');
     ts.setAttribute('x','12');ts.setAttribute('dy',i===0?'0':'15');
     ts.textContent=l;t.appendChild(ts);
   });
 }
-function openComposer(){
-  comp.hidden=false;detail.classList.remove('open');clearFocus();
-  ghostCard();setTimeout(function(){cClaim.focus()},60);
-  if(!mobile())centreOn(CENTRAL_ID,1.1);
-}
-function closeComposer(){comp.hidden=true;if(ghost){ghost.remove();ghost=null}}
-if(openBtn)openBtn.onclick=openComposer;
-document.getElementById('comp-close').onclick=closeComposer;
-[cClaim,cReason].forEach(function(el){el.addEventListener('input',ghostCard)});
-
-function fallbackUrl(){
-  return 'https://github.com/'+REPO+'/issues/new?template=theory.yml&case='+SLUG
-    +'&title='+encodeURIComponent('[theory] '+cClaim.value.slice(0,80));
-}
-document.getElementById('c-post').onclick=function(){
-  var claim=(cClaim.value||'').trim();
-  if(claim.length<8){cStatus.textContent='One clear sentence, at least.';cClaim.focus();return}
-  cStatus.textContent='Posting…';
-  if(!ENDPOINT){
-    // No relay configured yet — hand off with everything already typed rather than lose it.
-    cStatus.innerHTML='Opening the last step in a new tab — your text is ready to paste. <a href="'+fallbackUrl()+'" target="_blank" rel="noopener">Open</a>';
-    try{navigator.clipboard&&navigator.clipboard.writeText(claim+String.fromCharCode(10,10)+(cReason.value||''))}catch(e){}
-    window.open(fallbackUrl(),'_blank','noopener,noreferrer');
-    return;
-  }
-  fetch(ENDPOINT,{method:'POST',headers:{'content-type':'application/json'},
-    body:JSON.stringify({kind:'theory',case:SLUG,claim:claim,reasoning:cReason.value,falsify:cFalsify.value,name:cName.value})})
-  .then(function(r){return r.json().then(function(d){return{ok:r.ok,d:d}})})
-  .then(function(res){
-    if(!res.ok){cStatus.textContent=(res.d&&res.d.error)||'That did not go through. Try again shortly.';return}
-    cStatus.textContent='';
-    closeComposer();
-    say('Received, and noted. It appears on the Board shortly — sources are what move it.');
-    cClaim.value='';cReason.value='';cFalsify.value='';
-  })
-  .catch(function(){cStatus.textContent='No connection. Your text is still here — try again in a moment.'});
-};
+function clearGhost(){if(ghost){ghost.remove();ghost=null}}
+window.gbGhost=ghostCard; window.gbGhostClear=clearGhost;
 
 /* ---------- freshness ---------- */
 setInterval(function(){
@@ -1227,7 +1384,7 @@ body{display:flex;flex-direction:column;background:var(--bg)}
   <a class="eb" href="${boardUrl}" target="_blank" rel="noopener">Our<span class="gb">Gavel</span> ↗</a>
 </div>
 <div id="boardwrap">${svg}
-<div class="bctrl"><button id="bz-in" title="Zoom in">+</button><button id="bz-out" title="Zoom out">−</button><button id="bz-fit" title="Reset view">⤢</button></div>
+<div class="bctrl"><button id="bz-in" title="Zoom in" aria-label="Zoom in">+</button><button id="bz-out" title="Zoom out" aria-label="Zoom out">−</button><button id="bz-fit" title="Reset the view" aria-label="Reset the view">⤢</button></div>
 <div id="btoast"></div>
 <div id="detail"><div class="grab"></div><span class="x" id="detail-close" role="button" tabindex="0" aria-label="Close">×</span><div id="detail-in"></div></div>
 </div>
@@ -1242,6 +1399,14 @@ ${scriptBlock}
   }
 
   return page({
+    canonical: `/cases/${c.slug}/board/`,
+    ld: {
+      '@context': 'https://schema.org', '@type': 'WebPage',
+      name: c.case.shortTitle + ' — evidence board',
+      description: `The questions the jury must answer in ${c.case.shortTitle}, the evidence pulling on each, and reader theories — every card sourced.`,
+      mainEntityOfPage: `${SITE}/cases/${c.slug}/board/`, dateModified: BUILT_AT,
+      publisher: { '@type': 'Organization', name: SITE_NAME, url: SITE },
+    },
     title: 'The Board — ' + c.case.shortTitle,
     desc: `The evidence board for ${c.case.shortTitle}: what the jury must decide, the evidence on each side, and the community's theories — labeled until proven.`,
     active: '/cases/',
@@ -1255,38 +1420,21 @@ ${caseNav(c, 'board')}
 </div>
 <div id="boardwrap">${svg}
 <div class="bctrl"><button id="bz-in" title="Zoom in">+</button><button id="bz-out" title="Zoom out">−</button><button id="bz-fit" title="Reset view">⤢</button></div>
+<div id="layoutpill" hidden>You've rearranged this board. It's saved on this device only — nobody else sees it. <button class="linkbtn" id="layoutreset" type="button">Put it back</button></div>
 <div id="btoast"></div>
 <div id="detail"><div class="grab"></div><span class="x" id="detail-close" role="button" tabindex="0" aria-label="Close">×</span><div id="detail-in"></div></div>
-<div id="composer" hidden>
-  <div class="grab"></div>
-  <span class="x" id="comp-close" role="button" tabindex="0" aria-label="Close">×</span>
-  <h4>Add a theory to this board</h4>
-  <p class="chint">It goes up labelled as a reader theory. Sources are what move it. Keep it about the case, not about people who haven't been charged.</p>
-  <label class="clab">Your theory, in one sentence</label>
-  <input id="c-claim" maxlength="220" placeholder="e.g. The timeline only works if the call came before the drive">
-  <label class="clab">Why do you think so?</label>
-  <textarea id="c-reason" rows="4" maxlength="1800" placeholder="What in the record points this way"></textarea>
-  <label class="clab">What would prove you wrong? <span class="copt">optional, but it's the mark of a good theory</span></label>
-  <input id="c-falsify" maxlength="400" placeholder="e.g. Phone records showing the call after 6pm">
-  <label class="clab">Name to post under <span class="copt">optional</span></label>
-  <input id="c-name" maxlength="40" placeholder="Leave blank to post anonymously">
-  <div class="crow">
-    <button class="btn sm" id="c-post">Post to the board</button>
-    <span id="c-status" class="chint"></span>
-  </div>
-</div>
 </div>
 <div id="boardlist">${listHtml}</div>
 <details class="howto" id="embedbox"><summary>📺 Put this board on your own site — free</summary>
 <p>Paste this anywhere that accepts HTML. The board stays live: reader theories, new evidence and every update appear in your embed automatically, and each card keeps its sources.</p>
 <textarea id="embedcode" readonly rows="3" style="width:100%;font-family:ui-monospace,Consolas,monospace;font-size:12px;padding:10px;border-radius:6px;border:1px solid var(--line);background:var(--bg);color:var(--ink);resize:vertical">${esc(embedCode)}</textarea>
 <p><button class="linkbtn" id="copyembed">Copy embed code</button> <a class="linkbtn" href="${embedUrl}" target="_blank" rel="noopener" style="text-decoration:none">Preview it ↗</a> <span id="copied" style="color:var(--green);font-size:13px;display:none">Copied</span></p>
-<p style="font-size:12.5px">Prefer the raw data? <a href="./data.json">board.json</a> is public and free to reuse with credit. Covering trials for a living? <a href="/creators/">There's more for you here.</a></p>
+<p style="font-size:12.5px">Prefer the raw data? <a href="./data.json">board.json</a> is public and free to reuse with credit.</p>
 </details>
 <p style="margin-top:12px">
-  <button class="btn sm" id="open-composer" type="button">Post a theory</button>
-  <a class="btn sm ghost" href="https://github.com/${REPO}/issues/new?template=evidence.yml&case=${c.slug}">📎 Submit evidence</a>
-  <a class="btn sm ghost" href="https://github.com/${REPO}/issues/new?template=report.yml">🚩 Report</a>
+  <button class="btn sm" type="button" data-compose="theory" data-case="${c.slug}">Post a theory</button>
+  <button class="btn sm ghost" type="button" data-compose="evidence" data-case="${c.slug}">Submit evidence</button>
+  <button class="btn sm ghost" type="button" data-compose="report" data-case="${c.slug}">Report a problem</button>
   <span style="color:var(--mut);font-size:12.5px">· 25 posts a day, more once you have a track record · posts naming people get a look first · <a href="/submit/">how it works</a></span>
 </p>
 <details class="howto"><summary>How to work the Board</summary>
@@ -1309,54 +1457,14 @@ const submit = page({
   body: `
 <h1>Add what you've found.</h1>
 <div class="grid2" style="margin-top:16px">
-<div class="card"><h3 style="margin-top:0">🧵 Post a theory</h3><p style="font-size:14px">Your read on the case. Joins the Board, labeled, for others to weigh in on.</p><p style="margin-top:10px"><a class="btn sm" href="https://github.com/${REPO}/issues/new?template=theory.yml">Post a theory</a></p></div>
-<div class="card"><h3 style="margin-top:0">📎 Submit evidence</h3><p style="font-size:14px">Reporting or a court document that proves — or disproves — something on the Board. This is what settles arguments.</p><p style="margin-top:10px"><a class="btn sm" href="https://github.com/${REPO}/issues/new?template=evidence.yml">Submit evidence</a></p></div>
-<div class="card"><h3 style="margin-top:0">🔗 Propose a connection</h3><p style="font-size:14px">Two cards are linked — supports, disputes, explains? Say why. (Or use the Connect button on any card.)</p><p style="margin-top:10px"><a class="btn sm" href="https://github.com/${REPO}/issues/new?template=connection.yml">Connect two cards</a></p></div>
-<div class="card"><h3 style="margin-top:0">🚩 Report a problem</h3><p style="font-size:14px">Names a private person, personal info, fake sourcing, harassment. Reports jump the queue.</p><p style="margin-top:10px"><a class="btn sm ghost" href="https://github.com/${REPO}/issues/new?template=report.yml">Report content</a></p></div>
+<div class="card"><h3 style="margin-top:0">Post a theory</h3><p style="font-size:14px">Your read on a case. It joins that case's board, labelled, for others to weigh in on.</p><p style="margin-top:10px"><button class="btn sm" type="button" data-compose="theory">Post a theory</button></p></div>
+<div class="card"><h3 style="margin-top:0">Submit evidence</h3><p style="font-size:14px">Reporting or a court document that proves — or disproves — something on a board. This is what settles arguments.</p><p style="margin-top:10px"><button class="btn sm" type="button" data-compose="evidence">Submit evidence</button></p></div>
+<div class="card"><h3 style="margin-top:0">Suggest a correction</h3><p style="font-size:14px">If we got a fact wrong, tell us. We fix it in place, in public, with a note saying what changed.</p><p style="margin-top:10px"><button class="btn sm ghost" type="button" data-compose="correction">Suggest a correction</button></p></div>
+<div class="card"><h3 style="margin-top:0">Report a problem</h3><p style="font-size:14px">Something that names a private person, shares personal information, fakes a source, or harasses anyone. Reports jump the queue.</p><p style="margin-top:10px"><button class="btn sm ghost" type="button" data-compose="report">Report content</button></p></div>
+<div class="card"><h3 style="margin-top:0">Request a case</h3><p style="font-size:14px">Following a trial we don't cover? Tell us. We'd rather add the cases people are actually watching.</p><p style="margin-top:10px"><button class="btn sm ghost" type="button" data-compose="request">Request a case</button></p></div>
+<div class="card"><h3 style="margin-top:0">Connect two cards</h3><p style="font-size:14px">Think two things on a board are linked? Open any board, click a card, hit Connect, then click the other one.</p><p style="margin-top:10px"><a class="btn sm ghost" href="/cases/">Open a board</a></p></div>
 </div>
 <div class="notice"><b>How it works:</b> write it straight on the board — the composer opens in place, no account needed. Theories about the case go live within about fifteen minutes after an automated check; anything naming a specific person gets human eyes first, usually inside the hour. Twenty-five posts a day, rising once you have a track record — if you're working through a case in bulk and hit the ceiling, just say so and we'll lift it. We don't publish accusations against people who haven't been charged, or anyone's personal information — <a href="/about/">why</a>.</div>
-`});
-
-// ---------- for creators ----------
-const creators = page({
-  title: 'For creators and newsrooms',
-  desc: 'Put a live OurGavel board in your video, article or stream. Everything here is free to use.',
-  active: '/creators/',
-  crumbs: `<a href="/">Home</a> › For creators`,
-  body: `
-<h1>You do the show. We'll do the sourcing.</h1>
-<p class="sub" style="max-width:640px">If you cover trials, the worst part of the job is checking what actually happened before you say it on camera. That's the part we already do, around the clock, with a source on every line.</p>
-
-<div class="notice"><b>All of it is free.</b> Every board, every embed, the raw data, the alerts, the research requests. No account, no tier, no card. That isn't a launch promotion — there's nothing to buy here and nothing being held back for people who pay, because right now the only thing this site needs is for the record to be used.</div>
-
-<h2>What you can take</h2>
-<div class="grid2">
-  <div class="card"><h3 style="margin-top:0">Embed a live board</h3>
-    <p style="font-size:14.5px">One line of HTML in your article or show notes. It keeps updating after you publish, so a piece you wrote in week two still shows week four's evidence. Grab the code from the "Put this board on your own site" panel on any board.</p>
-    <p style="margin-top:10px"><a class="btn sm" href="/cases/">Pick a board</a></p>
-  </div>
-  <div class="card"><h3 style="margin-top:0">Use the raw data</h3>
-    <p style="font-size:14.5px">Every board publishes as JSON at <code>/board/data.json</code> — nodes, connections, sources, the lot. Reuse it for anything, including commercially. Credit OurGavel and link the board and we're square.</p>
-    <p style="margin-top:10px"><a class="btn sm ghost" href="/cases/lindsay-clancy/board/data.json">See the format</a></p>
-  </div>
-  <div class="card"><h3 style="margin-top:0">Ask for a case</h3>
-    <p style="font-size:14.5px">Covering a trial we don't track? Tell us and we'll build the record and the board for it. We're adding cases anyway; we'd rather add the ones someone is actually about to cover.</p>
-    <p style="margin-top:10px"><a class="btn sm" href="https://github.com/${REPO}/issues/new?title=${encodeURIComponent('Case request')}&body=${encodeURIComponent('Case:\n\nCourt and where it stands:\n\nWhere you publish (optional):\n')}">Request a case</a></p>
-  </div>
-  <div class="card"><h3 style="margin-top:0">Get told first</h3>
-    <p style="font-size:14.5px">We watch the newsrooms constantly and flag a verdict the moment two of them agree. If you want that in your inbox instead of finding out from a trending tab, say which cases and we'll wire you in.</p>
-    <p style="margin-top:10px"><a class="btn sm ghost" href="https://github.com/${REPO}/issues/new?title=${encodeURIComponent('Verdict alerts')}&body=${encodeURIComponent('Cases you want alerts for:\n\nBest way to reach you:\n')}">Ask for alerts</a></p>
-  </div>
-</div>
-
-<h2>Just take the facts</h2>
-<div class="card"><p style="font-size:14.5px">You don't owe us a credit for reading a case off the record page and citing the outlet we cite. The reporters did that work, not us. Link them. If our board saved you an hour, a mention is nice, but nothing here is gated behind one.</p></div>
-
-<h2>The one rule</h2>
-<div class="card"><p style="font-size:14.5px">Nobody can add a claim, soften a fact, remove a source or get a theory promoted — not advertisers, not sponsors, not creators, not us. There's no money in the room to change that today, and when there is, that rule is the part that stays. It's the only reason a board is worth embedding.</p></div>
-
-<h2>What we'd want back, eventually</h2>
-<div class="card"><p style="font-size:14.5px">Nothing right now. Later, when enough people are using this to make it worth running, there'll probably be paid tooling for people who cover trials professionally — bulk exports, private working boards, an API. The record itself will stay free and open regardless. If you want a say in what that tooling looks like, use it now and tell us what's missing; the people here early are the ones who get to shape it.</p></div>
 `});
 
 // ---------- about ----------
@@ -1382,14 +1490,14 @@ const about = page({
 <h2>How this site is made</h2>
 <div class="card"><p style="font-size:14.5px">Software watches the newsrooms covering each case around the clock and pulls in their headlines, attributed and linked. The record itself — the day-by-day, the witness index, the boards — is written from that published reporting and from court documents, and every claim carries its source so you can check the work rather than trust us.</p>
 <p style="font-size:14.5px;margin-top:8px">Yes, a lot of that is automated. We think that's the honest way to run a court record: a machine can re-read every source every fifteen minutes and never get bored on day nineteen, which is exactly when most coverage gets sloppy. What automation does <i>not</i> do here is decide anything that matters. A person signs off before this site states a verdict, a plea, or a sentence in its own voice. A person reviews every reader post that names someone. And nothing goes up as fact on a single source, ever.</p>
-<p style="font-size:14.5px;margin-top:8px">If we get something wrong, tell us and we'll fix it in public with a note saying what changed. <a href="https://github.com/${REPO}/issues">Corrections go here.</a> The whole site — every source, every edit, every commit — is public at <a href="https://github.com/${REPO}">github.com/${REPO}</a>. You can read the receipts.</p></div>
+<p style="font-size:14.5px;margin-top:8px">If we get something wrong, tell us and we'll fix it in public with a note saying what changed. <button class="linkbtn" type="button" data-compose="correction">Tell us what's wrong</button> — corrections are made in place, in public, with a note saying what changed. Every source, edit and change to this site is also public at <a href="https://github.com/${REPO}" rel="noopener">github.com/${REPO}</a> if you want to read the receipts yourself.</p></div>
 <h2>Who runs this</h2>
 <div class="card"><p style="font-size:14.5px">OurGavel is independent. No court, no party, no newsroom has any say in what goes up. It is small and it is not pretending otherwise.</p>
 <p style="font-size:14.5px;margin-top:8px">The site will carry advertising and analytics as it grows, and anything sponsored or affiliate-linked is labelled where it sits. None of it touches the record: no advertiser sees a case page before you do, and no paid link ever appears inside a board card.</p></div>
 `});
 
 // ---------- write ----------
-const files = { 'index.html': home, 'cases/index.html': casesIndex, 'submit/index.html': submit, 'creators/index.html': creators, 'about/index.html': about };
+const files = { 'index.html': home, 'cases/index.html': casesIndex, 'submit/index.html': submit, 'about/index.html': about };
 for (const c of CASES) {
   files[`cases/${c.slug}/index.html`] = hubPage(c);
   files[`cases/${c.slug}/timeline/index.html`] = timelinePage(c);
@@ -1426,5 +1534,29 @@ for (const c of CASES) {
 }
 fs.writeFileSync(path.join(OUT, '.nojekyll'), '');
 if (CNAME) fs.writeFileSync(path.join(OUT, 'CNAME'), CNAME + '\n');
-fs.writeFileSync(path.join(OUT, 'robots.txt'), 'User-agent: *\nAllow: /\n');
+fs.writeFileSync(path.join(OUT, 'robots.txt'),
+  ['User-agent: *', 'Allow: /', '', '# Embeds are duplicates of their board; index the board instead.',
+   'Disallow: /*/board/embed/', '', 'Sitemap: ' + SITE + '/sitemap.xml', ''].join('\n'));
+
+// Sitemap. Boards and records change constantly; static pages do not, and saying so
+// honestly is what stops a crawler wasting its budget on the About page.
+const urls = [];
+const addUrl = (loc, freq, pri) => urls.push({ loc: SITE + loc, freq, pri });
+addUrl('/', 'hourly', '1.0');
+addUrl('/cases/', 'hourly', '0.9');
+addUrl('/submit/', 'monthly', '0.4');
+addUrl('/about/', 'monthly', '0.4');
+for (const c of CASES) {
+  const live = c.case.status !== 'archived';
+  addUrl(`/cases/${c.slug}/`, live ? 'hourly' : 'monthly', live ? '0.9' : '0.6');
+  addUrl(`/cases/${c.slug}/timeline/`, live ? 'hourly' : 'monthly', live ? '0.8' : '0.6');
+  addUrl(`/cases/${c.slug}/board/`, live ? 'hourly' : 'weekly', '0.8');
+  addUrl(`/cases/${c.slug}/witnesses/`, live ? 'daily' : 'monthly', '0.6');
+  if (c.case.legalStandard) addUrl(`/cases/${c.slug}/standard/`, 'weekly', '0.6');
+}
+fs.writeFileSync(path.join(OUT, 'sitemap.xml'),
+  '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+  + urls.map(u => `  <url><loc>${u.loc}</loc><lastmod>${BUILT_AT.slice(0, 10)}</lastmod><changefreq>${u.freq}</changefreq><priority>${u.pri}</priority></url>`).join('\n')
+  + '\n</urlset>\n');
+console.log('sitemap:', urls.length, 'urls');
 console.log('Built', Object.keys(files).length, 'pages,', CASES.length, 'case(s), at', BUILT_AT);

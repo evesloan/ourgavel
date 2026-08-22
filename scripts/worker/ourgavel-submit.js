@@ -16,7 +16,20 @@
  *   ORIGIN    — "https://ourgavel.com"
  */
 
-const MAX = { claim: 220, reasoning: 1800, falsify: 400, name: 40 };
+// Every way a reader can contribute. All of them land as a labelled GitHub issue, which is
+// the queue the pulse and the review session already read — so nothing about moderation
+// changes, only where the writing happens.
+const KINDS = {
+  theory:     { label: 'theory',     title: c => '[theory] ' + c.claim },
+  evidence:   { label: 'evidence',   title: c => '[evidence] ' + (c.claim || c.url) },
+  connection: { label: 'connection', title: c => '[connection] ' + (c.from || '?') + ' → ' + (c.to || '?') },
+  comment:    { label: 'discussion', title: c => 'Discussion: ' + (c.nodeTitle || c.node || 'a card') },
+  report:     { label: 'report',     title: c => '[report] ' + (c.reason || 'content report') },
+  correction: { label: 'correction', title: c => '[correction] ' + (c.claim || 'factual correction') },
+  request:    { label: 'case-request', title: c => '[case request] ' + (c.claim || 'new case') },
+};
+
+const MAX = { claim: 220, reasoning: 1800, falsify: 400, name: 40, url: 400, node: 80, reason: 80 };
 const WINDOW_SEC = 3600;
 const PER_WINDOW = 12;          // submissions per IP per hour — generous; spam-shaped, not user-shaped
 
@@ -59,14 +72,27 @@ export default {
     try { body = await request.json(); } catch { return json({ error: 'bad json' }, 400, allowed); }
 
     const kind = String(body.kind || 'theory');
-    if (!['theory', 'evidence', 'connection'].includes(kind)) return json({ error: 'unknown kind' }, 400, allowed);
+    if (!KINDS[kind]) return json({ error: 'unknown kind' }, 400, allowed);
 
     const caseSlug = String(body.case || '').replace(/[^a-z0-9-]/g, '').slice(0, 60);
     const claim = redact(body.claim, MAX.claim);
     const reasoning = redact(body.reasoning, MAX.reasoning);
     const falsify = redact(body.falsify, MAX.falsify);
     const name = redact(body.name, MAX.name).replace(/[^\w .'-]/g, '');
-    if (!caseSlug || claim.length < 8) return json({ error: 'Say a bit more — one clear sentence at least.' }, 400, allowed);
+    const node = redact(body.node, MAX.node).replace(/[^\w-]/g, '');
+    const nodeTitle = redact(body.nodeTitle, MAX.claim);
+    const reason = redact(body.reason, MAX.reason);
+    const from = redact(body.from, MAX.node);
+    const to = redact(body.to, MAX.node);
+    const relation = ['supports', 'contradicts', 'contested', 'explains'].includes(body.relation) ? body.relation : '';
+    // Only http(s) links are accepted, and only as evidence — never rendered as markup.
+    const url = /^https?:\/\/\S+$/i.test(String(body.url || '')) ? String(body.url).slice(0, MAX.url) : '';
+
+    // A discussion comment needs a body, not a headline; everything else needs a claim.
+    const primary = kind === 'comment' ? reasoning : claim;
+    if (!caseSlug) return json({ error: 'Missing case.' }, 400, allowed);
+    if (kind === 'evidence' && !url) return json({ error: 'Evidence needs a link to the source.' }, 400, allowed);
+    if ((primary || '').length < 8) return json({ error: 'Say a bit more — one clear sentence at least.' }, 400, allowed);
 
     // Rate limit per IP. KV is optional: without it the Worker still works, just uncapped,
     // and the hourly editor sweep remains the backstop.
@@ -81,15 +107,24 @@ export default {
     }
 
     const attribution = name ? `Posted as **${name}** (unverified display name)` : 'Posted anonymously';
-    const issueBody = [
-      `### Case`, caseSlug,
-      ``, `### Your theory, in one sentence`, claim,
-      ``, `### Reasoning`, reasoning || '_none given_',
-      ``, `### What would disprove it?`, falsify || '_none given_',
-      ``, `---`, attribution + ' via the board composer on ' + allowed + '.',
+    const lines = [`### Case`, caseSlug];
+    // The node marker is what lets the pulse attach a discussion to the right card.
+    if (node) lines.push(``, `<!--node:${node} case:${caseSlug}-->`, `### Card`, nodeTitle || node);
+    if (kind === 'connection') {
+      lines.push(``, `### From`, from || '_?_', ``, `### To`, to || '_?_', ``, `### Relation`, relation || '_unspecified_');
+    }
+    if (kind === 'report') lines.push(``, `### What is wrong`, reason || '_unspecified_');
+    if (url) lines.push(``, `### Source`, url);
+    if (claim) lines.push(``, `### In one sentence`, claim);
+    lines.push(``, kind === 'comment' ? `### Comment` : `### Reasoning`, reasoning || '_none given_');
+    if (falsify) lines.push(``, `### What would disprove it?`, falsify);
+    lines.push(
+      ``, `---`, attribution + ' via the composer on ' + allowed + '.',
       `Screened for personal information before submission. Subject to the same review as every other post.`,
-    ].join('\n');
+    );
+    const issueBody = lines.join('\n');
 
+    const title = (KINDS[kind].title({ claim, url, from, to, node, nodeTitle, reason }) || kind).slice(0, 110);
     const res = await fetch(`https://api.github.com/repos/${env.REPO}/issues`, {
       method: 'POST',
       headers: {
@@ -99,9 +134,10 @@ export default {
         'user-agent': 'OurGavelSubmitRelay/1.0',
       },
       body: JSON.stringify({
-        title: `[${kind}] ${claim.slice(0, 90)}`,
+        title,
         body: issueBody,
-        labels: [kind, 'via-composer'],
+        // report jumps the queue; everything else follows the normal path
+        labels: [KINDS[kind].label, 'via-composer'].concat(kind === 'report' ? ['urgent'] : []),
       }),
     });
 

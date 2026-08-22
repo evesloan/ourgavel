@@ -1,4 +1,30 @@
 {
-  "items": [],
-  "seen": []
+  "items": [
+    {
+      "ts": "2026-08-21T11:05:00.000Z",
+      "outlet": "Bing News — Lil Durk trial",
+      "headline": "Lil Durk Trial Underway",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a893d0812604e9d90e4cd743b3986b4&amp;url=https%3a%2f%2flamag.com%2fcrimeinla%2flil-durk-trial-underway%2f&amp;c=9789955331491922838&amp;mkt=en-us",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-21T01:28:10.000Z",
+      "outlet": "Bing News — Lil Durk trial",
+      "headline": "Lil Durk trial begins: Rapper faces life in prison in explosive case prosecutors say involves alleged hit plot",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a893d0812604e9d90e4cd743b3986b4&amp;url=https%3a%2f%2fwww.msn.com%2fen-gb%2fnews%2fnews%2flil-durk-trial-begins-rapper-faces-life-in-prison-in-explosive-case-prosecutors-say-involves-alleged-hit-plot%2far-AA2aCovu&amp;c=13231784900945369823&amp;mkt=en-us",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-18T15:33:00.000Z",
+      "outlet": "Bing News — Lil Durk trial",
+      "headline": "Prosecutors Call Lil Durk Song a 'Call to Arms' for Revenging King Von",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a893d0812604e9d90e4cd743b3986b4&amp;url=https%3a%2f%2fwww.yahoo.com%2fentertainment%2fmusic%2farticles%2fprosecutors-call-lil-durk-song-223304539.html&amp;c=16721637257819726092&amp;mkt=en-us",
+      "flag": null
+    }
+  ],
+  "seen": [
+    "sfst2j",
+    "c0z7vi",
+    "1xpeov0"
+  ]
 }

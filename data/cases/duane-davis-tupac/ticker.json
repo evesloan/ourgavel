@@ -1,4 +1,190 @@
 {
-  "items": [],
-  "seen": []
+  "items": [
+    {
+      "ts": "2026-08-22T05:00:44.000Z",
+      "outlet": "Fox 5 Vegas",
+      "headline": "Tensions flare in court as Duane ‘Keffe D’ Davis trial wraps up week one",
+      "url": "https://www.fox5vegas.com/2026/08/22/tensions-flare-court-duane-keffe-d-davis-trial-wraps-up-week-one/",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-21T22:16:05.000Z",
+      "outlet": "News 3 Las Vegas",
+      "headline": "Former judge Tony Abbatangelo discusses Duane Davis, Tupac Murder trial",
+      "url": "https://news3lv.com/news/local/former-judge-tony-abbatangelo-discusses-duane-davis-tupac-murder-trial",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-21T15:09:22.000Z",
+      "outlet": "8 News Now",
+      "headline": "Day 5 Tupac murder trial: Davis makes plea to judge saying police, prosecutors are putting his family in danger",
+      "url": "https://www.8newsnow.com/news/tupac-murder-trial/live-updates-day-5-of-tupac-murder-trial/",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-21T14:18:32.000Z",
+      "outlet": "News 3 Las Vegas",
+      "headline": "WATCH LIVE: Jury hears audio from 2009 police interview of Duane Davis",
+      "url": "https://news3lv.com/news/local/first-week-testimony-tupac-shakur-murder-trial-concludes-friday-day-5-witnesses-duane-davis-keffe-d-las-vegas-court-nevada-livestream",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-21T13:03:08.000Z",
+      "outlet": "8 News Now",
+      "headline": "Photographer tells story behind image which captured Tupac Shakur’s last moments",
+      "url": "https://www.8newsnow.com/news/tupac-murder-trial/photographer-tells-story-behind-image-which-captured-tupac-shakurs-last-moments/",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-20T18:14:16.000Z",
+      "outlet": "8 News Now",
+      "headline": "Live updates: Day 4 of Tupac murder trial",
+      "url": "https://www.8newsnow.com/news/tupac-murder-trial/live-updates-day-4-of-tupac-murder-trial/",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-19T19:24:32.000Z",
+      "outlet": "8 News Now",
+      "headline": "Live updates: Day 3 of Tupac murder trial",
+      "url": "https://www.8newsnow.com/news/tupac-murder-trial/live-updates-day-3-of-tupac-murder-trial-set-to-begin-at-1-p-m/",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-19T04:03:46.000Z",
+      "outlet": "8 News Now",
+      "headline": "Some Tupac Shakur family members step out of courtroom while others stay to face autopsy photos",
+      "url": "https://www.8newsnow.com/news/tupac-murder-trial/some-tupac-shakur-family-members-step-out-of-courtroom-while-others-stay-to-face-autopsy-photos/",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-18T15:22:36.000Z",
+      "outlet": "8 News Now",
+      "headline": "Live updates: Day 2 of the Tupac murder trial",
+      "url": "https://www.8newsnow.com/news/tupac-murder-trial/live-updates-day-2-of-the-tupac-murder-trial/",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-17T22:42:23.000Z",
+      "outlet": "8 News Now",
+      "headline": "Tupac murder trial draws international crowds from Germany to Summerlin",
+      "url": "https://www.8newsnow.com/news/tupac-murder-trial/tupac-murder-trial-draws-international-crowds-from-germany-to-summerlin/",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-16T21:42:00.000Z",
+      "outlet": "8 News Now",
+      "headline": "Tupac murder trial: Opening statements in case against Duane 'Keffe D' Davis",
+      "url": "https://www.8newsnow.com/news/tupac-murder-trial/keffe-d-opening-statements-live-blog/",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-15T02:51:42.000Z",
+      "outlet": "8 News Now",
+      "headline": "Former Death Row security chief calls ‘Keffe D’ a liar ahead of Tupac murder trial",
+      "url": "https://www.8newsnow.com/investigators/former-death-row-security-chief-calls-keffe-d-a-liar-ahead-of-tupac-murder-trial/",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-14T18:26:34.000Z",
+      "outlet": "8 News Now",
+      "headline": "How to watch every minute of the Tupac murder trial",
+      "url": "https://www.8newsnow.com/news/tupac-murder-trial/how-to-watch-every-minute-of-the-tupac-murder-trial/",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-13T20:57:27.000Z",
+      "outlet": "8 News Now",
+      "headline": "Jury selected for trial of former gang leader accused of ordering Tupac Shakur’s killing",
+      "url": "https://www.8newsnow.com/news/tupac-murder-trial/jury-selected-for-trial-of-former-gang-leader-accused-of-ordering-tupac-shakurs-killing/",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-12T04:10:17.000Z",
+      "outlet": "8 News Now",
+      "headline": "How a memoir helped bring Tupac Shakur’s alleged killer to trial",
+      "url": "https://www.8newsnow.com/news/tupac-murder-trial/how-a-memoir-helped-bring-tupac-shakurs-alleged-killer-to-trial/",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-11T00:45:57.000Z",
+      "outlet": "8 News Now",
+      "headline": "Jury selection begins for Duane 'Keffe D' Davis accused in murder of Tupac Shakur",
+      "url": "https://www.8newsnow.com/news/tupac-murder-trial/jury-selection-begins-for-duane-keffe-d-davis-accused-in-murder-of-tupac-shakur/",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-10T16:18:13.000Z",
+      "outlet": "8 News Now",
+      "headline": "Timeline: The murder of Tupac Shakur and Duane 'Keffe D' Davis' court hearings",
+      "url": "https://www.8newsnow.com/news/tupac-murder-trial/timeline-the-murder-of-tupac-shakur-and-duane-keffe-d-davis-court-hearings/",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-05T18:57:45.000Z",
+      "outlet": "8 News Now",
+      "headline": "Tupac Shakur was killed in Las Vegas in 1996. Here's who was there that night",
+      "url": "https://www.8newsnow.com/news/tupac-murder-trial/tupac-shakur-was-killed-in-las-vegas-in-1996-heres-who-was-there-that-night/",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-05T00:29:02.000Z",
+      "outlet": "8 News Now",
+      "headline": "Lottery system seating set for Tupac murder trial public attendance",
+      "url": "https://www.8newsnow.com/news/tupac-murder-trial/lottery-system-set-for-tupac-murder-trial-public-attendance-seating/",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-04T19:12:45.000Z",
+      "outlet": "8 News Now",
+      "headline": "Tupac Shakur murder trial in Las Vegas moves ahead, set for Aug. 10",
+      "url": "https://www.8newsnow.com/news/tupac-murder-trial/tupac-shakur-murder-trial-in-las-vegas-moves-ahead-set-for-aug-10/",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-03T23:46:31.000Z",
+      "outlet": "8 News Now",
+      "headline": "EXCLUSIVE: ‘Nothing to do with nobody's murder’: Keffe D says he didn't kill Tupac or Biggie, but knows who did",
+      "url": "https://www.8newsnow.com/news/tupac-murder-trial/keffe-d-says-he-didnt-kill-tupac-or-biggie-but-knows-who-did/",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-03T21:20:52.000Z",
+      "outlet": "8 News Now",
+      "headline": "Witness list released for Keffe D Tupac murder trial; Suge Knight, Lombardo, others to testify",
+      "url": "https://www.8newsnow.com/news/tupac-murder-trial/witness-list-released-for-keefe-d-tupac-murder-trial-suge-knight-lombardo-others-to-testify/",
+      "flag": null
+    },
+    {
+      "ts": "2026-07-31T22:19:29.000Z",
+      "outlet": "8 News Now",
+      "headline": "EXCLUSIVE: 'Why would I kill our money': Keffe D denies role in Tupac killing before trial",
+      "url": "https://www.8newsnow.com/investigators/exclusive-i-wasnt-in-nevada-keffe-d-denies-role-in-tupac-killing-before-trial/",
+      "flag": null
+    }
+  ],
+  "seen": [
+    "15qgrl4",
+    "1w16r02",
+    "16ucybt",
+    "bjv6aa",
+    "7j9o2g",
+    "e3bbfz",
+    "1btpshp",
+    "fxf",
+    "1ovk830",
+    "onjziv",
+    "1qyra4j",
+    "28hrzz",
+    "l19q2u",
+    "1pjkk3y",
+    "ajo8yu",
+    "cn9nlo",
+    "tg5qls",
+    "rsazm3",
+    "qlgtk9",
+    "1vjme0w",
+    "1p7ulwc",
+    "1h0bdqy",
+    "siyash"
+  ]
 }

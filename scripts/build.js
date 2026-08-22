@@ -588,9 +588,12 @@ var FIELDS={
   falsify:{el:'input',label:'What would prove you wrong?',ph:'e.g. Phone records showing the call after 6pm',opt:'optional, but it is the mark of a good theory'},
   relation:{el:'select',label:'How are they related?',opts:[['supports','the first supports the second'],['contradicts','the first disputes the second'],['contested','both sides claim it'],['explains','the first gives context to the second']]},
   reason:{el:'select',label:'What kind of problem?',opts:[['names an uncharged person','It accuses someone who has not been charged'],['personal information','It contains personal information'],['fabricated source','The source does not say what it claims'],['harassment','It targets or harasses someone'],['other','Something else']]},
+  question:{el:'input',label:'What do you want to know?',ph:'e.g. Why was the 911 call never played to the jury?',key:'claim'},
+  context:{el:'textarea',label:'What made you ask?',ph:'What you read or heard that raised it. Skip this if there is nothing to add.',rows:3,opt:'optional',key:'reasoning'},
   name:{el:'input',label:'Name to post under',ph:'Leave blank to post anonymously',opt:'optional'}
 };
 var MODES={
+  question:{t:'Ask a question about this case',h:'You do not need a theory to take part. Ask what you actually want to know — someone reading may have the filing that answers it, and the question goes on the board where they can.',f:['question','context','name'],cta:'Ask the board'},
   theory:{t:'Add a theory to this board',h:'It goes up labelled as a reader theory. Sources are what move it. Keep it about the case, not about people who have not been charged.',f:['claim','reasoning','falsify','name'],cta:'Post to the board'},
   evidence:{t:'Submit evidence',h:'Reporting or a court document that proves — or disproves — something here. This is the move that settles arguments.',f:['url','claim','reasoning','name'],cta:'Submit evidence'},
   connection:{t:'Connect two cards',h:'Say how these two relate and why. It joins the board once reviewed.',f:['relation','reasoning','name'],cta:'Propose the connection'},
@@ -645,13 +648,22 @@ document.addEventListener('click',function(e){
 
 document.getElementById('gbc-post').onclick=function(){
   var m=MODES[mode];
-  var payload={kind:mode,case:ctx.caseSlug||'',claim:val('claim'),reasoning:val('reasoning'),
-    falsify:val('falsify'),name:val('name'),url:val('url'),reason:val('reason'),
-    relation:val('relation'),node:ctx.node||'',nodeTitle:ctx.nodeTitle||'',
+  // Read the fields this mode actually rendered, and map each through its payload name.
+  // These used to be read under fixed names, so a field declared with a different key --
+  // the comment box, the report detail, the correction detail -- came back empty and the
+  // post was refused for being too short. Discussion and reporting were both dead.
+  var payload={kind:mode,case:ctx.caseSlug||'',claim:'',reasoning:'',falsify:'',name:'',
+    url:'',reason:'',relation:'',node:ctx.node||'',nodeTitle:ctx.nodeTitle||'',
     from:ctx.from||'',to:ctx.to||''};
+  (m.f||[]).forEach(function(k){var f=FIELDS[k];if(f)payload[f.key||k]=val(k)});
   var primary=(mode==='comment'||mode==='report')?payload.reasoning:payload.claim;
   if(mode==='connection')primary=payload.reasoning;
-  if(!primary||primary.trim().length<8){elStatus.textContent='A little more detail, please.';return}
+  // Three words. A point can be made in three words, and a floor any higher just lectures
+  // people who have already said what they meant. This guard also used to fire on posts that
+  // were not short at all -- the text was being read from the wrong field -- so a reader
+  // could rewrite the same comment five times and be told each time to add more detail.
+  var words=String(primary||'').trim().split(/\\s+/).filter(Boolean);
+  if(words.length<3){elStatus.textContent=words.length?'Three words at least — enough to make the point.':'Nothing to send yet.';return}
   if(mode==='evidence'&&!/^https?:\\/\\//i.test(payload.url)){elStatus.textContent='Evidence needs a link to the source.';return}
   if(!ENDPOINT){
     var text=[payload.claim,payload.url,payload.reasoning,payload.falsify].filter(Boolean).join(String.fromCharCode(10,10));
@@ -668,6 +680,7 @@ document.getElementById('gbc-post').onclick=function(){
       var say=window.gbSay;
       var msg=mode==='report'?'Reported. Thank you — that jumps the queue.'
         :mode==='correction'?'Correction received. If we got it wrong we fix it in public.'
+        :mode==='question'?'Asked. It goes on the board where people can answer it.'
         :'Received, and noted. It appears once reviewed.';
       if(say)say(msg);else alert(msg);
     })
@@ -1245,7 +1258,7 @@ function boardPage(c, opts = {}) {
   const edges = [...c.board.edges, ...(c.community.edges || [])];
   const threads = (c.threads && c.threads.threads) || {};
   const byId = Object.fromEntries(nodes.map(n => [n.id, n]));
-  const communityNodes = nodes.filter(n => n.type === 'rumor');
+  const communityNodes = nodes.filter(n => n.type === 'rumor' || (n.type === 'question' && n.submittedBy));
   const NW = 210, NH = 78;
   const xs = nodes.map(n => n.x), ys = nodes.map(n => n.y);
   const minX = Math.min(...xs) - 60, minY = Math.min(...ys) - 60;
@@ -1288,8 +1301,13 @@ ${commentChip}
   const zoneLabel = `<text x="${zoneX}" y="46" font-size="13" fill="var(--amber)" font-weight="700" letter-spacing="3" opacity="0.85">READER THEORIES</text><text x="${zoneX}" y="64" font-size="11" fill="var(--mut)">yours goes up here</text>`;
   const ctaCard = communityNodes.length ? '' : `<g class="ctanode" data-compose="theory" data-case="${c.slug}" style="cursor:pointer">
 <rect x="${zoneX}" y="80" width="${NW}" height="${NH}" rx="6" fill="none" stroke="var(--amber)" stroke-width="2" stroke-dasharray="7 5"></rect>
-<text x="${zoneX + NW / 2}" y="112" font-size="13" fill="var(--amber)" font-weight="700" text-anchor="middle">+ Your theory goes here</text>
-<text x="${zoneX + NW / 2}" y="130" font-size="11" fill="var(--mut)" text-anchor="middle">be the first — tap to post</text>
+<text x="${zoneX + NW / 2}" y="106" font-size="13" fill="var(--amber)" font-weight="700" text-anchor="middle">+ Your theory goes here</text>
+<text x="${zoneX + NW / 2}" y="124" font-size="11" fill="var(--mut)" text-anchor="middle">be the first — tap to post</text>
+</g>
+<g class="ctanode" data-compose="question" data-case="${c.slug}" style="cursor:pointer">
+<rect x="${zoneX}" y="${80 + NH + 14}" width="${NW}" height="${NH}" rx="6" fill="none" stroke="var(--violet)" stroke-width="2" stroke-dasharray="7 5"></rect>
+<text x="${zoneX + NW / 2}" y="${106 + NH + 14}" font-size="13" fill="var(--violet)" font-weight="700" text-anchor="middle">? Or just ask something</text>
+<text x="${zoneX + NW / 2}" y="${124 + NH + 14}" font-size="11" fill="var(--mut)" text-anchor="middle">no theory required</text>
 <rect x="${zoneX}" y="80" width="${NW}" height="${NH}" fill="transparent"></rect>
 <g transform="translate(${zoneX + NW / 2 - 22},${NH + 92}) scale(0.7)">${pip(64).replace(/^<svg[^>]*>/, "").replace(/<\/svg>$/, "")}</g>
 </g>`;
@@ -1312,7 +1330,7 @@ ${commentChip}
     }).join('<br>')}</div>`;
   };
 
-  const badgeFor = n => n.type === 'question' ? ['open', 'before the jury'] : n.status === 'disproven' ? ['disproven', 'disproven'] : n.type === 'rumor' ? ['unverified', 'reader theory'] : n.type === 'resolved' ? ['verified', 'settled'] : ['verified', 'from the record'];
+  const badgeFor = n => n.type === 'question' ? (n.submittedBy ? ['open', 'reader question'] : ['open', 'before the jury']) : n.status === 'disproven' ? ['disproven', 'disproven'] : n.type === 'rumor' ? ['unverified', 'reader theory'] : n.type === 'resolved' ? ['verified', 'settled'] : ['verified', 'from the record'];
   const listGroups = [
     ['Reader theories', communityNodes],
     ['The questions', nodes.filter(n => n.type === 'question')],
@@ -1721,6 +1739,7 @@ ${caseNav(c, 'board')}
 </details>
 <p style="margin-top:12px">
   <button class="btn sm" type="button" data-compose="theory" data-case="${c.slug}">Post a theory</button>
+  <button class="btn sm" type="button" data-compose="question" data-case="${c.slug}">Ask a question</button>
   <button class="btn sm ghost" type="button" data-compose="evidence" data-case="${c.slug}">Submit evidence</button>
   <button class="btn sm ghost" type="button" data-compose="report" data-case="${c.slug}">Report a problem</button>
   <span style="color:var(--mut);font-size:12.5px">· 25 posts a day, more once you have a track record · posts naming people get a look first · <a href="/submit/">how it works</a></span>
@@ -1745,6 +1764,7 @@ const submit = page({
   body: `
 <h1>Add what you've found.</h1>
 <div class="grid2" style="margin-top:16px">
+<div class="card"><h3 style="margin-top:0">Ask a question</h3><p style="font-size:14px">You do not need a theory to take part. Ask what you actually want to know — it goes on the board, and someone reading may have the filing that answers it.</p><p style="margin-top:10px"><button class="btn sm" type="button" data-compose="question">Ask a question</button></p></div>
 <div class="card"><h3 style="margin-top:0">Post a theory</h3><p style="font-size:14px">Your read on a case. It joins that case's board, labelled, for others to weigh in on.</p><p style="margin-top:10px"><button class="btn sm" type="button" data-compose="theory">Post a theory</button></p></div>
 <div class="card"><h3 style="margin-top:0">Submit evidence</h3><p style="font-size:14px">Reporting or a court document that proves — or disproves — something on a board. This is what settles arguments.</p><p style="margin-top:10px"><button class="btn sm" type="button" data-compose="evidence">Submit evidence</button></p></div>
 <div class="card"><h3 style="margin-top:0">Suggest a correction</h3><p style="font-size:14px">If we got a fact wrong, tell us. We fix it in place, in public, with a note saying what changed.</p><p style="margin-top:10px"><button class="btn sm ghost" type="button" data-compose="correction">Suggest a correction</button></p></div>

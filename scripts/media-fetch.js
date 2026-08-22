@@ -30,9 +30,27 @@ const MAX_BYTES = 3_000_000;    // a 1200px JPEG lands far under this; anything 
 const MIN_WIDTH = 640;          // below this it renders as a smudge in the grid
 const PER_CASE_CAP = 8;         // the section is "recent photos", not an archive
 const PER_RUN_ADD = 2;          // drip, so one bad query can't flood a case in a single pulse
+const PER_QUERY_ADD = 1;        // one subject per query per run, so a case gains variety not duplicates
 
 // Subjects whose identity a filename can actually establish.
 const AUTO_KINDS = ['place', 'institution', 'object', 'document-scan'];
+
+// A photograph can be of the right building and still be wrong. Commons holds a great deal
+// of archival material, and a 1905 street scene captioned "the Los Angeles courthouse" reads
+// on a 2026 case page as the courthouse the trial is in — one got through on the first live
+// run. These markers describe the PHOTOGRAPH as historical, not the building: a current photo
+// of an 1822 courthouse mentioning its construction date is fine and must stay fine.
+const ARCHIVAL = [
+  /\bca\.?\s*1[89]\d\d\b/i,          // "ca.1905"
+  /\bcirca\s*1[89]\d\d\b/i,
+  /\bc\.\s*1[89]\d\d\b/i,
+  /\b(?:photo(?:graph)?|view|image)\s+(?:from|taken|dated)\s+1[89]\d\d\b/i,
+  /\bhistoric(?:al)?\s+(?:photo|photograph|view|image|postcard)\b/i,
+  /\bpostcard\b/i,
+  /\b(?:glass\s+negative|daguerreotype|lithograph|engraving)\b/i,
+];
+// A bare year in the FILENAME is the photographer's own dating of the shot.
+const TITLE_YEAR = /\b(1[89]\d\d|19[0-7]\d)\b/;
 
 const MAGIC = [
   ['jpg', [0xff, 0xd8, 0xff]],
@@ -67,7 +85,30 @@ function relevanceGate(hit, q) {
     if (hay.includes(String(d).toLowerCase())) return { ok: false, reason: 'matched deny token: ' + d };
   }
   if (hit.width && hit.width < MIN_WIDTH) return { ok: false, reason: 'too small: ' + hit.width + 'px' };
+  if (!q.allowArchival) {
+    for (const re of ARCHIVAL) {
+      if (re.test(hay)) return { ok: false, reason: 'archival image — it would read as the present-day venue' };
+    }
+    const t = String(hit.title || '').replace(/^File:/, '');
+    if (TITLE_YEAR.test(t)) return { ok: false, reason: 'filename dates the photograph to ' + t.match(TITLE_YEAR)[0] };
+  }
   return { ok: true };
+}
+
+/**
+ * The query's caption describes the subject, so it fits the first photograph of that subject
+ * and reads as a mistake on the second — including when the second arrives from a different
+ * query aimed at the same place. So the caption is claimed against the whole case, not the
+ * query, and anything already spoken for falls back to the file's own title.
+ */
+function captionFor(hit, q, taken) {
+  if (q.caption && !taken.has(q.caption)) return q.caption;
+  const fromTitle = String(hit.title || '')
+    .replace(/^File:/, '').replace(/\.[a-z0-9]+$/i, '')
+    .replace(/[_]+/g, ' ').replace(/\s*-\s*panoramio\s*$/i, '')
+    .replace(/\s+/g, ' ').trim();
+  if (fromTitle && !taken.has(fromTitle)) return fromTitle;
+  return fromTitle || q.caption || 'Untitled';
 }
 
 function localName(slug, hit, ext) {
@@ -118,6 +159,7 @@ async function discoverCase(caseObj, opts = {}) {
   const queries = caseObj.mediaQueries || [];
   const media = caseObj.media || [];
   const have = new Set(media.map(m => m.source || m.url).filter(Boolean));
+  const takenCaptions = new Set(media.map(m => m.caption).filter(Boolean));
   const haveLocal = new Set(media.map(m => m.local).filter(Boolean));
   const imageCount = media.filter(m => m.type === 'image').length;
 
@@ -128,6 +170,7 @@ async function discoverCase(caseObj, opts = {}) {
 
   for (const q of queries) {
     if (budget <= 0) break;
+    let fromThisQuery = 0;
     if ((q.kind || 'person') && !AUTO_KINDS.includes(q.kind || 'person')) {
       queued.push({ query: q.q, reason: 'person subject — held for human confirmation' });
       continue;
@@ -142,7 +185,7 @@ async function discoverCase(caseObj, opts = {}) {
     catch (e) { rejected.push({ query: q.q, reason: 'verify failed: ' + e.message }); continue; }
 
     for (const hit of hits) {
-      if (budget <= 0) break;
+      if (budget <= 0 || fromThisQuery >= PER_QUERY_ADD) break;
       if (!hit.ok) { rejected.push({ title: hit.title, reason: hit.reason }); continue; }
       if (have.has(hit.descriptionUrl) || have.has(hit.url)) continue;
       const gate = relevanceGate(hit, q);
@@ -158,13 +201,15 @@ async function discoverCase(caseObj, opts = {}) {
       if (haveLocal.has(finalRel)) continue;
       haveLocal.add(finalRel);
       have.add(hit.descriptionUrl);
+      const cap = captionFor(hit, q, takenCaptions);
+      takenCaptions.add(cap);
       added.push({
         type: 'image',
         local: finalRel,
         url: hit.descriptionUrl,
         source: hit.descriptionUrl,
-        caption: q.caption || String(hit.title).replace(/^File:/, '').replace(/\.[a-z0-9]+$/i, ''),
-        alt: q.alt || q.caption || '',
+        caption: cap,
+        alt: (cap === q.caption ? (q.alt || q.caption) : cap) || '',
         credit: hit.attribution,
         rights: hit.rights,
         licence: hit.licence,
@@ -174,6 +219,18 @@ async function discoverCase(caseObj, opts = {}) {
         verified: 'commons-api',
       });
       budget--;
+      fromThisQuery++;
+    }
+    // A query that searched, verified, and yielded nothing usable used to leave no trace at
+    // all — the one case where the queue could not tell me whether the query text was wrong
+    // or the gate was too tight. Now it says so.
+    if (!fromThisQuery && !hits.some(h => !h.ok)) {
+      rejected.push({
+        query: q.q,
+        reason: hits.length
+          ? 'nothing publishable: ' + hits.length + ' file(s) verified, none cleared the gate'
+          : titles.length + ' search result(s), none were usable images (wrong file type, or no image data)',
+      });
     }
   }
   return { added, queued, rejected };

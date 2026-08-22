@@ -48,7 +48,17 @@ if (noComposer.length) {
 }
 
 // And every compose trigger must name a mode the composer actually knows.
-const KNOWN = ['theory', 'evidence', 'connection', 'comment', 'report', 'correction', 'request'];
+// Read the modes out of the composer rather than keeping a fourth copy of the list. A
+// hardcoded list here does not catch drift, it *is* drift — it fails the build the first time
+// someone adds a legitimate mode, and teaches whoever hits it to edit the check.
+const KNOWN = (() => {
+  const src = fs.readFileSync(path.join(__dirname, 'build.js'), 'utf8');
+  const start = src.indexOf('var MODES={');
+  const block = start < 0 ? '' : src.slice(start, src.indexOf('};', start));
+  const found = [...block.matchAll(/^\s*([a-z]+):\{t:/gm)].map(m => m[1]);
+  if (!found.length) { console.log('  FAIL could not read the composer modes out of build.js'); process.exit(1); }
+  return found;
+})();
 for (const p of pages) {
   const html = fs.readFileSync(p, 'utf8');
   for (const m of html.matchAll(/data-compose="([^"]+)"/g)) {

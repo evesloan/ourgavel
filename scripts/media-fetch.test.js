@@ -41,6 +41,20 @@ ok(!M.relevanceGate(court, { kind: 'place', must: ['court', 'plymouth', 'exterio
 ok(M.relevanceGate({ title: 'File:DSC_4471.jpg', text: 'Superior Court building, Brockton', width: 1800 }, { kind: 'place', must: ['court', 'brockton'] }).ok,
   'subject found in the description (not the filename) should still count');
 
+console.log('--- Archival photographs must not pose as the present-day venue ---');
+const pq = { kind: 'place', must: ['courthouse', 'los angeles'] };
+ok(!M.relevanceGate({ title: 'File:Panoramic view.jpg', text: 'downtown Los Angeles from the Courthouse, ca.1905', width: 3000 }, pq).ok,
+  'a "ca.1905" description must be refused — this one shipped on the first live run');
+ok(!M.relevanceGate({ title: 'File:Los Angeles Courthouse 1932.jpg', text: 'courthouse', width: 3000 }, pq).ok,
+  'a year in the filename must be refused');
+ok(!M.relevanceGate({ title: 'File:LA courthouse postcard.jpg', text: 'courthouse los angeles postcard', width: 3000 }, pq).ok,
+  'a postcard must be refused');
+ok(M.relevanceGate({ title: 'File:Colleton County Courthouse.jpg', text: 'The courthouse in Walterboro, built in 1822 and still in use', width: 3000 },
+  { kind: 'place', must: ['courthouse', 'walterboro'] }).ok,
+  'a CURRENT photo that merely mentions the building\'s age must still publish');
+ok(M.relevanceGate({ title: 'File:Old Courthouse.jpg', text: 'courthouse los angeles', width: 3000 }, { ...pq, allowArchival: true }).ok,
+  'a query may opt in to archival material deliberately');
+
 console.log('--- The download: only real image bytes reach disk ---');
 const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'og-media-'));
 const dl = (body, ct, status) => M.downloadImage('https://x/y.png', path.join(tmp, 'a.png'), { fetch: async () => res(body, ct, status) });
@@ -93,6 +107,24 @@ ok(!/^https?:/i.test(a.local), 'the rendered source must never be an off-site UR
 ok(a.licenceUrl.includes('creativecommons.org'), 'CC attribution data must survive into the entry');
 ok(a.credit === 'A Photographer', 'the photographer must be credited');
 ok(a.source.includes('commons.wikimedia.org'), 'the licence provenance must be linkable');
+
+console.log('--- Two photographs of the same place must not share one caption ---');
+const twoHits = [
+  { ok: true, title: 'File:Colleton County Courthouse Walterboro SC - panoramio.jpg', url: 'https://u/1.png', thumb: 'https://u/1.png', descriptionUrl: 'https://commons/1', width: 2000, text: 'courthouse walterboro', rights: 'public-domain', licence: 'CC0', attribution: 'A' },
+  { ok: true, title: 'File:Colleton_County_Courthouse_-_Walterboro,_SC.jpg', url: 'https://u/2.png', thumb: 'https://u/2.png', descriptionUrl: 'https://commons/2', width: 2000, text: 'courthouse walterboro', rights: 'public-domain', licence: 'CC0', attribution: 'B' },
+];
+const capQ = { q: 'Colleton', kind: 'place', must: ['courthouse'], caption: 'The Colleton County Courthouse, Walterboro' };
+const capRun = await M.discoverCase({ slug: 'cap', media: [], mediaQueries: [capQ, { ...capQ, q: 'Colleton two' }] },
+  { outDir: out, deps: { ...deps, verify: async () => twoHits } });
+ok(capRun.added.length === 2, 'both should publish, got ' + capRun.added.length);
+ok(capRun.added[0].caption !== capRun.added[1].caption, 'the second photograph must not repeat the first caption');
+ok(!/_|File:|\.jpg/i.test(capRun.added[1].caption), 'a caption built from a filename must read like prose: ' + capRun.added[1].caption);
+
+console.log('--- A query that finds nothing usable must say so ---');
+const silent = await M.discoverCase({ slug: 'q', media: [], mediaQueries: [{ q: 'Plymouth Superior Court', kind: 'place', must: ['court'], caption: 'x' }] },
+  { outDir: out, deps: { ...deps, search: async () => ['File:A map.svg'], verify: async () => [] } });
+ok(silent.rejected.length === 1, 'a query yielding no usable files must leave a trace, not vanish');
+ok(/usable images/.test(silent.rejected[0].reason || ''), 'the trace must distinguish "found nothing" from "gate refused it": ' + (silent.rejected[0] || {}).reason);
 
 console.log('--- Limits hold ---');
 const dedupe = await M.discoverCase({ ...caseObj, media: r.added }, { outDir: out, deps });

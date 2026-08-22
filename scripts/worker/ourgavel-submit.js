@@ -21,6 +21,7 @@
 // changes, only where the writing happens.
 const KINDS = {
   theory:     { label: 'theory',     title: c => '[theory] ' + c.claim },
+  question:   { label: 'question',   title: c => '[question] ' + c.claim },
   evidence:   { label: 'evidence',   title: c => '[evidence] ' + (c.claim || c.url) },
   connection: { label: 'connection', title: c => '[connection] ' + (c.from || '?') + ' → ' + (c.to || '?') },
   comment:    { label: 'discussion', title: c => 'Discussion: ' + (c.nodeTitle || c.node || 'a card') },
@@ -92,7 +93,11 @@ export default {
     const primary = kind === 'comment' ? reasoning : claim;
     if (!caseSlug) return json({ error: 'Missing case.' }, 400, allowed);
     if (kind === 'evidence' && !url) return json({ error: 'Evidence needs a link to the source.' }, 400, allowed);
-    if ((primary || '').length < 8) return json({ error: 'Say a bit more — one clear sentence at least.' }, 400, allowed);
+    // Three words, matching the composer. The relay must not be stricter than the form, or a
+    // reader gets past the page only to be refused by something they cannot see.
+    if (String(primary || '').trim().split(/\s+/).filter(Boolean).length < 3) {
+      return json({ error: 'Three words at least — enough to make the point.' }, 400, allowed);
+    }
 
     // Rate limit per IP. KV is optional: without it the Worker still works, just uncapped,
     // and the hourly editor sweep remains the backstop.

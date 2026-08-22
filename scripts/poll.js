@@ -290,6 +290,13 @@ function authorStanding(login) {
   } catch (e) { /* first run */ }
   return { published, limit: published >= TRUSTED_AFTER ? TRUSTED_LIMIT : RATE_LIMIT };
 }
+// Two producers write these issues -- the composer's Worker and the GitHub issue templates --
+// and they do not agree on headings. The reader accepts either rather than silently holding
+// every Worker submission for review because it could not find the claim.
+function firstField(body, ...labels) {
+  for (const l of labels) { const v = field(body, l); if (v) return v; }
+  return '';
+}
 function field(body, label) {
   const re = new RegExp('###\\s*' + label.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\s*\\n+([\\s\\S]*?)(?=\\n###\\s|$)', 'i');
   const m = (body || '').match(re);
@@ -325,22 +332,49 @@ function buildNameSets(CASE, days) {
 const PII = [/\b[\w.+-]+@[\w-]+\.[a-z]{2,}\b/i, /\b\d{3}[-.\s]\d{3}[-.\s]\d{4}\b/, /\b\d{1,5}\s+[A-Z][a-z]+\s+(St|Street|Ave|Avenue|Rd|Road|Dr|Drive|Ln|Lane|Ct|Court|Blvd)\b/, /(?:^|\s)@[a-z0-9_]{3,}\b/i];
 
 async function ensureLabels() {
-  const labels = [['published', '2ea44f', 'Live on the Board'], ['needs-review', 'e0a83d', 'Held for editor review'], ['rate-limited', 'aaaaaa', 'Over the daily post limit'], ['verdict-watch', 'e05d5d', 'Verdict-related alert'], ['red-lane', 'b03a3a', 'Needs operator approval']];
+  const labels = [['published', '2ea44f', 'Live on the Board'], ['question', '7a5cc4', 'A reader question for the board'], ['needs-review', 'e0a83d', 'Held for editor review'], ['rate-limited', 'aaaaaa', 'Over the daily post limit'], ['verdict-watch', 'e05d5d', 'Verdict-related alert'], ['red-lane', 'b03a3a', 'Needs operator approval']];
   for (const [name, color, description] of labels) {
     try { await gh(`/repos/${REPO}/labels`, { method: 'POST', body: { name, color, description } }); } catch (e) { /* exists */ }
   }
 }
+/* What a reader can put on a board.
+ *
+ * A theory asserts something. A question asserts nothing — it is the lowest bar to clearing
+ * for someone who is following a case closely but has no thesis, and it is usually the more
+ * useful contribution, because a question someone can answer with a filing turns into a fact.
+ * Both run the same screening: a question can carry an accusation just as easily ("why was
+ * <uncharged neighbour> never questioned"), so nothing is waved through for being interrogative.
+ */
+const SUBMISSION_KINDS = {
+  theory: {
+    label: 'theory',
+    claimLabels: ['Your theory, in one sentence', 'In one sentence'],
+    node: { type: 'rumor', status: 'unverified' },
+    column: 1160,
+    published: (slug) => `Live on the Board: https://ourgavel.com/cases/${slug}/board/ — 👍 reactions on this issue count as corroboration, 👎 as dispute; this thread is the theory's discussion page. Sources are what move it from amber; if you have one, submit evidence.`,
+  },
+  question: {
+    label: 'question',
+    claimLabels: ['What do you want to know?', 'Your question', 'In one sentence'],
+    node: { type: 'question', status: 'open' },
+    column: 1470,
+    published: (slug) => `Live on the Board: https://ourgavel.com/cases/${slug}/board/ — it sits in the reader zone as an open question. Anyone can answer it, and an answer backed by a filing or a report is what turns it into a card on the record side. This thread is where that discussion happens.`,
+  },
+};
+
 async function ingestTheories() {
   if (!TOKEN) return;
   const qPath = path.join(DATA, 'queue', 'issues.json');
   if (!fs.existsSync(qPath)) return;
   const q = read(qPath).open || [];
-  const pending = q.filter(i => i.labels.includes('theory') && !['published', 'needs-review', 'rate-limited', 'red-lane'].some(l => i.labels.includes(l)));
+  const kindOf = i => Object.values(SUBMISSION_KINDS).find(k => i.labels.includes(k.label));
+  const pending = q.filter(i => kindOf(i) && !['published', 'needs-review', 'rate-limited', 'red-lane'].some(l => i.labels.includes(l)));
   if (!pending.length) return;
   await ensureLabels();
   const dayAgo = Date.now() - 24 * 3600 * 1000;
   for (const iss of pending) {
     try {
+      const KIND = kindOf(iss);
       const standing = authorStanding(iss.user);
       const byAuthor = q.filter(o => o.user === iss.user && new Date(o.created).getTime() > dayAgo);
       if (byAuthor.length > standing.limit) {
@@ -357,9 +391,9 @@ async function ingestTheories() {
       }
       const CASE = read(path.join(dir, 'case.json'));
       const days = fs.existsSync(path.join(dir, 'days.json')) ? read(path.join(dir, 'days.json')) : { days: [] };
-      const claim = field(iss.body, 'Your theory, in one sentence');
-      const reasoning = field(iss.body, 'Reasoning');
-      const falsify = field(iss.body, 'What would disprove it?');
+      const claim = firstField(iss.body, ...KIND.claimLabels);
+      const reasoning = firstField(iss.body, 'Reasoning', 'What made you ask?', 'Comment');
+      const falsify = KIND.label === 'theory' ? field(iss.body, 'What would disprove it?') : '';
       const all = [claim, reasoning, falsify].join('\n');
       const names = buildNameSets(CASE, days);
       const mentioned = personMentions(all, names);
@@ -374,10 +408,11 @@ async function ingestTheories() {
       const cPath = path.join(dir, 'community.json');
       const C = fs.existsSync(cPath) ? read(cPath) : { nodes: [], edges: [] };
       if (C.nodes.some(n => n.issueNumber === iss.number)) continue;
-      const idx = C.nodes.length;
+      // Lay each kind out in its own column so the reader zone stays legible as it fills.
+      const sameKind = C.nodes.filter(n => n.type === KIND.node.type).length;
       C.nodes.push({
-        id: 'c-' + iss.number, type: 'rumor', status: 'unverified',
-        x: 1160 + (idx % 2) * 240, y: 80 + Math.floor(idx / 2) * 150,
+        id: 'c-' + iss.number, ...KIND.node,
+        x: KIND.column + (sameKind % 2) * 240, y: 80 + Math.floor(sameKind / 2) * 150,
         title: claim,
         body: reasoning + (falsify ? ' — What would disprove it: ' + falsify : ''),
         submittedBy: iss.user, issueNumber: iss.number, issue: iss.url,
@@ -386,8 +421,8 @@ async function ingestTheories() {
       });
       write(cPath, C);
       await gh(`/repos/${REPO}/issues/${iss.number}/labels`, { method: 'POST', body: { labels: ['published'] } });
-      await gh(`/repos/${REPO}/issues/${iss.number}/comments`, { method: 'POST', body: { body: `Live on the Board: https://ourgavel.com/cases/${slug}/board/ — 👍 reactions on this issue count as corroboration, 👎 as dispute; this thread is the theory's discussion page. Sources are what move it from amber; if you have one, submit evidence.` } });
-      console.log('published theory #' + iss.number, 'to', slug);
+      await gh(`/repos/${REPO}/issues/${iss.number}/comments`, { method: 'POST', body: { body: KIND.published(slug) } });
+      console.log('published ' + KIND.label + ' #' + iss.number, 'to', slug);
     } catch (e) { console.error('ingest fail #' + iss.number, e.message); }
   }
 }
@@ -427,6 +462,22 @@ async function discoverMedia(slug) {
   }
   // Anything held back is written down rather than dropped, so the queue is reviewable
   // instead of being a decision nobody can see.
+  // Sweep files no case record points at any more. A photograph can be orphaned by a
+  // download that succeeded while the case write failed, or by an entry an agent removed on
+  // review — the archival 1905 street scene that got through on the first run was one. Left
+  // alone they accumulate in the repo forever, and nothing else would ever notice them.
+  try {
+    const dir = path.join(DATA, 'media', slug);
+    if (fs.existsSync(dir)) {
+      const keep = new Set((CASE.media || []).map(m => m.local && path.posix.basename(m.local)).filter(Boolean));
+      for (const f of fs.readdirSync(dir)) {
+        if (f === 'README.md' || keep.has(f)) continue;
+        fs.unlinkSync(path.join(dir, f));
+        console.log('media - ' + slug + '/' + f + ' (no longer referenced)');
+      }
+    }
+  } catch (e) { console.error('media sweep failed for', slug, e.message); }
+
   // Everything held back is written down, including query-level failures. Discovery runs
   // unattended against an API this sandbox cannot reach, so this file is the only way to
   // tell "the query found nothing" apart from "the gate refused what it found".

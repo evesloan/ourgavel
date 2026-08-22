@@ -348,7 +348,8 @@
       "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
       "bytes": 376785,
       "addedAt": "2026-08-22T09:10:19.185Z",
-      "verified": "commons-api"
+      "verified": "commons-api",
+      "query": "Colleton County Courthouse Walterboro South Carolina"
     },
     {
       "type": "image",
@@ -363,22 +364,8 @@
       "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "bytes": 206328,
       "addedAt": "2026-08-22T09:10:19.185Z",
-      "verified": "commons-api"
-    },
-    {
-      "type": "image",
-      "local": "media/alex-murdaugh-retrial/93a14d00525a.jpg",
-      "url": "https://commons.wikimedia.org/wiki/File:Walterboro_-_Colleton_County_Courthouse.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Walterboro_-_Colleton_County_Courthouse.jpg",
-      "caption": "Walterboro - Colleton County Courthouse",
-      "alt": "Walterboro - Colleton County Courthouse",
-      "credit": "P. Hughes",
-      "rights": "cc-licensed",
-      "licence": "CC BY 4.0",
-      "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
-      "bytes": 403875,
-      "addedAt": "2026-08-22T09:35:17.112Z",
-      "verified": "commons-api"
+      "verified": "commons-api",
+      "query": "Colleton County Courthouse Walterboro South Carolina"
     },
     {
       "type": "image",
@@ -393,7 +380,8 @@
       "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
       "bytes": 285575,
       "addedAt": "2026-08-22T09:35:17.112Z",
-      "verified": "commons-api"
+      "verified": "commons-api",
+      "query": "South Carolina Supreme Court building Columbia"
     }
   ]
 }

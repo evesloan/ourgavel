@@ -31,6 +31,7 @@ const MIN_WIDTH = 640;          // below this it renders as a smudge in the grid
 const PER_CASE_CAP = 8;         // the section is "recent photos", not an archive
 const PER_RUN_ADD = 2;          // drip, so one bad query can't flood a case in a single pulse
 const PER_QUERY_ADD = 1;        // one subject per query per run, so a case gains variety not duplicates
+const PER_QUERY_TOTAL = 2;      // and no more than two ever — four angles on one building is not a gallery
 
 // Subjects whose identity a filename can actually establish.
 const AUTO_KINDS = ['place', 'institution', 'object', 'document-scan'];
@@ -106,7 +107,11 @@ function captionFor(hit, q, taken) {
   const fromTitle = String(hit.title || '')
     .replace(/^File:/, '').replace(/\.[a-z0-9]+$/i, '')
     .replace(/[_]+/g, ' ').replace(/\s*-\s*panoramio\s*$/i, '')
-    .replace(/\s+/g, ' ').trim();
+    .replace(/\s*\(\d{6,}\)\s*$/, '')
+    .replace(/\s+/g, ' ').trim()
+    // Commons filenames often end in the uploader's handle. A trailing all-lowercase token
+    // after a capitalised word is that, not part of the subject: "…127 S Broadway dllu".
+    .replace(/(?<=\b[A-Z][A-Za-z.]*|\d)\s+[a-z][a-z0-9]{1,7}$/, '');
   if (fromTitle && !taken.has(fromTitle)) return fromTitle;
   return fromTitle || q.caption || 'Untitled';
 }
@@ -168,8 +173,15 @@ async function discoverCase(caseObj, opts = {}) {
 
   let budget = Math.min(PER_RUN_ADD, PER_CASE_CAP - imageCount);
 
+  // How many photographs each query has already contributed, across every run there has ever
+  // been. Without this a query that happens to match a well-photographed building quietly
+  // takes the whole case: five slots, one subject, four of them near-identical.
+  const perQuery = {};
+  for (const m of media) if (m.query) perQuery[m.query] = (perQuery[m.query] || 0) + 1;
+
   for (const q of queries) {
     if (budget <= 0) break;
+    if ((perQuery[q.q] || 0) >= PER_QUERY_TOTAL) continue;
     let fromThisQuery = 0;
     if ((q.kind || 'person') && !AUTO_KINDS.includes(q.kind || 'person')) {
       queued.push({ query: q.q, reason: 'person subject — held for human confirmation' });
@@ -186,6 +198,7 @@ async function discoverCase(caseObj, opts = {}) {
 
     for (const hit of hits) {
       if (budget <= 0 || fromThisQuery >= PER_QUERY_ADD) break;
+      if ((perQuery[q.q] || 0) + fromThisQuery >= PER_QUERY_TOTAL) break;
       if (!hit.ok) { rejected.push({ title: hit.title, reason: hit.reason }); continue; }
       if (have.has(hit.descriptionUrl) || have.has(hit.url)) continue;
       const gate = relevanceGate(hit, q);
@@ -205,6 +218,7 @@ async function discoverCase(caseObj, opts = {}) {
       takenCaptions.add(cap);
       added.push({
         type: 'image',
+        query: q.q,
         local: finalRel,
         url: hit.descriptionUrl,
         source: hit.descriptionUrl,
@@ -261,5 +275,5 @@ function safeToDiscover(opts = {}) {
 module.exports = {
   safeToDiscover,
   relevanceGate, downloadImage, discoverCase, localName, sniff,
-  MAX_BYTES, MIN_WIDTH, PER_CASE_CAP, PER_RUN_ADD, AUTO_KINDS,
+  MAX_BYTES, MIN_WIDTH, PER_CASE_CAP, PER_RUN_ADD, PER_QUERY_ADD, PER_QUERY_TOTAL, AUTO_KINDS,
 };

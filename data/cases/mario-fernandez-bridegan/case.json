@@ -350,37 +350,8 @@
       "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
       "bytes": 267244,
       "addedAt": "2026-08-22T09:10:19.185Z",
-      "verified": "commons-api"
-    },
-    {
-      "type": "image",
-      "local": "media/mario-fernandez-bridegan/aec9d05bd28a.jpg",
-      "url": "https://commons.wikimedia.org/wiki/File:Duval_County_Courthouse_from_Clay_St.JPG",
-      "source": "https://commons.wikimedia.org/wiki/File:Duval_County_Courthouse_from_Clay_St.JPG",
-      "caption": "Duval County Courthouse from Clay St",
-      "alt": "Duval County Courthouse from Clay St",
-      "credit": "Michael Rivera",
-      "rights": "cc-licensed",
-      "licence": "CC BY-SA 4.0",
-      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "bytes": 308930,
-      "addedAt": "2026-08-22T09:10:19.185Z",
-      "verified": "commons-api"
-    },
-    {
-      "type": "image",
-      "local": "media/mario-fernandez-bridegan/8bf45c310de3.jpg",
-      "url": "https://commons.wikimedia.org/wiki/File:Duval_County_Courthouse_from_parking_lot.JPG",
-      "source": "https://commons.wikimedia.org/wiki/File:Duval_County_Courthouse_from_parking_lot.JPG",
-      "caption": "Duval County Courthouse from parking lot",
-      "alt": "Duval County Courthouse from parking lot",
-      "credit": "Michael Rivera",
-      "rights": "cc-licensed",
-      "licence": "CC BY-SA 4.0",
-      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "bytes": 360387,
-      "addedAt": "2026-08-22T09:35:17.112Z",
-      "verified": "commons-api"
+      "verified": "commons-api",
+      "query": "Duval County Courthouse Jacksonville Florida"
     },
     {
       "type": "image",
@@ -395,7 +366,8 @@
       "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
       "bytes": 343972,
       "addedAt": "2026-08-22T09:35:17.112Z",
-      "verified": "commons-api"
+      "verified": "commons-api",
+      "query": "Jacksonville Florida downtown skyline"
     }
   ]
 }

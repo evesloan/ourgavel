@@ -113,13 +113,19 @@
       "alt": "The Regional Justice Center tower in downtown Las Vegas"
     },
     {
-      "q": "Clark County Government Center Las Vegas Nevada",
-      "kind": "institution",
+      "q": "Downtown Las Vegas Nevada street",
+      "kind": "place",
       "must": [
-        "clark county"
+        "las vegas"
       ],
-      "caption": "Clark County Government Center, Las Vegas",
-      "alt": "The Clark County Government Center building"
+      "deny": [
+        "casino",
+        "strip",
+        "amphitheater",
+        "sign"
+      ],
+      "caption": "Downtown Las Vegas, where the case is being tried",
+      "alt": "A view of downtown Las Vegas, Nevada"
     }
   ],
   "verdictKeywords": [
@@ -322,67 +328,8 @@
       "licenceUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
       "bytes": 217886,
       "addedAt": "2026-08-22T09:10:19.185Z",
-      "verified": "commons-api"
-    },
-    {
-      "type": "image",
-      "local": "media/duane-davis-tupac/44edda416cc2.png",
-      "url": "https://commons.wikimedia.org/wiki/File:Clark_County_Government_Center_aerial_view.png",
-      "source": "https://commons.wikimedia.org/wiki/File:Clark_County_Government_Center_aerial_view.png",
-      "caption": "Clark County Government Center, Las Vegas",
-      "alt": "The Clark County Government Center building",
-      "credit": "Carol M. Highsmith",
-      "rights": "public-domain",
-      "licence": "Public domain",
-      "licenceUrl": "",
-      "bytes": 1300570,
-      "addedAt": "2026-08-22T09:10:19.185Z",
-      "verified": "commons-api"
-    },
-    {
-      "type": "image",
-      "local": "media/duane-davis-tupac/e963032d3c7e.jpg",
-      "url": "https://commons.wikimedia.org/wiki/File:Clark_County_Government_Center_-_panoramio.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Clark_County_Government_Center_-_panoramio.jpg",
-      "caption": "Clark County Government Center, Las Vegas",
-      "alt": "The Clark County Government Center building",
-      "credit": "Alen Ištoković",
-      "rights": "cc-licensed",
-      "licence": "CC BY 3.0",
-      "licenceUrl": "https://creativecommons.org/licenses/by/3.0",
-      "bytes": 421475,
-      "addedAt": "2026-08-22T09:28:18.510Z",
-      "verified": "commons-api"
-    },
-    {
-      "type": "image",
-      "local": "media/duane-davis-tupac/fa183a042222.jpg",
-      "url": "https://commons.wikimedia.org/wiki/File:Nevada_-_Las_Vegas_Clark_County_Government_Center_is_located_in_Downtown_Las_Vegas_-_the_building_is_one_of_the_rather_unknown_architectural_highlights_of_Vegas_(50027024252).jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Nevada_-_Las_Vegas_Clark_County_Government_Center_is_located_in_Downtown_Las_Vegas_-_the_building_is_one_of_the_rather_unknown_architectural_highlights_of_Vegas_(50027024252).jpg",
-      "caption": "Clark County Government Center, Las Vegas",
-      "alt": "The Clark County Government Center building",
-      "credit": "Reinhard Link from Germany",
-      "rights": "cc-licensed",
-      "licence": "CC BY-SA 2.0",
-      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-      "bytes": 283467,
-      "addedAt": "2026-08-22T09:28:18.510Z",
-      "verified": "commons-api"
-    },
-    {
-      "type": "image",
-      "local": "media/duane-davis-tupac/40c6d2ff793f.jpg",
-      "url": "https://commons.wikimedia.org/wiki/File:Clark_County_Government_Center_Amphitheater.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Clark_County_Government_Center_Amphitheater.jpg",
-      "caption": "Clark County Government Center Amphitheater",
-      "alt": "Clark County Government Center Amphitheater",
-      "credit": "Coolcaesar",
-      "rights": "cc-licensed",
-      "licence": "CC BY-SA 4.0",
-      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "bytes": 360484,
-      "addedAt": "2026-08-22T09:35:17.112Z",
-      "verified": "commons-api"
+      "verified": "commons-api",
+      "query": "Regional Justice Center Las Vegas Nevada"
     }
   ]
 }

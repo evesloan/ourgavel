@@ -350,33 +350,19 @@
     },
     {
       "type": "image",
-      "local": "media/lil-durk-murder-for-hire/32d5c1e1e584.jpg",
-      "url": "https://commons.wikimedia.org/wiki/File:Postcard_with_a_photograph_of_the_Hall_of_Records_in_Los_Angeles,_ca.1910_(EXM-P-S-LOS-ANG-CIT-BUI-705).jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Postcard_with_a_photograph_of_the_Hall_of_Records_in_Los_Angeles,_ca.1910_(EXM-P-S-LOS-ANG-CIT-BUI-705).jpg",
-      "caption": "The United States Courthouse, Los Angeles — Central District of California",
-      "alt": "The federal courthouse on First Street in downtown Los Angeles",
-      "credit": "Unknown author Unknown author",
-      "rights": "public-domain",
-      "licence": "Public domain",
-      "licenceUrl": "",
-      "bytes": 324743,
-      "addedAt": "2026-08-22T09:10:19.185Z",
-      "verified": "commons-api"
-    },
-    {
-      "type": "image",
       "local": "media/lil-durk-murder-for-hire/9f29b77330b5.jpg",
       "url": "https://commons.wikimedia.org/wiki/File:Los_Angeles_Federal_Courthouse_127_S_Broadway_dllu.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Los_Angeles_Federal_Courthouse_127_S_Broadway_dllu.jpg",
-      "caption": "Los Angeles Federal Courthouse 127 S Broadway dllu",
-      "alt": "Los Angeles Federal Courthouse 127 S Broadway dllu",
+      "caption": "The United States Courthouse, Los Angeles — Central District of California",
+      "alt": "The federal courthouse on First Street in downtown Los Angeles",
       "credit": "Daniel L. Lu (user:dllu)",
       "rights": "cc-licensed",
       "licence": "CC BY-SA 4.0",
       "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "bytes": 307203,
       "addedAt": "2026-08-22T09:35:17.112Z",
-      "verified": "commons-api"
+      "verified": "commons-api",
+      "query": "United States Courthouse Los Angeles First Street"
     },
     {
       "type": "image",
@@ -391,7 +377,8 @@
       "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "bytes": 643884,
       "addedAt": "2026-08-22T09:35:17.112Z",
-      "verified": "commons-api"
+      "verified": "commons-api",
+      "query": "Edward R Roybal Federal Building Los Angeles"
     }
   ]
 }

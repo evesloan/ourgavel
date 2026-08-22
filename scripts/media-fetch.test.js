@@ -126,6 +126,28 @@ const silent = await M.discoverCase({ slug: 'q', media: [], mediaQueries: [{ q: 
 ok(silent.rejected.length === 1, 'a query yielding no usable files must leave a trace, not vanish');
 ok(/usable images/.test(silent.rejected[0].reason || ''), 'the trace must distinguish "found nothing" from "gate refused it": ' + (silent.rejected[0] || {}).reason);
 
+console.log('--- Captions built from filenames must read like captions ---');
+const capsFrom = async title => (await M.discoverCase({ slug: 'c', media: [{ caption: 'taken' }], mediaQueries: [{ q: 'x', kind: 'place', must: ['court'], caption: 'taken' }] },
+  { outDir: out, deps: { ...deps, verify: async () => [{ ok: true, title, url: 'https://u/z', thumb: 'https://u/z', descriptionUrl: 'https://commons/' + title, width: 2000, text: 'court', rights: 'public-domain', licence: 'CC0', attribution: 'X' }] } })).added[0].caption;
+ok(await capsFrom('File:Los Angeles Federal Courthouse 127 S Broadway dllu.jpg') === 'Los Angeles Federal Courthouse 127 S Broadway',
+  'an uploader handle must be stripped, got: ' + await capsFrom('File:Los Angeles Federal Courthouse 127 S Broadway dllu.jpg'));
+ok(await capsFrom('File:Duval_County_Courthouse_from_Clay_St.jpg') === 'Duval County Courthouse from Clay St',
+  'a real trailing word must be kept, got: ' + await capsFrom('File:Duval_County_Courthouse_from_Clay_St.jpg'));
+ok(!/\(\d{6,}\)/.test(await capsFrom('File:Some Courthouse (50027024252).jpg')), 'an upload id must be stripped');
+ok(!/_|\.jpg/i.test(await capsFrom('File:A_Courthouse_somewhere.jpg')), 'underscores and extensions must never reach a caption');
+
+console.log('--- One query must not take the whole case ---');
+const oneQ = { q: 'Clark County Government Center', kind: 'place', must: ['courthouse'], caption: 'Clark County Government Center' };
+let acc = { slug: 'z', media: [], mediaQueries: [oneQ] };
+for (let run = 0; run < 5; run++) {
+  const r = await M.discoverCase(acc, { outDir: out, deps: { ...deps, verify: async () => Array.from({ length: 6 }, (_, i) => ({
+    ok: true, title: 'File:Clark County Courthouse angle ' + run + i + '.jpg', url: 'https://u/' + run + i, thumb: 'https://u/' + run + i,
+    descriptionUrl: 'https://commons/' + run + '-' + i, width: 2000, text: 'courthouse', rights: 'public-domain', licence: 'CC0', attribution: 'X' })) } });
+  acc = { ...acc, media: acc.media.concat(r.added) };
+}
+ok(acc.media.length === M.PER_QUERY_TOTAL, 'a single query must stop at ' + M.PER_QUERY_TOTAL + ' photographs ever, got ' + acc.media.length);
+ok(acc.media.every(m => m.query === oneQ.q), 'each entry must record which query found it, so the cap survives a restart');
+
 console.log('--- Limits hold ---');
 const dedupe = await M.discoverCase({ ...caseObj, media: r.added }, { outDir: out, deps });
 ok(dedupe.added.length === 0, 'a second run must not re-add the same file');

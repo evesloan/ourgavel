@@ -1,9 +1,170 @@
 {
   "items": [
-    {"ts": "2026-08-21T21:30:00Z", "outlet": "Court TV", "headline": "'She was a puppet and someone else was pulling the strings': Lindsay Clancy's defense rests after doctor says she wasn't psychotic every minute", "url": "https://www.courttv.com/news/she-was-a-puppet-and-someone-else-was-pulling-the-strings-lindsay-clancys-defense-rests-after-doctor-says-she-wasnt-psychotic-every-minute/", "flag": null},
-    {"ts": "2026-08-21T20:00:00Z", "outlet": "WBUR", "headline": "Lindsay Clancy's defense rests after calling 10 witnesses", "url": "https://www.wbur.org/news/2026/08/21/lindsay-clancy-defense-rests", "flag": null},
-    {"ts": "2026-08-21T19:00:00Z", "outlet": "Boston Globe", "headline": "Rebuttal witness Dr. Avram Mack: Clancy suffered major depressive disorder, not psychosis", "url": "https://www.bostonglobe.com/2026/08/21/metro/lindsay-clancy-trial-mack-resnick/", "flag": null},
-    {"ts": "2026-08-21T16:00:00Z", "outlet": "NBC Boston", "headline": "Recap: Defense in Lindsay Clancy trial rests, prosecutors call 1st rebuttal witness", "url": "https://www.nbcboston.com/news/local/lindsay-clancy-murder-trial/", "flag": null}
+    {
+      "ts": "2026-08-21T22:36:13.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Lindsay Clancy’s case shines a light on postpartum support",
+      "url": "https://www.boston25news.com/news/local/lindsay-clancys-case-shines-light-postpartum-support/YHYIHLFWLRFIHLKQQZTBS7VS4A/",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-21T22:15:29.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Defense rests in Lindsay Clancy murder trial",
+      "url": "https://www.boston25news.com/news/local/defense-rests-lindsay-clancy-murder-trial/LWOMPUZ4DJE3ZKQFLW3PCVYBIE/",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-21T21:40:00.000Z",
+      "outlet": "WCVB",
+      "headline": "What to know today from the Lindsay Clancy murder trial",
+      "url": "https://www.wcvb.com/article/lindsay-clancy-trial-key-takeaways/73276054",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-21T21:20:00.000Z",
+      "outlet": "WCVB",
+      "headline": "Lindsay Clancy trial: Prosecution presents rebuttal as case nears conclusion",
+      "url": "https://www.wcvb.com/article/lindsay-clancy-trial-live-updates-aug-21/73492912",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-21T20:08:39.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Lindsay Clancy trial (live updates): Defense rests case, prosecution calling rebuttal witnesses",
+      "url": "https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-defense-expected-call-final-witness-before-resting/3SY5KO3XLBG5NJ5F3S2VCFJKUY/",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-21T18:33:58.000Z",
+      "outlet": "Court TV",
+      "headline": "‘She was a puppet and someone else was pulling the strings’: Lindsay Clancy’s defense rests after doctor says she wasn’t psychotic ‘every minute’",
+      "url": "https://www.courttv.com/news/she-was-a-puppet-and-someone-else-was-pulling-the-strings-lindsay-clancys-defense-rests-after-doctor-says-she-wasnt-psychotic-every-minute/",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-21T08:48:51.000Z",
+      "outlet": "NBC Boston",
+      "headline": "Recap: Defense in Lindsay Clancy trial rests, prosecutors call 1st rebuttal witness",
+      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-trial-day-18-live-stream-live-updates/4001645/",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-21T06:52:03.000Z",
+      "outlet": "NBC Boston",
+      "headline": "Defense rests its case in the Lindsay Clancy trial",
+      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-trial-today-could-defense-rest-case/4001586/",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-20T14:29:25.000Z",
+      "outlet": "Court TV",
+      "headline": "‘Team Lindsay’: Hundreds line the street outside courthouse in silent support of Lindsay Clancy",
+      "url": "https://www.courttv.com/news/team-lindsay-hundreds-line-the-street-outside-courthouse-in-silent-support-of-lindsay-clancy/",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-19T20:01:14.000Z",
+      "outlet": "Court TV",
+      "headline": "Doctor reveals what Lindsay Clancy said in her first phone call after killing 3 children",
+      "url": "https://www.courttv.com/news/doctor-reveals-what-lindsay-clancy-said-in-her-first-phone-call-after-killing-3-children/",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-18T18:41:04.000Z",
+      "outlet": "Court TV",
+      "headline": "Former mother-in-law says Lindsay Clancy was ‘begging for help’",
+      "url": "https://www.courttv.com/news/former-mother-in-law-says-lindsay-clancy-was-begging-for-help/",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-17T21:00:33.000Z",
+      "outlet": "Court TV",
+      "headline": "TikTok user raises more than $800K for Lindsay Clancy’s family",
+      "url": "https://www.courttv.com/news/tiktok-user-raises-more-than-800k-for-lindsay-clancys-family/",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-17T19:58:36.000Z",
+      "outlet": "Court TV",
+      "headline": "Lindsay Clancy’s mother says she was ‘afraid to be alone’ as defense begins its case",
+      "url": "https://www.courttv.com/news/lindsay-clancys-mother-says-she-was-afraid-to-be-alone-as-defense-begins-its-case/",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-15T13:08:05.000Z",
+      "outlet": "Court TV",
+      "headline": "‘I know what I meant’: Explosive moments highlight Week 3 of Lindsay Clancy’s murder trial",
+      "url": "https://www.courttv.com/news/i-know-what-i-meant-explosive-moments-highlight-week-3-of-lindsay-clancys-murder-trial/",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-14T16:40:27.000Z",
+      "outlet": "Court TV",
+      "headline": "‘Terrible job’: Attorneys, social media watchers join chorus critical of Lindsay Clancy prosecutors",
+      "url": "https://www.courttv.com/news/terrible-job-attorneys-social-media-watchers-join-chorus-critical-of-lindsay-clancy-prosecutors/",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-13T20:24:12.000Z",
+      "outlet": "Court TV",
+      "headline": "‘That’s it?’: Lindsay Clancy’s defense attorney challenges digital evidence prosecutors say prove she murdered her kids",
+      "url": "https://www.courttv.com/news/thats-it-lindsay-clancys-defense-attorney-challenges-digital-evidence-prosecutors-say-prove-she-murdered-her-kids/",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-12T19:54:05.000Z",
+      "outlet": "Court TV",
+      "headline": "Lawyers in Lindsay Clancy case get heated over whether she was instructed to claim she heard voices",
+      "url": "https://www.courttv.com/news/lawyers-in-lindsay-clancy-case-get-heated-over-whether-she-was-instructed-to-claim-she-heard-voices/",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-21T21:30:00Z",
+      "outlet": "Court TV",
+      "headline": "'She was a puppet and someone else was pulling the strings': Lindsay Clancy's defense rests after doctor says she wasn't psychotic every minute",
+      "url": "https://www.courttv.com/news/she-was-a-puppet-and-someone-else-was-pulling-the-strings-lindsay-clancys-defense-rests-after-doctor-says-she-wasnt-psychotic-every-minute/",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-21T20:00:00Z",
+      "outlet": "WBUR",
+      "headline": "Lindsay Clancy's defense rests after calling 10 witnesses",
+      "url": "https://www.wbur.org/news/2026/08/21/lindsay-clancy-defense-rests",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-21T19:00:00Z",
+      "outlet": "Boston Globe",
+      "headline": "Rebuttal witness Dr. Avram Mack: Clancy suffered major depressive disorder, not psychosis",
+      "url": "https://www.bostonglobe.com/2026/08/21/metro/lindsay-clancy-trial-mack-resnick/",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-21T16:00:00Z",
+      "outlet": "NBC Boston",
+      "headline": "Recap: Defense in Lindsay Clancy trial rests, prosecutors call 1st rebuttal witness",
+      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-murder-trial/",
+      "flag": null
+    }
   ],
-  "seen": []
+  "seen": [
+    "1gvgf7s",
+    "c3qqcy",
+    "v0xxge",
+    "1xwj8qr",
+    "1pewx3h",
+    "5cby4k",
+    "11t88uv",
+    "13xdmxi",
+    "sh8zg3",
+    "16ak9cm",
+    "2tf3ed",
+    "vzxrgy",
+    "or8jai",
+    "e3ub44",
+    "y9c87g",
+    "1gprkdh",
+    "10qohxj"
+  ]
 }

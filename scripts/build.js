@@ -10,8 +10,21 @@ const OUT = path.join(ROOT, 'public');
 const DATA = path.join(ROOT, 'data');
 const BUILT_AT = new Date().toISOString();
 const REPO = process.env.GB_REPO || 'evesloan/ourgavel';
-const BASE = process.env.GB_BASE || '';
-const SITE = process.env.GB_SITE || 'https://evesloan.github.io/ourgavel'; // '/ourgavel' when served from project-pages subpath; '' on the custom domain
+// A CNAME file is the single source of truth for where this site lives. If one exists we are
+// on a custom domain: links are root-relative and absolute URLs use it. Otherwise we fall back
+// to the project-pages subpath. This deliberately outranks GB_BASE so the domain can be switched
+// on by adding one file, without touching the workflow.
+const CNAME = (() => {
+  for (const p of [path.join(ROOT, 'CNAME'), path.join(ROOT, 'public', 'CNAME')]) {
+    if (fs.existsSync(p)) {
+      const d = fs.readFileSync(p, 'utf8').trim().split(/\s+/)[0];
+      if (/^[a-z0-9.-]+\.[a-z]{2,}$/i.test(d)) return d;
+    }
+  }
+  return '';
+})();
+const BASE = CNAME ? '' : (process.env.GB_BASE || '');
+const SITE = CNAME ? `https://${CNAME}` : (process.env.GB_SITE || 'https://evesloan.github.io/ourgavel'); // '/ourgavel' when served from project-pages subpath; '' on the custom domain
 const SITE_NAME = 'OurGavel';
 const TAGLINE = 'The record. The rumors. The line between.';
 
@@ -407,6 +420,7 @@ function page({ title, desc, crumbs, body, active }) {
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>${esc(title)} — ${SITE_NAME}</title>
 <meta name="description" content="${esc(desc)}">
+<meta property="og:url" content="${SITE}">
 <meta property="og:site_name" content="${SITE_NAME}">
 <meta property="og:type" content="website">
 <meta property="og:title" content="${esc(title)}">
@@ -1109,38 +1123,43 @@ const submit = page({
 // ---------- for creators ----------
 const creators = page({
   title: 'For creators and newsrooms',
-  desc: 'Put a live OurGavel board in your video, article or stream. Free to embed; paid tiers for custom boards, alerts and data access.',
+  desc: 'Put a live OurGavel board in your video, article or stream. Everything here is free to use.',
   active: '/creators/',
   crumbs: `<a href="/">Home</a> › For creators`,
   body: `
 <h1>You do the show. We'll do the sourcing.</h1>
-<p class="sub" style="max-width:640px">If you cover trials, the worst part of the job is checking what actually happened before you say it on camera. That is the part we already do, every fifteen minutes, with a source on every line.</p>
+<p class="sub" style="max-width:640px">If you cover trials, the worst part of the job is checking what actually happened before you say it on camera. That's the part we already do, around the clock, with a source on every line.</p>
 
-<h2>Free, no account, no catch</h2>
-<div class="card">
-<p><b>Embed any board.</b> One line of HTML in your article or show notes and your readers get the live board — it keeps updating after you publish, so a piece you wrote in week two still shows week four's evidence.</p>
-<p style="margin-top:8px"><b>Use the data.</b> Every board publishes as JSON at <code>/board/data.json</code>. Free to reuse for anything, including commercially, if you credit OurGavel and link the board.</p>
-<p style="margin-top:8px"><b>Take the facts.</b> Read a case off the record page and cite the outlet we cite. You don't owe us a mention for that — the sources did the reporting, not us.</p>
-<p style="margin-top:12px"><a class="btn sm" href="/cases/">Grab a board</a></p>
-</div>
+<div class="notice"><b>All of it is free.</b> Every board, every embed, the raw data, the alerts, the research requests. No account, no tier, no card. That isn't a launch promotion — there's nothing to buy here and nothing being held back for people who pay, because right now the only thing this site needs is for the record to be used.</div>
 
-<h2>When free isn't enough</h2>
-<p class="sub">These are in early access. Nothing is on sale yet — if one fits how you work, tell us and we'll build it with you rather than guess.</p>
+<h2>What you can take</h2>
 <div class="grid2">
-  <div class="card"><h3 style="margin-top:0">Creator</h3>
-    <p class="lnote">roughly $49/month when it opens</p>
-    <p style="font-size:14.5px;margin-top:8px">An embed carrying your branding instead of ours. A board built for the case you're covering, including cases we don't track yet. Verdict and ruling alerts by email the moment two newsrooms confirm — usually before it trends. Ask us to dig into a specific witness or filing and get it back the same day.</p>
-    <p style="margin-top:10px"><a class="btn sm" href="https://github.com/${REPO}/issues/new?title=${encodeURIComponent('Creator tier — early access')}&body=${encodeURIComponent('Where you publish (channel, show, outlet):\n\nCases you cover:\n\nWhat would actually save you time:\n')}">Ask for early access</a></p>
+  <div class="card"><h3 style="margin-top:0">Embed a live board</h3>
+    <p style="font-size:14.5px">One line of HTML in your article or show notes. It keeps updating after you publish, so a piece you wrote in week two still shows week four's evidence. Grab the code from the "Put this board on your own site" panel on any board.</p>
+    <p style="margin-top:10px"><a class="btn sm" href="/cases/">Pick a board</a></p>
   </div>
-  <div class="card"><h3 style="margin-top:0">Newsroom</h3>
-    <p class="lnote">roughly $199/month when it opens</p>
-    <p style="font-size:14.5px;margin-top:8px">API access to every case we hold. Private boards your team edits before anything is public. A new case stood up within 24 hours of you asking. Bulk export of the full record, witness index and source list for anything you're building.</p>
-    <p style="margin-top:10px"><a class="btn sm ghost" href="https://github.com/${REPO}/issues/new?title=${encodeURIComponent('Newsroom tier — early access')}&body=${encodeURIComponent('Outlet:\n\nWhat you need access to:\n\nTeam size:\n')}">Talk to us</a></p>
+  <div class="card"><h3 style="margin-top:0">Use the raw data</h3>
+    <p style="font-size:14.5px">Every board publishes as JSON at <code>/board/data.json</code> — nodes, connections, sources, the lot. Reuse it for anything, including commercially. Credit OurGavel and link the board and we're square.</p>
+    <p style="margin-top:10px"><a class="btn sm ghost" href="/cases/lindsay-clancy/board/data.json">See the format</a></p>
+  </div>
+  <div class="card"><h3 style="margin-top:0">Ask for a case</h3>
+    <p style="font-size:14.5px">Covering a trial we don't track? Tell us and we'll build the record and the board for it. We're adding cases anyway; we'd rather add the ones someone is actually about to cover.</p>
+    <p style="margin-top:10px"><a class="btn sm" href="https://github.com/${REPO}/issues/new?title=${encodeURIComponent('Case request')}&body=${encodeURIComponent('Case:\n\nCourt and where it stands:\n\nWhere you publish (optional):\n')}">Request a case</a></p>
+  </div>
+  <div class="card"><h3 style="margin-top:0">Get told first</h3>
+    <p style="font-size:14.5px">We watch the newsrooms constantly and flag a verdict the moment two of them agree. If you want that in your inbox instead of finding out from a trending tab, say which cases and we'll wire you in.</p>
+    <p style="margin-top:10px"><a class="btn sm ghost" href="https://github.com/${REPO}/issues/new?title=${encodeURIComponent('Verdict alerts')}&body=${encodeURIComponent('Cases you want alerts for:\n\nBest way to reach you:\n')}">Ask for alerts</a></p>
   </div>
 </div>
+
+<h2>Just take the facts</h2>
+<div class="card"><p style="font-size:14.5px">You don't owe us a credit for reading a case off the record page and citing the outlet we cite. The reporters did that work, not us. Link them. If our board saved you an hour, a mention is nice, but nothing here is gated behind one.</p></div>
 
 <h2>The one rule</h2>
-<div class="card"><p style="font-size:14.5px">Paying us buys tooling, speed and support. It does not buy a word of the record. Nobody can pay to add a claim, soften a fact, remove a source or get a theory promoted — not advertisers, not sponsors, not you, and not us. That rule is the only reason this site is worth embedding, so it is the one thing that will never be for sale.</p></div>
+<div class="card"><p style="font-size:14.5px">Nobody can add a claim, soften a fact, remove a source or get a theory promoted — not advertisers, not sponsors, not creators, not us. There's no money in the room to change that today, and when there is, that rule is the part that stays. It's the only reason a board is worth embedding.</p></div>
+
+<h2>What we'd want back, eventually</h2>
+<div class="card"><p style="font-size:14.5px">Nothing right now. Later, when enough people are using this to make it worth running, there'll probably be paid tooling for people who cover trials professionally — bulk exports, private working boards, an API. The record itself will stay free and open regardless. If you want a say in what that tooling looks like, use it now and tell us what's missing; the people here early are the ones who get to shape it.</p></div>
 `});
 
 // ---------- about ----------
@@ -1209,5 +1228,6 @@ for (const c of CASES) {
   }, null, 2));
 }
 fs.writeFileSync(path.join(OUT, '.nojekyll'), '');
+if (CNAME) fs.writeFileSync(path.join(OUT, 'CNAME'), CNAME + '\n');
 fs.writeFileSync(path.join(OUT, 'robots.txt'), 'User-agent: *\nAllow: /\n');
 console.log('Built', Object.keys(files).length, 'pages,', CASES.length, 'case(s), at', BUILT_AT);

@@ -94,28 +94,32 @@ A verdict week on a national case can do 100k+ pageviews by itself. Between verd
 — which is exactly why the roster runs 5 cases and why case scouting is automated. Breadth is what
 turns spikes into a floor.
 
-### The better revenue lines
+### The better revenue lines (later — everything is free right now)
 
-1. **Creator/media licensing — highest margin, best fit.** We already give embeds away free. The
-   paid tier is what professionals need: white-label embeds without our chrome, a custom board
-   built for their case, verdict alerts by SMS/email before the news cycle, and API access to the
-   record. Podcast and YouTube operations pay for research; we are cheaper than a researcher and
-   never sleep. **Target: $49–199/mo per creator.** Twenty creators is $1–4k/mo at near-zero
-   marginal cost, and it is not exposed to ad-policy risk at all.
-2. **Sponsorship of the wire, not the record.** One clearly-labelled sponsor slot on the ticker
-   and case hubs. Never inside a board card, never on a victim's page. Legal-adjacent advertisers
-   (CLE providers, legal software, court-reporting services) pay well and are on-topic.
-3. **Affiliate, narrowly.** Books and documentaries about the cases we cover. Labelled, relevant,
-   never inside the record. Small but genuinely free money.
+Nothing on the site is paid today, and the creators page says so plainly. Pricing a room nobody is
+in yet costs more in adoption than it earns. When there is an audience worth serving:
+
+1. **Creator/newsroom tooling — highest margin, best fit.** The record stays free and open
+   forever; what professionals would pay for is tooling around it — bulk exports, private working
+   boards, an API, same-day case onboarding. Podcast and YouTube operations already pay
+   researchers; this is cheaper and never sleeps. Not exposed to ad-policy risk at all.
+2. **Sponsorship of the wire, not the record.** One clearly-labelled sponsor slot on the ticker and
+   case hubs. Never inside a board card, never on a victim's page. Legal-adjacent advertisers
+   (CLE providers, legal software, court reporting) pay well and are on-topic.
+3. **Affiliate, narrowly.** Books and documentaries about the cases we cover, plus the streaming
+   services that carry gavel-to-gavel coverage — those links already exist on every case hub and
+   the renderer labels any of them as affiliate the moment they become one.
 
 ### Sequence
 
 - **Now → verdict:** no ads. Build the record, prove accuracy, get the Clancy verdict right.
   Turning on ads before the site has a reputation trades a large future asset for pocket change.
-- **At ~10k pageviews/mo:** Ezoic or Media.net, ads confined to hub/record pages. Simultaneously
-  open the creator program — that revenue arrives faster than ad revenue and is worth more.
+- **At ~10k pageviews/mo:** Ezoic or Media.net, ads confined to hub/record pages. Keep every
+  creator feature free — adoption is worth more than early revenue, and creators are the
+  distribution channel, not the customer.
 - **At 50k sessions/mo:** apply to Mediavine. Introduce the sponsor slot.
-- **At 100k pageviews/mo:** Raptive. By this point licensing should be the larger line, not ads.
+- **At 100k pageviews/mo:** Raptive. Only here does paid tooling for professionals make sense, and
+  only as an addition — the record itself never goes behind anything.
 
 ### The number that actually matters
 

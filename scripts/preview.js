@@ -44,7 +44,7 @@ css += `
 body{background:var(--bg)}
 `;
 
-let body = `<div class="pv-note">Preview build — this is exactly what ships to gavelboard.com. Links navigate within this page.</div>\n`;
+let body = `<div class="pv-note">Preview build — this is exactly what ships to ourgavel.com. Links navigate within this page.</div>\n`;
 const mastMatch = first.match(/<header class="mast">[\s\S]*?<\/header>/)[0];
 let mast = mastMatch;
 for (const [re, sub] of LINKMAP) mast = mast.replace(re, sub);
@@ -60,6 +60,6 @@ for (const [id, rel, label] of SECTIONS) {
 const footMatch = first.match(/<footer>[\s\S]*?<\/footer>/)[0];
 body += footMatch;
 
-const out = `<title>GavelBoard</title>\n<style>${css}</style>\n${body}`;
+const out = `<title>OurGavel</title>\n<style>${css}</style>\n${body}`;
 fs.writeFileSync(path.join(ROOT, 'preview.html'), out);
 console.log('preview.html', (out.length / 1024).toFixed(0) + 'KB');

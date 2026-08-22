@@ -1,6 +1,6 @@
-# GavelBoard
+# OurGavel
 
-**gavelboard.com — The record. The rumors. The line between.**
+**ourgavel.com — The record. The rumors. The line between.**
 
 A structured, continuously re-verified record of high-attention court cases: day-by-day testimony,
 witness indexes, plain-English legal standards, a live attributed wire, and a community evidence
@@ -21,7 +21,7 @@ board where theories are labeled, tested, and — when the facts land — public
 
 Post a theory, propose a connection, or submit evidence via the issue forms:
 [New submission](../../issues/new/choose). Everything is reviewed before it appears — usually
-within the hour. House rules are on the [Contribute page](https://gavelboard.com/submit/) and in
+within the hour. House rules are on the [Contribute page](https://ourgavel.com/submit/) and in
 EDITORIAL.md.
 
 ## Corrections

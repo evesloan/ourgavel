@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-/* GavelBoard 15-minute pulse. Runs in GitHub Actions (unrestricted egress).
+/* OurGavel 15-minute pulse. Runs in GitHub Actions (unrestricted egress).
    1. Polls each case's RSS feeds; new keyword-matching items -> ticker (attributed, linked).
    2. Flags verdict-keyword items; if >=2 distinct outlets flag within the fresh window, opens a
       'verdict-watch' issue to alert the operators. NEVER writes a verdict as fact - that is
@@ -13,7 +13,7 @@ const path = require('path');
 
 const ROOT = path.join(__dirname, '..');
 const DATA = path.join(ROOT, 'data');
-const REPO = process.env.GB_REPO || 'evesloan/gavelboard';
+const REPO = process.env.GB_REPO || 'evesloan/ourgavel';
 const TOKEN = process.env.GITHUB_TOKEN || '';
 const NOW = new Date().toISOString();
 
@@ -25,7 +25,7 @@ async function get(url, opts = {}) {
   const ctrl = new AbortController();
   const t = setTimeout(() => ctrl.abort(), 20000);
   try {
-    const r = await fetch(url, { signal: ctrl.signal, headers: { 'user-agent': 'GavelBoardBot/1.0 (+https://gavelboard.com)', ...(opts.headers || {}) } });
+    const r = await fetch(url, { signal: ctrl.signal, headers: { 'user-agent': 'OurGavelBot/1.0 (+https://ourgavel.com)', ...(opts.headers || {}) } });
     if (!r.ok) throw new Error('HTTP ' + r.status);
     return await r.text();
   } finally { clearTimeout(t); }
@@ -33,7 +33,7 @@ async function get(url, opts = {}) {
 async function gh(pathname, opts = {}) {
   const r = await fetch('https://api.github.com' + pathname, {
     method: opts.method || 'GET',
-    headers: { 'authorization': 'Bearer ' + TOKEN, 'accept': 'application/vnd.github+json', 'user-agent': 'GavelBoardBot/1.0', ...(opts.body ? { 'content-type': 'application/json' } : {}) },
+    headers: { 'authorization': 'Bearer ' + TOKEN, 'accept': 'application/vnd.github+json', 'user-agent': 'OurGavelBot/1.0', ...(opts.body ? { 'content-type': 'application/json' } : {}) },
     body: opts.body ? JSON.stringify(opts.body) : undefined,
   });
   if (!r.ok) throw new Error('GitHub ' + pathname + ' HTTP ' + r.status + ': ' + (await r.text()).slice(0, 200));
@@ -282,7 +282,7 @@ async function ingestTheories() {
       });
       write(cPath, C);
       await gh(`/repos/${REPO}/issues/${iss.number}/labels`, { method: 'POST', body: { labels: ['published'] } });
-      await gh(`/repos/${REPO}/issues/${iss.number}/comments`, { method: 'POST', body: { body: `Live on the Board: https://gavelboard.com/cases/${slug}/board/ — 👍 reactions on this issue count as corroboration, 👎 as dispute; this thread is the theory's discussion page. Sources are what move it from amber; if you have one, submit evidence.` } });
+      await gh(`/repos/${REPO}/issues/${iss.number}/comments`, { method: 'POST', body: { body: `Live on the Board: https://ourgavel.com/cases/${slug}/board/ — 👍 reactions on this issue count as corroboration, 👎 as dispute; this thread is the theory's discussion page. Sources are what move it from amber; if you have one, submit evidence.` } });
       console.log('published theory #' + iss.number, 'to', slug);
     } catch (e) { console.error('ingest fail #' + iss.number, e.message); }
   }

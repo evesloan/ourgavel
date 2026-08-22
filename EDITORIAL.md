@@ -1,4 +1,4 @@
-# EDITORIAL.md — the rules GavelBoard publishes under
+# EDITORIAL.md — the rules OurGavel publishes under
 
 These rules exist because this site covers real people in the worst moments of their lives, under
 the operator's real name. They are not aspirations; they are constraints. The review session may

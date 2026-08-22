@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-/* GavelBoard static site generator. No dependencies. Node 18+.
+/* OurGavel static site generator. No dependencies. Node 18+.
    Multi-case: every directory under data/cases/<slug>/ with a case.json becomes a full
    case section (hub, timeline, witnesses, standard, board). Adding a case = adding data. */
 const fs = require('fs');
@@ -9,8 +9,8 @@ const ROOT = path.join(__dirname, '..');
 const OUT = path.join(ROOT, 'public');
 const DATA = path.join(ROOT, 'data');
 const BUILT_AT = new Date().toISOString();
-const REPO = process.env.GB_REPO || 'evesloan/gavelboard';
-const SITE_NAME = 'GavelBoard';
+const REPO = process.env.GB_REPO || 'evesloan/ourgavel';
+const SITE_NAME = 'OurGavel';
 const TAGLINE = 'The record. The rumors. The line between.';
 
 const esc = s => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
@@ -121,13 +121,27 @@ footer .hb{color:var(--green)}
 details.howto{background:var(--panel2);border:1px solid var(--line);border-radius:8px;padding:10px 16px;font-size:14px;margin:12px 0}
 details.howto summary{cursor:pointer;font-weight:700;color:var(--acc)}
 details.howto p{margin:8px 0}
+details.fold{border-top:1px solid var(--line);padding:10px 0 4px;font-size:14.5px}
+details.fold summary{cursor:pointer;font-family:var(--serif);font-weight:700;font-size:17px;padding:4px 0;list-style-position:outside}
+details.fold summary:hover{color:var(--acc)}
+nav.casenav{display:flex;gap:8px;margin:14px 0 6px;flex-wrap:wrap}
+nav.casenav a{font-size:13.5px;font-weight:600;padding:7px 16px;border-radius:20px;border:1px solid var(--line);color:var(--mut)}
+nav.casenav a.on{background:var(--acc);color:#14161a;border-color:var(--acc)}
+nav.casenav a:hover{text-decoration:none;border-color:var(--acc);color:var(--ink)}
+nav.casenav a.on:hover{color:#14161a}
+.factline{font-size:13.5px;color:var(--mut);line-height:1.9}
+.factline b{color:var(--ink);font-weight:600}
+.btn.sm{padding:6px 12px;font-size:13px}
+.howstrip{display:flex;gap:10px;flex-wrap:wrap;align-items:center;color:var(--mut);font-size:13.5px;margin:16px 0 6px}
+.howstrip b{color:var(--ink)}
+.howstrip .sep{color:var(--acc)}
+.wit-details summary{cursor:pointer;font-size:13px;color:var(--acc2);padding:4px 0}
 @media(max-width:760px){#detail{left:8px;right:8px;top:auto;bottom:8px;width:auto;max-height:46%}}
 `;
 
+let NAV_ITEMS = [['/', 'Home'], ['/cases/', 'Cases'], ['/about/', 'About']];
 function page({ title, desc, crumbs, body, active }) {
-  const nav = [
-    ['/', 'Home'], ['/cases/', 'Cases'], ['/submit/', 'Share'], ['/about/', 'About']
-  ].map(([href, label]) => `<a href="${href}" class="${active === href ? 'on' : ''}">${label}</a>`).join('');
+  const nav = NAV_ITEMS.map(([href, label]) => `<a href="${href}" class="${active === href ? 'on' : ''}">${label}</a>`).join('');
   return `<!doctype html>
 <html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
@@ -136,7 +150,7 @@ function page({ title, desc, crumbs, body, active }) {
 <style>${CSS}</style>
 </head><body>
 <header class="mast"><div class="wrap">
-  <div class="logo"><a href="/"><span class="gb">Gavel</span>Board</a></div>
+  <div class="logo"><a href="/">Our<span class="gb">Gavel</span></a></div>
   <div class="tag">${TAGLINE}</div>
   <nav class="sitenav">${nav}</nav>
 </div></header>
@@ -145,8 +159,7 @@ ${crumbs ? `<nav class="crumbs">${crumbs}</nav>` : ''}
 ${body}
 </div></main>
 <footer><div class="wrap">
-  <p><b>${SITE_NAME}</b> keeps a source-linked record of high-attention court cases, re-checked automatically around the clock. <span class="hb">◉ Last build: ${esc(BUILT_AT)}</span></p>
-  <p class="disc">GavelBoard reports on allegations and court proceedings; every defendant is presumed innocent unless and until proven guilty. Community items marked UNVERIFIED are submitted theories, not established facts, and are labeled as such. This site summarizes and links to coverage by credentialed news organizations and to primary legal sources; quoted material belongs to the cited outlets. Corrections: open an issue at <a href="https://github.com/${REPO}/issues">github.com/${REPO}</a>. Some outbound links may become affiliate links; if that happens they will be labeled. Nothing here is legal advice.</p>
+  <p class="disc" style="border:none;margin:0;padding:0">Every defendant is presumed innocent unless and until proven guilty. Community theories are labeled, not facts. Quoted material belongs to the cited outlets; nothing here is legal advice. <a href="/about/">Full policies & corrections</a> · <span class="hb">◉ ${esc(BUILT_AT.slice(0, 16).replace('T', ' '))} UTC</span></p>
 </div></footer>
 </body></html>`;
 }
@@ -167,6 +180,17 @@ const CASES = caseSlugs.map(slug => {
   };
 });
 const ACTIVE = CASES.filter(c => c.case.status !== 'archived');
+// Simple menus: with one active case, the nav goes straight to it.
+if (ACTIVE.length === 1) {
+  NAV_ITEMS = [['/', 'Home'], [`/cases/${ACTIVE[0].slug}/`, 'The Trial'], [`/cases/${ACTIVE[0].slug}/board/`, 'The Board'], ['/about/', 'About']];
+} else if (ACTIVE.length > 1) {
+  NAV_ITEMS = [['/', 'Home'], ['/cases/', 'Cases'], ['/about/', 'About']];
+}
+const caseNav = (c, on) => `<nav class="casenav">
+<a href="/cases/${c.slug}/" class="${on === 'overview' ? 'on' : ''}">Overview</a>
+<a href="/cases/${c.slug}/timeline/" class="${on === 'record' ? 'on' : ''}">The Record</a>
+<a href="/cases/${c.slug}/board/" class="${on === 'board' ? 'on' : ''}">The Board</a>
+</nav>`;
 
 // ---------- shared bits ----------
 function tickerHtml(items, n = 8, withCase = false) {
@@ -193,27 +217,22 @@ function caseCard(c, featured = false) {
 const allItems = ACTIVE.flatMap(c => (c.ticker.items || []).map(i => ({ ...i, _case: c.case.shortTitle }))).sort((a, b) => b.ts.localeCompare(a.ts));
 const home = page({
   title: "The facts of the trial, in everyone's hands",
-  desc: 'GavelBoard follows the court cases everyone is watching and keeps the facts straight — every line linked to its source — with a community board for sharing and testing theories together.',
+  desc: 'OurGavel follows the court cases everyone is watching and keeps the facts straight — every line linked to its source — with a community board for sharing and testing theories together.',
   active: '/',
   body: `
 <h1>The facts of the trial,<br>in everyone's hands.</h1>
-<p class="sub" style="font-size:17px;max-width:640px">GavelBoard follows the big court cases and keeps the record straight — what happened, who said what, what the evidence shows — with every line linked to its source. Then it's your turn: share what you think, back up what you know, and test theories with everyone else watching.</p>
-<div class="steps">
-  <div class="step"><span class="n">1</span><h3>Get the facts</h3><p>The whole trial, day by day — every witness, every ruling, every fact linked to where it came from. Catch up in minutes, not forty screens of liveblog.</p></div>
-  <div class="step"><span class="n">2</span><h3>See the evidence</h3><p>The Board lays out what the jury must decide and the evidence pulling each way. Click anything to see its sources.</p></div>
-  <div class="step"><span class="n">3</span><h3>Build the case file</h3><p>Post a theory, connect the dots, discuss every card. The community builds the board together — and the best boards teach a case faster than any article.</p></div>
-</div>
+<p class="sub" style="font-size:16.5px;max-width:620px">The big cases, kept straight — every fact linked to its source — and a Board where you test theories with everyone else watching.</p>
 ${ACTIVE.slice(0, 3).map(c => caseCard(c, true)).join('\n')}
 ${CASES.length > 3 ? `<p><a href="/cases/">All cases →</a></p>` : ''}
+<div class="howstrip"><span><b>How it works:</b></span><span>catch up on the record</span><span class="sep">→</span><span>open the Board</span><span class="sep">→</span><span>put two and two together</span></div>
 <h2>Latest updates</h2>
-<p class="sub">From the newsrooms covering each trial, linked to the original reporting. Refreshed every 15 minutes.</p>
-${tickerHtml(allItems, 6, ACTIVE.length > 1)}
+${tickerHtml(allItems, 5, ACTIVE.length > 1)}
 `});
 
 // ---------- cases index ----------
 const casesIndex = page({
   title: 'Cases',
-  desc: 'Every case GavelBoard is following — active trials first.',
+  desc: 'Every case OurGavel is following — active trials first.',
   active: '/cases/',
   crumbs: `<a href="/">Home</a> › Cases`,
   body: `
@@ -228,58 +247,54 @@ function hubPage(c) {
   return page({
     title: cc.shortTitle,
     desc: `Follow ${cc.title}: what's happening now, the day-by-day record, the evidence board, and how the case can end.`,
-    active: '/cases/',
-    crumbs: `<a href="/">Home</a> › <a href="/cases/">Cases</a> › ${esc(cc.shortTitle)}`,
+    active: `/cases/${c.slug}/`,
+    crumbs: `<a href="/">Home</a> › ${esc(cc.shortTitle)}`,
     body: `
 <span class="badge live">Now in court</span> <span class="badge phase">${esc(cc.phase)}</span>
-<h1>${esc(cc.title)}</h1>
-<p class="sub">${esc(cc.court)} · ${esc(cc.judge)}</p>
-<div class="card"><h3>Right now</h3>
+<h1>${esc(cc.shortTitle)}</h1>
+${caseNav(c, 'overview')}
+<div class="card" style="margin-top:16px">
 <p>${esc(cc.statusNow || cc.phase)} ${srcLinks(cc.statusNowSources)}</p>
-${cc.livestream ? `<p style="margin-top:8px"><b>Watch live:</b> ${cc.livestream.sources.map(s => `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.outlet)}</a>`).join(' · ')}</p>` : ''}</div>
-<p style="margin-top:14px">
-  <a class="btn" href="${caseUrl(c, 'timeline/')}">The record, day by day</a>
-  <a class="btn" href="${caseUrl(c, 'board/')}">Open the Board</a>
-</p>
-<p class="sub" style="margin-top:8px">Also: <a href="${caseUrl(c, 'witnesses/')}">every witness, indexed</a> · <a href="${caseUrl(c, 'standard/')}">the law, in plain English</a></p>
-<div class="card"><h3>The basics</h3>
-<p><b>Defendant:</b> ${esc(cc.defendant)}<br>
-<b>Charges:</b> ${esc(cc.charges)}<br>
-<b>Plea & defense:</b> ${esc(cc.plea)}<br>
-<b>Victims:</b> ${esc(cc.victims)}<br>
-<b>Prosecution:</b> ${esc(cc.prosecution.join(', '))}<br>
-<b>Defense:</b> ${esc(cc.defense.join(', '))}</p></div>
-<h2>How this can end</h2>
-<div class="grid2">
+${cc.livestream ? `<p style="margin-top:8px"><b>Watch live:</b> ${cc.livestream.sources.map(s => `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.outlet)}</a>`).join(' · ')}</p>` : ''}
+<p class="factline" style="margin-top:10px"><b>${esc(cc.defendant)}</b> · ${esc(cc.charges)}<br>${esc(cc.plea)}<br>${esc(cc.court)} · ${esc(cc.judge)} · Prosecution: ${esc(cc.prosecution.join(', '))} · Defense: ${esc(cc.defense.join(', '))}</p>
+</div>
+<details class="fold"><summary>How this can end</summary>
+<div class="grid2" style="margin-top:10px">
 ${cc.verdictOptions.map(v => `<div class="vopt"><b>${esc(v.option)}</b><br><span style="font-size:14px">${esc(v.consequence)}</span><br>${srcLinks(v.sources)}</div>`).join('\n')}
 </div>
+<p class="sub" style="margin-top:10px"><a href="${caseUrl(c, 'standard/')}">The law behind the verdict, in plain English →</a></p>
+</details>
 <h2>Latest updates</h2>
-${tickerHtml(c.ticker.items, 8)}
+${tickerHtml(c.ticker.items, 5)}
 `});
 }
 
 function dayBlock(c, d) {
-  const wits = (d.witnesses || []).map(w => `<li><span class="wn">${esc(w.name)}</span> <span class="wr">— ${esc(w.role)}</span><br>${esc(w.gist)}</li>`).join('');
+  const ws = d.witnesses || [];
+  const wits = ws.map(w => `<li><span class="wn">${esc(w.name)}</span> <span class="wr">— ${esc(w.role)}</span><br>${esc(w.gist)}</li>`).join('');
   return `<div class="day" id="day-${d.day}">
   <div class="dh"><span class="dn">Day ${d.day}</span><span class="dd">${fmtDate(d.date)}</span><span class="badge phase">${esc(d.phase)}</span></div>
   <h3 style="margin:6px 0 4px">${esc(d.headline)}</h3>
   <p style="font-size:14.5px">${esc(d.summary)} ${srcLinks(d.sources)}</p>
-  ${wits ? `<ul class="wit">${wits}</ul>` : ''}
+  ${wits ? `<details class="wit-details"><summary>Who testified — ${ws.length} witness${ws.length === 1 ? '' : 'es'}</summary><ul class="wit">${wits}</ul></details>` : ''}
 </div>`;
 }
 function timelinePage(c) {
   return page({
-    title: 'Day-by-day — ' + c.case.shortTitle,
+    title: 'The Record — ' + c.case.shortTitle,
     desc: `Every trial day of ${c.case.title}: witnesses, testimony, rulings — each entry cited to its source.`,
     active: '/cases/',
-    crumbs: `<a href="/">Home</a> › <a href="${caseUrl(c)}">${esc(c.case.shortTitle)}</a> › Day-by-day`,
+    crumbs: `<a href="/">Home</a> › <a href="${caseUrl(c)}">${esc(c.case.shortTitle)}</a> › The Record`,
     body: `
-<h1>Day-by-day record</h1>
-<p class="sub">${esc(c.days.note || '')}</p>
-${c.days.pretrial.length ? `<h2>Before trial</h2>
-${c.days.pretrial.map(p => `<div class="day"><div class="dh"><span class="dd">${fmtDate(p.date)}</span></div><p style="font-size:14.5px">${esc(p.event)} ${srcLinks(p.sources)}</p></div>`).join('\n')}` : ''}
-<h2>The trial</h2>
-${c.days.days.map(d => dayBlock(c, d)).join('\n')}
+<h1>The Record</h1>
+${caseNav(c, 'record')}
+${c.case.storySoFar ? `<div class="card" style="margin-top:16px"><h3 style="margin-top:0">The story so far</h3><p style="font-size:14.5px">${esc(c.case.storySoFar)} ${srcLinks(c.case.storySoFarSources)}</p></div>` : ''}
+<p class="sub" style="margin:10px 0"><a href="${caseUrl(c, 'witnesses/')}">Looking for a specific witness? The full index →</a></p>
+${c.days.pretrial.length ? `<details class="fold"><summary>Before trial (${c.days.pretrial.length} entries)</summary>
+${c.days.pretrial.map(p => `<div class="day" style="margin-top:10px"><div class="dh"><span class="dd">${fmtDate(p.date)}</span></div><p style="font-size:14.5px">${esc(p.event)} ${srcLinks(p.sources)}</p></div>`).join('\n')}</details>` : ''}
+<h2>The trial, day by day</h2>
+<p class="sub" style="font-size:13px">${esc(c.days.note || '')}</p>
+${[...c.days.days].reverse().map(d => dayBlock(c, d)).join('\n')}
 `});
 }
 
@@ -294,7 +309,8 @@ function witnessesPage(c) {
     crumbs: `<a href="/">Home</a> › <a href="${caseUrl(c)}">${esc(c.case.shortTitle)}</a> › Witnesses`,
     body: `
 <h1>Witness index</h1>
-<p class="sub">${allWits.length} witnesses indexed from the day-by-day record. Click a day for full context.</p>
+${caseNav(c, 'record')}
+<p class="sub" style="margin-top:12px">${allWits.length} witnesses indexed from the day-by-day record. Click a day for full context.</p>
 <div class="card" style="overflow-x:auto"><table class="witx">
 <tr><th>Witness</th><th>Role</th><th>Day</th><th>Testimony, in one line</th></tr>
 ${allWits.map(w => `<tr><td><b>${esc(w.name)}</b></td><td>${esc(w.role)}</td><td><a href="${caseUrl(c, 'timeline/')}#day-${w.day}">Day ${w.day}</a></td><td>${esc(w.gist)}</td></tr>`).join('\n')}
@@ -312,7 +328,8 @@ function standardPage(c) {
     crumbs: `<a href="/">Home</a> › <a href="${caseUrl(c)}">${esc(c.case.shortTitle)}</a> › The law`,
     body: `
 <h1>${esc(std.name)}</h1>
-<p class="sub">Plain-English explainer, drawn only from the case law, the statute, and the model jury instruction. Not legal advice.</p>
+${caseNav(c, 'overview')}
+<p class="sub" style="margin-top:12px">Plain-English explainer, drawn only from the case law, the statute, and the model jury instruction. Not legal advice.</p>
 <div class="card"><h3>The test</h3><p>${esc(std.test)}</p></div>
 <div class="card"><h3>Who has to prove what</h3><p>${esc(std.burden)} Under <i>Commonwealth v. Lawson</i> (2016), the mere fact that most people are sane is not, by itself, enough to carry that burden once mental-illness evidence is in the case — the Commonwealth may rely on the circumstances of the offense and the defendant's words and conduct before, during, and after.</p></div>
 <dl class="qa card">
@@ -333,6 +350,7 @@ function boardPage(c) {
   const edges = [...c.board.edges, ...(c.community.edges || [])];
   const threads = (c.threads && c.threads.threads) || {};
   const byId = Object.fromEntries(nodes.map(n => [n.id, n]));
+  const communityNodes = nodes.filter(n => n.type === 'rumor');
   const NW = 210, NH = 78;
   const xs = nodes.map(n => n.x), ys = nodes.map(n => n.y);
   const minX = Math.min(...xs) - 60, minY = Math.min(...ys) - 60;
@@ -370,7 +388,15 @@ ${commentChip}
 <marker id="ah-mix" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="var(--amber)"/></marker>
 <marker id="ah-ctx" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="var(--mut)"/></marker>
 </defs>`;
-  const svg = `<svg id="boardsvg" viewBox="${minX} ${minY} ${w} ${h}" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%">${defs}<g id="viewport">${edgeEls}\n${nodeEls}</g></svg>`;
+  // The reader zone: labeled, and never empty — an invitation card sits there until theories arrive.
+  const zoneX = 1160;
+  const zoneLabel = `<text x="${zoneX}" y="46" font-size="13" fill="var(--amber)" font-weight="700" letter-spacing="3" opacity="0.85">READER THEORIES</text><text x="${zoneX}" y="64" font-size="11" fill="var(--mut)">yours goes up here</text>`;
+  const ctaCard = communityNodes.length ? '' : `<a href="https://github.com/${REPO}/issues/new?template=theory.yml&case=${c.slug}"><g class="ctanode" style="cursor:pointer">
+<rect x="${zoneX}" y="80" width="${NW}" height="${NH}" rx="6" fill="none" stroke="var(--amber)" stroke-width="2" stroke-dasharray="7 5"></rect>
+<text x="${zoneX + NW / 2}" y="112" font-size="13" fill="var(--amber)" font-weight="700" text-anchor="middle">+ Your theory goes here</text>
+<text x="${zoneX + NW / 2}" y="130" font-size="11" fill="var(--mut)" text-anchor="middle">be the first — tap to post</text>
+</g></a>`;
+  const svg = `<svg id="boardsvg" viewBox="${minX} ${minY} ${w + (communityNodes.length ? 0 : 320)} ${h}" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%">${defs}<g id="viewport">${zoneLabel}${ctaCard}${edgeEls}\n${nodeEls}</g></svg>`;
 
   const verb = { supports: ['sup', 'supports'], contradicts: ['con', 'disputes'], disproves: ['con', 'disproves'], contested: ['mix', 'is contested on'], explains: ['ctx', 'gives context to'] };
   const connsFor = id => {
@@ -389,11 +415,11 @@ ${commentChip}
     }).join('<br>')}</div>`;
   };
 
-  const badgeFor = n => n.type === 'question' ? ['open', 'before the jury'] : n.status === 'disproven' ? ['disproven', 'disproven'] : n.type === 'rumor' ? ['unverified', 'community theory'] : n.type === 'resolved' ? ['verified', 'resolved'] : ['verified', 'from the record'];
+  const badgeFor = n => n.type === 'question' ? ['open', 'before the jury'] : n.status === 'disproven' ? ['disproven', 'disproven'] : n.type === 'rumor' ? ['unverified', 'reader theory'] : n.type === 'resolved' ? ['verified', 'settled'] : ['verified', 'from the record'];
   const listGroups = [
+    ['Reader theories', communityNodes],
     ['The questions', nodes.filter(n => n.type === 'question')],
     ['The evidence and testimony', nodes.filter(n => ['fact', 'testimony', 'exhibit', 'resolved'].includes(n.type))],
-    ['Community theories', nodes.filter(n => n.type === 'rumor')],
   ];
   const listHtml = listGroups.filter(([, ns]) => ns.length).map(([title, ns]) => `<h3>${title}</h3>` + ns.map(n => {
     const [bcls, blabel] = badgeFor(n);
@@ -417,21 +443,27 @@ ${commentChip}
     crumbs: `<a href="/">Home</a> › <a href="${caseUrl(c)}">${esc(c.case.shortTitle)}</a> › The Board`,
     body: `
 <h1>The Board</h1>
-<p class="sub" style="max-width:680px">The case file, laid out: what the jury must decide, the evidence pulling on each question, and the community's theories — clearly labeled. Click any card for sources and discussion. Arrange it your way; your layout is remembered on this device.</p>
+${caseNav(c, 'board')}
+<p class="sub" style="max-width:680px;margin-top:12px">The case file, laid out: the questions, the evidence pulling on each, and the community's theories — labeled. Click a card for sources and discussion; drag to arrange.</p>
 <details class="howto"><summary>How to work the Board</summary>
-<p><b>Read it:</b> purple cards are the open questions the jury must decide. Blue cards are from the record — testimony, exhibits, rulings, each linked to its source. Amber cards are community theories, labeled unverified until real sourcing lands. Strings show the pull: <span style="color:var(--green)">green supports</span>, <span style="color:var(--red)">red disputes</span>, <span style="color:var(--amber)">amber is contested</span>. Disproven theories stay up, greyed — you can see what was tested and settled.</p>
+<p><b>Read it:</b> purple cards are the open questions the jury must decide. Blue cards are from the record — testimony, exhibits, rulings, each linked to its source. Amber cards are reader theories — this is your zone. Post one, and it goes up labeled until real sourcing settles it. Strings show the pull: <span style="color:var(--green)">green supports</span>, <span style="color:var(--red)">red disputes</span>, <span style="color:var(--amber)">amber is contested</span>. Disproven theories stay up, greyed — you can see what was tested and settled.</p>
 <p><b>Build it:</b> drag cards to arrange your own reading of the case. Open a card and hit <b>Connect</b>, then click the card it relates to — your proposed string joins the Board once it clears the pulse. <b>Discuss</b> opens the card's thread. 👍 on a theory's thread corroborates it; 👎 disputes; sources settle.</p>
 <p><b>Share it:</b> every board is public — send the link. The best-argued boards are how new readers learn a case fast. <a href="/submit/">Add your theory →</a></p>
 </details>
 <div class="vtoggle"><button id="vt-map" class="on">Map</button><button id="vt-list">List</button></div>
-<div class="legend"><span class="lg-q">Open question</span><span class="lg-f">From the record</span><span class="lg-c">Community theory</span><span style="margin-left:auto"><span style="color:var(--green)">— supports</span> · <span style="color:var(--red)">— disputes</span> · <span style="color:var(--amber)">– – contested</span></span></div>
+<div class="legend"><span class="lg-q">Open question</span><span class="lg-f">From the record</span><span class="lg-c">Reader theories</span><span style="margin-left:auto"><span style="color:var(--green)">— supports</span> · <span style="color:var(--red)">— disputes</span> · <span style="color:var(--amber)">– – contested</span></span></div>
 <div id="boardwrap">${svg}
 <div class="bctrl"><button id="bz-in" title="Zoom in">+</button><button id="bz-out" title="Zoom out">−</button><button id="bz-fit" title="Reset view">⤢</button></div>
 <div id="btoast"></div>
 <div id="detail"><span class="x" onclick="document.getElementById('detail').style.display='none'">×</span><div id="detail-in"></div></div>
 </div>
 <div id="boardlist">${listHtml}</div>
-<p style="margin-top:12px"><a class="btn" href="/submit/">Add your theory</a> <span style="color:var(--mut);font-size:13px">Drag cards to arrange · drag the felt to pan · scroll or buttons to zoom</span></p>
+<p style="margin-top:12px">
+  <a class="btn sm" href="https://github.com/${REPO}/issues/new?template=theory.yml&case=${c.slug}">🧵 Post a theory</a>
+  <a class="btn sm ghost" href="https://github.com/${REPO}/issues/new?template=evidence.yml&case=${c.slug}">📎 Submit evidence</a>
+  <a class="btn sm ghost" href="https://github.com/${REPO}/issues/new?template=report.yml">🚩 Report</a>
+  <span style="color:var(--mut);font-size:12.5px">· 3 posts/day · posts about people get editor review first · <a href="/submit/">details</a></span>
+</p>
 <script>
 (function(){
 var DATA=${detailData};
@@ -546,40 +578,37 @@ const submit = page({
   crumbs: `<a href="/">Home</a> › Share`,
   body: `
 <h1>Share what you think — or what you know.</h1>
-<p class="sub" style="max-width:640px">The Board runs on two things: the record, and you. Post your read on the case, corroborate someone else's, or knock a theory down with a fact.</p>
-<div class="grid2">
-<div class="card"><h3>🧵 Post a theory</h3><p>Your read on the case — what the evidence means, what a side is really doing, where this is heading. It joins the Board as a labeled theory for others to weigh in on.</p><p style="margin-top:10px"><a class="btn" href="https://github.com/${REPO}/issues/new?template=theory.yml">Post a theory</a></p></div>
-<div class="card"><h3>📎 Back it up — or knock it down</h3><p>Found reporting or a court document that proves or disproves something on the Board? This is the move that settles arguments. Facts are the only thing that promote a theory — or retire one.</p><p style="margin-top:10px"><a class="btn" href="https://github.com/${REPO}/issues/new?template=evidence.yml">Submit evidence</a></p></div>
-<div class="card"><h3>🔗 Connect the dots</h3><p>Think two things on the Board are linked — this testimony undercuts that question, this ruling explains that move? Propose the connection and say why.</p><p style="margin-top:10px"><a class="btn" href="https://github.com/${REPO}/issues/new?template=connection.yml">Propose a connection</a></p></div>
-<div class="card"><h3>🚩 Report a problem</h3><p>Something that names a private person, shares personal info, fakes a source, or harasses anyone. Reports jump the queue.</p><p style="margin-top:10px"><a class="btn ghost" href="https://github.com/${REPO}/issues/new?template=report.yml">Report content</a></p></div>
+<div class="grid2" style="margin-top:16px">
+<div class="card"><h3 style="margin-top:0">🧵 Post a theory</h3><p style="font-size:14px">Your read on the case. Joins the Board, labeled, for others to weigh in on.</p><p style="margin-top:10px"><a class="btn sm" href="https://github.com/${REPO}/issues/new?template=theory.yml">Post a theory</a></p></div>
+<div class="card"><h3 style="margin-top:0">📎 Submit evidence</h3><p style="font-size:14px">Reporting or a court document that proves — or disproves — something on the Board. This is what settles arguments.</p><p style="margin-top:10px"><a class="btn sm" href="https://github.com/${REPO}/issues/new?template=evidence.yml">Submit evidence</a></p></div>
+<div class="card"><h3 style="margin-top:0">🔗 Propose a connection</h3><p style="font-size:14px">Two cards are linked — supports, disputes, explains? Say why. (Or use the Connect button on any card.)</p><p style="margin-top:10px"><a class="btn sm" href="https://github.com/${REPO}/issues/new?template=connection.yml">Connect two cards</a></p></div>
+<div class="card"><h3 style="margin-top:0">🚩 Report a problem</h3><p style="font-size:14px">Names a private person, personal info, fake sourcing, harassment. Reports jump the queue.</p><p style="margin-top:10px"><a class="btn sm ghost" href="https://github.com/${REPO}/issues/new?template=report.yml">Report content</a></p></div>
 </div>
-<div class="notice"><b>How posting works:</b> theories about the case itself go live within about 15 minutes after an automated check. Anything that discusses a specific person is looked at by an editor first — usually within the hour. Three posts per day per account; posting uses a free GitHub account (reading never requires one). We don't publish accusations against people who haven't been charged, or anyone's personal information — <a href="/about/">here's why</a>.</div>
+<div class="notice"><b>How it works:</b> theories about the case go live in ~15 minutes after an automated check; posts that discuss a specific person get editor eyes first (usually under an hour). 3 posts/day; posting uses a free GitHub account, reading never needs one. We don't publish accusations against the uncharged or anyone's personal info — <a href="/about/">why</a>.</div>
 `});
 
 // ---------- about ----------
 const about = page({
   title: 'About',
-  desc: 'What GavelBoard is, how verification works, and the rules the site operates under.',
+  desc: 'What OurGavel is, how verification works, and the rules the site operates under.',
   active: '/about/',
   crumbs: `<a href="/">Home</a> › About`,
   body: `
-<h1>About GavelBoard</h1>
-<p class="sub">Arming everyone watching a big trial with the same thing: the facts, sourced.</p>
-<div class="card"><p>Liveblogs are written for the minute they're published. GavelBoard is written for the person who arrives on day 15 and asks: <i>what actually happened here?</i> We keep the running record — day by day, witness by witness, ruling by ruling — with every factual line linked to the credentialed outlet or primary legal source it came from. Around the record, the community explores what it might mean, on a Board where theories are labeled, tested together, and — when a fact lands — settled in public.</p></div>
+<h1>About OurGavel</h1>
+<p class="sub" style="max-width:620px">Liveblogs are written for the minute they're published. OurGavel is for the person who arrives on day 15 and asks: <i>what actually happened here?</i> The record, sourced line by line — and a Board where the community tests what it might mean.</p>
 <h2>The rules this site runs on</h2>
-<div class="card"><p>
-<b>Attribution, always.</b> Facts appear here only with a named source attached. If outlets disagree, we say so and show both.<br>
-<b>The presumption of innocence is not a formality.</b> Nothing on this site asserts a defendant's guilt. We report what is alleged, argued, and decided.<br>
-<b>Rumor and record never mix.</b> Community theories are amber and labeled wherever they appear. Popularity cannot promote them; only sourcing can.<br>
-<b>Verdicts get special handling.</b> A verdict is published as established fact only once multiple independent credentialed outlets report it — before that, you'll see the attributed headlines and a verdict-watch notice.<br>
-<b>Corrections are public.</b> Errors are fixed in place with a note, not silently.<br>
-<b>Dignity.</b> These cases involve real grief. We cover the proceeding — not autopsy detail beyond the legal facts, not the victims' worst day as content.
+<div class="card"><p style="font-size:14.5px">
+<b>Attribution, always.</b> No named source, no sentence. Where outlets disagree, we show both.<br>
+<b>Presumption of innocence.</b> The site never asserts a defendant's guilt — it reports what is alleged, argued, and decided.<br>
+<b>Rumor and record never mix.</b> Theories are labeled everywhere they appear; popularity can't promote them, only sourcing can. Disproven theories stay visible, greyed.<br>
+<b>Verdicts</b> become fact here only once multiple independent outlets report them.<br>
+<b>Corrections are public</b> — fixed in place, with a note.<br>
+<b>Dignity.</b> Real people are grieving in these cases; we cover the proceeding, not the grief.
 </p></div>
-<h2>Why we don't host accusations against the uncharged</h2>
-<div class="card"><p>The hardest question a case like this raises is often about someone who isn't on trial — a spouse, an institution, an investigator. There's a right way and a wrong way to unpack that. The wrong way is a crowd naming a private person as a suspect: it's how an innocent student got named as the Boston Marathon bomber, and how a university professor with no connection to the Idaho murders ended up suing a TikTok sleuth for defamation — real damage, to real people, that no correction ever fully unwinds. So that's the one thing the Board doesn't do.</p>
-<p style="margin-top:8px">The right way is here, and it's powerful: question <b>conduct and institutions</b> freely — the prosecution's charging choices, the defense's strategy, a hospital system's failures, what investigators missed; all of that is on the Board now. And when scrutiny of a person is already part of the public record — a cross-examination, a court filing, published reporting — bring it as <a href="/submit/">evidence</a>, and it enters the record with its source attached. Questions travel here on facts, not on names.</p></div>
+<h2>Hard questions about people who aren't charged</h2>
+<div class="card"><p style="font-size:14.5px">Ask them — the right way. Conduct and institutions are open season: charging decisions, defense strategy, a hospital system's failures, what investigators missed. What the Board won't host is a crowd naming a private person as a suspect: that's how an innocent student became "the Boston bomber" and how an Idaho TikTok sleuth got sued by a professor she'd never met. When scrutiny of a person is already in the public record — a cross-examination, a filing, published reporting — bring it as <a href="/submit/">evidence</a> and it stands with its source attached. Questions travel on facts, not names.</p></div>
 <h2>Who runs this</h2>
-<div class="card"><p>GavelBoard is operated by a small team using automated monitoring (updates refresh every 15 minutes), with editor review of community posts that discuss specific people, and removal power over everything. The site may run advertising and analytics; anything sponsored or affiliate-linked is labeled where it appears, and none of it touches the record. GavelBoard is independent and unaffiliated with any court, party, or outlet. Contact / corrections: <a href="https://github.com/${REPO}/issues">GitHub issues</a>.</p></div>
+<div class="card"><p style="font-size:14.5px">A small team, automated monitoring every 15 minutes, editor review for posts that discuss people, removal power over everything. The site may run advertising and analytics; anything sponsored or affiliate-linked is labeled, and none of it touches the record. Independent of any court, party, or outlet. Corrections: <a href="https://github.com/${REPO}/issues">GitHub issues</a>.</p></div>
 `});
 
 // ---------- write ----------

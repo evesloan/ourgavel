@@ -4,7 +4,7 @@
  * them is real-shaped: the phrasing newsrooms actually use while a jury is still out.
  * If this file does not exit 0, verdict publishing must not ship.
  */
-const { classify, assess } = require('./verdict.js');
+const { classify, assess, copyKey } = require('./verdict.js');
 
 let pass = 0, fail = 0;
 const ok = (cond, label) => { cond ? pass++ : (fail++, console.log('  FAIL  ' + label)); };
@@ -104,6 +104,74 @@ ok(assess(split, now).status === 'conflict', 'contradicting outlets must produce
 console.log('--- Window ---');
 ok(assess(consensus.map(i => ({ ...i, ts: new Date(now - 40 * 3600 * 1000).toISOString() })), now).status === 'none',
    'reports older than the window must not trigger');
+
+console.log('--- Gate 2b: attribution comes from the RESOLVED HOST, not the feed label ---');
+// Every case below is drawn from live ticker data on 2026-08-22. Before this gate existed,
+// the first three of them were thrown away and the fourth would have published a verdict.
+const url = (h, p) => 'https://www.' + h + '/' + (p || 'story');
+const it = (mins, label, headline, u) =>
+  ({ ts: new Date(now - mins * 60000).toISOString(), outlet: label, headline, url: u });
+
+// Discovered through a Bing feed, but these are real newsrooms and must count.
+ok(assess([
+  it(10, 'Bing News — Murdaugh retrial', 'Jury finds Alex Murdaugh guilty at retrial', url('apnews.com', 'a')),
+  it(9, 'Bing News — Murdaugh retrial', 'Murdaugh convicted of murder at retrial', url('postandcourier.com', 'b')),
+  it(8, 'Bing News — Murdaugh retrial', 'Guilty verdict returned against Murdaugh on both counts', url('wistv.com', 'c')),
+], now).status === 'ready', 'real newsrooms behind an aggregator label must count');
+
+// Same three items, but the feed label is all we look at: the old behaviour, now a bug.
+ok(assess([
+  it(10, 'Bing News — Murdaugh retrial', 'Jury finds Alex Murdaugh guilty at retrial'),
+  it(9, 'Bing News — Murdaugh retrial', 'Murdaugh convicted of murder at retrial'),
+  it(8, 'Bing News — Murdaugh retrial', 'Guilty verdict returned against Murdaugh on both counts'),
+], now).status === 'none', 'with no URL an aggregator label is still worth nothing');
+
+// Syndicated reposts. The host is the evidence; the label claims a newsroom and is lying.
+ok(assess([
+  it(10, 'Court TV', 'Jury finds Alex Murdaugh guilty at retrial', url('msn.com', 'x/ar-AA1')),
+  it(9, 'Law & Crime', 'Murdaugh convicted of murder at retrial', url('yahoo.com', 'news/y')),
+  it(8, 'AP', 'Guilty verdict returned against Murdaugh on both counts', url('msn.com', 'z/ar-AA2')),
+], now).status === 'none', 'reposts must not count however respectable the feed label is');
+
+// One newsroom, three of its own domains.
+ok(assess([
+  it(10, 'Boston Globe', 'Lindsay Clancy found not guilty by reason of insanity', url('bostonglobe.com', 'a')),
+  it(9, 'Boston.com', 'Clancy found not guilty by reason of lack of criminal responsibility', url('boston.com', 'b')),
+], now).status === 'watch', 'the Globe and Boston.com are one newsroom');
+
+console.log('--- Gate 2c: one wire story on many mastheads is one story ---');
+const wire = 'Jury finds Alex Murdaugh guilty of murdering his wife and son at retrial';
+ok(assess([
+  it(10, 'WLTX News19', wire, url('wltx.com', 'a')),
+  it(9, '10TV', wire, url('10tv.com', 'b')),
+  it(8, 'KRCR', wire, url('krcrtv.com', 'c')),
+], now).status === 'watch', 'three affiliates running identical copy is one source, not three');
+
+// The masthead affiliates append must not defeat it.
+ok(assess([
+  it(10, 'WLTX News19', wire + ' | WLTX News19', url('wltx.com', 'a')),
+  it(9, '10TV', wire + ' - 10TV', url('10tv.com', 'b')),
+  it(8, 'KRCR', wire + ' \u2014 KRCR News', url('krcrtv.com', 'c')),
+], now).status === 'watch', 'a trailing masthead must not make one story look like three');
+
+// A FOURTH masthead must not slip past a check that already short-circuited on family.
+ok(assess([
+  it(11, 'WLTX News19', wire, url('wltx.com', 'a')),
+  it(10, 'WLTX News19', wire, url('wltx.com', 'a2')),
+  it(9, '10TV', wire, url('10tv.com', 'b')),
+  it(8, 'KRCR', wire, url('krcrtv.com', 'c')),
+], now).status === 'watch', 'a repeated family first must not let later copies through');
+
+// But genuinely separate local reporting from the same owner group must still count.
+ok(assess([
+  it(10, 'WLTX News19', 'Jury finds Alex Murdaugh guilty at retrial', url('wltx.com', 'a')),
+  it(9, '10TV', 'Murdaugh convicted on both murder counts, jury foreman says', url('10tv.com', 'b')),
+  it(8, 'KRCR', 'Murdaugh found guilty on both murder counts', url('krcrtv.com', 'c')),
+], now).status === 'ready', 'different copy from different newsrooms must still reach consensus');
+
+// Short headlines two newsrooms could plausibly reach alone are NOT treated as one copy.
+ok(copyKey('Guilty verdict returned') === '', 'a three-word headline is not a copy fingerprint');
+ok(copyKey(wire) !== '', 'a full sentence is a copy fingerprint');
 
 console.log('\n  ' + pass + ' passed, ' + fail + ' failed');
 if (fail) { console.log('\n  VERDICT PUBLISHING MUST NOT SHIP WITH FAILING TESTS.\n'); process.exit(1); }

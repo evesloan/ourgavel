@@ -17,8 +17,11 @@
  * Anything short of all three escalates to an issue instead of publishing. The engine is
  * tuned to hold when it could publish rather than publish when it should hold.
  *
- * No dependencies. Node 18+.
+ * No dependencies beyond outlets.js. Node 18+.
  */
+
+const { familyFor, familyFromLabel } = require('./outlets.js');
+const { copyKey } = require('./canonical.js');   // one wire story on five mastheads is one story
 
 const MIN_OUTLETS = 3;      // independent newsrooms that must agree
 const WINDOW_HOURS = 12;    // how far back agreeing reports may be drawn from
@@ -86,25 +89,19 @@ const OUTCOME_LABEL = {
   MISTRIAL: 'Mistrial — no unanimous verdict',
 };
 
-// A newsroom publishing three times is one source. Map syndicates and station groups to
-// one family so a single wire story cannot masquerade as consensus.
-function outletFamily(outlet) {
-  const o = String(outlet || '').toLowerCase();
-  const map = [
-    [/court ?tv/, 'courttv'], [/law ?(&|and) ?crime|lawandcrime/, 'lawandcrime'],
-    [/\bap\b|associated press/, 'ap'], [/reuters/, 'reuters'],
-    [/nbc/, 'nbc'], [/cbs/, 'cbs'], [/\babc\b/, 'abc'], [/\bfox\b/, 'fox'],
-    [/cnn/, 'cnn'], [/\bnpr\b/, 'npr'], [/wbur/, 'wbur'], [/wcvb/, 'wcvb'],
-    [/boston ?25|wfxt/, 'boston25'], [/globe/, 'globe'], [/herald/, 'herald'],
-    [/patriot ledger|ledger/, 'ledger'], [/8 ?news ?now|klas/, 'klas'],
-    [/review-?journal|\brj\b/, 'reviewjournal'], [/news ?4 ?jax|wjxt/, 'wjxt'],
-    [/first ?coast/, 'firstcoast'], [/times-?union/, 'timesunion'],
-    [/ktla/, 'ktla'], [/pbs/, 'pbs'], [/people/, 'people'], [/\bupi\b/, 'upi'],
-  ];
-  for (const [re, fam] of map) if (re.test(o)) return fam;
-  // Aggregators are not newsrooms. They republish others and must never count as a source.
-  if (/bing|google news|news ?search|aggregat/.test(o)) return null;
-  return o.replace(/[^a-z0-9]/g, '').slice(0, 16) || null;
+// Independence is decided by WHO PUBLISHED IT, and that comes from the resolved host --
+// never from the feed label, which is operator-typed configuration and can say anything.
+// See scripts/outlets.js for the measurement that forced this change: on live data, items
+// labelled "Bing News" resolved to apnews.com, postandcourier.com, wistv.com and wltx.com
+// (thrown away as aggregator noise) and to msn.com and yahoo.com reposts (which the old
+// label rule only excluded by luck -- a syndicated link arriving through a newsroom-labelled
+// feed would have counted as an independent newsroom, three times over, in the engine that
+// publishes a criminal verdict with nobody watching).
+//
+// Called with a bare label and no URL it behaves exactly as it did before.
+function outletFamily(urlOrLabel, fallbackLabel) {
+  const s = String(urlOrLabel || '');
+  return /^https?:\/\//i.test(s) ? familyFor(s, fallbackLabel) : familyFromLabel(s || fallbackLabel);
 }
 
 /** Classify one piece of text. Returns an outcome tag, or null if it proves nothing. */
@@ -142,16 +139,22 @@ function assess(items, now = Date.now()) {
     if (!ts || ts < cutoff) continue;
     const tag = classify(it.headline);
     if (!tag) continue;
-    const fam = outletFamily(it.outlet);
+    const fam = outletFamily(it.url, it.outlet);
     if (!fam) continue;                       // aggregator, or unattributable
-    if (!byOutcome.has(tag)) byOutcome.set(tag, new Map());
-    const fams = byOutcome.get(tag);
-    if (!fams.has(fam)) fams.set(fam, it);    // first report from that newsroom
+    if (!byOutcome.has(tag)) byOutcome.set(tag, { fams: new Map(), copies: new Set() });
+    const bucket = byOutcome.get(tag);
+    const copy = copyKey(it.headline);
+    // Record the copy even when this item is not going to count, so a THIRD masthead
+    // running the same story cannot slip past a check that already short-circuited.
+    const already = bucket.fams.has(fam) || (copy && bucket.copies.has(copy));
+    if (copy) bucket.copies.add(copy);
+    if (already) continue;
+    bucket.fams.set(fam, it);                 // first report from that newsroom
   }
   if (!byOutcome.size) return { status: 'none' };
 
   const ranked = [...byOutcome.entries()]
-    .map(([outcome, fams]) => ({ outcome, outlets: [...fams.keys()], items: [...fams.values()] }))
+    .map(([outcome, b]) => ({ outcome, outlets: [...b.fams.keys()], items: [...b.fams.values()] }))
     .sort((a, b) => b.outlets.length - a.outlets.length);
 
   const top = ranked[0];
@@ -171,4 +174,4 @@ function assess(items, now = Date.now()) {
   return { status: 'ready', outcome: top.outcome, outlets: top.outlets, items: top.items };
 }
 
-module.exports = { classify, assess, outletFamily, OUTCOME_LABEL, MIN_OUTLETS, WINDOW_HOURS };
+module.exports = { classify, assess, outletFamily, copyKey, OUTCOME_LABEL, MIN_OUTLETS, WINDOW_HOURS };

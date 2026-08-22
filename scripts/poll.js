@@ -16,6 +16,7 @@ const ROOT = path.join(__dirname, '..');
 const { discoverCase, safeToDiscover } = require('./media-fetch.js');
 const { implicationReason, shouldEscalate } = require('./screen.js');
 const { resolveUrl, itemKey, dedupeItems } = require('./canonical.js');
+const { nameFor } = require('./outlets.js');
 const DATA = path.join(ROOT, 'data');
 const REPO = process.env.GB_REPO || 'evesloan/ourgavel';
 const TOKEN = process.env.GITHUB_TOKEN || '';
@@ -92,6 +93,20 @@ async function pollCase(slug) {
   const before = (T.items || []).length;
   T.items = dedupeItems(T.items);
   const healed = before - T.items.length;
+  // Second heal, added 2026-08-22: attribution. Stored rows carry whatever feed label was
+  // in case.json the day they arrived, and for two cases that label was "Bing News", which
+  // publishes nothing. Relabel from the resolved host on every pulse, so the correction
+  // reaches rows already on the site instead of only new ones.
+  //
+  // This lives in poll.js and NOT in build.js on purpose. The workflow commits `data`
+  // BEFORE it builds, so anything build.js writes into data/ is thrown away. A relabel
+  // done at build time would look right in the rendered page and silently never persist,
+  // and the verdict engine reads the STORED rows.
+  let relabelled = 0;
+  for (const it of T.items) {
+    const name = nameFor(it.url, it.outlet);
+    if (name && name !== it.outlet) { it.outlet = name; relabelled++; }
+  }
   // `seen` is capped at 600 ids; the redirector churn used to blow that cap in a
   // few polls and take real dedupe memory with it. The stored list is the durable
   // second check.
@@ -114,12 +129,14 @@ async function pollCase(slug) {
         seen.add(id);
         const isVerdicty = vkws.some(k => tl.includes(k));
         const ts = it.date ? new Date(it.date).toISOString() : NOW;
-        fresh.push({ ts, outlet: feed.outlet, headline: it.title, url, flag: isVerdicty ? 'verdict-watch' : null });
+        // The feed label says where we LOOKED. `url` is where the story actually lives,
+        // and that is the only honest answer to "who published this?".
+        fresh.push({ ts, outlet: nameFor(url, feed.outlet), headline: it.title, url, flag: isVerdicty ? 'verdict-watch' : null });
       }
       feed._ok = true;
     } catch (e) { feed._ok = false; console.error('feed fail', feed.outlet, e.message); }
   }
-  if (fresh.length || healed) {
+  if (fresh.length || healed || relabelled) {
     fresh.sort((a, b) => b.ts.localeCompare(a.ts));
     // Sorted, not just prepended: the ticker is rendered as "latest", and with
     // duplicates gone a mis-ordered row is now plainly visible in a four-row list.
@@ -127,7 +144,9 @@ async function pollCase(slug) {
       .sort((a, b) => String(b.ts).localeCompare(String(a.ts))).slice(0, 100);
     T.seen = [...new Set([...seen, ...T.items.map(i => hash(itemKey(i.url)))])].slice(-600);
     write(tickerPath, T);
-    console.log(slug + ':', fresh.length, 'new items' + (healed ? ', ' + healed + ' duplicate(s) collapsed' : ''));
+    console.log(slug + ':', fresh.length, 'new items'
+      + (healed ? ', ' + healed + ' duplicate(s) collapsed' : '')
+      + (relabelled ? ', ' + relabelled + ' source label(s) corrected' : ''));
   } else console.log(slug + ': no new items');
 
   // ---- verdict -------------------------------------------------------------

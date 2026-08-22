@@ -37,7 +37,7 @@ for (const slug of fs.readdirSync(DATA).sort()) {
     console.log('  no headline read as a verdict — correct for a trial still running');
   } else {
     for (const { i, tag } of fired) {
-      const fam = outletFamily(i.outlet);
+      const fam = outletFamily(i.url, i.outlet);
       console.log('  FIRED [' + tag + '] ' + (fam || 'UNATTRIBUTABLE') + ': ' + i.headline.slice(0, 96));
     }
     if (!verdictAlready) {

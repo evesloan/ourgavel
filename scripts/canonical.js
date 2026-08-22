@@ -30,6 +30,8 @@
 */
 'use strict';
 
+const { isAggregatorUrl } = require('./outlets.js');
+
 // Feeds are XML; `&` arrives as `&amp;`. Left encoded, the query string parses
 // as `amp;url=` — no `url` param at all — which is how the redirector survived
 // every previous eyeball.
@@ -102,12 +104,34 @@ function resolveUrl(link) {
   return u.href;
 }
 
+// MSN gives one article several slugs. Live on 2026-08-22 the Murdaugh ticker held
+//   .../alex-murdaugh-s-retrial-will-be-relocated.../ar-AA2a5Bz6
+//   .../alex-murdaugh-s-testimony-at-first-murder-trial.../ar-AA2a5Bz6
+// -- three rows, one article, because the path differs and the `ar-` id does not.
+// The id is MSN's own identity for the piece, so key on it and let the slug vary.
+const MSN_ID = /\/(ar-[A-Za-z0-9]{6,})(?:[/?#]|$)/;
+
+// The copy itself, normalised, for "is this the same STORY, filed by someone else?".
+// Distinct from itemKey, which answers "is this the same URL?" -- a wire story on five
+// affiliates has five perfectly good URLs and is still one piece of reporting.
+// The six-word floor is deliberate: "Guilty verdict returned" is a phrase two newsrooms
+// can reach independently; a fourteen-word sentence is not.
+const COPY_MIN_WORDS = 6;
+function copyKey(headline) {
+  const t = String(headline || '')
+    .replace(/\s*[|\u2013\u2014-]\s*[A-Za-z0-9 .'&]{2,30}$/, '')   // trailing " | WLTX News19"
+    .toLowerCase().replace(/[^a-z0-9 ]+/g, ' ').replace(/\s+/g, ' ').trim();
+  return t.split(' ').filter(Boolean).length >= COPY_MIN_WORDS ? t : '';
+}
+
 /** Stable identity for "is this the same article we already have?" */
 function itemKey(link) {
   const resolved = resolveUrl(link);
   let u;
   try { u = new URL(resolved); } catch { return resolved.toLowerCase(); }
   const host = u.hostname.toLowerCase().replace(/^www\./, '');
+  const msn = (host === 'msn.com' || host.endsWith('.msn.com')) && MSN_ID.exec(u.pathname);
+  if (msn) return 'msn.com/' + msn[1].toLowerCase();
   const pathname = u.pathname.replace(/\/+$/, '') || '/';
   const q = [...u.searchParams.entries()].sort((a, b) => a[0].localeCompare(b[0]))
     .map(([k, v]) => k + '=' + v).join('&');
@@ -118,16 +142,32 @@ function itemKey(link) {
     First occurrence wins, order preserved — the list is already newest-first
     and the oldest copy of a duplicate is the one with the true first-seen ts. */
 function dedupeItems(items) {
+  // Two passes, because the newest copy of a story is often the WORST one. A repost lands
+  // on msn.com minutes after the newsroom files, sorts first, and under one-pass first-wins
+  // it would evict the original -- sending every reader to an aggregator that names no
+  // author, and handing the verdict engine a row it is required to ignore.
+  const originals = new Set();
+  for (const it of items || []) {
+    if (isAggregatorUrl(resolveUrl(it.url))) continue;
+    const c = copyKey(it.headline);
+    if (c) originals.add(c);
+  }
   const out = [];
   const seen = new Set();
   for (const it of items || []) {
     const url = resolveUrl(it.url);
     const k = itemKey(url);
     if (!k || seen.has(k)) continue;
+    // Drop a repost only when we hold the newsroom's own copy of the same story. A repost
+    // we have no original for still earns its place: it is coverage, just weaker coverage.
+    if (isAggregatorUrl(url)) {
+      const c = copyKey(it.headline);
+      if (c && originals.has(c)) continue;
+    }
     seen.add(k);
     out.push(url === it.url ? it : { ...it, url });
   }
   return out;
 }
 
-module.exports = { resolveUrl, itemKey, dedupeItems, decodeEntities };
+module.exports = { resolveUrl, itemKey, dedupeItems, decodeEntities, copyKey };

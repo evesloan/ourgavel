@@ -62,7 +62,21 @@ const json = (obj, status, origin) => new Response(JSON.stringify(obj), {
 export default {
   async fetch(request, env) {
     const allowed = env.ORIGIN || 'https://ourgavel.com';
-    if (request.method === 'OPTIONS') return json({ ok: true }, 204, allowed);
+    // A 204 may not carry a body -- `new Response(body, {status:204})` throws in the runtime,
+    // so this used to fail the CORS preflight outright and take every JSON POST with it.
+    // Null body, and the CORS headers that are the entire point of the response.
+    if (request.method === 'OPTIONS') {
+      return new Response(null, {
+        status: 204,
+        headers: {
+          'access-control-allow-origin': allowed,
+          'access-control-allow-headers': 'content-type',
+          'access-control-allow-methods': 'POST, OPTIONS',
+          'access-control-max-age': '86400',
+          'vary': 'origin',
+        },
+      });
+    }
     if (request.method !== 'POST') return json({ error: 'POST only' }, 405, allowed);
 
     // Only our own pages may submit.

@@ -59,6 +59,25 @@ if (fs.existsSync(tplDir)) {
   }
 }
 
+// A CORS preflight is a second request that can break independently of the POST, and it did:
+// the relay answered OPTIONS with a 204 carrying a body, which throws in the Workers runtime,
+// so every application/json submission failed in the browser before it ever left. Two rules
+// now, and they are belt and braces on purpose — either one alone would have prevented it.
+console.log('--- The preflight, which is its own way to fail ---');
+const optBlock = worker.slice(worker.indexOf("=== 'OPTIONS'"), worker.indexOf("=== 'OPTIONS'") + 600);
+ok('the relay must not answer OPTIONS with a body and a 204 — that throws, and takes the preflight with it',
+  !/return json\(\s*\{[^}]*\}\s*,\s*204/.test(optBlock));
+ok('the OPTIONS response is a null body with 204',
+  /status:\s*204/.test(optBlock) && /new Response\(\s*null/.test(optBlock));
+ok('the preflight still carries the CORS headers that are its whole purpose',
+  /access-control-allow-origin/.test(optBlock) && /access-control-allow-methods/.test(optBlock));
+
+const composerPost = (build.match(/fetch\(ENDPOINT,\{method:'POST'[^)]*\)/) || [''])[0];
+ok('the composer posts with a CORS-simple content type, so no preflight is needed at all',
+  /content-type':'text\/plain/.test(composerPost), composerPost.slice(0, 90));
+ok('application/json would force a preflight back into the path',
+  !/application\/json/.test(composerPost));
+
 console.log('\n  ' + pass + ' passed, ' + fail + ' failed');
 if (fail) { console.log('\n  THE SUBMISSION CHAIN IS INCONSISTENT — posts would vanish into the review queue.\n'); process.exit(1); }
 console.log('  Composer, relay and pulse still agree.\n');

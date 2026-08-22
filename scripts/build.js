@@ -711,7 +711,12 @@ document.getElementById('gbc-post').onclick=function(){
     return;
   }
   elStatus.textContent='Posting…';
-  fetch(ENDPOINT,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(payload)})
+  // text/plain is a CORS-simple content type, so no preflight is sent. The relay parses the
+  // body as JSON regardless of the label. This is not only a round trip saved: an OPTIONS
+  // request is a second thing that can be broken independently of the POST, and it was --
+  // the deployed Worker answered it with a 204 carrying a body, which throws, so every
+  // application/json submission failed before it left the browser.
+  fetch(ENDPOINT,{method:'POST',headers:{'content-type':'text/plain;charset=UTF-8'},body:JSON.stringify(payload)})
     .then(function(r){return r.json().then(function(d){return{ok:r.ok,d:d}})})
     .then(function(res){
       if(!res.ok){elStatus.textContent=(res.d&&res.d.error)||'That did not go through. Try again shortly.';return}

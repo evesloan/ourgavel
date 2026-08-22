@@ -92,6 +92,13 @@
       "flag": "verdict-watch"
     },
     {
+      "ts": "2026-08-14T12:07:23.000Z",
+      "outlet": "Bing News — Murdaugh retrial",
+      "headline": "Alex Murdaugh’s retrial will be relocated, and his original testimony can be used conditionally, judge rules",
+      "url": "https://www.msn.com/en-us/news/crime/alex-murdaugh-s-testimony-at-first-murder-trial-can-be-used-conditionally-in-retrial-judge-rules/ar-AA2a5Bz6",
+      "flag": null
+    },
+    {
       "ts": "2026-08-14T12:01:00.000Z",
       "outlet": "Bing News — Murdaugh retrial",
       "headline": "Judge moves Alex Murdaugh retrial from small county",
@@ -753,6 +760,7 @@
     "agb9ss",
     "130sca1",
     "11enx8i",
-    "c4a8gs"
+    "c4a8gs",
+    "1p7oq8x"
   ]
 }

@@ -17,6 +17,24 @@ const REPO = process.env.GB_REPO || 'evesloan/ourgavel';
 const TOKEN = process.env.GITHUB_TOKEN || '';
 const NOW = new Date().toISOString();
 
+// ---- redaction ---------------------------------------------------------------
+// Submissions are screened before publication, but the queue and thread files are
+// COMMITTED TO A PUBLIC REPO. Anything personal that slips into a submission would
+// become permanent and indexable, so it is stripped here too — defence in depth,
+// on the way in, before it can ever be written to disk.
+const REDACTORS = [
+  [/\b[\w.+-]+@[\w-]+\.[a-z]{2,}\b/gi, '[email removed]'],
+  [/(?:\+?1[-.\s]?)?\(?\d{3}\)?[-.\s]\d{3}[-.\s]\d{4}/g, '[phone removed]'],
+  [/\b\d{3}-\d{2}-\d{4}\b/g, '[id removed]'],
+  [/\b\d{1,5}\s+[A-Z][a-z]+\s+(?:St|Street|Ave|Avenue|Rd|Road|Dr|Drive|Ln|Lane|Ct|Court|Blvd|Way)\b/g, '[address removed]'],
+  [/\b(?:\d[ -]?){13,19}\b/g, '[number removed]'],
+];
+function redact(text, cap) {
+  let t = String(text || '');
+  for (const [re, sub] of REDACTORS) t = t.replace(re, sub);
+  return cap ? t.slice(0, cap) : t;
+}
+
 const read = p => JSON.parse(fs.readFileSync(p, 'utf8'));
 const write = (p, o) => { fs.mkdirSync(path.dirname(p), { recursive: true }); fs.writeFileSync(p, JSON.stringify(o, null, 2) + '\n'); };
 const hash = s => { let h = 0; for (let i = 0; i < s.length; i++) { h = (h * 31 + s.charCodeAt(i)) | 0; } return (h >>> 0).toString(36); };
@@ -117,7 +135,7 @@ async function syncIssues() {
   try {
     const issues = await gh(`/repos/${REPO}/issues?state=open&per_page=100`);
     const q = issues.filter(i => !i.pull_request).map(i => ({
-      number: i.number, title: i.title, body: (i.body || '').slice(0, 4000),
+      number: i.number, title: redact(i.title, 300), body: redact(i.body, 4000),
       labels: i.labels.map(l => typeof l === 'string' ? l : l.name),
       user: i.user && i.user.login, created: i.created_at,
       reactions: { up: (i.reactions && i.reactions['+1']) || 0, down: (i.reactions && i.reactions['-1']) || 0 },
@@ -174,7 +192,7 @@ async function syncThreads(openIssues) {
           comments: comments
             .filter(c => c.user && c.user.type !== 'Bot' && !/^(Live on the Board|Thanks —)/.test(c.body || ''))
             .slice(-4)
-            .map(c => ({ user: c.user.login, ts: c.created_at, body: (c.body || '').replace(/<[^>]+>/g, '').slice(0, 400) })),
+            .map(c => ({ user: c.user.login, ts: c.created_at, body: redact((c.body || '').replace(/<[^>]+>/g, ''), 400) })),
         };
       } catch (e) { console.error('thread sync fail', nodeId, e.message); }
     }

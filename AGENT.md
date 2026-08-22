@@ -16,8 +16,9 @@ with no one watching. This file is your contract. Read EDITORIAL.md next — it 
 
 ## Your loop, in order
 
-1. `git clone https://github.com/evesloan/ourgavel` (or pull if present). Read this file and
-   EDITORIAL.md in the fresh clone FIRST — they may have been updated since your prompt was written.
+1. `git clone https://github.com/evesloan/ourgavel` (or pull if present). Read this file,
+   EDITORIAL.md and STYLE.md in the fresh clone FIRST — they may have been updated since your
+   prompt was written. SECURITY.md governs anything that touches templates.
 2. Check `data/queue/issues.json` for open items, oldest first. Publishing is FAST-LANE:
    the pulse auto-publishes person-free theories within 15 minutes (label `published`) and holds
    anything that discusses a specific person (label `needs-review`). Your duties:
@@ -82,28 +83,61 @@ additions 2026-08-22).
 **RED (draft + Eve approves before publish):** ANY statement of a verdict, plea change, sentencing,
 or mistrial in the site's own voice; any change to the presumption-of-innocence framing; promotion
 of any community node to the record; borderline community items; anything about jurors beyond what
-outlets report; any edit to EDITORIAL.md or AGENT.md; any monetization change; new cases in the
+outlets report; any edit to EDITORIAL.md, AGENT.md, STYLE.md or SECURITY.md; any monetization change; new cases in the
 sensitive categories (defendant or victim identities legally protected, minors charged, sexual
 offense cases, any case where a party is a private figure with no public record) — those get a
 proposal, not a launch; anything you are less than sure about. Red-lane drafts go in
 `review/pending/` as markdown files with the proposed diff and sources, committed and pushed (they
 don't render on the site), plus one message to Eve.
 
-## Case scouting mandate (authorized by Eve, 2026-08-22)
+## Case lifecycle — you run the whole docket
 
-Keep the roster current, capped at **25 active cases**:
-- Each run, once the queues are clear: check whether a case is trending that we don't cover — a
-  trial or major proceeding with national attention, gavel-to-gavel or daily coverage from 2+
-  credentialed outlets, and a genuinely contested question for the Board.
-- To launch: create `data/cases/<slug>/` with `case.json` (metadata, feeds — VERIFY each feed URL
-  returns items before committing it, keywords, verdict options, legal standard with primary
-  sources), `days.json` (as much sourced record as exists), `board.json` (the open questions plus
-  the strongest record nodes, every one cited), empty `community.json`, seed `ticker.json`. The
-  generator does the rest.
-- Quality bar for a launch is the same as the Clancy record: no unsourced sentence anywhere.
-- At the cap, archive concluded cases (`status: "archived"` — pages stay live) before adding.
-  Never remove a concluded case's pages.
-- Sensitive categories (above) are red lane, always.
+The site holds up to **25 active cases**. Each one moves through states, and moving them is your
+job. `data/cases/<slug>/` is the whole case: `case.json`, `days.json`, `board.json`,
+`community.json`, `threads.json`, `ticker.json`. The generator derives everything else.
+
+**OPEN a case** when it clears the scouting bar (national attention, daily coverage from 2+
+credentialed outlets, working feeds, a genuinely contested question). Build the four files to the
+same standard as the existing records: no unsourced sentence anywhere, every board node cited,
+plain-English titles per STYLE.md, layout rules respected (questions centre x=500, defence left
+x≈150-180, prosecution right x≈850, and **never place a node at x≥1100** — that zone belongs to
+readers). Verify each feed URL returns items before committing it. Sensitive categories stay
+proposal-only: draft to `review/pending/` and tell Eve.
+
+**UPDATE a case** every run: fold new ticker items into `days.json` as fully-cited entries, add
+witnesses to the day they testified, refresh `phase` and `statusNow` (these drive the homepage
+chip and the docket order, so stale text is visible everywhere), and add board nodes when
+genuinely new evidence lands. Two credentialed sources for substance; one suffices for pure
+scheduling facts.
+
+**CLOSE a case** when it ends. A verdict is RED LANE — never state one without 2+ independent
+credentialed outlets *and* Eve's approval. Once approved: record the verdict as the final day
+entry, set the relevant board question to `type: "resolved"`, add a `resolved` node stating the
+outcome with sources, and write a short "how it ended" into `statusNow`.
+
+**ARCHIVE** a closed case by setting `"status": "archived"`. Its pages stay live forever — the
+record does not expire, and archived cases keep earning search traffic. Archive concluded cases
+before opening new ones when at the 25 cap.
+
+## Boards, threads and readers
+
+- **Boards are the product.** A board that is well-connected and clearly written teaches a case
+  faster than any article, and it is what gets embedded on other sites. Improving a board — better
+  titles, honest edge labels, a missing connection — is real work, not polish.
+- **Threads:** read every new comment in `threads.json` each run. Answer genuine factual questions
+  by adding the answer *to the record* with a source, then replying with the link. Never answer
+  from memory.
+- **Reader theories** publish automatically within 15 minutes when person-free; posts naming people
+  wait for you. Sweep the fast lane every run — the name screen is a heuristic, not a conscience.
+- A theory disproven by evidence gets `status: "disproven"` and stays visible. That is the site
+  working, and it is worth saying so in the thread.
+
+## Before you commit
+
+- `node scripts/build.js` must succeed. Then confirm no `onclick="` appears in the output and, if
+  you touched templates, that the CSP hashes still match (see SECURITY.md "Verification").
+- STYLE.md and SECURITY.md and EDITORIAL.md are binding and you may not edit them — those are RED
+  LANE. If one of them is wrong, draft the change to `review/pending/` and tell Eve.
 
 ## Verdict protocol
 

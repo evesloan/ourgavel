@@ -1,0 +1,359 @@
+{
+  "note": "The questions the jury must answer, the evidence pulling on each \u2014 and your theories, labeled until proven. Two questions sit at the centre. The first is the ordinary one every murder trial asks: who did it, and can the government prove it. The second is the one that has made this case matter far beyond Lil Durk: whether a man's songs can be used to prove he committed a real killing. Nothing here is a finding of guilt. Green 'verified' nodes are documented events \u2014 a filing, a ruling, a quote on the record. Amber 'open' nodes are contested claims that the jury has not yet weighed.",
+  "nodes": [
+    {
+      "id": "eighteen-rounds-on-beverly",
+      "type": "fact",
+      "x": 500,
+      "y": 100,
+      "title": "18 rounds at a gas station \u2014 and the wrong man died",
+      "body": "On August 19, 2022, around 5:30 p.m., gunmen fired at least 18 rounds into a black Cadillac Escalade at a gas station on Beverly Boulevard near the Beverly Center in Los Angeles. Rapper Quando Rondo \u2014 Tyquian Bowman \u2014 was in the car and survived. His cousin, Saviay'a Robinson, known as Lul Pab, was killed. Nobody disputes that this happened. The whole trial is about who is responsible for it.",
+      "status": "verified",
+      "sources": [
+        {
+          "outlet": "U.S. Department of Justice \u2014 Superseding indictment",
+          "url": "https://www.justice.gov/usao-cdca/pr/chicago-rapper-lil-durk-charged-superseding-indictment-alleging-murder-hire-plot-kill"
+        },
+        {
+          "outlet": "MyNewsLA \u2014 Jury selection underway",
+          "url": "https://mynewsla.com/courts/2026/08/20/jury-selection-underway-for-rappers-murder-for-hire-trial-in-la/"
+        }
+      ]
+    },
+    {
+      "id": "did-durk-order-and-pay",
+      "type": "question",
+      "x": 500,
+      "y": 340,
+      "central": true,
+      "title": "Did Durk Banks order the hit \u2014 and was money on the table?",
+      "body": "Prosecutors say he 'put a bounty' on Quando Rondo's life to avenge King Von, and that OTF money paid for the flights, the rental cars and the shooters. Here is the part people miss: under the federal murder-for-hire law, 18 U.S.C. \u00a7 1958, revenge alone is not enough. The government must prove the killing was arranged 'as consideration for a promise or agreement to pay, anything of pecuniary value' \u2014 money, or something worth money. Motive without payment is a different crime. Banks says he ordered nothing and paid no one.",
+      "status": "open",
+      "sources": [
+        {
+          "outlet": "18 U.S.C. \u00a7 1958",
+          "url": "https://www.law.cornell.edu/uscode/text/18/1958"
+        },
+        {
+          "outlet": "U.S. Department of Justice \u2014 Superseding indictment",
+          "url": "https://www.justice.gov/usao-cdca/pr/chicago-rapper-lil-durk-charged-superseding-indictment-alleging-murder-hire-plot-kill"
+        },
+        {
+          "outlet": "24Hip-Hop \u2014 Trial begins: charges, evidence and what's at stake",
+          "url": "https://24hip-hop.com/lil-durk-murder-for-hire-trial-begins/"
+        }
+      ]
+    },
+    {
+      "id": "can-a-song-be-evidence",
+      "type": "question",
+      "x": 500,
+      "y": 720,
+      "title": "Can a rap song be evidence that you killed someone?",
+      "body": "This is the fight that makes the case nationally significant. Prosecutors will play Lil Durk's 2021 track 'Pissed Me Off' and its video, and read lyrics from 'Who Want Smoke??' and 'Ahhh Ha,' arguing they show motive to retaliate for King Von. His lawyers say lyrics are performance, persona and grief \u2014 art, not confession \u2014 and that letting them in invites a jury to convict a character rather than a defendant. There is no special rule for rap in federal court; the judge decides song by song under Rules 401, 403 and 404(b).",
+      "status": "open",
+      "sources": [
+        {
+          "outlet": "Fed. R. Evid. 403",
+          "url": "https://www.law.cornell.edu/rules/fre/rule_403"
+        },
+        {
+          "outlet": "Rolling Stone \u2014 Judge rules 'Pissed Me Off' video can be used as evidence",
+          "url": "https://www.rollingstone.com/music/music-news/lil-durk-murder-for-hire-trial-video-lyrics-used-evidence-1235608235/"
+        },
+        {
+          "outlet": "Billboard \u2014 Here are the lyrics that will play in court",
+          "url": "https://www.billboard.com/pro/lil-durk-trial-song-lyrics-jury-hear-court/"
+        }
+      ]
+    },
+    {
+      "id": "the-law-is-still-arguing",
+      "type": "fact",
+      "x": 500,
+      "y": 960,
+      "title": "The law itself hasn't settled this \u2014 and California's fix doesn't reach here",
+      "body": "California passed AB 2799, the Decriminalizing Artistic Expression Act, effective January 2023: it tells state judges that creative expression has minimal probative value unless made near in time to the crime, closely resembling it, or containing non-public facts \u2014 and to weigh the risk of injecting racial bias. It does not apply in federal court, which is where Banks is being tried, inside California. Congress's answer, the RAP Act (H.R. 4678, reintroduced July 24, 2025 by Reps. Hank Johnson and Sydney Kamlager-Dove), would add a presumption against lyrics to the Federal Rules of Evidence, but it has never received a vote. Johnson: 'For too long, artists \u2013 particularly young Black artists \u2013 have been unfairly targeted by prosecutors who use their lyrics as evidence of guilt.' Courts split: New Jersey's Supreme Court threw out a conviction in State v. Skinner (2014), finding violent lyrics had 'little to no probative value' and noting 'rap lyrics in particular are part of a genre of music that society often finds distasteful,' while federal courts have generally admitted them more readily. Researchers Charis Kubrin and Erik Nielson found that when identical violent lyrics were labelled 'rap' rather than country, people judged them more dangerous, threatening and literal.",
+      "status": "verified",
+      "sources": [
+        {
+          "outlet": "FIRE \u2014 California law restricts artistic expression as evidence (AB 2799)",
+          "url": "https://www.fire.org/news/music-our-ears-california-law-restricts-use-artistic-expression-evidence-criminal-trials"
+        },
+        {
+          "outlet": "Rep. Hank Johnson \u2014 RAP Act reintroduced (H.R. 4678)",
+          "url": "https://hankjohnson.house.gov/media-center/press-releases/reps-hank-johnson-and-sydney-kamlager-dove-introduce-bill-protect"
+        },
+        {
+          "outlet": "University of Cincinnati Law Review \u2014 Bars Behind Bars",
+          "url": "https://uclawreview.org/2025/10/17/bars-behind-bars-when-song-lyrics-become-criminal-evidence/"
+        },
+        {
+          "outlet": "Freedom Forum \u2014 Can rap lyrics be used as evidence in court?",
+          "url": "https://www.freedomforum.org/rap-lyrics-evidence-in-court/"
+        }
+      ]
+    },
+    {
+      "id": "flight-lyrics-thrown-out",
+      "type": "exhibit",
+      "x": 150,
+      "y": 120,
+      "title": "The judge already threw out one batch: 'sheer propensity'",
+      "body": "Prosecutors wanted lyrics from 'Hanging With Wolves' about hopping a flight with a warrant out, to argue Banks planned to flee \u2014 what lawyers call consciousness of guilt. On February 9, 2026, Judge Fitzgerald refused, saying lyrics offered to show an intention to flee 'will be excluded because they really are just sheer propensity.' Propensity is the reasoning Rule 404(b) forbids: proving someone is the type who would do a thing, instead of proving they did this thing. It is the clearest signal the judge has given that he knows exactly where the danger lies.",
+      "status": "verified",
+      "sources": [
+        {
+          "outlet": "Rolling Stone \u2014 Judge bans some Lil Durk lyrics as evidence",
+          "url": "https://www.rollingstone.com/music/music-news/lil-durk-lyrics-evidence-murder-for-hire-trial-1235513769/"
+        }
+      ]
+    },
+    {
+      "id": "nobody-knows-when-they-were-written",
+      "type": "exhibit",
+      "x": 180,
+      "y": 300,
+      "title": "'Virtually no evidence' of when the lyrics were even written",
+      "body": "Excluding the 2023 song 'Beverly Hills,' Judge Fitzgerald wrote: 'There is no inference that the lyrics here are \"autobiographical\" of the events involved in these charges \u2014 indeed, as Banks points out, there is virtually no evidence of the timing of when these lyrics were written or even recorded.' Of 13 lyric excerpts the government proposed, only four were admitted outright, five were barred and four held for more explanation. The defense will hammer that ratio: most of what prosecutors wanted, they did not get.",
+      "status": "verified",
+      "sources": [
+        {
+          "outlet": "Billboard \u2014 Here are the lyrics that will play in court",
+          "url": "https://www.billboard.com/pro/lil-durk-trial-song-lyrics-jury-hear-court/"
+        },
+        {
+          "outlet": "The Root \u2014 Why Durk's music will play a huge role",
+          "url": "https://www.theroot.com/why-lil-durks-music-will-play-a-huge-role-in-his-murder-2000090290"
+        }
+      ]
+    },
+    {
+      "id": "feds-deleted-the-lyrics-claim",
+      "type": "fact",
+      "x": 150,
+      "y": 470,
+      "title": "Prosecutors quietly deleted their own claim about his lyrics",
+      "body": "An earlier version of the indictment alleged Banks's lyrics referenced the August 2022 murder. His lawyers pointed out the lyrics were released months before the killing. Prosecutors removed the allegation in a superseding indictment. The defense response: 'This claim is, and has always been, baseless.' It is the government's own retreat from the most literal reading of his music \u2014 and at a May 2025 bail hearing lead prosecutor Ian Yanniello had already said: 'This murder case is not about defendant's lyrics, and it's not about his music. It's about his conduct.'",
+      "status": "verified",
+      "sources": [
+        {
+          "outlet": "Chicago Tribune via Yahoo \u2014 New indictment drops allegation linking lyrics to slaying",
+          "url": "https://www.yahoo.com/news/indictment-adds-stalking-count-against-222800333.html"
+        },
+        {
+          "outlet": "Legal Affairs and Trials \u2014 Judge rejects new bail request",
+          "url": "https://www.legalaffairsandtrials.com/p/judge-rejects-lil-durks-new-bail"
+        }
+      ]
+    },
+    {
+      "id": "witnesses-who-cut-deals",
+      "type": "testimony",
+      "x": 180,
+      "y": 640,
+      "title": "Some witnesses against him signed deals to be there",
+      "body": "Prosecutors expect to call roughly 35 witnesses, about 20 of them substantive, and some have signed plea agreements \u2014 deals trading testimony for lighter treatment on their own exposure. The witness list is sealed; the government says witnesses and relatives were threatened during the case. Cooperator testimony is legal and common, and juries are told to scrutinise it with care precisely because the witness has something to gain. Expect the defense to spend a long time on what each of them was promised. Untested: none has yet testified.",
+      "status": "open",
+      "sources": [
+        {
+          "outlet": "iHeart / Power 105.1 \u2014 Durk may face witnesses who've signed plea deals",
+          "url": "https://power1051.iheart.com/content/2026-08-19-lil-durk-to-face-witnesses-whove-signed-plea-deals-at-upcoming-trial/"
+        },
+        {
+          "outlet": "24Hip-Hop \u2014 Prosecutors move to keep witness list under seal",
+          "url": "https://24hip-hop.com/lil-durk-trial-witness-list-sealed-prosecutors/"
+        }
+      ]
+    },
+    {
+      "id": "chicago-counts-cut-out",
+      "type": "fact",
+      "x": 150,
+      "y": 810,
+      "title": "The judge cut the government's late-added charges out of this trial",
+      "body": "In June 2026 prosecutors added racketeering counts tied to a January 2022 Chicago killing and a 2019 Atlanta shooting \u2014 weeks before trial. On July 14, Judge Fitzgerald severed them into a separate case, pressing the government on why it had waited and, per one account, laughing at parts of the answer. He said twice: 'The question isn't what I have to do, it's what I want to do.' His order noted the government itself 'chose to withdraw evidence of the \"Chicago incident\" in the Los Angeles trial.' Drew Findling afterwards: 'We are very happy with the court's order.' This jury will hear only about Los Angeles.",
+      "status": "verified",
+      "sources": [
+        {
+          "outlet": "LA Magazine \u2014 Judge grills feds in Lil Durk case",
+          "url": "https://lamag.com/crimeinla/judge-grills-feds-in-lil-durk-case-the-question-isnt-what-i-have-to-do-its-what-i-want-to-do/"
+        },
+        {
+          "outlet": "AllHipHop \u2014 Trial moves forward without Chicago killing charges",
+          "url": "https://allhiphop.com/news/lil-durks-august-trial-moves-forward-without-chicago-killing-charges/"
+        },
+        {
+          "outlet": "Complex \u2014 Durk wins motion to exclude racketeering charges",
+          "url": "https://www.complex.com/music/a/shawn-setaro/lil-durk-wins-motion-have-racketeering-charges-excluded-trial"
+        }
+      ]
+    },
+    {
+      "id": "dont-book-no-flights",
+      "type": "exhibit",
+      "x": 850,
+      "y": 260,
+      "title": "'Don't book no flights under no names involved wit me'",
+      "body": "The criminal complaint quotes this message, which the government attributes to Banks directing an associate before the shooting. Prosecutors also point to a text reading 'I can't let this slide' about King Von's death. Read the government's way, these are instructions and motive in his own words. Read the defense's way, a message about names on flight bookings is not an order to kill anyone. The jury has not heard the surrounding conversation, or how the messages were authenticated.",
+      "status": "open",
+      "sources": [
+        {
+          "outlet": "U.S. Department of Justice \u2014 Arrest announcement",
+          "url": "https://www.justice.gov/usao-cdca/pr/chicago-rapper-lil-durk-arrested-complaint-alleging-he-ordered-murder-attempt-resulted"
+        },
+        {
+          "outlet": "XXL \u2014 Trial details: charges, evidence and what to expect",
+          "url": "https://www.xxlmag.com/lil-durk-trial-details/"
+        }
+      ]
+    },
+    {
+      "id": "pissed-me-off-goes-to-jury",
+      "type": "exhibit",
+      "x": 850,
+      "y": 430,
+      "title": "The 'Pissed Me Off' video is going to be played in court",
+      "body": "On August 14, 2026 Judge Fitzgerald admitted the 2021 song and its music video, rejecting the defense's prejudice argument while leaving open a 'limiting instruction' \u2014 a direction telling jurors the one narrow purpose they may use it for. Prosecutors quote 'Boy, no cap, I got killers that I love and they don't rap' and 'If I die, just don't lie, man, you ni**as better slide,' plus footage of Banks holding cash and miming gunfire, to argue willingness and ability to fund retaliation. Defense lawyer Marissa Goldberg argued the song memorialises his dead, including his brother, and that prosecutors stripped it of context.",
+      "status": "verified",
+      "sources": [
+        {
+          "outlet": "The Source \u2014 'Pissed Me Off' can be used as evidence",
+          "url": "https://thesource.com/2026/08/14/lil-durks-pissed-me-off-can-be-used-as-evidence-in-upcoming-murder-for-hire-trial/"
+        },
+        {
+          "outlet": "XXL \u2014 Prosecutors want to play Durk's music video",
+          "url": "https://www.xxlmag.com/prosecutors-lil-durk-music-video-trial/"
+        },
+        {
+          "outlet": "Law Commentary \u2014 Durk's music can be used as evidence",
+          "url": "https://www.lawcommentary.com/articles/lil-durks-music-can-be-used-as-evidence-in-upcoming-murder-for-hire-trial"
+        }
+      ]
+    },
+    {
+      "id": "otf-card-paid-for-the-trip",
+      "type": "fact",
+      "x": 850,
+      "y": 600,
+      "title": "The government says an OTF card paid for the plane tickets",
+      "body": "According to the indictment, OTF-affiliated credit cards bought the flights from Chicago to Los Angeles and rented the white BMW and white Infiniti used to follow Rondo's Escalade; one man flew in by private jet and bought four ski masks; the cars carried fake plates; and after the shooting the group met at a restaurant to discuss payment before flying home on the same card. This is the paper trail the money element of murder-for-hire lives or dies on. Whether the records tie back to Banks personally is exactly what the trial will test.",
+      "status": "open",
+      "sources": [
+        {
+          "outlet": "XXL \u2014 How five men allegedly conspired to kill Quando Rondo",
+          "url": "https://www.xxlmag.com/lil-durk-affiliates-conspired-kill-quando-rondo-details/"
+        },
+        {
+          "outlet": "U.S. Department of Justice \u2014 Superseding indictment",
+          "url": "https://www.justice.gov/usao-cdca/pr/chicago-rapper-lil-durk-charged-superseding-indictment-alleging-murder-hire-plot-kill"
+        }
+      ]
+    },
+    {
+      "id": "he-refused-to-squash-it",
+      "type": "exhibit",
+      "x": 850,
+      "y": 770,
+      "title": "Prosecutors say he turned down a truce four months later",
+      "body": "In a trial memorandum filed days before jury selection, the government said that in December 2022 an associate of Quando Rondo tried to 'squash' the feud and that Banks refused in a voice message, saying the matter involved his late brother DThang and King Von. Prosecutors offer it as proof the retaliation motive was still burning after Robinson's death. The defense will argue a voice memo about not making peace says nothing about who ordered a shooting months earlier. Untested \u2014 the recording has not been played in court.",
+      "status": "open",
+      "sources": [
+        {
+          "outlet": "The Source \u2014 Feds claim Durk rejected a peace offering",
+          "url": "https://thesource.com/2026/08/19/feds-claim-lil-durk-rejected-quando-rondo-affiliates-peace-offering-ahead-of-murder-for-hire-trial/"
+        },
+        {
+          "outlet": "DancehallMag \u2014 Feds claim Durk rejected peace offering",
+          "url": "https://www.dancehallmag.com/2026/08/20/news/feds-claim-lil-durk-rejected-peace-offering-ahead-of-murder-for-hire-trial.html"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "eighteen-rounds-on-beverly",
+      "to": "did-durk-order-and-pay",
+      "type": "explains",
+      "label": "the killing itself"
+    },
+    {
+      "from": "dont-book-no-flights",
+      "to": "did-durk-order-and-pay",
+      "type": "supports",
+      "label": "sounds like instructions"
+    },
+    {
+      "from": "otf-card-paid-for-the-trip",
+      "to": "did-durk-order-and-pay",
+      "type": "supports",
+      "label": "the money element"
+    },
+    {
+      "from": "he-refused-to-squash-it",
+      "to": "did-durk-order-and-pay",
+      "type": "supports",
+      "label": "motive still burning"
+    },
+    {
+      "from": "witnesses-who-cut-deals",
+      "to": "did-durk-order-and-pay",
+      "type": "contested",
+      "label": "testimony with a price"
+    },
+    {
+      "from": "pissed-me-off-goes-to-jury",
+      "to": "did-durk-order-and-pay",
+      "type": "contested",
+      "label": "motive, or theatre?"
+    },
+    {
+      "from": "chicago-counts-cut-out",
+      "to": "did-durk-order-and-pay",
+      "type": "explains",
+      "label": "narrowed to L.A."
+    },
+    {
+      "from": "feds-deleted-the-lyrics-claim",
+      "to": "did-durk-order-and-pay",
+      "type": "contradicts",
+      "label": "a theory withdrawn"
+    },
+    {
+      "from": "pissed-me-off-goes-to-jury",
+      "to": "can-a-song-be-evidence",
+      "type": "explains",
+      "label": "the ruling in dispute"
+    },
+    {
+      "from": "flight-lyrics-thrown-out",
+      "to": "can-a-song-be-evidence",
+      "type": "contradicts",
+      "label": "where the judge drew it"
+    },
+    {
+      "from": "nobody-knows-when-they-were-written",
+      "to": "can-a-song-be-evidence",
+      "type": "contradicts",
+      "label": "timing kills relevance"
+    },
+    {
+      "from": "feds-deleted-the-lyrics-claim",
+      "to": "can-a-song-be-evidence",
+      "type": "contradicts",
+      "label": "they backed off once"
+    },
+    {
+      "from": "the-law-is-still-arguing",
+      "to": "can-a-song-be-evidence",
+      "type": "explains",
+      "label": "no settled rule"
+    },
+    {
+      "from": "can-a-song-be-evidence",
+      "to": "did-durk-order-and-pay",
+      "type": "explains",
+      "label": "what the jury may use"
+    }
+  ]
+}

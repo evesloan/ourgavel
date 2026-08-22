@@ -1,0 +1,368 @@
+{
+  "note": "This is a case timeline, not a trial-day log. The retrial has not started \u2014 jury selection begins April 5, 2027, and no witness has testified in the second case. Everything below is how the case got here and what the court has done since the convictions were thrown out.",
+  "pretrial": [
+    {
+      "date": "2021-06-07",
+      "event": "Maggie Murdaugh, 52, and her son Paul, 22, are shot to death near the dog kennels at Moselle, the family's roughly 1,700-acre hunting property in Colleton County. Alex Murdaugh calls 911 and says he found them. No murder weapon is ever recovered.",
+      "sources": [
+        {
+          "outlet": "AP timeline (via WACH)",
+          "url": "https://wach.com/news/local/a-timeline-of-events-in-the-cases-against-alex-murdaugh"
+        },
+        {
+          "outlet": "NPR",
+          "url": "https://www.npr.org/2026/05/13/nx-s1-5719271/alex-murdaugh-murder-timeline-trial"
+        }
+      ]
+    },
+    {
+      "date": "2021-09-04",
+      "event": "A day after being forced out of his family's law firm, Murdaugh is shot in the head on a rural roadside. Investigators later say he arranged his own shooting so his surviving son would collect a $10 million life-insurance payout. The shot only grazes him. The man accused of pulling the trigger, Curtis 'Eddie' Smith, was charged in November 2021 \u2014 and five years later his charges are still pending, which the defense now says needs explaining.",
+      "sources": [
+        {
+          "outlet": "AP timeline (via WACH)",
+          "url": "https://wach.com/news/local/a-timeline-of-events-in-the-cases-against-alex-murdaugh"
+        },
+        {
+          "outlet": "Newsweek",
+          "url": "https://www.newsweek.com/alex-murdaugh-hearing-pretrial-case-family-murders-12324867"
+        }
+      ]
+    },
+    {
+      "date": "2021-10-14",
+      "event": "Murdaugh is arrested at a Florida rehab facility, accused of stealing more than $4 million in insurance settlements meant for the sons of his late housekeeper, Gloria Satterfield. More charges follow within weeks.",
+      "sources": [
+        {
+          "outlet": "AP timeline (via WACH)",
+          "url": "https://wach.com/news/local/a-timeline-of-events-in-the-cases-against-alex-murdaugh"
+        }
+      ]
+    },
+    {
+      "date": "2022-01-18",
+      "event": "The tally of state charges reaches 71 counts covering roughly $8.5 million stolen from clients and his own firm. This is the money that prosecutors will later argue gave him a motive: the thefts were about to be exposed.",
+      "sources": [
+        {
+          "outlet": "AP timeline (via WACH)",
+          "url": "https://wach.com/news/local/a-timeline-of-events-in-the-cases-against-alex-murdaugh"
+        },
+        {
+          "outlet": "NPR",
+          "url": "https://www.npr.org/2026/05/13/nx-s1-5719271/alex-murdaugh-murder-timeline-trial"
+        }
+      ]
+    },
+    {
+      "date": "2022-07-14",
+      "event": "A Colleton County grand jury indicts Murdaugh on two counts of murder and two counts of possession of a weapon during a violent crime. The defense's 2026 motion to dismiss targets this proceeding: it says SLED's lead agent, David Owen, told the grand jury that ammunition in seized weapons matched the killings and that Murdaugh's white T-shirt carried high-velocity blood spatter \u2014 claims Owen later conceded at trial were not accurate.",
+      "sources": [
+        {
+          "outlet": "AP timeline (via WACH)",
+          "url": "https://wach.com/news/local/a-timeline-of-events-in-the-cases-against-alex-murdaugh"
+        },
+        {
+          "outlet": "FITSNews",
+          "url": "https://www.fitsnews.com/2026/08/10/alex-murdaugh-asks-judge-to-dismiss-murder-charges-move-retrial/"
+        }
+      ]
+    },
+    {
+      "date": "2023-01-23",
+      "event": "The first murder trial opens in the Colleton County courthouse in Walterboro before Judge Clifton Newman. Picking a jury is a struggle \u2014 of roughly 900 people summoned, only about 123 qualified. The pool included Murdaugh relatives, former clients of the family firm, and the daughter of Clerk of Court Becky Hill.",
+      "sources": [
+        {
+          "outlet": "AP timeline (via WACH)",
+          "url": "https://wach.com/news/local/a-timeline-of-events-in-the-cases-against-alex-murdaugh"
+        },
+        {
+          "outlet": "FITSNews",
+          "url": "https://www.fitsnews.com/2026/08/10/alex-murdaugh-asks-judge-to-dismiss-murder-charges-move-retrial/"
+        }
+      ]
+    },
+    {
+      "date": "2023-02-23",
+      "event": "Murdaugh takes the witness stand in his own defense. He denies killing his wife and son but admits he lied to investigators about being at the kennels with them shortly before the shootings, blaming opioid-fueled paranoia. That testimony is exactly what prosecutors now want to replay to the second jury.",
+      "sources": [
+        {
+          "outlet": "AP timeline (via WACH)",
+          "url": "https://wach.com/news/local/a-timeline-of-events-in-the-cases-against-alex-murdaugh"
+        },
+        {
+          "outlet": "FITSNews",
+          "url": "https://www.fitsnews.com/2026/08/10/state-seeks-to-use-alex-murdaughs-prior-testimony-at-murder-retrial/"
+        }
+      ]
+    },
+    {
+      "date": "2023-03-02",
+      "event": "The jury convicts on both murder counts after deliberating less than three hours. The next day Judge Newman imposes two consecutive life sentences.",
+      "sources": [
+        {
+          "outlet": "AP timeline (via WACH)",
+          "url": "https://wach.com/news/local/a-timeline-of-events-in-the-cases-against-alex-murdaugh"
+        },
+        {
+          "outlet": "NPR",
+          "url": "https://www.npr.org/2023/03/02/1160581579/alex-murdaugh-murder-trial-verdict"
+        }
+      ]
+    },
+    {
+      "date": "2023-09-05",
+      "event": "The defense files a motion for a new trial alleging that Clerk of Court Rebecca 'Becky' Hill tampered with the jury. A clerk of court is not a lawyer for either side \u2014 she is the elected official who runs the courtroom's machinery: she seats the jury, passes their notes to the judge, and is the one person besides the bailiff who is routinely alone with them. The motion says Hill used that access to steer them.",
+      "sources": [
+        {
+          "outlet": "FITSNews",
+          "url": "https://www.fitsnews.com/2023/09/05/alex-murdaugh-appeal-attorneys-drop-bombshell-motion-demanding-new-trial/"
+        },
+        {
+          "outlet": "NBC News",
+          "url": "https://www.nbcnews.com/news/us-news/alex-murdaughs-defense-seek-new-trial-based-alleged-discovered-evidenc-rcna101619"
+        }
+      ]
+    },
+    {
+      "date": "2023-11-28",
+      "event": "Murdaugh pleads guilty to state financial crimes and is sentenced to 27 years in prison. He had already pleaded guilty to 22 federal charges in September 2023.",
+      "sources": [
+        {
+          "outlet": "NPR",
+          "url": "https://www.npr.org/2026/05/13/nx-s1-5719271/alex-murdaugh-murder-timeline-trial"
+        },
+        {
+          "outlet": "NBC News",
+          "url": "https://www.nbcnews.com/news/us-news/financial-victims-representatives-lay-alex-murdaugh-sentencing-rcna126980"
+        }
+      ]
+    },
+    {
+      "date": "2024-01-29",
+      "event": "Retired Chief Justice Jean Toal holds an evidentiary hearing and puts the jurors themselves on the stand. One juror testifies Hill told them to 'watch him closely' when Murdaugh testified and says 'she made it seem like he was already guilty.' Toal finds Hill 'not completely credible' and says she was 'attracted by the siren call of celebrity' \u2014 but denies a new trial, reasoning that eleven of the twelve jurors said nothing outside the evidence changed their verdict.",
+      "sources": [
+        {
+          "outlet": "NPR",
+          "url": "https://www.npr.org/2024/01/29/1227691743/alex-murdaugh-juror-says-clerk-made-him-seem-guilty-murder-appeal"
+        },
+        {
+          "outlet": "WLTX",
+          "url": "https://www.wltx.com/article/news/special-reports/alex-murdaugh/alex-murdaugh-hearing-january-29-2024/101-7e51d045-95c8-419b-b17a-ac846f4ba51c"
+        },
+        {
+          "outlet": "WCSC Live 5 News",
+          "url": "https://www.live5news.com/2024/01/29/judge-denies-murdaughs-new-double-murder-trial-finds-clerk-court-not-credible/"
+        }
+      ]
+    },
+    {
+      "date": "2024-03-15",
+      "event": "Becky Hill resigns as Colleton County Clerk of Court while under investigation. Her self-published book about the trial, 'Behind the Doors of Justice: The Murdaugh Murders,' had already been pulled from sale over plagiarism accusations. (Outlets report the resignation as March 2024; the exact day is not consistently stated.)",
+      "sources": [
+        {
+          "outlet": "ABC News",
+          "url": "https://abcnews.com/US/court-clerk-alex-murdaugh-murder-trial-pleads-guilty/story?id=128212120"
+        },
+        {
+          "outlet": "AP (via PBS NewsHour)",
+          "url": "https://www.pbs.org/newshour/nation/alex-murdaughs-murder-convictions-overturned-in-south-carolina-supreme-court-ruling"
+        }
+      ]
+    },
+    {
+      "date": "2024-04-02",
+      "event": "A federal judge sentences Murdaugh to 40 years for the schemes he pleaded guilty to in September 2023 \u2014 the sentence that, together with the 27-year state term, means the murder retrial will not decide whether he leaves prison.",
+      "sources": [
+        {
+          "outlet": "AP timeline (via WACH)",
+          "url": "https://wach.com/news/local/a-timeline-of-events-in-the-cases-against-alex-murdaugh"
+        }
+      ]
+    },
+    {
+      "date": "2025-12-08",
+      "event": "Becky Hill pleads guilty to obstruction of justice, perjury and misconduct in office. She admitted showing sealed trial exhibits to the press in February 2023 and then denying it under oath at the January 2024 hearing, promoting her book for personal gain, and taking about $12,000 in improper bonuses. She receives no prison time. 'There is no excuse for my mistakes,' she told the court. 'I am ashamed of them, and I will carry that shame with me for the rest of my life.' Outlets differ on the exact terms: ABC News reported three years' probation and 100 hours of community service; UPI later described it as one year of probation.",
+      "sources": [
+        {
+          "outlet": "ABC News",
+          "url": "https://abcnews.com/US/court-clerk-alex-murdaugh-murder-trial-pleads-guilty/story?id=128212120"
+        },
+        {
+          "outlet": "WCIV ABC News 4",
+          "url": "https://abcnews4.com/news/local/former-clerk-becky-hill-expected-back-in-court-as-her-legal-battle-continues-alex-murdaugh-murdaugh-murders-south-carolina"
+        },
+        {
+          "outlet": "UPI",
+          "url": "https://www.upi.com/Top_News/US/2026/06/29/alex-murdaugh-retrial/2751782747850/"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-13",
+      "event": "The South Carolina Supreme Court unanimously vacates both murder convictions and orders a new trial. All five justices sign the opinion. The court holds that Hill's contacts with jurors triggered a presumption that the verdict was tainted, and that the State could not rebut it: Hill 'egregiously attacked Murdaugh's credibility and his defense' and 'became a character witness on behalf of the State.' It calls her conduct 'breathtaking,' 'disgraceful' and 'unprecedented in South Carolina,' and says she 'placed her fingers on the scales of justice.' The court also warns that prosecutors went too far in the first trial with financial-crimes evidence \u2014 12.5 hours across ten days \u2014 and says that if it is admitted again, the State 'must complete its introduction of that evidence efficiently.' Attorney General Alan Wilson says his office will 'aggressively seek to retry' Murdaugh.",
+      "sources": [
+        {
+          "outlet": "State v. Murdaugh, S.C. Supreme Court (May 13, 2026)",
+          "url": "https://caselaw.findlaw.com/court/sc-supreme-court/14294.html"
+        },
+        {
+          "outlet": "AP (via PBS NewsHour)",
+          "url": "https://www.pbs.org/newshour/nation/alex-murdaughs-murder-convictions-overturned-in-south-carolina-supreme-court-ruling"
+        },
+        {
+          "outlet": "Post and Courier",
+          "url": "https://www.postandcourier.com/news/sc-alex-murdaugh-murder-new-trial/article_da9ec3f2-11bd-4e72-a7bb-3460e4826612.html"
+        },
+        {
+          "outlet": "FITSNews",
+          "url": "https://www.fitsnews.com/2026/05/13/s-c-supreme-court-strikes-down-alex-murdaughs-murder-convictions/"
+        }
+      ]
+    },
+    {
+      "date": "2026-06-29",
+      "event": "Murdaugh's first court appearance since the reversal. Circuit Judge Debra McCaslin, newly assigned to the case, sets the retrial for April 5, 2027 and makes clear she does not move dates once she sets them. The defense signals it will seek a change of venue, additional DNA testing, and computer access in jail.",
+      "sources": [
+        {
+          "outlet": "UPI",
+          "url": "https://www.upi.com/Top_News/US/2026/06/29/alex-murdaugh-retrial/2751782747850/"
+        },
+        {
+          "outlet": "WCSC Live 5 News",
+          "url": "https://www.live5news.com/2026/06/29/watch-live-alex-murdaugh-appears-court-beginning-retrial-proceedings/"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-30",
+      "event": "The defense files a memorandum asking the court to let Othram, a Texas forensic-genomics lab, test material recovered from under Maggie Murdaugh's left-hand fingernails before SLED does anything further with it. SLED had determined the DNA belongs to an 'unknown, unrelated male' and, according to the motion, stopped there. The defense argues SLED's standard STR testing risks consuming an irreplaceable sample, and that Othram's SNP-based method can pull usable information from degraded or trace amounts.",
+      "sources": [
+        {
+          "outlet": "WCSC Live 5 News",
+          "url": "https://www.live5news.com/2026/07/30/murdaugh-defense-seeks-independent-dna-testing-evidence-wifes-fingernails/"
+        },
+        {
+          "outlet": "FITSNews",
+          "url": "https://www.fitsnews.com/2026/07/30/murdaugh-retrial-evidence-battle-escalates/"
+        },
+        {
+          "outlet": "Oxygen",
+          "url": "https://www.oxygen.com/crime-news/alex-murdaugh-wants-testing-on-dna-found-under-maggies-nails"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-07",
+      "event": "Prosecutors file a stack of motions: to use Murdaugh's 2023 testimony at the retrial even if he does not take the stand again; to compel unredacted phone data from the defense; to renew objections from the first trial including exclusion of third-party-guilt and polygraph evidence; to run a written juror questionnaire before jury selection; and to allow DNA testing in a way that keeps the State consulted and with access. The defense files a 29-page memorandum asking that the trial be moved to Charleston County.",
+      "sources": [
+        {
+          "outlet": "WACH",
+          "url": "https://wach.com/newsletter-daily/flurry-of-filings-sets-stage-for-alex-murdaughs-next-court-date-friday"
+        },
+        {
+          "outlet": "FITSNews",
+          "url": "https://www.fitsnews.com/2026/08/10/alex-murdaugh-asks-judge-to-dismiss-murder-charges-move-retrial/"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-10",
+      "event": "The defense moves to dismiss the murder indictments outright. The filing says SLED lead agent David Owen 'testified that he presented physical evidence directly inculpating the Defendant to the Colleton County Grand Jury that he admitted was false \u2026 and which Defendant has proven was fabricated by law enforcement.' It relies on State v. Thrift, a South Carolina case allowing a judge to look behind a grand jury's work when a defendant makes a 'colorable claim of prosecutorial misconduct.' The same day, the State renews its motion to admit financial-crimes evidence as motive, arguing 'the clouds of [Murdaugh's] past were gathering into a perfect storm.'",
+      "sources": [
+        {
+          "outlet": "Court TV",
+          "url": "https://www.courttv.com/news/admitted-was-false-alex-murdaugh-says-he-should-walk-free-after-sled-agent-presented-physical-evidence-fabricated-by-law-enforcement-to-grand-jury-motion-alleges/"
+        },
+        {
+          "outlet": "FITSNews",
+          "url": "https://www.fitsnews.com/2026/08/10/alex-murdaugh-asks-judge-to-dismiss-murder-charges-move-retrial/"
+        },
+        {
+          "outlet": "WACH",
+          "url": "https://wach.com/newsletter-daily/flurry-of-filings-sets-stage-for-alex-murdaughs-next-court-date-friday"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-14",
+      "event": "Pretrial hearing in Lexington County, with Murdaugh in a suit rather than prison clothes and without shackles. Judge McCaslin rules: (1) VENUE \u2014 the trial leaves the 14th Judicial Circuit entirely. 'I'm going to order that venue be transferred to a county outside of (South Carolina's) 14th Judicial Circuit because I believe that the defendant cannot receive a fair and impartial trial in Colleton County,' she said, adding, 'I find that there is no lesser remedy that will adequately protect the defendant's constitutional rights to a fair and impartial jury.' She does not name the county, flagging cost: 'Colleton County is not a rich county; it's a poor county.' (2) PRIOR TESTIMONY \u2014 the State may use his 2023 testimony, but only the parts about the deaths of Maggie and Paul, and only if they clear the ordinary rules of evidence: 'It's all subject to rules of evidence. If it's not relevant, if it's not in your case in chief, then that prior testimony is not coming in obviously.' She also said: 'When you testify in a case, there's consequences.' (3) DNA \u2014 independent testing of the fingernail material may proceed, with samples returned to the State afterward. (4) POLYGRAPHS \u2014 inadmissible, with a warning: 'there is to be no mention of a polygraph before the jury.' (5) The judge will personally supervise jury summonses, and will review SLED personnel files for agents David Owen and Ryan Kelly privately in chambers.",
+      "sources": [
+        {
+          "outlet": "AP (via Crossroads Today)",
+          "url": "https://www.crossroadstoday.com/news/national-news/alex-murdaugh-s-testimony-at-first-murder-trial-can-be-used-conditionally-in-retrial-judge/article_3638426a-148d-5eaf-9165-b0ace4fb07cf.html"
+        },
+        {
+          "outlet": "WACH",
+          "url": "https://wach.com/newsletter-daily/judge-orders-alex-murdaugh-retrial-moved-outside-14th-circuit-over-jury-fairness-concerns"
+        },
+        {
+          "outlet": "WTOC",
+          "url": "https://www.wtoc.com/2026/08/14/key-rulings-shake-up-alex-murdaugh-retrial-venue-disputed-prior-testimony-fingernail-dna-approved/"
+        },
+        {
+          "outlet": "ABC Columbia",
+          "url": "https://www.abccolumbia.com/2026/08/14/judge-makes-multiple-rulings-ahead-of-alex-murdaugh-retrial/"
+        },
+        {
+          "outlet": "Newsweek",
+          "url": "https://www.newsweek.com/alex-murdaugh-hearing-pretrial-case-family-murders-12324867"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-14",
+      "event": "At the same hearing, defense lawyer Jim Griffin raises an unexpected claim: that shell casings from a recent Allendale County killing may be linked to a .300 Blackout rifle tied to the Murdaugh scene. 'Either their test is bad or someone's out there using a gun to murder other people,' Griffin said. Prosecutor Creighton Waters replied that he 'had never heard the first thing about that.' FITSNews reported that SLED subsequently ran the Allendale cartridge cases against the Murdaugh evidence through the national ballistics database and found no match. The claim remains contested and unresolved.",
+      "sources": [
+        {
+          "outlet": "Newsweek",
+          "url": "https://www.newsweek.com/alex-murdaugh-hearing-pretrial-case-family-murders-12324867"
+        },
+        {
+          "outlet": "FITSNews",
+          "url": "https://www.fitsnews.com/2026/08/15/week-in-review-special-murdaugh-retrial-edition/"
+        },
+        {
+          "outlet": "Rev \u2014 pretrial hearing transcript",
+          "url": "https://webflow.rev.com/transcripts/murdaugh-pre-trial-hearing"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-14",
+      "event": "The judge sets the schedule that will decide whether there is a trial at all: remaining motions \u2014 including the motion to dismiss the indictments \u2014 are due October 30, 2026, responses in early November, and argument on November 13, 2026 at 10 a.m. in Lexington County. (FITSNews reported the response deadline as November 6; WACH reported November 7.)",
+      "sources": [
+        {
+          "outlet": "WACH",
+          "url": "https://wach.com/newsletter-daily/judge-orders-alex-murdaugh-retrial-moved-outside-14th-circuit-over-jury-fairness-concerns"
+        },
+        {
+          "outlet": "FITSNews",
+          "url": "https://www.fitsnews.com/2026/08/15/week-in-review-special-murdaugh-retrial-edition/"
+        },
+        {
+          "outlet": "ABC Columbia",
+          "url": "https://www.abccolumbia.com/2026/08/14/judge-makes-multiple-rulings-ahead-of-alex-murdaugh-retrial/"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-17",
+      "event": "Having lost the argument for Charleston, the defense writes to Judge McCaslin recommending Richland County (Columbia) instead \u2014 a pool 'comparable to Charleston' without the travel and lodging costs, since SLED and the Attorney General's office are both based there. Dick Harpootlian adds a cost argument aimed at the judge's stated concern: 'It is appropriate that the Court act to protect the people of Colleton County from costs created by their own elected official's unexpected criminal conduct.' The State's suggested counties are York, Lancaster, Spartanburg, Newberry and Florence. No venue order has issued as of August 22, 2026.",
+      "sources": [
+        {
+          "outlet": "WIS",
+          "url": "https://www.wistv.com/2026/08/17/murdaugh-defense-pushing-retrial-be-richland-county/"
+        },
+        {
+          "outlet": "WBTV",
+          "url": "https://www.wbtv.com/2026/08/15/alex-murdaugh-retrial-could-be-coming-york-or-lancaster-counties/"
+        },
+        {
+          "outlet": "WRDW",
+          "url": "https://www.wrdw.com/2026/08/18/murdaugh-defense-pushing-retrial-be-richland-county/"
+        }
+      ]
+    }
+  ],
+  "days": []
+}

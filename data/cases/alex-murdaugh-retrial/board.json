@@ -1,0 +1,383 @@
+{
+  "note": "The questions the court must answer before April 2027, and the evidence pulling on each. Nothing here is a finding of guilt or innocence \u2014 the 2023 verdict was wiped out, and the second jury has not been picked.",
+  "nodes": [
+    {
+      "id": "q-dna",
+      "type": "question",
+      "x": 500,
+      "y": 120,
+      "title": "Whose DNA was under Maggie Murdaugh's fingernails?",
+      "body": "SLED found DNA from an 'unknown, unrelated male' under her left-hand fingernails and, per the defense motion, did not push further to identify him. On August 14, 2026 Judge McCaslin allowed the defense's lab, Othram, to test the material independently, with what's left returned to the State. Nobody knows yet whether the sample will yield a name \u2014 or whether it will turn out to be innocent contact.",
+      "status": "open",
+      "sources": [
+        {
+          "outlet": "WCSC Live 5 News",
+          "url": "https://www.live5news.com/2026/07/30/murdaugh-defense-seeks-independent-dna-testing-evidence-wifes-fingernails/"
+        },
+        {
+          "outlet": "AP (via Crossroads Today)",
+          "url": "https://www.crossroadstoday.com/news/national-news/alex-murdaugh-s-testimony-at-first-murder-trial-can-be-used-conditionally-in-retrial-judge/article_3638426a-148d-5eaf-9165-b0ace4fb07cf.html"
+        },
+        {
+          "outlet": "WTOC",
+          "url": "https://www.wtoc.com/2026/08/14/key-rulings-shake-up-alex-murdaugh-retrial-venue-disputed-prior-testimony-fingernail-dna-approved/"
+        }
+      ]
+    },
+    {
+      "id": "q-dismiss",
+      "type": "question",
+      "x": 500,
+      "y": 340,
+      "central": true,
+      "title": "The big one: should there be a second trial at all?",
+      "body": "A grand jury is a closed panel that decides only whether there's enough to charge someone \u2014 it hears one side, and courts almost never look behind its work. The defense says this one was handed physical evidence that the state's own lead agent later admitted was false, and asks the judge to throw the murder indictments out entirely. The legal key is State v. Thrift: a judge may inspect grand jury proceedings only if the defense first makes a 'colorable claim of prosecutorial misconduct.' Argument is set for November 13, 2026.",
+      "status": "open",
+      "sources": [
+        {
+          "outlet": "FITSNews",
+          "url": "https://www.fitsnews.com/2026/08/10/alex-murdaugh-asks-judge-to-dismiss-murder-charges-move-retrial/"
+        },
+        {
+          "outlet": "Court TV",
+          "url": "https://www.courttv.com/news/admitted-was-false-alex-murdaugh-says-he-should-walk-free-after-sled-agent-presented-physical-evidence-fabricated-by-law-enforcement-to-grand-jury-motion-alleges/"
+        },
+        {
+          "outlet": "WACH",
+          "url": "https://wach.com/newsletter-daily/judge-orders-alex-murdaugh-retrial-moved-outside-14th-circuit-over-jury-fairness-concerns"
+        }
+      ]
+    },
+    {
+      "id": "q-venue",
+      "type": "question",
+      "x": 500,
+      "y": 720,
+      "title": "Where do you find 12 South Carolinians who haven't decided?",
+      "body": "A change of venue means moving a trial to a different county because the local jury pool is too contaminated to be fair. On August 14 Judge McCaslin granted one \u2014 the trial leaves the whole five-county 14th Circuit \u2014 but she has not said where it goes. 'I find that there is no lesser remedy that will adequately protect the defendant's constitutional rights to a fair and impartial jury,' she said. The defense first wanted Charleston, then Richland; the State floated York, Lancaster, Spartanburg, Newberry and Florence.",
+      "status": "open",
+      "sources": [
+        {
+          "outlet": "WACH",
+          "url": "https://wach.com/newsletter-daily/judge-orders-alex-murdaugh-retrial-moved-outside-14th-circuit-over-jury-fairness-concerns"
+        },
+        {
+          "outlet": "WIS",
+          "url": "https://www.wistv.com/2026/08/17/murdaugh-defense-pushing-retrial-be-richland-county/"
+        },
+        {
+          "outlet": "WBTV",
+          "url": "https://www.wbtv.com/2026/08/15/alex-murdaugh-retrial-could-be-coming-york-or-lancaster-counties/"
+        }
+      ]
+    },
+    {
+      "id": "q-own-words",
+      "type": "question",
+      "x": 500,
+      "y": 940,
+      "title": "Can the jury hear him testify without him taking the stand?",
+      "body": "Murdaugh testified for himself in 2023. Prosecutors want to read parts of it to the new jury even if he stays silent this time, citing Harrison v. United States and the rule that a defendant's own statements aren't hearsay. The defense says the retrial is a fresh start and that he only took the stand because of financial-crimes evidence the Supreme Court said went too far. McCaslin's August 14 answer was a qualified yes: only the parts about the deaths, and 'It's all subject to rules of evidence.'",
+      "status": "open",
+      "sources": [
+        {
+          "outlet": "FITSNews",
+          "url": "https://www.fitsnews.com/2026/08/10/state-seeks-to-use-alex-murdaughs-prior-testimony-at-murder-retrial/"
+        },
+        {
+          "outlet": "AP (via Crossroads Today)",
+          "url": "https://www.crossroadstoday.com/news/national-news/alex-murdaugh-s-testimony-at-first-murder-trial-can-be-used-conditionally-in-retrial-judge/article_3638426a-148d-5eaf-9165-b0ace4fb07cf.html"
+        },
+        {
+          "outlet": "FITSNews",
+          "url": "https://www.fitsnews.com/2026/08/13/murdaugh-retrial-key-evidence-and-venue-disputes-take-shape/"
+        }
+      ]
+    },
+    {
+      "id": "e-shirt",
+      "type": "exhibit",
+      "x": 150,
+      "y": 120,
+      "title": "The bloody shirt that had no blood on it",
+      "body": "SLED lead agent David Owen told the 2022 grand jury that Murdaugh's white T-shirt carried high-velocity spatter linking him to the shootings, and that ammunition in seized weapons matched. Confirmatory testing had already come back negative for human blood, and the spatter theory was never put to the trial jury. Under cross-examination in 2023 Owen conceded the point: 'That is correct. In reference to the shirt, you are correct.' This is the whole basis of the motion to dismiss.",
+      "status": "open",
+      "sources": [
+        {
+          "outlet": "FITSNews",
+          "url": "https://www.fitsnews.com/2026/08/13/murdaugh-retrial-key-evidence-and-venue-disputes-take-shape/"
+        },
+        {
+          "outlet": "FITSNews",
+          "url": "https://www.fitsnews.com/2026/08/10/alex-murdaugh-asks-judge-to-dismiss-murder-charges-move-retrial/"
+        },
+        {
+          "outlet": "Court TV",
+          "url": "https://www.courttv.com/news/admitted-was-false-alex-murdaugh-says-he-should-walk-free-after-sled-agent-presented-physical-evidence-fabricated-by-law-enforcement-to-grand-jury-motion-alleges/"
+        }
+      ]
+    },
+    {
+      "id": "e-unknown-dna",
+      "type": "exhibit",
+      "x": 180,
+      "y": 300,
+      "title": "An unidentified man's DNA under her fingernails",
+      "body": "The defense memorandum says SLED recovered DNA from an unknown, unrelated male from under Maggie Murdaugh's left-hand fingernails and stopped there. Its lawyers want Othram to run SNP testing \u2014 the genealogy-grade method used in the Idaho student murders \u2014 because the sample is small and 'there is a real and substantial risk that the reserve samples will be degraded or exhausted' if standard testing eats it first.",
+      "status": "open",
+      "sources": [
+        {
+          "outlet": "WCSC Live 5 News",
+          "url": "https://www.live5news.com/2026/07/30/murdaugh-defense-seeks-independent-dna-testing-evidence-wifes-fingernails/"
+        },
+        {
+          "outlet": "FITSNews",
+          "url": "https://www.fitsnews.com/2026/07/30/murdaugh-retrial-evidence-battle-escalates/"
+        },
+        {
+          "outlet": "Oxygen",
+          "url": "https://www.oxygen.com/crime-news/alex-murdaugh-wants-testing-on-dna-found-under-maggies-nails"
+        }
+      ]
+    },
+    {
+      "id": "f-clerk-tampering",
+      "type": "fact",
+      "x": 150,
+      "y": 470,
+      "title": "The court clerk who told the jury what to think",
+      "body": "The Clerk of Court is the elected official who runs the jury's day \u2014 seats them, carries their notes, controls who reaches them. The Supreme Court found Rebecca 'Becky' Hill used that access to tell jurors not to be 'fooled,' to 'watch him closely,' and that a day was 'epic,' while writing a book about the trial. She 'became a character witness on behalf of the State,' the court held, and 'placed her fingers on the scales of justice.' She pleaded guilty in December 2025 to obstruction, perjury and misconduct in office.",
+      "status": "verified",
+      "sources": [
+        {
+          "outlet": "State v. Murdaugh, S.C. Supreme Court (May 13, 2026)",
+          "url": "https://caselaw.findlaw.com/court/sc-supreme-court/14294.html"
+        },
+        {
+          "outlet": "Post and Courier",
+          "url": "https://www.postandcourier.com/news/sc-alex-murdaugh-murder-new-trial/article_da9ec3f2-11bd-4e72-a7bb-3460e4826612.html"
+        },
+        {
+          "outlet": "ABC News",
+          "url": "https://abcnews.com/US/court-clerk-alex-murdaugh-murder-trial-pleads-guilty/story?id=128212120"
+        }
+      ]
+    },
+    {
+      "id": "f-no-weapon",
+      "type": "fact",
+      "x": 180,
+      "y": 640,
+      "title": "No murder weapons, and nothing on his clothes",
+      "body": "The guns used to kill Maggie and Paul have never been found. Reporting on the appeal notes the defense's central physical point: no blood or DNA from the shootings was recovered from Murdaugh or the clothes he was wearing, despite the shots being fired at close range. The State's 2023 case ran on timing, phone data and his own admitted lies rather than on forensics tying him to the trigger.",
+      "status": "verified",
+      "sources": [
+        {
+          "outlet": "AP (via PBS NewsHour)",
+          "url": "https://www.pbs.org/newshour/nation/alex-murdaughs-murder-convictions-overturned-in-south-carolina-supreme-court-ruling"
+        },
+        {
+          "outlet": "NPR",
+          "url": "https://www.npr.org/2026/05/13/nx-s1-5719271/alex-murdaugh-murder-timeline-trial"
+        }
+      ]
+    },
+    {
+      "id": "t-allendale",
+      "type": "testimony",
+      "x": 150,
+      "y": 810,
+      "title": "A rifle in someone else's killing? Contested.",
+      "body": "At the August 14 hearing Jim Griffin raised a recent Allendale County homicide and asked whether .300 Blackout casings there could link to the rifle tied to the Murdaugh scene: 'Either their test is bad or someone's out there using a gun to murder other people.' Creighton Waters said he 'had never heard the first thing about that.' FITSNews reported SLED then ran the Allendale casings through the national ballistics database and found no match. Unresolved, and disputed.",
+      "status": "open",
+      "sources": [
+        {
+          "outlet": "Newsweek",
+          "url": "https://www.newsweek.com/alex-murdaugh-hearing-pretrial-case-family-murders-12324867"
+        },
+        {
+          "outlet": "FITSNews",
+          "url": "https://www.fitsnews.com/2026/08/15/week-in-review-special-murdaugh-retrial-edition/"
+        },
+        {
+          "outlet": "Rev \u2014 pretrial hearing transcript",
+          "url": "https://webflow.rev.com/transcripts/murdaugh-pre-trial-hearing"
+        }
+      ]
+    },
+    {
+      "id": "t-2023-testimony",
+      "type": "testimony",
+      "x": 850,
+      "y": 260,
+      "title": "He already told a jury his story, under oath",
+      "body": "Murdaugh testified in his own defense on February 23, 2023 \u2014 a choice most defendants never make. Prosecutors call that a permanent asset: 'Nothing allows a defendant to simply erase the sworn testimony,' their motion says, and Waters argued the retrial is the same case, not a new one \u2014 'It's the same indictment, it's the same allegations.' McCaslin: 'When you testify in a case, there's consequences.'",
+      "status": "verified",
+      "sources": [
+        {
+          "outlet": "WACH",
+          "url": "https://wach.com/newsletter-daily/flurry-of-filings-sets-stage-for-alex-murdaughs-next-court-date-friday"
+        },
+        {
+          "outlet": "WTOC",
+          "url": "https://www.wtoc.com/2026/08/14/key-rulings-shake-up-alex-murdaugh-retrial-venue-disputed-prior-testimony-fingernail-dna-approved/"
+        },
+        {
+          "outlet": "AP (via Crossroads Today)",
+          "url": "https://www.crossroadstoday.com/news/national-news/alex-murdaugh-s-testimony-at-first-murder-trial-can-be-used-conditionally-in-retrial-judge/article_3638426a-148d-5eaf-9165-b0ace4fb07cf.html"
+        }
+      ]
+    },
+    {
+      "id": "f-money-motive",
+      "type": "fact",
+      "x": 850,
+      "y": 430,
+      "title": "The motive theory: $8.5 million and the walls closing in",
+      "body": "Murdaugh faced 71 state counts covering roughly $8.5 million stolen from clients and his own firm, and pleaded guilty to those crimes. Prosecutors argue the thefts were about to surface and the killings were meant to buy sympathy and time \u2014 'the clouds of [Murdaugh's] past were gathering into a perfect storm.' The Supreme Court did not ban this evidence, but said the State spent 12.5 hours over ten days on it and 'could have effectively presented evidence to support its motive theory in a fraction of that time.' How much comes in next April is undecided.",
+      "status": "open",
+      "sources": [
+        {
+          "outlet": "State v. Murdaugh, S.C. Supreme Court (May 13, 2026)",
+          "url": "https://caselaw.findlaw.com/court/sc-supreme-court/14294.html"
+        },
+        {
+          "outlet": "WACH",
+          "url": "https://wach.com/newsletter-daily/flurry-of-filings-sets-stage-for-alex-murdaughs-next-court-date-friday"
+        },
+        {
+          "outlet": "AP timeline (via WACH)",
+          "url": "https://wach.com/news/local/a-timeline-of-events-in-the-cases-against-alex-murdaugh"
+        }
+      ]
+    },
+    {
+      "id": "t-kennel-lie",
+      "type": "testimony",
+      "x": 850,
+      "y": 600,
+      "title": "He admitted lying about where he was that night",
+      "body": "On the stand in 2023 Murdaugh denied the killings but conceded he had lied to investigators for nearly two years about being at the dog kennels with Maggie and Paul shortly before they were shot, blaming opioid-driven paranoia. That admission is the single most valuable piece of the old transcript to prosecutors \u2014 and it is squarely about the deaths, so it survives McCaslin's limit.",
+      "status": "verified",
+      "sources": [
+        {
+          "outlet": "AP timeline (via WACH)",
+          "url": "https://wach.com/news/local/a-timeline-of-events-in-the-cases-against-alex-murdaugh"
+        },
+        {
+          "outlet": "NPR",
+          "url": "https://www.npr.org/2026/05/13/nx-s1-5719271/alex-murdaugh-murder-timeline-trial"
+        }
+      ]
+    },
+    {
+      "id": "f-not-exoneration",
+      "type": "fact",
+      "x": 850,
+      "y": 770,
+      "title": "What the Supreme Court did NOT say",
+      "body": "The court ruled on process, not proof. It vacated the convictions because a court official tainted the jury and the State could not show the verdict was unaffected \u2014 and it expressly declined to review the rest: 'Because we order a new trial on this basis, it is not necessary that we review every evidentiary issue Murdaugh raises.' It made no finding that he is innocent, did not weigh whether the evidence was sufficient, and did not bar a retrial on double-jeopardy grounds. He also stays in prison either way, on 27-year state and 40-year federal sentences for financial crimes.",
+      "status": "verified",
+      "sources": [
+        {
+          "outlet": "State v. Murdaugh, S.C. Supreme Court (May 13, 2026)",
+          "url": "https://caselaw.findlaw.com/court/sc-supreme-court/14294.html"
+        },
+        {
+          "outlet": "Post and Courier",
+          "url": "https://www.postandcourier.com/news/sc-alex-murdaugh-murder-new-trial/article_da9ec3f2-11bd-4e72-a7bb-3460e4826612.html"
+        },
+        {
+          "outlet": "NPR",
+          "url": "https://www.npr.org/2026/05/13/nx-s1-5719271/alex-murdaugh-murder-timeline-trial"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "e-shirt",
+      "to": "q-dismiss",
+      "type": "supports",
+      "label": "the evidence that wasn't"
+    },
+    {
+      "from": "e-shirt",
+      "to": "q-dna",
+      "type": "explains",
+      "label": "why the defense won't take SLED's word"
+    },
+    {
+      "from": "e-unknown-dna",
+      "to": "q-dna",
+      "type": "supports",
+      "label": "an unidentified man"
+    },
+    {
+      "from": "f-no-weapon",
+      "to": "q-dna",
+      "type": "supports",
+      "label": "no forensics on him"
+    },
+    {
+      "from": "t-allendale",
+      "to": "q-dna",
+      "type": "contested",
+      "label": "SLED says no match"
+    },
+    {
+      "from": "f-clerk-tampering",
+      "to": "q-venue",
+      "type": "explains",
+      "label": "why Colleton is out"
+    },
+    {
+      "from": "f-clerk-tampering",
+      "to": "f-not-exoneration",
+      "type": "explains",
+      "label": "process, not proof"
+    },
+    {
+      "from": "f-not-exoneration",
+      "to": "q-dismiss",
+      "type": "contradicts",
+      "label": "a do-over, not a dismissal"
+    },
+    {
+      "from": "t-2023-testimony",
+      "to": "q-own-words",
+      "type": "supports",
+      "label": "sworn, on the record"
+    },
+    {
+      "from": "t-kennel-lie",
+      "to": "t-2023-testimony",
+      "type": "supports",
+      "label": "the admission they want"
+    },
+    {
+      "from": "t-kennel-lie",
+      "to": "q-own-words",
+      "type": "supports",
+      "label": "squarely about the deaths"
+    },
+    {
+      "from": "f-money-motive",
+      "to": "t-2023-testimony",
+      "type": "explains",
+      "label": "what pushed him to the stand"
+    },
+    {
+      "from": "f-money-motive",
+      "to": "q-own-words",
+      "type": "contested",
+      "label": "tainted trigger, defense says"
+    },
+    {
+      "from": "f-money-motive",
+      "to": "q-venue",
+      "type": "explains",
+      "label": "the coverage that filled the pool"
+    }
+  ]
+}

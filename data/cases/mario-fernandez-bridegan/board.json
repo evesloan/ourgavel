@@ -1,0 +1,369 @@
+{
+  "note": "The questions the jury must answer, the evidence pulling on each \u2014 and your theories, labeled until proven. Left side: what helps the defense. Right side: what helps the state. Nothing here is a claim about whether Mario Fernandez did it; every card is something a witness said in open court or a document put in front of the jury, with the source attached. Jared Bridegan's surviving children are minors and are not named or described anywhere on this board.",
+  "nodes": [
+    {
+      "id": "the-tire-in-the-road",
+      "type": "fact",
+      "x": 500,
+      "y": 60,
+      "title": "Almost nothing about the killing itself is in dispute",
+      "body": "Both sides told the jury the same story about the street: on Feb. 16, 2022 a tire was left in the road, Jared Bridegan stopped and got out to move it, and he was shot. His wallet, phone and wedding ring were still on him, so it was not a robbery. The defense conceded in opening that Henry Tenon was the shooter. That is the unusual shape of this trial \u2014 the crime is agreed, only the customer is contested.",
+      "status": "verified",
+      "day": 1,
+      "sources": [
+        {
+          "outlet": "News4Jax/WJXT \u2014 Day 1",
+          "url": "https://www.news4jax.com/news/local/2026/08/17/1st-of-3-trials-in-jared-bridegan-murder-case-begins-monday-with-opening-statements/"
+        },
+        {
+          "outlet": "St. Johns Citizen \u2014 opening statements",
+          "url": "https://sjcitizen.com/jared-bridegan-murder-trial-opens-with-roadside-trap-10000-in-checks-and-no-witness-to-alleged-deal/"
+        }
+      ]
+    },
+    {
+      "id": "did-he-hire-the-shooter",
+      "type": "question",
+      "x": 500,
+      "y": 340,
+      "title": "Did Mario Fernandez arrange and pay for this killing?",
+      "body": "This is the whole case. Florida treats the person who hires a killing exactly like the person who fires the gun, so the jury is not asked whether Fernandez was on that street \u2014 everyone agrees he wasn't. It is asked two things: did he intend the killing to happen, and did he do or say something that actually caused Tenon to do it? The state has to prove both beyond a reasonable doubt.",
+      "status": "open",
+      "central": true,
+      "sources": [
+        {
+          "outlet": "Fla. Stat. \u00a7 777.011 \u2014 Principal in first degree",
+          "url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0700-0799/0777/Sections/0777.011.html"
+        },
+        {
+          "outlet": "Fla. Std. Jury Instr. (Crim.) 3.5(b) \u2014 when the active participant was hired by the defendant",
+          "url": "https://forms.justia.com/florida/criminal/final-charge-to-the-jury/5-b-principals-when-active-participant-hired-80912.html"
+        }
+      ]
+    },
+    {
+      "id": "wages-or-payoff",
+      "type": "question",
+      "x": 500,
+      "y": 720,
+      "title": "Was the $10,000 wages for a handyman \u2014 or the price of a murder?",
+      "body": "Fernandez wrote Henry Tenon three handwritten checks totaling $10,000 in March and April 2022, weeks after the killing. Nobody disputes the money moved. The state says it was payment for the murder disguised as a business investment. The defense says Tenon really did tree work, roofing, landscaping and tile for him, and wanted to start a pallet business. The same cheques support both stories, which is why this is a second question and not just a piece of evidence.",
+      "status": "open",
+      "sources": [
+        {
+          "outlet": "News4Jax/WJXT \u2014 Day 2",
+          "url": "https://www.news4jax.com/news/local/2026/08/18/testimony-continues-in-trial-of-mario-fernandez-accused-of-orchestrating-ambush-murder-of-jared-bridegan/"
+        },
+        {
+          "outlet": "St. Johns Citizen \u2014 opening statements",
+          "url": "https://sjcitizen.com/jared-bridegan-murder-trial-opens-with-roadside-trap-10000-in-checks-and-no-witness-to-alleged-deal/"
+        }
+      ]
+    },
+    {
+      "id": "no-physical-evidence",
+      "type": "testimony",
+      "x": 150,
+      "y": 120,
+      "title": "The lead detective: nothing physical connects Fernandez to it",
+      "body": "Under cross-examination Det. Chris Johns agreed that no DNA, no fingerprint and no surveillance image places Mario Fernandez in Tenon's truck or anywhere near the scene, and that Fernandez's DNA was not on a single item submitted for testing. Asked whether anything showed a gun changing hands to him, Johns said: \"There is no physical evidence of that.\" Jesse Dreicer made him say it more than once.",
+      "status": "verified",
+      "day": 3,
+      "sources": [
+        {
+          "outlet": "News4Jax/WJXT \u2014 Day 3",
+          "url": "https://www.news4jax.com/news/local/2026/08/19/lead-detective-in-jared-bridegan-murder-investigation-will-continue-testimony-wednesday-in-mario-fernandez-trial/"
+        },
+        {
+          "outlet": "News4Jax/WJXT \u2014 Day 4",
+          "url": "https://www.news4jax.com/news/local/2026/08/20/lead-detective-in-jared-bridegan-murder-returns-to-stand-to-defend-investigation-that-led-to-mario-fernandezs-arrest/"
+        }
+      ]
+    },
+    {
+      "id": "two-people-in-the-truck",
+      "type": "testimony",
+      "x": 180,
+      "y": 300,
+      "title": "There were two people in that truck, and nobody has named the second",
+      "body": "Cross-examining Cpl. Brian Wallace about the surveillance footage, Jesse Dreicer said: \"There are two people in the car. That's for certain.\" Wallace answered: \"That's correct.\" Dreicer's follow-up made the point \u2014 you can't be the man running from the scene and the man driving away from it. The state identifies Tenon as the shooter on foot. Who was behind the wheel has not been answered in front of this jury.",
+      "status": "verified",
+      "day": 2,
+      "sources": [
+        {
+          "outlet": "Court TV \u2014 two people at the scene, witness says",
+          "url": "https://www.courttv.com/news/there-were-2-people-at-the-site-of-microsoft-executive-jared-bridegans-murder-witness-says/"
+        }
+      ]
+    },
+    {
+      "id": "state-cant-place-him",
+      "type": "fact",
+      "x": 150,
+      "y": 470,
+      "title": "The state told the jury, out loud, that it can't say where he was",
+      "body": "In opening statements the prosecution conceded it cannot place Mario Fernandez anywhere during the hour Jared Bridegan was killed \u2014 \"We can't say where Mario Fernandez was during the time of the homicide\" \u2014 and the defense repeated it back immediately. Prosecutors also acknowledged the gap at the heart of the case: no witness will testify to any conversation between Fernandez and Tenon about a killing.",
+      "status": "verified",
+      "day": 1,
+      "sources": [
+        {
+          "outlet": "St. Johns Citizen \u2014 opening statements",
+          "url": "https://sjcitizen.com/jared-bridegan-murder-trial-opens-with-roadside-trap-10000-in-checks-and-no-witness-to-alleged-deal/"
+        }
+      ]
+    },
+    {
+      "id": "no-witness-to-a-deal",
+      "type": "fact",
+      "x": 180,
+      "y": 640,
+      "title": "Nobody ever heard Fernandez and Tenon discuss a killing",
+      "body": "The one witness who could have described the deal \u2014 Henry Tenon, who confessed and agreed to testify \u2014 took his guilty plea back in 2026 and now says what he told investigators about Fernandez and Gardner was false. He is not testifying at this trial. Neither is Shanna Gardner. So the jury is being asked to infer an agreement it will never hear described by anyone who was in it.",
+      "status": "verified",
+      "sources": [
+        {
+          "outlet": "News4Jax/WJXT \u2014 Tenon allowed to withdraw his plea",
+          "url": "https://www.news4jax.com/news/local/2026/02/17/judge-to-decide-if-accused-gunman-in-jared-bridegan-murder-for-hire-case-can-withdraw-guilty-plea-go-to-trial/"
+        },
+        {
+          "outlet": "News4Jax/WJXT \u2014 trial preview: neither co-defendant will testify",
+          "url": "https://www.news4jax.com/news/local/2026/08/14/mario-fernandez-trial-in-jared-bridegan-murder-case-begins-with-opening-statements-monday-heres-what-to-expect/"
+        },
+        {
+          "outlet": "St. Johns Citizen \u2014 no witness to the alleged deal",
+          "url": "https://sjcitizen.com/jared-bridegan-murder-trial-opens-with-roadside-trap-10000-in-checks-and-no-witness-to-alleged-deal/"
+        }
+      ]
+    },
+    {
+      "id": "weapon-never-found",
+      "type": "fact",
+      "x": 150,
+      "y": 810,
+      "title": "The gun was never found \u2014 and the chain to Fernandez is an inference",
+      "body": "The 10mm used to kill Bridegan has never been recovered; Det. Johns testified investigators were told in 2023 it was destroyed shortly after the killing. The state's theory is that it came from John Biggerstaff, a long-time friend Fernandez visited on Jan. 25, 2022. Johns conceded there is no physical evidence connecting Biggerstaff's 10mm to Fernandez. The defense offered a different, verifiable reason for that visit involving Biggerstaff's private life, and Johns confirmed the detail.",
+      "status": "verified",
+      "day": 4,
+      "sources": [
+        {
+          "outlet": "News4Jax/WJXT \u2014 Day 4",
+          "url": "https://www.news4jax.com/news/local/2026/08/20/lead-detective-in-jared-bridegan-murder-returns-to-stand-to-defend-investigation-that-led-to-mario-fernandezs-arrest/"
+        },
+        {
+          "outlet": "News4Jax/WJXT \u2014 Day 3, the defense's unusual argument",
+          "url": "https://www.news4jax.com/news/local/2026/08/19/lead-detective-in-jared-bridegan-murder-investigation-will-continue-testimony-wednesday-in-mario-fernandez-trial/"
+        }
+      ]
+    },
+    {
+      "id": "the-trust-money",
+      "type": "fact",
+      "x": 850,
+      "y": 90,
+      "title": "His death unlocked a trust. $50,000 moved a week later.",
+      "body": "In opening statements the state told jurors that a trust set up by Shanna Gardner's parents only released control to her once her legal fights with Bridegan were resolved, and that within a week of his death Fernandez moved $50,000 out of that trust into his own account. Fernandez was a trustee of the trust and co-owner with Gardner of First Choice Home Rentals LLC. This is the state's motive card, and so far it rests on the opening rather than on testimony reported from the stand.",
+      "status": "open",
+      "day": 1,
+      "sources": [
+        {
+          "outlet": "St. Johns Citizen \u2014 opening statements",
+          "url": "https://sjcitizen.com/jared-bridegan-murder-trial-opens-with-roadside-trap-10000-in-checks-and-no-witness-to-alleged-deal/"
+        },
+        {
+          "outlet": "News4Jax/WJXT \u2014 who is Mario Fernandez",
+          "url": "https://www.news4jax.com/news/local/2026/08/17/hes-the-first-to-face-trial-in-jared-bridegan-murder-for-hire-case-what-do-we-know-about-mario-fernandez/"
+        }
+      ]
+    },
+    {
+      "id": "the-matching-tire",
+      "type": "exhibit",
+      "x": 850,
+      "y": 260,
+      "title": "A tire like the roadblock turned up at his rental property",
+      "body": "The tire dragged into the road was the trap \u2014 the prosecutor called it as central to the plan as the gun. Tenon's DNA was on its inner rim. Investigators then found a matching tire at the Potomac Avenue property Fernandez rented to Tenon. The defense's answer is that Fernandez was at that property constantly for ordinary reasons: pole-camera video shown to the jury has him doing construction work there about 20 times in 30 days.",
+      "status": "verified",
+      "day": 2,
+      "sources": [
+        {
+          "outlet": "News4Jax/WJXT \u2014 Day 2",
+          "url": "https://www.news4jax.com/news/local/2026/08/18/testimony-continues-in-trial-of-mario-fernandez-accused-of-orchestrating-ambush-murder-of-jared-bridegan/"
+        },
+        {
+          "outlet": "News4Jax/WJXT \u2014 Day 3, pole-camera footage",
+          "url": "https://www.news4jax.com/news/local/2026/08/19/lead-detective-in-jared-bridegan-murder-investigation-will-continue-testimony-wednesday-in-mario-fernandez-trial/"
+        },
+        {
+          "outlet": "CBS News / AP",
+          "url": "https://www.cbsnews.com/news/microsoft-manager-murder-jared-bridegan-suspect-trial-florida/"
+        }
+      ]
+    },
+    {
+      "id": "kickstarter-good-luck",
+      "type": "exhibit",
+      "x": 850,
+      "y": 430,
+      "title": "$10,000 in checks, and a memo reading \"Good luck!\"",
+      "body": "Check stubs recovered from the truck show three handwritten checks from Fernandez to Tenon in March and April 2022, after the murder, totaling $10,000. One, dated April 4, 2022 and drawn on First Choice Home Rentals LLC, carries the notations \"Kickstarter\" and \"Good luck!\" Det. Johns has testified this was framed as an investment in Tenon's pallet company. The defense says that is exactly what it was.",
+      "status": "verified",
+      "day": 2,
+      "sources": [
+        {
+          "outlet": "News4Jax/WJXT \u2014 Day 2",
+          "url": "https://www.news4jax.com/news/local/2026/08/18/testimony-continues-in-trial-of-mario-fernandez-accused-of-orchestrating-ambush-murder-of-jared-bridegan/"
+        },
+        {
+          "outlet": "Fox News \u2014 the \"good luck\" check",
+          "url": "https://www.foxnews.com/us/suspect-microsoft-exec-murder-for-hire-slaying-wished-good-luck-hit-man-witness"
+        },
+        {
+          "outlet": "St. Johns Citizen \u2014 opening statements",
+          "url": "https://sjcitizen.com/jared-bridegan-murder-trial-opens-with-roadside-trap-10000-in-checks-and-no-witness-to-alleged-deal/"
+        }
+      ]
+    },
+    {
+      "id": "phone-goes-dark",
+      "type": "testimony",
+      "x": 850,
+      "y": 600,
+      "title": "His phone dropped off the network for 70 minutes that night",
+      "body": "FBI Special Agent Bobby Blythe testified that Fernandez's phone shows no network activity from roughly 7:10 to 8:20 p.m. on Feb. 16, 2022 \u2014 the last shots were fired just before 8. Tenon's phone tracks from northwest Jacksonville toward Jacksonville Beach in the same window. Both devices, the state says, went quiet in a way consistent with being switched off or in airplane mode. On cross, Blythe agreed cell data gives an approximate area, not a precise location.",
+      "status": "verified",
+      "day": 5,
+      "sources": [
+        {
+          "outlet": "News4Jax/WJXT \u2014 Day 5 digital evidence",
+          "url": "https://www.news4jax.com/news/local/2026/08/21/mario-fernandezs-attorneys-question-fbi-analyst-who-tracked-cellphones-from-night-of-jared-bridegans-murder/"
+        }
+      ]
+    },
+    {
+      "id": "practice-run-jan-29",
+      "type": "testimony",
+      "x": 850,
+      "y": 770,
+      "title": "The state calls a Jan. 29 trip a dry run",
+      "body": "Blythe testified that on Jan. 29, 2022, Tenon's phone travelled toward Bridegan's home and a gymnastics facility and then on to Jacksonville Beach, where Bridegan would later be killed \u2014 while Fernandez's phone stayed at the Potomac Avenue rental property. Prosecutors present this as a rehearsal. The defense's counter is that phone data cannot show intent, and that Fernandez being at his own rental property is not evidence of anything.",
+      "status": "verified",
+      "day": 4,
+      "sources": [
+        {
+          "outlet": "News4Jax/WJXT \u2014 Day 4",
+          "url": "https://www.news4jax.com/news/local/2026/08/20/lead-detective-in-jared-bridegan-murder-returns-to-stand-to-defend-investigation-that-led-to-mario-fernandezs-arrest/"
+        },
+        {
+          "outlet": "News4Jax/WJXT \u2014 Day 5 digital evidence",
+          "url": "https://www.news4jax.com/news/local/2026/08/21/mario-fernandezs-attorneys-question-fbi-analyst-who-tracked-cellphones-from-night-of-jared-bridegans-murder/"
+        }
+      ]
+    },
+    {
+      "id": "hit-and-run-remark",
+      "type": "testimony",
+      "x": 850,
+      "y": 940,
+      "title": "A friend says he called it a hit-and-run, early",
+      "body": "Taylor Kutis, who met Fernandez during Army training in 2013, testified by Zoom that Fernandez phoned him after Bridegan's death and said \"they think it was a hit and run\" \u2014 Court TV rendered the same testimony as Fernandez saying he thought Bridegan had died in a hit and run. Kutis also recalled Fernandez describing \"a special set of skills\" from his Army years and referring to \"a contract with Gardner's family.\" The state offers this as the defendant's own words; the defense treats it as loose talk years old, remembered secondhand.",
+      "status": "verified",
+      "day": 3,
+      "sources": [
+        {
+          "outlet": "Action News Jax \u2014 Day 3",
+          "url": "https://www.actionnewsjax.com/news/local/murder-hire-third-day-trial-begins-mario-fernandez-saldana/6XZYDE77BVACDP3UWKI3GHW2L4/"
+        },
+        {
+          "outlet": "Court TV \u2014 live trial updates",
+          "url": "https://www.courttv.com/news/microsoft-executive-was-murdered-in-a-planned-tactical-ambush-prosecutors/"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "the-tire-in-the-road",
+      "to": "did-he-hire-the-shooter",
+      "type": "explains",
+      "label": "what both sides agree on"
+    },
+    {
+      "from": "wages-or-payoff",
+      "to": "did-he-hire-the-shooter",
+      "type": "explains",
+      "label": "the money is the case"
+    },
+    {
+      "from": "no-physical-evidence",
+      "to": "did-he-hire-the-shooter",
+      "type": "contradicts",
+      "label": "no forensic link at all"
+    },
+    {
+      "from": "two-people-in-the-truck",
+      "to": "did-he-hire-the-shooter",
+      "type": "contested",
+      "label": "who was the second person?"
+    },
+    {
+      "from": "state-cant-place-him",
+      "to": "did-he-hire-the-shooter",
+      "type": "contradicts",
+      "label": "the state's own concession"
+    },
+    {
+      "from": "weapon-never-found",
+      "to": "did-he-hire-the-shooter",
+      "type": "contradicts",
+      "label": "the gun chain is inference"
+    },
+    {
+      "from": "no-witness-to-a-deal",
+      "to": "wages-or-payoff",
+      "type": "contradicts",
+      "label": "nobody heard a bargain"
+    },
+    {
+      "from": "the-matching-tire",
+      "to": "did-he-hire-the-shooter",
+      "type": "supports",
+      "label": "the trap traces to his property"
+    },
+    {
+      "from": "kickstarter-good-luck",
+      "to": "wages-or-payoff",
+      "type": "contested",
+      "label": "invoice or receipt?"
+    },
+    {
+      "from": "phone-goes-dark",
+      "to": "did-he-hire-the-shooter",
+      "type": "supports",
+      "label": "70 minutes unaccounted for"
+    },
+    {
+      "from": "practice-run-jan-29",
+      "to": "did-he-hire-the-shooter",
+      "type": "supports",
+      "label": "a rehearsal, the state says"
+    },
+    {
+      "from": "the-trust-money",
+      "to": "wages-or-payoff",
+      "type": "supports",
+      "label": "what his death unlocked"
+    },
+    {
+      "from": "hit-and-run-remark",
+      "to": "did-he-hire-the-shooter",
+      "type": "supports",
+      "label": "his own words, a friend says"
+    },
+    {
+      "from": "two-people-in-the-truck",
+      "to": "phone-goes-dark",
+      "type": "contested",
+      "label": "does the dark phone put him in it?"
+    }
+  ]
+}

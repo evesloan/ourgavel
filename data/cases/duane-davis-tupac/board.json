@@ -1,0 +1,391 @@
+{
+  "note": "The questions the jury must answer, the evidence pulling on each \u2014 and your theories, labeled until proven.",
+  "nodes": [
+    {
+      "id": "q-own-words",
+      "type": "question",
+      "x": 500,
+      "y": 340,
+      "title": "Can his own words convict him, and nothing else?",
+      "body": "Everything that ties Duane Davis to the shooting came out of Davis's own mouth: a 2008 police interview, a 2009 follow-up, a 2019 memoir, and years of documentary clips. His lawyer Michael Sanft put it in one sentence for the jury: \"No one corroborates any of this.\" Nevada still keeps an old rule that a person cannot be convicted on a confession alone \u2014 the state must show, with evidence that does not come from the defendant, that a crime happened. Nobody disputes a crime happened here. The fight is over whether anything independent actually connects this man to it.",
+      "status": "open",
+      "central": true,
+      "sources": [
+        {
+          "outlet": "CBS News",
+          "url": "https://www.cbsnews.com/news/tupac-shakur-murder-trial-opening-statements-keffe-d-davis/"
+        },
+        {
+          "outlet": "NPR",
+          "url": "https://www.npr.org/2026/08/18/g-s1-139061/tupac-shakur-killing-trial"
+        },
+        {
+          "outlet": "Sheriff, Clark County v. Dhadda, 115 Nev. 175 (1999)",
+          "url": "https://law.justia.com/cases/nevada/supreme-court/1999/32564-1.html"
+        }
+      ]
+    },
+    {
+      "id": "q-gang-hit",
+      "type": "question",
+      "x": 500,
+      "y": 720,
+      "title": "A gang hit, or one man's family grudge?",
+      "body": "Davis is not only charged with murder. He is charged with a murder committed \"knowingly for the benefit of, at the direction of, or in affiliation with\" a criminal gang \u2014 an add-on that carries 1 to 20 extra years if jurors find it true beyond a reasonable doubt, and it must be proved separately from the killing itself. Prosecutors put a former South Side Crip on the stand to explain the rivalry with Mob Piru, the set tied to Death Row Records. The defense keeps steering toward a smaller, older story: an uncle furious that his nephew got beaten in a casino lobby.",
+      "status": "open",
+      "sources": [
+        {
+          "outlet": "NRS 193.168 \u2014 Criminal gang enhancement",
+          "url": "https://law.justia.com/codes/nevada/chapter-193/statute-193-168/"
+        },
+        {
+          "outlet": "News 3 Las Vegas",
+          "url": "https://news3lv.com/news/local/prosecutors-video-tupac-shakur-murder-trial-las-vegas-duane-davis-keffe-d-court-livestream-watch"
+        },
+        {
+          "outlet": "NPR",
+          "url": "https://www.npr.org/2026/08/18/g-s1-139061/tupac-shakur-killing-trial"
+        }
+      ]
+    },
+    {
+      "id": "no-corroboration",
+      "type": "fact",
+      "x": 150,
+      "y": 120,
+      "title": "\"No one corroborates any of this\"",
+      "body": "In his opening statement, defense lawyer Michael Sanft told jurors the state was dressing up a story as evidence: \"What they are telling you, they are representing as fact, when it's really fiction.\" He asked why, if this case is so clear, nobody charged Davis for 27 years, and called the original investigation \"biased\" and \"sloppy\" with \"missing documents.\" Then the line the whole defense hangs on: \"No one corroborates any of this.\"",
+      "status": "verified",
+      "day": 1,
+      "sources": [
+        {
+          "outlet": "NPR",
+          "url": "https://www.npr.org/2026/08/18/g-s1-139061/tupac-shakur-killing-trial"
+        },
+        {
+          "outlet": "CBS News",
+          "url": "https://www.cbsnews.com/news/tupac-shakur-murder-trial-opening-statements-keffe-d-davis/"
+        }
+      ]
+    },
+    {
+      "id": "witnesses-all-dead",
+      "type": "fact",
+      "x": 180,
+      "y": 300,
+      "title": "Everyone else in that Cadillac is dead",
+      "body": "Prosecutors say four men rode in the white Cadillac. Davis is the last one alive \u2014 his nephew Orlando \"Baby Lane\" Anderson was killed in 1998, and the other two have died since. There is nobody left who can confirm or contradict a word of what Davis said happened inside that car. Suge Knight, who was driving Shakur's BMW and survived the shooting, has refused to help either side, telling ABC News: \"Leave me out of it.\"",
+      "status": "verified",
+      "sources": [
+        {
+          "outlet": "NPR",
+          "url": "https://www.npr.org/2026/08/18/g-s1-139061/tupac-shakur-killing-trial"
+        },
+        {
+          "outlet": "TIME",
+          "url": "https://time.com/article/2026/08/16/30-years-after-tupac-shakur-was-killed-a-murder-trial-begins/"
+        },
+        {
+          "outlet": "ABC News",
+          "url": "https://abcnews.com/US/tupac-shakur-murder-trial-begins-ahead-opening-statements/story?id=135694608"
+        }
+      ]
+    },
+    {
+      "id": "story-sold-for-money",
+      "type": "testimony",
+      "x": 150,
+      "y": 470,
+      "title": "The confession he says he invented",
+      "body": "Davis's position now is that the story was a product, not a memory. His lawyer told the court the memoir's co-writer \"sort of made it up\" and that Davis pushed the book \"for entertainment purposes.\" In a March 2025 jailhouse interview Davis said he was innocent and was not even in Las Vegas the night Shakur was shot, and the defense says it will call witnesses to back that up plus an expert on false confessions. Even the prosecution concedes the obvious about how this case was made: \"Had he decided to never write the book, he would not probably have ever been prosecuted,\" said Chief Deputy DA Marc DiGiacomo.",
+      "status": "open",
+      "sources": [
+        {
+          "outlet": "Associated Press (via The Spokesman-Review)",
+          "url": "https://www.spokesman.com/stories/2026/jun/30/judge-rules-memoir-by-defendant-in-tupac-killing-c/"
+        },
+        {
+          "outlet": "ABC News",
+          "url": "https://abcnews.com/US/tupac-shakur-murder-trial-begins-ahead-opening-statements/story?id=135694608"
+        },
+        {
+          "outlet": "TIME",
+          "url": "https://time.com/article/2026/08/16/30-years-after-tupac-shakur-was-killed-a-murder-trial-begins/"
+        }
+      ]
+    },
+    {
+      "id": "compton-not-vegas",
+      "type": "testimony",
+      "x": 180,
+      "y": 640,
+      "title": "He told the FBI he'd have done it in Compton",
+      "body": "Retired FBI special agent Wade Lee, who arrested Davis on drug charges in the late 1990s, testified that Davis denied knowing who killed Shakur. Lee told jurors Davis admitted he was angry enough about his nephew's beating to strike back \u2014 but said he would have wanted to do it in Compton, not Las Vegas. That is Davis contradicting Davis, and it is the defense's best illustration that his accounts shift depending on who is listening.",
+      "status": "verified",
+      "day": 3,
+      "sources": [
+        {
+          "outlet": "News 3 Las Vegas",
+          "url": "https://news3lv.com/news/local/day-three-witness-testimony-tupac-shakur-murder-trial-duane-davis-keffe-d-las-vegas-clark-county-court-nevada-livestream-watch"
+        }
+      ]
+    },
+    {
+      "id": "not-our-beef",
+      "type": "testimony",
+      "x": 150,
+      "y": 810,
+      "title": "\"Wasn't our beef\" \u2014 the club's security boss",
+      "body": "James McDonald, who ran security at Club 662 the night of the shooting, testified only after the court ordered him to and asked to be treated as a hostile witness. He explained that \"662\" spells MOB on a phone keypad, a nod to the Mob Piru set. But asked about the feud, he cast it as personal rather than gang business: \"Wasn't our beef. Was between Suge Knight and Keffe D.\" He also told the court he did not want to \"send another Black man to prison.\"",
+      "status": "verified",
+      "day": 2,
+      "sources": [
+        {
+          "outlet": "Fox 5 Vegas",
+          "url": "https://www.fox5vegas.com/2026/08/18/live-witnesses-continue-take-stand-day-two-tupac-murder-trial/"
+        },
+        {
+          "outlet": "Associated Press (via Bay News 9)",
+          "url": "https://baynews9.com/fl/tampa/ap-top-news/2026/08/18/forensic-pathologist-details-tupac-shakurs-fatal-wounds-at-duane-keffe-d-davis-trial"
+        }
+      ]
+    },
+    {
+      "id": "no-shooter-id",
+      "type": "fact",
+      "x": 180,
+      "y": 980,
+      "title": "In 30 years, nobody ever picked out a shooter",
+      "body": "Retired Las Vegas homicide detective Brent Becker walked jurors through what investigators actually had in 1996: witnesses describing a white Cadillac, casings on the road, and a car full of holes. Under questioning he acknowledged the hole at the centre of it \u2014 no witness ever identified a shooter from a photo lineup. Ingrid Stokes, stopped in a convertible near the intersection, told jurors she saw Suge Knight driving with Shakur beside him, then ducked when the shooting started and never saw who fired.",
+      "status": "verified",
+      "day": 1,
+      "sources": [
+        {
+          "outlet": "News 3 Las Vegas",
+          "url": "https://news3lv.com/news/local/opening-statements-tupac-shakur-murder-trial-duane-davis-las-vegas-clark-county-court-live-watch-nevada"
+        }
+      ]
+    },
+    {
+      "id": "the-2008-tape",
+      "type": "exhibit",
+      "x": 850,
+      "y": 100,
+      "title": "The tape: he walks detectives through the night",
+      "body": "Jurors heard Davis in 2008 with LAPD detective Daryn Dupree and former detective Greg Kading, describing the Cadillac coming up on Shakur's side of the street rather than his own: \"If we would have been on my side, I would have blasted.\" He says he passed his gun backward, that one man turned it down, and that his nephew Orlando Anderson took it and fired. Dupree explained to jurors why Davis was in that room at all: \"Everybody was a suspect at that time.\" On the same recordings Davis claims Sean \"Diddy\" Combs said of Shakur and Knight, \"I want to get rid of those dudes\" \u2014 Combs has never been charged in the killing.",
+      "status": "verified",
+      "day": 4,
+      "sources": [
+        {
+          "outlet": "NPR",
+          "url": "https://www.npr.org/2026/08/21/nx-s1-5940538/jurors-hear-keffe-d-say-his-nephew-fired-fatal-shots-at-tupac-shakur-in-1996-drive-by-shooting"
+        },
+        {
+          "outlet": "News 3 Las Vegas",
+          "url": "https://news3lv.com/news/local/prosecutors-video-tupac-shakur-murder-trial-las-vegas-duane-davis-keffe-d-court-livestream-watch"
+        },
+        {
+          "outlet": "Los Angeles Magazine",
+          "url": "https://lamag.com/crimeinla/duane-davis-told-feds-sean-combs-offered-him-1m-to-kill-tupac/"
+        }
+      ]
+    },
+    {
+      "id": "the-memoir",
+      "type": "exhibit",
+      "x": 850,
+      "y": 260,
+      "title": "The book he told people to buy for \"the real truth\"",
+      "body": "Davis's 2019 memoir, \"Compton Street Legend,\" describes him putting a gun into the back seat of the Cadillac. On June 30, 2026, Judge Carli Kierny ruled it admissible, finding that Davis \"adopted the book as his own\" and encouraged people \"to buy it to get the real truth.\" Prosecutors' answer to the confidentiality argument was blunt: \"A defendant cannot market his confession and then demand that the courthouse treat it as confidential.\" Davis wrote in the book itself, \"I sang because they promised I would not be prosecuted.\"",
+      "status": "verified",
+      "sources": [
+        {
+          "outlet": "Associated Press (via Jefferson City News-Tribune)",
+          "url": "https://www.newstribune.com/news/2026/jul/02/tupac-murder-suspects-book-admissible-in-trial/"
+        },
+        {
+          "outlet": "Associated Press (via The Spokesman-Review)",
+          "url": "https://www.spokesman.com/stories/2026/jun/30/judge-rules-memoir-by-defendant-in-tupac-killing-c/"
+        },
+        {
+          "outlet": "NPR",
+          "url": "https://www.npr.org/2026/07/29/nx-s1-5911616/police-interview-tupac-trial"
+        }
+      ]
+    },
+    {
+      "id": "mgm-video",
+      "type": "exhibit",
+      "x": 850,
+      "y": 430,
+      "title": "The beating, caught on casino camera",
+      "body": "MGM Grand investigator Michael Ingram authenticated 1996 surveillance tapes showing Shakur and his entourage attacking Orlando Anderson in the lobby after the Tyson fight. Prosecutor Binu Palal built his opening on it: \"On September 7, 1996, Tupac Shakur publicly, on camera, participated in a humiliating beating of Duane Davis' nephew.\" Roughly two and a half hours later, Shakur was shot. Former Metro sergeant Kenneth Rios testified Anderson refused medical care and declined to press charges, so no report was ever written.",
+      "status": "verified",
+      "day": 2,
+      "sources": [
+        {
+          "outlet": "Fox 5 Vegas",
+          "url": "https://www.fox5vegas.com/2026/08/18/live-witnesses-continue-take-stand-day-two-tupac-murder-trial/"
+        },
+        {
+          "outlet": "CBS News",
+          "url": "https://www.cbsnews.com/news/tupac-shakur-murder-trial-opening-statements-keffe-d-davis/"
+        },
+        {
+          "outlet": "PBS News Hour",
+          "url": "https://www.pbs.org/newshour/nation/forensic-pathologist-details-tupac-shakurs-fatal-wounds-in-duane-keffe-d-davis-trial"
+        }
+      ]
+    },
+    {
+      "id": "forensics-match",
+      "type": "fact",
+      "x": 850,
+      "y": 600,
+      "title": "A .40-caliber gun, and .40-caliber bullets",
+      "body": "Detective Brent Becker testified the 1996 forensic work pointed to a .40-caliber Glock, and former gang detective Dean O'Kelly told jurors the weapon was \"a Glock 40.\" Davis's own account is that he handed over a .40-caliber gun. When police searched a Henderson home tied to Davis in July 2023, among the items they carried out were .40-caliber bullets, alongside computers, photographs and a copy of his memoir. Whether a caliber that matches 27 years later is real corroboration or a coincidence is exactly the weighing the jury has to do.",
+      "status": "verified",
+      "day": 1,
+      "sources": [
+        {
+          "outlet": "News 3 Las Vegas",
+          "url": "https://news3lv.com/news/local/opening-statements-tupac-shakur-murder-trial-duane-davis-las-vegas-clark-county-court-live-watch-nevada"
+        },
+        {
+          "outlet": "Fox 5 Vegas",
+          "url": "https://www.fox5vegas.com/2026/08/18/live-witnesses-continue-take-stand-day-two-tupac-murder-trial/"
+        },
+        {
+          "outlet": "NPR",
+          "url": "https://www.npr.org/2023/09/29/1202716171/tupac-shakur-killing-duane-davis-indicted"
+        }
+      ]
+    },
+    {
+      "id": "gang-rivalry",
+      "type": "testimony",
+      "x": 850,
+      "y": 770,
+      "title": "Two gangs, two record labels, one night",
+      "body": "Denvonta Lee, a former associate of Davis, testified under court order that he was initiated into the South Side Crips, and identified Mob Piru \u2014 the set tied to Death Row Records, Suge Knight and Shakur \u2014 as the rival. Judge Kierny had already ruled before trial that gang evidence could come in to show motive. This testimony is the spine of the enhancement: the state has to convince jurors this was gang business, not just a family argument that turned deadly.",
+      "status": "verified",
+      "day": 4,
+      "sources": [
+        {
+          "outlet": "News 3 Las Vegas",
+          "url": "https://news3lv.com/news/local/prosecutors-video-tupac-shakur-murder-trial-las-vegas-duane-davis-keffe-d-court-livestream-watch"
+        },
+        {
+          "outlet": "Associated Press (via Jefferson City News-Tribune)",
+          "url": "https://www.newstribune.com/news/2026/jul/02/tupac-murder-suspects-book-admissible-in-trial/"
+        }
+      ]
+    },
+    {
+      "id": "only-one-alive",
+      "type": "testimony",
+      "x": 850,
+      "y": 940,
+      "title": "\"I am the only one alive who can tell you\"",
+      "body": "Mario Diaz, director of BET's \"Death Row Chronicles,\" testified Davis was paid to appear and that the series was unscripted, with no questions supplied in advance. Prosecutors played clips of Davis saying: \"I am the only one alive who can tell you who really killed Tupac.\" The prosecution's point is repetition \u2014 not one slip in one interrogation room, but a story Davis told on camera, in print and to police over more than a decade.",
+      "status": "verified",
+      "day": 5,
+      "sources": [
+        {
+          "outlet": "Fox Baltimore (Sinclair)",
+          "url": "https://foxbaltimore.com/news/nation-world/first-week-testimony-tupac-shakur-murder-trial-concludes-friday-day-5-witnesses-duane-davis-keffe-d-las-vegas-court-nevada-livestream"
+        },
+        {
+          "outlet": "Fox 5 Vegas",
+          "url": "https://www.fox5vegas.com/2026/08/21/three-witnesses-expected-during-fifth-day-witness-testimony-tupac-murder-trial/"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "no-corroboration",
+      "to": "q-own-words",
+      "type": "contradicts",
+      "label": "his lawyer's whole case"
+    },
+    {
+      "from": "witnesses-all-dead",
+      "to": "q-own-words",
+      "type": "contradicts",
+      "label": "nobody left to check him"
+    },
+    {
+      "from": "story-sold-for-money",
+      "to": "q-own-words",
+      "type": "contradicts",
+      "label": "he says he made it up"
+    },
+    {
+      "from": "no-shooter-id",
+      "to": "q-own-words",
+      "type": "contradicts",
+      "label": "30 years, no eyewitness ID"
+    },
+    {
+      "from": "compton-not-vegas",
+      "to": "q-own-words",
+      "type": "contested",
+      "label": "his story keeps changing"
+    },
+    {
+      "from": "the-2008-tape",
+      "to": "q-own-words",
+      "type": "supports",
+      "label": "his own recorded words"
+    },
+    {
+      "from": "the-memoir",
+      "to": "q-own-words",
+      "type": "supports",
+      "label": "he sold it as the truth"
+    },
+    {
+      "from": "forensics-match",
+      "to": "q-own-words",
+      "type": "supports",
+      "label": "the caliber lines up"
+    },
+    {
+      "from": "only-one-alive",
+      "to": "q-own-words",
+      "type": "supports",
+      "label": "he kept saying it, on camera"
+    },
+    {
+      "from": "gang-rivalry",
+      "to": "q-gang-hit",
+      "type": "supports",
+      "label": "Crips against Mob Piru"
+    },
+    {
+      "from": "mgm-video",
+      "to": "q-gang-hit",
+      "type": "contested",
+      "label": "family beef or gang beef?"
+    },
+    {
+      "from": "not-our-beef",
+      "to": "q-gang-hit",
+      "type": "contradicts",
+      "label": "\"between Suge Knight and Keffe D\""
+    },
+    {
+      "from": "compton-not-vegas",
+      "to": "q-gang-hit",
+      "type": "contradicts",
+      "label": "he wanted it handled at home"
+    },
+    {
+      "from": "the-2008-tape",
+      "to": "q-gang-hit",
+      "type": "explains",
+      "label": "a $1M offer muddies the motive"
+    }
+  ]
+}

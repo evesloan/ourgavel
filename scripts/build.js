@@ -393,7 +393,11 @@ a.promo:hover{text-decoration:none;transform:translateY(-2px);box-shadow:inset 0
 .mcredit{font-family:var(--sans);font-size:10.5px;letter-spacing:.4px;color:var(--mut)}
 .mlink{text-decoration:none;min-height:96px;justify-content:space-between}
 .mlink:hover{text-decoration:none}
-#lightbox{position:fixed;inset:0;z-index:80;background:rgba(20,14,8,.9);display:flex;align-items:center;justify-content:center;gap:8px;padding:16px}
+#lightbox{position:fixed;inset:0;z-index:80;background:rgba(20,14,8,.9);align-items:center;justify-content:center;gap:8px;padding:16px;display:none}
+/* [hidden] must win. A bare display:flex here overrides the attribute and pins the
+   viewer open over every case page with no way to close it. */
+#lightbox:not([hidden]){display:flex}
+#lightbox[hidden]{display:none !important}
 #lightbox figure{margin:0;max-width:min(1100px,92vw);max-height:88vh;display:flex;flex-direction:column;gap:8px}
 #lightbox img{max-width:100%;max-height:78vh;object-fit:contain;border:1px solid var(--line);background:var(--panel)}
 #lightbox figcaption{display:flex;flex-direction:column;gap:2px;color:#f0e6d2;font-size:14px}

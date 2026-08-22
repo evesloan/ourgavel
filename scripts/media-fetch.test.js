@@ -127,13 +127,23 @@ ok(silent.rejected.length === 1, 'a query yielding no usable files must leave a 
 ok(/usable images/.test(silent.rejected[0].reason || ''), 'the trace must distinguish "found nothing" from "gate refused it": ' + (silent.rejected[0] || {}).reason);
 
 console.log('--- Captions built from filenames must read like captions ---');
-const capsFrom = async title => (await M.discoverCase({ slug: 'c', media: [{ caption: 'taken' }], mediaQueries: [{ q: 'x', kind: 'place', must: ['court'], caption: 'taken' }] },
-  { outDir: out, deps: { ...deps, verify: async () => [{ ok: true, title, url: 'https://u/z', thumb: 'https://u/z', descriptionUrl: 'https://commons/' + title, width: 2000, text: 'court', rights: 'public-domain', licence: 'CC0', attribution: 'X' }] } })).added[0].caption;
-ok(await capsFrom('File:Los Angeles Federal Courthouse 127 S Broadway dllu.jpg') === 'Los Angeles Federal Courthouse 127 S Broadway',
-  'an uploader handle must be stripped, got: ' + await capsFrom('File:Los Angeles Federal Courthouse 127 S Broadway dllu.jpg'));
+const capsFrom = async (title, attribution = 'A Photographer') => (await M.discoverCase({ slug: 'c', media: [{ caption: 'taken' }], mediaQueries: [{ q: 'x', kind: 'place', must: ['court'], caption: 'taken' }] },
+  { outDir: out, deps: { ...deps, verify: async () => [{ ok: true, title, url: 'https://u/z', thumb: 'https://u/z', descriptionUrl: 'https://commons/' + title + attribution, width: 2000, text: 'court', rights: 'public-domain', licence: 'CC0', attribution }] } })).added[0].caption;
+const HANDLE = 'File:Los Angeles Federal Courthouse 127 S Broadway dllu.jpg';
+ok(await capsFrom(HANDLE, 'Daniel Lu (User:dllu)') === 'Los Angeles Federal Courthouse 127 S Broadway',
+  'a handle that appears in the credit must be stripped, got: ' + await capsFrom(HANDLE, 'Daniel Lu (User:dllu)'));
+ok(await capsFrom(HANDLE, 'Someone Else') === 'Los Angeles Federal Courthouse 127 S Broadway dllu',
+  'a trailing word NOT in the credit must be kept — guessing is what ate "view"');
 ok(await capsFrom('File:Duval_County_Courthouse_from_Clay_St.jpg') === 'Duval County Courthouse from Clay St',
   'a real trailing word must be kept, got: ' + await capsFrom('File:Duval_County_Courthouse_from_Clay_St.jpg'));
 ok(!/\(\d{6,}\)/.test(await capsFrom('File:Some Courthouse (50027024252).jpg')), 'an upload id must be stripped');
+ok(await capsFrom('File:Supreme Court of South Carolina, Columbia, South view 20160702 1.jpg') === 'Supreme Court of South Carolina, Columbia, South view',
+  'a camera date stamp must be stripped, got: ' + await capsFrom('File:Supreme Court of South Carolina, Columbia, South view 20160702 1.jpg'));
+ok(await capsFrom('File:Colleton County Courthouse DSC_0421.jpg') === 'Colleton County Courthouse',
+  'a camera sequence number must be stripped, got: ' + await capsFrom('File:Colleton County Courthouse DSC_0421.jpg'));
+ok(await capsFrom('File:Colleton County Courthouse exterior view.jpg') === 'Colleton County Courthouse exterior view',
+  'real trailing words must survive — an earlier version ate "view": ' + await capsFrom('File:Colleton County Courthouse exterior view.jpg'));
+ok(await capsFrom('File:Duval County Courthouse at night.jpg') === 'Duval County Courthouse at night', 'and "night"');
 ok(!/_|\.jpg/i.test(await capsFrom('File:A_Courthouse_somewhere.jpg')), 'underscores and extensions must never reach a caption');
 
 console.log('--- One query must not take the whole case ---');

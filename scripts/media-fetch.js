@@ -104,14 +104,26 @@ function relevanceGate(hit, q) {
  */
 function captionFor(hit, q, taken) {
   if (q.caption && !taken.has(q.caption)) return q.caption;
-  const fromTitle = String(hit.title || '')
+  let fromTitle = String(hit.title || '')
     .replace(/^File:/, '').replace(/\.[a-z0-9]+$/i, '')
     .replace(/[_]+/g, ' ').replace(/\s*-\s*panoramio\s*$/i, '')
     .replace(/\s*\(\d{6,}\)\s*$/, '')
+    // Camera and archive filenames end in date stamps and sequence numbers:
+    // "…Columbia, South view 20160702 1". None of that is a caption.
+    .replace(/[\s,;-]+\d{6,8}(?:[\s_-]+\d{1,3})?$/, '')
+    .replace(/[\s,;-]+(?:DSC|IMG|P)[\s_-]?\d{3,}$/i, '')
     .replace(/\s+/g, ' ').trim()
-    // Commons filenames often end in the uploader's handle. A trailing all-lowercase token
-    // after a capitalised word is that, not part of the subject: "…127 S Broadway dllu".
-    .replace(/(?<=\b[A-Z][A-Za-z.]*|\d)\s+[a-z][a-z0-9]{1,7}$/, '');
+    ;
+  // Commons filenames often end in the uploader's handle: "…127 S Broadway dllu". No rule
+  // about the SHAPE of that word works — an earlier attempt ate "view", and "night" has the
+  // same consonant run as "dllu". But the file's own attribution says who uploaded it, so
+  // check the evidence instead of guessing: strip the last word only when it turns up in the
+  // credit. Anything else stays, artifact and all. A slightly ugly caption beats a wrong one.
+  const credit = String(hit.attribution || '').toLowerCase();
+  const last = (fromTitle.match(/\s([A-Za-z][A-Za-z0-9]{1,15})$/) || [])[1];
+  if (last && credit.includes(last.toLowerCase()) && fromTitle.split(/\s+/).length > 2) {
+    fromTitle = fromTitle.slice(0, -(last.length + 1)).trim();
+  }
   if (fromTitle && !taken.has(fromTitle)) return fromTitle;
   return fromTitle || q.caption || 'Untitled';
 }

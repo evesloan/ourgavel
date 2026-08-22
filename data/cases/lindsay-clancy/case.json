@@ -336,6 +336,22 @@
       "bytes": 189383,
       "addedAt": "2026-08-22T09:45:19.970Z",
       "verified": "commons-api"
+    },
+    {
+      "type": "image",
+      "query": "Massachusetts Supreme Judicial Court building Boston",
+      "local": "media/lindsay-clancy/a03f739d2a49.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Healey-driscoll-administration-celebrates-ceremonial-inauguration-of-supreme-judicial-court-justice-bessie-dewar_53501433516_o.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Healey-driscoll-administration-celebrates-ceremonial-inauguration-of-supreme-judicial-court-justice-bessie-dewar_53501433516_o.jpg",
+      "caption": "Healey-driscoll-administration-celebrates-ceremonial-inauguration-of-supreme-judicial-court-justice-bessie-dewar 53501433516 o",
+      "alt": "Healey-driscoll-administration-celebrates-ceremonial-inauguration-of-supreme-judicial-court-justice-bessie-dewar 53501433516 o",
+      "credit": "Joshua Qualls/Governor’s Press Office",
+      "rights": "public-domain",
+      "licence": "Public domain",
+      "licenceUrl": "",
+      "bytes": 212259,
+      "addedAt": "2026-08-22T10:00:16.391Z",
+      "verified": "commons-api"
     }
   ]
 }

@@ -320,6 +320,22 @@
       "addedAt": "2026-08-22T09:10:19.185Z",
       "verified": "commons-api",
       "query": "Duxbury Massachusetts town"
+    },
+    {
+      "type": "image",
+      "query": "Massachusetts Supreme Judicial Court building Boston",
+      "local": "media/lindsay-clancy/aa7746e3544f.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Healey-driscoll-administration-celebrates-ceremonial-inauguration-of-supreme-judicial-court-justice-bessie-dewar_53500548592_o.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Healey-driscoll-administration-celebrates-ceremonial-inauguration-of-supreme-judicial-court-justice-bessie-dewar_53500548592_o.jpg",
+      "caption": "The Massachusetts Supreme Judicial Court, which sets the insanity standard applied here",
+      "alt": "The Massachusetts Supreme Judicial Court building in Boston",
+      "credit": "Joshua Qualls/Governor’s Press Office",
+      "rights": "public-domain",
+      "licence": "Public domain",
+      "licenceUrl": "",
+      "bytes": 189383,
+      "addedAt": "2026-08-22T09:45:19.970Z",
+      "verified": "commons-api"
     }
   ]
 }

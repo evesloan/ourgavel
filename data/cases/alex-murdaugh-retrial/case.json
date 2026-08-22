@@ -382,6 +382,22 @@
       "addedAt": "2026-08-22T09:35:17.112Z",
       "verified": "commons-api",
       "query": "South Carolina Supreme Court building Columbia"
+    },
+    {
+      "type": "image",
+      "query": "South Carolina Supreme Court building Columbia",
+      "local": "media/alex-murdaugh-retrial/1640136c1eca.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Supreme_Court_of_South_Carolina,_Columbia,_South_view_20160702_1.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Supreme_Court_of_South_Carolina,_Columbia,_South_view_20160702_1.jpg",
+      "caption": "Supreme Court of South Carolina, Columbia, South view 20160702 1",
+      "alt": "Supreme Court of South Carolina, Columbia, South view 20160702 1",
+      "credit": "DXR",
+      "rights": "cc-licensed",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "bytes": 215881,
+      "addedAt": "2026-08-22T09:45:19.970Z",
+      "verified": "commons-api"
     }
   ]
 }

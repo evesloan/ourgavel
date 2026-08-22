@@ -1,19 +1,18 @@
 {
-  "updated": "2026-08-22T09:35:17.112Z",
+  "updated": "2026-08-22T09:45:19.970Z",
   "published": [
     {
-      "local": "media/lil-durk-murder-for-hire/9f29b77330b5.jpg",
-      "licence": "CC BY-SA 4.0",
-      "credit": "Daniel L. Lu (user:dllu)"
-    },
-    {
-      "local": "media/lil-durk-murder-for-hire/8e58f03588bf.jpg",
-      "licence": "CC BY-SA 4.0",
-      "credit": "DocFreeman24"
+      "local": "media/lil-durk-murder-for-hire/64d0b907eb93.jpg",
+      "licence": "CC0",
+      "credit": "Alexis Doine"
     }
   ],
   "heldForReview": [],
   "refused": [
+    {
+      "title": "File:Postcard with a photograph of the Hall of Records in Los Angeles, ca.1910 (EXM-P-S-LOS-ANG-CIT-BUI-705).jpg",
+      "reason": "archival image — it would read as the present-day venue"
+    },
     {
       "title": "File:Panoramic view of downtown Los Angeles, looking south between Spring Street and Broadway from the Courthouse, ca.1905 (CHS-5066-p).jpg",
       "reason": "archival image — it would read as the present-day venue"
@@ -29,6 +28,14 @@
     {
       "title": "File:Baist's real estate atlas of surveys of Los Angeles, California, 1921 (31294).jpg",
       "reason": "filename dates the photograph to 1921"
+    },
+    {
+      "title": "File:A horse-drawn streetcar in front of the Los Angeles post office on Main Street, circa 1892.jpg",
+      "reason": "archival image — it would read as the present-day venue"
+    },
+    {
+      "query": "United States Courthouse Los Angeles First Street",
+      "reason": "nothing publishable: 7 file(s) verified, none cleared the gate"
     }
   ]
 }

@@ -379,6 +379,22 @@
       "addedAt": "2026-08-22T09:35:17.112Z",
       "verified": "commons-api",
       "query": "Edward R Roybal Federal Building Los Angeles"
+    },
+    {
+      "type": "image",
+      "query": "Edward R Roybal Federal Building Los Angeles",
+      "local": "media/lil-durk-murder-for-hire/64d0b907eb93.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Edward_R._Roybal_Federal_Building_and_United_States_Courthouse_(Los_Angeles).JPG",
+      "source": "https://commons.wikimedia.org/wiki/File:Edward_R._Roybal_Federal_Building_and_United_States_Courthouse_(Los_Angeles).JPG",
+      "caption": "Edward R. Roybal Federal Building and United States Courthouse (Los Angeles)",
+      "alt": "Edward R. Roybal Federal Building and United States Courthouse (Los Angeles)",
+      "credit": "Alexis Doine",
+      "rights": "public-domain",
+      "licence": "CC0",
+      "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "bytes": 696279,
+      "addedAt": "2026-08-22T09:45:19.970Z",
+      "verified": "commons-api"
     }
   ]
 }

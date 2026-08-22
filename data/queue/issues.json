@@ -1,4 +1,21 @@
 {
-  "synced": "2026-08-22T20:40:20.392Z",
-  "open": []
+  "synced": "2026-08-22T21:00:15.836Z",
+  "open": [
+    {
+      "number": 3,
+      "title": "[question] Why isn't the husband being looked into further?",
+      "body": "### Case\nlindsay-clancy\n\n### In one sentence\nWhy isn't the husband being looked into further?\n\n### Reasoning\n_none given_\n\n---\nPosted anonymously via the composer on https://ourgavel.com.\nScreened for personal information before submission. Subject to the same review as every other post.",
+      "labels": [
+        "question",
+        "via-composer"
+      ],
+      "user": "evesloan",
+      "created": "2026-08-22T20:59:35Z",
+      "reactions": {
+        "up": 0,
+        "down": 0
+      },
+      "url": "https://github.com/evesloan/ourgavel/issues/3"
+    }
+  ]
 }

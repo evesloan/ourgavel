@@ -44,6 +44,23 @@ inline blocks we generated**. Consequences:
 `frame-ancestors` is not honoured in a meta CSP. Framing is **intentional**: `/board/embed/` exists
 to be embedded. There is nothing to clickjack — no logins, no destructive actions, no state.
 
+### Photographs (2026-08-22)
+
+`img-src` is `'self' data:` and nothing else. It used to collect the origin of every media entry
+on a case, which meant a statute host and a court's PDF library were both permitted to serve
+images to a reader's page — thirteen domains in total, none of which ever served one. Documents
+render as links; they never needed the permission.
+
+Photographs are now **copied onto our own origin** by `scripts/media-fetch.js` before they are
+shown, so a case page still makes zero external requests with a full gallery on it. This is the
+reason the answer to "can we embed tweets or TikToks?" is no by default: an embed is a live
+third-party script plus a frame plus a tracking call, on pages about people facing prison. If
+that is ever revisited, it is a change to this section first.
+
+The download path refuses anything that is not demonstrably an image: content-type must be
+`image/*`, the leading bytes must match a real format signature, and the file must be between
+1KB and 3MB. A `.gov` page returning an HTML error page cannot become an `<img>`.
+
 ## Automation
 
 - The workflow's `GITHUB_TOKEN` is scoped to `contents`, `pages`, `id-token`, `issues` — no more.
@@ -67,7 +84,10 @@ to be embedded. There is nothing to clickjack — no logins, no destructive acti
 3. No inline event handlers. Bind in the script block.
 4. No third-party scripts, fonts, or trackers without re-deriving the CSP hashes and updating
    this file. **An ad network is a third-party script** — turning ads on means revisiting this
-   document first, not after.
+   document first, not after. **A social embed is also a third-party script**, and additionally a
+   frame and a beacon; see Photographs above.
+4b. No host is added to `img-src`. If a picture is worth showing, it is worth holding the bytes.
+   `IMG_HOSTS` in `scripts/build.js` is frozen empty on purpose.
 5. No secrets in the repo, ever. The build and the pulse need none beyond `GITHUB_TOKEN`.
 6. Re-run the checks below before any release that touches templates.
 
@@ -75,7 +95,11 @@ to be embedded. There is nothing to clickjack — no logins, no destructive acti
 
 ```
 node scripts/build.js                       # must build cleanly
+node scripts/media.test.js                  # rights logic — a failure means we may republish someone else's photo
+node scripts/media-fetch.test.js            # the gate — a failure means a stranger's face could reach a case page
+node scripts/media.viewer-test.js           # the viewer, in a real browser, desktop and mobile
 grep -o 'onclick="[^"]*"' public/**/*.html  # must return nothing
+grep -o "img-src[^;]*" public/index.html    # must read exactly: img-src 'self' data:
 ```
 Then load a board page over HTTP and confirm: zero CSP violations in the console, the detail panel
 opens, connection highlighting works. A CSP violation after a template change means the hashes

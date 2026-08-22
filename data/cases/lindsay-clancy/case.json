@@ -3,7 +3,7 @@
   "title": "Commonwealth v. Lindsay Clancy",
   "shortTitle": "Lindsay Clancy Trial",
   "status": "active",
-  "phase": "Prosecutors' last rebuttal witnesses \u2014 closings expected Mon or Tue, then the jury",
+  "phase": "Prosecutors' last rebuttal witnesses — closings expected Mon or Tue, then the jury",
   "court": "Plymouth County Superior Court, Massachusetts",
   "judge": "Judge William F. Sullivan",
   "incidentDate": "2023-01-24",
@@ -39,6 +39,39 @@
     "plymouth superior",
     "reddington",
     "postpartum psychosis trial"
+  ],
+  "mediaQueries": [
+    {
+      "q": "Plymouth County Superior Court Brockton Massachusetts",
+      "kind": "place",
+      "must": [
+        "court",
+        "brockton"
+      ],
+      "caption": "Plymouth County Superior Court, Brockton, Massachusetts — where the trial is being heard",
+      "alt": "Exterior of the Plymouth County Superior Court building in Brockton, Massachusetts"
+    },
+    {
+      "q": "Duxbury Massachusetts town",
+      "kind": "place",
+      "must": [
+        "duxbury"
+      ],
+      "deny": [
+        "clancy"
+      ],
+      "caption": "Duxbury, Massachusetts",
+      "alt": "A view of Duxbury, Massachusetts"
+    },
+    {
+      "q": "Massachusetts Supreme Judicial Court building Boston",
+      "kind": "institution",
+      "must": [
+        "judicial court"
+      ],
+      "caption": "The Massachusetts Supreme Judicial Court, which sets the insanity standard applied here",
+      "alt": "The Massachusetts Supreme Judicial Court building in Boston"
+    }
   ],
   "verdictKeywords": [
     "verdict",
@@ -126,10 +159,10 @@
     },
     {
       "option": "Not guilty by reason of lack of criminal responsibility",
-      "consequence": "Up to 40 days hospitalization for evaluation; state may petition for commitment (6 months, renewable yearly) under M.G.L. c.123 \u00a716.",
+      "consequence": "Up to 40 days hospitalization for evaluation; state may petition for commitment (6 months, renewable yearly) under M.G.L. c.123 §16.",
       "sources": [
         {
-          "outlet": "Mass. General Laws c.123 \u00a716",
+          "outlet": "Mass. General Laws c.123 §16",
           "url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXVII/Chapter123/Section16"
         },
         {
@@ -160,8 +193,8 @@
     }
   ],
   "legalStandard": {
-    "name": "Lack of criminal responsibility \u2014 the McHoul standard",
-    "test": "A person is not responsible for criminal conduct if at the time of such conduct, as a result of mental disease or defect, they lack substantial capacity either to appreciate the wrongfulness of their conduct or to conform their conduct to the requirements of law. The two prongs are alternatives \u2014 either one suffices.",
+    "name": "Lack of criminal responsibility — the McHoul standard",
+    "test": "A person is not responsible for criminal conduct if at the time of such conduct, as a result of mental disease or defect, they lack substantial capacity either to appreciate the wrongfulness of their conduct or to conform their conduct to the requirements of law. The two prongs are alternatives — either one suffices.",
     "burden": "The Commonwealth must prove the defendant WAS criminally responsible, beyond a reasonable doubt. The defense does not have to prove insanity.",
     "sources": [
       {
@@ -182,8 +215,8 @@
       }
     ]
   },
-  "plainSummary": "She doesn't deny causing her three children's deaths. The whole trial is one question: was her mind gone \u2014 wrecked by postpartum psychosis, as her defense says \u2014 or working fine, as prosecutors say? The experts flatly contradict each other, and a verdict could land within days.",
-  "statusNow": "The defense rested Friday after 10 witnesses, without putting Clancy on the stand. Prosecutors are now calling their final rebuttal experts \u2014 their last chance to convince the jury she wasn't psychotic. Closing arguments are expected Monday or Tuesday. Then the jury takes over.",
+  "plainSummary": "She doesn't deny causing her three children's deaths. The whole trial is one question: was her mind gone — wrecked by postpartum psychosis, as her defense says — or working fine, as prosecutors say? The experts flatly contradict each other, and a verdict could land within days.",
+  "statusNow": "The defense rested Friday after 10 witnesses, without putting Clancy on the stand. Prosecutors are now calling their final rebuttal experts — their last chance to convince the jury she wasn't psychotic. Closing arguments are expected Monday or Tuesday. Then the jury takes over.",
   "statusNowSources": [
     {
       "outlet": "WBUR",
@@ -198,7 +231,7 @@
       "url": "https://www.cbsnews.com/boston/news/lindsay-clancy-trial-watch-live-day-18-dr-phillip-resnick/"
     }
   ],
-  "storySoFar": "Over three weeks, about 70 prosecution witnesses built the case that Lindsay Clancy planned her children's deaths \u2014 the phone searches, the Apple Health data, the exercise bands. Then 10 defense witnesses told the opposite story: a mother 'begging for help' through months of failed treatment and 13 prescribed medications, until \u2014 two defense experts say \u2014 a psychotic break with a voice commanding her. The experts flatly contradict each other. That collision is what the jury has to resolve.",
+  "storySoFar": "Over three weeks, about 70 prosecution witnesses built the case that Lindsay Clancy planned her children's deaths — the phone searches, the Apple Health data, the exercise bands. Then 10 defense witnesses told the opposite story: a mother 'begging for help' through months of failed treatment and 13 prescribed medications, until — two defense experts say — a psychotic break with a voice commanding her. The experts flatly contradict each other. That collision is what the jury has to resolve.",
   "storySoFarSources": [
     {
       "outlet": "WBUR",
@@ -215,7 +248,7 @@
   ],
   "courtRecords": [
     {
-      "outlet": "Massachusetts Trial Court \u2014 public docket search",
+      "outlet": "Massachusetts Trial Court — public docket search",
       "url": "https://www.masscourts.org/",
       "note": "Criminal dockets need the case number; name search is civil-only."
     }
@@ -252,7 +285,7 @@
     {
       "type": "document",
       "url": "https://www.masscourts.org/",
-      "caption": "Massachusetts Trial Court \u2014 public docket search",
+      "caption": "Massachusetts Trial Court — public docket search",
       "credit": "Criminal dockets need the case number; name search is civil-only.",
       "rights": "public-record"
     }

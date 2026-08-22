@@ -102,12 +102,24 @@ async function commonsVerify(titles) {
     if (!/^image\/(jpeg|png|webp|gif)$/i.test(ii.mime || '')) continue;
     const d = licenceDecision(ii.extmetadata);
     if (!d.ok) { out.push({ title: p.title, ok: false, reason: d.reason }); continue; }
+    // Everything the relevance gate needs to judge WHAT the file depicts, not just whether
+    // we may republish it. Title alone is too thin — a courthouse is often filed under a
+    // photographer's naming scheme with the subject only in the description or categories.
+    const em = ii.extmetadata || {};
+    const text = [
+      strip((em.ObjectName || {}).value),
+      strip((em.ImageDescription || {}).value),
+      strip((em.Categories || {}).value).replace(/\|/g, ' '),
+    ].filter(Boolean).join(' ');
     out.push({
       ok: true,
       title: p.title,
       url: ii.url,
       thumb: ii.thumburl || ii.url,
       descriptionUrl: ii.descriptionurl,
+      width: ii.width || 0,
+      height: ii.height || 0,
+      text,
       rights: d.rights,
       licence: d.licence,
       licenceUrl: d.licenceUrl,

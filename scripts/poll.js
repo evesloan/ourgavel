@@ -13,6 +13,7 @@ const path = require('path');
 const { assess, OUTCOME_LABEL, MIN_OUTLETS } = require('./verdict.js');
 
 const ROOT = path.join(__dirname, '..');
+const { discoverCase, safeToDiscover } = require('./media-fetch.js');
 const DATA = path.join(ROOT, 'data');
 const REPO = process.env.GB_REPO || 'evesloan/ourgavel';
 const TOKEN = process.env.GITHUB_TOKEN || '';
@@ -391,9 +392,57 @@ async function ingestTheories() {
   }
 }
 
+/* Photographs.
+ *
+ * A case page with no picture on it reads as a wall of text, and readers bounce off walls of
+ * text. But a wrong picture on a page about a killing is a far worse failure than a plain
+ * one, so this only ever adds places — courthouses, civic buildings, towns — and only when
+ * the file clears the token gate in the case record. People are queued, never published.
+ *
+ * The bytes are copied into public/media/ and served from our own origin. Nothing here
+ * introduces an outbound request on a reader's page, which is the whole point.
+ */
+async function discoverMedia(slug) {
+  const safe = safeToDiscover();
+  if (!safe.ok) {
+    if (!discoverMedia._warned) {
+      discoverMedia._warned = true;
+      console.error('MEDIA DISCOVERY DISABLED THIS RUN — ' + path.basename(safe.test) + ' failed:');
+      console.error(safe.detail);
+    }
+    return;
+  }
+  const cPath = path.join(DATA, 'cases', slug, 'case.json');
+  const CASE = JSON.parse(fs.readFileSync(cPath, 'utf8'));
+  if (!(CASE.mediaQueries || []).length) return;
+  let r;
+  try {
+    r = await discoverCase(CASE, { outDir: path.join(ROOT, 'data'), now: NOW });
+  } catch (e) { console.error('media discovery failed for', slug, e.message); return; }
+
+  if (r.added.length) {
+    CASE.media = (CASE.media || []).concat(r.added);
+    write(cPath, CASE);
+    for (const a of r.added) console.log('media +', slug, a.local, '·', a.licence, '·', a.credit);
+  }
+  // Anything held back is written down rather than dropped, so the queue is reviewable
+  // instead of being a decision nobody can see.
+  // Everything held back is written down, including query-level failures. Discovery runs
+  // unattended against an API this sandbox cannot reach, so this file is the only way to
+  // tell "the query found nothing" apart from "the gate refused what it found".
+  const qPath = path.join(DATA, 'cases', slug, 'media-queue.json');
+  write(qPath, {
+    updated: NOW,
+    published: r.added.map(a => ({ local: a.local, licence: a.licence, credit: a.credit })),
+    heldForReview: r.queued.slice(0, 20),
+    refused: r.rejected.slice(0, 30),
+  });
+}
+
 (async () => {
   const cases = fs.readdirSync(path.join(DATA, 'cases')).filter(d => fs.existsSync(path.join(DATA, 'cases', d, 'case.json')));
   for (const slug of cases) await pollCase(slug);
+  for (const slug of cases) await discoverMedia(slug);
   await syncIssues();
   await ingestTheories();
   console.log('pulse complete', NOW);

@@ -16,7 +16,10 @@ const REPO = process.env.GB_REPO || 'evesloan/ourgavel';
 // on by adding one file, without touching the workflow.
 // Hosts we are permitted to load images from, derived from declared media. Nothing is
 // allowed implicitly: an image host only appears here because a case declared it.
-const IMG_HOSTS = [];
+// Deliberately frozen. If a future change needs a remote image host, that is a change to
+// what a reader's browser talks to while reading about a criminal trial — it belongs in
+// SECURITY.md before it belongs here.
+const IMG_HOSTS = Object.freeze([]);
 const CNAME = (() => {
   for (const p of [path.join(ROOT, 'CNAME'), path.join(ROOT, 'public', 'CNAME')]) {
     if (fs.existsSync(p)) {
@@ -45,7 +48,13 @@ const fmtDate = iso => new Date(iso + (iso.length === 10 ? 'T12:00:00Z' : '')).t
 const fmtTs = iso => new Date(iso).toLocaleString('en-US', { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit', timeZone: 'America/New_York' }) + ' ET';
 
 // Only http(s) URLs may reach an href — blocks javascript:/data: from community submissions.
+const list = v => (Array.isArray(v) ? v.filter(Boolean).join(', ') : String(v || '')).trim();
 const safeUrl = u => /^https?:\/\//i.test(String(u || '')) ? String(u) : '#';
+// Images we have copied onto our own origin. The shape is checked rather than trusted:
+// discovery writes these paths unattended, and a page must never be able to point its own
+// <img> at somebody else's server. Anything that isn't media/<slug>/<hash>.<ext> is dropped.
+const assetUrl = p => (/^media\/[a-z0-9-]+\/[0-9a-f]{8,40}\.(jpe?g|png|webp|gif)$/i.test(String(p || ''))
+  ? BASE + '/' + String(p) : '');
 // JSON embedded in a <script> block: neutralize tag breakout and JS line terminators.
 const jsonScript = o => JSON.stringify(o)
   .replace(/</g, '\\u003c').replace(/>/g, '\\u003e').replace(/&/g, '\\u0026')
@@ -385,6 +394,21 @@ a.promo:hover{text-decoration:none;transform:translateY(-2px);box-shadow:inset 0
   .cvnav button{width:36px;height:36px}
 }
 .mgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:12px;margin-top:12px}
+/* Photographs read as a gallery, not as another row of links. On a phone the rail scrolls
+   sideways with snap points, which is how people expect to flick through pictures. */
+.prail{display:grid;grid-auto-flow:column;grid-auto-columns:265px;justify-content:start;gap:12px;margin-top:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:6px;scrollbar-width:thin}
+.prail::-webkit-scrollbar{height:8px}
+.prail::-webkit-scrollbar-thumb{background:var(--line);border-radius:4px}
+.prail .mcard{scroll-snap-align:start;gap:0;padding:0;overflow:hidden}
+.prail .mcard img{height:auto;aspect-ratio:4/3;border-radius:0;transition:transform .35s ease}
+.prail .mcard:hover img{transform:scale(1.035)}
+.prail .mcap{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;padding:9px 10px 0;font-size:13px}
+.prail .mcredit{padding:3px 10px 10px}
+.pframe{position:relative;display:block}
+.pframe::after{content:'';position:absolute;inset:0;box-shadow:inset 0 0 0 1px rgba(122,92,40,.22);pointer-events:none}
+.pzoom{position:absolute;right:7px;bottom:7px;background:rgba(28,20,10,.72);color:#f2ecdd;font-family:var(--sans);font-size:9.5px;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:3px 7px;border-radius:2px;opacity:0;transition:opacity .2s ease}
+.mcard:hover .pzoom,.mcard:focus-visible .pzoom{opacity:1}
+.mdocs{margin-top:14px}
 .mcard{display:flex;flex-direction:column;gap:5px;text-align:left;background:var(--panel);border:1px solid var(--line);border-radius:3px;padding:10px;cursor:pointer;font-family:inherit;color:inherit;box-shadow:inset 0 0 0 1px rgba(255,255,255,.3)}
 .mcard:hover{border-color:var(--acc)}
 .mcard img{width:100%;height:130px;object-fit:cover;border-radius:2px;background:var(--panel2);display:block}
@@ -405,7 +429,8 @@ a.promo:hover{text-decoration:none;transform:translateY(-2px);box-shadow:inset 0
 #lightbox button{background:rgba(0,0,0,.35);border:1px solid rgba(240,230,210,.35);color:#f0e6d2;border-radius:2px;cursor:pointer;font-size:26px;line-height:1;width:44px;height:44px;flex:0 0 auto}
 #lightbox button:hover{border-color:var(--acc);color:var(--acc)}
 #lbclose{position:absolute;top:14px;right:14px;font-size:24px}
-@media(max-width:760px){.mgrid{grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:10px}.mcard img{height:96px}#lightbox{padding:8px;gap:4px}#lightbox button{width:40px;height:40px}}
+@media(max-width:760px){.mgrid{grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:10px}.mcard img{height:96px}
+.prail{grid-auto-columns:78%;gap:10px}.prail .mcard img{aspect-ratio:3/2}.pzoom{opacity:1}#lightbox{padding:8px;gap:4px}#lightbox button{width:40px;height:40px}}
 /* --- board interaction + mobile sheet: last in the cascade so these win --- */
 #detail{transform:translateY(6px) scale(.99);opacity:0;pointer-events:none;transition:opacity .2s ease,transform .2s ease;display:block}
 #detail.open{opacity:1;pointer-events:auto;transform:none}
@@ -697,18 +722,46 @@ ${body.includes('id="ticker"') ? `<script>${LIVE_SCRIPT}</script>` : ''}
 
 // ---------- load all cases ----------
 const caseSlugs = fs.readdirSync(path.join(DATA, 'cases')).filter(d => fs.existsSync(path.join(DATA, 'cases', d, 'case.json')));
-for (const slug of caseSlugs) {
-  const f = path.join(DATA, 'cases', slug, 'case.json');
-  for (const m of (JSON.parse(fs.readFileSync(f, 'utf8')).media || [])) {
-    try { const o = new URL(m.thumb || m.url).origin; if (o.startsWith('https://') && !IMG_HOSTS.includes(o)) IMG_HOSTS.push(o); } catch (e) { /* skip */ }
-  }
+// Nothing widens img-src any more. This used to add the origin of every media entry — which
+// meant a court's PDF library and a statute host were both permitted to serve images to a
+// reader's page, none of which ever did: documents render as links, and photographs are
+// copied onto our own origin before they are shown. `'self' data:` is now the whole truth.
+
+// A case record is written by the pulse, unattended, and a case can legitimately be added
+// before counsel is known or verdict options are drafted. A missing optional field must
+// never be able to take the entire site off the air, so every list-shaped field is coerced
+// to a list once, here, rather than guarded at forty separate call sites.
+const LIST_FIELDS = ['charges', 'prosecution', 'defense', 'victims', 'verdictOptions', 'keywords',
+  'verdictKeywords', 'feeds', 'watchPages', 'statusNowSources', 'storySoFarSources',
+  'courtRecords', 'media', 'mediaQueries', 'links'];
+function normaliseCase(c, slug) {
+  const out = Object.assign({ slug }, c);
+  for (const f of LIST_FIELDS) if (!Array.isArray(out[f])) out[f] = out[f] == null ? [] : [out[f]];
+  return out;
 }
+
+// Photographs live in data/media — tracked, and committed by the same `git add data` the
+// pulse already runs — and are copied into the output here. Anything a case record claims
+// but cannot produce is dropped rather than rendered as a broken image.
+const MEDIA_SRC = path.join(DATA, 'media');
+const MEDIA_OUT = path.join(OUT, 'media');
+let copiedMedia = 0;
+if (fs.existsSync(MEDIA_SRC)) {
+  fs.mkdirSync(MEDIA_OUT, { recursive: true });
+  fs.cpSync(MEDIA_SRC, MEDIA_OUT, { recursive: true });
+  copiedMedia = fs.readdirSync(MEDIA_SRC).reduce((n, d) => {
+    const p = path.join(MEDIA_SRC, d);
+    return n + (fs.statSync(p).isDirectory() ? fs.readdirSync(p).length : 1);
+  }, 0);
+}
+const haveBytes = rel => !!rel && fs.existsSync(path.join(MEDIA_SRC, String(rel).replace(/^media\//, '')));
+
 const CASES = caseSlugs.map(slug => {
   const dir = path.join(DATA, 'cases', slug);
   const load = (f, fb) => fs.existsSync(path.join(dir, f)) ? read(path.join(dir, f)) : fb;
   return {
     slug,
-    case: read(path.join(dir, 'case.json')),
+    case: normaliseCase(read(path.join(dir, 'case.json')), slug),
     days: load('days.json', { pretrial: [], days: [] }),
     board: load('board.json', { note: '', nodes: [], edges: [] }),
     community: load('community.json', { nodes: [], edges: [] }),
@@ -956,10 +1009,20 @@ const RIGHTS_LABEL = {
   'linked-only': 'Rights reserved — opens at the source',
 };
 function mediaBlock(c) {
-  const items = (c.case.media || []).filter(m => m && m.url && m.rights && RIGHTS_LABEL[m.rights]);
+  // An entry that claims bytes we do not hold is dropped outright. Falling back to a link
+  // would put a card labelled "Image" among the statutes and quietly tell the reader we
+  // published something we didn't. A deploy inconsistency should look like nothing, not
+  // like a different feature.
+  const items = (c.case.media || []).filter(m => m && m.url && m.rights && RIGHTS_LABEL[m.rights]
+    && !(m.local && !haveBytes(m.local)));
   if (!items.length) return '';
+  // Photographs first and on their own. A picture next to four statute citations gets read
+  // as a fifth citation; given its own rail it does the job it is there to do.
   const cards = items.map((m, i) => {
-    const hostable = HOSTABLE.includes(m.rights) && m.type !== 'document';
+    const local = haveBytes(m.local) ? assetUrl(m.local) : '';
+    // A photograph is only shown inline if we hold the bytes. If we merely know where it
+    // lives, it stays a link — that is what keeps a case page at zero external requests.
+    const hostable = !!local && HOSTABLE.includes(m.rights) && m.type !== 'document';
     const credit = `${esc(m.credit || 'Source unstated')} · ${esc(RIGHTS_LABEL[m.rights])}`;
     if (!hostable) {
       return `<a class="mcard mlink" href="${esc(safeUrl(m.url))}" target="_blank" rel="noopener">
@@ -968,22 +1031,37 @@ function mediaBlock(c) {
   <span class="mcredit">${credit} ↗</span></a>`;
     }
     return `<button class="mcard" type="button" data-mi="${i}" aria-label="${esc(m.caption || 'Open image')}">
-  <img src="${esc(safeUrl(m.thumb || m.url))}" alt="${esc(m.alt || m.caption || '')}" loading="lazy">
+  <span class="pframe"><img src="${esc(local)}" alt="${esc(m.alt || m.caption || '')}" loading="lazy" decoding="async"><span class="pzoom">View</span></span>
   <span class="mcap">${esc(m.caption || '')}</span>
   <span class="mcredit">${credit}</span></button>`;
-  }).join('\n');
+  });
+  const isPhoto = m => haveBytes(m.local) && !!assetUrl(m.local) && HOSTABLE.includes(m.rights) && m.type !== 'document';
+  const photos = items.map((m, i) => [m, i]).filter(([m]) => isPhoto(m)).map(([, i]) => cards[i]).join('\n');
+  const docs = items.map((m, i) => [m, i]).filter(([m]) => !isPhoto(m)).map(([, i]) => cards[i]).join('\n');
   const data = jsonScript(items.map(m => ({
-    url: esc(safeUrl(m.url)), caption: esc(m.caption || ''), alt: esc(m.alt || m.caption || ''),
+    src: esc(haveBytes(m.local) ? assetUrl(m.local) : ''), url: esc(safeUrl(m.url)),
+    caption: esc(m.caption || ''), alt: esc(m.alt || m.caption || ''),
     credit: esc(m.credit || ''), rights: esc(RIGHTS_LABEL[m.rights] || ''),
-    hostable: HOSTABLE.includes(m.rights) && m.type !== 'document',
+    // safeUrl answers '#' for a missing URL, which is truthy — a public-domain image has no
+    // licence page, and must fall through to its source rather than to a dead anchor.
+    licence: esc(m.licence || ''), licenceUrl: m.licenceUrl ? esc(safeUrl(m.licenceUrl)) : '',
+    hostable: haveBytes(m.local) && !!assetUrl(m.local) && HOSTABLE.includes(m.rights) && m.type !== 'document',
   })));
-  return `<details class="fold" open><summary>From the record — images and documents</summary>
-<p class="lnote" style="margin:8px 0 10px">Exhibits, filings and official releases. We don't republish press photography; where an image belongs to a newsroom, the card opens it at the source instead.</p>
-<div class="mgrid">${cards}</div>
+  const photoNote = photos
+    ? `<p class="lnote" style="margin:8px 0 0">Click any photograph to open it. Everything here is public domain or Creative Commons and is served from this site — nothing on this page loads from anywhere else.</p>
+<div class="prail">${photos}</div>`
+    : '';
+  const docNote = docs
+    ? `<h4 style="margin:${photos ? '18px' : '10px'} 0 0;font-size:14px">Filings and primary sources</h4>
+<p class="lnote" style="margin:4px 0 0">The statutes, opinions and dockets this case actually turns on. Each one opens at its official home.</p>
+<div class="mgrid mdocs">${docs}</div>`
+    : '';
+  return `<details class="fold" open><summary>${photos ? 'Photographs and the record' : 'From the record'}</summary>
+${photoNote}${docNote}
 <div id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Image viewer">
   <button id="lbclose" type="button" aria-label="Close">&times;</button>
   <button id="lbprev" type="button" aria-label="Previous">&lsaquo;</button>
-  <figure><img id="lbimg" src="" alt=""><figcaption><span id="lbcap"></span><span id="lbcredit"></span></figcaption></figure>
+  <figure><img id="lbimg" alt=""><figcaption><span id="lbcap"></span><span id="lbcredit"></span><a id="lbsrc" href="#" target="_blank" rel="noopener">Source and licence &#8599;</a></figcaption></figure>
   <button id="lbnext" type="button" aria-label="Next">&rsaquo;</button>
 </div>
 <script>(function(){
@@ -994,7 +1072,10 @@ function show(i){
   cur=(i+DATA.length)%DATA.length;
   var m=DATA[cur];
   if(!m.hostable){window.open(m.url,'_blank','noopener,noreferrer');return}
-  img.src=m.url;img.alt=m.alt;cap.textContent=m.caption;cr.textContent=m.credit+' · '+m.rights;
+  img.src=m.src;img.alt=m.alt;cap.textContent=m.caption;
+  cr.textContent=m.credit+' · '+(m.licence||m.rights);
+  var sl=document.getElementById('lbsrc');
+  if(sl){var h=m.licenceUrl||m.url;sl.href=h||'#';sl.hidden=!h}
   box.hidden=false;document.addEventListener('keydown',key);
 }
 function close(){box.hidden=true;img.src='';document.removeEventListener('keydown',key)}
@@ -1055,7 +1136,7 @@ ${verdictBanner(c)}
 <div class="card" style="margin-top:16px">
 <p>${esc(cc.statusNow || cc.phase)} ${srcLinks(cc.statusNowSources)}</p>
 ${cc.livestream ? `<p style="margin-top:8px"><b>Watch live:</b> ${cc.livestream.sources.map(s => `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.outlet)}</a>`).join(' · ')}</p>` : ''}
-<p class="factline" style="margin-top:10px"><b>${esc(cc.defendant)}</b> · ${esc(cc.charges)}<br>${esc(cc.plea)}<br>${esc(cc.court)} · ${esc(cc.judge)} · Prosecution: ${esc(cc.prosecution.join(', '))} · Defense: ${esc(cc.defense.join(', '))}</p>
+<p class="factline" style="margin-top:10px"><b>${esc(cc.defendant)}</b> · ${esc(cc.charges)}<br>${esc(cc.plea)}<br>${[cc.court, cc.judge, list(cc.prosecution) && 'Prosecution: ' + list(cc.prosecution), list(cc.defense) && 'Defense: ' + list(cc.defense)].filter(Boolean).map(esc).join(' · ')}</p>
 </div>
 ${mediaBlock(c)}
 ${watchBlock(c)}

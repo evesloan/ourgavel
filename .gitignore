@@ -1,3 +1,9 @@
 node_modules/
 public/
 *.log
+
+# Throwaway case built by scripts/media.viewer-test.js — never commit one.
+data/cases/zz-viewer-fixture/
+public/cases/zz-viewer-fixture/
+data/media/zz-viewer-fixture/
+public/media/zz-viewer-fixture/

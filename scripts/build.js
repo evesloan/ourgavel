@@ -10,7 +10,8 @@ const OUT = path.join(ROOT, 'public');
 const DATA = path.join(ROOT, 'data');
 const BUILT_AT = new Date().toISOString();
 const REPO = process.env.GB_REPO || 'evesloan/ourgavel';
-const BASE = process.env.GB_BASE || ''; // '/ourgavel' when served from project-pages subpath; '' on the custom domain
+const BASE = process.env.GB_BASE || '';
+const SITE = process.env.GB_SITE || 'https://evesloan.github.io/ourgavel'; // '/ourgavel' when served from project-pages subpath; '' on the custom domain
 const SITE_NAME = 'OurGavel';
 const TAGLINE = 'The record. The rumors. The line between.';
 
@@ -155,6 +156,13 @@ function page({ title, desc, crumbs, body, active }) {
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>${esc(title)} — ${SITE_NAME}</title>
 <meta name="description" content="${esc(desc)}">
+<meta property="og:site_name" content="${SITE_NAME}">
+<meta property="og:type" content="website">
+<meta property="og:title" content="${esc(title)}">
+<meta property="og:description" content="${esc(desc)}">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="${esc(title)}">
+<meta name="twitter:description" content="${esc(desc)}">
 <style>${CSS}</style>
 </head><body>
 <header class="mast"><div class="wrap">
@@ -353,7 +361,8 @@ ${caseNav(c, 'overview')}
 }
 
 // ---------- the board ----------
-function boardPage(c) {
+function boardPage(c, opts = {}) {
+  const EMBED = !!opts.embed;
   const nodes = [...c.board.nodes, ...(c.community.nodes || [])];
   const edges = [...c.board.edges, ...(c.community.edges || [])];
   const threads = (c.threads && c.threads.threads) || {};
@@ -456,36 +465,12 @@ ${commentChip}
   const newThreadUrl = id => `https://github.com/${REPO}/issues/new?title=${encodeURIComponent('Discussion: ' + (byId[id] ? byId[id].title.slice(0, 60) : id))}&body=${encodeURIComponent(`<!--node:${id} case:${c.slug}-->\n\n`)}`;
   const connectUrl = `https://github.com/${REPO}/issues/new?template=connection.yml&case=${c.slug}`;
 
-  return page({
-    title: 'The Board — ' + c.case.shortTitle,
-    desc: `The evidence board for ${c.case.shortTitle}: what the jury must decide, the evidence on each side, and the community's theories — labeled until proven.`,
-    active: '/cases/',
-    crumbs: `<a href="/">Home</a> › <a href="${caseUrl(c)}">${esc(c.case.shortTitle)}</a> › The Board`,
-    body: `
-<h1>The Board</h1>
-${caseNav(c, 'board')}
-<p class="sub" style="max-width:680px;margin-top:12px">The case file, laid out: the questions, the evidence pulling on each, and the community's theories — labeled. Click a card for sources and discussion; drag to arrange.</p>
-<details class="howto"><summary>How to work the Board</summary>
-<p><b>Read it:</b> purple cards are the open questions the jury must decide. Blue cards are from the record — testimony, exhibits, rulings, each linked to its source. Amber cards are reader theories — this is your zone. Post one, and it goes up labeled until real sourcing settles it. Strings show the pull: <span style="color:var(--green)">green supports</span>, <span style="color:var(--red)">red disputes</span>, <span style="color:var(--amber)">amber is contested</span>. Disproven theories stay up, greyed — you can see what was tested and settled.</p>
-<p><b>Build it:</b> drag cards to arrange your own reading of the case. Open a card and hit <b>Connect</b>, then click the card it relates to — your proposed string joins the Board once it clears the pulse. <b>Discuss</b> opens the card's thread. 👍 on a theory's thread corroborates it; 👎 disputes; sources settle.</p>
-<p><b>Share it:</b> every board is public — send the link. The best-argued boards are how new readers learn a case fast. <a href="/submit/">Add your theory →</a></p>
-</details>
-<div class="vtoggle"><button id="vt-map" class="on">Map</button><button id="vt-list">List</button></div>
-<div class="legend"><span class="lg-q">Open question</span><span class="lg-f">From the record</span><span class="lg-c">Reader theories</span><span style="margin-left:auto"><span style="color:var(--green)">— supports</span> · <span style="color:var(--red)">— disputes</span> · <span style="color:var(--amber)">– – contested</span></span></div>
-<div id="boardwrap">${svg}
-<div class="bctrl"><button id="bz-in" title="Zoom in">+</button><button id="bz-out" title="Zoom out">−</button><button id="bz-fit" title="Reset view">⤢</button></div>
-<div id="btoast"></div>
-<div id="detail"><span class="x" onclick="document.getElementById('detail').style.display='none'">×</span><div id="detail-in"></div></div>
-</div>
-<div id="boardlist">${listHtml}</div>
-<p style="margin-top:12px">
-  <a class="btn sm" href="https://github.com/${REPO}/issues/new?template=theory.yml&case=${c.slug}">🧵 Post a theory</a>
-  <a class="btn sm ghost" href="https://github.com/${REPO}/issues/new?template=evidence.yml&case=${c.slug}">📎 Submit evidence</a>
-  <a class="btn sm ghost" href="https://github.com/${REPO}/issues/new?template=report.yml">🚩 Report</a>
-  <span style="color:var(--mut);font-size:12.5px">· 3 posts/day · posts about people get editor review first · <a href="/submit/">details</a></span>
-</p>
-<script>
-(function(){
+  const boardUrl = `${SITE}/cases/${c.slug}/board/`;
+  const embedUrl = `${SITE}/cases/${c.slug}/board/embed/`;
+  const embedCode = `<iframe src="${embedUrl}" width="100%" height="620" style="border:1px solid #ddd;border-radius:8px" loading="lazy" title="${esc(c.case.shortTitle)} evidence board - OurGavel"></iframe>`;
+
+  // Client script, shared verbatim by the full board page and the embeddable one.
+  const scriptBlock = `(function(){
 var DATA=${detailData};
 var EDGES=${edgeData};
 var SLUG=${JSON.stringify(c.slug)},REPO=${JSON.stringify(REPO)},NW=${NW},NH=${NH};
@@ -575,10 +560,17 @@ svg.addEventListener('click',function(e){
   }
   show(id);
 });
+var ce=document.getElementById('copyembed');
+if(ce){ce.onclick=function(){var t=document.getElementById('embedcode');t.select();
+  try{document.execCommand('copy')}catch(e){}
+  if(navigator.clipboard)navigator.clipboard.writeText(t.value).catch(function(){});
+  var d=document.getElementById('copied');d.style.display='inline';setTimeout(function(){d.style.display='none'},2000);};}
 var map=document.getElementById('boardwrap'),list=document.getElementById('boardlist');
 var bm=document.getElementById('vt-map'),bl=document.getElementById('vt-list');
+if(bm&&bl&&list){
 bm.onclick=function(){map.style.display='block';list.style.display='none';bm.classList.add('on');bl.classList.remove('on')};
 bl.onclick=function(){map.style.display='none';list.style.display='block';bl.classList.add('on');bm.classList.remove('on')};
+}
 var SERIAL=${JSON.stringify(BUILT_AT)};
 setInterval(function(){
   fetch('./board-data.json',{cache:'no-store'}).then(function(r){return r.json()}).then(function(d){
@@ -586,7 +578,82 @@ setInterval(function(){
   }).catch(function(){})
 },60000);
 ${central ? `if(window.innerWidth>760){show(${JSON.stringify(central.id)});}` : ''}
-})();
+})();`;
+  if (EMBED) {
+    return `<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>${esc(c.case.shortTitle)} — evidence board — ${SITE_NAME}</title>
+<meta name="description" content="Interactive evidence board for ${esc(c.case.shortTitle)}, from ${SITE_NAME}.">
+<link rel="canonical" href="${boardUrl}">
+<style>${CSS}
+html,body{height:100%;margin:0}
+body{display:flex;flex-direction:column;background:var(--bg)}
+.ebar{display:flex;align-items:center;gap:12px;padding:9px 14px;background:var(--panel);border-bottom:1px solid var(--line);flex-wrap:wrap}
+.ebar .et{font-family:var(--serif);font-weight:700;font-size:15px;color:var(--ink)}
+.ebar .ep{font-size:11.5px;color:var(--mut)}
+.ebar .eb{margin-left:auto;font-size:13px;font-weight:700;color:var(--acc);white-space:nowrap;font-family:var(--serif)}
+.ebar .eb .gb{color:var(--ink)}
+#boardwrap{flex:1;border:0;border-radius:0;height:auto;min-height:0}
+.efoot{display:flex;gap:12px;align-items:center;padding:7px 14px;background:var(--panel);border-top:1px solid var(--line);font-size:12px;color:var(--mut);flex-wrap:wrap}
+.efoot a{font-weight:600;white-space:nowrap}
+</style>
+</head><body>
+<div class="ebar">
+  <div><div class="et">${esc(c.case.shortTitle)}</div><div class="ep">${esc(c.case.phase)}</div></div>
+  <a class="eb" href="${boardUrl}" target="_blank" rel="noopener">Our<span class="gb">Gavel</span> ↗</a>
+</div>
+<div id="boardwrap">${svg}
+<div class="bctrl"><button id="bz-in" title="Zoom in">+</button><button id="bz-out" title="Zoom out">−</button><button id="bz-fit" title="Reset view">⤢</button></div>
+<div id="btoast"></div>
+<div id="detail"><span class="x" onclick="document.getElementById('detail').style.display='none'">×</span><div id="detail-in"></div></div>
+</div>
+<div class="efoot">
+  <span>Purple = open question · Blue = from the record · Amber = reader theory. Every card carries its sources.</span>
+  <a href="${boardUrl}" target="_blank" rel="noopener" style="margin-left:auto">Full record & discussion →</a>
+</div>
+<script>
+${scriptBlock}
+</script>
+</body></html>`;
+  }
+
+  return page({
+    title: 'The Board — ' + c.case.shortTitle,
+    desc: `The evidence board for ${c.case.shortTitle}: what the jury must decide, the evidence on each side, and the community's theories — labeled until proven.`,
+    active: '/cases/',
+    crumbs: `<a href="/">Home</a> › <a href="${caseUrl(c)}">${esc(c.case.shortTitle)}</a> › The Board`,
+    body: `
+<h1>The Board</h1>
+${caseNav(c, 'board')}
+<p class="sub" style="max-width:680px;margin-top:12px">The case file, laid out: the questions, the evidence pulling on each, and the community's theories — labeled. Click a card for sources and discussion; drag to arrange.</p>
+<details class="howto"><summary>How to work the Board</summary>
+<p><b>Read it:</b> purple cards are the open questions the jury must decide. Blue cards are from the record — testimony, exhibits, rulings, each linked to its source. Amber cards are reader theories — this is your zone. Post one, and it goes up labeled until real sourcing settles it. Strings show the pull: <span style="color:var(--green)">green supports</span>, <span style="color:var(--red)">red disputes</span>, <span style="color:var(--amber)">amber is contested</span>. Disproven theories stay up, greyed — you can see what was tested and settled.</p>
+<p><b>Build it:</b> drag cards to arrange your own reading of the case. Open a card and hit <b>Connect</b>, then click the card it relates to — your proposed string joins the Board once it clears the pulse. <b>Discuss</b> opens the card's thread. 👍 on a theory's thread corroborates it; 👎 disputes; sources settle.</p>
+<p><b>Share it:</b> every board is public — send the link. The best-argued boards are how new readers learn a case fast. <a href="/submit/">Add your theory →</a></p>
+</details>
+<div class="vtoggle"><button id="vt-map" class="on">Map</button><button id="vt-list">List</button></div>
+<div class="legend"><span class="lg-q">Open question</span><span class="lg-f">From the record</span><span class="lg-c">Reader theories</span><span style="margin-left:auto"><span style="color:var(--green)">— supports</span> · <span style="color:var(--red)">— disputes</span> · <span style="color:var(--amber)">– – contested</span></span></div>
+<div id="boardwrap">${svg}
+<div class="bctrl"><button id="bz-in" title="Zoom in">+</button><button id="bz-out" title="Zoom out">−</button><button id="bz-fit" title="Reset view">⤢</button></div>
+<div id="btoast"></div>
+<div id="detail"><span class="x" onclick="document.getElementById('detail').style.display='none'">×</span><div id="detail-in"></div></div>
+</div>
+<div id="boardlist">${listHtml}</div>
+<details class="howto" id="embedbox"><summary>📺 Put this board on your own site — free</summary>
+<p>Paste this anywhere that accepts HTML. The board stays live: reader theories, new evidence and every update appear in your embed automatically, and each card keeps its sources.</p>
+<textarea id="embedcode" readonly rows="3" style="width:100%;font-family:ui-monospace,Consolas,monospace;font-size:12px;padding:10px;border-radius:6px;border:1px solid var(--line);background:var(--bg);color:var(--ink);resize:vertical">${esc(embedCode)}</textarea>
+<p><button class="linkbtn" id="copyembed">Copy embed code</button> <a class="linkbtn" href="${embedUrl}" target="_blank" rel="noopener" style="text-decoration:none">Preview it ↗</a> <span id="copied" style="color:var(--green);font-size:13px;display:none">Copied</span></p>
+<p style="font-size:12.5px">Prefer the raw data? <a href="./data.json">board.json</a> is public — free to use with a link back to this page.</p>
+</details>
+<p style="margin-top:12px">
+  <a class="btn sm" href="https://github.com/${REPO}/issues/new?template=theory.yml&case=${c.slug}">🧵 Post a theory</a>
+  <a class="btn sm ghost" href="https://github.com/${REPO}/issues/new?template=evidence.yml&case=${c.slug}">📎 Submit evidence</a>
+  <a class="btn sm ghost" href="https://github.com/${REPO}/issues/new?template=report.yml">🚩 Report</a>
+  <span style="color:var(--mut);font-size:12.5px">· 3 posts/day · posts about people get editor review first · <a href="/submit/">details</a></span>
+</p>
+<script>
+${scriptBlock}
 </script>
 `, extra: { serial: BUILT_AT } });
 }
@@ -639,6 +706,7 @@ for (const c of CASES) {
   files[`cases/${c.slug}/timeline/index.html`] = timelinePage(c);
   files[`cases/${c.slug}/witnesses/index.html`] = witnessesPage(c);
   files[`cases/${c.slug}/board/index.html`] = boardPage(c);
+  files[`cases/${c.slug}/board/embed/index.html`] = boardPage(c, { embed: true });
   const sp = standardPage(c);
   if (sp) files[`cases/${c.slug}/standard/index.html`] = sp;
 }
@@ -649,6 +717,15 @@ for (const [rel, html] of Object.entries(files)) {
 }
 for (const c of CASES) {
   fs.writeFileSync(path.join(OUT, 'cases', c.slug, 'board', 'board-data.json'), JSON.stringify({ serial: BUILT_AT }));
+  // Public board data — reusable with attribution.
+  fs.writeFileSync(path.join(OUT, 'cases', c.slug, 'board', 'data.json'), JSON.stringify({
+    case: { slug: c.slug, title: c.case.title, shortTitle: c.case.shortTitle, court: c.case.court, phase: c.case.phase, status: c.case.status },
+    generated: BUILT_AT,
+    source: `${SITE}/cases/${c.slug}/board/`,
+    license: 'Free to reuse with visible attribution and a link back to the source URL.',
+    nodes: [...c.board.nodes, ...(c.community.nodes || [])].map(n => ({ id: n.id, type: n.type, status: n.status, title: n.title, body: n.body, sources: n.sources || [], submittedBy: n.submittedBy || null })),
+    edges: [...c.board.edges, ...(c.community.edges || [])],
+  }, null, 2));
 }
 fs.writeFileSync(path.join(OUT, '.nojekyll'), '');
 fs.writeFileSync(path.join(OUT, 'robots.txt'), 'User-agent: *\nAllow: /\n');

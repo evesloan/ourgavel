@@ -144,3 +144,40 @@ Motion explains, or it does not ship.
 - Never assert guilt. Report what is alleged, argued, and decided.
 - Cover the proceeding, not the grief. No autopsy detail beyond the legal facts of the charge.
 - Never name minors, and never name private individuals as suspects. See EDITORIAL.md §5.
+<<<<<<< HEAD
+
+---
+
+## 9. The voice test — no AI-speak
+
+Readers of true-crime coverage are unusually good at spotting generated text, and one whiff of it
+undoes the sourcing work. Every line on this site must sound like a person who knows the case
+wrote it. Before publishing any prose, check it against this list.
+
+**Banned constructions:**
+
+- The em-dash sandwich: *"The big cases, kept straight — every fact linked to its source — and a
+  board where you test theories."* One idea per sentence. Full stops are free.
+- *"It's not just X, it's Y."* / *"This isn't about X. It's about Y."*
+- Triads of nouns or adjectives used for rhythm: *"clear, sourced, and current."* Two is plenty.
+- *"In a world where…"*, *"At its core…"*, *"More than ever…"*, *"Let's dive in"*, *"Here's the
+  thing"*, *"That's the point."* as a standalone paragraph.
+- Sentences that restate the previous sentence with more emphasis.
+- Abstract nouns doing the work of concrete ones: *"transparency", "clarity", "accountability",
+  "empowerment"*. Say the actual thing that happens instead.
+- Hedging stacks: *"may potentially help to"*.
+- Headings that are a noun phrase with no verb where a plain question would do.
+
+**What to do instead:** name the specific thing. *"Come back on day 15 and you're scrolling forty
+screens to find out who testified on Tuesday"* beats any sentence containing the word
+"transparency". Concrete detail is the thing generated prose cannot fake, and it is also just
+better writing.
+
+**Length:** if a paragraph can lose 30% and keep its meaning, it was 30% too long.
+
+**On automation, be direct.** The About page says plainly that the monitoring is automated and
+that a person signs off on verdicts, plea changes and anything naming an uncharged individual.
+Never soften this into "a small team" or "our editorial process". Vagueness is what reads as a
+cover-up; specificity is what reads as true — and here it happens to be true.
+=======
+>>>>>>> origin/main

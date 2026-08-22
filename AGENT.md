@@ -186,3 +186,21 @@ label `red-lane`. One message per item per day; batch when possible. Never spam.
   to '' in the same commit and confirm links.
 - Monetization is OFF until Eve turns it on. When she does: affiliate links only per EDITORIAL.md
   (labeled, relevant, never inside the record), display ads only after traffic qualifies.
+
+## Live feed and links out
+
+- The wire is layered: GitHub Actions polls outlet feeds on a schedule, and every page re-reads its
+  own `live.json` every 30 seconds so new reports appear without a reload. Never claim the site is
+  real-time in copy — say what it does: checks constantly, shows new reports as they land.
+- Each case's `case.json` may carry `livestream`, `courtRecords` and `watchPages`; these render as
+  "Watch it yourself" on the hub. When you open a case, fill all three if you can — the official
+  court-record link is the most valuable and the least likely to exist elsewhere.
+- Any link may carry `"affiliate": true`, which renders a visible "affiliate" label. An unlabelled
+  paid link is never acceptable, and no paid link goes inside a board card.
+
+## Contribution limits
+
+Power users are the point. The cap is 25 posts per author per 24h, rising automatically to 120
+once someone has 8 published contributions still standing. Someone dumping thirty sourced claims in
+an evening is who this site is for — if a genuine contributor hits the ceiling, raise it for them
+by hand and say so in the thread. The limit exists to stop scripted spam, not to ration work.

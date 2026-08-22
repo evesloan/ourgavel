@@ -290,5 +290,12 @@
         "url": "https://www.fitsnews.com/2026/05/13/s-c-supreme-court-strikes-down-alex-murdaughs-murder-convictions/"
       }
     ]
-  }
+  },
+  "courtRecords": [
+    {
+      "outlet": "South Carolina Judicial Branch \u2014 public index",
+      "url": "https://publicindex.sccourts.org/",
+      "note": "Search by county once the retrial venue is set."
+    }
+  ]
 }

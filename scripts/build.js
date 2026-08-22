@@ -264,6 +264,21 @@ nav.casenav a.on:hover{color:#14161a}
 .logo a:hover .pip{transform:rotate(-6deg)}
 .pip{transition:transform .2s ease}
 @media (prefers-reduced-motion: reduce){.pip{transition:none}}
+.feedhead{display:flex;align-items:center;gap:8px;font-family:var(--sans);font-size:11.5px;letter-spacing:.9px;text-transform:uppercase;color:var(--mut);margin:0 0 8px}
+.pulsedot{width:8px;height:8px;border-radius:50%;background:var(--red);box-shadow:0 0 0 0 rgba(141,43,37,.6);animation:livepulse 2.4s infinite}
+@keyframes livepulse{0%{box-shadow:0 0 0 0 rgba(141,43,37,.55)}70%{box-shadow:0 0 0 7px rgba(141,43,37,0)}100%{box-shadow:0 0 0 0 rgba(141,43,37,0)}}
+.ticker li.fresh{animation:slidein .5s ease}
+@keyframes slidein{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:none}}
+.newflag{font-family:var(--sans);font-size:9.5px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:var(--panel);background:var(--red);padding:2px 6px;border-radius:2px;vertical-align:1px}
+@media (prefers-reduced-motion: reduce){.pulsedot{animation:none}.ticker li.fresh{animation:none}}
+.watchgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:12px}
+@media(max-width:760px){.watchgrid{grid-template-columns:1fr;gap:12px}}
+.wh{font-family:var(--sans);font-size:10.5px;letter-spacing:1.3px;text-transform:uppercase;color:var(--mut);margin:0 0 6px}
+.linklist{list-style:none;margin:0;padding:0}
+.linklist li{padding:6px 0;border-bottom:1px solid var(--line);font-size:14px}
+.linklist li:last-child{border-bottom:none}
+.lnote{color:var(--mut);font-size:12.5px}
+.afflabel{font-family:var(--sans);font-size:9px;font-weight:700;letter-spacing:1.1px;text-transform:uppercase;color:var(--mut);border:1px solid var(--line);border-radius:2px;padding:1px 5px;vertical-align:1px}
 /* --- board interaction + mobile sheet: last in the cascade so these win --- */
 #detail{transform:translateY(6px) scale(.99);opacity:0;pointer-events:none;transition:opacity .2s ease,transform .2s ease;display:block}
 #detail.open{opacity:1;pointer-events:auto;transform:none}
@@ -319,6 +334,72 @@ function harden(html) {
     '<meta charset="utf-8">\n<meta http-equiv="Content-Security-Policy" content="' + csp + '">\n<meta name="referrer" content="strict-origin-when-cross-origin">');
 }
 
+// The wire, kept warm. Static hosting cannot push, so the page pulls: it re-reads its
+// own feed every 30s and slides in anything new without a reload, and it re-renders
+// timestamps as relative ("4 min ago") every 20s so the page never looks frozen.
+const LIVE_SCRIPT = `(function(){
+var ul=document.getElementById('ticker');if(!ul)return;
+var feed=ul.getAttribute('data-feed'),withCase=ul.getAttribute('data-case')==='1';
+var status=document.getElementById('feedstatus');
+var lastOk=Date.now();
+function rel(iso){
+  var t=new Date(iso).getTime();if(!t)return '';
+  var s=Math.max(0,(Date.now()-t)/1000);
+  if(s<60)return 'just now';
+  if(s<3600)return Math.floor(s/60)+' min ago';
+  if(s<86400){var h=Math.floor(s/3600);return h+(h===1?' hour ago':' hours ago')}
+  var d=Math.floor(s/86400);return d+(d===1?' day ago':' days ago');
+}
+function paintTimes(){
+  ul.querySelectorAll('.t[data-ts]').forEach(function(el){var r=rel(el.getAttribute('data-ts'));if(r)el.textContent=r});
+}
+function esc(x){return String(x==null?'':x).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}
+function key(u){var h=0,s=String(u);for(var i=0;i<s.length;i++)h=(h*31+s.charCodeAt(i))|0;return (h>>>0).toString(36)}
+function safe(u){return /^https?:\\/\\//i.test(String(u||''))?String(u):'#'}
+function row(i){
+  var li=document.createElement('li');
+  li.setAttribute('data-k',key(i.url));li.className='fresh';
+  li.innerHTML='<span class="t" data-ts="'+esc(i.ts)+'">'+esc(rel(i.ts))+'</span> \\u00b7 <span class="o">'+esc(i.outlet)+'</span>'
+    +(withCase&&i.case?' \\u00b7 <span class="t">'+esc(i.case)+'</span>':'')
+    +'<br><a href="'+esc(safe(i.url))+'" rel="noopener" target="_blank">'+esc(i.headline)+'</a>'
+    +(i.flag==='verdict-watch'?' <span class="badge disproven">verdict watch</span>':'')
+    +' <span class="newflag">new</span>';
+  return li;
+}
+// Only surface reports NEWER than the newest one already on screen. Backfilling the
+// rest of the feed and calling it "new" would be a lie the first time anyone loads.
+var newest=0;
+ul.querySelectorAll('.t[data-ts]').forEach(function(el){var t=new Date(el.getAttribute('data-ts')).getTime();if(t>newest)newest=t});
+function tick(){
+  fetch(feed,{cache:'no-store'}).then(function(r){return r.json()}).then(function(d){
+    lastOk=Date.now();
+    var have={};ul.querySelectorAll('li[data-k]').forEach(function(li){have[li.getAttribute('data-k')]=1});
+    var added=0,top=newest;
+    (d.items||[]).slice().reverse().forEach(function(i){
+      var k=key(i.url),t=new Date(i.ts).getTime();
+      if(have[k]||!(t>newest))return;
+      ul.insertBefore(row(i),ul.firstChild);have[k]=1;added++;
+      if(t>top)top=t;
+    });
+    newest=top;
+    while(ul.children.length>14)ul.removeChild(ul.lastChild);
+    paintTimes();
+    if(status){
+      status.textContent = added
+        ? added+(added===1?' new report just landed':' new reports just landed')
+        : 'Up to date \\u00b7 last checked just now';
+    }
+  }).catch(function(){
+    if(status)status.textContent='Reconnecting\\u2026';
+  });
+}
+paintTimes();
+setInterval(paintTimes,20000);
+setInterval(tick,30000);
+setTimeout(tick,2500);
+document.addEventListener('visibilitychange',function(){if(!document.hidden)tick()});
+})();`;
+
 function page({ title, desc, crumbs, body, active }) {
   const nav = NAV_ITEMS.map(([href, label]) => `<a href="${href}" class="${active === href ? 'on' : ''}">${label}</a>`).join('');
   return `<!doctype html>
@@ -345,6 +426,7 @@ function page({ title, desc, crumbs, body, active }) {
 ${crumbs ? `<nav class="crumbs">${crumbs}</nav>` : ''}
 ${body}
 </div></main>
+${body.includes('id="ticker"') ? `<script>${LIVE_SCRIPT}</script>` : ''}
 <footer><div class="wrap">
   <p class="disc" style="border:none;margin:0;padding:0">Every defendant is presumed innocent unless and until proven guilty. Community theories are labeled, not facts. Quoted material belongs to the cited outlets; nothing here is legal advice. <a href="/about/">Full policies & corrections</a> · <span class="hb">◉ ${esc(BUILT_AT.slice(0, 16).replace('T', ' '))} UTC</span></p>
 </div></footer>
@@ -395,9 +477,9 @@ function statusChip(c) {
 const shortPhase = p => { const t = String(p || ''); return t.length > 58 ? t.slice(0, 55).replace(/[\s,—-]+$/, '') + '…' : t; };
 // Simple menus: with one active case, the nav goes straight to it.
 if (ACTIVE.length === 1) {
-  NAV_ITEMS = [['/', 'Home'], [`/cases/${ACTIVE[0].slug}/`, 'The Trial'], [`/cases/${ACTIVE[0].slug}/board/`, 'The Board'], ['/about/', 'About']];
+  NAV_ITEMS = [['/', 'Home'], [`/cases/${ACTIVE[0].slug}/`, 'The Trial'], [`/cases/${ACTIVE[0].slug}/board/`, 'The Board'], ['/creators/', 'Creators'], ['/about/', 'About']];
 } else if (ACTIVE.length > 1) {
-  NAV_ITEMS = [['/', 'Home'], ['/cases/', 'Cases'], ['/about/', 'About']];
+  NAV_ITEMS = [['/', 'Home'], ['/cases/', 'Cases'], ['/creators/', 'Creators'], ['/about/', 'About']];
 }
 const caseNav = (c, on) => `<nav class="casenav">
 <a href="/cases/${c.slug}/" class="${on === 'overview' ? 'on' : ''}">Overview</a>
@@ -406,9 +488,14 @@ const caseNav = (c, on) => `<nav class="casenav">
 </nav>`;
 
 // ---------- shared bits ----------
-function tickerHtml(items, n = 8, withCase = false) {
-  const rows = items.slice(0, n).map(i => `<li><span class="t">${esc(fmtTs(i.ts))}</span> · <span class="o">${esc(i.outlet)}</span>${withCase && i._case ? ` · <span class="t">${esc(i._case)}</span>` : ''}<br><a href="${esc(i.url)}" rel="noopener" target="_blank">${esc(i.headline)}</a>${i.flag === 'verdict-watch' ? ' <span class="badge disproven">verdict watch</span>' : ''}</li>`).join('\n');
-  return `<ul class="ticker">${rows}</ul>`;
+const itemKey = u => { let h = 0; const s2 = String(u); for (let i = 0; i < s2.length; i++) h = (h * 31 + s2.charCodeAt(i)) | 0; return (h >>> 0).toString(36); };
+function tickerRow(i, withCase) {
+  return `<li data-k="${itemKey(i.url)}"><span class="t" data-ts="${esc(i.ts)}">${esc(fmtTs(i.ts))}</span> · <span class="o">${esc(i.outlet)}</span>${withCase && i._case ? ` · <span class="t">${esc(i._case)}</span>` : ''}<br><a href="${esc(safeUrl(i.url))}" rel="noopener" target="_blank">${esc(i.headline)}</a>${i.flag === 'verdict-watch' ? ' <span class="badge disproven">verdict watch</span>' : ''}</li>`;
+}
+function tickerHtml(items, n = 8, withCase = false, feed = '/live.json') {
+  const rows = items.slice(0, n).map(i => tickerRow(i, withCase)).join('\n');
+  return `<div class="feedhead"><span class="pulsedot" aria-hidden="true"></span><span id="feedstatus">Checking for updates every 30 seconds</span></div>
+<ul class="ticker" id="ticker" data-feed="${esc(feed)}" data-case="${withCase ? '1' : '0'}">${rows}</ul>`;
 }
 const caseUrl = (c, sub = '') => `/cases/${c.slug}/${sub}`;
 
@@ -419,7 +506,7 @@ function caseCard(c, featured = false) {
   <h2 style="border:none;margin:10px 0 4px"><a href="${caseUrl(c)}">${esc(cc.shortTitle)}</a></h2>
   <p style="max-width:640px">${esc(cc.plainSummary || cc.charges + '. ' + cc.court + '.')}</p>
   <p style="margin-top:12px">
-    <a class="btn" href="${caseUrl(c)}">Follow the trial</a>
+    <a class="btn" href="${caseUrl(c)}">Catch up</a>
     <a class="btn ghost" href="${caseUrl(c, 'board/')}">Open the Board</a>
   </p>
 </div>`;
@@ -432,13 +519,13 @@ const home = page({
   desc: 'OurGavel follows the court cases everyone is watching and keeps the facts straight — every line linked to its source — with a community board for sharing and testing theories together.',
   active: '/',
   body: `
-<h1>The facts of the trial,<br>in everyone's hands.</h1>
-<p class="sub" style="font-size:16.5px;max-width:620px">The big cases, kept straight — every fact linked to its source — and a Board where you test theories with everyone else watching.</p>
+<h1>Read the trial,<br>not the takes.</h1>
+<p class="sub" style="font-size:16.5px;max-width:600px">We keep the record of the cases people are arguing about. Who testified, what they said, what the jury has to decide. Every line says where it came from. Then you get a board to work out what it means.</p>
 ${ACTIVE.slice(0, 3).map(c => caseCard(c, true)).join('\n')}
 ${CASES.length > 3 ? `<p><a href="/cases/">All cases →</a></p>` : ''}
-<div class="howstrip"><span><b>How it works:</b></span><span>catch up on the record</span><span class="sep">→</span><span>open the Board</span><span class="sep">→</span><span>put two and two together</span></div>
-<h2>Latest updates</h2>
-${tickerHtml(allItems, 5, ACTIVE.length > 1)}
+<div class="howstrip"><span><b>Three things here:</b></span><span>the record</span><span class="sep">·</span><span>the board</span><span class="sep">·</span><span>the people arguing about both</span></div>
+<h2>Off the wire</h2>
+${tickerHtml(allItems, 6, ACTIVE.length > 1, '/live.json')}
 `});
 
 // ---------- cases index ----------
@@ -454,6 +541,28 @@ ${[...ACTIVE, ...CASES.filter(c => c.case.status === 'archived')].map(c => caseC
 `});
 
 // ---------- per-case pages ----------
+// Links out, in three groups readers actually ask for: where to watch, where the official
+// record lives, and who is covering it minute to minute. Any link may carry affiliate:true
+// and it renders a visible label — an unlabelled paid link is not something we ship.
+function linkRow(l) {
+  return `<li><a href="${esc(safeUrl(l.url))}" target="_blank" rel="noopener">${esc(l.outlet)}</a>${l.affiliate ? ' <span class="afflabel">affiliate</span>' : ''}${l.note ? `<br><span class="lnote">${esc(l.note)}</span>` : ''}</li>`;
+}
+function watchBlock(c) {
+  const cc = c.case;
+  const stream = (cc.livestream && cc.livestream.sources) || [];
+  const records = cc.courtRecords || [];
+  const covering = (cc.watchPages || []).slice(0, 5);
+  if (!stream.length && !records.length && !covering.length) return '';
+  return `<details class="fold" open><summary>Watch it yourself</summary>
+<div class="watchgrid">
+  ${stream.length ? `<div><h4 class="wh">Live video</h4><ul class="linklist">${stream.map(linkRow).join('')}</ul></div>` : ''}
+  ${records.length ? `<div><h4 class="wh">The official record</h4><ul class="linklist">${records.map(linkRow).join('')}</ul></div>` : ''}
+  ${covering.length ? `<div><h4 class="wh">Who's covering it</h4><ul class="linklist">${covering.map(linkRow).join('')}</ul></div>` : ''}
+</div>
+<p class="lnote" style="margin-top:10px">We link out because you should be able to check us. Court schedules move without notice; a dead stream usually means the court recessed.</p>
+</details>`;
+}
+
 function hubPage(c) {
   const cc = c.case;
   return page({
@@ -470,6 +579,7 @@ ${caseNav(c, 'overview')}
 ${cc.livestream ? `<p style="margin-top:8px"><b>Watch live:</b> ${cc.livestream.sources.map(s => `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.outlet)}</a>`).join(' · ')}</p>` : ''}
 <p class="factline" style="margin-top:10px"><b>${esc(cc.defendant)}</b> · ${esc(cc.charges)}<br>${esc(cc.plea)}<br>${esc(cc.court)} · ${esc(cc.judge)} · Prosecution: ${esc(cc.prosecution.join(', '))} · Defense: ${esc(cc.defense.join(', '))}</p>
 </div>
+${watchBlock(c)}
 <details class="fold"><summary>How this can end</summary>
 <div class="grid2" style="margin-top:10px">
 ${cc.verdictOptions.map(v => `<div class="vopt"><b>${esc(v.option)}</b><br><span style="font-size:14px">${esc(v.consequence)}</span><br>${srcLinks(v.sources)}</div>`).join('\n')}
@@ -477,7 +587,7 @@ ${cc.verdictOptions.map(v => `<div class="vopt"><b>${esc(v.option)}</b><br><span
 <p class="sub" style="margin-top:10px"><a href="${caseUrl(c, 'standard/')}">The law behind the verdict, in plain English →</a></p>
 </details>
 <h2>Latest updates</h2>
-${tickerHtml(c.ticker.items, 5)}
+${tickerHtml(c.ticker.items, 8, false, `/cases/${c.slug}/live.json`)}
 `});
 }
 
@@ -960,7 +1070,7 @@ ${caseNav(c, 'board')}
 <p>Paste this anywhere that accepts HTML. The board stays live: reader theories, new evidence and every update appear in your embed automatically, and each card keeps its sources.</p>
 <textarea id="embedcode" readonly rows="3" style="width:100%;font-family:ui-monospace,Consolas,monospace;font-size:12px;padding:10px;border-radius:6px;border:1px solid var(--line);background:var(--bg);color:var(--ink);resize:vertical">${esc(embedCode)}</textarea>
 <p><button class="linkbtn" id="copyembed">Copy embed code</button> <a class="linkbtn" href="${embedUrl}" target="_blank" rel="noopener" style="text-decoration:none">Preview it ↗</a> <span id="copied" style="color:var(--green);font-size:13px;display:none">Copied</span></p>
-<p style="font-size:12.5px">Prefer the raw data? <a href="./data.json">board.json</a> is public — free to use with a link back to this page.</p>
+<p style="font-size:12.5px">Prefer the raw data? <a href="./data.json">board.json</a> is public and free to reuse with credit. Covering trials for a living? <a href="/creators/">There's more for you here.</a></p>
 </details>
 <p style="margin-top:12px">
   <a class="btn sm" href="https://github.com/${REPO}/issues/new?template=theory.yml&case=${c.slug}">🧵 Post a theory</a>
@@ -986,7 +1096,7 @@ const submit = page({
   active: '/submit/',
   crumbs: `<a href="/">Home</a> › Share`,
   body: `
-<h1>Share what you think — or what you know.</h1>
+<h1>Add what you've found.</h1>
 <div class="grid2" style="margin-top:16px">
 <div class="card"><h3 style="margin-top:0">🧵 Post a theory</h3><p style="font-size:14px">Your read on the case. Joins the Board, labeled, for others to weigh in on.</p><p style="margin-top:10px"><a class="btn sm" href="https://github.com/${REPO}/issues/new?template=theory.yml">Post a theory</a></p></div>
 <div class="card"><h3 style="margin-top:0">📎 Submit evidence</h3><p style="font-size:14px">Reporting or a court document that proves — or disproves — something on the Board. This is what settles arguments.</p><p style="margin-top:10px"><a class="btn sm" href="https://github.com/${REPO}/issues/new?template=evidence.yml">Submit evidence</a></p></div>
@@ -996,6 +1106,43 @@ const submit = page({
 <div class="notice"><b>How it works:</b> theories about the case go live in ~15 minutes after an automated check; posts that discuss a specific person get editor eyes first (usually under an hour). 3 posts/day; posting uses a free GitHub account, reading never needs one. We don't publish accusations against the uncharged or anyone's personal info — <a href="/about/">why</a>.</div>
 `});
 
+// ---------- for creators ----------
+const creators = page({
+  title: 'For creators and newsrooms',
+  desc: 'Put a live OurGavel board in your video, article or stream. Free to embed; paid tiers for custom boards, alerts and data access.',
+  active: '/creators/',
+  crumbs: `<a href="/">Home</a> › For creators`,
+  body: `
+<h1>You do the show. We'll do the sourcing.</h1>
+<p class="sub" style="max-width:640px">If you cover trials, the worst part of the job is checking what actually happened before you say it on camera. That is the part we already do, every fifteen minutes, with a source on every line.</p>
+
+<h2>Free, no account, no catch</h2>
+<div class="card">
+<p><b>Embed any board.</b> One line of HTML in your article or show notes and your readers get the live board — it keeps updating after you publish, so a piece you wrote in week two still shows week four's evidence.</p>
+<p style="margin-top:8px"><b>Use the data.</b> Every board publishes as JSON at <code>/board/data.json</code>. Free to reuse for anything, including commercially, if you credit OurGavel and link the board.</p>
+<p style="margin-top:8px"><b>Take the facts.</b> Read a case off the record page and cite the outlet we cite. You don't owe us a mention for that — the sources did the reporting, not us.</p>
+<p style="margin-top:12px"><a class="btn sm" href="/cases/">Grab a board</a></p>
+</div>
+
+<h2>When free isn't enough</h2>
+<p class="sub">These are in early access. Nothing is on sale yet — if one fits how you work, tell us and we'll build it with you rather than guess.</p>
+<div class="grid2">
+  <div class="card"><h3 style="margin-top:0">Creator</h3>
+    <p class="lnote">roughly $49/month when it opens</p>
+    <p style="font-size:14.5px;margin-top:8px">An embed carrying your branding instead of ours. A board built for the case you're covering, including cases we don't track yet. Verdict and ruling alerts by email the moment two newsrooms confirm — usually before it trends. Ask us to dig into a specific witness or filing and get it back the same day.</p>
+    <p style="margin-top:10px"><a class="btn sm" href="https://github.com/${REPO}/issues/new?title=${encodeURIComponent('Creator tier — early access')}&body=${encodeURIComponent('Where you publish (channel, show, outlet):\n\nCases you cover:\n\nWhat would actually save you time:\n')}">Ask for early access</a></p>
+  </div>
+  <div class="card"><h3 style="margin-top:0">Newsroom</h3>
+    <p class="lnote">roughly $199/month when it opens</p>
+    <p style="font-size:14.5px;margin-top:8px">API access to every case we hold. Private boards your team edits before anything is public. A new case stood up within 24 hours of you asking. Bulk export of the full record, witness index and source list for anything you're building.</p>
+    <p style="margin-top:10px"><a class="btn sm ghost" href="https://github.com/${REPO}/issues/new?title=${encodeURIComponent('Newsroom tier — early access')}&body=${encodeURIComponent('Outlet:\n\nWhat you need access to:\n\nTeam size:\n')}">Talk to us</a></p>
+  </div>
+</div>
+
+<h2>The one rule</h2>
+<div class="card"><p style="font-size:14.5px">Paying us buys tooling, speed and support. It does not buy a word of the record. Nobody can pay to add a claim, soften a fact, remove a source or get a theory promoted — not advertisers, not sponsors, not you, and not us. That rule is the only reason this site is worth embedding, so it is the one thing that will never be for sale.</p></div>
+`});
+
 // ---------- about ----------
 const about = page({
   title: 'About',
@@ -1003,25 +1150,30 @@ const about = page({
   active: '/about/',
   crumbs: `<a href="/">Home</a> › About`,
   body: `
-<h1>About OurGavel</h1>
-<p class="sub" style="max-width:620px">Liveblogs are written for the minute they're published. OurGavel is for the person who arrives on day 15 and asks: <i>what actually happened here?</i> The record, sourced line by line — and a Board where the community tests what it might mean.</p>
-<h2>The rules this site runs on</h2>
+<h1>About</h1>
+<p class="sub" style="max-width:620px">Liveblogs are built for the minute they're posted. Come back on day 15 and you're scrolling forty screens to find out who testified on Tuesday. We keep the version you can actually read: the trial in order, with a source on every line.</p>
+<h2>The rules</h2>
 <div class="card"><p style="font-size:14.5px">
-<b>Attribution, always.</b> No named source, no sentence. Where outlets disagree, we show both.<br>
-<b>Presumption of innocence.</b> The site never asserts a defendant's guilt — it reports what is alleged, argued, and decided.<br>
-<b>Rumor and record never mix.</b> Theories are labeled everywhere they appear; popularity can't promote them, only sourcing can. Disproven theories stay visible, greyed.<br>
-<b>Verdicts</b> become fact here only once multiple independent outlets report them.<br>
-<b>Corrections are public</b> — fixed in place, with a note.<br>
-<b>Dignity.</b> Real people are grieving in these cases; we cover the proceeding, not the grief.
+<b>No source, no sentence.</b> Every factual line here names where it came from. If outlets disagree, you get both.<br>
+<b>We never say someone is guilty.</b> We report what is alleged, what is argued, and what gets decided. That is not a legal disclaimer, it is the whole job.<br>
+<b>Rumour and record don't mix.</b> Reader theories are amber wherever they appear. Upvotes don't promote them. Sources do.<br>
+<b>Verdicts wait for two.</b> A verdict becomes fact here when two independent newsrooms report it, not when the first one does.<br>
+<b>Corrections stay visible.</b> We fix things in place and say what changed. No quiet edits.<br>
+<b>We cover the proceeding, not the grief.</b> Nothing about a victim's last hours beyond what the charge itself requires.
 </p></div>
 <h2>Hard questions about people who aren't charged</h2>
-<div class="card"><p style="font-size:14.5px">Ask them — the right way. Conduct and institutions are open season: charging decisions, defense strategy, a hospital system's failures, what investigators missed. What the Board won't host is a crowd naming a private person as a suspect: that's how an innocent student became "the Boston bomber" and how an Idaho TikTok sleuth got sued by a professor she'd never met. When scrutiny of a person is already in the public record — a cross-examination, a filing, published reporting — bring it as <a href="/submit/">evidence</a> and it stands with its source attached. Questions travel on facts, not names.</p></div>
+<div class="card"><p style="font-size:14.5px">Ask them. Conduct and institutions are fair game here — charging decisions, defence strategy, what a hospital missed, what investigators didn't chase. What we won't host is a crowd deciding a private person did it. That is how an innocent student got named as the Boston bomber, and how a professor with no connection to the Idaho murders ended up suing a TikTok sleuth. If scrutiny of someone is already on the record — a cross-examination, a filing, published reporting — bring it as <a href="/submit/">evidence</a> and it goes up with the source attached. Questions travel on facts, not names.</p></div>
+<h2>How this site is made</h2>
+<div class="card"><p style="font-size:14.5px">Software watches the newsrooms covering each case around the clock and pulls in their headlines, attributed and linked. The record itself — the day-by-day, the witness index, the boards — is written from that published reporting and from court documents, and every claim carries its source so you can check the work rather than trust us.</p>
+<p style="font-size:14.5px;margin-top:8px">Yes, a lot of that is automated. We think that's the honest way to run a court record: a machine can re-read every source every fifteen minutes and never get bored on day nineteen, which is exactly when most coverage gets sloppy. What automation does <i>not</i> do here is decide anything that matters. A person signs off before this site states a verdict, a plea, or a sentence in its own voice. A person reviews every reader post that names someone. And nothing goes up as fact on a single source, ever.</p>
+<p style="font-size:14.5px;margin-top:8px">If we get something wrong, tell us and we'll fix it in public with a note saying what changed. <a href="https://github.com/${REPO}/issues">Corrections go here.</a> The whole site — every source, every edit, every commit — is public at <a href="https://github.com/${REPO}">github.com/${REPO}</a>. You can read the receipts.</p></div>
 <h2>Who runs this</h2>
-<div class="card"><p style="font-size:14.5px">A small team, automated monitoring every 15 minutes, editor review for posts that discuss people, removal power over everything. The site may run advertising and analytics; anything sponsored or affiliate-linked is labeled, and none of it touches the record. Independent of any court, party, or outlet. Corrections: <a href="https://github.com/${REPO}/issues">GitHub issues</a>.</p></div>
+<div class="card"><p style="font-size:14.5px">OurGavel is independent. No court, no party, no newsroom has any say in what goes up. It is small and it is not pretending otherwise.</p>
+<p style="font-size:14.5px;margin-top:8px">The site will carry advertising and analytics as it grows, and anything sponsored or affiliate-linked is labelled where it sits. None of it touches the record: no advertiser sees a case page before you do, and no paid link ever appears inside a board card.</p></div>
 `});
 
 // ---------- write ----------
-const files = { 'index.html': home, 'cases/index.html': casesIndex, 'submit/index.html': submit, 'about/index.html': about };
+const files = { 'index.html': home, 'cases/index.html': casesIndex, 'submit/index.html': submit, 'creators/index.html': creators, 'about/index.html': about };
 for (const c of CASES) {
   files[`cases/${c.slug}/index.html`] = hubPage(c);
   files[`cases/${c.slug}/timeline/index.html`] = timelinePage(c);
@@ -1036,7 +1188,15 @@ for (const [rel, html] of Object.entries(files)) {
   fs.mkdirSync(path.dirname(p), { recursive: true });
   fs.writeFileSync(p, harden(BASE ? html.replace(/href="\//g, `href="${BASE}/`) : html));
 }
+const liveItem = i => ({ ts: i.ts, outlet: i.outlet, headline: i.headline, url: safeUrl(i.url), flag: i.flag || null, case: i._case || null });
+fs.writeFileSync(path.join(OUT, 'live.json'), JSON.stringify({
+  serial: BUILT_AT, checked: BUILT_AT, items: allItems.slice(0, 24).map(liveItem),
+}));
 for (const c of CASES) {
+  fs.writeFileSync(path.join(OUT, 'cases', c.slug, 'live.json'), JSON.stringify({
+    serial: BUILT_AT, checked: BUILT_AT, phase: c.case.phase,
+    items: (c.ticker.items || []).slice(0, 24).map(liveItem),
+  }));
   fs.writeFileSync(path.join(OUT, 'cases', c.slug, 'board', 'board-data.json'), JSON.stringify({ serial: BUILT_AT }));
   // Public board data — reusable with attribution.
   fs.writeFileSync(path.join(OUT, 'cases', c.slug, 'board', 'data.json'), JSON.stringify({

@@ -278,5 +278,17 @@
         "url": "https://uclawreview.org/2025/10/17/bars-behind-bars-when-song-lyrics-become-criminal-evidence/"
       }
     ]
-  }
+  },
+  "courtRecords": [
+    {
+      "outlet": "CourtListener / RECAP \u2014 federal dockets, free",
+      "url": "https://www.courtlistener.com/",
+      "note": "Free mirror of PACER. Search the case name; no PACER account needed."
+    },
+    {
+      "outlet": "PACER \u2014 official federal records",
+      "url": "https://pacer.uscourts.gov/",
+      "note": "Official, but charges per page."
+    }
+  ]
 }

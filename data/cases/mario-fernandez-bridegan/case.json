@@ -261,5 +261,12 @@
         "url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0700-0799/0777/Sections/0777.04.html"
       }
     ]
-  }
+  },
+  "courtRecords": [
+    {
+      "outlet": "Duval County Clerk \u2014 CORE case search",
+      "url": "https://core.duvalclerk.com/",
+      "note": "Florida is a strong public-records state; filings are usually viewable."
+    }
+  ]
 }

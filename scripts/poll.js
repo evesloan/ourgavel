@@ -204,7 +204,26 @@ async function syncThreads(openIssues) {
 // Theories about the case itself publish on this 15-minute cycle after an automated
 // screen. Any post that discusses a specific person is held for the hourly editor
 // session ('needs-review'). Rate limit: 3 submissions per author per 24h.
-const RATE_LIMIT = 3;
+// Power users are the point. The limit exists to stop scripted spam, not to ration
+// contribution — someone dumping thirty sourced claims in an evening is exactly who
+// this site is for. Contributors with a clean published record get the higher ceiling
+// automatically; nobody has to ask.
+const RATE_LIMIT = 25;
+const TRUSTED_LIMIT = 120;
+const TRUSTED_AFTER = 8;   // published, still-standing contributions
+function authorStanding(login) {
+  let published = 0;
+  try {
+    for (const slug of fs.readdirSync(path.join(DATA, 'cases'))) {
+      const cPath = path.join(DATA, 'cases', slug, 'community.json');
+      if (!fs.existsSync(cPath)) continue;
+      for (const n of (read(cPath).nodes || [])) {
+        if (n.submittedBy === login && n.status !== 'removed') published++;
+      }
+    }
+  } catch (e) { /* first run */ }
+  return { published, limit: published >= TRUSTED_AFTER ? TRUSTED_LIMIT : RATE_LIMIT };
+}
 function field(body, label) {
   const re = new RegExp('###\\s*' + label.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\s*\\n+([\\s\\S]*?)(?=\\n###\\s|$)', 'i');
   const m = (body || '').match(re);
@@ -256,10 +275,11 @@ async function ingestTheories() {
   const dayAgo = Date.now() - 24 * 3600 * 1000;
   for (const iss of pending) {
     try {
+      const standing = authorStanding(iss.user);
       const byAuthor = q.filter(o => o.user === iss.user && new Date(o.created).getTime() > dayAgo);
-      if (byAuthor.length > RATE_LIMIT) {
+      if (byAuthor.length > standing.limit) {
         await gh(`/repos/${REPO}/issues/${iss.number}/labels`, { method: 'POST', body: { labels: ['rate-limited'] } });
-        await gh(`/repos/${REPO}/issues/${iss.number}/comments`, { method: 'POST', body: { body: `Thanks — you're over the ${RATE_LIMIT}-posts-per-day limit, so this one will wait for tomorrow's cycle. It hasn't been rejected.` } });
+        await gh(`/repos/${REPO}/issues/${iss.number}/comments`, { method: 'POST', body: { body: `Held, not rejected — you're past ${standing.limit} posts in 24 hours and this one goes up on the next cycle.\n\nIf you're working through a case in bulk and want the cap lifted, say so here and an editor will raise it. Contributors with ${TRUSTED_AFTER} published contributions get ${TRUSTED_LIMIT}/day automatically; you're at ${standing.published}.` } });
         continue;
       }
       const slug = (field(iss.body, 'Case') || '').toLowerCase().replace(/[^a-z0-9-]/g, '');

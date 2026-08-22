@@ -212,5 +212,12 @@
       "outlet": "PBS NewsHour",
       "url": "https://www.pbs.org/newshour/nation/lindsay-clancys-defense-rests-at-trial-over-whether-postpartum-psychosis-drove-her-to-killings"
     }
+  ],
+  "courtRecords": [
+    {
+      "outlet": "Massachusetts Trial Court \u2014 public docket search",
+      "url": "https://www.masscourts.org/",
+      "note": "Criminal dockets need the case number; name search is civil-only."
+    }
   ]
 }

@@ -258,5 +258,12 @@
         "url": "https://www.fox5vegas.com/2026/08/18/live-witnesses-continue-take-stand-day-two-tupac-murder-trial/"
       }
     ]
-  }
+  },
+  "courtRecords": [
+    {
+      "outlet": "Clark County Courts \u2014 case lookup",
+      "url": "https://www.clarkcountycourts.us/",
+      "note": "Nevada Eighth Judicial District Court records."
+    }
+  ]
 }

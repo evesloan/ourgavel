@@ -53,10 +53,21 @@ const ok = (n, c, x) => { c ? pass++ : (fail++, console.log('  FAIL  ' + n + (x 
       p.on('pageerror', e => errs.push(e.message.slice(0, 80)));
       await p.goto('http://localhost:' + PORT + '/cases/' + slug + '/board/', { waitUntil: 'networkidle' });
       // Capture what the composer would send instead of letting it reach a clipboard.
+      // Capture BOTH channels. With no SUBMIT_ENDPOINT the composer copies the reader's text
+      // to the clipboard; with one it POSTs to the relay. The promise under test is the same
+      // either way -- nothing the reader typed is lost -- so the capture follows the channel
+      // rather than the assertion being narrowed to whichever one happens to be wired today.
+      // fetch is stubbed, so this never reaches the network and files no issue.
       await p.evaluate(() => {
         window.__sent = [];
         try { Object.defineProperty(navigator, 'clipboard', { value: { writeText: t => { window.__sent.push(t); return Promise.resolve(); } }, configurable: true }); }
         catch (e) { window.__clipFail = String(e.message); }
+        window.__realFetch = window.fetch;
+        window.fetch = (u, o) => {
+          if (o && o.body) window.__sent.push(String(o.body));
+          return Promise.resolve(new Response(JSON.stringify({ ok: true, url: 'https://example.invalid/issues/1', number: 1 }),
+            { status: 200, headers: { 'content-type': 'application/json' } }));
+        };
       });
       console.log('\n  [' + label + ']');
 
@@ -115,7 +126,13 @@ const ok = (n, c, x) => { c ? pass++ : (fail++, console.log('  FAIL  ' + n + (x 
       await p.close();
     }
 
-    const submitPage = fs.readFileSync(path.join(ROOT, 'public', 'submit', 'index.html'), 'utf8');
+    // Say which channel was exercised, so a green run cannot hide the fact that only one of
+  // the two paths is reachable in this build.
+  const board = fs.readFileSync(path.join(ROOT, 'public', 'cases', slug, 'board', 'index.html'), 'utf8');
+  const endpoint = (board.match(/var ENDPOINT="([^"]*)"/) || [])[1] || '';
+  console.log('\n  channel under test: ' + (endpoint ? 'relay POST -> ' + endpoint : 'clipboard fallback (no SUBMIT_ENDPOINT)'));
+
+  const submitPage = fs.readFileSync(path.join(ROOT, 'public', 'submit', 'index.html'), 'utf8');
     ok('the submit page offers asking a question', /data-compose="question"/.test(submitPage));
   } finally {
     await b.close(); server.close();

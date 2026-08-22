@@ -116,6 +116,19 @@ const ok=(c,m)=>{ c?(pass++,console.log('  ok   '+m)):(fail++,console.log('  FAI
   console.log('\n  MUST NOT PROMISE MORE THAN IT SAVES');
   const ctx3 = await browser.newContext({permissions:['clipboard-read','clipboard-write']});
   const p3 = await ctx3.newPage();
+  // The reader's words go to the clipboard when there is no SUBMIT_ENDPOINT and to the relay
+  // when there is. The promise being tested -- nothing typed is lost, and we record which
+  // case and which card -- is identical either way, so capture whichever channel this build
+  // wired rather than narrowing the test to one of them. fetch is stubbed: nothing leaves the
+  // browser and no issue is filed.
+  await p3.addInitScript(() => {
+    window.__posted = null;
+    window.fetch = (u, o) => {
+      if (o && o.body) window.__posted = String(o.body);
+      return Promise.resolve(new Response(JSON.stringify({ ok: true, url: 'https://example.invalid/issues/1', number: 1 }),
+        { status: 200, headers: { 'content-type': 'application/json' } }));
+    };
+  });
   await p3.goto(`http://127.0.0.1:8908/cases/${SLUG}/board/`, {waitUntil:'networkidle'});
   const CARD = 'The voice she says commanded her';
   const MODES = [
@@ -131,14 +144,16 @@ const ok=(c,m)=>{ c?(pass++,console.log('  ok   '+m)):(fail++,console.log('  FAI
     await p3.waitForTimeout(120);
     for (const [k,v] of Object.entries(t.fill)) { const sel='#gbcf-'+k; if (await p3.$(sel)) await p3.fill(sel,v); }
     const selects = await p3.$$eval('#gbc select', els=>els.map(e=>e.value)).catch(()=>[]);
-    await p3.evaluate(()=>navigator.clipboard.writeText('__NOTHING__'));
+    await p3.evaluate(()=>{navigator.clipboard.writeText('__NOTHING__');window.__posted=null});
     await p3.click('#gbc-post'); await p3.waitForTimeout(350);
     const status = ((await p3.textContent('#gbc-status').catch(()=>''))||'').trim();
-    const clip = await p3.evaluate(()=>navigator.clipboard.readText());
+    const posted = await p3.evaluate(()=>window.__posted);
+    const clip = posted !== null && posted !== undefined ? posted : await p3.evaluate(()=>navigator.clipboard.readText());
+    const via = posted ? 'posted' : 'copied';
     const typed = Object.values(t.fill);
     const lost = typed.filter(v=>!clip.includes(v)).concat(selects.filter(v=>v&&!clip.includes(v)));
     console.log('    ['+t.mode+'] said: "'+status.slice(0,64)+'…"');
-    ok(clip!=='__NOTHING__', t.mode+': something was actually copied');
+    ok(clip!=='__NOTHING__', t.mode+': the reader\'s words were actually '+via);
     ok(lost.length===0, t.mode+': every field the reader filled in survived'+(lost.length?' — LOST '+JSON.stringify(lost):''));
     ok(clip.includes(SLUG), t.mode+': the copy records which CASE');
     ok(clip.includes(CARD), t.mode+': the copy records which CARD');

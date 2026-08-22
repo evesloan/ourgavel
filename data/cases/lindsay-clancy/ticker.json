@@ -43,10 +43,31 @@
       "flag": null
     },
     {
+      "ts": "2026-08-21T20:00:00Z",
+      "outlet": "WBUR",
+      "headline": "Lindsay Clancy's defense rests after calling 10 witnesses",
+      "url": "https://www.wbur.org/news/2026/08/21/lindsay-clancy-defense-rests",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-21T19:00:00Z",
+      "outlet": "Boston Globe",
+      "headline": "Rebuttal witness Dr. Avram Mack: Clancy suffered major depressive disorder, not psychosis",
+      "url": "https://www.bostonglobe.com/2026/08/21/metro/lindsay-clancy-trial-mack-resnick/",
+      "flag": null
+    },
+    {
       "ts": "2026-08-21T18:33:58.000Z",
       "outlet": "Court TV",
       "headline": "‘She was a puppet and someone else was pulling the strings’: Lindsay Clancy’s defense rests after doctor says she wasn’t psychotic ‘every minute’",
       "url": "https://www.courttv.com/news/she-was-a-puppet-and-someone-else-was-pulling-the-strings-lindsay-clancys-defense-rests-after-doctor-says-she-wasnt-psychotic-every-minute/",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-21T16:00:00Z",
+      "outlet": "NBC Boston",
+      "headline": "Recap: Defense in Lindsay Clancy trial rests, prosecutors call 1st rebuttal witness",
+      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-murder-trial/",
       "flag": null
     },
     {
@@ -125,34 +146,6 @@
       "headline": "Lawyers in Lindsay Clancy case get heated over whether she was instructed to claim she heard voices",
       "url": "https://www.courttv.com/news/lawyers-in-lindsay-clancy-case-get-heated-over-whether-she-was-instructed-to-claim-she-heard-voices/",
       "flag": null
-    },
-    {
-      "ts": "2026-08-21T21:30:00Z",
-      "outlet": "Court TV",
-      "headline": "'She was a puppet and someone else was pulling the strings': Lindsay Clancy's defense rests after doctor says she wasn't psychotic every minute",
-      "url": "https://www.courttv.com/news/she-was-a-puppet-and-someone-else-was-pulling-the-strings-lindsay-clancys-defense-rests-after-doctor-says-she-wasnt-psychotic-every-minute/",
-      "flag": null
-    },
-    {
-      "ts": "2026-08-21T20:00:00Z",
-      "outlet": "WBUR",
-      "headline": "Lindsay Clancy's defense rests after calling 10 witnesses",
-      "url": "https://www.wbur.org/news/2026/08/21/lindsay-clancy-defense-rests",
-      "flag": null
-    },
-    {
-      "ts": "2026-08-21T19:00:00Z",
-      "outlet": "Boston Globe",
-      "headline": "Rebuttal witness Dr. Avram Mack: Clancy suffered major depressive disorder, not psychosis",
-      "url": "https://www.bostonglobe.com/2026/08/21/metro/lindsay-clancy-trial-mack-resnick/",
-      "flag": null
-    },
-    {
-      "ts": "2026-08-21T16:00:00Z",
-      "outlet": "NBC Boston",
-      "headline": "Recap: Defense in Lindsay Clancy trial rests, prosecutors call 1st rebuttal witness",
-      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-murder-trial/",
-      "flag": null
     }
   ],
   "seen": [
@@ -173,6 +166,27 @@
     "y9c87g",
     "1gprkdh",
     "10qohxj",
-    "108e3oi"
+    "108e3oi",
+    "bqxnsj",
+    "77upvx",
+    "1mx5hbr",
+    "ml0x7j",
+    "176d8h",
+    "3ac0if",
+    "om23ld",
+    "y7cjwl",
+    "1g6e9ap",
+    "7z96cc",
+    "1oy9v3m",
+    "fdf7mw",
+    "rc5272",
+    "gebta7",
+    "16wrg8m",
+    "10hwkcf",
+    "1kfmq0k",
+    "aejimb",
+    "czv42n",
+    "1tszxc5",
+    "1wif0al"
   ]
 }

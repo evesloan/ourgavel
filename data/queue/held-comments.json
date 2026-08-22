@@ -1,0 +1,18 @@
+{
+  "synced": "2026-08-22T16:00:20.435Z",
+  "cleared": [],
+  "held": [],
+  "heldSeeds": [
+    {
+      "kind": "thread-opener",
+      "case": "lindsay-clancy",
+      "node": "f-voice",
+      "issue": 1,
+      "url": "https://github.com/evesloan/ourgavel/issues/1",
+      "user": "evesloan",
+      "escalate": true,
+      "why": "refers to a specific private individual (\"her husband\")",
+      "body": "Could it have been her husband at the time?"
+    }
+  ]
+}

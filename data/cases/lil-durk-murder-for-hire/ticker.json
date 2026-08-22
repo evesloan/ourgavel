@@ -4,6 +4,20 @@
       "ts": "2026-08-21T11:05:00.000Z",
       "outlet": "Bing News — Lil Durk trial",
       "headline": "Lil Durk Trial Underway",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a895e1eceaf4a47a764ae4025295c59&amp;url=https%3a%2f%2flamag.com%2fcrimeinla%2flil-durk-trial-underway%2f&amp;c=9789955331491922838&amp;mkt=en-us",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-18T15:33:00.000Z",
+      "outlet": "Bing News — Lil Durk trial",
+      "headline": "Prosecutors Call Lil Durk Song a 'Call to Arms' for Revenging King Von",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a895e1eceaf4a47a764ae4025295c59&amp;url=https%3a%2f%2fwww.yahoo.com%2fentertainment%2fmusic%2farticles%2fprosecutors-call-lil-durk-song-223304539.html&amp;c=16721637257819726092&amp;mkt=en-us",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-21T11:05:00.000Z",
+      "outlet": "Bing News — Lil Durk trial",
+      "headline": "Lil Durk Trial Underway",
       "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a895cefcd6848f9b96f4253c838ce08&amp;url=https%3a%2f%2flamag.com%2fcrimeinla%2flil-durk-trial-underway%2f&amp;c=9789955331491922838&amp;mkt=en-us",
       "flag": null
     },
@@ -177,6 +191,8 @@
     "1s8bbpg",
     "19bzhk5",
     "7tiq0k",
-    "1xt7hx1"
+    "1xt7hx1",
+    "11s04u1",
+    "1785rbk"
   ]
 }

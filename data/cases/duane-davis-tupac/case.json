@@ -338,6 +338,36 @@
       "bytes": 1300570,
       "addedAt": "2026-08-22T09:10:19.185Z",
       "verified": "commons-api"
+    },
+    {
+      "type": "image",
+      "local": "media/duane-davis-tupac/e963032d3c7e.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Clark_County_Government_Center_-_panoramio.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Clark_County_Government_Center_-_panoramio.jpg",
+      "caption": "Clark County Government Center, Las Vegas",
+      "alt": "The Clark County Government Center building",
+      "credit": "Alen Ištoković",
+      "rights": "cc-licensed",
+      "licence": "CC BY 3.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/3.0",
+      "bytes": 421475,
+      "addedAt": "2026-08-22T09:28:18.510Z",
+      "verified": "commons-api"
+    },
+    {
+      "type": "image",
+      "local": "media/duane-davis-tupac/fa183a042222.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Nevada_-_Las_Vegas_Clark_County_Government_Center_is_located_in_Downtown_Las_Vegas_-_the_building_is_one_of_the_rather_unknown_architectural_highlights_of_Vegas_(50027024252).jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Nevada_-_Las_Vegas_Clark_County_Government_Center_is_located_in_Downtown_Las_Vegas_-_the_building_is_one_of_the_rather_unknown_architectural_highlights_of_Vegas_(50027024252).jpg",
+      "caption": "Clark County Government Center, Las Vegas",
+      "alt": "The Clark County Government Center building",
+      "credit": "Reinhard Link from Germany",
+      "rights": "cc-licensed",
+      "licence": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "bytes": 283467,
+      "addedAt": "2026-08-22T09:28:18.510Z",
+      "verified": "commons-api"
     }
   ]
 }

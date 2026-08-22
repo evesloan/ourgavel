@@ -366,6 +366,36 @@
       "bytes": 308930,
       "addedAt": "2026-08-22T09:10:19.185Z",
       "verified": "commons-api"
+    },
+    {
+      "type": "image",
+      "local": "media/mario-fernandez-bridegan/8bf45c310de3.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Duval_County_Courthouse_from_parking_lot.JPG",
+      "source": "https://commons.wikimedia.org/wiki/File:Duval_County_Courthouse_from_parking_lot.JPG",
+      "caption": "The Duval County Courthouse, Jacksonville, Florida",
+      "alt": "Exterior of the Duval County Courthouse in Jacksonville",
+      "credit": "Michael Rivera",
+      "rights": "cc-licensed",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "bytes": 360387,
+      "addedAt": "2026-08-22T09:28:18.510Z",
+      "verified": "commons-api"
+    },
+    {
+      "type": "image",
+      "local": "media/mario-fernandez-bridegan/71e910d01016.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Duval_County_Courthouse_parking_deck.JPG",
+      "source": "https://commons.wikimedia.org/wiki/File:Duval_County_Courthouse_parking_deck.JPG",
+      "caption": "The Duval County Courthouse, Jacksonville, Florida",
+      "alt": "Exterior of the Duval County Courthouse in Jacksonville",
+      "credit": "Michael Rivera",
+      "rights": "cc-licensed",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "bytes": 324395,
+      "addedAt": "2026-08-22T09:28:18.510Z",
+      "verified": "commons-api"
     }
   ]
 }

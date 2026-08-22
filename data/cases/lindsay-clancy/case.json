@@ -288,6 +288,36 @@
       "caption": "Massachusetts Trial Court — public docket search",
       "credit": "Criminal dockets need the case number; name search is civil-only.",
       "rights": "public-record"
+    },
+    {
+      "type": "image",
+      "local": "media/lindsay-clancy/dff2bb85e85c.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Duxbury_MA_Town_Offices.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Duxbury_MA_Town_Offices.jpg",
+      "caption": "Duxbury, Massachusetts",
+      "alt": "A view of Duxbury, Massachusetts",
+      "credit": "T.S. Custadio aka ToddC4176 at en.wikipedia",
+      "rights": "cc-licensed",
+      "licence": "CC BY-SA 3.0",
+      "licenceUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "bytes": 206832,
+      "addedAt": "2026-08-22T09:10:19.185Z",
+      "verified": "commons-api"
+    },
+    {
+      "type": "image",
+      "local": "media/lindsay-clancy/49f836150231.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Duxbury,_Massachusetts_Town_Hall.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Duxbury,_Massachusetts_Town_Hall.jpg",
+      "caption": "Duxbury, Massachusetts",
+      "alt": "A view of Duxbury, Massachusetts",
+      "credit": "Kenneth C. Zirkel",
+      "rights": "cc-licensed",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "bytes": 499387,
+      "addedAt": "2026-08-22T09:10:19.185Z",
+      "verified": "commons-api"
     }
   ]
 }

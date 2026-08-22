@@ -336,6 +336,36 @@
       "caption": "Duval County Clerk — CORE case search",
       "credit": "Florida is a strong public-records state; filings are usually viewable.",
       "rights": "public-record"
+    },
+    {
+      "type": "image",
+      "local": "media/mario-fernandez-bridegan/953ff6dcc850.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Jacksonville,_FL,_Courthouse,_Duval_County,_08-09-2010_(6).JPG",
+      "source": "https://commons.wikimedia.org/wiki/File:Jacksonville,_FL,_Courthouse,_Duval_County,_08-09-2010_(6).JPG",
+      "caption": "The Duval County Courthouse, Jacksonville, Florida",
+      "alt": "Exterior of the Duval County Courthouse in Jacksonville",
+      "credit": "Georgia Guercio",
+      "rights": "cc-licensed",
+      "licence": "CC BY-SA 3.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "bytes": 267244,
+      "addedAt": "2026-08-22T09:10:19.185Z",
+      "verified": "commons-api"
+    },
+    {
+      "type": "image",
+      "local": "media/mario-fernandez-bridegan/aec9d05bd28a.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Duval_County_Courthouse_from_Clay_St.JPG",
+      "source": "https://commons.wikimedia.org/wiki/File:Duval_County_Courthouse_from_Clay_St.JPG",
+      "caption": "The Duval County Courthouse, Jacksonville, Florida",
+      "alt": "Exterior of the Duval County Courthouse in Jacksonville",
+      "credit": "Michael Rivera",
+      "rights": "cc-licensed",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "bytes": 308930,
+      "addedAt": "2026-08-22T09:10:19.185Z",
+      "verified": "commons-api"
     }
   ]
 }

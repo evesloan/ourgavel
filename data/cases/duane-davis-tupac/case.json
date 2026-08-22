@@ -308,6 +308,36 @@
       "caption": "Clark County Courts — case lookup",
       "credit": "Nevada Eighth Judicial District Court records.",
       "rights": "public-record"
+    },
+    {
+      "type": "image",
+      "local": "media/duane-davis-tupac/f0c58abb1acb.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Las_Vegas_Regional_Justice_Center.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Las_Vegas_Regional_Justice_Center.jpg",
+      "caption": "The Regional Justice Center, Las Vegas — home of the Clark County District Court",
+      "alt": "The Regional Justice Center tower in downtown Las Vegas",
+      "credit": "Coolcaesar at en.wikipedia",
+      "rights": "cc-licensed",
+      "licence": "CC BY-SA 3.0",
+      "licenceUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "bytes": 217886,
+      "addedAt": "2026-08-22T09:10:19.185Z",
+      "verified": "commons-api"
+    },
+    {
+      "type": "image",
+      "local": "media/duane-davis-tupac/44edda416cc2.png",
+      "url": "https://commons.wikimedia.org/wiki/File:Clark_County_Government_Center_aerial_view.png",
+      "source": "https://commons.wikimedia.org/wiki/File:Clark_County_Government_Center_aerial_view.png",
+      "caption": "Clark County Government Center, Las Vegas",
+      "alt": "The Clark County Government Center building",
+      "credit": "Carol M. Highsmith",
+      "rights": "public-domain",
+      "licence": "Public domain",
+      "licenceUrl": "",
+      "bytes": 1300570,
+      "addedAt": "2026-08-22T09:10:19.185Z",
+      "verified": "commons-api"
     }
   ]
 }

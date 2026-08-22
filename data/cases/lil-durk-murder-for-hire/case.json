@@ -347,6 +347,36 @@
       "caption": "PACER — official federal records",
       "credit": "Official, but charges per page.",
       "rights": "public-record"
+    },
+    {
+      "type": "image",
+      "local": "media/lil-durk-murder-for-hire/32d5c1e1e584.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Postcard_with_a_photograph_of_the_Hall_of_Records_in_Los_Angeles,_ca.1910_(EXM-P-S-LOS-ANG-CIT-BUI-705).jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Postcard_with_a_photograph_of_the_Hall_of_Records_in_Los_Angeles,_ca.1910_(EXM-P-S-LOS-ANG-CIT-BUI-705).jpg",
+      "caption": "The United States Courthouse, Los Angeles — Central District of California",
+      "alt": "The federal courthouse on First Street in downtown Los Angeles",
+      "credit": "Unknown author Unknown author",
+      "rights": "public-domain",
+      "licence": "Public domain",
+      "licenceUrl": "",
+      "bytes": 324743,
+      "addedAt": "2026-08-22T09:10:19.185Z",
+      "verified": "commons-api"
+    },
+    {
+      "type": "image",
+      "local": "media/lil-durk-murder-for-hire/c50a556b741b.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Panoramic_view_of_downtown_Los_Angeles,_looking_south_between_Spring_Street_and_Broadway_from_the_Courthouse,_ca.1905_(CHS-5066-p).jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Panoramic_view_of_downtown_Los_Angeles,_looking_south_between_Spring_Street_and_Broadway_from_the_Courthouse,_ca.1905_(CHS-5066-p).jpg",
+      "caption": "The United States Courthouse, Los Angeles — Central District of California",
+      "alt": "The federal courthouse on First Street in downtown Los Angeles",
+      "credit": "Unknown author Unknown author",
+      "rights": "public-domain",
+      "licence": "Public domain",
+      "licenceUrl": "",
+      "bytes": 171188,
+      "addedAt": "2026-08-22T09:10:19.185Z",
+      "verified": "commons-api"
     }
   ]
 }

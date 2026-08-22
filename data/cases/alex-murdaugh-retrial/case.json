@@ -334,6 +334,36 @@
       "caption": "South Carolina Judicial Branch — public index",
       "credit": "Search by county once the retrial venue is set.",
       "rights": "public-record"
+    },
+    {
+      "type": "image",
+      "local": "media/alex-murdaugh-retrial/fcb52bc11618.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Colleton_County_Courthouse_Walterboro_SC_-_panoramio.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Colleton_County_Courthouse_Walterboro_SC_-_panoramio.jpg",
+      "caption": "The Colleton County Courthouse, Walterboro — where the 2023 trial was held",
+      "alt": "The Colleton County Courthouse in Walterboro, South Carolina",
+      "credit": "Chanilim714",
+      "rights": "cc-licensed",
+      "licence": "CC BY-SA 3.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "bytes": 376785,
+      "addedAt": "2026-08-22T09:10:19.185Z",
+      "verified": "commons-api"
+    },
+    {
+      "type": "image",
+      "local": "media/alex-murdaugh-retrial/43212ba207a0.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Colleton_County_Courthouse_-_Walterboro,_SC.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Colleton_County_Courthouse_-_Walterboro,_SC.jpg",
+      "caption": "The Colleton County Courthouse, Walterboro — where the 2023 trial was held",
+      "alt": "The Colleton County Courthouse in Walterboro, South Carolina",
+      "credit": "Upstateherd",
+      "rights": "cc-licensed",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "bytes": 206328,
+      "addedAt": "2026-08-22T09:10:19.185Z",
+      "verified": "commons-api"
     }
   ]
 }

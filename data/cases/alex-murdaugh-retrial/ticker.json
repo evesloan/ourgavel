@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-08-23T21:54:37.000Z",
+      "outlet": "WLTX News19",
+      "headline": "Woman dies after exchanging gunfire with Anderson County deputies, SLED says",
+      "url": "https://www.wltx.com/article/news/crime/woman-dies-gunfire-anderson-county-deputies-sled-says/101-51c78994-eee2-44ea-9796-25fb6ba79939",
+      "flag": null
+    },
+    {
       "ts": "2026-08-21T02:30:00.000Z",
       "outlet": "via MSN",
       "headline": "Murdaugh prosecutor Creighton Waters says he'll let judge decide on new trial site",
@@ -791,6 +798,7 @@
     "1g9zf6d",
     "uqgus8",
     "1gayrpk",
-    "1fnbe18"
+    "1fnbe18",
+    "1a3qv9n"
   ]
 }

@@ -120,6 +120,13 @@
       "flag": null
     },
     {
+      "ts": "2026-08-14T08:28:21.000Z",
+      "outlet": "via MSN",
+      "headline": "Alex Murdaugh retrial moved out of Colleton County, judge says",
+      "url": "https://www.msn.com/en-us/news/crime/alex-murdaugh-retrial-moved-out-of-colleton-county-judge-says/ar-AA2a7y4p",
+      "flag": null
+    },
+    {
       "ts": "2026-08-14T03:06:00.000Z",
       "outlet": "The Greenville News",
       "headline": "Alex Murdaugh returns to court as judge weighs key retrial motions",
@@ -766,6 +773,7 @@
     "1g9z0qa",
     "1g9y14l",
     "1fp4vqx",
-    "oyml6q"
+    "oyml6q",
+    "1g9zf6d"
   ]
 }

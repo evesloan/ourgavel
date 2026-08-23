@@ -85,6 +85,13 @@
       "flag": "verdict-watch"
     },
     {
+      "ts": "2026-08-14T12:10:00.000Z",
+      "outlet": "via Yahoo News",
+      "headline": "Alex Murdaugh granted change of venue for murder retrial, past testimony allowed",
+      "url": "https://www.yahoo.com/news/us/articles/alex-murdaugh-granted-change-venue-191051629.html",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-08-14T12:08:19.000Z",
       "outlet": "via MSN",
       "headline": "Can Alex Murdaugh get a fair trial? Judge to make key venue decision",
@@ -774,6 +781,7 @@
     "1g9y14l",
     "1fp4vqx",
     "oyml6q",
-    "1g9zf6d"
+    "1g9zf6d",
+    "uqgus8"
   ]
 }

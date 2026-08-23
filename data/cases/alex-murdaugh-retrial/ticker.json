@@ -169,6 +169,13 @@
       "flag": null
     },
     {
+      "ts": "2026-06-29T12:33:00.000Z",
+      "outlet": "goerie.com",
+      "headline": "Tentative date set for Alex Murdaugh retrial in 2027",
+      "url": "https://www.goerie.com/story/news/crime/2026/06/29/alex-murdaugh-murder-retrial-begins/90735924007/",
+      "flag": null
+    },
+    {
       "ts": "2026-06-28T21:07:00.000Z",
       "outlet": "10TV Columbus",
       "headline": "Alex Murdaugh's true crime saga returns as the date for his new murder trial is set",
@@ -758,6 +765,7 @@
     "1g9yqno",
     "1g9z0qa",
     "1g9y14l",
-    "1fp4vqx"
+    "1fp4vqx",
+    "oyml6q"
   ]
 }

@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-08-23T21:18:57.000Z",
+      "outlet": "Boston.com",
+      "headline": "Why the Lindsay Clancy case is dividing Americans",
+      "url": "https://www.boston.com/news/crime/2026/08/23/why-the-lindsay-clancy-case-is-dividing-americans/",
+      "flag": null
+    },
+    {
       "ts": "2026-08-23T14:00:30.000Z",
       "outlet": "NBC10 Boston",
       "headline": "As the Clancy case highlights postpartum psychosis, a mom shares her story of hope",
@@ -195,6 +202,7 @@
     "czv42n",
     "1tszxc5",
     "1wif0al",
-    "18qmwgn"
+    "18qmwgn",
+    "1mgumyr"
   ]
 }

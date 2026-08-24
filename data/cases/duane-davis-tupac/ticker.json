@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-08-24T14:47:39.000Z",
+      "outlet": "News 3 Las Vegas",
+      "headline": "TODAY: Second week of testimony begins in Tupac Shakur murder trial",
+      "url": "https://news3lv.com/news/local/second-week-testimony-begins-tupac-shakur-murder-trial-duane-davis-keffe-d-crime-court-las-vegas-nevada-livestream",
+      "flag": null
+    },
+    {
       "ts": "2026-08-22T05:00:44.000Z",
       "outlet": "FOX5 Las Vegas",
       "headline": "Tensions flare in court as Duane ‘Keffe D’ Davis trial wraps up week one",
@@ -208,6 +215,7 @@
     "1km3461",
     "biceei",
     "19xq8ao",
-    "fgbirt"
+    "fgbirt",
+    "1tw49a4"
   ]
 }

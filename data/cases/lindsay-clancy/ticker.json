@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-08-24T16:26:47.000Z",
+      "outlet": "Court TV",
+      "headline": "Lindsay Clancy defense argues prosecution’s expert is ‘way off base’",
+      "url": "https://www.courttv.com/news/lindsay-clancy-defense-argues-prosecutions-expert-is-way-off-base/",
+      "flag": null
+    },
+    {
       "ts": "2026-08-24T13:07:18.000Z",
       "outlet": "Boston.com",
       "headline": "Livestream: Lindsay Clancy murder trial continues with prosecution rebuttal expert on the stand",
@@ -259,6 +266,7 @@
     "vf7nzt",
     "118o1vx",
     "6lgr52",
-    "1rpydt4"
+    "1rpydt4",
+    "k315h4"
   ]
 }

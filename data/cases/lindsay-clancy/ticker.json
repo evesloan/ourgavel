@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-08-24T20:55:30.000Z",
+      "outlet": "Court TV",
+      "headline": "Lindsay Clancy’s attorney accuses prosecutors of ‘intentional misconduct’ after 2nd reference to ‘mortal sin’",
+      "url": "https://www.courttv.com/news/lindsay-clancys-attorney-accuses-prosecutors-of-intentional-misconduct-after-2nd-reference-to-mortal-sin/",
+      "flag": null
+    },
+    {
       "ts": "2026-08-24T16:26:47.000Z",
       "outlet": "Court TV",
       "headline": "Lindsay Clancy defense argues prosecution’s expert is ‘way off base’",
@@ -267,6 +274,7 @@
     "118o1vx",
     "6lgr52",
     "1rpydt4",
-    "k315h4"
+    "k315h4",
+    "1nhae2h"
   ]
 }

@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-08-24T11:44:21.000Z",
+      "outlet": "via MSN",
+      "headline": "Lil Durk trial: Defense claims rapper unfairly offered as 'big fish'",
+      "url": "https://www.msn.com/en-us/music/news/lil-durk-trial-defense-claims-rapper-unfairly-offered-as-big-fish/ar-AA2aPOy9",
+      "flag": null
+    },
+    {
       "ts": "2026-08-24T11:27:00.000Z",
       "outlet": "billboard.com",
       "headline": "Lil Durk Put a Bounty on Quando Rondo for ‘Revenge,’ Jury Told as Murder-for-Hire Trial Opens",
@@ -121,6 +128,7 @@
     "1b304g9",
     "1garcrm",
     "cppxoc",
-    "3huw8m"
+    "3huw8m",
+    "1gaznme"
   ]
 }

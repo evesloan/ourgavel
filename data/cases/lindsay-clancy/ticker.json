@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-08-24T10:07:00.000Z",
+      "outlet": "WCVB",
+      "headline": "As the Clancy case highlights postpartum psychosis, a mom stricken by it shares her story of hope",
+      "url": "https://www.wcvb.com/article/as-the-clancy-case-highlights-postpartum-psychosis-a-mom-stricken-by-it-shares-her-story-of-hope/73508744",
+      "flag": null
+    },
+    {
       "ts": "2026-08-24T09:36:00.000Z",
       "outlet": "WCVB",
       "headline": "Rebuttal witnesses expected back on stand in Lindsay Clancy trial",
@@ -219,6 +226,7 @@
     "18qmwgn",
     "1mgumyr",
     "1ezkcz1",
-    "1qthq2w"
+    "1qthq2w",
+    "1dl3nhk"
   ]
 }

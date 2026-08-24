@@ -1,6 +1,20 @@
 {
   "items": [
     {
+      "ts": "2026-08-24T09:36:00.000Z",
+      "outlet": "WCVB",
+      "headline": "Rebuttal witnesses expected back on stand in Lindsay Clancy trial",
+      "url": "https://www.wcvb.com/article/lindsay-clancy-trial-live-updates-aug-24/73508400",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-24T05:38:51.000Z",
+      "outlet": "NBC10 Boston",
+      "headline": "Lindsay Clancy trial testimony to continue with rebuttal witnesses",
+      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-trial-testimony/4002669/",
+      "flag": null
+    },
+    {
       "ts": "2026-08-23T21:18:57.000Z",
       "outlet": "Boston.com",
       "headline": "Why the Lindsay Clancy case is dividing Americans",
@@ -203,6 +217,8 @@
     "1tszxc5",
     "1wif0al",
     "18qmwgn",
-    "1mgumyr"
+    "1mgumyr",
+    "1ezkcz1",
+    "1qthq2w"
   ]
 }

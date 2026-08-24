@@ -1,6 +1,20 @@
 {
   "items": [
     {
+      "ts": "2026-08-24T13:07:18.000Z",
+      "outlet": "Boston.com",
+      "headline": "Livestream: Lindsay Clancy murder trial continues with prosecution rebuttal expert on the stand",
+      "url": "https://www.boston.com/news/crime/2026/08/24/lindsay-clancy-murder-trial-livestream-video-monday-august-24/",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-24T12:56:42.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Lindsay Clancy trial (live updates): Prosecutors expected to call final rebuttal witnesses",
+      "url": "https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-prosecutors-expected-call-final-rebuttal-witnesses/BBNWTJG34VFCFNKSHU26BIEHTA/",
+      "flag": null
+    },
+    {
       "ts": "2026-08-24T11:04:57.000Z",
       "outlet": "Boston 25 News",
       "headline": "Lindsay Clancy trial: Prosecutors expected to call final rebuttal witnesses",
@@ -19,6 +33,13 @@
       "outlet": "WCVB",
       "headline": "Rebuttal witnesses expected back on stand in Lindsay Clancy trial",
       "url": "https://www.wcvb.com/article/lindsay-clancy-trial-live-updates-aug-24/73508400",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-24T08:54:24.000Z",
+      "outlet": "NBC10 Boston",
+      "headline": "Live updates: Rebuttal witnesses testify in Lindsay Clancy trial",
+      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-trial-day-19-live-updates/4002724/",
       "flag": null
     },
     {
@@ -235,6 +256,9 @@
     "1ezkcz1",
     "1qthq2w",
     "1dl3nhk",
-    "vf7nzt"
+    "vf7nzt",
+    "118o1vx",
+    "6lgr52",
+    "1rpydt4"
   ]
 }

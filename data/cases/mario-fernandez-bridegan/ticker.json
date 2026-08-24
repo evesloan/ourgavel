@@ -1,6 +1,20 @@
 {
   "items": [
     {
+      "ts": "2026-08-24T13:10:55.000Z",
+      "outlet": "Action News Jax",
+      "headline": "Second week of testimony in trial for murder-for-hire suspect Mario Fernandez Saldana | WATCH LIVE",
+      "url": "https://www.actionnewsjax.com/news/local/second-week-testimony-trial-murder-for-hire-suspect-mario-fernandez-saldana-watch-live/V65EJI5ETFFARDSFQFELPATZ6U/",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-24T12:54:23.000Z",
+      "outlet": "News4JAX",
+      "headline": "LIVE: Testimony continues in Mario Fernandez murder trial in death of Jared Bridegan",
+      "url": "https://www.news4jax.com/news/local/2026/08/24/testimony-continues-in-mario-fernandez-murder-trial-in-death-of-jared-bridegan/",
+      "flag": null
+    },
+    {
       "ts": "2026-08-23T21:18:54.000Z",
       "outlet": "Action News Jax",
       "headline": "Appeal ruling says Bridegan widow’s phone is not evidence in murder-for-hire trial",
@@ -54,6 +68,8 @@
     "l0zxvb",
     "1m0b586",
     "1r0r1r2",
-    "9s4y2n"
+    "9s4y2n",
+    "1n2zi17",
+    "1vg0gar"
   ]
 }

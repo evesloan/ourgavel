@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-08-24T11:04:57.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Lindsay Clancy trial: Prosecutors expected to call final rebuttal witnesses",
+      "url": "https://www.boston25news.com/news/local/lindsay-clancy-trial-prosecutors-expected-call-final-rebuttal-witnesses/BBNWTJG34VFCFNKSHU26BIEHTA/",
+      "flag": null
+    },
+    {
       "ts": "2026-08-24T10:07:00.000Z",
       "outlet": "WCVB",
       "headline": "As the Clancy case highlights postpartum psychosis, a mom stricken by it shares her story of hope",
@@ -227,6 +234,7 @@
     "1mgumyr",
     "1ezkcz1",
     "1qthq2w",
-    "1dl3nhk"
+    "1dl3nhk",
+    "vf7nzt"
   ]
 }

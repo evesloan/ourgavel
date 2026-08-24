@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-08-24T15:44:47.000Z",
+      "outlet": "8 News Now",
+      "headline": "Live updates: Day 6 of Tupac murder trial",
+      "url": "https://www.8newsnow.com/news/tupac-murder-trial/live-updates-day-6-of-tupac-murder-trial/",
+      "flag": null
+    },
+    {
       "ts": "2026-08-24T14:47:39.000Z",
       "outlet": "News 3 Las Vegas",
       "headline": "TODAY: Second week of testimony begins in Tupac Shakur murder trial",
@@ -216,6 +223,7 @@
     "biceei",
     "19xq8ao",
     "fgbirt",
-    "1tw49a4"
+    "1tw49a4",
+    "12qgg4u"
   ]
 }

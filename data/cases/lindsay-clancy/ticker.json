@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-08-24T21:42:16.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Judge denies Lindsay Clancy mistrial following testimony about religion, warns prosecution",
+      "url": "https://www.boston25news.com/news/local/judge-denies-lindsay-clancy-mistrial-following-testimony-about-religion-warns-prosecution/Y5UERSEYJFHNJFC7GZKZYKMR24/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-08-24T20:55:30.000Z",
       "outlet": "Court TV",
       "headline": "Lindsay Clancy’s attorney accuses prosecutors of ‘intentional misconduct’ after 2nd reference to ‘mortal sin’",
@@ -275,6 +282,7 @@
     "6lgr52",
     "1rpydt4",
     "k315h4",
-    "1nhae2h"
+    "1nhae2h",
+    "14p4dfr"
   ]
 }

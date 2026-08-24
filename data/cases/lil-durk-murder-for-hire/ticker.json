@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-08-23T17:00:00.000Z",
+      "outlet": "via Yahoo News",
+      "headline": "Lil Durk Trial: Feds Want to Use 6ix9ine Interview as Evidence (UPDATE)",
+      "url": "https://www.yahoo.com/entertainment/music/articles/lil-durk-trial-feds-want-003122594.html",
+      "flag": null
+    },
+    {
       "ts": "2026-08-22T02:49:00.000Z",
       "outlet": "DancehallMag",
       "headline": "Lil Durk Trial: Juror Dismissed for Bias During Slow Jury Selection",
@@ -105,6 +112,7 @@
     "19gal2f",
     "43n90f",
     "1b304g9",
-    "1garcrm"
+    "1garcrm",
+    "cppxoc"
   ]
 }

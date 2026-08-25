@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-08-25T21:39:08.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Psychologist testifies Lindsay Clancy was criminally responsible for killing her 3 children",
+      "url": "https://www.boston25news.com/news/local/psychologist-testifies-lindsay-clancy-was-criminally-responsible-killing-her-3-children/4ZR2FR43LFCNJHZSRQD77W3TQU/",
+      "flag": null
+    },
+    {
       "ts": "2026-08-25T20:13:48.000Z",
       "outlet": "Court TV",
       "headline": "Prosecution’s expert concedes Lindsay Clancy had ‘adverse reactions’ to medications",
@@ -339,6 +346,7 @@
     "1unih7m",
     "1aesahv",
     "1gx6k37",
-    "19jnr9s"
+    "19jnr9s",
+    "63grlw"
   ]
 }

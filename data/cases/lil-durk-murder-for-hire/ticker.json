@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-08-25T12:15:00.000Z",
+      "outlet": "via MSN",
+      "headline": "Lil Durk’s murder-for-hire trial begins as prosecutors allege revenge plot against Quando Rondo",
+      "url": "https://www.msn.com/en-us/news/other/lil-durk-s-murder-for-hire-trial-begins-as-prosecutors-allege-revenge-plot-against-quando-rondo/ar-AA2aVf5x",
+      "flag": null
+    },
+    {
       "ts": "2026-08-25T06:05:00.000Z",
       "outlet": "via Yahoo News",
       "headline": "MGK’s Unexpected Lil Durk Trial Appearance Turns Heads",
@@ -177,6 +184,7 @@
     "1xc84p9",
     "1ysago1",
     "1gazpg4",
-    "ml08x7"
+    "ml08x7",
+    "1gb39ai"
   ]
 }

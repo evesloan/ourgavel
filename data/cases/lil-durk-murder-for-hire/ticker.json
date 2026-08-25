@@ -2,6 +2,13 @@
   "items": [
     {
       "ts": "2026-08-25T12:15:00.000Z",
+      "outlet": "via Yahoo News",
+      "headline": "Lil Durk’s murder-for-hire trial begins as prosecutors allege revenge plot against Quando Rondo",
+      "url": "https://www.yahoo.com/news/us/articles/lil-durk-murder-hire-trial-191500915.html",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-25T12:15:00.000Z",
       "outlet": "via MSN",
       "headline": "Lil Durk’s murder-for-hire trial begins as prosecutors allege revenge plot against Quando Rondo",
       "url": "https://www.msn.com/en-us/news/other/lil-durk-s-murder-for-hire-trial-begins-as-prosecutors-allege-revenge-plot-against-quando-rondo/ar-AA2aVf5x",
@@ -193,6 +200,7 @@
     "1gazpg4",
     "ml08x7",
     "1gb39ai",
-    "1kt045o"
+    "1kt045o",
+    "fgpafq"
   ]
 }

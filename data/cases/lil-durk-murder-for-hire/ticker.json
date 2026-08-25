@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-08-24T19:07:00.000Z",
+      "outlet": "Los Angeles Magazine",
+      "headline": "Lil Durk Trial Opens With Competing Accounts of ‘Revenge’ Killing",
+      "url": "https://lamag.com/crimeinla/lil-durk-trial-opens-with-competing-accounts-of-revenge-killing/",
+      "flag": null
+    },
+    {
       "ts": "2026-08-24T16:46:00.000Z",
       "outlet": "via Yahoo News",
       "headline": "Lil Durk Trial: Prosecutors' Case And Defense Explained",
@@ -153,6 +160,7 @@
     "1gaznme",
     "1gb0ecv",
     "1gazmco",
-    "1xc84p9"
+    "1xc84p9",
+    "1ysago1"
   ]
 }

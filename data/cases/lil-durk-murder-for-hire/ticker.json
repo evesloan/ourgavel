@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-08-24T16:46:00.000Z",
+      "outlet": "via Yahoo News",
+      "headline": "Lil Durk Trial: Prosecutors' Case And Defense Explained",
+      "url": "https://www.yahoo.com/entertainment/music/articles/lil-durk-trial-prosecutors-case-234549669.html",
+      "flag": null
+    },
+    {
       "ts": "2026-08-24T16:45:49.000Z",
       "outlet": "via MSN",
       "headline": "Lil Durk trial: Prosecutors' case and defense explained",
@@ -145,6 +152,7 @@
     "3huw8m",
     "1gaznme",
     "1gb0ecv",
-    "1gazmco"
+    "1gazmco",
+    "1xc84p9"
   ]
 }

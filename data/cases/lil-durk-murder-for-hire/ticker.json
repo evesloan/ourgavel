@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-08-25T06:05:00.000Z",
+      "outlet": "via Yahoo News",
+      "headline": "MGK’s Unexpected Lil Durk Trial Appearance Turns Heads",
+      "url": "https://www.yahoo.com/entertainment/music/articles/mgk-unexpected-lil-durk-trial-130512227.html",
+      "flag": null
+    },
+    {
       "ts": "2026-08-24T19:07:00.000Z",
       "outlet": "Los Angeles Magazine",
       "headline": "Lil Durk Trial Opens With Competing Accounts of ‘Revenge’ Killing",
@@ -169,6 +176,7 @@
     "1gazmco",
     "1xc84p9",
     "1ysago1",
-    "1gazpg4"
+    "1gazpg4",
+    "ml08x7"
   ]
 }

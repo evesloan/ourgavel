@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-08-25T13:10:35.000Z",
+      "outlet": "Action News Jax",
+      "headline": "Murder for Hire Trial: State rests case, final witnesses to testify | Watch Live",
+      "url": "https://www.actionnewsjax.com/news/local/murder-hire-trial-state-rests-case-final-witnesses-testify-watch-live/LBXHCQCM2VFWPLP2HMWAKODETU/",
+      "flag": null
+    },
+    {
       "ts": "2026-08-25T12:36:19.000Z",
       "outlet": "News4JAX",
       "headline": "Defense to call witnesses in Mario Fernandez murder trial in February 2022 ambush shooting of Jared Bridegan",
@@ -86,6 +93,7 @@
     "1n2zi17",
     "1vg0gar",
     "10nbx8o",
-    "rl80pg"
+    "rl80pg",
+    "3rt5cu"
   ]
 }

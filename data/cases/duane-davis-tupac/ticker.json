@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-08-25T16:06:36.000Z",
+      "outlet": "FOX5 Las Vegas",
+      "headline": "LIVE: Testimony continues in week two of Tupac murder trial",
+      "url": "https://www.fox5vegas.com/2026/08/25/live-testimony-continues-week-two-tupac-murder-trial/",
+      "flag": null
+    },
+    {
       "ts": "2026-08-25T15:16:44.000Z",
       "outlet": "8 News Now",
       "headline": "Live updates: Day 7 of Tupac murder trial",
@@ -248,6 +255,7 @@
     "12qgg4u",
     "8efukt",
     "1nbk2jz",
-    "1c5xwet"
+    "1c5xwet",
+    "dm0f05"
   ]
 }

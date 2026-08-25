@@ -1,6 +1,20 @@
 {
   "items": [
     {
+      "ts": "2026-08-25T15:16:44.000Z",
+      "outlet": "8 News Now",
+      "headline": "Live updates: Day 7 of Tupac murder trial",
+      "url": "https://www.8newsnow.com/news/tupac-murder-trial/live-updates-day-7-of-tupac-murder-trial/",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-25T15:04:32.000Z",
+      "outlet": "News 3 Las Vegas",
+      "headline": "TODAY: Testimony continues in Tupac Shakur trial after jury hears more audio",
+      "url": "https://news3lv.com/news/local/testimony-continues-tupac-shakur-murder-trial-jury-duane-davis-keffe-d-crime-court-las-vegas-nevada-livestream",
+      "flag": null
+    },
+    {
       "ts": "2026-08-24T16:22:21.000Z",
       "outlet": "FOX5 Las Vegas",
       "headline": "Witness testimony continues in week two of Tupac murder trial",
@@ -232,6 +246,8 @@
     "fgbirt",
     "1tw49a4",
     "12qgg4u",
-    "8efukt"
+    "8efukt",
+    "1nbk2jz",
+    "1c5xwet"
   ]
 }

@@ -204,6 +204,13 @@
       "flag": null
     },
     {
+      "ts": "2026-07-03T14:15:00.000Z",
+      "outlet": "WCSC Live 5 News",
+      "headline": "Deep Dive: Murdaugh Murders Retrial Ep 3: Alex Murdaugh’s first day in a court",
+      "url": "https://www.live5news.com/2026/07/03/deep-dive-murdaugh-murders-retrial-ep-3-alex-murdaughs-first-day-court/",
+      "flag": null
+    },
+    {
       "ts": "2026-06-30T14:50:00.000Z",
       "outlet": "WIS News 10",
       "headline": "What’s next in the Alex Murdaugh case? What a legal expert told us.",
@@ -815,6 +822,7 @@
     "1fnbe18",
     "1a3qv9n",
     "1ga0a0a",
-    "1g9uzs0"
+    "1g9uzs0",
+    "kxtgm9"
   ]
 }

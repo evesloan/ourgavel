@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-08-25T20:13:48.000Z",
+      "outlet": "Court TV",
+      "headline": "Prosecution’s expert concedes Lindsay Clancy had ‘adverse reactions’ to medications",
+      "url": "https://www.courttv.com/news/prosecutions-expert-concedes-lindsay-clancy-had-adverse-reactions-to-medications/",
+      "flag": null
+    },
+    {
       "ts": "2026-08-25T13:14:36.000Z",
       "outlet": "Boston.com",
       "headline": "Livestream: Lindsay Clancy murder trial nears its end as prosecution expert returns to the stand",
@@ -331,6 +338,7 @@
     "1rhdmbr",
     "1unih7m",
     "1aesahv",
-    "1gx6k37"
+    "1gx6k37",
+    "19jnr9s"
   ]
 }

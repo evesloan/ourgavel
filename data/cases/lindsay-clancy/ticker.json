@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-08-25T12:55:47.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Lindsay Clancy trial (live updates): Prosecution to call final rebuttal witness after near mistrial",
+      "url": "https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-prosecution-call-final-rebuttal-witness-after-near-mistrial/PXGYBU7WWVFRVOZNCZ3CNBOWMQ/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-08-25T11:11:07.000Z",
       "outlet": "Boston 25 News",
       "headline": "Lindsay Clancy murder trial: Prosecution to call final rebuttal witness after near mistrial",
@@ -12,6 +19,13 @@
       "outlet": "WCVB",
       "headline": "Testimony continues after Lindsay Clancy's defense denied mistrial",
       "url": "https://www.wcvb.com/article/lindsay-clancy-trial-live-updates-aug-25/73518460",
+      "flag": "verdict-watch"
+    },
+    {
+      "ts": "2026-08-25T08:39:39.000Z",
+      "outlet": "NBC10 Boston",
+      "headline": "Live updates: Lindsay Clancy trial continues after failed motion for mistrial",
+      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-trial-day-20-live-updates/4003382/",
       "flag": "verdict-watch"
     },
     {
@@ -307,6 +321,8 @@
     "14p4dfr",
     "1nl1k0y",
     "1yrwmgn",
-    "1rhdmbr"
+    "1rhdmbr",
+    "1unih7m",
+    "1aesahv"
   ]
 }

@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-08-25T12:36:19.000Z",
+      "outlet": "News4JAX",
+      "headline": "Defense to call witnesses in Mario Fernandez murder trial in February 2022 ambush shooting of Jared Bridegan",
+      "url": "https://www.news4jax.com/news/local/2026/08/25/defense-to-call-witnesses-in-mario-fernandez-murder-trial-in-february-2022-ambush-shooting-of-jared-bridegan/",
+      "flag": null
+    },
+    {
       "ts": "2026-08-24T22:44:29.000Z",
       "outlet": "News4JAX",
       "headline": "Duval County Public Schools launches website ahead of November millage vote",
@@ -78,6 +85,7 @@
     "9s4y2n",
     "1n2zi17",
     "1vg0gar",
-    "10nbx8o"
+    "10nbx8o",
+    "rl80pg"
   ]
 }

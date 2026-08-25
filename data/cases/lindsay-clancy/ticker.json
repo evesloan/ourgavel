@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-08-25T11:11:07.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Lindsay Clancy murder trial: Prosecution to call final rebuttal witness after near mistrial",
+      "url": "https://www.boston25news.com/news/local/lindsay-clancy-murder-trial-prosecution-call-final-rebuttal-witness-after-near-mistrial/TZE7T2QBWJDZLET5SLEDNPTEEQ/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-08-25T09:26:00.000Z",
       "outlet": "WCVB",
       "headline": "Testimony continues after Lindsay Clancy's defense denied mistrial",
@@ -299,6 +306,7 @@
     "1nhae2h",
     "14p4dfr",
     "1nl1k0y",
-    "1yrwmgn"
+    "1yrwmgn",
+    "1rhdmbr"
   ]
 }

@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-08-25T09:26:00.000Z",
+      "outlet": "WCVB",
+      "headline": "Testimony continues after Lindsay Clancy's defense denied mistrial",
+      "url": "https://www.wcvb.com/article/lindsay-clancy-trial-live-updates-aug-25/73518460",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-08-24T21:42:16.000Z",
       "outlet": "Boston 25 News",
       "headline": "Judge denies Lindsay Clancy mistrial following testimony about religion, warns prosecution",
@@ -283,6 +290,7 @@
     "1rpydt4",
     "k315h4",
     "1nhae2h",
-    "14p4dfr"
+    "14p4dfr",
+    "1nl1k0y"
   ]
 }

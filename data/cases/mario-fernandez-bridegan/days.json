@@ -473,6 +473,28 @@
           "url": "https://www.eastidahonews.com/2026/08/jurors-to-begin-deliberations-wednesday-in-mario-fernandez-saldanas-trial-for-the-murder-of-jared-bridegan/"
         }
       ]
+    },
+    {
+      "day": 9,
+      "date": "2026-08-26",
+      "phase": "Verdict",
+      "headline": "Verdict: Guilty",
+      "summary": "The jury returned its verdict. Reported independently by news4jax, fox, wokvcom. This entry was published automatically once 3+ newsrooms agreed and that agreement held across two checks.",
+      "sources": [
+        {
+          "outlet": "News4JAX",
+          "url": "https://www.news4jax.com/news/local/2026/08/26/truth-won-today-says-jared-bridegans-widow-after-mario-fernandez-convicted-of-murder-in-2022-shooting/"
+        },
+        {
+          "outlet": "Fox News",
+          "url": "https://www.foxnews.com/us/suspect-microsoft-executive-jared-bridegan-murder-convicted-roadside-ambush"
+        },
+        {
+          "outlet": "wokv.com",
+          "url": "https://www.wokv.com/news/local/jury-deliberating-case-accused-murder-for-hire-suspect-mario-fernandez-saldana/YRMMWFLHZZBSJHEHCDIA35QKDE/"
+        }
+      ],
+      "witnesses": []
     }
   ]
 }

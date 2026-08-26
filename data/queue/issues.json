@@ -1,6 +1,38 @@
 {
-  "synced": "2026-08-26T22:00:20.474Z",
+  "synced": "2026-08-26T23:10:19.659Z",
   "open": [
+    {
+      "number": 6,
+      "title": "Verdict published: Jared Bridegan Murder Trial — Guilty",
+      "body": "Published automatically after 3 independent newsrooms agreed across two consecutive checks.\n\n- News4JAX: https://www.news4jax.com/news/local/2026/08/26/truth-won-today-says-jared-bridegans-widow-after-mario-fernandez-convicted-of-murder-in-2022-shooting/\n- Fox News: https://www.foxnews.com/us/suspect-microsoft-executive-jared-bridegan-murder-convicted-roadside-ambush\n- wokv.com: https://www.wokv.com/news/local/jury-deliberating-case-accused-murder-for-hire-suspect-mario-fernandez-saldana/YRMMWFLHZZBSJHEHCDIA35QKDE/\n\nNext: the review session should resolve the board's central question, add the sentencing date if known, and archive the case when it is over.",
+      "labels": [
+        "verdict-watch"
+      ],
+      "user": "github-actions[bot]",
+      "created": "2026-08-26T23:10:31Z",
+      "reactions": {
+        "up": 0,
+        "down": 0
+      },
+      "url": "https://github.com/evesloan/ourgavel/issues/6"
+    },
+    {
+      "number": 5,
+      "title": "[question] Why isn't the husband under more scrutiny?",
+      "body": "### Case\nlindsay-clancy\n\n### In one sentence\nWhy isn't the husband under more scrutiny?\n\n### Reasoning\nIt appears a lot of his testimony is taken as truth without suspicion?\n\n---\nPosted as **confused** (unverified display name) via the composer on https://ourgavel.com.\nScreened for personal information before submission. Subject to the same review as every other post.",
+      "labels": [
+        "question",
+        "via-composer",
+        "needs-review"
+      ],
+      "user": "evesloan",
+      "created": "2026-08-26T23:08:49Z",
+      "reactions": {
+        "up": 0,
+        "down": 0
+      },
+      "url": "https://github.com/evesloan/ourgavel/issues/5"
+    },
     {
       "number": 3,
       "title": "[question] Why isn't the husband being looked into further?",

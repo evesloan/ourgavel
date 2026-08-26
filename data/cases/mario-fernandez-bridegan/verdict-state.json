@@ -1,4 +1,6 @@
 {
-  "pending": "GUILTY",
-  "firstSeen": "2026-08-26T22:00:20.474Z"
+  "pending": null,
+  "firstSeen": "2026-08-26T22:00:20.474Z",
+  "published": "GUILTY",
+  "alerted": "published"
 }

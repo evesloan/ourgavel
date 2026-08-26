@@ -3,7 +3,7 @@
   "title": "State of Florida v. Mario Fernandez Saldana",
   "shortTitle": "Jared Bridegan Murder Trial",
   "status": "active",
-  "phase": "Convicted — jury found Fernandez guilty on both counts (Aug. 26); sentencing to be scheduled",
+  "phase": "Verdict returned",
   "court": "Duval County Circuit Court, Florida",
   "judge": "Judge London Kite",
   "incidentDate": "2022-02-16",
@@ -21,15 +21,19 @@
   ],
   "victims": "Jared Bridegan, 33",
   "plainSummary": "Jared Bridegan, a 33-year-old Microsoft manager, stopped his car on a dark Jacksonville Beach street to move a tire someone had dragged into the road. He was shot dead there, with his young daughter in the back seat. Nobody says Mario Fernandez — the man who married Bridegan's ex-wife — pulled the trigger; the single question for this jury is whether he was the one who arranged and paid for it.",
-  "statusNow": "On Wednesday, Aug. 26, a Duval County jury convicted Mario Fernandez Saldana of first-degree murder and solicitation to commit a capital felony in the 2022 ambush killing of Jared Bridegan, after about three and a half hours of deliberation. Fernandez, who did not take the stand, was the first of three defendants to stand trial in the case; his ex-wife Shanna Gardner and the admitted gunman Henry Tenon face separate proceedings. A sentencing date has not been set. The conviction was reported by multiple national newsrooms.",
+  "statusNow": "The jury returned its verdict: Guilty. Confirmed by 3 independent newsrooms, listed below. Sentencing and any appeal follow separately.",
   "statusNowSources": [
     {
-      "outlet": "News4Jax",
-      "url": "https://www.news4jax.com/news/local/2026/08/26/jury-to-begin-deliberations-in-mario-fernandez-murder-trial-in-february-2022-ambush-shooting-of-jared-bridegan/"
+      "outlet": "News4JAX",
+      "url": "https://www.news4jax.com/news/local/2026/08/26/truth-won-today-says-jared-bridegans-widow-after-mario-fernandez-convicted-of-murder-in-2022-shooting/"
     },
     {
-      "outlet": "East Idaho News",
-      "url": "https://www.eastidahonews.com/2026/08/jurors-to-begin-deliberations-wednesday-in-mario-fernandez-saldanas-trial-for-the-murder-of-jared-bridegan/"
+      "outlet": "Fox News",
+      "url": "https://www.foxnews.com/us/suspect-microsoft-executive-jared-bridegan-murder-convicted-roadside-ambush"
+    },
+    {
+      "outlet": "wokv.com",
+      "url": "https://www.wokv.com/news/local/jury-deliberating-case-accused-murder-for-hire-suspect-mario-fernandez-saldana/YRMMWFLHZZBSJHEHCDIA35QKDE/"
     }
   ],
   "storySoFar": "On the night of Feb. 16, 2022, Jared Bridegan was driving home from a custody handoff when a tire in the road made him stop. He got out to move it and was shot dead in the street, his young daughter still in the car. Investigators say the killing was arranged by his ex-wife, Shanna Gardner, and her husband, Mario Fernandez Saldana, after years of bitter fighting over the children — and carried out by Henry Tenon, a man who rented a property from Fernandez. All three were charged, all three now say they are not guilty, and each gets a separate trial: Fernandez is on trial now, Gardner's jury selection starts Aug. 31 with testimony from Sept. 8, and Tenon goes in March 2027. That order matters, because Tenon once pleaded guilty and agreed to testify against the other two — then took it all back, so the state has to prove this case without him. Prosecutors also gave up the death penalty in November 2025, which means life in prison is the ceiling and the floor for anyone convicted of the murder count.",
@@ -111,32 +115,38 @@
     {
       "outlet": "Court TV — Bridegan",
       "url": "https://www.courttv.com/tag/jared-bridegan/feed/",
-      "verified": true
+      "verified": true,
+      "_ok": false
     },
     {
       "outlet": "Court TV — Gardner",
       "url": "https://www.courttv.com/tag/shanna-gardner/feed/",
-      "verified": true
+      "verified": true,
+      "_ok": false
     },
     {
       "outlet": "Court TV — all news",
       "url": "https://www.courttv.com/feed/",
-      "verified": true
+      "verified": true,
+      "_ok": true
     },
     {
       "outlet": "News4Jax/WJXT — news",
       "url": "https://www.news4jax.com/arc/outboundfeeds/rss/category/news/?outputType=xml",
-      "verified": true
+      "verified": true,
+      "_ok": true
     },
     {
       "outlet": "News4Jax/WJXT — local",
       "url": "https://www.news4jax.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-      "verified": true
+      "verified": true,
+      "_ok": true
     },
     {
       "outlet": "Action News Jax — news",
       "url": "https://www.actionnewsjax.com/arc/outboundfeeds/rss/category/news/?outputType=xml",
-      "verified": true
+      "verified": true,
+      "_ok": true
     }
   ],
   "watchPages": [
@@ -415,5 +425,25 @@
       "addedAt": "2026-08-22T09:45:19.970Z",
       "verified": "commons-api"
     }
-  ]
+  ],
+  "verdict": {
+    "outcome": "GUILTY",
+    "label": "Guilty",
+    "publishedAt": "2026-08-26T23:10:19.659Z",
+    "confirmedBy": 3,
+    "sources": [
+      {
+        "outlet": "News4JAX",
+        "url": "https://www.news4jax.com/news/local/2026/08/26/truth-won-today-says-jared-bridegans-widow-after-mario-fernandez-convicted-of-murder-in-2022-shooting/"
+      },
+      {
+        "outlet": "Fox News",
+        "url": "https://www.foxnews.com/us/suspect-microsoft-executive-jared-bridegan-murder-convicted-roadside-ambush"
+      },
+      {
+        "outlet": "wokv.com",
+        "url": "https://www.wokv.com/news/local/jury-deliberating-case-accused-murder-for-hire-suspect-mario-fernandez-saldana/YRMMWFLHZZBSJHEHCDIA35QKDE/"
+      }
+    ]
+  }
 }

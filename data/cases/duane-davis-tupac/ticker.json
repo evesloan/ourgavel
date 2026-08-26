@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-08-26T22:38:26.000Z",
+      "outlet": "News 3 Las Vegas",
+      "headline": "Ex-judge weighs in as state rests case in Tupac Shakur murder trial",
+      "url": "https://news3lv.com/news/local/ex-judge-weighs-in-as-state-rests-without-naming-tupacs-shooter-in-keffe-d-trial",
+      "flag": null
+    },
+    {
       "ts": "2026-08-26T19:59:36.000Z",
       "outlet": "FOX5 Las Vegas",
       "headline": "State expected to rest its case as Tupac murder trial enters day eight",
@@ -288,6 +295,7 @@
     "ota5dw",
     "glmv1c",
     "8vjn00",
-    "mjm5wu"
+    "mjm5wu",
+    "523m0w"
   ]
 }

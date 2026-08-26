@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-08-26T19:13:09.000Z",
+      "outlet": "News4JAX",
+      "headline": "‘Truth won today,’ says Jared Bridegan’s widow after Mario Fernandez convicted of murder in 2022 shooting",
+      "url": "https://www.news4jax.com/news/local/2026/08/26/truth-won-today-says-jared-bridegans-widow-after-mario-fernandez-convicted-of-murder-in-2022-shooting/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-08-26T14:20:38.000Z",
       "outlet": "Action News Jax",
       "headline": "Jury deliberating in case of accused murder-for-hire suspect Mario Fernandez-Saldana",
@@ -110,6 +117,7 @@
     "rl80pg",
     "3rt5cu",
     "v5s5to",
-    "detteb"
+    "detteb",
+    "o6bhph"
   ]
 }

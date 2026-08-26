@@ -1,10 +1,24 @@
 {
   "items": [
     {
+      "ts": "2026-08-26T18:19:31.000Z",
+      "outlet": "Court TV",
+      "headline": "‘Are you kidding me?’: Tensions rise in courtroom during Lindsay Clancy’s murder trial",
+      "url": "https://www.courttv.com/news/are-you-kidding-me-tensions-rise-in-courtroom-during-lindsay-clancys-murder-trial/",
+      "flag": null
+    },
+    {
       "ts": "2026-08-26T17:30:22.000Z",
       "outlet": "Boston 25 News",
       "headline": "Lindsay Clancy trial (live updates): Commonwealth rests its rebuttal case",
       "url": "https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-commonwealth-rests-its-rebuttal-case/XPN4GGETFRBB5DJD6BCWWX3KLE/",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-26T15:58:58.000Z",
+      "outlet": "NBC10 Boston",
+      "headline": "The spectacle in the Lindsay Clancy courtroom has moved beyond the witness stand",
+      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-trial-spectacle/4004296/",
       "flag": null
     },
     {
@@ -403,6 +417,8 @@
     "8copmz",
     "1b8bg17",
     "pueisc",
-    "1e026qf"
+    "1e026qf",
+    "16jc2k1",
+    "1fv98ig"
   ]
 }

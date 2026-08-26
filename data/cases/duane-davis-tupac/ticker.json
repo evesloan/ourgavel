@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-08-26T19:59:36.000Z",
+      "outlet": "FOX5 Las Vegas",
+      "headline": "State expected to rest its case as Tupac murder trial enters day eight",
+      "url": "https://www.fox5vegas.com/2026/08/26/state-expected-rest-its-case-tupac-murder-trial-enters-day-eight/",
+      "flag": null
+    },
+    {
       "ts": "2026-08-26T18:11:43.000Z",
       "outlet": "8 News Now",
       "headline": "Live updates: Day 8 of Tupac murder trial",
@@ -280,6 +287,7 @@
     "dm0f05",
     "ota5dw",
     "glmv1c",
-    "8vjn00"
+    "8vjn00",
+    "mjm5wu"
   ]
 }

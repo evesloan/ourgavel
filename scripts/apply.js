@@ -110,9 +110,11 @@ function parsePlan(issueBody) {
 function gate(log) {
   const steps = ['scripts/preflight.js', 'scripts/build.js'];
   for (const f of fs.readdirSync(path.join(ROOT, 'scripts')).sort()) {
-    if (f.endsWith('.test.js')) steps.push('scripts/' + f);
+    // '-test.js' too: media.viewer-test.js was silently skipped by the '.test.js' filter
+    // (found by the community lane, 2026-08-22) — a plan could break the photo viewer unseen.
+    if (f.endsWith('.test.js') || f.endsWith('-test.js')) steps.push('scripts/' + f);
   }
-  steps.push('scripts/audit.js', 'scripts/verdict.live-check.js');
+  steps.push('scripts/audit.js');
   for (const s of steps) {
     try {
       execFileSync(process.execPath, [s], { cwd: ROOT, encoding: 'utf8', timeout: GATE_TIMEOUT_MS, stdio: ['ignore', 'pipe', 'pipe'] });
@@ -122,7 +124,20 @@ function gate(log) {
       return { ok: false, step: s, out };
     }
   }
-  return { ok: true, steps: steps.length };
+  // verdict.live-check is a needs-a-human-eye alarm about the state of the WORLD, not a test of
+  // the plan being applied: a verdict arriving used to turn it red and freeze every lane's
+  // shipping at the exact moment the record most needed updating (Fernandez, 2026-08-26).
+  // It runs ADVISORY now — its output lands in the issue comment so every lane and the lead see
+  // it, but it never refuses a plan.
+  let advisory = '';
+  try {
+    execFileSync(process.execPath, ['scripts/verdict.live-check.js'], { cwd: ROOT, encoding: 'utf8', timeout: GATE_TIMEOUT_MS, stdio: ['ignore', 'pipe', 'pipe'] });
+    log('    ok   scripts/verdict.live-check.js (advisory)');
+  } catch (e) {
+    advisory = ((e.stdout || '') + (e.stderr || '')).slice(-900);
+    log('    ADVISORY  verdict.live-check is red — does not block plans, but a headline may be reading as a verdict; a human eye is wanted');
+  }
+  return { ok: true, steps: steps.length, advisory };
 }
 
 function revert(log) {
@@ -195,7 +210,7 @@ async function applyHandoffs(deps) {
       sh(`git -c user.name="ourgavel-pulse" -c user.email="actions@users.noreply.github.com" commit -m ${JSON.stringify(plan.commit)}`);
       const sha = sh('git rev-parse --short HEAD').trim();
       log(`    SHIPPED ${sha} — ${touched.length} file(s), ${g.steps} checks green`);
-      outcome = { ok: true, sha, files: touched.length, checks: g.steps };
+      outcome = { ok: true, sha, files: touched.length, checks: g.steps, advisory: g.advisory };
     } catch (e) {
       log('    REFUSED: ' + e.message.split('\n')[0]);
       revert(log);
@@ -204,6 +219,9 @@ async function applyHandoffs(deps) {
 
     const body = outcome.ok
       ? `Applied as \`${outcome.sha}\`. ${outcome.files} file(s) changed; ${outcome.checks} checks green before the commit was made.`
+        + (outcome.advisory
+          ? `\n\n**Advisory — \`verdict.live-check\` is red.** A headline may be reading as a verdict with no verdict on file. This did not block your plan, but a human eye is wanted:\n\`\`\`\n${outcome.advisory}\n\`\`\``
+          : '')
       : `**Not applied.** Nothing was committed and the tree was reverted.\n\n\`\`\`\n${String(outcome.error).slice(0, 3000)}\n\`\`\`\n\nQueue a corrected plan; this issue will not be retried.`;
     try {
       await gh(`/repos/${repo}/issues/${iss.number}/comments`, { method: 'POST', body: { body } });

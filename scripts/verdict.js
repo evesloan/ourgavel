@@ -51,7 +51,13 @@ const OUTCOMES = [
   ['NGRI', new RegExp('\\b(?:not criminally responsible|not guilty by reason of (?:insanity|mental illness|lack of criminal responsibility)|(?:found|finds)\\s+' + SUBJ + 'not criminally responsible)\\b', 'i')],
   ['MISTRIAL', /\b(mistrial (was )?(declared|granted)|declare[sd]? a mistrial|hung jury|deadlocked jury|jury (was |is )?(hung|deadlocked))\b/i],
   ['NOT_GUILTY', new RegExp('\\b(?:(?:found|finds|find)\\s+' + SUBJ + 'not guilty|acquitted|acquits|acquitting|verdict of not guilty|cleared of all charges)\\b', 'i')],
-  ['GUILTY', new RegExp('\\b(?:(?:found|finds|find|convicts?|convicted)\\s+' + SUBJ + '(?<!not\\s)guilty|convicted (?:of|on)\\b|guilty verdict|verdict of guilty)', 'i')],
+  // 'convicted in' is AP's standard wire phrasing ("Man convicted in murder-for-hire killing…")
+  // and was under-detected until the Fernandez verdict (2026-08-26), when six newsroom families
+  // reported a real conviction and only one classified. The existing guards already cover the
+  // risky shapes: 'convicted in 2023' (datesThePastVerdict), 'convicted in first trial/retrial/
+  // appeal' (HISTORICAL), 'could be convicted in' (HYPOTHETICAL). Proven against every stored
+  // headline across all cases before shipping: no new false positive.
+  ['GUILTY', new RegExp('\\b(?:(?:found|finds|find|convicts?|convicted)\\s+' + SUBJ + '(?<!not\\s)guilty|convicted (?:of|on|in)\\b|guilty verdict|verdict of guilty)', 'i')],
 ];
 
 // Coverage of a RETRIAL constantly references the verdict that was overturned, and a

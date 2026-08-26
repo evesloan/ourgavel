@@ -1,12 +1,12 @@
 {
-  "note": "Day-by-day record of State of Florida v. Mario Fernandez Saldana, Duval County Circuit Court, before Judge London Kite. Day 1 was Monday, Aug. 17, 2026; the trial is scheduled to end by Aug. 28. Everything below is what happened in the courtroom, drawn from reporters who were in it \u2014 no guesses about what any of it means. Jared Bridegan's surviving children are minors and are not named or described here. Where two outlets rendered a name or a quote slightly differently, the variation is flagged in the entry.",
+  "note": "Day-by-day record of State of Florida v. Mario Fernandez Saldana, Duval County Circuit Court, before Judge London Kite. Day 1 was Monday, Aug. 17, 2026; the trial is scheduled to end by Aug. 28. Everything below is what happened in the courtroom, drawn from reporters who were in it — no guesses about what any of it means. Jared Bridegan's surviving children are minors and are not named or described here. Where two outlets rendered a name or a quote slightly differently, the variation is flagged in the entry.",
   "pretrial": [
     {
       "date": "2022-02-16",
       "event": "Jared Bridegan, 33, a Microsoft manager, is shot and killed on a residential street in Jacksonville Beach. He had just left a custody handoff and stopped because a tire had been left in the road. He got out to move it and was shot; his young daughter was in the car. Nobody is arrested for almost a year.",
       "sources": [
         {
-          "outlet": "News4Jax/WJXT \u2014 four-year case timeline",
+          "outlet": "News4Jax/WJXT — four-year case timeline",
           "url": "https://www.news4jax.com/news/local/2026/02/16/4-years-later-a-timeline-of-the-jared-bridegan-murder-for-hire-case/"
         },
         {
@@ -20,7 +20,7 @@
       "event": "Henry Tenon is arrested on an unrelated felony driving charge and questioned about the Bridegan killing and about a blue Ford F-150 seen near the scene. He is not charged with the murder yet.",
       "sources": [
         {
-          "outlet": "News4Jax/WJXT \u2014 four-year case timeline",
+          "outlet": "News4Jax/WJXT — four-year case timeline",
           "url": "https://www.news4jax.com/news/local/2026/02/16/4-years-later-a-timeline-of-the-jared-bridegan-murder-for-hire-case/"
         }
       ]
@@ -30,7 +30,7 @@
       "event": "Tenon is charged in the murder. He is a tenant of Mario Fernandez Saldana, who rents him a property on Potomac Avenue.",
       "sources": [
         {
-          "outlet": "NBC News / Dateline \u2014 arrest announcements",
+          "outlet": "NBC News / Dateline — arrest announcements",
           "url": "https://www.nbcnews.com/dateline/in-the-news/authorities-announce-another-arrest-connection-jared-bridegans-februar-rcna75348"
         }
       ]
@@ -40,35 +40,35 @@
       "event": "Tenon pleads guilty to second-degree murder with a weapon and admits he was the shooter. The deal gives him a sentencing range starting at 15 years and drops his conspiracy, accessory-after-the-fact and child abuse counts, in exchange for testifying against Shanna Gardner and Mario Fernandez. At the time, that testimony is the spine of the state's case against both of them.",
       "sources": [
         {
-          "outlet": "News4Jax/WJXT \u2014 Tenon plea withdrawal coverage",
+          "outlet": "News4Jax/WJXT — Tenon plea withdrawal coverage",
           "url": "https://www.news4jax.com/news/local/2026/02/17/judge-to-decide-if-accused-gunman-in-jared-bridegan-murder-for-hire-case-can-withdraw-guilty-plea-go-to-trial/"
         }
       ]
     },
     {
       "date": "2023-03-16",
-      "event": "Mario Fernandez Saldana is arrested in the Orlando area \u2014 Kissimmee \u2014 one year and one month after the killing. He is charged with four counts: first-degree murder, conspiracy to commit murder, solicitation to commit a capital felony, and child abuse. He pleads not guilty and is held without bond.",
+      "event": "Mario Fernandez Saldana is arrested in the Orlando area — Kissimmee — one year and one month after the killing. He is charged with four counts: first-degree murder, conspiracy to commit murder, solicitation to commit a capital felony, and child abuse. He pleads not guilty and is held without bond.",
       "sources": [
         {
-          "outlet": "News4Jax/WJXT \u2014 who is Mario Fernandez",
+          "outlet": "News4Jax/WJXT — who is Mario Fernandez",
           "url": "https://www.news4jax.com/news/local/2026/08/17/hes-the-first-to-face-trial-in-jared-bridegan-murder-for-hire-case-what-do-we-know-about-mario-fernandez/"
         },
         {
-          "outlet": "NBC News / Dateline \u2014 arrest announced",
+          "outlet": "NBC News / Dateline — arrest announced",
           "url": "https://www.nbcnews.com/dateline/in-the-news/authorities-announce-another-arrest-connection-jared-bridegans-februar-rcna75348"
         }
       ]
     },
     {
       "date": "2023-08-17",
-      "event": "Shanna Gardner \u2014 Bridegan's ex-wife and Fernandez's wife \u2014 is arrested in Washington state on first-degree murder, solicitation, conspiracy and child abuse charges. Prosecutors say she played a \"central and key role in the cold, calculated and premeditated murder.\" She fights extradition for weeks, then waives it on Oct. 19 and is moved out of the Benton County jail on Oct. 20 to be booked in Duval County.",
+      "event": "Shanna Gardner — Bridegan's ex-wife and Fernandez's wife — is arrested in Washington state on first-degree murder, solicitation, conspiracy and child abuse charges. Prosecutors say she played a \"central and key role in the cold, calculated and premeditated murder.\" She fights extradition for weeks, then waives it on Oct. 19 and is moved out of the Benton County jail on Oct. 20 to be booked in Duval County.",
       "sources": [
         {
           "outlet": "NBC News / Dateline",
           "url": "https://www.nbcnews.com/dateline/in-the-news/authorities-announce-another-arrest-connection-jared-bridegans-februar-rcna75348"
         },
         {
-          "outlet": "News4Jax/WJXT \u2014 Gardner returned to Florida",
+          "outlet": "News4Jax/WJXT — Gardner returned to Florida",
           "url": "https://www.news4jax.com/news/local/2023/10/20/shanna-gardner-heading-back-to-florida-to-face-charges-in-murder-for-hire-plot-that-killed-ex-husband-jared-bridegan/"
         }
       ]
@@ -82,7 +82,7 @@
           "url": "https://www.news4jax.com/news/local/2026/02/17/judge-to-decide-if-accused-gunman-in-jared-bridegan-murder-for-hire-case-can-withdraw-guilty-plea-go-to-trial/"
         },
         {
-          "outlet": "Court TV \u2014 confessed hitman changes his story",
+          "outlet": "Court TV — confessed hitman changes his story",
           "url": "https://www.courttv.com/news/confessed-hitman-changes-story-about-microsoft-execs-murder-for-hire/"
         }
       ]
@@ -117,7 +117,7 @@
     },
     {
       "date": "2026-02-19",
-      "event": "A grand jury indicts Tenon on first-degree murder \u2014 a step up from the second-degree count he had pleaded to. His trial is set for March 2027, after both of the others.",
+      "event": "A grand jury indicts Tenon on first-degree murder — a step up from the second-degree count he had pleaded to. His trial is set for March 2027, after both of the others.",
       "sources": [
         {
           "outlet": "News4Jax/WJXT",
@@ -134,14 +134,14 @@
           "url": "https://www.news4jax.com/news/local/2026/06/03/judge-denies-motion-from-shanna-gardners-attorneys-to-toss-evidence-from-court-authorized-wiretaps/"
         },
         {
-          "outlet": "News4Jax/WJXT \u2014 the original suppression motion",
+          "outlet": "News4Jax/WJXT — the original suppression motion",
           "url": "https://www.news4jax.com/news/local/2026/04/17/shanna-gardners-defense-moves-to-suppress-wiretap-evidence-in-jared-bridegan-murder-case/"
         }
       ]
     },
     {
       "date": "2026-07-27",
-      "event": "Three weeks before trial the state drops two of the four counts against Fernandez \u2014 conspiracy to commit murder and child abuse \u2014 leaving first-degree murder and solicitation to commit a capital felony. Prosecutors did not publicly explain why. The practical effect is a narrower case for the jury: not a sprawling conspiracy, but the question of whether this one man hired the killing.",
+      "event": "Three weeks before trial the state drops two of the four counts against Fernandez — conspiracy to commit murder and child abuse — leaving first-degree murder and solicitation to commit a capital felony. Prosecutors did not publicly explain why. The practical effect is a narrower case for the jury: not a sprawling conspiracy, but the question of whether this one man hired the killing.",
       "sources": [
         {
           "outlet": "News4Jax/WJXT",
@@ -151,7 +151,7 @@
     },
     {
       "date": "2026-08-04",
-      "event": "Judge Kite shuts two prosecution witnesses out of the trial on marital privilege \u2014 the rule that a husband and wife can keep their private conversations to themselves. One was set to describe conversations she overheard between Fernandez and Gardner; the other was to repeat a conversation between the two that had been passed along to her. Kite ruled Fernandez \"had a right to expect those conversations to remain private,\" saying from the bench, \"the court does find that marital privilege does apply to that statement.\" She left the door open: the state can raise it again if it can point to parts of the testimony that fall outside the privilege.",
+      "event": "Judge Kite shuts two prosecution witnesses out of the trial on marital privilege — the rule that a husband and wife can keep their private conversations to themselves. One was set to describe conversations she overheard between Fernandez and Gardner; the other was to repeat a conversation between the two that had been passed along to her. Kite ruled Fernandez \"had a right to expect those conversations to remain private,\" saying from the bench, \"the court does find that marital privilege does apply to that statement.\" She left the door open: the state can raise it again if it can point to parts of the testimony that fall outside the privilege.",
       "sources": [
         {
           "outlet": "News4Jax/WJXT",
@@ -162,21 +162,21 @@
           "url": "https://www.actionnewsjax.com/news/local/judge-rules-pre-trial-motions-ahead-mario-fernandez-saldana-jury-selection/FNRLUJWG25CABLQWSZLOFAO2GA/"
         },
         {
-          "outlet": "First Coast News \u2014 judge keeps key conversations out, for now",
+          "outlet": "First Coast News — judge keeps key conversations out, for now",
           "url": "https://www.firstcoastnews.com/article/news/local/jared-bridegan-trial-mario-fernandez-saldana-evidence-rulings/77-020f6b00-378a-4f40-9e23-9c92446076ef"
         }
       ]
     },
     {
       "date": "2026-08-10",
-      "event": "Jury selection runs through the week. Twelve jurors \u2014 seven women and five men \u2014 plus four alternates are seated. Because of the attention on the case, the jurors' names stay sealed until 60 days after the trial ends.",
+      "event": "Jury selection runs through the week. Twelve jurors — seven women and five men — plus four alternates are seated. Because of the attention on the case, the jurors' names stay sealed until 60 days after the trial ends.",
       "sources": [
         {
-          "outlet": "News4Jax/WJXT \u2014 trial preview",
+          "outlet": "News4Jax/WJXT — trial preview",
           "url": "https://www.news4jax.com/news/local/2026/08/14/mario-fernandez-trial-in-jared-bridegan-murder-case-begins-with-opening-statements-monday-heres-what-to-expect/"
         },
         {
-          "outlet": "Action News Jax \u2014 12 jurors, 4 alternates chosen",
+          "outlet": "Action News Jax — 12 jurors, 4 alternates chosen",
           "url": "https://www.actionnewsjax.com/news/local/jared-bridegan-murder-jury-selection-continues-mario-fernandez-saldana/MJHTDPQDGVE4FMSMIPB2KTN37I/"
         }
       ]
@@ -187,15 +187,15 @@
       "day": 1,
       "date": "2026-08-17",
       "phase": "Opening statements and the state's first witnesses",
-      "headline": "\"That tire was a trap\" \u2014 and a widow describes the last time she heard his voice",
-      "summary": "The state opened by telling the jury the killing was designed to be untraceable. Assistant State Attorney Christina Simak Stifler called it \"a targeted ambush, a planned tactical ambush with a tire in the road,\" said \"the architects of Jared Bridegan's murder intended it to be the perfect crime \u2014 and it almost was,\" and framed the whole case in one line: \"The killer was a stranger to Jared Bridegan. The murder was personal.\" She told jurors nobody in the world wanted him dead except Gardner and Fernandez. The defense answered by conceding almost everything except its client. Attorney James Hill said Fernandez had \"no involvement in the murder of Jared Bridegan\" and \"no desire\" to see him dead, pointed out the state cannot identify who drove the truck or who actually approached Henry Tenon \u2014 \"They don't know who's driving the truck. They don't know who actually solicited Henry Tenon\" \u2014 and cast the $10,000 in checks as pay for tree removal, roofing, landscaping and tile work plus start-up money for a pallet business. He also seized on the state's own concession: \"We can't say where Mario Fernandez was during the time of the homicide.\" Then the witnesses began, working outward from the street where it happened.",
+      "headline": "\"That tire was a trap\" — and a widow describes the last time she heard his voice",
+      "summary": "The state opened by telling the jury the killing was designed to be untraceable. Assistant State Attorney Christina Simak Stifler called it \"a targeted ambush, a planned tactical ambush with a tire in the road,\" said \"the architects of Jared Bridegan's murder intended it to be the perfect crime — and it almost was,\" and framed the whole case in one line: \"The killer was a stranger to Jared Bridegan. The murder was personal.\" She told jurors nobody in the world wanted him dead except Gardner and Fernandez. The defense answered by conceding almost everything except its client. Attorney James Hill said Fernandez had \"no involvement in the murder of Jared Bridegan\" and \"no desire\" to see him dead, pointed out the state cannot identify who drove the truck or who actually approached Henry Tenon — \"They don't know who's driving the truck. They don't know who actually solicited Henry Tenon\" — and cast the $10,000 in checks as pay for tree removal, roofing, landscaping and tile work plus start-up money for a pallet business. He also seized on the state's own concession: \"We can't say where Mario Fernandez was during the time of the homicide.\" Then the witnesses began, working outward from the street where it happened.",
       "sources": [
         {
-          "outlet": "Court TV \u2014 live trial updates",
+          "outlet": "Court TV — live trial updates",
           "url": "https://www.courttv.com/news/microsoft-executive-was-murdered-in-a-planned-tactical-ambush-prosecutors/"
         },
         {
-          "outlet": "News4Jax/WJXT \u2014 Day 1",
+          "outlet": "News4Jax/WJXT — Day 1",
           "url": "https://www.news4jax.com/news/local/2026/08/17/1st-of-3-trials-in-jared-bridegan-murder-case-begins-monday-with-opening-statements/"
         },
         {
@@ -203,11 +203,11 @@
           "url": "https://www.cbsnews.com/news/microsoft-manager-murder-jared-bridegan-suspect-trial-florida/"
         },
         {
-          "outlet": "St. Johns Citizen \u2014 openings, the checks, and the missing witness to any deal",
+          "outlet": "St. Johns Citizen — openings, the checks, and the missing witness to any deal",
           "url": "https://sjcitizen.com/jared-bridegan-murder-trial-opens-with-roadside-trap-10000-in-checks-and-no-witness-to-alleged-deal/"
         },
         {
-          "outlet": "First Coast News \u2014 live updates, Day 1",
+          "outlet": "First Coast News — live updates, Day 1",
           "url": "https://www.firstcoastnews.com/article/news/local/jared-bridegan-murder-trials/jared-bridegan-trial-live-updates-mario-fernandez-saldana-murder/77-717630c9-5f65-49ad-bd05-ca1318bab7b4"
         }
       ],
@@ -215,7 +215,7 @@
         {
           "name": "Jonelle Cruz",
           "role": "Eyewitness",
-          "gist": "One of the first two witnesses called \u2014 people who were near the scene that night."
+          "gist": "One of the first two witnesses called — people who were near the scene that night."
         },
         {
           "name": "Shane Borja",
@@ -225,45 +225,45 @@
         {
           "name": "Sgt. Lawrence Smith",
           "role": "Jacksonville Beach Police",
-          "gist": "Responding officer. The state walked through what police found: 10mm shell casings, the large tire blocking the road, and Bridegan's wedding ring, phone and wallet still on him \u2014 which matters because it rules out a robbery."
+          "gist": "Responding officer. The state walked through what police found: 10mm shell casings, the large tire blocking the road, and Bridegan's wedding ring, phone and wallet still on him — which matters because it rules out a robbery."
         },
         {
           "name": "Kirsten Bridegan",
           "role": "Jared Bridegan's widow",
-          "gist": "Described a co-parenting relationship that had collapsed into paperwork: \"There was absolutely no trust, so everything was in writing. Text, email, we did not speak in person.\" She testified about their last phone call \u2014 \"It was strange. I remember feeling like it was strange because after I was like, 'All right, well, love you, I'll see you soon.' He was just quiet\" \u2014 and about the police call that came when he never got home. She became emotional when shown a photograph of him."
+          "gist": "Described a co-parenting relationship that had collapsed into paperwork: \"There was absolutely no trust, so everything was in writing. Text, email, we did not speak in person.\" She testified about their last phone call — \"It was strange. I remember feeling like it was strange because after I was like, 'All right, well, love you, I'll see you soon.' He was just quiet\" — and about the police call that came when he never got home. She became emotional when shown a photograph of him."
         },
         {
           "name": "Dr. Peter Gillespie",
           "role": "Medical examiner",
-          "gist": "Testified to cause of death \u2014 gunshot wounds \u2014 and described the autopsy findings, including wounds to the left shoulder area. The state used him to establish that Bridegan was shot as he was out of and beside the car."
+          "gist": "Testified to cause of death — gunshot wounds — and described the autopsy findings, including wounds to the left shoulder area. The state used him to establish that Bridegan was shot as he was out of and beside the car."
         }
       ]
     },
     {
       "day": 2,
       "date": "2026-08-18",
-      "phase": "The state's case \u2014 the truck, the tire and the money",
+      "phase": "The state's case — the truck, the tire and the money",
       "headline": "A truck traced across town, a matching tire at his rental property, and Fernandez on tape calling Bridegan a \"keyboard warrior\"",
-      "summary": "This was the day the state tried to build its chain. Detectives walked jurors through surveillance video tracking a two-tone blue and gold Ford F-150 across Jacksonville Beach \u2014 a truck they traced to Henry Tenon's father, not to Fernandez. They described DNA linking Tenon to the tire left in the road, and boots and a jacket of Tenon's that matched what the shooter wears in the footage. Then came the two pieces that reach toward Fernandez: a tire matching the roadblock found at his Potomac Avenue rental property, and check stubs recovered from the truck showing three handwritten checks totaling $10,000 written by Fernandez to Tenon in March and April 2022 \u2014 after the murder. Prosecutors also played a 50-minute recording of Fernandez's March 1, 2022 police interview, taken before he was a suspect, in which he described Bridegan as a \"keyboard warrior\" rather than someone confrontational, complained about the custody fights, and speculated about the killing: \"It's a big speculation... I don't understand why he got out of the car.\" Lead detective Chris Johns also explained a tactic the jury will hear more about \u2014 using the public announcement of Tenon's arrest as a deliberate \"tickle\" to get people talking on a court-authorized wiretap: \"It's an event that is basically prearranged by law enforcement. So it spurs conversation about the actual crime that we're trying to record.\" The defense's best moment came on cross of Cpl. Wallace, over the surveillance footage: \"There are two people in the car. That's for certain.\" Wallace: \"That's correct.\" Dreicer pressed the point \u2014 \"Because you can't be the person running from the scene and the person driving away from the scene, correct?\"",
+      "summary": "This was the day the state tried to build its chain. Detectives walked jurors through surveillance video tracking a two-tone blue and gold Ford F-150 across Jacksonville Beach — a truck they traced to Henry Tenon's father, not to Fernandez. They described DNA linking Tenon to the tire left in the road, and boots and a jacket of Tenon's that matched what the shooter wears in the footage. Then came the two pieces that reach toward Fernandez: a tire matching the roadblock found at his Potomac Avenue rental property, and check stubs recovered from the truck showing three handwritten checks totaling $10,000 written by Fernandez to Tenon in March and April 2022 — after the murder. Prosecutors also played a 50-minute recording of Fernandez's March 1, 2022 police interview, taken before he was a suspect, in which he described Bridegan as a \"keyboard warrior\" rather than someone confrontational, complained about the custody fights, and speculated about the killing: \"It's a big speculation... I don't understand why he got out of the car.\" Lead detective Chris Johns also explained a tactic the jury will hear more about — using the public announcement of Tenon's arrest as a deliberate \"tickle\" to get people talking on a court-authorized wiretap: \"It's an event that is basically prearranged by law enforcement. So it spurs conversation about the actual crime that we're trying to record.\" The defense's best moment came on cross of Cpl. Wallace, over the surveillance footage: \"There are two people in the car. That's for certain.\" Wallace: \"That's correct.\" Dreicer pressed the point — \"Because you can't be the person running from the scene and the person driving away from the scene, correct?\"",
       "sources": [
         {
-          "outlet": "News4Jax/WJXT \u2014 Day 2",
+          "outlet": "News4Jax/WJXT — Day 2",
           "url": "https://www.news4jax.com/news/local/2026/08/18/testimony-continues-in-trial-of-mario-fernandez-accused-of-orchestrating-ambush-murder-of-jared-bridegan/"
         },
         {
-          "outlet": "Court TV \u2014 two people at the scene, witness says",
+          "outlet": "Court TV — two people at the scene, witness says",
           "url": "https://www.courttv.com/news/there-were-2-people-at-the-site-of-microsoft-executive-jared-bridegans-murder-witness-says/"
         },
         {
-          "outlet": "Action News Jax \u2014 police interview played, \"keyboard warrior\"",
+          "outlet": "Action News Jax — police interview played, \"keyboard warrior\"",
           "url": "https://www.actionnewsjax.com/news/local/murder-hire-second-day-trial-begins-mario-fernandez-saldana/KVY3COYNORDE3LJDOLCVP6DTSI/"
         },
         {
-          "outlet": "Court TV \u2014 live trial updates",
+          "outlet": "Court TV — live trial updates",
           "url": "https://www.courttv.com/news/microsoft-executive-was-murdered-in-a-planned-tactical-ambush-prosecutors/"
         },
         {
-          "outlet": "First Coast News \u2014 surveillance video maps the route",
+          "outlet": "First Coast News — surveillance video maps the route",
           "url": "https://www.firstcoastnews.com/article/news/local/jared-bridegan-murder-trials/jared-bridegan-murder-trial-surveillance-video-mario-fernandez-saldana/77-482f4ce8-c210-4c38-b22f-e90dbb275ce3"
         }
       ],
@@ -271,12 +271,12 @@
         {
           "name": "Cpl. Brian Wallace",
           "role": "Jacksonville Beach Police",
-          "gist": "Walked through the surveillance footage. On cross he agreed with the defense that two people were in the truck \u2014 the single most useful concession the defense got all week, because the state has never publicly identified the second person."
+          "gist": "Walked through the surveillance footage. On cross he agreed with the defense that two people were in the truck — the single most useful concession the defense got all week, because the state has never publicly identified the second person."
         },
         {
           "name": "Det. Brett Burrell",
           "role": "Jacksonville Beach Police",
-          "gist": "Crime scene and evidence collection \u2014 the tire, the casings, the DNA swabs."
+          "gist": "Crime scene and evidence collection — the tire, the casings, the DNA swabs."
         },
         {
           "name": "Det. Chris Johns",
@@ -288,24 +288,24 @@
     {
       "day": 3,
       "date": "2026-08-19",
-      "phase": "The state's case \u2014 friends, DNA, and a long cross-examination",
-      "headline": "A friend says Fernandez called it a hit-and-run before anyone said that \u2014 and the lead detective concedes there is no physical evidence of the gun",
-      "summary": "Two threads ran through the day. The state's thread was people who knew Fernandez. Taylor Kutis, who met him in 2013 during military training in Kentucky and testified by Zoom, said Fernandez had described having \"a special set of skills\" from his Army years, mentioned \"a contract with Gardner's family,\" and called after Bridegan's death saying \"they think it was a hit and run\" \u2014 a detail prosecutors treat as significant because of when he said it. (Court TV rendered the same testimony as Fernandez saying he thought Bridegan \"had died in a hit and run.\") Victor Quiroz testified that Fernandez visited his North Carolina home in March 2022 and described him as reliable, adding he \"wouldn't have invited him\" if he had been suspicious. ATF forensic biologist Glenn Fahrig gave the DNA results, which cut both ways: Tenon's DNA matched the tire's inner rim, the truck key and the steering wheel \u2014 and no DNA from Fernandez, Gardner or Bridegan turned up on the tested items. The defense's thread was a long, unusual cross of Det. Johns about the gun. Rather than fight the claim that Fernandez visited a longtime friend, John Biggerstaff, on Jan. 25, 2022, attorney Jesse Dreicer offered the jury a different reason for the visit, asking bluntly: \"Let's just get it out in the open. Mr. Biggerstaff was a swinger, correct?\" Johns confirmed it, and Dreicer pointed to video on Biggerstaff's phone showing Fernandez with Biggerstaff's wife \u2014 an innocent, if awkward, explanation for the visit. Then he got what he came for. Asked whether anything showed a gun changing hands, Johns answered: \"There is no physical evidence of that.\" The murder weapon has never been found. Dreicer also played pole-camera footage of Fernandez doing ordinary construction work at the Potomac Avenue property roughly 20 times in 30 days, often hauling materials and often alongside Tenon, who worked as a contractor. Separately, Judge Kite ruled the jury will not be sequestered.",
+      "phase": "The state's case — friends, DNA, and a long cross-examination",
+      "headline": "A friend says Fernandez called it a hit-and-run before anyone said that — and the lead detective concedes there is no physical evidence of the gun",
+      "summary": "Two threads ran through the day. The state's thread was people who knew Fernandez. Taylor Kutis, who met him in 2013 during military training in Kentucky and testified by Zoom, said Fernandez had described having \"a special set of skills\" from his Army years, mentioned \"a contract with Gardner's family,\" and called after Bridegan's death saying \"they think it was a hit and run\" — a detail prosecutors treat as significant because of when he said it. (Court TV rendered the same testimony as Fernandez saying he thought Bridegan \"had died in a hit and run.\") Victor Quiroz testified that Fernandez visited his North Carolina home in March 2022 and described him as reliable, adding he \"wouldn't have invited him\" if he had been suspicious. ATF forensic biologist Glenn Fahrig gave the DNA results, which cut both ways: Tenon's DNA matched the tire's inner rim, the truck key and the steering wheel — and no DNA from Fernandez, Gardner or Bridegan turned up on the tested items. The defense's thread was a long, unusual cross of Det. Johns about the gun. Rather than fight the claim that Fernandez visited a longtime friend, John Biggerstaff, on Jan. 25, 2022, attorney Jesse Dreicer offered the jury a different reason for the visit, asking bluntly: \"Let's just get it out in the open. Mr. Biggerstaff was a swinger, correct?\" Johns confirmed it, and Dreicer pointed to video on Biggerstaff's phone showing Fernandez with Biggerstaff's wife — an innocent, if awkward, explanation for the visit. Then he got what he came for. Asked whether anything showed a gun changing hands, Johns answered: \"There is no physical evidence of that.\" The murder weapon has never been found. Dreicer also played pole-camera footage of Fernandez doing ordinary construction work at the Potomac Avenue property roughly 20 times in 30 days, often hauling materials and often alongside Tenon, who worked as a contractor. Separately, Judge Kite ruled the jury will not be sequestered.",
       "sources": [
         {
-          "outlet": "News4Jax/WJXT \u2014 Day 3",
+          "outlet": "News4Jax/WJXT — Day 3",
           "url": "https://www.news4jax.com/news/local/2026/08/19/lead-detective-in-jared-bridegan-murder-investigation-will-continue-testimony-wednesday-in-mario-fernandez-trial/"
         },
         {
-          "outlet": "Court TV \u2014 live trial updates",
+          "outlet": "Court TV — live trial updates",
           "url": "https://www.courttv.com/news/microsoft-executive-was-murdered-in-a-planned-tactical-ambush-prosecutors/"
         },
         {
-          "outlet": "Action News Jax \u2014 jury will not be sequestered",
+          "outlet": "Action News Jax — jury will not be sequestered",
           "url": "https://www.actionnewsjax.com/news/local/murder-hire-third-day-trial-begins-mario-fernandez-saldana/6XZYDE77BVACDP3UWKI3GHW2L4/"
         },
         {
-          "outlet": "First Coast News \u2014 defense challenges visual evidence, Day 3",
+          "outlet": "First Coast News — defense challenges visual evidence, Day 3",
           "url": "https://www.firstcoastnews.com/article/news/local/jared-bridegan-murder-trials/jared-bridegan-murder-trial-defense-challenges-evidence-mario-fernandez-saldana/77-e4152fe9-280d-4f0f-ba94-dfb01ac5bfc2"
         }
       ],
@@ -323,7 +323,7 @@
         {
           "name": "Victor Quiroz",
           "role": "Friend of the defendant",
-          "gist": "Fernandez visited his North Carolina home in March 2022. Described him as reliable and said he \"wouldn't have invited him\" if he had suspected anything \u2014 testimony that helps the defense more than the state."
+          "gist": "Fernandez visited his North Carolina home in March 2022. Described him as reliable and said he \"wouldn't have invited him\" if he had suspected anything — testimony that helps the defense more than the state."
         },
         {
           "name": "Glenn Fahrig",
@@ -335,24 +335,24 @@
     {
       "day": 4,
       "date": "2026-08-20",
-      "phase": "The state's case \u2014 the gun, the truck and the first cellphone maps",
+      "phase": "The state's case — the gun, the truck and the first cellphone maps",
       "headline": "A rare 10mm, a truck found at a house nobody searched, and a January trip the state calls a practice run",
-      "summary": "The state spent the day trying to close two gaps: where the gun came from and where the truck went. ATF agent Kenneth Stengel testified that 10mm Glocks are \"not very common\" and that only six had been bought at one Jacksonville gun store; that John Biggerstaff bought a Glock 10mm on June 8, 2016 and forfeited it after a felony conviction; and that agents finally located the blue Ford F-150 on Oct. 14, 2022 using Google location data from Tenon's device. FBI Special Agent Bobby Blythe began the cellphone evidence, describing how on Jan. 29, 2022 \u2014 about two and a half weeks before the killing \u2014 Tenon's phone travelled toward Bridegan's home and a gymnastics facility and then on to Jacksonville Beach, while Fernandez's phone sat at the Potomac Avenue rental property. Prosecutors call that a practice run. Det. Johns returned to defend the investigation and gave up more ground: no physical evidence connects Biggerstaff's 10mm to Fernandez; there is a 32-minute gap in surveillance coverage the night of the murder; and investigators received information in 2023 that the murder weapon was destroyed shortly after the killing. Dreicer bore in on the exchange until it was on the record three times over \u2014 \"There is no evidence of that. Correct?\" \"There is no physical evidence of that\" \u2014 and mocked the decision not to search the house where the truck was finally found: \"Other than the fact that the biggest break in the case was found at Jimmy Jones's house... there was no reason to search the house.\" Away from the jury, Judge Kite ordered Kirsten Bridegan to hand her cellphone to the court by 9 a.m. Friday, rejecting her lawyer's objections and setting up the next day's collision.",
+      "summary": "The state spent the day trying to close two gaps: where the gun came from and where the truck went. ATF agent Kenneth Stengel testified that 10mm Glocks are \"not very common\" and that only six had been bought at one Jacksonville gun store; that John Biggerstaff bought a Glock 10mm on June 8, 2016 and forfeited it after a felony conviction; and that agents finally located the blue Ford F-150 on Oct. 14, 2022 using Google location data from Tenon's device. FBI Special Agent Bobby Blythe began the cellphone evidence, describing how on Jan. 29, 2022 — about two and a half weeks before the killing — Tenon's phone travelled toward Bridegan's home and a gymnastics facility and then on to Jacksonville Beach, while Fernandez's phone sat at the Potomac Avenue rental property. Prosecutors call that a practice run. Det. Johns returned to defend the investigation and gave up more ground: no physical evidence connects Biggerstaff's 10mm to Fernandez; there is a 32-minute gap in surveillance coverage the night of the murder; and investigators received information in 2023 that the murder weapon was destroyed shortly after the killing. Dreicer bore in on the exchange until it was on the record three times over — \"There is no evidence of that. Correct?\" \"There is no physical evidence of that\" — and mocked the decision not to search the house where the truck was finally found: \"Other than the fact that the biggest break in the case was found at Jimmy Jones's house... there was no reason to search the house.\" Away from the jury, Judge Kite ordered Kirsten Bridegan to hand her cellphone to the court by 9 a.m. Friday, rejecting her lawyer's objections and setting up the next day's collision.",
       "sources": [
         {
-          "outlet": "News4Jax/WJXT \u2014 Day 4",
+          "outlet": "News4Jax/WJXT — Day 4",
           "url": "https://www.news4jax.com/news/local/2026/08/20/lead-detective-in-jared-bridegan-murder-returns-to-stand-to-defend-investigation-that-led-to-mario-fernandezs-arrest/"
         },
         {
-          "outlet": "News4Jax/WJXT \u2014 judge orders widow to turn over cellphone",
+          "outlet": "News4Jax/WJXT — judge orders widow to turn over cellphone",
           "url": "https://www.news4jax.com/news/local/2026/08/20/judge-hears-more-arguments-on-shanna-gardners-motion-to-subpoena-widows-phone-in-bridegan-murder-for-hire-case/"
         },
         {
-          "outlet": "First Coast News \u2014 defense presses agent, Day 4",
+          "outlet": "First Coast News — defense presses agent, Day 4",
           "url": "https://www.firstcoastnews.com/article/news/local/jared-bridegan-murder-trials/jared-bridegan-murder-trial-defense-presses-agent-mario-fernandez-saldana/77-716ea522-34ef-4be2-bad2-9bf0b2b58250"
         },
         {
-          "outlet": "Court TV \u2014 live trial updates",
+          "outlet": "Court TV — live trial updates",
           "url": "https://www.courttv.com/news/microsoft-executive-was-murdered-in-a-planned-tactical-ambush-prosecutors/"
         }
       ],
@@ -377,28 +377,28 @@
     {
       "day": 5,
       "date": "2026-08-21",
-      "phase": "The state's case \u2014 digital evidence, interrupted",
-      "headline": "70 minutes of silence on his phone \u2014 and then the judge stopped the trial over a phone belonging to the widow",
-      "summary": "Two things happened Friday and only one of them was about Mario Fernandez. In front of the jury, an FBI analyst, a former ATF agent and a Jacksonville Sheriff's Office detective laid out the digital case prosecutors say led to the arrest. The centrepiece: Fernandez's phone shows a 70-minute hole in its network activity that night, from about 7:10 to 8:20 p.m., with the last shots fired just before 8. Tenon's phone data, meanwhile, tracks from northwest Jacksonville toward Jacksonville Beach around the time of the killing. Both devices, the state says, went quiet in a way consistent with being switched off or put in airplane mode. Jesse Dreicer cross-examined hard on what that does and does not prove: cell data gives an approximate area, not a spot on a map; a phone with no signal is not a man with a gun; and Fernandez had ordinary property-management reasons to be where his phone put him. He returned again to the absence of any physical evidence tying his client to the weapon. Then, at about 9:30 a.m., Judge Kite halted the trial. The dispute was not about Fernandez at all \u2014 it belonged to Shanna Gardner's separate September trial, where her lawyers had subpoenaed Kirsten Bridegan's cellphone, and Kite had ordered it turned in by 9 a.m. It had not been. Gardner's lawyers asked that the widow be held in contempt of court. Kite had already denied a stay at 8:30 a.m. Bridegan's attorney, Doug Clifton, argued the demand violates her rights under Florida's Marsy's Law and amounts to harassment, noting she has already sat for 10 hours of deposition: \"There is no case law out there that involves a victim of a crime and specifically a widow whose husband was murdered to have her turn her phone over for the defense.\" Before the 12:30 p.m. contempt hearing could go ahead, Florida's Fifth District Court of Appeal \u2014 which now hears appeals from Duval County \u2014 granted an emergency stay, giving her three business days to file a formal request. A trial judge in the middle of a murder trial, overruled mid-morning by an appeals court, over evidence for a different trial: it is the strangest procedural moment of the case so far, and it has nothing to do with what this jury must decide.",
+      "phase": "The state's case — digital evidence, interrupted",
+      "headline": "70 minutes of silence on his phone — and then the judge stopped the trial over a phone belonging to the widow",
+      "summary": "Two things happened Friday and only one of them was about Mario Fernandez. In front of the jury, an FBI analyst, a former ATF agent and a Jacksonville Sheriff's Office detective laid out the digital case prosecutors say led to the arrest. The centrepiece: Fernandez's phone shows a 70-minute hole in its network activity that night, from about 7:10 to 8:20 p.m., with the last shots fired just before 8. Tenon's phone data, meanwhile, tracks from northwest Jacksonville toward Jacksonville Beach around the time of the killing. Both devices, the state says, went quiet in a way consistent with being switched off or put in airplane mode. Jesse Dreicer cross-examined hard on what that does and does not prove: cell data gives an approximate area, not a spot on a map; a phone with no signal is not a man with a gun; and Fernandez had ordinary property-management reasons to be where his phone put him. He returned again to the absence of any physical evidence tying his client to the weapon. Then, at about 9:30 a.m., Judge Kite halted the trial. The dispute was not about Fernandez at all — it belonged to Shanna Gardner's separate September trial, where her lawyers had subpoenaed Kirsten Bridegan's cellphone, and Kite had ordered it turned in by 9 a.m. It had not been. Gardner's lawyers asked that the widow be held in contempt of court. Kite had already denied a stay at 8:30 a.m. Bridegan's attorney, Doug Clifton, argued the demand violates her rights under Florida's Marsy's Law and amounts to harassment, noting she has already sat for 10 hours of deposition: \"There is no case law out there that involves a victim of a crime and specifically a widow whose husband was murdered to have her turn her phone over for the defense.\" Before the 12:30 p.m. contempt hearing could go ahead, Florida's Fifth District Court of Appeal — which now hears appeals from Duval County — granted an emergency stay, giving her three business days to file a formal request. A trial judge in the middle of a murder trial, overruled mid-morning by an appeals court, over evidence for a different trial: it is the strangest procedural moment of the case so far, and it has nothing to do with what this jury must decide.",
       "sources": [
         {
-          "outlet": "News4Jax/WJXT \u2014 investigators detail digital evidence",
+          "outlet": "News4Jax/WJXT — investigators detail digital evidence",
           "url": "https://www.news4jax.com/news/local/2026/08/21/mario-fernandezs-attorneys-question-fbi-analyst-who-tracked-cellphones-from-night-of-jared-bridegans-murder/"
         },
         {
-          "outlet": "News4Jax/WJXT \u2014 appeals court pauses the phone order",
+          "outlet": "News4Jax/WJXT — appeals court pauses the phone order",
           "url": "https://www.news4jax.com/news/local/2026/08/21/judge-interrupts-fernandez-trial-after-jared-bridegans-widow-fails-to-turn-over-cellphone-in-shanna-gardner-murder-case/"
         },
         {
-          "outlet": "First Coast News \u2014 widow refuses court order, Trial Day 5",
+          "outlet": "First Coast News — widow refuses court order, Trial Day 5",
           "url": "https://www.firstcoastnews.com/video/news/local/jared-bridegan-murder-trials/widow-refuses-court-order-to-turn-over-phone-in-jared-bridegan-murder-investigation-trial-day-5/77-e729470b-ca7e-4a9b-ace9-80bfbef8979c"
         },
         {
-          "outlet": "Action News Jax \u2014 Day 5 testimony",
+          "outlet": "Action News Jax — Day 5 testimony",
           "url": "https://www.actionnewsjax.com/news/local/watch-day-five-testimony-trial-mario-fernandez-saldana-murder-hire-suspect/BBOSWODRJJFGNJINRUOI2NHSOI/"
         },
         {
-          "outlet": "The Florida Bar Journal \u2014 Fifth DCA now covers the Fourth Judicial Circuit",
+          "outlet": "The Florida Bar Journal — Fifth DCA now covers the Fourth Judicial Circuit",
           "url": "https://www.floridabar.org/the-florida-bar-journal/navigating-with-a-new-map-impact-of-changes-to-the-district-courts-of-appeal-territorial-boundaries/"
         }
       ],
@@ -417,6 +417,60 @@
           "name": "Jacksonville Sheriff's Office detective",
           "role": "Digital evidence (not named in available reporting)",
           "gist": "Third of Friday's digital-evidence witnesses, testifying to the electronic trail prosecutors say led to Fernandez's arrest."
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "date": "2026-08-24",
+      "phase": "prosecution-rests",
+      "headline": "The state rests its murder-for-hire case",
+      "summary": "Prosecutors rested Monday, Aug. 24, closing a week of evidence that ran from the ambush itself to the tire left in the road, DNA, bank records and cellphone tracking. The defense case would follow the next day.",
+      "witnesses": [],
+      "sources": [
+        {
+          "outlet": "News4Jax",
+          "url": "https://www.news4jax.com/news/local/2026/08/25/defense-to-call-witnesses-in-mario-fernandez-murder-trial-in-february-2022-ambush-shooting-of-jared-bridegan/"
+        },
+        {
+          "outlet": "Action News Jax",
+          "url": "https://www.actionnewsjax.com/news/local/murder-hire-trial-state-rests-case-final-witnesses-testify-watch-live/LBXHCQCM2VFWPLP2HMWAKODETU/"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "date": "2026-08-25",
+      "phase": "closings",
+      "headline": "Defense rests after a brief case; both sides give closings",
+      "summary": "The defense put on a short case Tuesday, Aug. 25 — two teachers from the school the Bridegan and Gardner children attended, speaking to the custody strain and Fernandez's role in the stepchildren's lives — then rested; Fernandez did not take the stand. In closing, Assistant State Attorney Christina Stifler urged the jury to \"find him guilty as charged,\" arguing Florida treats the person who hires a killing as it treats the shooter. Defense attorney Jesse Dreicer answered \"It did not happen. There was no evidence,\" pointing to the absence of DNA, fingerprints or surveillance tying Fernandez to the truck. On rebuttal, Assistant State Attorney Alan Mizrahi said circumstantial proof is expected in a murder-for-hire case: \"That's why you hire somebody else.\"",
+      "witnesses": [],
+      "sources": [
+        {
+          "outlet": "News4Jax",
+          "url": "https://www.news4jax.com/news/local/2026/08/25/defense-to-call-witnesses-in-mario-fernandez-murder-trial-in-february-2022-ambush-shooting-of-jared-bridegan/"
+        },
+        {
+          "outlet": "Action News Jax",
+          "url": "https://www.actionnewsjax.com/news/local/murder-hire-trial-state-rests-case-final-witnesses-testify-watch-live/LBXHCQCM2VFWPLP2HMWAKODETU/"
+        }
+      ]
+    },
+    {
+      "day": 8,
+      "date": "2026-08-26",
+      "phase": "verdict",
+      "headline": "Jury convicts Fernandez on both counts",
+      "summary": "After Judge London Kite instructed the jury Wednesday morning, Aug. 26, the panel deliberated about three and a half hours — asking for an itemized evidence list and about trust language on \"benefits for Shanna if the legal entanglements with Jared were resolved\" — and returned its verdict about 1:20 p.m.: guilty of first-degree murder and guilty of solicitation to commit a capital felony. Fernandez is the first of three defendants to be tried in the 2022 killing of Jared Bridegan; sentencing has not yet been scheduled.",
+      "witnesses": [],
+      "sources": [
+        {
+          "outlet": "News4Jax",
+          "url": "https://www.news4jax.com/news/local/2026/08/26/jury-to-begin-deliberations-in-mario-fernandez-murder-trial-in-february-2022-ambush-shooting-of-jared-bridegan/"
+        },
+        {
+          "outlet": "East Idaho News",
+          "url": "https://www.eastidahonews.com/2026/08/jurors-to-begin-deliberations-wednesday-in-mario-fernandez-saldanas-trial-for-the-murder-of-jared-bridegan/"
         }
       ]
     }

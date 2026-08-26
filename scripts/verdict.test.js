@@ -11,6 +11,11 @@ const ok = (cond, label) => { cond ? pass++ : (fail++, console.log('  FAIL  ' + 
 
 console.log('\n--- Gate 1: language. Must NOT read as a verdict ---');
 const mustNotFire = [
+  // the risky shapes of 'convicted in' — each caught by an existing guard, not by luck
+  'Smith was convicted in 2019 of fraud',
+  'Fernandez convicted in first trial, retrial ordered',
+  'Man convicted in 1994 killing exonerated after appeal',
+  'Man could be convicted in the killing, experts say',
   'Jury begins deliberating verdict in Lindsay Clancy trial',
   'Lindsay Clancy could be found guilty of first-degree murder',
   'If found guilty, Clancy faces life without parole',
@@ -40,6 +45,11 @@ const mustFire = [
   ['Durk Banks convicted of murder-for-hire', 'GUILTY'],
   ['Clancy found not guilty on all counts', 'NOT_GUILTY'],
   ['Jury found her not criminally responsible', 'NGRI'],
+  // AP wire phrasing — under-detected until the Fernandez verdict (2026-08-26): six families
+  // reported a real conviction, one classified. 'convicted in' must fire when it is not
+  // year-dated, historical, or hypothetical (those stay in mustNotFire below).
+  ["Suspect in Microsoft executive Jared Bridegan's murder convicted in roadside ambush", 'GUILTY'],
+  ['Man convicted in murder-for-hire killing of Microsoft manager on Florida road', 'GUILTY'],
 ];
 for (const [h, want] of mustFire) ok(classify(h) === want, 'want ' + want + ', got ' + classify(h) + ': ' + h);
 

@@ -8,6 +8,20 @@
       "flag": "verdict-watch"
     },
     {
+      "ts": "2026-08-26T18:46:00.000Z",
+      "outlet": "Fox News",
+      "headline": "Suspect in Microsoft executive Jared Bridegan's murder convicted in roadside ambush",
+      "url": "https://www.foxnews.com/us/suspect-microsoft-executive-jared-bridegan-murder-convicted-roadside-ambush",
+      "flag": "verdict-watch"
+    },
+    {
+      "ts": "2026-08-26T18:06:00.000Z",
+      "outlet": "wokv.com",
+      "headline": "Murder for Hire: Jury finds Mario Fernandez Saldana guilty",
+      "url": "https://www.wokv.com/news/local/jury-deliberating-case-accused-murder-for-hire-suspect-mario-fernandez-saldana/YRMMWFLHZZBSJHEHCDIA35QKDE/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-08-26T14:20:38.000Z",
       "outlet": "Action News Jax",
       "headline": "Jury deliberating in case of accused murder-for-hire suspect Mario Fernandez-Saldana",
@@ -118,6 +132,8 @@
     "3rt5cu",
     "v5s5to",
     "detteb",
-    "o6bhph"
+    "o6bhph",
+    "18ezimj",
+    "dp8b6w"
   ]
 }

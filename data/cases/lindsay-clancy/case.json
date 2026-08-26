@@ -3,7 +3,7 @@
   "title": "Commonwealth v. Lindsay Clancy",
   "shortTitle": "Lindsay Clancy Trial",
   "status": "active",
-  "phase": "Prosecutors' last rebuttal witnesses — closings expected Mon or Tue, then the jury",
+  "phase": "Rebuttal case rested — closing arguments Thursday, then the jury",
   "court": "Plymouth County Superior Court, Massachusetts",
   "judge": "Judge William F. Sullivan",
   "incidentDate": "2023-01-24",
@@ -231,19 +231,15 @@
     ]
   },
   "plainSummary": "She doesn't deny causing her three children's deaths. The whole trial is one question: was her mind gone — wrecked by postpartum psychosis, as her defense says — or working fine, as prosecutors say? The experts flatly contradict each other, and a verdict could land within days.",
-  "statusNow": "The defense rested Friday after 10 witnesses, without putting Clancy on the stand. Prosecutors are now calling their final rebuttal experts — their last chance to convince the jury she wasn't psychotic. Closing arguments are expected Monday or Tuesday. Then the jury takes over.",
+  "statusNow": "The prosecution rested its rebuttal on Wednesday, Aug. 26, after its final expert — Dr. Gregory Saathoff, a senior forensic psychiatrist with the FBI's Behavioral Analysis Unit — testified that Clancy was \"criminally responsible\" and that command hallucinations \"do not propel an individual to automatically obey them.\" Over 21 days of testimony the jury heard from 84 witnesses. Judge William Sullivan has set closing arguments for Thursday, Aug. 27; the case then goes to the jury, which will weigh the defense's lack-of-criminal-responsibility claim (postpartum psychosis) against the prosecution's rebuttal that she knew her actions were wrong.",
   "statusNowSources": [
     {
-      "outlet": "WBUR",
-      "url": "https://www.wbur.org/news/2026/08/21/lindsay-clancy-defense-rests"
+      "outlet": "ABC News",
+      "url": "https://abcnews.com/GMA/News/live-updates/lindsay-clancy-trial-live-updates/?id=135813828"
     },
     {
       "outlet": "Boston Globe",
-      "url": "https://www.bostonglobe.com/2026/08/21/metro/lindsay-clancy-trial-mack-resnick/"
-    },
-    {
-      "outlet": "CBS Boston",
-      "url": "https://www.cbsnews.com/boston/news/lindsay-clancy-trial-watch-live-day-18-dr-phillip-resnick/"
+      "url": "https://www.bostonglobe.com/2026/08/26/metro/lindsay-clancy-trial-live-updates/"
     }
   ],
   "storySoFar": "Over three weeks, about 70 prosecution witnesses built the case that Lindsay Clancy planned her children's deaths — the phone searches, the Apple Health data, the exercise bands. Then 10 defense witnesses told the opposite story: a mother 'begging for help' through months of failed treatment and 13 prescribed medications, until — two defense experts say — a psychotic break with a voice commanding her. The experts flatly contradict each other. That collision is what the jury has to resolve.",

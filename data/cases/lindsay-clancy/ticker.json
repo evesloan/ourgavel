@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-08-26T17:30:22.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Lindsay Clancy trial (live updates): Commonwealth rests its rebuttal case",
+      "url": "https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-commonwealth-rests-its-rebuttal-case/XPN4GGETFRBB5DJD6BCWWX3KLE/",
+      "flag": null
+    },
+    {
       "ts": "2026-08-26T12:57:20.000Z",
       "outlet": "Boston.com",
       "headline": "Livestream: Lindsay Clancy murder trial continues with prosecution’s final expert witness on the stand",
@@ -395,6 +402,7 @@
     "1wwhswr",
     "8copmz",
     "1b8bg17",
-    "pueisc"
+    "pueisc",
+    "1e026qf"
   ]
 }

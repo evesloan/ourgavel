@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-08-26T18:11:43.000Z",
+      "outlet": "8 News Now",
+      "headline": "Live updates: Day 8 of Tupac murder trial",
+      "url": "https://www.8newsnow.com/news/tupac-murder-trial/live-updates-day-8-of-tupac-murder-trial/",
+      "flag": null
+    },
+    {
       "ts": "2026-08-26T14:42:33.000Z",
       "outlet": "News 3 Las Vegas",
       "headline": "TODAY: More witness testimony expected in Tupac Shakur murder trial",
@@ -272,6 +279,7 @@
     "1c5xwet",
     "dm0f05",
     "ota5dw",
-    "glmv1c"
+    "glmv1c",
+    "8vjn00"
   ]
 }

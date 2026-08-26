@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-08-26T12:57:20.000Z",
+      "outlet": "Boston.com",
+      "headline": "Livestream: Lindsay Clancy murder trial continues with prosecution’s final expert witness on the stand",
+      "url": "https://www.boston.com/news/crime/2026/08/26/lindsay-clancy-murder-trial-livestream-video-wednesday-august-26/",
+      "flag": null
+    },
+    {
       "ts": "2026-08-26T12:44:21.000Z",
       "outlet": "Boston 25 News",
       "headline": "Lindsay Clancy trial (live updates): Final state expert back on the stand",
@@ -387,6 +394,7 @@
     "zyf2hd",
     "1wwhswr",
     "8copmz",
-    "1b8bg17"
+    "1b8bg17",
+    "pueisc"
   ]
 }

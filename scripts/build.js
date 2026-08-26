@@ -4,6 +4,9 @@
    case section (hub, timeline, witnesses, standard, board). Adding a case = adding data. */
 const fs = require('fs');
 const path = require('path');
+// The relay Worker runs the same submission screen the pulse does; names.json is how it
+// gets each case's name sets. serialiseNameSets lives in screen.js so there is one copy.
+const { buildNameSets, serialiseNameSets } = require('./screen.js');
 
 require('./preflight.js');
 
@@ -722,10 +725,26 @@ document.getElementById('gbc-post').onclick=function(){
       if(!res.ok){elStatus.textContent=(res.d&&res.d.error)||'That did not go through. Try again shortly.';return}
       close();
       var say=window.gbSay;
-      var msg=mode==='report'?'Reported. Thank you — that jumps the queue.'
-        :mode==='correction'?'Correction received. If we got it wrong we fix it in public.'
-        :mode==='question'?'Asked. It goes on the board where people can answer it.'
-        :'Received, and noted. It appears once reviewed.';
+      var msg;
+      if(res.d&&res.d.published){
+        // The relay ran the same screen the site runs, passed it, and mirrored the card.
+        // On a board page, draw it right now; anywhere else, point at the board.
+        if(window.gbBoardAdd&&res.d.node){window.gbBoardAdd(res.d.node);return}
+        msg='Live on the board — everyone can see it now.';
+        if(ctx.caseSlug)msg+=' See it at /cases/'+ctx.caseSlug+'/board/';
+      }else if(res.d&&res.d.held){
+        // Held is not rejected, and saying nothing was the old bug: the reader posted,
+        // was told success-shaped words, and nothing ever appeared anywhere they could see.
+        msg='Held for a human editor before it goes up, because '+(res.d.why||'it needs human eyes')+'. Nothing is lost — usually under an hour.';
+      }else if(res.d&&res.d.queued){
+        msg=mode==='question'?'Asked. It goes onto the board with the next update cycle — minutes, not hours.'
+          :'Received. It goes onto the board with the next update cycle — minutes, not hours.';
+      }else{
+        msg=mode==='report'?'Reported. Thank you — that jumps the queue.'
+          :mode==='correction'?'Correction received. If we got it wrong we fix it in public.'
+          :mode==='question'?'Asked. An editor places it on the board — usually under an hour.'
+          :'Received, and noted. It appears once reviewed.';
+      }
       if(say)say(msg);else alert(msg);
     })
     .catch(function(){elStatus.textContent='No connection. Your text is still here — try again in a moment.'});
@@ -1895,6 +1914,79 @@ function ghostCard(text){
 function clearGhost(){if(ghost){ghost.remove();ghost=null}}
 window.gbGhost=ghostCard; window.gbGhostClear=clearGhost;
 
+/* ---------- instant cards ----------
+   A theory or question that passes the automated screen is answered {published:true} by the
+   relay and mirrored in a short-lived feed. The poster's own card appears the moment they hit
+   Post; every other open board sees it within half a minute of polling. The next static build
+   carries the same card under the same id, so nothing jumps or duplicates when it lands. */
+var PENDPOINT=${JSON.stringify(SUBMIT_ENDPOINT)};
+var KINDCOUNT=${JSON.stringify({
+    theory: communityNodes.filter(n => n.type === 'rumor').length,
+    question: communityNodes.filter(n => n.type === 'question').length,
+  })};
+var PCOL={theory:1160,question:1680};
+function escP(x){return String(x==null?'':x).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}
+function addPending(node){
+  if(!node||!node.id||DATA[node.id])return false;
+  var kind=node.kind==='question'?'question':'theory';
+  var idx=KINDCOUNT[kind]++;
+  var x=PCOL[kind]+(idx%2)*240, y=80+Math.floor(idx/2)*150;
+  var NS='http://www.w3.org/2000/svg';
+  var g=document.createElementNS(NS,'g');
+  g.setAttribute('class','node');g.setAttribute('data-id',node.id);
+  g.setAttribute('transform','translate('+x+','+y+')');
+  g.setAttribute('data-bx',x);g.setAttribute('data-by',y);
+  var r=document.createElementNS(NS,'rect');
+  r.setAttribute('width',NW);r.setAttribute('height',NH);r.setAttribute('rx','6');
+  r.setAttribute('fill','var(--panel2)');r.setAttribute('stroke','var(--amber)');r.setAttribute('stroke-width','2');
+  g.appendChild(r);
+  var dot=document.createElementNS(NS,'circle');
+  dot.setAttribute('cx',NW/2);dot.setAttribute('cy','0');dot.setAttribute('r','5.5');
+  dot.setAttribute('fill','var(--amber)');dot.setAttribute('stroke','var(--bg)');dot.setAttribute('stroke-width','1.5');
+  g.appendChild(dot);
+  var t=document.createElementNS(NS,'text');
+  t.setAttribute('x','12');t.setAttribute('y','26');t.setAttribute('font-size','12.5');
+  t.setAttribute('fill','var(--ink)');t.setAttribute('font-weight','600');
+  var words=String(node.title||'').slice(0,66).split(' '),lines=[],cur='';
+  for(var i=0;i<words.length;i++){if((cur+' '+words[i]).trim().length>30){lines.push(cur.trim());cur=words[i]}else cur+=' '+words[i]}
+  if(cur.trim())lines.push(cur.trim());
+  lines.slice(0,3).forEach(function(l,i){
+    var ts=document.createElementNS(NS,'tspan');
+    ts.setAttribute('x','12');ts.setAttribute('dy',i===0?'0':'15');
+    ts.textContent=l;t.appendChild(ts);
+  });
+  g.appendChild(t);
+  var chip=document.createElementNS(NS,'text');
+  chip.setAttribute('x',NW-12);chip.setAttribute('y',NH-9);chip.setAttribute('font-size','10');
+  chip.setAttribute('fill','var(--amber)');chip.setAttribute('text-anchor','end');chip.setAttribute('font-weight','700');
+  chip.textContent='NEW';
+  g.appendChild(chip);
+  vp.appendChild(g);
+  DATA[node.id]={
+    title:escP(node.title),body:escP(node.body||''),
+    bcls:kind==='question'?'open':'unverified',
+    blabel:kind==='question'?'reader question':'reader theory',
+    sources:[],traction:node.traction||{up:0,down:0},
+    issue:String(node.issue||'').indexOf('https://github.com/')===0?escP(node.issue):null,
+    conns:'',thread:null
+  };
+  return true;
+}
+window.gbBoardAdd=function(node){
+  if(addPending(node)){
+    say('Yours is <b>live on the board</b> — everyone can see it now.',true);
+    setTimeout(hush,6000);
+  }
+};
+function pollPending(){
+  if(!PENDPOINT||document.hidden)return;
+  fetch(PENDPOINT+'?pending='+encodeURIComponent(SLUG),{cache:'no-store'})
+    .then(function(r){return r.json()})
+    .then(function(d){(d.items||[]).forEach(addPending)})
+    .catch(function(){});
+}
+if(PENDPOINT){pollPending();setInterval(pollPending,30000);}
+
 /* ---------- freshness ----------
    The embed lives one directory deeper than the board (board/embed/ vs board/), and this script
    is shared verbatim by both, so the path has to be written per page. It was './' for both, which
@@ -2103,6 +2195,11 @@ for (const c of CASES) {
     items: (c.ticker.items || []).slice(0, 24).map(liveItem),
   }));
   fs.writeFileSync(path.join(OUT, 'cases', c.slug, 'board', 'board-data.json'), JSON.stringify({ serial: BUILT_AT }));
+  // The name sets the relay's instant-publish screen needs. Everything in here is already
+  // public on the site (defendant, witness names) — this is a machine-readable index, not
+  // a disclosure. Without this file the relay falls back to queued (no instant publish).
+  fs.writeFileSync(path.join(OUT, 'cases', c.slug, 'names.json'),
+    JSON.stringify(serialiseNameSets(buildNameSets(c.case, c.days))));
   // Public board data — reusable with attribution.
   fs.writeFileSync(path.join(OUT, 'cases', c.slug, 'board', 'data.json'), JSON.stringify({
     case: { slug: c.slug, title: c.case.title, shortTitle: c.case.shortTitle, court: c.case.court, phase: c.case.phase, status: c.case.status },

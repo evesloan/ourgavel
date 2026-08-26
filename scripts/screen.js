@@ -156,4 +156,52 @@ function shouldEscalate(text) {
   return h.some(x => x.rule !== 'pii') && (IMPLICATION_RE.test(String(text || '')) || h.some(x => x.rule === 'just-asking'));
 }
 
-module.exports = { implicationHits, implicationReason, shouldEscalate, RELATION_NOUNS };
+// ---------------------------------------------------------------------------------
+// The NAME screen, canonical copies. These moved here 2026-08-26 so that build.js and
+// the relay Worker can share them with the pulse. poll.js still carries its own local
+// copies (deliberately untouched that night: a queued handoff held a full-file poll.js
+// and an edit here would have been silently clobbered when it applied). pending.test.js
+// asserts the two copies stay byte-identical until a lane dedupes them; if that test is
+// failing, someone changed one copy — change both, or finish the dedupe.
+function personMentions(text, allowedNames) {
+  const t = ' ' + text + ' ';
+  const hits = new Set();
+  // capitalized bigrams that look like names (not sentence-start artifacts alone)
+  for (const m of t.matchAll(/\b([A-Z][a-z]{2,})\s+([A-Z][a-z]{2,})\b/g)) {
+    const full = m[1] + ' ' + m[2];
+    if (!allowedNames.stop.has(m[1].toLowerCase()) && !allowedNames.allowed.has(full.toLowerCase())) hits.add(full);
+  }
+  // known participant tokens (witnesses, family) — any mention routes to review
+  for (const tok of allowedNames.participants) {
+    if (tok.length > 3 && new RegExp('\\b' + tok + '\\b', 'i').test(text)) hits.add(tok);
+  }
+  return [...hits];
+}
+function buildNameSets(CASE, days) {
+  const allowed = new Set(); // the defendant — the person the trial is about
+  const parts = String(CASE.defendant || '').match(/[A-Z][a-z]+ [A-Z][a-z]+/);
+  if (parts) allowed.add(parts[0].toLowerCase());
+  const participants = new Set();
+  for (const d of days.days || []) for (const w of d.witnesses || []) {
+    for (const tok of w.name.replace(/["'.]/g, '').split(/\s+/)) if (/^[A-Z][a-z]{3,}$/.test(tok)) participants.add(tok);
+  }
+  // defendant's own tokens are allowed, remove from participant token set
+  if (parts) for (const tok of parts[0].split(' ')) participants.delete(tok);
+  const stop = new Set(['the', 'this', 'that', 'court', 'judge', 'jury', 'state', 'trial', 'county', 'superior', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'january', 'august', 'boston', 'massachusetts', 'commonwealth', 'defense', 'prosecution']);
+  return { allowed, participants: [...participants], stop };
+}
+const PII = [/\b[\w.+-]+@[\w-]+\.[a-z]{2,}\b/i, /\b\d{3}[-.\s]\d{3}[-.\s]\d{4}\b/, /\b\d{1,5}\s+[A-Z][a-z]+\s+(St|Street|Ave|Avenue|Rd|Road|Dr|Drive|Ln|Lane|Ct|Court|Blvd)\b/, /(?:^|\s)@[a-z0-9_]{3,}\b/i];
+
+// names.json round-trip: a name set serialised for the Worker, and hydrated back.
+// The Worker cannot read data/; it fetches the built site's names.json instead.
+function serialiseNameSets(ns) {
+  return { allowed: [...ns.allowed], participants: [...ns.participants], stop: [...ns.stop] };
+}
+function hydrateNameSets(o) {
+  return { allowed: new Set(o.allowed || []), participants: [...(o.participants || [])], stop: new Set(o.stop || []) };
+}
+
+module.exports = {
+  implicationHits, implicationReason, shouldEscalate, RELATION_NOUNS,
+  personMentions, buildNameSets, PII, serialiseNameSets, hydrateNameSets,
+};

@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-08-26T14:42:33.000Z",
+      "outlet": "News 3 Las Vegas",
+      "headline": "TODAY: More witness testimony expected in Tupac Shakur murder trial",
+      "url": "https://news3lv.com/news/local/witness-testimony-day-8-tupac-shakur-murder-trial-duane-davis-keffe-d-las-vegas-nevada-courtroom-livestream-crime",
+      "flag": null
+    },
+    {
       "ts": "2026-08-25T23:51:56.000Z",
       "outlet": "News 3 Las Vegas",
       "headline": "Attorney addresses how case has unfolded in week two of Tupac Shakur murder trial",
@@ -264,6 +271,7 @@
     "1nbk2jz",
     "1c5xwet",
     "dm0f05",
-    "ota5dw"
+    "ota5dw",
+    "glmv1c"
   ]
 }

@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-08-26T14:20:38.000Z",
+      "outlet": "Action News Jax",
+      "headline": "Jury deliberating in case of accused murder-for-hire suspect Mario Fernandez-Saldana",
+      "url": "https://www.actionnewsjax.com/news/local/jury-deliberating-case-accused-murder-for-hire-suspect-mario-fernandez-saldana/YRMMWFLHZZBSJHEHCDIA35QKDE/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-08-26T12:50:43.000Z",
       "outlet": "News4JAX",
       "headline": "Jury to begin deliberations in Mario Fernandez murder trial in February 2022 ambush shooting of Jared Bridegan",
@@ -102,6 +109,7 @@
     "10nbx8o",
     "rl80pg",
     "3rt5cu",
-    "v5s5to"
+    "v5s5to",
+    "detteb"
   ]
 }

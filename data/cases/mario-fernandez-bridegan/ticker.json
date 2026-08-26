@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-08-26T12:50:43.000Z",
+      "outlet": "News4JAX",
+      "headline": "Jury to begin deliberations in Mario Fernandez murder trial in February 2022 ambush shooting of Jared Bridegan",
+      "url": "https://www.news4jax.com/news/local/2026/08/26/jury-to-begin-deliberations-in-mario-fernandez-murder-trial-in-february-2022-ambush-shooting-of-jared-bridegan/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-08-25T13:10:35.000Z",
       "outlet": "Action News Jax",
       "headline": "Murder for Hire Trial: State rests case, final witnesses to testify | Watch Live",
@@ -94,6 +101,7 @@
     "1vg0gar",
     "10nbx8o",
     "rl80pg",
-    "3rt5cu"
+    "3rt5cu",
+    "v5s5to"
   ]
 }

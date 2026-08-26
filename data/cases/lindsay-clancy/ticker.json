@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-08-26T12:44:21.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Lindsay Clancy trial (live updates): Final state expert back on the stand",
+      "url": "https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-final-state-expert-back-stand/XPN4GGETFRBB5DJD6BCWWX3KLE/",
+      "flag": null
+    },
+    {
       "ts": "2026-08-26T10:10:16.000Z",
       "outlet": "Boston 25 News",
       "headline": "Lindsay Clancy murder trial: Final state experts testify on Lindsay Clancy’s mental state",
@@ -12,6 +19,13 @@
       "outlet": "WCVB",
       "headline": "Final witness expected back on stand in Lindsay Clancy murder trial",
       "url": "https://www.wcvb.com/article/lindsay-clancy-trial-live-updates-aug-26/73529464",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-26T08:50:24.000Z",
+      "outlet": "NBC10 Boston",
+      "headline": "Live updates: Final witness testimony in Lindsay Clancy trial expected Wednesday",
+      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-trial-day-21/4004090/",
       "flag": null
     },
     {
@@ -371,6 +385,8 @@
     "63grlw",
     "1kcm0th",
     "zyf2hd",
-    "1wwhswr"
+    "1wwhswr",
+    "8copmz",
+    "1b8bg17"
   ]
 }

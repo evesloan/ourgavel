@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-08-25T20:16:45.000Z",
+      "outlet": "via MSN",
+      "headline": "Lil Durk murder-for-hire trial: Prosecutors revisit the murder of King Von",
+      "url": "https://www.msn.com/en-us/news/other/lil-durk-murder-for-hire-trial-prosecutors-revisit-the-murder-of-king-von/ar-AA2aVtXo",
+      "flag": null
+    },
+    {
       "ts": "2026-08-25T12:15:00.000Z",
       "outlet": "via Yahoo News",
       "headline": "Lil Durk’s murder-for-hire trial begins as prosecutors allege revenge plot against Quando Rondo",
@@ -201,6 +208,7 @@
     "ml08x7",
     "1gb39ai",
     "1kt045o",
-    "fgpafq"
+    "fgpafq",
+    "1gb3l9o"
   ]
 }

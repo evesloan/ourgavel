@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-08-26T09:33:00.000Z",
+      "outlet": "WCVB",
+      "headline": "Final witness expected back on stand in Lindsay Clancy murder trial",
+      "url": "https://www.wcvb.com/article/lindsay-clancy-trial-live-updates-aug-26/73529464",
+      "flag": null
+    },
+    {
       "ts": "2026-08-25T21:39:08.000Z",
       "outlet": "Boston 25 News",
       "headline": "Psychologist testifies Lindsay Clancy was criminally responsible for killing her 3 children",
@@ -347,6 +354,7 @@
     "1aesahv",
     "1gx6k37",
     "19jnr9s",
-    "63grlw"
+    "63grlw",
+    "1kcm0th"
   ]
 }

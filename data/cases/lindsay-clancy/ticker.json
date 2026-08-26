@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-08-26T10:10:16.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Lindsay Clancy murder trial: Final state experts testify on Lindsay Clancy’s mental state",
+      "url": "https://www.boston25news.com/news/local/lindsay-clancy-murder-trial-final-state-experts-testify-lindsay-clancys-mental-state/W2SJZ4NOHJGJRJUXLZD3P243DU/",
+      "flag": null
+    },
+    {
       "ts": "2026-08-26T09:33:00.000Z",
       "outlet": "WCVB",
       "headline": "Final witness expected back on stand in Lindsay Clancy murder trial",
@@ -355,6 +362,7 @@
     "1gx6k37",
     "19jnr9s",
     "63grlw",
-    "1kcm0th"
+    "1kcm0th",
+    "zyf2hd"
   ]
 }

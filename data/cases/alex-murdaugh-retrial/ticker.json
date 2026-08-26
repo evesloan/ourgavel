@@ -78,6 +78,13 @@
       "flag": "verdict-watch"
     },
     {
+      "ts": "2026-08-14T14:15:00.000Z",
+      "outlet": "via Yahoo News",
+      "headline": "Judge moves Alex Murdaugh murder retrial from small rural county amid ongoing legal twists",
+      "url": "https://www.yahoo.com/news/us/articles/judge-moves-alex-murdaugh-murder-211526376.html",
+      "flag": null
+    },
+    {
       "ts": "2026-08-14T13:58:15.000Z",
       "outlet": "via MSN",
       "headline": "South Carolina judge grants Alex Murdaugh change of venue for murder retrial",
@@ -823,6 +830,7 @@
     "1a3qv9n",
     "1ga0a0a",
     "1g9uzs0",
-    "kxtgm9"
+    "kxtgm9",
+    "of5tcz"
   ]
 }

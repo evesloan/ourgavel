@@ -1,10 +1,101 @@
 {
   "items": [
     {
+      "ts": "2026-08-27T18:45:52.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Lindsay Clancy trial (live updates): Jury deliberations begin after closing arguments",
+      "url": "https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-closing-arguments-then-jury-deliberations-begin/GVTO3KUK3ZCL3FIGFJSQ2EGBIY/",
+      "flag": "verdict-watch"
+    },
+    {
+      "ts": "2026-08-27T18:42:51.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Lindsay Clancy’s fate now in jury’s hands after weeks of emotional testimony",
+      "url": "https://www.boston25news.com/news/local/lindsay-clancys-fate-now-jurys-hands-after-weeks-emotional-testimony/OU7LFEKBVVHPPCF2RGUFF3KRNM/",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-27T18:40:00.000Z",
+      "outlet": "WCVB",
+      "headline": "What we know about Lindsay Clancy's jury and the decisions they face",
+      "url": "https://www.wcvb.com/article/lindsay-clancy-jury-deliberation-what-we-know/73545602",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-27T18:15:43.000Z",
+      "outlet": "Boston.com",
+      "headline": "Photos: Scenes from the courthouse as jurors deliberate in Lindsay Clancy trial",
+      "url": "https://www.boston.com/news/crime/2026/08/27/photos-courthouse-lindsay-clancy-trial/",
+      "flag": "verdict-watch"
+    },
+    {
+      "ts": "2026-08-27T17:05:00.000Z",
+      "outlet": "WCVB",
+      "headline": "Retired judge weighs closing arguments as Lindsay Clancy case goes to jury",
+      "url": "https://www.wcvb.com/article/retired-judge-james-barretto-closing-arguments-lindsay-clancy/73544753",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-27T17:01:58.000Z",
+      "outlet": "Court TV",
+      "headline": "Lindsay Clancy’s attorney says ‘This prosecution is a mess’ in closing argument",
+      "url": "https://www.courttv.com/news/lindsay-clancys-attorney-says-this-prosecution-is-a-mess-in-closing-argument/",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-27T16:58:00.000Z",
+      "outlet": "WCVB",
+      "headline": "Lindsay Clancy trial closing arguments: Watch again",
+      "url": "https://www.wcvb.com/article/lindsay-clancy-closing-arguments-videos/73544297",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-27T16:48:00.000Z",
+      "outlet": "WCVB",
+      "headline": "'I've done my best' Clancy's attorney says",
+      "url": "https://www.wcvb.com/article/reddington-clancy-before-closing-arguments/73542888",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-27T16:45:51.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Lindsay Clancy prosecutor says America’s medical system is ‘not on trial here’ in closing argument",
+      "url": "https://www.boston25news.com/news/local/lindsay-clancy-prosecutor-says-americas-medical-system-is-not-trial-here-closing-argument/USYYY2HX4BB7HAUO2YUVRCPJII/",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-27T16:45:09.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Lindsay Clancy’s attorney blames the medical system in his closing argument",
+      "url": "https://www.boston25news.com/news/local/lindsay-clancys-attorney-blames-medical-system-his-closing-argument/WVE6QW6TEBFJVM6YI4B7ISZMFY/",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-27T15:09:28.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Lindsay Clancy verdict watch: Legal expert explains what could sway jurors",
+      "url": "https://www.boston25news.com/news/local/lindsay-clancy-verdict-watch-legal-expert-explains-what-could-sway-jurors/B3CCAZMYIJDN5FEFQENQG6PA3U/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-08-27T09:25:00.000Z",
       "outlet": "WCVB",
       "headline": "Closing arguments to be heard today in Lindsay Clancy murder trial",
       "url": "https://www.wcvb.com/article/lindsay-clancy-trial-live-updates-aug-27/73540249",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-27T08:47:26.000Z",
+      "outlet": "NBC10 Boston",
+      "headline": "Lindsay Clancy trial recap: Jury hears closing arguments and gets the case",
+      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-trial-closing-arguments-day-22/4004823/",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-27T06:15:26.000Z",
+      "outlet": "NBC10 Boston",
+      "headline": "Jury hears closing arguments in Lindsay Clancy trial",
+      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-trial-closing-arguments-today/4004733/",
       "flag": null
     },
     {
@@ -451,6 +542,19 @@
     "sgbiha",
     "1r38i6t",
     "hs08lu",
-    "1h4jut0"
+    "1h4jut0",
+    "8q6oyn",
+    "1dalt1p",
+    "1x8zvk4",
+    "yitqyg",
+    "1yrl1z1",
+    "1cxrefh",
+    "127tqif",
+    "1n5frcu",
+    "q8lcnw",
+    "9sffcf",
+    "5hjwt3",
+    "13cdlf4",
+    "1vl0vhn"
   ]
 }

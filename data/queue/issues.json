@@ -1,6 +1,22 @@
 {
-  "synced": "2026-08-27T09:58:43.785Z",
+  "synced": "2026-08-27T18:50:17.850Z",
   "open": [
+    {
+      "number": 12,
+      "title": "[handoff:community] community: re-cut #8 — remove unsourced dup c-7 + collapse duplicate Fernandez verdict day (greens b",
+      "body": "### Lane\ncommunity\n\n### SHA-256 of the decoded payload\n24c857ddc63d057724b671d421ea0a51caccc3faf66924f09daaf1cc6fdff75e\n\n### Payload (base64 of a gzipped JSON apply-plan)\n```\n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",
+      "labels": [
+        "handoff",
+        "lane:community"
+      ],
+      "user": "evesloan",
+      "created": "2026-08-27T10:50:08Z",
+      "reactions": {
+        "up": 0,
+        "down": 0
+      },
+      "url": "https://github.com/evesloan/ourgavel/issues/12"
+    },
     {
       "number": 11,
       "title": "[handoff:development] Bridegan verdict aftermath: resolve board central question to GUILTY; poll.js guard vs duplicate ver",
@@ -32,22 +48,6 @@
         "down": 0
       },
       "url": "https://github.com/evesloan/ourgavel/issues/10"
-    },
-    {
-      "number": 9,
-      "title": "[handoff:development] record: Fernandez central question resolved + verdict-day duplicate guard",
-      "body": "### Lane\ndevelopment\n\n### SHA-256 of the decoded payload\nef24e1dafe62db3a08373ef8287d1175c1904164f0eceeeb218a94ee2ffb7fc6\n\n### Payload (base64 of a gzipped JSON apply-plan)\n```\n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",
-      "labels": [
-        "handoff",
-        "lane:development"
-      ],
-      "user": "evesloan",
-      "created": "2026-08-27T03:47:59Z",
-      "reactions": {
-        "up": 0,
-        "down": 0
-      },
-      "url": "https://github.com/evesloan/ourgavel/issues/9"
     },
     {
       "number": 7,

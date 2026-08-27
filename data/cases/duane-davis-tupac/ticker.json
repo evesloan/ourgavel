@@ -1,6 +1,20 @@
 {
   "items": [
     {
+      "ts": "2026-08-27T17:30:35.000Z",
+      "outlet": "8 News Now",
+      "headline": "Live updates: Day 9 of Tupac murder trial",
+      "url": "https://www.8newsnow.com/news/tupac-murder-trial/live-updates-day-9-of-tupac-murder-trial/",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-27T15:05:33.000Z",
+      "outlet": "News 3 Las Vegas",
+      "headline": "TODAY: Defense begins case in Tupac Shakur murder trial",
+      "url": "https://news3lv.com/news/local/today-defense-begins-case-in-tupac-shakur-murder-trial",
+      "flag": null
+    },
+    {
       "ts": "2026-08-27T01:18:36.000Z",
       "outlet": "FOX5 Las Vegas",
       "headline": "Timeline: How the prosecution built its case in the Tupac Murder Trial",
@@ -312,6 +326,8 @@
     "mjm5wu",
     "523m0w",
     "16hj30",
-    "1w0762f"
+    "1w0762f",
+    "tgn9f5",
+    "ingqji"
   ]
 }

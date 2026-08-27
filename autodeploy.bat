@@ -3,6 +3,10 @@ REM OurGavel autodeploy — runs silently on a schedule. Do not double-click thi
 REM run install-autodeploy.bat once instead.
 REM Picks up anything Claude wrote into this folder, syncs with the site's own
 REM robot commits, and pushes. A push triggers the build and deploy.
+REM Since 2026-08-27 it is also the pulse's keepalive: GitHub's cron scheduler dropped the
+REM site's 15-minute pulse for ~10 hours twice in one day, and a push is the one trigger
+REM that fires reliably. If main has been quiet ~40 minutes, this script writes a one-line
+REM heartbeat so its normal commit+push path nudges the pulse awake.
 setlocal enabledelayedexpansion
 cd /d "%~dp0"
 set LOG=%~dp0autodeploy.log
@@ -36,6 +40,33 @@ if errorlevel 1 (
   git rebase --abort >nul 2>&1
   exit /b 1
 )
+
+REM --- Pulse keepalive (2026-08-27). ---
+REM The pulse workflow fires on every push, but its cron schedule has proven unreliable
+REM (dropped for ~10h twice on Aug 27 — GitHub-side, nothing in this repo). While the pulse
+REM is asleep nothing on the site updates and, worse, the verdict engine cannot see the
+REM world: a verdict returned during a dead spell would go unpublished. So: track how long
+REM main has sat unchanged across runs of this script (marker lives in %TEMP%, never in the
+REM repo). Eight consecutive quiet runs at the 5-minute cadence = ~40 minutes = write a
+REM one-line heartbeat file; the normal commit+push below then fires the pulse. While the
+REM cron is healthy main moves every ~15 minutes and this never triggers at all.
+set HB=%TEMP%\ourgavel-pulse-heartbeat.txt
+set CURHEAD=
+for /f %%A in ('git rev-parse HEAD 2^>nul') do set CURHEAD=%%A
+set LASTHEAD=
+set STALLN=0
+if exist "%HB%" for /f "usebackq tokens=1,2" %%A in ("%HB%") do (
+  set LASTHEAD=%%A
+  set STALLN=%%B
+)
+if not defined STALLN set STALLN=0
+if "%CURHEAD%"=="!LASTHEAD!" (set /a STALLN+=1) else (set STALLN=0)
+if !STALLN! GEQ 8 (
+  > "data\heartbeat.txt" echo pulse keepalive %DATE% %TIME% - main was quiet ~40 minutes
+  echo [%DATE% %TIME%] heartbeat: main quiet ~40m, nudging the pulse >>"%LOG%"
+  set STALLN=0
+)
+> "%HB%" echo %CURHEAD% !STALLN!
 
 REM --- The check this script was missing, and the reason it once shipped a broken site. ---
 REM `git pull --rebase --autostash` exits 0 even when the autostash POP conflicts. Git leaves

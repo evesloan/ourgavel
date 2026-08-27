@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-08-27T20:16:02.000Z",
+      "outlet": "WLTX News19",
+      "headline": "SLED charges 71-year-old man in Lexington parking lot assault",
+      "url": "https://www.wltx.com/article/news/crime/sled-charges-71-year-old-man-in-lexington-parking-lot-assault/101-6f230a21-91de-45b4-a503-93c1fa018e4c",
+      "flag": null
+    },
+    {
       "ts": "2026-08-27T14:50:21.000Z",
       "outlet": "WLTX News19",
       "headline": "Orangeburg officer hit, slammed handcuffed suspect who spit on him, SLED says",
@@ -863,6 +870,7 @@
     "1fngq3v",
     "xlnip1",
     "w6a3iz",
-    "13zrc5b"
+    "13zrc5b",
+    "1plki6j"
   ]
 }

@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-08-27T13:51:51.000Z",
+      "outlet": "via MSN",
+      "headline": "Lil Durk's murder-for-hire trial revives debate over rap lyrics as evidence",
+      "url": "https://www.msn.com/en-us/news/other/lil-durks-murder-for-hire-trial-revives-debate-over-rap-lyrics-as-evidence/ar-AA2b4qVJ",
+      "flag": null
+    },
+    {
       "ts": "2026-08-27T12:16:31.000Z",
       "outlet": "AllHipHop",
       "headline": "Lil Durk Trial: OTF Jam Testifies, Explains Weed Dealer Gave The Drop On Quando Rondo",
@@ -12,6 +19,20 @@
       "outlet": "hiphopwired.com",
       "headline": "Lil Durk “Didn’t Like People Trolling Him” After King Von’s Death",
       "url": "https://hiphopwired.com/3063918/lil-durk-allegedly-didnt-like-people-trolling-him-after-king-vons-death-otf-jam-testifies/",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-27T09:48:00.000Z",
+      "outlet": "AllHipHop",
+      "headline": "Lil Durk Trial Day 6: OTF Jam Lays Out Assassination Plan, Says He Has No Respect For Rapper",
+      "url": "https://allhiphop.com/news/lil-durk-trial-day-6-otf-jam-lays-out-assassination-plan-says-he-has-no-respect-for-rapper/",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-27T02:56:00.000Z",
+      "outlet": "thesource.com",
+      "headline": "New Footage of King Von’s Murder Showed at Lil Durk’s Murder-for-Hire Trial",
+      "url": "https://thesource.com/2026/08/27/new-footage-of-king-vons-murder-showed-at-lil-durks-murder-for-hire-trial/",
       "flag": null
     },
     {
@@ -273,6 +294,9 @@
     "1gaee6m",
     "12o80sf",
     "yz55gf",
-    "1yprx6g"
+    "1yprx6g",
+    "1yu3dz3",
+    "1gah6g9",
+    "1pj9e3g"
   ]
 }

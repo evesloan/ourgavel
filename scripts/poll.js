@@ -276,9 +276,19 @@ async function syncThreads(openIssues) {
   for (const slug of fs.readdirSync(path.join(DATA, 'cases'))) {
     const cPath = path.join(DATA, 'cases', slug, 'community.json');
     if (!fs.existsSync(path.join(DATA, 'cases', slug, 'case.json'))) continue;
-    byCase[slug] = { threads: {} };
+    byCase[slug] = { threads: {}, live: new Set() };
     const C = fs.existsSync(cPath) ? read(cPath) : { nodes: [] };
-    for (const n of C.nodes || []) if (n.issueNumber) byCase[slug].threads['c-' + n.issueNumber] = { number: n.issueNumber, url: n.issue };
+    for (const n of C.nodes || []) {
+      if (n.id) byCase[slug].live.add(n.id);
+      if (n.issueNumber) byCase[slug].threads['c-' + n.issueNumber] = { number: n.issueNumber, url: n.issue };
+    }
+    // Record-lane nodes host threads too (the lazy <!--node:ID--> path below), so their ids
+    // count as live. A thread may only ever attach to a node that is actually on a board: a
+    // discussion opened on a node that moderation later REMOVED must not re-create a dangling
+    // thread on the next cycle. That exact shape — discussion #13 on removed node c-7 — is what
+    // burned the community lane's greener handoff at the gate on 2026-08-27.
+    const bPath = path.join(DATA, 'cases', slug, 'board.json');
+    if (fs.existsSync(bPath)) for (const n of (read(bPath).nodes || [])) if (n.id) byCase[slug].live.add(n.id);
   }
   // The question that opens a thread is held to the same rule as the replies in it. An issue
   // whose body implicates someone who has not been charged does not get to become a discussion
@@ -286,7 +296,7 @@ async function syncThreads(openIssues) {
   const heldSeeds = [];
   for (const iss of openIssues) {
     const m = (iss.body || '').match(/<!--node:([\w-]+)\s+case:([\w-]+)-->/);
-    if (!(m && byCase[m[2]] && !byCase[m[2]].threads[m[1]])) continue;
+    if (!(m && byCase[m[2]] && byCase[m[2]].live.has(m[1]) && !byCase[m[2]].threads[m[1]])) continue;
     const seed = (iss.body || '').replace(/<!--[\s\S]*?-->/g, '').trim();
     const why = implicationReason(seed);
     if (why) { heldSeeds.push({ kind: 'thread-opener', case: m[2], node: m[1], issue: iss.number, url: iss.url, user: iss.user, escalate: shouldEscalate(seed), why, body: seed.slice(0, 400) }); continue; }

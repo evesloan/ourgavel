@@ -1,22 +1,6 @@
 {
-  "synced": "2026-08-27T21:00:20.205Z",
+  "synced": "2026-08-27T21:55:20.359Z",
   "open": [
-    {
-      "number": 15,
-      "title": "[handoff:community] community: re-cut closed-unapplied #12 — c-7 orphan removal + Fernandez duplicate verdict-day collap",
-      "body": "### Lane\ncommunity\n\n### SHA-256 of the decoded payload\nc2c6539dc8809352d191595964c2a7dce8b2edbd2455a18f5faf76f03bfad31e\n\n### Payload (base64 of a gzipped JSON apply-plan)\n```\n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\n```\n\n---\nQueued by an unattended OurGavel lane through the authenticated relay.\nscripts/poll.js applies this on the next pulse, gates it on the full suite, and commits\nonly if every check passes. Nothing here reached the site without that gate.",
-      "labels": [
-        "handoff",
-        "lane:community"
-      ],
-      "user": "evesloan",
-      "created": "2026-08-27T20:47:52Z",
-      "reactions": {
-        "up": 0,
-        "down": 0
-      },
-      "url": "https://github.com/evesloan/ourgavel/issues/15"
-    },
     {
       "number": 13,
       "title": "Discussion: Why was she on so many different drugs?",

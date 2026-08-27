@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-08-27T21:15:31.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Following closing remarks, Lindsay Clancy jury begins deliberations",
+      "url": "https://www.boston25news.com/news/local/following-closing-remarks-lindsay-clancy-jury-begins-deliberations/COJUAKSM4ZFDLGIPHZSJMV6YLE/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-08-27T19:36:55.000Z",
       "outlet": "Boston.com",
       "headline": "Lindsay Clancy trial: As verdict watch begins, hear each side’s closing argument",
@@ -563,6 +570,7 @@
     "5hjwt3",
     "13cdlf4",
     "1vl0vhn",
-    "1ym4iyu"
+    "1ym4iyu",
+    "5a5fxq"
   ]
 }

@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-08-26T20:19:00.000Z",
+      "outlet": "Primetimer",
+      "headline": "Lil Durk Trial: OTF Jam takes stand to identify rapper as a participant in murder",
+      "url": "https://www.primetimer.com/news/lil-durk-trial-otf-jam-takes-stand-to-identify-rapper-as-a-participant-in-murder",
+      "flag": null
+    },
+    {
       "ts": "2026-08-26T16:30:00.000Z",
       "outlet": "AllHipHop",
       "headline": "Lil Durk Trial Turns To King Von Texts As Defense Challenges Context",
@@ -249,6 +256,7 @@
     "1iuo14g",
     "13tkidb",
     "1gb67f9",
-    "1gaee6m"
+    "1gaee6m",
+    "12o80sf"
   ]
 }

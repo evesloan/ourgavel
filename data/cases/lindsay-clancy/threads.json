@@ -1,4 +1,11 @@
 {
-  "synced": "2026-08-27T00:15:14.575Z",
-  "threads": {}
+  "synced": "2026-08-27T09:58:43.785Z",
+  "threads": {
+    "c-7": {
+      "url": "https://github.com/evesloan/ourgavel/issues/7",
+      "count": 0,
+      "held": 0,
+      "comments": []
+    }
+  }
 }

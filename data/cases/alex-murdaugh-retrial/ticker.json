@@ -197,10 +197,24 @@
       "flag": null
     },
     {
+      "ts": "2026-08-12T09:21:00.000Z",
+      "outlet": "via AOL",
+      "headline": "Alex Murdaugh’s retrial in Charleston? Judge to hear host of issues Friday",
+      "url": "https://www.aol.com/articles/dna-prior-testimony-friday-alex-162134000.html",
+      "flag": null
+    },
+    {
       "ts": "2026-08-12T08:35:00.000Z",
       "outlet": "The Post and Courier",
       "headline": "Alex Murdaugh wants to bring murder retrial and media circus to Charleston. Prosecutors disagree.",
       "url": "https://www.postandcourier.com/murdaugh-updates/alex-murdaugh-murder-retrial-venue-charleston-sc/article_c55c896f-cb6d-4af4-afa9-64bf5cd40279.html",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-05T09:33:00.000Z",
+      "outlet": "newsday.com",
+      "headline": "Federal judge won't make disgraced clerk pay Alex Murdaugh's $600,000 in legal fees for 1st trial",
+      "url": "https://www.newsday.com/news/nation/alex-murdaugh-killings-murder-retrial-defense-fees-p53347",
       "flag": null
     },
     {
@@ -839,6 +853,8 @@
     "1g9uzs0",
     "kxtgm9",
     "of5tcz",
-    "1fngq3v"
+    "1fngq3v",
+    "xlnip1",
+    "w6a3iz"
   ]
 }

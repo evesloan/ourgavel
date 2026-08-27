@@ -1,6 +1,27 @@
 {
   "items": [
     {
+      "ts": "2026-08-27T09:25:00.000Z",
+      "outlet": "WCVB",
+      "headline": "Closing arguments to be heard today in Lindsay Clancy murder trial",
+      "url": "https://www.wcvb.com/article/lindsay-clancy-trial-live-updates-aug-27/73540249",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-27T02:42:09.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Testimony concludes in Lindsay Clancy’s murder trial. Jury to hear closing arguments Thursday",
+      "url": "https://www.boston25news.com/news/local/testimony-concludes-lindsay-clancys-murder-trial-jury-hear-closing-arguments-thursday/KKCD3C3CPFEDRDYKB54GG7IXPQ/",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-27T00:25:02.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Verdict options: What Lindsay Clancy’s jury will consider in deliberations",
+      "url": "https://www.boston25news.com/news/local/verdict-options-what-lindsay-clancys-jury-will-consider-deliberations/QGYEVGQQPFBI3HLPXWDHHNXQHU/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-08-26T23:12:00.000Z",
       "outlet": "WCVB",
       "headline": "Why the manslaughter option could matter as the Lindsay Clancy trial heads to the jury",
@@ -427,6 +448,9 @@
     "1e026qf",
     "16jc2k1",
     "1fv98ig",
-    "sgbiha"
+    "sgbiha",
+    "1r38i6t",
+    "hs08lu",
+    "1h4jut0"
   ]
 }

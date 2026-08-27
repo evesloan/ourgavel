@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-08-27T02:01:16.000Z",
+      "outlet": "Action News Jax",
+      "headline": "‘Truth was seen in that courtroom’: Bridegan’s family reacts to verdict in murder-for-hire trial",
+      "url": "https://www.actionnewsjax.com/news/local/truth-was-seen-that-courtroom-bridegans-family-reacts-verdict-murder-for-hire-trial/EU7AKPL2L5A5XERXF7AJQXKNDM/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-08-26T19:13:09.000Z",
       "outlet": "News4JAX",
       "headline": "‘Truth won today,’ says Jared Bridegan’s widow after Mario Fernandez convicted of murder in 2022 shooting",
@@ -134,6 +141,7 @@
     "detteb",
     "o6bhph",
     "18ezimj",
-    "dp8b6w"
+    "dp8b6w",
+    "1ujtntr"
   ]
 }

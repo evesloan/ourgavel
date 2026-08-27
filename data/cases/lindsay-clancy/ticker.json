@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-08-27T19:36:55.000Z",
+      "outlet": "Boston.com",
+      "headline": "Lindsay Clancy trial: As verdict watch begins, hear each side’s closing argument",
+      "url": "https://www.boston.com/news/crime/2026/08/27/lindsay-clancy-trial-as-verdict-watch-begins-hear-each-sides-closing-argument/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-08-27T18:45:52.000Z",
       "outlet": "Boston 25 News",
       "headline": "Lindsay Clancy trial (live updates): Jury deliberations begin after closing arguments",
@@ -555,6 +562,7 @@
     "9sffcf",
     "5hjwt3",
     "13cdlf4",
-    "1vl0vhn"
+    "1vl0vhn",
+    "1ym4iyu"
   ]
 }

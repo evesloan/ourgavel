@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-08-27T19:47:35.000Z",
+      "outlet": "Action News Jax",
+      "headline": "Mario Fernandez Saldana, man convicted in Jared Bridegan’s murder, now accused of child molestation",
+      "url": "https://www.actionnewsjax.com/news/local/man-convicted-killing-jared-bridegan-now-facing-lewdlascivious-molestation-child-charges/ZPDBQHODXBAVDISU3WF7SRYVSY/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-08-27T18:17:52.000Z",
       "outlet": "Action News Jax",
       "headline": "Jared Bridegan murder: Shanna Gardner, Henry Tenon to be tried at the same time in May, judge says",
@@ -166,6 +173,7 @@
     "1ujtntr",
     "u38p6e",
     "xy3h1o",
-    "mfvqmr"
+    "mfvqmr",
+    "tgeoav"
   ]
 }

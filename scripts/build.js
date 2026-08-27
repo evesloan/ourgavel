@@ -45,10 +45,53 @@ const SUBMIT_ENDPOINT = (() => {
 const BASE = CNAME ? '' : (process.env.GB_BASE || '');
 const SITE = CNAME ? `https://${CNAME}` : (process.env.GB_SITE || 'https://evesloan.github.io/ourgavel'); // '/ourgavel' when served from project-pages subpath; '' on the custom domain
 const SITE_NAME = 'OurGavel';
-const TAGLINE = 'The record. The rumors. The line between.';
+
+// ---------- human-editable site copy (the owner's file) ----------
+// `data/copy.md` belongs to Eve: the header tagline and the About page's editable prose live
+// there so the site's voice can be changed by editing one plain-text file, not this build.
+// Deliberately NOT JSON — there is no syntax a human can break; a missing file or emptied
+// section falls back to the literals below, so an edit can never blank the site. The
+// plain-english guide is EDITING.md at the repo root. AGENTS: that file is the owner's — do
+// not rewrite her copy in a handoff unless she asked. The test-pinned machinery claims (the
+// rules card, the how-this-site-is-made card) deliberately stay in code, where
+// promise.test.js holds them to the EDITORIAL rules and the real constants.
+const TAGLINE_FALLBACK = 'The record. The rumors. The line between.';
 
 const esc = s => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const read = p => JSON.parse(fs.readFileSync(p, 'utf8'));
+
+// data/copy.md: sections start at `# section-name` lines, paragraphs split on blank lines.
+// Text is HTML-escaped, then two conveniences are allowed back in: [text](url) links and
+// **bold**. Anything else stays literal, so a stray character in the file can never break
+// the page's markup (and the CSP would refuse a script even if one were pasted in). An
+// emptied or missing section keeps its built-in fallback.
+const COPY_MD = (() => { try { return fs.readFileSync(path.join(DATA, 'copy.md'), 'utf8'); } catch (e) { return ''; } })();
+function copySections(md) {
+  const out = {}; let cur = null;
+  for (const line of String(md).split(/\r?\n/)) {
+    const m = line.match(/^#\s+([a-z0-9-]+)\s*$/i);
+    if (m) { cur = m[1].toLowerCase(); out[cur] = []; continue; }
+    if (cur) out[cur].push(line);
+  }
+  for (const k of Object.keys(out)) out[k] = out[k].join('\n').trim();
+  return out;
+}
+const miniMd = s => esc(s)
+  .replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, (all, t, u) =>
+    /^(https?:\/\/|\/)/.test(u) ? `<a href="${u}"${u.indexOf('http') === 0 ? ' rel="noopener"' : ''}>${t}</a>` : all)
+  .replace(/\*\*([^*\n]+)\*\*/g, '<b>$1</b>');
+const miniParas = (s, style) => String(s).split(/\n\s*\n/).filter(p => p.trim())
+  .map((p, i) => `<p style="${style}${i ? ';margin-top:8px' : ''}">${miniMd(p.replace(/\s*\n\s*/g, ' ').trim())}</p>`).join('\n');
+const COPY_FALLBACK = {
+  'tagline': TAGLINE_FALLBACK,
+  'about-intro': `Liveblogs are built for the minute they're posted. Come back on day 15 and you're scrolling forty screens to find out who testified on Tuesday. We keep the version you can actually read: the trial in order, with a source on every line.`,
+  'about-hard-questions': `Ask them. Conduct and institutions are fair game here — charging decisions, defence strategy, what a hospital missed, what investigators didn't chase. What we won't host is a crowd deciding a private person did it. That is how an innocent student got named as the Boston bomber, and how a professor with no connection to the Idaho murders ended up suing a TikTok sleuth. If scrutiny of someone is already on the record — a cross-examination, a filing, published reporting — bring it as [evidence](/submit/) and it goes up with the source attached. Questions travel on facts, not names.`,
+  'about-who-runs-this': `OurGavel is independent. No court, no party, no newsroom has any say in what goes up. It is small and it is not pretending otherwise.\n\nThe site will carry advertising and analytics as it grows, and anything sponsored or affiliate-linked is labelled where it sits. None of it touches the record: no advertiser sees a case page before you do, and no paid link ever appears inside a board card.`,
+};
+const SITE_COPY = { ...COPY_FALLBACK };
+for (const [k, v] of Object.entries(copySections(COPY_MD))) if (v) SITE_COPY[k] = v;
+// The tagline is one line by design: first non-empty line of its section, plain text.
+const TAGLINE = esc((SITE_COPY['tagline'].split(/\r?\n/).find(l => l.trim()) || TAGLINE_FALLBACK).trim());
 const fmtDate = iso => new Date(iso + (iso.length === 10 ? 'T12:00:00Z' : '')).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric', timeZone: 'UTC' });
 const fmtTs = iso => new Date(iso).toLocaleString('en-US', { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit', timeZone: 'America/New_York' }) + ' ET';
 
@@ -2148,7 +2191,7 @@ const about = page({
   crumbs: `<a href="/">Home</a> › About`,
   body: `
 <h1>About</h1>
-<p class="sub" style="max-width:620px">Liveblogs are built for the minute they're posted. Come back on day 15 and you're scrolling forty screens to find out who testified on Tuesday. We keep the version you can actually read: the trial in order, with a source on every line.</p>
+<p class="sub" style="max-width:620px">${miniMd(SITE_COPY['about-intro'].replace(/\s*\n\s*/g, ' '))}</p>
 <h2>The rules</h2>
 <div class="card"><p style="font-size:14.5px">
 <b>No source, no sentence.</b> Every factual line here names where it came from. If outlets disagree, you get both.<br>
@@ -2159,14 +2202,13 @@ const about = page({
 <b>We cover the proceeding, not the grief.</b> Nothing about a victim's last hours beyond what the charge itself requires.
 </p></div>
 <h2>Hard questions about people who aren't charged</h2>
-<div class="card"><p style="font-size:14.5px">Ask them. Conduct and institutions are fair game here — charging decisions, defence strategy, what a hospital missed, what investigators didn't chase. What we won't host is a crowd deciding a private person did it. That is how an innocent student got named as the Boston bomber, and how a professor with no connection to the Idaho murders ended up suing a TikTok sleuth. If scrutiny of someone is already on the record — a cross-examination, a filing, published reporting — bring it as <a href="/submit/">evidence</a> and it goes up with the source attached. Questions travel on facts, not names.</p></div>
+<div class="card">${miniParas(SITE_COPY['about-hard-questions'], 'font-size:14.5px')}</div>
 <h2>How this site is made</h2>
 <div class="card"><p style="font-size:14.5px">Software watches the newsrooms covering each case around the clock and pulls in their headlines, attributed and linked. The record itself — the day-by-day, the witness index, the boards — is written from that published reporting and from court documents, and every claim carries its source so you can check the work rather than trust us.</p>
 <p style="font-size:14.5px;margin-top:8px">Yes, a lot of that is automated. We think that's the honest way to run a court record: a machine can re-read every source every fifteen minutes and never get bored on day nineteen, which is exactly when most coverage gets sloppy. What automation does <i>not</i> do here is decide anything on thin evidence. A person reviews every reader post that names someone. Verdicts, pleas and sentences publish without a person in the loop — deliberately, because the bar that replaced the sign-off is higher than the sign-off was: three independent newsrooms have to report the same outcome, in language saying it already happened, and that agreement has to survive a second check. One credentialed outlet reporting something different stops publication outright. Every factual line names its source, and a reader theory only reaches the record on two independent sources or the court record itself — never on popularity.</p>
 <p style="font-size:14.5px;margin-top:8px">If we get something wrong, tell us and we'll fix it in public with a note saying what changed. <button class="linkbtn" type="button" data-compose="correction">Tell us what's wrong</button> — corrections are made in place, in public, with a note saying what changed. Every source, edit and change to this site is also public at <a href="https://github.com/${REPO}" rel="noopener">github.com/${REPO}</a> if you want to read the receipts yourself.</p></div>
 <h2>Who runs this</h2>
-<div class="card"><p style="font-size:14.5px">OurGavel is independent. No court, no party, no newsroom has any say in what goes up. It is small and it is not pretending otherwise.</p>
-<p style="font-size:14.5px;margin-top:8px">The site will carry advertising and analytics as it grows, and anything sponsored or affiliate-linked is labelled where it sits. None of it touches the record: no advertiser sees a case page before you do, and no paid link ever appears inside a board card.</p></div>
+<div class="card">${miniParas(SITE_COPY['about-who-runs-this'], 'font-size:14.5px')}</div>
 `});
 
 // ---------- write ----------

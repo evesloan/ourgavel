@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-08-27T22:31:39.000Z",
+      "outlet": "News 3 Las Vegas",
+      "headline": "Bay Law Injury Attorneys’ Deniz Bayramoglu weighs in as Duane Davis trial nears end",
+      "url": "https://news3lv.com/news/local/bay-law-injury-attorneys-deniz-bayramoglu-weighs-in-as-keffe-d-davis-trial-nears-end",
+      "flag": null
+    },
+    {
       "ts": "2026-08-27T18:56:21.000Z",
       "outlet": "FOX5 Las Vegas",
       "headline": "Defense set to begin in Tupac Shakur murder trial after prosecution rests",
@@ -336,6 +343,7 @@
     "1w0762f",
     "tgn9f5",
     "ingqji",
-    "1bpa34a"
+    "1bpa34a",
+    "1cbtkmz"
   ]
 }

@@ -1,119 +1,21 @@
 {
-  "synced": "2026-08-27T18:50:17.850Z",
+  "synced": "2026-08-27T19:15:20.973Z",
   "open": [
     {
-      "number": 12,
-      "title": "[handoff:community] community: re-cut #8 — remove unsourced dup c-7 + collapse duplicate Fernandez verdict day (greens b",
-      "body": "### Lane\ncommunity\n\n### SHA-256 of the decoded payload\n24c857ddc63d057724b671d421ea0a51caccc3faf66924f09daaf1cc6fdff75e\n\n### Payload (base64 of a gzipped JSON apply-plan)\n```\n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",
+      "number": 13,
+      "title": "Discussion: Why was she on so many different drugs?",
+      "body": "### Case\nlindsay-clancy\n\n<!--node:c-7 case:lindsay-clancy-->\n### Card\nWhy was she on so many different drugs?\n\n### Comment\nbecause our medical system is broken...\n\n---\nPosted as **dystopian** (unverified display name) via the composer on https://ourgavel.com.\nScreened for personal information before submission. Subject to the same review as every other post.",
       "labels": [
-        "handoff",
-        "lane:community"
-      ],
-      "user": "evesloan",
-      "created": "2026-08-27T10:50:08Z",
-      "reactions": {
-        "up": 0,
-        "down": 0
-      },
-      "url": "https://github.com/evesloan/ourgavel/issues/12"
-    },
-    {
-      "number": 11,
-      "title": "[handoff:development] Bridegan verdict aftermath: resolve board central question to GUILTY; poll.js guard vs duplicate ver",
-      "body": "### Lane\ndevelopment\n\n### SHA-256 of the decoded payload\nf7ff0f7b59470acc16dce54a0f9d89b45993bb2cc40a6797a3772cc98c3bec68\n\n### Payload (base64 of a gzipped JSON apply-plan)\n```\n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",
-      "labels": [
-        "handoff",
-        "lane:development"
-      ],
-      "user": "evesloan",
-      "created": "2026-08-27T04:36:48Z",
-      "reactions": {
-        "up": 0,
-        "down": 0
-      },
-      "url": "https://github.com/evesloan/ourgavel/issues/11"
-    },
-    {
-      "number": 10,
-      "title": "[handoff:seo] /embed/ landing page + entity-first titles",
-      "body": "### Lane\nseo\n\n### SHA-256 of the decoded payload\nb8fc345e39a180f79f396254dedab472da49fcef1cb059dad3d65e142f696b01\n\n### Payload (base64 of a gzipped JSON apply-plan)\n```\n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",
-      "labels": [
-        "handoff",
-        "lane:seo"
-      ],
-      "user": "evesloan",
-      "created": "2026-08-27T04:00:58Z",
-      "reactions": {
-        "up": 0,
-        "down": 0
-      },
-      "url": "https://github.com/evesloan/ourgavel/issues/10"
-    },
-    {
-      "number": 7,
-      "title": "[question] Why was she on so many different drugs?",
-      "body": "### Case\nlindsay-clancy\n\n### In one sentence\nWhy was she on so many different drugs?\n\n### Reasoning\n_none given_\n\n---\nPosted anonymously via the composer on https://ourgavel.com.\nScreened for personal information before submission. Subject to the same review as every other post.",
-      "labels": [
-        "question",
         "via-composer",
-        "published"
+        "discussion"
       ],
       "user": "evesloan",
-      "created": "2026-08-26T23:24:29Z",
+      "created": "2026-08-27T18:59:21Z",
       "reactions": {
         "up": 0,
         "down": 0
       },
-      "url": "https://github.com/evesloan/ourgavel/issues/7"
-    },
-    {
-      "number": 6,
-      "title": "Verdict published: Jared Bridegan Murder Trial — Guilty",
-      "body": "Published automatically after 3 independent newsrooms agreed across two consecutive checks.\n\n- News4JAX: https://www.news4jax.com/news/local/2026/08/26/truth-won-today-says-jared-bridegans-widow-after-mario-fernandez-convicted-of-murder-in-2022-shooting/\n- Fox News: https://www.foxnews.com/us/suspect-microsoft-executive-jared-bridegan-murder-convicted-roadside-ambush\n- wokv.com: https://www.wokv.com/news/local/jury-deliberating-case-accused-murder-for-hire-suspect-mario-fernandez-saldana/YRMMWFLHZZBSJHEHCDIA35QKDE/\n\nNext: the review session should resolve the board's central question, add the sentencing date if known, and archive the case when it is over.",
-      "labels": [
-        "verdict-watch"
-      ],
-      "user": "github-actions[bot]",
-      "created": "2026-08-26T23:10:31Z",
-      "reactions": {
-        "up": 0,
-        "down": 0
-      },
-      "url": "https://github.com/evesloan/ourgavel/issues/6"
-    },
-    {
-      "number": 5,
-      "title": "[question] Why isn't the husband under more scrutiny?",
-      "body": "### Case\nlindsay-clancy\n\n### In one sentence\nWhy isn't the husband under more scrutiny?\n\n### Reasoning\nIt appears a lot of his testimony is taken as truth without suspicion?\n\n---\nPosted as **confused** (unverified display name) via the composer on https://ourgavel.com.\nScreened for personal information before submission. Subject to the same review as every other post.",
-      "labels": [
-        "question",
-        "via-composer",
-        "needs-review"
-      ],
-      "user": "evesloan",
-      "created": "2026-08-26T23:08:49Z",
-      "reactions": {
-        "up": 0,
-        "down": 0
-      },
-      "url": "https://github.com/evesloan/ourgavel/issues/5"
-    },
-    {
-      "number": 3,
-      "title": "[question] Why isn't the husband being looked into further?",
-      "body": "### Case\nlindsay-clancy\n\n### In one sentence\nWhy isn't the husband being looked into further?\n\n### Reasoning\n_none given_\n\n---\nPosted anonymously via the composer on https://ourgavel.com.\nScreened for personal information before submission. Subject to the same review as every other post.",
-      "labels": [
-        "question",
-        "via-composer",
-        "needs-review"
-      ],
-      "user": "evesloan",
-      "created": "2026-08-22T20:59:35Z",
-      "reactions": {
-        "up": 0,
-        "down": 0
-      },
-      "url": "https://github.com/evesloan/ourgavel/issues/3"
+      "url": "https://github.com/evesloan/ourgavel/issues/13"
     }
   ]
 }

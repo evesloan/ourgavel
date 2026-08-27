@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-08-27T18:56:21.000Z",
+      "outlet": "FOX5 Las Vegas",
+      "headline": "Defense set to begin in Tupac Shakur murder trial after prosecution rests",
+      "url": "https://www.fox5vegas.com/2026/08/27/defense-set-begin-tupac-shakur-murder-trial-after-prosecution-rests/",
+      "flag": null
+    },
+    {
       "ts": "2026-08-27T17:30:35.000Z",
       "outlet": "8 News Now",
       "headline": "Live updates: Day 9 of Tupac murder trial",
@@ -328,6 +335,7 @@
     "16hj30",
     "1w0762f",
     "tgn9f5",
-    "ingqji"
+    "ingqji",
+    "1bpa34a"
   ]
 }

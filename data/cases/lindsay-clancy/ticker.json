@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-08-26T23:12:00.000Z",
+      "outlet": "WCVB",
+      "headline": "Why the manslaughter option could matter as the Lindsay Clancy trial heads to the jury",
+      "url": "https://www.wcvb.com/article/manslaughter-clancy-trial/73537080",
+      "flag": null
+    },
+    {
       "ts": "2026-08-26T18:19:31.000Z",
       "outlet": "Court TV",
       "headline": "‘Are you kidding me?’: Tensions rise in courtroom during Lindsay Clancy’s murder trial",
@@ -419,6 +426,7 @@
     "pueisc",
     "1e026qf",
     "16jc2k1",
-    "1fv98ig"
+    "1fv98ig",
+    "sgbiha"
   ]
 }

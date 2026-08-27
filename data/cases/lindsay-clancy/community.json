@@ -1,5 +1,23 @@
 {
   "note": "Community-submitted nodes and edges that passed review. Populated by the review loop from GitHub issue submissions. Traction counts are synced from issue reactions each cycle.",
-  "nodes": [],
+  "nodes": [
+    {
+      "id": "c-7",
+      "type": "question",
+      "status": "open",
+      "x": 1680,
+      "y": 80,
+      "title": "Why was she on so many different drugs?",
+      "body": "_none given_\n\n---\nPosted anonymously via the composer on https://ourgavel.com.\nScreened for personal information before submission. Subject to the same review as every other post.",
+      "submittedBy": "evesloan",
+      "issueNumber": 7,
+      "issue": "https://github.com/evesloan/ourgavel/issues/7",
+      "traction": {
+        "up": 0,
+        "down": 0
+      },
+      "sources": []
+    }
+  ],
   "edges": []
 }

@@ -1,6 +1,20 @@
 {
   "items": [
     {
+      "ts": "2026-08-28T21:49:27.000Z",
+      "outlet": "News4JAX",
+      "headline": "Attorney says new charges against Mario Fernandez have ‘radically changed’ the legal landscape in Gardner’s case",
+      "url": "https://www.news4jax.com/news/local/2026/08/28/attorney-says-new-charges-against-mario-fernandez-have-radically-changed-the-legal-landscape-in-gardners-case/",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-28T21:45:17.000Z",
+      "outlet": "Action News Jax",
+      "headline": "New molestation charges against Mario Fernandez-Saldana; witness delays push Gardner trial to 2027",
+      "url": "https://www.actionnewsjax.com/news/local/new-molestation-charges-against-mario-fernandez-saldana-witness-delays-push-gardner-trial-2027/5DCKBVZCK5EK3H53NHUQY7QYIE/",
+      "flag": null
+    },
+    {
       "ts": "2026-08-27T20:13:39.000Z",
       "outlet": "News4JAX",
       "headline": "Court filing gives window into new defense strategy for Shanna Gardner in Jared Bridegan murder trial",
@@ -168,6 +182,8 @@
     "xy3h1o",
     "mfvqmr",
     "tgeoav",
-    "1lfjc9n"
+    "1lfjc9n",
+    "138cjyi",
+    "1ew87gh"
   ]
 }

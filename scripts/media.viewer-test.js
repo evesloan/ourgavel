@@ -11,7 +11,8 @@
  */
 const fs = require('fs'), path = require('path'), zlib = require('zlib'), http = require('http');
 const { execFileSync } = require('child_process');
-const { chromium } = require('/opt/node22/lib/node_modules/playwright');
+const { skipUnlessBrowser, launch } = require('./test-browser.js');
+skipUnlessBrowser('media.viewer-test.js');
 
 const ROOT = path.join(__dirname, '..');
 const SLUG = 'zz-viewer-fixture';
@@ -79,7 +80,7 @@ const ok = (n, c, x) => { c ? pass++ : (fail++, console.log('  FAIL  ' + n + (x 
     await new Promise(r => server.listen(PORT, r));
     const URL = 'http://localhost:' + PORT + '/cases/' + SLUG + '/';
 
-    const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium' });
+    const b = await launch();
     for (const [w, h, label, mob] of [[1280, 900, 'desktop', false], [390, 844, 'mobile', true]]) {
       const p = await b.newPage({ viewport: { width: w, height: h }, isMobile: mob, hasTouch: mob });
       const errs = [], ext = [];

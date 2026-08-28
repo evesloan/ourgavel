@@ -11,7 +11,8 @@
  * inspected.
  */
 const fs = require('fs'), path = require('path'), http = require('http');
-const { chromium } = require('/opt/node22/lib/node_modules/playwright');
+const { skipUnlessBrowser, launch } = require('./test-browser.js');
+skipUnlessBrowser('composer.test.js');
 const ROOT = path.join(__dirname, '..');
 const PORT = 8908;
 const TYPES = { '.html': 'text/html', '.png': 'image/png', '.json': 'application/json', '.svg': 'image/svg+xml', '.js': 'text/javascript', '.css': 'text/css', '.xml': 'application/xml', '.txt': 'text/plain' };
@@ -44,7 +45,7 @@ const ok = (n, c, x) => { c ? pass++ : (fail++, console.log('  FAIL  ' + n + (x 
     res.end(fs.readFileSync(f));
   });
   await new Promise(r => server.listen(PORT, r));
-  const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium' });
+  const b = await launch();
 
   try {
     for (const [w, h, label, mob] of [[1280, 900, 'desktop', false], [390, 844, 'mobile', true]]) {

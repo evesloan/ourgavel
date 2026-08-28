@@ -18,7 +18,8 @@
  * Run: node scripts/reader-path.test.js   (needs /opt/node22/lib/node_modules/playwright)
  * Cross-origin for real: localhost:8909 frames 127.0.0.1:8908.
  */
-const { chromium } = require('/opt/node22/lib/node_modules/playwright');
+const { skipUnlessBrowser, launch } = require('./test-browser.js');
+skipUnlessBrowser('reader-path.test.js');
 const http = require('http'), fs = require('fs'), path = require('path');
 
 const ROOT = path.join(__dirname, '..', 'public');
@@ -45,7 +46,7 @@ const ok=(c,m)=>{ c?(pass++,console.log('  ok   '+m)):(fail++,console.log('  FAI
 <iframe src="http://127.0.0.1:8908/cases/${SLUG}/board/embed/" width="100%" height="620" loading="lazy" title="board"></iframe>`)});
   await new Promise(r=>host.listen(8909,'127.0.0.1',r));
 
-  const browser = await chromium.launch();
+  const browser = await launch();
   const csp = [];
   const watchCsp = pg => pg.on('console', m => {
     const t = m.text();

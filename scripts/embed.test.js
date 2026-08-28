@@ -18,7 +18,8 @@
  */
 const fs = require('fs'), path = require('path'), http = require('http');
 const { execFileSync } = require('child_process');
-const { chromium } = require('/opt/node22/lib/node_modules/playwright');
+const { skipUnlessBrowser, launch } = require('./test-browser.js');
+skipUnlessBrowser('embed.test.js');
 
 const ROOT = path.join(__dirname, '..');
 const PUB = path.join(ROOT, 'public');
@@ -130,12 +131,15 @@ const slugs = fs.readdirSync(path.join(ROOT, 'data', 'cases'))
   console.log('\nMUST WORK EMBEDDED — real browser, real cross-origin page');
   fs.mkdirSync('/tmp/ourgavel-creator', { recursive: true });
   fs.writeFileSync('/tmp/ourgavel-creator/index.html',
-    '<!doctype html><meta charset="utf-8"><title>A creator page</title>' +
+    // data: favicon suppresses the browser's implicit /favicon.ico fetch, whose 404 against
+    // this bare test server surfaces as a console error on whichever case runs FIRST (then
+    // caches) — a timing-flaky false red that once failed the suite on alex-murdaugh only.
+    '<!doctype html><meta charset="utf-8"><link rel="icon" href="data:,"><title>A creator page</title>' +
     '<body style="font-family:system-ui"><h1>My trial coverage</h1><div id="slot"></div>');
 
   const siteSrv = await serve(PUB, SITE_PORT);
   const creatorSrv = await serve('/tmp/ourgavel-creator', CREATOR_PORT);
-  const browser = await chromium.launch();
+  const browser = await launch();
   try {
     for (const slug of slugs.slice(0, 2)) {
       if (!codes[slug]) continue;

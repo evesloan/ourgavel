@@ -1,22 +1,6 @@
 {
-  "synced": "2026-08-28T20:35:21.842Z",
+  "synced": "2026-08-28T21:20:28.621Z",
   "open": [
-    {
-      "number": 24,
-      "title": "[handoff:development] Clancy record: day-2 deliberations (no verdict, back Mon) + 5 verdict options/manslaughter fold",
-      "body": "### Lane\ndevelopment\n\n### SHA-256 of the decoded payload\n47d028d87e11b6a3252148e3ef0e35caf3218e34baa869a8c2fb096f833954e8\n\n### Payload (base64 of a gzipped JSON apply-plan)\n```\n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",
-      "labels": [
-        "handoff",
-        "lane:development"
-      ],
-      "user": "evesloan",
-      "created": "2026-08-28T20:35:22Z",
-      "reactions": {
-        "up": 0,
-        "down": 0
-      },
-      "url": "https://github.com/evesloan/ourgavel/issues/24"
-    },
     {
       "number": 13,
       "title": "Discussion: Why was she on so many different drugs?",

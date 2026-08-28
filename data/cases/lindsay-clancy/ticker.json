@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-08-28T09:18:00.000Z",
+      "outlet": "WCVB",
+      "headline": "Jury deliberations enter second day in Lindsay Clancy's murder trial",
+      "url": "https://www.wcvb.com/article/lindsay-clancy-trial-live-updates-aug-28/73551317",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-08-27T21:15:31.000Z",
       "outlet": "Boston 25 News",
       "headline": "Following closing remarks, Lindsay Clancy jury begins deliberations",
@@ -571,6 +578,7 @@
     "13cdlf4",
     "1vl0vhn",
     "1ym4iyu",
-    "5a5fxq"
+    "5a5fxq",
+    "1dw4c9h"
   ]
 }

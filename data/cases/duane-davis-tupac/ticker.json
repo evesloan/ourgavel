@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-08-28T15:32:41.000Z",
+      "outlet": "8 News Now",
+      "headline": "Live updates: Day 10 of Tupac murder trial",
+      "url": "https://www.8newsnow.com/news/tupac-murder-trial/live-updates-day-10-of-tupac-murder-trial/",
+      "flag": null
+    },
+    {
       "ts": "2026-08-28T03:14:40.000Z",
       "outlet": "News 3 Las Vegas",
       "headline": "Defense rests in Tupac Shakur murder trial after Duane Davis declines to testify",
@@ -352,6 +359,7 @@
     "ingqji",
     "1bpa34a",
     "1cbtkmz",
-    "88b910"
+    "88b910",
+    "jz81dd"
   ]
 }

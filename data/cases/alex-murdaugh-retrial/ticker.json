@@ -183,6 +183,13 @@
       "flag": null
     },
     {
+      "ts": "2026-08-14T07:23:00.000Z",
+      "outlet": "nypost.com",
+      "headline": "Alex Murdaugh’s ‘explosive’ request to blow up murder trial depends on DNA, stolen money and lies: attorney",
+      "url": "https://nypost.com/2026/08/14/us-news/alex-murdaughs-bid-to-dismiss-murder-trial-depends-on-dna-stolen-money-and-lies-attorney/",
+      "flag": null
+    },
+    {
       "ts": "2026-08-14T03:06:00.000Z",
       "outlet": "The Greenville News",
       "headline": "Alex Murdaugh returns to court as judge weighs key retrial motions",
@@ -208,6 +215,13 @@
       "outlet": "via MSN",
       "headline": "Judge rules Alex Murdaugh's retrial will have a change of venue, but no location set",
       "url": "https://www.msn.com/en-us/crime/general/alex-murdaugh-due-back-in-court-ahead-of-retrial/ar-AA2a5rCd",
+      "flag": "verdict-watch"
+    },
+    {
+      "ts": "2026-08-14T02:06:00.000Z",
+      "outlet": "WCBD News 2",
+      "headline": "Could Alex Murdaugh’s retrial happen in Charleston? Defense pushes for venue change",
+      "url": "https://www.counton2.com/news/local-news/could-alex-murdaughs-retrial-happen-in-charleston-defense-pushes-for-venue-change/",
       "flag": "verdict-watch"
     },
     {
@@ -289,8 +303,6 @@
     }
   ],
   "seen": [
-    "29qpoe",
-    "18djco0",
     "1jrxtdc",
     "kr4n6m",
     "1rdlewo",
@@ -888,6 +900,8 @@
     "1plki6j",
     "18b280f",
     "1g9zde2",
-    "g9im5h"
+    "g9im5h",
+    "o9p05v",
+    "1vuzt61"
   ]
 }

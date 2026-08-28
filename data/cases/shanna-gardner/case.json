@@ -1,0 +1,262 @@
+{
+  "slug": "shanna-gardner",
+  "title": "State of Florida v. Shanna Gardner",
+  "shortTitle": "Shanna Gardner Murder-for-Hire Trial",
+  "status": "active",
+  "phase": "Pretrial — jury selection set for May 3, 2027",
+  "court": "Duval County Circuit Court, Florida",
+  "judge": "Judge London Kite",
+  "incidentDate": "2022-02-16",
+  "trialStart": "2027-05-10",
+  "charges": "Four counts, by indictment: first-degree murder, conspiracy to commit murder, solicitation to commit a capital felony, and child abuse. Prosecutors withdrew their notice to seek the death penalty in November 2025 for both Gardner and Mario Fernandez, so if she is convicted of the murder count the sentence is fixed by statute at life in prison — there is no penalty phase to weigh. She is the ex-wife of the victim, Jared Bridegan, and the state says she is the person who wanted him dead.",
+  "defendant": "Shanna Gardner, 39",
+  "plea": "Not guilty. Gardner has pleaded not guilty to all four counts; a court filing from her lawyers this month argues that Mario Fernandez — the man a jury convicted of arranging the killing — may have had a motive of his own, unrelated to Gardner.",
+  "victims": "Jared Bridegan, 33",
+  "plainSummary": "Jared Bridegan, a 33-year-old Microsoft manager, was shot dead on a dark Jacksonville Beach street in February 2022 after stopping to move a tire left in the road. The state says his ex-wife, Shanna Gardner, and her husband, Mario Fernandez, arranged and paid for the killing after years of fighting over their children. Fernandez was convicted in August 2026. Gardner is charged too, has pleaded not guilty, and now goes to trial in 2027 — the last of the three to be tried, and the person prosecutors describe as the one who wanted it done.",
+  "statusNow": "Gardner's trial, which was set to begin with jury selection on Aug. 31, 2026, was pushed to 2027 on an unopposed defense motion for a continuance. Judge London Kite set jury selection for May 3, 2027 and trial for May 10, 2027 (scheduled across three weeks). Prosecutors say they will take the Gardner and Tenon cases back to the grand jury to have them joined, so Gardner and the accused gunman, Henry Tenon, would be tried together. The next pretrial hearing is Oct. 27, 2026.",
+  "statusNowSources": [
+    {
+      "outlet": "News4Jax/WJXT — trial delayed, state to seek joint trial",
+      "url": "https://www.news4jax.com/news/local/2026/08/27/judge-to-settle-final-motions-before-jury-selection-starts-monday-in-shanna-gardner-trial-in-jared-bridegan-murder/"
+    },
+    {
+      "outlet": "Action News Jax — Gardner and Tenon to be tried together in May",
+      "url": "https://www.actionnewsjax.com/news/local/jared-bridegan-murder-shanna-gardner-henry-tenon-be-tried-same-time-may-judge-says/B7C45UN4JFC55DVKMIRFFAAOFE/"
+    },
+    {
+      "outlet": "First Coast News — Gardner now faces trial in 2027",
+      "url": "https://www.firstcoastnews.com/article/news/local/jared-bridegan-murder-trials/shanna-gardner-trial-2027-jared-bridegan-murder/77-6a780e25-14e6-47f0-973f-efa5a325793e"
+    }
+  ],
+  "storySoFar": "On Feb. 16, 2022, Jared Bridegan stopped his car on a Jacksonville Beach street because a tire had been left in the road. He got out to move it and was shot dead, his young child in the car. Investigators say the killing was arranged by his ex-wife, Shanna Gardner, and her husband, Mario Fernandez, after a long custody fight, and carried out by Henry Tenon, who rented a property from Fernandez. All three were charged. Tenon first pleaded guilty and agreed to testify against the other two, then moved to withdraw that plea, leaving the state to prove the case without its cooperating witness. Fernandez was tried first and convicted of first-degree murder and solicitation on Aug. 26, 2026. Gardner is charged with first-degree murder, conspiracy, solicitation and child abuse, has pleaded not guilty, and is now scheduled to be tried in 2027 — the state has said it will move to try her alongside Tenon.",
+  "storySoFarSources": [
+    {
+      "outlet": "News4Jax/WJXT — four-year case timeline",
+      "url": "https://www.news4jax.com/news/local/2026/02/16/4-years-later-a-timeline-of-the-jared-bridegan-murder-for-hire-case/"
+    },
+    {
+      "outlet": "CBS News / AP — case overview",
+      "url": "https://www.cbsnews.com/news/microsoft-manager-murder-jared-bridegan-suspect-trial-florida/"
+    },
+    {
+      "outlet": "News4Jax/WJXT — Tenon moves to withdraw guilty plea",
+      "url": "https://www.news4jax.com/news/local/2026/02/17/judge-to-decide-if-accused-gunman-in-jared-bridegan-murder-for-hire-case-can-withdraw-guilty-plea-go-to-trial/"
+    },
+    {
+      "outlet": "News4Jax/WJXT — Fernandez convicted",
+      "url": "https://www.news4jax.com/news/local/2026/08/26/truth-won-today-says-jared-bridegans-widow-after-mario-fernandez-convicted-of-murder-in-2022-shooting/"
+    },
+    {
+      "outlet": "News4Jax/WJXT — trial delayed, state to seek joint trial",
+      "url": "https://www.news4jax.com/news/local/2026/08/27/judge-to-settle-final-motions-before-jury-selection-starts-monday-in-shanna-gardner-trial-in-jared-bridegan-murder/"
+    }
+  ],
+  "keywords": [
+    "shanna gardner",
+    "shanna gardner trial",
+    "shanna nicole gardner",
+    "gardner bridegan",
+    "shanna gardner murder for hire",
+    "henry tenon",
+    "jared bridegan ex wife",
+    "gardner tenon joint trial",
+    "london kite",
+    "duval county"
+  ],
+  "weakKeywords": [
+    "bridegan",
+    "jared bridegan",
+    "jacksonville beach",
+    "murder for hire",
+    "mario fernandez"
+  ],
+  "mediaQueries": [
+    {
+      "q": "Duval County Courthouse Jacksonville Florida",
+      "kind": "place",
+      "must": [
+        "courthouse",
+        "jacksonville"
+      ],
+      "caption": "The Duval County Courthouse, Jacksonville, Florida",
+      "alt": "Exterior of the Duval County Courthouse in Jacksonville"
+    },
+    {
+      "q": "Jacksonville Florida downtown skyline",
+      "kind": "place",
+      "must": [
+        "jacksonville"
+      ],
+      "deny": [
+        "gardner",
+        "bridegan",
+        "fernandez"
+      ],
+      "caption": "Jacksonville, Florida",
+      "alt": "The Jacksonville, Florida skyline"
+    }
+  ],
+  "verdictKeywords": [
+    "verdict",
+    "guilty",
+    "not guilty",
+    "acquit",
+    "convict",
+    "mistrial",
+    "hung jury",
+    "deliberat"
+  ],
+  "feeds": [
+    {
+      "outlet": "Court TV — Shanna Gardner",
+      "url": "https://www.courttv.com/tag/shanna-gardner/feed/",
+      "verified": true,
+      "_ok": false
+    },
+    {
+      "outlet": "Court TV — all news",
+      "url": "https://www.courttv.com/feed/",
+      "verified": true,
+      "_ok": true
+    },
+    {
+      "outlet": "News4Jax/WJXT — news",
+      "url": "https://www.news4jax.com/arc/outboundfeeds/rss/category/news/?outputType=xml",
+      "verified": true,
+      "_ok": true
+    },
+    {
+      "outlet": "News4Jax/WJXT — local",
+      "url": "https://www.news4jax.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+      "verified": true,
+      "_ok": true
+    },
+    {
+      "outlet": "Action News Jax — news",
+      "url": "https://www.actionnewsjax.com/arc/outboundfeeds/rss/category/news/?outputType=xml",
+      "verified": true,
+      "_ok": true
+    }
+  ],
+  "watchPages": [
+    {
+      "outlet": "News4Jax/WJXT — Shanna Gardner topic page",
+      "url": "https://www.news4jax.com/topic/Shanna_Gardner/",
+      "verified": false
+    },
+    {
+      "outlet": "Court TV — Shanna Gardner tag",
+      "url": "https://www.courttv.com/tag/shanna-gardner/",
+      "verified": true
+    },
+    {
+      "outlet": "First Coast News — Bridegan murder trials section",
+      "url": "https://www.firstcoastnews.com/news/local/jared-bridegan-murder-trials",
+      "verified": false
+    },
+    {
+      "outlet": "Duval County Clerk — CORE public case records",
+      "url": "https://core.duvalclerk.com/",
+      "verified": true
+    }
+  ],
+  "verdictOptions": [
+    {
+      "option": "Guilty of first-degree murder",
+      "consequence": "Life in prison without parole, automatically. Because prosecutors withdrew the death penalty, Florida law leaves the judge no range: a capital felony where death is not imposed carries life imprisonment. There would be no penalty phase.",
+      "sources": [
+        {
+          "outlet": "Fla. Stat. § 775.082 — penalties",
+          "url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0700-0799/0775/Sections/0775.082.html"
+        },
+        {
+          "outlet": "Fla. Stat. § 782.04 — degrees of murder",
+          "url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0700-0799/0782/Sections/0782.04.html"
+        },
+        {
+          "outlet": "News4Jax/WJXT — death penalty withdrawn",
+          "url": "https://www.news4jax.com/news/local/2025/11/21/prosecutors-take-death-penalty-off-the-table-for-shanna-gardner-mario-fernandez-in-jared-bridegan-murder-for-hire-case/"
+        }
+      ]
+    },
+    {
+      "option": "Guilty of solicitation to commit a capital felony",
+      "consequence": "Up to 30 years. Asking or hiring someone to commit a capital crime is graded one notch down, as a first-degree felony, which the sentencing statute caps at 30 years. The jury can convict on this count, on the murder count, on both, or on neither.",
+      "sources": [
+        {
+          "outlet": "Fla. Stat. § 777.04 — criminal solicitation",
+          "url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0700-0799/0777/Sections/0777.04.html"
+        },
+        {
+          "outlet": "Fla. Stat. § 775.082 — penalties",
+          "url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0700-0799/0775/Sections/0775.082.html"
+        }
+      ]
+    },
+    {
+      "option": "Not guilty on all counts",
+      "consequence": "She would be acquitted and could not be tried again for this case. It would not touch Henry Tenon's prosecution, which the state is moving to join with hers for the 2027 trial.",
+      "sources": [
+        {
+          "outlet": "News4Jax/WJXT — trial delayed, state to seek joint trial",
+          "url": "https://www.news4jax.com/news/local/2026/08/27/judge-to-settle-final-motions-before-jury-selection-starts-monday-in-shanna-gardner-trial-in-jared-bridegan-murder/"
+        },
+        {
+          "outlet": "Action News Jax — Gardner and Tenon to be tried together in May",
+          "url": "https://www.actionnewsjax.com/news/local/jared-bridegan-murder-shanna-gardner-henry-tenon-be-tried-same-time-may-judge-says/B7C45UN4JFC55DVKMIRFFAAOFE/"
+        }
+      ]
+    },
+    {
+      "option": "Hung jury (no unanimous verdict)",
+      "consequence": "A mistrial, and nothing is decided. Prosecutors would be free to try her again before a new jury — a hung jury is not an acquittal.",
+      "sources": [
+        {
+          "outlet": "Fla. Stat. § 782.04 — degrees of murder",
+          "url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0700-0799/0782/Sections/0782.04.html"
+        },
+        {
+          "outlet": "CBS News / AP — case overview",
+          "url": "https://www.cbsnews.com/news/microsoft-manager-murder-jared-bridegan-suspect-trial-florida/"
+        }
+      ]
+    }
+  ],
+  "legalStandard": {
+    "name": "Principal liability — how Florida convicts a person who never fired the gun",
+    "test": "Florida has no separate, lighter crime for the person who arranges a killing. Under the principals statute, whoever \"aids, abets, counsels, hires, or otherwise procures\" an offense is guilty of that offense itself — the same first-degree murder as the shooter — whether or not they were present. For a defendant alleged to have paid the person who did it, the standard jury instruction asks two things: whether the defendant had a conscious intent that the killing be done, and whether the defendant did some act or said some word that actually caused it to happen. Because the top charge is first-degree murder, the state must also prove premeditation. Gardner is charged as a principal and by conspiracy and solicitation; she has pleaded not guilty, and the state carries the burden on every element.",
+    "burden": "Entirely on the state, beyond a reasonable doubt, on every count. Gardner does not have to prove anything, does not have to testify, and does not have to explain any piece of the state's evidence. Her side's task is to leave the jury unsure. The verdict must be unanimous either way.",
+    "sources": [
+      {
+        "outlet": "Fla. Stat. § 777.011 — Principal in first degree",
+        "url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0700-0799/0777/Sections/0777.011.html"
+      },
+      {
+        "outlet": "Fla. Std. Jury Instr. (Crim.) 3.5(b) — principals, active participant hired by the defendant",
+        "url": "https://forms.justia.com/florida/criminal/final-charge-to-the-jury/5-b-principals-when-active-participant-hired-80912.html"
+      },
+      {
+        "outlet": "Fla. Stat. § 782.04 — degrees of murder",
+        "url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0700-0799/0782/Sections/0782.04.html"
+      },
+      {
+        "outlet": "Fla. Stat. § 777.04 — criminal solicitation",
+        "url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0700-0799/0777/Sections/0777.04.html"
+      }
+    ],
+    "qa": [
+      {
+        "q": "She was not at the scene. How can that be first-degree murder?",
+        "a": "Florida treats the person who hires or procures a killing as a principal — guilty of the same crime as the person who carried it out, whether or not they were present. That is why the charge against Gardner is first-degree murder and not something lesser."
+      },
+      {
+        "q": "Why is she being tried last?",
+        "a": "Henry Tenon, the accused gunman, first pleaded guilty and agreed to testify, then moved to withdraw that plea. Mario Fernandez was tried first and convicted in August 2026. Gardner's trial was continued to 2027, and the state now says it will move to try her together with Tenon."
+      },
+      {
+        "q": "What sentence does she face if convicted of the murder count?",
+        "a": "Life in prison. Prosecutors withdrew the death penalty in November 2025, and Florida law fixes the sentence for a capital felony where death is not imposed at life imprisonment, with no penalty phase."
+      }
+    ]
+  }
+}

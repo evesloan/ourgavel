@@ -1,0 +1,215 @@
+{
+  "note": "The question the jury will be asked, and the evidence pulling on each side — with your theories, labeled until proven. Left: what helps the defense. Right: what helps the state. Nothing here is a claim about whether Shanna Gardner did it; every card is something in a court filing or attributed reporting, with the source attached. This is a pretrial case — no jury has heard evidence yet. Jared Bridegan's surviving children are minors and are not named or described anywhere on this board.",
+  "nodes": [
+    {
+      "id": "fernandez-convicted",
+      "type": "fact",
+      "x": 500,
+      "y": 60,
+      "status": "verified",
+      "title": "A jury has already convicted the man the state calls her partner",
+      "body": "On Aug. 26, 2026 a Duval County jury found Mario Fernandez — Gardner's husband — guilty of first-degree murder and solicitation to commit a capital felony in Jared Bridegan's death. That is the case the state built first, and it is the front door to Gardner's: prosecutors say the two arranged the killing together. A conviction in his trial is not a verdict in hers, which is why her charges are still to be decided.",
+      "sources": [
+        {
+          "outlet": "News4Jax/WJXT — Fernandez convicted",
+          "url": "https://www.news4jax.com/news/local/2026/08/26/truth-won-today-says-jared-bridegans-widow-after-mario-fernandez-convicted-of-murder-in-2022-shooting/"
+        },
+        {
+          "outlet": "Action News Jax — jury deliberations / verdict",
+          "url": "https://www.actionnewsjax.com/news/local/jury-deliberating-case-accused-murder-for-hire-suspect-mario-fernandez-saldana/YRMMWFLHZZBSJHEHCDIA35QKDE/"
+        }
+      ]
+    },
+    {
+      "id": "did-she-arrange-it",
+      "type": "question",
+      "x": 500,
+      "y": 340,
+      "status": "open",
+      "central": true,
+      "title": "Did Shanna Gardner arrange and pay to have Jared Bridegan killed?",
+      "body": "This is the whole case. Florida treats the person who hires a killing the same as the person who fires the gun, so the jury will not be asked whether Gardner was on that street. It will be asked two things: did she intend the killing to happen, and did she do or say something that actually caused it? The state must prove both beyond a reasonable doubt, on every count.",
+      "sources": [
+        {
+          "outlet": "Fla. Stat. § 777.011 — Principal in first degree",
+          "url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0700-0799/0777/Sections/0777.011.html"
+        },
+        {
+          "outlet": "Fla. Std. Jury Instr. (Crim.) 3.5(b) — principals, active participant hired by the defendant",
+          "url": "https://forms.justia.com/florida/criminal/final-charge-to-the-jury/5-b-principals-when-active-participant-hired-80912.html"
+        }
+      ]
+    },
+    {
+      "id": "tried-with-tenon",
+      "type": "fact",
+      "x": 500,
+      "y": 620,
+      "status": "verified",
+      "title": "The trial slipped to 2027 — and the state wants her tried with the gunman",
+      "body": "On an unopposed defense motion, Judge London Kite moved Gardner's trial from Aug. 31, 2026 to jury selection on May 3, 2027 and trial on May 10, 2027. Prosecutors said they will take the Gardner and Tenon cases back to the grand jury to have them joined, so Gardner and the accused gunman, Henry Tenon, would be tried together. The next pretrial hearing is Oct. 27, 2026.",
+      "sources": [
+        {
+          "outlet": "News4Jax/WJXT — trial delayed, state to seek joint trial",
+          "url": "https://www.news4jax.com/news/local/2026/08/27/judge-to-settle-final-motions-before-jury-selection-starts-monday-in-shanna-gardner-trial-in-jared-bridegan-murder/"
+        },
+        {
+          "outlet": "Action News Jax — Gardner and Tenon to be tried together in May",
+          "url": "https://www.actionnewsjax.com/news/local/jared-bridegan-murder-shanna-gardner-henry-tenon-be-tried-same-time-may-judge-says/B7C45UN4JFC55DVKMIRFFAAOFE/"
+        }
+      ]
+    },
+    {
+      "id": "custody-war",
+      "type": "fact",
+      "x": 850,
+      "y": 60,
+      "status": "verified",
+      "title": "The state's motive: a years-long fight over the children",
+      "body": "Prosecutors say the killing grew out of a bitter, years-long custody dispute between Bridegan and his ex-wife. That is the motive the state has described in charging the case as a murder for hire. The couple's children are minors and are not described here; only the existence of the custody dispute, as stated in the record and coverage, is noted.",
+      "sources": [
+        {
+          "outlet": "News4Jax/WJXT — four-year case timeline",
+          "url": "https://www.news4jax.com/news/local/2026/02/16/4-years-later-a-timeline-of-the-jared-bridegan-murder-for-hire-case/"
+        },
+        {
+          "outlet": "CBS News / AP — case overview",
+          "url": "https://www.cbsnews.com/news/microsoft-manager-murder-jared-bridegan-suspect-trial-florida/"
+        }
+      ]
+    },
+    {
+      "id": "the-checks",
+      "type": "fact",
+      "x": 850,
+      "y": 320,
+      "status": "verified",
+      "title": "The money the state calls the payment",
+      "body": "The state's theory is that Bridegan was killed for hire — that money moved to Henry Tenon in exchange for the killing. Tenon rented a property from Fernandez, and the payments were central to the prosecution that convicted Fernandez. In Gardner's case those same facts are the state's, and are contested: no jury has weighed them against her yet.",
+      "sources": [
+        {
+          "outlet": "News4Jax/WJXT — four-year case timeline",
+          "url": "https://www.news4jax.com/news/local/2026/02/16/4-years-later-a-timeline-of-the-jared-bridegan-murder-for-hire-case/"
+        },
+        {
+          "outlet": "NBC News / Dateline — arrests announced",
+          "url": "https://www.nbcnews.com/dateline/in-the-news/authorities-announce-another-arrest-connection-jared-bridegans-februar-rcna75348"
+        }
+      ]
+    },
+    {
+      "id": "wiretap-evidence",
+      "type": "fact",
+      "x": 850,
+      "y": 580,
+      "status": "verified",
+      "title": "The judge let the wiretap evidence stand",
+      "body": "Gardner's lawyers moved to throw out evidence gathered from court-authorized wiretaps. In June 2026 Judge Kite denied that motion, so the intercepted communications remain available to the state. It is a pretrial ruling about what the jury may hear, not a finding about what the evidence shows.",
+      "sources": [
+        {
+          "outlet": "News4Jax/WJXT — wiretap evidence ruling",
+          "url": "https://www.news4jax.com/news/local/2026/06/03/judge-denies-motion-from-shanna-gardners-attorneys-to-toss-evidence-from-court-authorized-wiretaps/"
+        }
+      ]
+    },
+    {
+      "id": "tenon-recanted",
+      "type": "fact",
+      "x": 160,
+      "y": 60,
+      "status": "verified",
+      "title": "The state's cooperating witness took his deal back",
+      "body": "Henry Tenon, the accused gunman, first pleaded guilty to second-degree murder and agreed to testify against Gardner and Fernandez — testimony that was once the spine of the state's case. He then moved to withdraw that guilty plea and go to trial. That leaves the state to prove its case against Gardner without the witness who was closest to the killing.",
+      "sources": [
+        {
+          "outlet": "News4Jax/WJXT — Tenon moves to withdraw guilty plea",
+          "url": "https://www.news4jax.com/news/local/2026/02/17/judge-to-decide-if-accused-gunman-in-jared-bridegan-murder-for-hire-case-can-withdraw-guilty-plea-go-to-trial/"
+        }
+      ]
+    },
+    {
+      "id": "def-alt-motive",
+      "type": "rumor",
+      "x": 160,
+      "y": 320,
+      "status": "unverified",
+      "title": "The defense's filed theory: Fernandez had his own motive",
+      "body": "A court filing from Gardner's lawyers this month argues that Fernandez may have had a motive to kill Bridegan that was unrelated to Gardner, tied to lewd-and-lascivious molestation charges filed against Fernandez after his conviction. The defense asked for time to investigate. This is the defense's own filing, not a finding by any court; it is labeled here as a theory, and the details of those separate charges are not set out.",
+      "sources": [
+        {
+          "outlet": "News4Jax/WJXT — court filing on Gardner's defense strategy",
+          "url": "https://www.news4jax.com/news/local/2026/08/27/court-filing-gives-window-into-new-defense-strategy-for-shanna-gardner-in-jared-bridegan-murder-trial/"
+        },
+        {
+          "outlet": "WOKV — Fernandez charged with molestation after conviction",
+          "url": "https://www.wokv.com/news/local/man-convicted-killing-jared-bridegan-now-accused-lewdlascivious-molestation-child/ZPDBQHODXBAVDISU3WF7SRYVSY/"
+        }
+      ]
+    },
+    {
+      "id": "no-death-penalty",
+      "type": "fact",
+      "x": 160,
+      "y": 580,
+      "status": "verified",
+      "title": "What a conviction would carry",
+      "body": "In November 2025 prosecutors withdrew their notice to seek the death penalty against both Gardner and Fernandez. For Gardner that fixes the stakes on the murder count: a conviction there carries life in prison, with no separate penalty phase for a jury to weigh.",
+      "sources": [
+        {
+          "outlet": "News4Jax/WJXT — death penalty withdrawn",
+          "url": "https://www.news4jax.com/news/local/2025/11/21/prosecutors-take-death-penalty-off-the-table-for-shanna-gardner-mario-fernandez-in-jared-bridegan-murder-for-hire-case/"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "fernandez-convicted",
+      "to": "did-she-arrange-it",
+      "type": "explains",
+      "label": "the case against her alleged partner already went to a jury"
+    },
+    {
+      "from": "custody-war",
+      "to": "did-she-arrange-it",
+      "type": "supports",
+      "label": "the state's motive"
+    },
+    {
+      "from": "the-checks",
+      "to": "did-she-arrange-it",
+      "type": "supports",
+      "label": "the state calls it a payment"
+    },
+    {
+      "from": "wiretap-evidence",
+      "to": "did-she-arrange-it",
+      "type": "explains",
+      "label": "what the jury may hear"
+    },
+    {
+      "from": "tenon-recanted",
+      "to": "did-she-arrange-it",
+      "type": "contradicts",
+      "label": "the state lost its cooperating witness"
+    },
+    {
+      "from": "def-alt-motive",
+      "to": "did-she-arrange-it",
+      "type": "contested",
+      "label": "the defense's alternative"
+    },
+    {
+      "from": "no-death-penalty",
+      "to": "did-she-arrange-it",
+      "type": "explains",
+      "label": "what a conviction would carry"
+    },
+    {
+      "from": "tried-with-tenon",
+      "to": "did-she-arrange-it",
+      "type": "explains",
+      "label": "when and how this gets tried"
+    }
+  ]
+}

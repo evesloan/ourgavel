@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-08-28T14:49:00.000Z",
+      "outlet": "WCVB",
+      "headline": "Lindsay Clancy 'nervous' awaiting verdict, her attorney says",
+      "url": "https://www.wcvb.com/article/lindsay-clancy-nervous-awaiting-verdict-aug-28/73553662",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-08-28T13:20:46.000Z",
       "outlet": "Boston 25 News",
       "headline": "Lindsay Clancy trial (live updates): Jury resumes deliberations with 5 verdict options on the table",
@@ -611,6 +618,7 @@
     "1vbbv92",
     "u0xlm",
     "4sdhib",
-    "jv6wyt"
+    "jv6wyt",
+    "dnqwcf"
   ]
 }

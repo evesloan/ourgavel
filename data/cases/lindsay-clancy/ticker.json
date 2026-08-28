@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-08-28T18:27:00.000Z",
+      "outlet": "WCVB",
+      "headline": "What happens if Clancy is found not guilty due to mental illness?",
+      "url": "https://www.wcvb.com/article/what-happens-lindsay-clancy-not-guilty-mental-illness/73555501",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-08-28T16:28:57.000Z",
       "outlet": "Boston 25 News",
       "headline": "Lindsay Clancy jury question emerges. What does it mean & how long will deliberations last?",
@@ -643,6 +650,7 @@
     "dnqwcf",
     "112uzkl",
     "h4tjih",
-    "dk7rmf"
+    "dk7rmf",
+    "p1cfxz"
   ]
 }

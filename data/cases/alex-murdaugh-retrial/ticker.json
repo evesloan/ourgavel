@@ -106,13 +106,6 @@
       "flag": "verdict-watch"
     },
     {
-      "ts": "2026-08-14T13:06:00.000Z",
-      "outlet": "via MSN",
-      "headline": "Alex Murdaugh’s retrial will be relocated, and his original testimony can be used conditionally, judge rules",
-      "url": "https://www.msn.com/en-us/news/crime/alex-murdaugh-s-retrial-will-be-relocated-and-his-original-testimony-can-be-used-conditionally-judge-rules/ar-AA2a5Bz6",
-      "flag": null
-    },
-    {
       "ts": "2026-08-14T12:22:00.000Z",
       "outlet": "via Yahoo News",
       "headline": "Alex Murdaugh's double murder retrial to be moved over jury fairness concerns, judge rules",
@@ -166,6 +159,13 @@
       "outlet": "KRCR",
       "headline": "Judge orders Alex Murdaugh retrial moved outside 14th Circuit over jury fairness concerns",
       "url": "https://krcrtv.com/news/nation-world/judge-orders-alex-murdaugh-retrial-moved-outside-14th-circuit-over-jury-fairness-concerns",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-14T09:54:00.000Z",
+      "outlet": "krdo.com",
+      "headline": "Alex Murdaugh’s retrial will be relocated, and his original testimony can be used conditionally, judge rules",
+      "url": "https://krdo.com/news/national-world/cnn-national/2026/08/14/alex-murdaugh-hearing-today-may-see-clash-over-whether-to-move-2nd-trial-to-charleston/",
       "flag": null
     },
     {
@@ -887,6 +887,7 @@
     "13zrc5b",
     "1plki6j",
     "18b280f",
-    "1g9zde2"
+    "1g9zde2",
+    "g9im5h"
   ]
 }

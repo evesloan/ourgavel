@@ -1,6 +1,17 @@
 {
-  "updated": "2026-08-28T00:26:00.000Z",
-  "published": [],
+  "updated": "2026-08-28T16:40:21.044Z",
+  "published": [
+    {
+      "local": "media/shanna-gardner/953ff6dcc850.jpg",
+      "licence": "CC BY-SA 3.0",
+      "credit": "Georgia Guercio"
+    },
+    {
+      "local": "media/shanna-gardner/70c15ed2a19f.jpg",
+      "licence": "CC0",
+      "credit": "AndrewAvitus"
+    }
+  ],
   "heldForReview": [],
   "refused": []
 }

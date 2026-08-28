@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-08-28T16:28:57.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Lindsay Clancy jury question emerges. What does it mean & how long will deliberations last?",
+      "url": "https://www.boston25news.com/news/local/lindsay-clancy-jury-question-emerges-what-does-it-mean-how-long-will-deliberations-last/MNQ65L7SPVEZFGNKEVI5AJRNUE/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-08-28T15:51:36.000Z",
       "outlet": "Boston.com",
       "headline": "Support for Lindsay Clancy, from pink T-shirts to conservative stars",
@@ -627,6 +634,7 @@
     "4sdhib",
     "jv6wyt",
     "dnqwcf",
-    "112uzkl"
+    "112uzkl",
+    "h4tjih"
   ]
 }

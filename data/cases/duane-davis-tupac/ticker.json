@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-08-28T15:57:09.000Z",
+      "outlet": "News 3 Las Vegas",
+      "headline": "WATCH LIVE: Final jury instructions expected in Tupac Shakur murder trial",
+      "url": "https://news3lv.com/news/local/final-jury-instructions-tupac-shakur-murder-trial-las-vegas-duane-davis-keffe-d-nevada-courtroom",
+      "flag": null
+    },
+    {
       "ts": "2026-08-28T15:32:41.000Z",
       "outlet": "8 News Now",
       "headline": "Live updates: Day 10 of Tupac murder trial",
@@ -360,6 +367,7 @@
     "1bpa34a",
     "1cbtkmz",
     "88b910",
-    "jz81dd"
+    "jz81dd",
+    "23dhz3"
   ]
 }

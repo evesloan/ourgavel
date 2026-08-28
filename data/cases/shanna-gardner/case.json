@@ -258,5 +258,39 @@
         "a": "Life in prison. Prosecutors withdrew the death penalty in November 2025, and Florida law fixes the sentence for a capital felony where death is not imposed at life imprisonment, with no penalty phase."
       }
     ]
-  }
+  },
+  "media": [
+    {
+      "type": "image",
+      "query": "Duval County Courthouse Jacksonville Florida",
+      "local": "media/shanna-gardner/953ff6dcc850.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Jacksonville,_FL,_Courthouse,_Duval_County,_08-09-2010_(6).JPG",
+      "source": "https://commons.wikimedia.org/wiki/File:Jacksonville,_FL,_Courthouse,_Duval_County,_08-09-2010_(6).JPG",
+      "caption": "The Duval County Courthouse, Jacksonville, Florida",
+      "alt": "Exterior of the Duval County Courthouse in Jacksonville",
+      "credit": "Georgia Guercio",
+      "rights": "cc-licensed",
+      "licence": "CC BY-SA 3.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "bytes": 267244,
+      "addedAt": "2026-08-28T16:40:21.044Z",
+      "verified": "commons-api"
+    },
+    {
+      "type": "image",
+      "query": "Jacksonville Florida downtown skyline",
+      "local": "media/shanna-gardner/70c15ed2a19f.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Downtown_Jacksonville,_Florida.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Downtown_Jacksonville,_Florida.jpg",
+      "caption": "Jacksonville, Florida",
+      "alt": "The Jacksonville, Florida skyline",
+      "credit": "AndrewAvitus",
+      "rights": "public-domain",
+      "licence": "CC0",
+      "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "bytes": 343972,
+      "addedAt": "2026-08-28T16:40:21.044Z",
+      "verified": "commons-api"
+    }
+  ]
 }

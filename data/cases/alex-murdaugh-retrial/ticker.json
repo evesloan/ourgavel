@@ -176,6 +176,13 @@
       "flag": null
     },
     {
+      "ts": "2026-08-14T07:47:00.000Z",
+      "outlet": "via MSN",
+      "headline": "Judge orders Alex Murdaugh's murder retrial moved out of Colleton",
+      "url": "https://www.msn.com/en-us/news/crime/judge-orders-alex-murdaughs-murder-retrial-moved-out-of-colleton/ar-AA2a7uez",
+      "flag": null
+    },
+    {
       "ts": "2026-08-14T03:06:00.000Z",
       "outlet": "The Greenville News",
       "headline": "Alex Murdaugh returns to court as judge weighs key retrial motions",
@@ -879,6 +886,7 @@
     "w6a3iz",
     "13zrc5b",
     "1plki6j",
-    "18b280f"
+    "18b280f",
+    "1g9zde2"
   ]
 }

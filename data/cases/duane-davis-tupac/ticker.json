@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-08-28T03:14:40.000Z",
+      "outlet": "News 3 Las Vegas",
+      "headline": "Defense rests in Tupac Shakur murder trial after Duane Davis declines to testify",
+      "url": "https://news3lv.com/news/local/defense-rests-in-tupac-shakur-murder-trial-after-duane-keefe-d-davis-declines-to-testify",
+      "flag": null
+    },
+    {
       "ts": "2026-08-27T22:31:39.000Z",
       "outlet": "News 3 Las Vegas",
       "headline": "Bay Law Injury Attorneys’ Deniz Bayramoglu weighs in as Duane Davis trial nears end",
@@ -344,6 +351,7 @@
     "tgn9f5",
     "ingqji",
     "1bpa34a",
-    "1cbtkmz"
+    "1cbtkmz",
+    "88b910"
   ]
 }

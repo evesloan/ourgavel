@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-08-28T22:53:24.000Z",
+      "outlet": "FOX5 Las Vegas",
+      "headline": "Tupac murder trial: Week two testimony recap",
+      "url": "https://www.fox5vegas.com/2026/08/28/tupac-murder-trial-week-two-testimony-recap/",
+      "flag": null
+    },
+    {
       "ts": "2026-08-28T15:57:09.000Z",
       "outlet": "News 3 Las Vegas",
       "headline": "WATCH LIVE: Final jury instructions expected in Tupac Shakur murder trial",
@@ -368,6 +375,7 @@
     "1cbtkmz",
     "88b910",
     "jz81dd",
-    "23dhz3"
+    "23dhz3",
+    "jhfm1y"
   ]
 }

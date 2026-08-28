@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-08-28T13:20:46.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Lindsay Clancy trial (live updates): Jury resumes deliberations with 5 verdict options on the table",
+      "url": "https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-jury-resumes-deliberations-with-5-verdict-options-table/X47PPLV3HBG7JMZTLKPHNBBIBU/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-08-28T12:32:19.000Z",
       "outlet": "Boston.com",
       "headline": "Watch live: Lindsay Clancy trial jury deliberations, wait for verdict continue",
@@ -603,6 +610,7 @@
     "1dw4c9h",
     "1vbbv92",
     "u0xlm",
-    "4sdhib"
+    "4sdhib",
+    "jv6wyt"
   ]
 }

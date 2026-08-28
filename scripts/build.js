@@ -2144,6 +2144,7 @@ ${caseNav(c, 'board')}
 <textarea id="embedcode" readonly rows="3" style="width:100%;font-family:ui-monospace,Consolas,monospace;font-size:12px;padding:10px;border-radius:6px;border:1px solid var(--line);background:var(--bg);color:var(--ink);resize:vertical">${esc(embedCode)}</textarea>
 <p><button class="linkbtn" id="copyembed">Copy embed code</button> <a class="linkbtn" href="${embedUrl}" target="_blank" rel="noopener" style="text-decoration:none">Preview it ↗</a> <span id="copied" style="color:var(--green);font-size:13px;display:none">Copied</span></p>
 <p style="font-size:12.5px">Prefer the raw data? <a href="./data.json">board.json</a> is public and free to reuse with credit.</p>
+<p style="font-size:12.5px">New to this? <a href="/embed/">How embedding works, and boards for every case →</a></p>
 </details>
 <p style="margin-top:12px">
   <button class="btn sm" type="button" data-compose="theory" data-case="${c.slug}">Post a theory</button>
@@ -2212,7 +2213,68 @@ const about = page({
 `});
 
 // ---------- write ----------
-const files = { 'index.html': home, 'cases/index.html': casesIndex, 'submit/index.html': submit, 'about/index.html': about };
+
+/* EMBED_LANDING_V1 — /embed/ landing that sells the live board embed to creators.
+   Built from the same case data as every board, so the copy-paste snippets and the
+   live example can never drift from what actually ships. Standing SEO priority. */
+const EMBED_FAQ = [
+  ['Does the embed cost anything?',
+   'No. Every board is free to read and free to embed. There is no account to make and no key to paste. You copy the code and it works.'],
+  ['Will an embedded board stay current?',
+   'Yes. The code loads the live board, so new evidence, new reader theories and any correction show up in your embed as soon as they are on the site. You paste the snippet once and leave it alone.'],
+  ['Do my readers need an account to use it?',
+   'No. Anyone can read the board, tap a card to see its sources, and follow a link back to the full case. Posting a theory is open too and needs no login.'],
+  ['Can I put more than one case on my site?',
+   'Yes. Each case has its own snippet below. Paste the ones you follow, wherever your page accepts HTML.'],
+  ['What do the cards actually show?',
+   'The open questions a jury has to decide, and the evidence each side has put up to answer them. Reader theories sit alongside, kept amber and labelled. Every factual card names the newsroom or court filing it came from, so your readers can check the reporting for themselves.'],
+];
+const embedExample = ACTIVE.find(c => (c.board.nodes || []).some(n => n.central)) || ACTIVE[0] || CASES[0];
+const exCentral = embedExample && (embedExample.board.nodes || []).find(n => n.central);
+const exCards = embedExample
+  ? (embedExample.board.nodes || []).filter(n => (n.sources || []).length && n.status !== 'rumor' && n.status !== 'unverified' && !n.central).slice(0, 3)
+  : [];
+const embedSnippet = c => {
+  const u = `${SITE}/cases/${c.slug}/board/embed/`;
+  return `<iframe src="${u}" width="100%" height="620" style="border:1px solid #ddd;border-radius:8px" loading="lazy" title="${esc(c.case.shortTitle)} evidence board - OurGavel"></iframe>`;
+};
+const embedLanding = page({
+  title: 'Put a live case board on your site',
+  desc: 'Embed any OurGavel evidence board for free. It stays live: new evidence, reader theories and corrections update on your page on their own, every card linked to its source.',
+  active: '/embed/',
+  crumbs: `<a href="/">Home</a> › Embed a board`,
+  ld: [{ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: EMBED_FAQ.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) }],
+  body: `
+<h1>Put a live case board on your own site.</h1>
+<p class="sub" style="max-width:640px">If you run a thread, a newsletter or a site that follows a trial, you can drop a whole evidence board onto your page. It stays live: when a witness testifies or the jury comes back, your embed updates on its own. Every card keeps its source. It costs nothing.</p>
+
+<h2>What your readers get</h2>
+<div class="card"><p style="font-size:14.5px">The same board people use here. The open questions the jury has to answer, the evidence each side has put up, and reader theories kept amber and labelled. Tap a card and its sources open. Nothing on it is a claim we make without a link to back it, which is the reason we can hand it to you instead of asking you to take our word.</p></div>
+
+<h2>A board, live right now</h2>
+${embedExample ? `<div class="card">
+<p style="font-size:13px;color:var(--mut);margin:0 0 8px">From the ${esc(embedExample.case.shortTitle)} board, this build:</p>
+${exCentral ? `<p style="font-weight:600;margin:0 0 10px">${esc(exCentral.title)}</p>` : ''}
+${exCards.map(n => `<p style="font-size:14px;margin:0 0 8px;padding-left:12px;border-left:3px solid var(--line)">${esc(n.title)}</p>`).join('')}
+<p style="margin-top:12px"><a class="btn sm" href="/cases/${embedExample.slug}/board/" target="_blank" rel="noopener">See the full board live ↗</a> <a class="btn sm ghost" href="/cases/${embedExample.slug}/board/embed/" target="_blank" rel="noopener">See the embed itself ↗</a></p>
+</div>` : ''}
+
+<h2>Grab the code</h2>
+<p style="font-size:14.5px">Click a box, select all, and copy. Paste it anywhere that accepts HTML.</p>
+${ACTIVE.map(c => `<div class="card" style="margin-bottom:12px">
+<p style="font-weight:600;margin:0 0 6px">${esc(c.case.shortTitle)}</p>
+<textarea readonly rows="3" aria-label="Embed code for ${esc(c.case.shortTitle)}" style="width:100%;font-family:ui-monospace,Consolas,monospace;font-size:12px;padding:10px;border-radius:6px;border:1px solid var(--line);background:var(--bg);color:var(--ink);resize:vertical">${esc(embedSnippet(c))}</textarea>
+<p style="font-size:12.5px;margin:6px 0 0"><a href="/cases/${c.slug}/board/embed/" target="_blank" rel="noopener">Preview ↗</a> · <a href="/cases/${c.slug}/board/">Open the case</a></p>
+</div>`).join('')}
+
+<h2>Questions</h2>
+${EMBED_FAQ.map(([q, a]) => `<div class="card" style="margin-bottom:10px"><h3 style="margin:0 0 6px;font-size:15px">${esc(q)}</h3><p style="font-size:14px;margin:0">${esc(a)}</p></div>`).join('')}
+
+<p style="margin-top:16px;font-size:13px;color:var(--mut)">Prefer raw data? Every board also publishes a <code>data.json</code> you can reuse with attribution. Open any case board and follow the data link at the bottom of the embed panel.</p>
+`,
+});
+
+const files = { 'index.html': home, 'cases/index.html': casesIndex, 'submit/index.html': submit, 'about/index.html': about, 'embed/index.html': embedLanding };
 for (const c of CASES) {
   files[`cases/${c.slug}/index.html`] = hubPage(c);
   files[`cases/${c.slug}/timeline/index.html`] = timelinePage(c);
@@ -2284,6 +2346,7 @@ addUrl('/cases/', 'hourly', '0.9', siteMod);
 // honest; stamping them with today's build is the lie that makes a crawler discount every
 // other date in the file.
 addUrl('/submit/', 'monthly', '0.4');
+  addUrl('/embed/', 'weekly', '0.5');
 addUrl('/about/', 'monthly', '0.4');
 for (const c of CASES) {
   const live = c.case.status !== 'archived';

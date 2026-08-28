@@ -204,6 +204,13 @@
       "flag": null
     },
     {
+      "ts": "2026-08-14T03:08:00.000Z",
+      "outlet": "abcnews4.com",
+      "headline": "Judge orders Alex Murdaugh retrial moved outside 14th Circuit over jury fairness concerns",
+      "url": "https://abcnews4.com/news/local/judge-orders-alex-murdaugh-retrial-moved-outside-14th-circuit-over-jury-fairness-concerns",
+      "flag": null
+    },
+    {
       "ts": "2026-08-14T03:06:00.000Z",
       "outlet": "The Greenville News",
       "headline": "Alex Murdaugh returns to court as judge weighs key retrial motions",
@@ -303,7 +310,6 @@
     }
   ],
   "seen": [
-    "87gxka",
     "1rsrzke",
     "wvm1ti",
     "2m4jym",
@@ -902,6 +908,7 @@
     "1vuzt61",
     "1sbum5p",
     "vp4ghn",
-    "1eahpdt"
+    "1eahpdt",
+    "1jpo4oj"
   ]
 }

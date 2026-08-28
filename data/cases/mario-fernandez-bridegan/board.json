@@ -23,23 +23,28 @@
     },
     {
       "id": "did-he-hire-the-shooter",
-      "type": "question",
+      "type": "resolved",
       "x": 500,
       "y": 340,
       "title": "Did Mario Fernandez arrange and pay for this killing?",
-      "body": "This is the whole case. Florida treats the person who hires a killing exactly like the person who fires the gun, so the jury is not asked whether Fernandez was on that street \u2014 everyone agrees he wasn't. It is asked two things: did he intend the killing to happen, and did he do or say something that actually caused Tenon to do it? The state has to prove both beyond a reasonable doubt.",
-      "status": "open",
+      "body": "On Aug. 26, 2026 the jury answered yes. After about three and a half hours of deliberation it convicted Mario Fernandez on both counts \u2014 first-degree murder and solicitation to commit a capital felony. Under Florida's principals law that verdict treats him exactly as it treats the man who fired the gun: the jury found, beyond a reasonable doubt, that he arranged and paid for the killing. First-degree murder carries an automatic life sentence with no parole; a hearing on Oct. 5, 2026 will set the sentencing date, and any appeal follows separately.",
+      "status": "resolved",
       "central": true,
       "sources": [
         {
-          "outlet": "Fla. Stat. \u00a7 777.011 \u2014 Principal in first degree",
-          "url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0700-0799/0777/Sections/0777.011.html"
+          "outlet": "News4JAX",
+          "url": "https://www.news4jax.com/news/local/2026/08/26/truth-won-today-says-jared-bridegans-widow-after-mario-fernandez-convicted-of-murder-in-2022-shooting/"
         },
         {
-          "outlet": "Fla. Std. Jury Instr. (Crim.) 3.5(b) \u2014 when the active participant was hired by the defendant",
-          "url": "https://forms.justia.com/florida/criminal/final-charge-to-the-jury/5-b-principals-when-active-participant-hired-80912.html"
+          "outlet": "Fox News",
+          "url": "https://www.foxnews.com/us/suspect-microsoft-executive-jared-bridegan-murder-convicted-roadside-ambush"
+        },
+        {
+          "outlet": "wokv.com",
+          "url": "https://www.wokv.com/news/local/jury-deliberating-case-accused-murder-for-hire-suspect-mario-fernandez-saldana/YRMMWFLHZZBSJHEHCDIA35QKDE/"
         }
-      ]
+      ],
+      "day": 8
     },
     {
       "id": "wages-or-payoff",

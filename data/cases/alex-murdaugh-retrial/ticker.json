@@ -113,6 +113,13 @@
       "flag": null
     },
     {
+      "ts": "2026-08-14T12:18:00.000Z",
+      "outlet": "kcci.com",
+      "headline": "Alex Murdaugh’s retrial will be relocated, and his original testimony can be used conditionally, judge rules",
+      "url": "https://www.kcci.com/article/alex-murdaugh-testimony-second-trial/73437356",
+      "flag": null
+    },
+    {
       "ts": "2026-08-14T12:10:51.000Z",
       "outlet": "via MSN",
       "headline": "Alex Murdaugh granted change of venue for murder retrial, past testimony allowed",
@@ -296,7 +303,6 @@
     }
   ],
   "seen": [
-    "kr4n6m",
     "1rdlewo",
     "87gxka",
     "1rsrzke",
@@ -895,6 +901,7 @@
     "g9im5h",
     "o9p05v",
     "1vuzt61",
-    "1sbum5p"
+    "1sbum5p",
+    "vp4ghn"
   ]
 }

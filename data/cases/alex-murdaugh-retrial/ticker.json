@@ -169,6 +169,13 @@
       "flag": null
     },
     {
+      "ts": "2026-08-14T09:45:00.000Z",
+      "outlet": "wbal.com",
+      "headline": "Judge rules Alex Murdaugh’s retrial will have a change of venue, but no location set",
+      "url": "https://www.wbal.com/judge-rules-alex-murdaughs-retrial-will-have-a-change-of-venue-but-no-location-set",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-08-14T08:28:21.000Z",
       "outlet": "via MSN",
       "headline": "Alex Murdaugh retrial moved out of Colleton County, judge says",
@@ -202,20 +209,6 @@
       "headline": "Judge orders Alex Murdaugh’s murder retrial moved out of Colleton",
       "url": "https://www.yahoo.com/news/us/articles/alex-murdaugh-friday-murder-hearing-093000305.html",
       "flag": null
-    },
-    {
-      "ts": "2026-08-14T02:10:00.000Z",
-      "outlet": "via Yahoo News",
-      "headline": "Judge rules Alex Murdaugh's retrial will have a change of venue, but no location set",
-      "url": "https://www.yahoo.com/news/us/articles/alex-murdaugh-due-back-court-091004797.html",
-      "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-08-14T02:10:00.000Z",
-      "outlet": "via MSN",
-      "headline": "Judge rules Alex Murdaugh's retrial will have a change of venue, but no location set",
-      "url": "https://www.msn.com/en-us/crime/general/alex-murdaugh-due-back-in-court-ahead-of-retrial/ar-AA2a5rCd",
-      "flag": "verdict-watch"
     },
     {
       "ts": "2026-08-14T02:06:00.000Z",
@@ -303,7 +296,6 @@
     }
   ],
   "seen": [
-    "1jrxtdc",
     "kr4n6m",
     "1rdlewo",
     "87gxka",
@@ -902,6 +894,7 @@
     "1g9zde2",
     "g9im5h",
     "o9p05v",
-    "1vuzt61"
+    "1vuzt61",
+    "1sbum5p"
   ]
 }

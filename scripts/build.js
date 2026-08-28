@@ -1627,7 +1627,7 @@ ${commentChip}
   ];
   const listHtml = listGroups.filter(([, ns]) => ns.length).map(([title, ns]) => `<h3>${title}</h3>` + ns.map(n => {
     const [bcls, blabel] = badgeFor(n);
-    return `<div class="card"><span class="badge ${bcls}">${blabel}</span><h4 style="font-family:var(--serif);margin:8px 0 4px">${esc(n.title)}</h4><p style="font-size:14px">${esc(n.body)}</p>${n.sources && n.sources.length ? `<p style="margin-top:6px">${srcLinks(n.sources)}</p>` : ''}${connHtml(n.id)}${n.traction ? `<p style="color:var(--mut);font-size:12.5px;margin-top:6px">Corroborated by ${n.traction.up} · disputed by ${n.traction.down}${n.issue ? `` : ''}</p>` : ''}</div>`;
+    return `<div class="card"><span class="badge ${bcls}">${blabel}</span><h4 style="font-family:var(--serif);margin:8px 0 4px">${esc(n.title)}</h4><p style="font-size:14px">${esc(n.body)}</p>${n.correction ? `<p style="font-size:13px;color:var(--mut);margin-top:6px"><b>Correction, ${esc(fmtDate(n.correction.date))}.</b> ${esc(n.correction.note)}</p>` : ''}${n.sources && n.sources.length ? `<p style="margin-top:6px">${srcLinks(n.sources)}</p>` : ''}${connHtml(n.id)}${n.traction ? `<p style="color:var(--mut);font-size:12.5px;margin-top:6px">Corroborated by ${n.traction.up} · disputed by ${n.traction.down}${n.issue ? `` : ''}</p>` : ''}</div>`;
   }).join('\n')).join('\n');
 
   // Every field here is injected via innerHTML on the client, so it is escaped HERE,
@@ -1645,6 +1645,7 @@ ${commentChip}
       sources: (n.sources || []).map(s => ({ outlet: esc(s.outlet), url: esc(safeUrl(s.url)) })),
       traction: n.traction ? { up: Number(n.traction.up) || 0, down: Number(n.traction.down) || 0 } : null,
       issue: n.issue ? esc(safeUrl(n.issue)) : null,
+      correction: n.correction ? { date: esc(fmtDate(n.correction.date)), note: esc(n.correction.note) } : null,
       conns: connHtml(n.id), thread: safeThread,
     }];
   })));
@@ -1878,6 +1879,7 @@ function show(id){
   var srcs=(n.sources||[]).map(function(s){return '<a href="'+s.url+'" target="_blank" rel="noopener">'+s.outlet+'</a>'}).join(' &middot; ');
   var extra=n.traction?('<p style="color:var(--mut);font-size:12.5px;margin-top:6px">Corroborated by '+n.traction.up+' &middot; disputed by '+n.traction.down+'</p>'):'';
   el.innerHTML='<span class="badge '+n.bcls+'">'+n.blabel+'</span><h4>'+n.title+'</h4><p>'+n.body+'</p>'
+    +(n.correction?'<p style="font-size:13px;color:var(--mut);margin-top:8px"><b>Correction, '+n.correction.date+'.</b> '+n.correction.note+'</p>':'')
     +(srcs?'<p class="srcs" style="margin-top:8px">&mdash; '+srcs+'</p>':'')+n.conns+extra
     +'<p style="margin-top:10px"><button class="linkbtn" id="connect-btn">Connect this card</button></p>'
     +threadHtml(id,n);
@@ -2310,7 +2312,7 @@ for (const c of CASES) {
     generated: BUILT_AT,
     source: `${SITE}/cases/${c.slug}/board/`,
     license: 'Free to reuse with visible attribution and a link back to the source URL.',
-    nodes: [...c.board.nodes, ...(c.community.nodes || [])].map(n => ({ id: n.id, type: n.type, status: n.status, title: n.title, body: n.body, sources: n.sources || [], submittedBy: n.submittedBy || null })),
+    nodes: [...c.board.nodes, ...(c.community.nodes || [])].map(n => ({ id: n.id, type: n.type, status: n.status, title: n.title, body: n.body, sources: n.sources || [], submittedBy: n.submittedBy || null, ...(n.correction ? { correction: { date: n.correction.date, note: n.correction.note } } : {}) })),
     edges: [...c.board.edges, ...(c.community.edges || [])],
   }, null, 2));
 }

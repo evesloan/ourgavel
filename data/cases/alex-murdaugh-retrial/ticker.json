@@ -107,6 +107,13 @@
     },
     {
       "ts": "2026-08-14T14:15:00.000Z",
+      "outlet": "fox29.com",
+      "headline": "Judge moves Alex Murdaugh murder retrial from small rural county amid ongoing legal twists",
+      "url": "https://www.fox29.com/news/judge-moves-alex-murdaugh-murder-retrial-from-small-rural-county-amid-ongoing-legal-twists",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-14T14:15:00.000Z",
       "outlet": "fox35orlando.com",
       "headline": "Judge moves Alex Murdaugh murder retrial from small rural county amid ongoing legal twists",
       "url": "https://www.fox35orlando.com/news/judge-moves-alex-murdaugh-murder-retrial-from-small-rural-county-amid-ongoing-legal-twists",
@@ -373,7 +380,6 @@
     }
   ],
   "seen": [
-    "1qo1yt9",
     "1fy9t2x",
     "170o1ov",
     "3mry0b",
@@ -972,6 +978,7 @@
     "1g9zfvh",
     "1gazpv2",
     "1g9z97w",
-    "zcvf0c"
+    "zcvf0c",
+    "19dojtz"
   ]
 }

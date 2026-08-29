@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-08-29T19:13:00.000Z",
+      "outlet": "WCVB",
+      "headline": "Psychiatrist in Clancy trial resigns from Delaware hospital",
+      "url": "https://www.wcvb.com/article/psychiatrist-clancy-trial-resigns-nemours/73560343",
+      "flag": null
+    },
+    {
       "ts": "2026-08-29T17:14:17.000Z",
       "outlet": "Boston 25 News",
       "headline": "Psychiatrist resigns from children’s hospital in Delaware after testifying in Lindsay Clancy trial",
@@ -691,6 +698,7 @@
     "1v6uz89",
     "jk86eh",
     "q4oq85",
-    "eks2fp"
+    "eks2fp",
+    "1iiud3w"
   ]
 }

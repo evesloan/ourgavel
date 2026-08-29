@@ -218,6 +218,13 @@
       "flag": null
     },
     {
+      "ts": "2026-08-14T06:00:00.000Z",
+      "outlet": "via MSN",
+      "headline": "Murdaugh double-murder retrial to move out of Colleton County to parts still unknown, possibly Charleston",
+      "url": "https://www.msn.com/en-us/crime/general/murdaugh-saga-back-in-court-to-hammer-out-indictments-dna-evidence-trial-venue-and-more/ar-AA2a6qfA",
+      "flag": null
+    },
+    {
       "ts": "2026-08-14T05:23:00.000Z",
       "outlet": "via Yahoo News",
       "headline": "Alex Murdaugh's double murder retrial to be moved over jury fairness concerns, judge rules",
@@ -338,7 +345,6 @@
     }
   ],
   "seen": [
-    "1gu0ell",
     "g4huzq",
     "qx0hl7",
     "1if1wkl",
@@ -937,6 +943,7 @@
     "1lq5ju9",
     "1jc0y6",
     "ggo4jo",
-    "12zwnqf"
+    "12zwnqf",
+    "1g9ynfx"
   ]
 }

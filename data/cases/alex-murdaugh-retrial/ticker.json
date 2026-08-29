@@ -15,6 +15,13 @@
       "flag": null
     },
     {
+      "ts": "2026-08-18T14:49:49.000Z",
+      "outlet": "via MSN",
+      "headline": "Is Alex Murdaugh Still in Prison After His Murder Convictions Were Overturned?",
+      "url": "https://www.msn.com/en-us/news/other/is-alex-murdaugh-still-in-prison-after-his-murder-convictions-were-overturned/ar-AA2ar4Xm",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-08-18T10:18:00.000Z",
       "outlet": "via AOL",
       "headline": "Alex Murdaugh moves for new home for double-murder retrial",
@@ -152,6 +159,13 @@
       "outlet": "AP",
       "headline": "Judge moves Alex Murdaugh retrial from small county",
       "url": "https://apnews.com/video/judge-moves-alex-murdaugh-retrial-from-small-county-ee4ead63ad964654b27c4c18fd8816d7",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-14T11:59:04.000Z",
+      "outlet": "via MSN",
+      "headline": "What to know about the Alex Murdaugh pretrial hearing",
+      "url": "https://www.msn.com/en-us/crime/general/what-to-know-about-the-alex-murdaugh-pretrial-hearing/ar-AA2a7XPu",
       "flag": null
     },
     {
@@ -352,8 +366,6 @@
     }
   ],
   "seen": [
-    "qx0hl7",
-    "1if1wkl",
     "m5xleb",
     "f8yt2l",
     "1qo1yt9",
@@ -951,6 +963,8 @@
     "ggo4jo",
     "12zwnqf",
     "1g9ynfx",
-    "1g9yub7"
+    "1g9yub7",
+    "1g9zfvh",
+    "1gazpv2"
   ]
 }

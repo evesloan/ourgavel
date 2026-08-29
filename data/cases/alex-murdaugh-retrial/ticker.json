@@ -149,6 +149,13 @@
     },
     {
       "ts": "2026-08-14T12:18:00.000Z",
+      "outlet": "koat.com",
+      "headline": "Alex Murdaugh’s retrial will be relocated, and his original testimony can be used conditionally, judge rules",
+      "url": "https://www.koat.com/article/alex-murdaugh-testimony-second-trial/73437356",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-14T12:18:00.000Z",
       "outlet": "kcci.com",
       "headline": "Alex Murdaugh’s retrial will be relocated, and his original testimony can be used conditionally, judge rules",
       "url": "https://www.kcci.com/article/alex-murdaugh-testimony-second-trial/73437356",
@@ -387,7 +394,6 @@
     }
   ],
   "seen": [
-    "170o1ov",
     "3mry0b",
     "1gds0io",
     "1p6ge5m",
@@ -986,6 +992,7 @@
     "1g9z97w",
     "zcvf0c",
     "19dojtz",
-    "1g9wkkw"
+    "1g9wkkw",
+    "1oww7bo"
   ]
 }

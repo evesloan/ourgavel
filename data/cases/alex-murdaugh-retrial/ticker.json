@@ -295,6 +295,13 @@
       "flag": "verdict-watch"
     },
     {
+      "ts": "2026-08-13T16:38:49.000Z",
+      "outlet": "via MSN",
+      "headline": "Live: Alex Murdaugh returns to court as prosecutors, defense battle over evidence ahead of retrial",
+      "url": "https://www.msn.com/en-us/news/crime/live-alex-murdaugh-returns-to-court-as-prosecutors-defense-battle-over-evidence-ahead-of-retrial/ar-AA2a3IGJ",
+      "flag": null
+    },
+    {
       "ts": "2026-08-13T02:09:19.000Z",
       "outlet": "via MSN",
       "headline": "Alex Murdaugh pre-trial hearing: Court venue, evidence, testimony",
@@ -380,7 +387,6 @@
     }
   ],
   "seen": [
-    "1fy9t2x",
     "170o1ov",
     "3mry0b",
     "1gds0io",
@@ -979,6 +985,7 @@
     "1gazpv2",
     "1g9z97w",
     "zcvf0c",
-    "19dojtz"
+    "19dojtz",
+    "1g9wkkw"
   ]
 }

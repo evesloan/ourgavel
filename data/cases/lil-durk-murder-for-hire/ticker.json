@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-08-28T19:30:13.000Z",
+      "outlet": "via MSN",
+      "headline": "Lil Durk trial: 6ix9ine says he'll throw a 'going away party' if rapper is found guilty",
+      "url": "https://www.msn.com/en-us/news/other/lil-durk-trial-6ix9ine-says-hell-throw-a-going-away-party-if-rapper-is-found-guilty/ar-AA2b9qHY",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-08-28T12:38:00.000Z",
       "outlet": "thesource.com",
       "headline": "OTF Jam Testifies in Lil Durk Trial, Calling Alleged Plot to Kill Quando Rondo “Sloppy”",
@@ -321,6 +328,7 @@
     "1pj9e3g",
     "1mxlgfj",
     "1a6yl7v",
-    "kr99m5"
+    "kr99m5",
+    "1gakd29"
   ]
 }

@@ -1,402 +1,458 @@
 {
-  "note": "Pretrial milestones plus trial days 1-5 (Aug 17-21, 2026). Testimony resumes Monday, Aug 24 — this record is updated as the trial continues.",
-  "pretrial": [
+ "note": "Pretrial milestones plus trial days 1-5 (Aug 17-21, 2026). Testimony resumes Monday, Aug 24 — this record is updated as the trial continues.",
+ "pretrial": [
+  {
+   "date": "2023-07-17",
+   "event": "Las Vegas police served a search warrant at a Henderson home tied to Davis — the first public sign the 27-year-old case was moving again. They carried out computers, phones, hard drives, photographs, a Vibe magazine featuring Shakur, .40-caliber bullets, and a copy of Davis's own memoir.",
+   "sources": [
     {
-      "date": "2023-07-17",
-      "event": "Las Vegas police served a search warrant at a Henderson home tied to Davis — the first public sign the 27-year-old case was moving again. They carried out computers, phones, hard drives, photographs, a Vibe magazine featuring Shakur, .40-caliber bullets, and a copy of Davis's own memoir.",
-      "sources": [
-        {
-          "outlet": "NPR",
-          "url": "https://www.npr.org/2023/09/29/1202716171/tupac-shakur-killing-duane-davis-indicted"
-        },
-        {
-          "outlet": "News 3 Las Vegas",
-          "url": "https://news3lv.com/news/local/search-warrant-in-tupac-shakur-investigation-was-served-at-home-of-duane-davis-keffe-d-keefy-d-southern-nevada-lvmpd-metro-police-henderson-unsolved"
-        }
-      ]
+     "outlet": "NPR",
+     "url": "https://www.npr.org/2023/09/29/1202716171/tupac-shakur-killing-duane-davis-indicted"
     },
     {
-      "date": "2023-09-29",
-      "event": "A Clark County grand jury indicted Davis for murder with use of a deadly weapon, and police arrested him the same morning as he walked near his home. Chief Deputy District Attorney Marc DiGiacomo called him the \"on-ground, on-site commander\" who \"ordered the death\" of Shakur. The grand jury had been sitting on the case for several months.",
-      "sources": [
-        {
-          "outlet": "NPR",
-          "url": "https://www.npr.org/2023/09/29/1202716171/tupac-shakur-killing-duane-davis-indicted"
-        }
-      ]
-    },
-    {
-      "date": "2023-11-02",
-      "event": "Davis pleaded not guilty, standing in shackles before a Clark County judge. The indictment alleges he obtained a gun and passed it to someone in the back seat of the white Cadillac before the shots were fired.",
-      "sources": [
-        {
-          "outlet": "NBC News",
-          "url": "https://www.nbcnews.com/news/us-news/ex-gang-leader-charged-tupac-shakur-killing-pleads-not-guilty-las-vega-rcna123376"
-        }
-      ]
-    },
-    {
-      "date": "2024-01-09",
-      "event": "Judge Carli Kierny set bail at $750,000 with house arrest, citing Davis's long residence in Henderson and the age of the case — but noted the risk to witnesses: \"there are a lot of people who are still scared.\" Davis never got out; he has been in custody since his 2023 arrest.",
-      "sources": [
-        {
-          "outlet": "Forbes",
-          "url": "https://www.forbes.com/sites/maryroeloffs/2024/01/09/tupac-murder-suspect-duane-davis-bail-set-at-750000/"
-        },
-        {
-          "outlet": "ABC News",
-          "url": "https://abcnews.com/US/tupac-shakur-murder-trial-begins-ahead-opening-statements/story?id=135694608"
-        }
-      ]
-    },
-    {
-      "date": "2026-06-30",
-      "event": "The ruling that made the trial possible. Judge Kierny held that Davis's 2019 memoir \"Compton Street Legend\" is admissible, rejecting the defense claim that a ghostwriter \"sort of made it up\" and that Davis promoted it \"for entertainment purposes.\" She found Davis \"adopted the book as his own\" and encouraged people \"to buy it to get the real truth.\" Prosecutors argued: \"A defendant cannot market his confession and then demand that the courthouse treat it as confidential.\" In the same round of rulings she allowed gang evidence to show motive and ordered jurors partially sequestered.",
-      "sources": [
-        {
-          "outlet": "Associated Press (via Jefferson City News-Tribune)",
-          "url": "https://www.newstribune.com/news/2026/jul/02/tupac-murder-suspects-book-admissible-in-trial/"
-        },
-        {
-          "outlet": "Associated Press (via The Spokesman-Review)",
-          "url": "https://www.spokesman.com/stories/2026/jun/30/judge-rules-memoir-by-defendant-in-tupac-killing-c/"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-29",
-      "event": "Judge Kierny ruled that the 2008 police interview — the single most damaging piece of evidence — can be played for jurors. The defense argued detectives had promised Davis it would stay confidential; Davis himself wrote in his memoir, \"I sang because they promised I would not be prosecuted.\" Kierny found he gave up any confidentiality when he published the book and told the world it was the truth.",
-      "sources": [
-        {
-          "outlet": "NPR",
-          "url": "https://www.npr.org/2026/07/29/nx-s1-5911616/police-interview-tupac-trial"
-        }
-      ]
-    },
-    {
-      "date": "2026-08-10",
-      "event": "Jury selection began. Prosecutors expected to call 35 to 45 witnesses; the defense said it would call witnesses to say Davis was not in Las Vegas that night, plus an expert on false confessions and how memory decays over decades.",
-      "sources": [
-        {
-          "outlet": "NPR",
-          "url": "https://www.npr.org/2026/08/10/nx-s1-5925171/jury-selection-begins-for-former-gang-member-implicated-in-tupacs-death"
-        },
-        {
-          "outlet": "ABC News",
-          "url": "https://abcnews.com/US/tupac-shakur-murder-trial-begins-ahead-opening-statements/story?id=135694608"
-        }
-      ]
-    },
-    {
-      "date": "2026-08-13",
-      "event": "A jury was seated after three days of selection — 12 jurors and 4 alternates, 10 women and 6 men, among them a retired gemologist who had never heard of Tupac, a casino worker and a mailman. Several were children, or not yet born, when Shakur was killed. Davis waived his right to have the jury decide his sentence, leaving that to Judge Kierny if he is convicted.",
-      "sources": [
-        {
-          "outlet": "CNN (via LocalNews8)",
-          "url": "https://localnews8.com/news/national-world/cnn-national/2026/08/13/the-jury-that-will-decide-whether-duane-davis-murdered-tupac-has-been-seated-heres-what-we-know/"
-        },
-        {
-          "outlet": "ABC News",
-          "url": "https://abcnews.com/US/tupac-shakur-murder-trial-begins-ahead-opening-statements/story?id=135694608"
-        }
-      ]
+     "outlet": "News 3 Las Vegas",
+     "url": "https://news3lv.com/news/local/search-warrant-in-tupac-shakur-investigation-was-served-at-home-of-duane-davis-keffe-d-keefy-d-southern-nevada-lvmpd-metro-police-henderson-unsolved"
     }
-  ],
-  "days": [
+   ]
+  },
+  {
+   "date": "2023-09-29",
+   "event": "A Clark County grand jury indicted Davis for murder with use of a deadly weapon, and police arrested him the same morning as he walked near his home. Chief Deputy District Attorney Marc DiGiacomo called him the \"on-ground, on-site commander\" who \"ordered the death\" of Shakur. The grand jury had been sitting on the case for several months.",
+   "sources": [
     {
-      "day": 1,
-      "date": "2026-08-17",
-      "phase": "Opening statements",
-      "headline": "Two stories about the same man: revenge, or fiction",
-      "summary": "Chief Deputy District Attorney Binu Palal told jurors this was payback for a beating: \"On September 7, 1996, Tupac Shakur publicly, on camera, participated in a humiliating beating of Duane Davis' nephew.\" He was blunt about what the state is and is not claiming — \"Duane Davis did not pull the trigger. But he did plan the shooting in retaliation of the beating of his nephew\" — and closed by asking jurors to \"finally hold Duane Davis accountable\" nearly 30 years on. Defense lawyer Michael Sanft answered that the state was selling a story: \"What they are telling you, they are representing as fact, when it's really fiction,\" and put the whole defense in one line — \"No one corroborates any of this.\" Then the first witnesses took jurors back to the night itself.",
-      "sources": [
-        {
-          "outlet": "Associated Press (via Jefferson City News-Tribune)",
-          "url": "https://www.newstribune.com/news/2026/aug/18/attorneys-deliver-opening-statements-in-tupac/"
-        },
-        {
-          "outlet": "CBS News",
-          "url": "https://www.cbsnews.com/news/tupac-shakur-murder-trial-opening-statements-keffe-d-davis/"
-        },
-        {
-          "outlet": "NPR",
-          "url": "https://www.npr.org/2026/08/18/g-s1-139061/tupac-shakur-killing-trial"
-        },
-        {
-          "outlet": "News 3 Las Vegas",
-          "url": "https://news3lv.com/news/local/opening-statements-tupac-shakur-murder-trial-duane-davis-las-vegas-clark-county-court-live-watch-nevada"
-        }
-      ],
-      "witnesses": [
-        {
-          "name": "Garry Dale",
-          "role": "Former Las Vegas Metro police officer",
-          "gist": "Stopped Shakur's black BMW earlier that night over a missing plate, then rode with him in the ambulance; asked who shot him, Shakur said \"No, we'll take care of it.\""
-        },
-        {
-          "name": "Ingrid Stokes",
-          "role": "Eyewitness, driving near the shooting",
-          "gist": "Saw Suge Knight at the wheel with Shakur beside him, heard the gunfire and ducked — she never saw who was shooting."
-        },
-        {
-          "name": "Brent Becker",
-          "role": "Retired LVMPD homicide detective",
-          "gist": "Described the white Cadillac witnesses saw and forensic work pointing to a .40-caliber Glock, and acknowledged nobody ever picked a shooter out of a photo lineup."
-        },
-        {
-          "name": "Fred Miller",
-          "role": "Former LAPD detective",
-          "gist": "Explained how Davis first surfaced through the separate investigation into the killing of Christopher \"Biggie\" Wallace."
-        }
-      ]
-    },
-    {
-      "day": 2,
-      "date": "2026-08-18",
-      "phase": "Prosecution case",
-      "headline": "The autopsy photos, and a witness who did not want to be there",
-      "summary": "Clark County medical examiner Dr. Lisa Gavin walked jurors through three gunshot wounds — one collapsed a lung that surgeons removed — and told them \"the manner of death was homicide.\" Some of Shakur's relatives walked out when the autopsy photos went up; his cousin Zayd Akinyela stayed, saying afterwards, \"I think we've been waiting 30 years to grieve properly.\" Jurors also saw the MGM Grand surveillance video of the lobby beating prosecutors call the motive. Two men from the Death Row Records world testified under subpoena, and one of them handed the defense a line it will use again.",
-      "sources": [
-        {
-          "outlet": "Fox 5 Vegas",
-          "url": "https://www.fox5vegas.com/2026/08/18/live-witnesses-continue-take-stand-day-two-tupac-murder-trial/"
-        },
-        {
-          "outlet": "PBS News Hour",
-          "url": "https://www.pbs.org/newshour/nation/forensic-pathologist-details-tupac-shakurs-fatal-wounds-in-duane-keffe-d-davis-trial"
-        },
-        {
-          "outlet": "Associated Press (via Bay News 9)",
-          "url": "https://baynews9.com/fl/tampa/ap-top-news/2026/08/18/forensic-pathologist-details-tupac-shakurs-fatal-wounds-at-duane-keffe-d-davis-trial"
-        },
-        {
-          "outlet": "News 3 Las Vegas",
-          "url": "https://news3lv.com/news/local/witness-testimony-second-day-tupac-shakur-murder-trial-duane-keffe-d-davis-court-las-vegas-nevada"
-        }
-      ],
-      "witnesses": [
-        {
-          "name": "Thomas Kern",
-          "role": "LVMPD crime scene analyst",
-          "gist": "Attended the 1996 autopsy and authenticated the photographs shown to jurors, originally shot on Polaroid film."
-        },
-        {
-          "name": "Dr. Lisa Gavin",
-          "role": "Clark County medical examiner",
-          "gist": "Testified Shakur died of gunshot wounds to the chest and abdomen and that \"the manner of death was homicide.\""
-        },
-        {
-          "name": "Michael Ingram",
-          "role": "MGM Grand investigator",
-          "gist": "Authenticated the 1996 casino surveillance tapes and explained the hotel reused its tapes back then, which limits what survives."
-        },
-        {
-          "name": "Kenneth Rios",
-          "role": "Former LVMPD sergeant",
-          "gist": "Responded to the lobby fight; Orlando Anderson refused medical care and declined to press charges, so no report was written."
-        },
-        {
-          "name": "William Heidmeyer",
-          "role": "Former security officer, Maxim Hotel",
-          "gist": "Testified about the night's events around the hotel."
-        },
-        {
-          "name": "Dean O'Kelly",
-          "role": "Former LVMPD gang detective",
-          "gist": "Handled crime scene evidence and told jurors the weapon was \"a Glock 40.\""
-        },
-        {
-          "name": "James McDonald",
-          "role": "Head of security at Club 662",
-          "gist": "Testified only under court order; said \"662\" spells MOB on a phone keypad, and framed the feud as personal — \"Wasn't our beef. Was between Suge Knight and Keffe D\" — adding he did not want to \"send another Black man to prison.\""
-        },
-        {
-          "name": "Reggie Wright Jr.",
-          "role": "Former head of Death Row Records security",
-          "gist": "Said Death Row was 95% of his security business and answered \"Absolutely not\" when asked whether he had anything to do with the killing."
-        }
-      ]
-    },
-    {
-      "day": 3,
-      "date": "2026-08-19",
-      "phase": "Prosecution case",
-      "headline": "The FBI agent who says Davis wanted it handled in Compton",
-      "summary": "Retired FBI special agent Wade Lee, who arrested Davis on drug charges in the late 1990s, told jurors Davis denied knowing who killed Shakur. According to Lee, Davis said he was angry enough about his nephew's beating to strike back — but that he would have wanted to do it in Compton, not Las Vegas. LAPD detective Daryn Dupree then began taking jurors inside the 2008 interview, including Davis's claim that Sean \"Diddy\" Combs had said of Shakur and Knight, \"I want to get rid of those dudes,\" and a remark Dupree said Davis made about the killing of Christopher Wallace: \"We did the other one.\" Combs has never been charged in either killing. Court started in the afternoon that day.",
-      "sources": [
-        {
-          "outlet": "News 3 Las Vegas",
-          "url": "https://news3lv.com/news/local/day-three-witness-testimony-tupac-shakur-murder-trial-duane-davis-keffe-d-las-vegas-clark-county-court-nevada-livestream-watch"
-        },
-        {
-          "outlet": "Los Angeles Magazine",
-          "url": "https://lamag.com/crimeinla/duane-davis-told-feds-sean-combs-offered-him-1m-to-kill-tupac/"
-        },
-        {
-          "outlet": "8 News Now",
-          "url": "https://www.8newsnow.com/news/tupac-murder-trial/live-updates-day-3-of-tupac-murder-trial-set-to-begin-at-1-p-m/"
-        }
-      ],
-      "witnesses": [
-        {
-          "name": "Wade Lee",
-          "role": "Retired FBI special agent",
-          "gist": "Arrested Davis on drug charges in the late 1990s; testified Davis denied knowing who killed Shakur but said he was mad enough to retaliate — in Compton, not Las Vegas."
-        },
-        {
-          "name": "Daryn Dupree",
-          "role": "LAPD detective",
-          "gist": "Began describing the 2008 interview, including Davis's claim that Sean Combs said \"I want to get rid of those dudes\" and Davis's line about the Wallace killing, \"We did the other one.\""
-        }
-      ]
-    },
-    {
-      "day": 4,
-      "date": "2026-08-20",
-      "phase": "Prosecution case",
-      "headline": "Jurors finally hear the tape at the centre of the case",
-      "summary": "Prosecutors played the 2008 recording the whole prosecution is built on. On it, Davis tells detectives the Cadillac came up on Shakur's side of the street, not his: \"If we would have been on my side, I would have blasted.\" He says he passed his gun backward, that one man in the car turned it down, and that his nephew Orlando Anderson took it and fired. Detective Daryn Dupree explained to jurors why Davis was sitting in that room at all: \"Everybody was a suspect at that time.\" Before the tape, a former associate of Davis testified under court order about the gang backdrop the state needs for its enhancement.",
-      "sources": [
-        {
-          "outlet": "NPR",
-          "url": "https://www.npr.org/2026/08/21/nx-s1-5940538/jurors-hear-keffe-d-say-his-nephew-fired-fatal-shots-at-tupac-shakur-in-1996-drive-by-shooting"
-        },
-        {
-          "outlet": "News 3 Las Vegas",
-          "url": "https://news3lv.com/news/local/prosecutors-video-tupac-shakur-murder-trial-las-vegas-duane-davis-keffe-d-court-livestream-watch"
-        },
-        {
-          "outlet": "8 News Now",
-          "url": "https://www.8newsnow.com/news/tupac-murder-trial/live-updates-day-4-of-tupac-murder-trial/"
-        }
-      ],
-      "witnesses": [
-        {
-          "name": "Denvonta Lee",
-          "role": "Former associate of Davis",
-          "gist": "Testified under court order that he was initiated into the South Side Crips, and identified Mob Piru — the set tied to Death Row Records, Suge Knight and Shakur — as the rival."
-        },
-        {
-          "name": "Daryn Dupree",
-          "role": "LAPD detective",
-          "gist": "Continued on the 2008 interview and told jurors, \"Everybody was a suspect at that time.\""
-        },
-        {
-          "name": "Greg Kading",
-          "role": "Former LAPD detective, federal task force",
-          "gist": "Testified about conducting the 2008 interview with Davis, in which Davis named Anderson as the shooter."
-        }
-      ]
-    },
-    {
-      "day": 5,
-      "date": "2026-08-21",
-      "phase": "Prosecution case",
-      "headline": "The last photograph, and the man who sold his own story",
-      "summary": "Leonard Jefferson told jurors he pulled up beside Shakur at a red light on Las Vegas Boulevard, was waved along toward the club, and took what became the last photograph of the rapper alive; asked whether he staged it, he answered \"I did not.\" Prosecutors then turned to the documentary business: \"Death Row Chronicles\" director Mario Diaz said Davis was paid to appear and that nothing was scripted, and clips were played of Davis saying, \"I am the only one alive who can tell you who really killed Tupac.\" Jurors also heard a long 2009 police interview in which Davis says, \"I wish I never met Puff Daddy period. I swear to God. He messed up my life.\" Davis himself spoke up in open court, objecting after his home address was read aloud: \"This stuff is wrong.\"",
-      "sources": [
-        {
-          "outlet": "Fox 5 Vegas",
-          "url": "https://www.fox5vegas.com/2026/08/21/three-witnesses-expected-during-fifth-day-witness-testimony-tupac-murder-trial/"
-        },
-        {
-          "outlet": "Fox Baltimore (Sinclair)",
-          "url": "https://foxbaltimore.com/news/nation-world/first-week-testimony-tupac-shakur-murder-trial-concludes-friday-day-5-witnesses-duane-davis-keffe-d-las-vegas-court-nevada-livestream"
-        },
-        {
-          "outlet": "CBS 6 Albany (Sinclair)",
-          "url": "https://cbs6albany.com/news/nation-world/first-week-testimony-tupac-shakur-murder-trial-concludes-friday-day-5-witnesses-duane-davis-keffe-d-las-vegas-court-nevada-livestream"
-        },
-        {
-          "outlet": "8 News Now",
-          "url": "https://www.8newsnow.com/news/tupac-murder-trial/live-updates-day-5-of-tupac-murder-trial/"
-        }
-      ],
-      "witnesses": [
-        {
-          "name": "Leonard Jefferson",
-          "role": "Photographer",
-          "gist": "Took the last known photograph of Shakur alive, at a stoplight on the Strip; said \"I did not\" when asked whether he staged it."
-        },
-        {
-          "name": "Mario Diaz",
-          "role": "Director, BET's \"Death Row Chronicles\"",
-          "gist": "Testified Davis was paid to appear and the series was unscripted, with no questions given in advance; the defense noted the consultants were the same investigators who wrote a book about the case."
-        },
-        {
-          "name": "Michael Dorsey",
-          "role": "True-crime producer, co-author of a book on the investigation",
-          "gist": "Worked on the documentary; confirmed Sean Combs' lawyers sent a cease-and-desist letter to Apple TV over the material, though no lawsuit followed."
-        }
-      ]
-    },
-    {
-      "day": 6,
-      "date": "2026-08-24",
-      "phase": "prosecution",
-      "headline": "Jurors hear Davis's 2017 recordings; a witness clashes with the defense",
-      "summary": "Michael Dorsay returned to the stand to authenticate 2017 \"Death Row Chronicles\" recordings the state played for the jury, in which Davis called Shakur \"an ignorant kid in the prime of his life\" and, asked whether he wanted to apologize to Shakur's family, said \"No... I didn't do nothing.\" On cross-examination Dorsay pushed back that the defense's questions were \"based off conspiracy theories,\" and the judge reminded him that a witness answers questions rather than asks them. The defense objected that jurors should not have heard the recordings' references to other crimes.",
-      "witnesses": [
-        {
-          "name": "Michael Dorsay",
-          "role": "Producer, 2017 \"Death Row Chronicles\" (prosecution)",
-          "gist": "Authenticated the 2017 recordings of Davis played to the jury; on cross clashed with the defense over what he called conspiracy-theory questions."
-        }
-      ],
-      "sources": [
-        {
-          "outlet": "FOX5 Vegas",
-          "url": "https://www.fox5vegas.com/2026/08/24/witness-testimony-continues-week-two-tupac-murder-trial/"
-        },
-        {
-          "outlet": "WTOC",
-          "url": "https://www.wtoc.com/2026/08/25/week-two-testimony-tupac-murder-trial-begins-with-clashing-testimony-explosive-audio/"
-        }
-      ]
-    },
-    {
-      "day": 7,
-      "date": "2026-08-25",
-      "phase": "prosecution",
-      "headline": "An Outlaw's eyewitness account; LVMPD analysts detail the searches",
-      "summary": "Malcolm \"E.D.I. Mean\" Greenidge of the Outlawz, who was in the caravan with Shakur the night he was shot, described a light-colored Cadillac pulling alongside and gunfire — \"an arm and a gun\" he could not identify — and said no one in their group returned fire. LVMPD crime-scene analysts Jeffrey Scott and Steavie Felabom described the 2023 search of Davis's home, and Det. Justine Gatus testified about bins of newspaper and magazine clippings about the killing found there. Officer Mark Hatton, a NIBIN firearms examiner, testified that the seven cartridge casings from the 1996 scene bore marks consistent with a single firearm.",
-      "witnesses": [
-        {
-          "name": "Malcolm Greenidge",
-          "role": "Rapper, the Outlawz (\"E.D.I. Mean\") — eyewitness (prosecution)",
-          "gist": "In the caravan with Shakur; saw a light-colored Cadillac pull alongside and an arm and a gun, could not identify the shooter, and said no one in their group returned fire."
-        },
-        {
-          "name": "Jeffrey Scott",
-          "role": "Senior crime-scene analyst, LVMPD",
-          "gist": "Documented the 2023 search of Davis's home, photographing papers found in a Dodge Challenger in the garage."
-        },
-        {
-          "name": "Steavie Felabom",
-          "role": "Crime-scene analyst, LVMPD",
-          "gist": "Photographed items from the garage including a \"Compton Street Legend\" book and a 1996 VIBE magazine featuring Shakur."
-        },
-        {
-          "name": "Det. Justine Gatus",
-          "role": "Homicide detective, LVMPD",
-          "gist": "Testified about bins of newspaper and magazine clippings about the killing found in the home; could not say who assembled them."
-        },
-        {
-          "name": "Officer Mark Hatton",
-          "role": "Firearms/NIBIN examiner, LVMPD (prosecution)",
-          "gist": "Examined seven casings from the 1996 scene and testified they bore characteristics consistent with a single firearm."
-        }
-      ],
-      "sources": [
-        {
-          "outlet": "FOX5 Vegas",
-          "url": "https://www.fox5vegas.com/2026/08/25/live-testimony-continues-week-two-tupac-murder-trial/"
-        },
-        {
-          "outlet": "News 3 Las Vegas",
-          "url": "https://news3lv.com/news/local/testimony-continues-tupac-shakur-murder-trial-jury-duane-davis-keffe-d-crime-court-las-vegas-nevada-livestream"
-        }
-      ]
+     "outlet": "NPR",
+     "url": "https://www.npr.org/2023/09/29/1202716171/tupac-shakur-killing-duane-davis-indicted"
     }
-  ]
+   ]
+  },
+  {
+   "date": "2023-11-02",
+   "event": "Davis pleaded not guilty, standing in shackles before a Clark County judge. The indictment alleges he obtained a gun and passed it to someone in the back seat of the white Cadillac before the shots were fired.",
+   "sources": [
+    {
+     "outlet": "NBC News",
+     "url": "https://www.nbcnews.com/news/us-news/ex-gang-leader-charged-tupac-shakur-killing-pleads-not-guilty-las-vega-rcna123376"
+    }
+   ]
+  },
+  {
+   "date": "2024-01-09",
+   "event": "Judge Carli Kierny set bail at $750,000 with house arrest, citing Davis's long residence in Henderson and the age of the case — but noted the risk to witnesses: \"there are a lot of people who are still scared.\" Davis never got out; he has been in custody since his 2023 arrest.",
+   "sources": [
+    {
+     "outlet": "Forbes",
+     "url": "https://www.forbes.com/sites/maryroeloffs/2024/01/09/tupac-murder-suspect-duane-davis-bail-set-at-750000/"
+    },
+    {
+     "outlet": "ABC News",
+     "url": "https://abcnews.com/US/tupac-shakur-murder-trial-begins-ahead-opening-statements/story?id=135694608"
+    }
+   ]
+  },
+  {
+   "date": "2026-06-30",
+   "event": "The ruling that made the trial possible. Judge Kierny held that Davis's 2019 memoir \"Compton Street Legend\" is admissible, rejecting the defense claim that a ghostwriter \"sort of made it up\" and that Davis promoted it \"for entertainment purposes.\" She found Davis \"adopted the book as his own\" and encouraged people \"to buy it to get the real truth.\" Prosecutors argued: \"A defendant cannot market his confession and then demand that the courthouse treat it as confidential.\" In the same round of rulings she allowed gang evidence to show motive and ordered jurors partially sequestered.",
+   "sources": [
+    {
+     "outlet": "Associated Press (via Jefferson City News-Tribune)",
+     "url": "https://www.newstribune.com/news/2026/jul/02/tupac-murder-suspects-book-admissible-in-trial/"
+    },
+    {
+     "outlet": "Associated Press (via The Spokesman-Review)",
+     "url": "https://www.spokesman.com/stories/2026/jun/30/judge-rules-memoir-by-defendant-in-tupac-killing-c/"
+    }
+   ]
+  },
+  {
+   "date": "2026-07-29",
+   "event": "Judge Kierny ruled that the 2008 police interview — the single most damaging piece of evidence — can be played for jurors. The defense argued detectives had promised Davis it would stay confidential; Davis himself wrote in his memoir, \"I sang because they promised I would not be prosecuted.\" Kierny found he gave up any confidentiality when he published the book and told the world it was the truth.",
+   "sources": [
+    {
+     "outlet": "NPR",
+     "url": "https://www.npr.org/2026/07/29/nx-s1-5911616/police-interview-tupac-trial"
+    }
+   ]
+  },
+  {
+   "date": "2026-08-10",
+   "event": "Jury selection began. Prosecutors expected to call 35 to 45 witnesses; the defense said it would call witnesses to say Davis was not in Las Vegas that night, plus an expert on false confessions and how memory decays over decades.",
+   "sources": [
+    {
+     "outlet": "NPR",
+     "url": "https://www.npr.org/2026/08/10/nx-s1-5925171/jury-selection-begins-for-former-gang-member-implicated-in-tupacs-death"
+    },
+    {
+     "outlet": "ABC News",
+     "url": "https://abcnews.com/US/tupac-shakur-murder-trial-begins-ahead-opening-statements/story?id=135694608"
+    }
+   ]
+  },
+  {
+   "date": "2026-08-13",
+   "event": "A jury was seated after three days of selection — 12 jurors and 4 alternates, 10 women and 6 men, among them a retired gemologist who had never heard of Tupac, a casino worker and a mailman. Several were children, or not yet born, when Shakur was killed. Davis waived his right to have the jury decide his sentence, leaving that to Judge Kierny if he is convicted.",
+   "sources": [
+    {
+     "outlet": "CNN (via LocalNews8)",
+     "url": "https://localnews8.com/news/national-world/cnn-national/2026/08/13/the-jury-that-will-decide-whether-duane-davis-murdered-tupac-has-been-seated-heres-what-we-know/"
+    },
+    {
+     "outlet": "ABC News",
+     "url": "https://abcnews.com/US/tupac-shakur-murder-trial-begins-ahead-opening-statements/story?id=135694608"
+    }
+   ]
+  }
+ ],
+ "days": [
+  {
+   "day": 1,
+   "date": "2026-08-17",
+   "phase": "Opening statements",
+   "headline": "Two stories about the same man: revenge, or fiction",
+   "summary": "Chief Deputy District Attorney Binu Palal told jurors this was payback for a beating: \"On September 7, 1996, Tupac Shakur publicly, on camera, participated in a humiliating beating of Duane Davis' nephew.\" He was blunt about what the state is and is not claiming — \"Duane Davis did not pull the trigger. But he did plan the shooting in retaliation of the beating of his nephew\" — and closed by asking jurors to \"finally hold Duane Davis accountable\" nearly 30 years on. Defense lawyer Michael Sanft answered that the state was selling a story: \"What they are telling you, they are representing as fact, when it's really fiction,\" and put the whole defense in one line — \"No one corroborates any of this.\" Then the first witnesses took jurors back to the night itself.",
+   "sources": [
+    {
+     "outlet": "Associated Press (via Jefferson City News-Tribune)",
+     "url": "https://www.newstribune.com/news/2026/aug/18/attorneys-deliver-opening-statements-in-tupac/"
+    },
+    {
+     "outlet": "CBS News",
+     "url": "https://www.cbsnews.com/news/tupac-shakur-murder-trial-opening-statements-keffe-d-davis/"
+    },
+    {
+     "outlet": "NPR",
+     "url": "https://www.npr.org/2026/08/18/g-s1-139061/tupac-shakur-killing-trial"
+    },
+    {
+     "outlet": "News 3 Las Vegas",
+     "url": "https://news3lv.com/news/local/opening-statements-tupac-shakur-murder-trial-duane-davis-las-vegas-clark-county-court-live-watch-nevada"
+    }
+   ],
+   "witnesses": [
+    {
+     "name": "Garry Dale",
+     "role": "Former Las Vegas Metro police officer",
+     "gist": "Stopped Shakur's black BMW earlier that night over a missing plate, then rode with him in the ambulance; asked who shot him, Shakur said \"No, we'll take care of it.\""
+    },
+    {
+     "name": "Ingrid Stokes",
+     "role": "Eyewitness, driving near the shooting",
+     "gist": "Saw Suge Knight at the wheel with Shakur beside him, heard the gunfire and ducked — she never saw who was shooting."
+    },
+    {
+     "name": "Brent Becker",
+     "role": "Retired LVMPD homicide detective",
+     "gist": "Described the white Cadillac witnesses saw and forensic work pointing to a .40-caliber Glock, and acknowledged nobody ever picked a shooter out of a photo lineup."
+    },
+    {
+     "name": "Fred Miller",
+     "role": "Former LAPD detective",
+     "gist": "Explained how Davis first surfaced through the separate investigation into the killing of Christopher \"Biggie\" Wallace."
+    }
+   ]
+  },
+  {
+   "day": 2,
+   "date": "2026-08-18",
+   "phase": "Prosecution case",
+   "headline": "The autopsy photos, and a witness who did not want to be there",
+   "summary": "Clark County medical examiner Dr. Lisa Gavin walked jurors through three gunshot wounds — one collapsed a lung that surgeons removed — and told them \"the manner of death was homicide.\" Some of Shakur's relatives walked out when the autopsy photos went up; his cousin Zayd Akinyela stayed, saying afterwards, \"I think we've been waiting 30 years to grieve properly.\" Jurors also saw the MGM Grand surveillance video of the lobby beating prosecutors call the motive. Two men from the Death Row Records world testified under subpoena, and one of them handed the defense a line it will use again.",
+   "sources": [
+    {
+     "outlet": "Fox 5 Vegas",
+     "url": "https://www.fox5vegas.com/2026/08/18/live-witnesses-continue-take-stand-day-two-tupac-murder-trial/"
+    },
+    {
+     "outlet": "PBS News Hour",
+     "url": "https://www.pbs.org/newshour/nation/forensic-pathologist-details-tupac-shakurs-fatal-wounds-in-duane-keffe-d-davis-trial"
+    },
+    {
+     "outlet": "Associated Press (via Bay News 9)",
+     "url": "https://baynews9.com/fl/tampa/ap-top-news/2026/08/18/forensic-pathologist-details-tupac-shakurs-fatal-wounds-at-duane-keffe-d-davis-trial"
+    },
+    {
+     "outlet": "News 3 Las Vegas",
+     "url": "https://news3lv.com/news/local/witness-testimony-second-day-tupac-shakur-murder-trial-duane-keffe-d-davis-court-las-vegas-nevada"
+    }
+   ],
+   "witnesses": [
+    {
+     "name": "Thomas Kern",
+     "role": "LVMPD crime scene analyst",
+     "gist": "Attended the 1996 autopsy and authenticated the photographs shown to jurors, originally shot on Polaroid film."
+    },
+    {
+     "name": "Dr. Lisa Gavin",
+     "role": "Clark County medical examiner",
+     "gist": "Testified Shakur died of gunshot wounds to the chest and abdomen and that \"the manner of death was homicide.\""
+    },
+    {
+     "name": "Michael Ingram",
+     "role": "MGM Grand investigator",
+     "gist": "Authenticated the 1996 casino surveillance tapes and explained the hotel reused its tapes back then, which limits what survives."
+    },
+    {
+     "name": "Kenneth Rios",
+     "role": "Former LVMPD sergeant",
+     "gist": "Responded to the lobby fight; Orlando Anderson refused medical care and declined to press charges, so no report was written."
+    },
+    {
+     "name": "William Heidmeyer",
+     "role": "Former security officer, Maxim Hotel",
+     "gist": "Testified about the night's events around the hotel."
+    },
+    {
+     "name": "Dean O'Kelly",
+     "role": "Former LVMPD gang detective",
+     "gist": "Handled crime scene evidence and told jurors the weapon was \"a Glock 40.\""
+    },
+    {
+     "name": "James McDonald",
+     "role": "Head of security at Club 662",
+     "gist": "Testified only under court order; said \"662\" spells MOB on a phone keypad, and framed the feud as personal — \"Wasn't our beef. Was between Suge Knight and Keffe D\" — adding he did not want to \"send another Black man to prison.\""
+    },
+    {
+     "name": "Reggie Wright Jr.",
+     "role": "Former head of Death Row Records security",
+     "gist": "Said Death Row was 95% of his security business and answered \"Absolutely not\" when asked whether he had anything to do with the killing."
+    }
+   ]
+  },
+  {
+   "day": 3,
+   "date": "2026-08-19",
+   "phase": "Prosecution case",
+   "headline": "The FBI agent who says Davis wanted it handled in Compton",
+   "summary": "Retired FBI special agent Wade Lee, who arrested Davis on drug charges in the late 1990s, told jurors Davis denied knowing who killed Shakur. According to Lee, Davis said he was angry enough about his nephew's beating to strike back — but that he would have wanted to do it in Compton, not Las Vegas. LAPD detective Daryn Dupree then began taking jurors inside the 2008 interview, including Davis's claim that Sean \"Diddy\" Combs had said of Shakur and Knight, \"I want to get rid of those dudes,\" and a remark Dupree said Davis made about the killing of Christopher Wallace: \"We did the other one.\" Combs has never been charged in either killing. Court started in the afternoon that day.",
+   "sources": [
+    {
+     "outlet": "News 3 Las Vegas",
+     "url": "https://news3lv.com/news/local/day-three-witness-testimony-tupac-shakur-murder-trial-duane-davis-keffe-d-las-vegas-clark-county-court-nevada-livestream-watch"
+    },
+    {
+     "outlet": "Los Angeles Magazine",
+     "url": "https://lamag.com/crimeinla/duane-davis-told-feds-sean-combs-offered-him-1m-to-kill-tupac/"
+    },
+    {
+     "outlet": "8 News Now",
+     "url": "https://www.8newsnow.com/news/tupac-murder-trial/live-updates-day-3-of-tupac-murder-trial-set-to-begin-at-1-p-m/"
+    }
+   ],
+   "witnesses": [
+    {
+     "name": "Wade Lee",
+     "role": "Retired FBI special agent",
+     "gist": "Arrested Davis on drug charges in the late 1990s; testified Davis denied knowing who killed Shakur but said he was mad enough to retaliate — in Compton, not Las Vegas."
+    },
+    {
+     "name": "Daryn Dupree",
+     "role": "LAPD detective",
+     "gist": "Began describing the 2008 interview, including Davis's claim that Sean Combs said \"I want to get rid of those dudes\" and Davis's line about the Wallace killing, \"We did the other one.\""
+    }
+   ]
+  },
+  {
+   "day": 4,
+   "date": "2026-08-20",
+   "phase": "Prosecution case",
+   "headline": "Jurors finally hear the tape at the centre of the case",
+   "summary": "Prosecutors played the 2008 recording the whole prosecution is built on. On it, Davis tells detectives the Cadillac came up on Shakur's side of the street, not his: \"If we would have been on my side, I would have blasted.\" He says he passed his gun backward, that one man in the car turned it down, and that his nephew Orlando Anderson took it and fired. Detective Daryn Dupree explained to jurors why Davis was sitting in that room at all: \"Everybody was a suspect at that time.\" Before the tape, a former associate of Davis testified under court order about the gang backdrop the state needs for its enhancement.",
+   "sources": [
+    {
+     "outlet": "NPR",
+     "url": "https://www.npr.org/2026/08/21/nx-s1-5940538/jurors-hear-keffe-d-say-his-nephew-fired-fatal-shots-at-tupac-shakur-in-1996-drive-by-shooting"
+    },
+    {
+     "outlet": "News 3 Las Vegas",
+     "url": "https://news3lv.com/news/local/prosecutors-video-tupac-shakur-murder-trial-las-vegas-duane-davis-keffe-d-court-livestream-watch"
+    },
+    {
+     "outlet": "8 News Now",
+     "url": "https://www.8newsnow.com/news/tupac-murder-trial/live-updates-day-4-of-tupac-murder-trial/"
+    }
+   ],
+   "witnesses": [
+    {
+     "name": "Denvonta Lee",
+     "role": "Former associate of Davis",
+     "gist": "Testified under court order that he was initiated into the South Side Crips, and identified Mob Piru — the set tied to Death Row Records, Suge Knight and Shakur — as the rival."
+    },
+    {
+     "name": "Daryn Dupree",
+     "role": "LAPD detective",
+     "gist": "Continued on the 2008 interview and told jurors, \"Everybody was a suspect at that time.\""
+    },
+    {
+     "name": "Greg Kading",
+     "role": "Former LAPD detective, federal task force",
+     "gist": "Testified about conducting the 2008 interview with Davis, in which Davis named Anderson as the shooter."
+    }
+   ]
+  },
+  {
+   "day": 5,
+   "date": "2026-08-21",
+   "phase": "Prosecution case",
+   "headline": "The last photograph, and the man who sold his own story",
+   "summary": "Leonard Jefferson told jurors he pulled up beside Shakur at a red light on Las Vegas Boulevard, was waved along toward the club, and took what became the last photograph of the rapper alive; asked whether he staged it, he answered \"I did not.\" Prosecutors then turned to the documentary business: \"Death Row Chronicles\" director Mario Diaz said Davis was paid to appear and that nothing was scripted, and clips were played of Davis saying, \"I am the only one alive who can tell you who really killed Tupac.\" Jurors also heard a long 2009 police interview in which Davis says, \"I wish I never met Puff Daddy period. I swear to God. He messed up my life.\" Davis himself spoke up in open court, objecting after his home address was read aloud: \"This stuff is wrong.\"",
+   "sources": [
+    {
+     "outlet": "Fox 5 Vegas",
+     "url": "https://www.fox5vegas.com/2026/08/21/three-witnesses-expected-during-fifth-day-witness-testimony-tupac-murder-trial/"
+    },
+    {
+     "outlet": "Fox Baltimore (Sinclair)",
+     "url": "https://foxbaltimore.com/news/nation-world/first-week-testimony-tupac-shakur-murder-trial-concludes-friday-day-5-witnesses-duane-davis-keffe-d-las-vegas-court-nevada-livestream"
+    },
+    {
+     "outlet": "CBS 6 Albany (Sinclair)",
+     "url": "https://cbs6albany.com/news/nation-world/first-week-testimony-tupac-shakur-murder-trial-concludes-friday-day-5-witnesses-duane-davis-keffe-d-las-vegas-court-nevada-livestream"
+    },
+    {
+     "outlet": "8 News Now",
+     "url": "https://www.8newsnow.com/news/tupac-murder-trial/live-updates-day-5-of-tupac-murder-trial/"
+    }
+   ],
+   "witnesses": [
+    {
+     "name": "Leonard Jefferson",
+     "role": "Photographer",
+     "gist": "Took the last known photograph of Shakur alive, at a stoplight on the Strip; said \"I did not\" when asked whether he staged it."
+    },
+    {
+     "name": "Mario Diaz",
+     "role": "Director, BET's \"Death Row Chronicles\"",
+     "gist": "Testified Davis was paid to appear and the series was unscripted, with no questions given in advance; the defense noted the consultants were the same investigators who wrote a book about the case."
+    },
+    {
+     "name": "Michael Dorsey",
+     "role": "True-crime producer, co-author of a book on the investigation",
+     "gist": "Worked on the documentary; confirmed Sean Combs' lawyers sent a cease-and-desist letter to Apple TV over the material, though no lawsuit followed."
+    }
+   ]
+  },
+  {
+   "day": 6,
+   "date": "2026-08-24",
+   "phase": "prosecution",
+   "headline": "Jurors hear Davis's 2017 recordings; a witness clashes with the defense",
+   "summary": "Michael Dorsay returned to the stand to authenticate 2017 \"Death Row Chronicles\" recordings the state played for the jury, in which Davis called Shakur \"an ignorant kid in the prime of his life\" and, asked whether he wanted to apologize to Shakur's family, said \"No... I didn't do nothing.\" On cross-examination Dorsay pushed back that the defense's questions were \"based off conspiracy theories,\" and the judge reminded him that a witness answers questions rather than asks them. The defense objected that jurors should not have heard the recordings' references to other crimes.",
+   "witnesses": [
+    {
+     "name": "Michael Dorsay",
+     "role": "Producer, 2017 \"Death Row Chronicles\" (prosecution)",
+     "gist": "Authenticated the 2017 recordings of Davis played to the jury; on cross clashed with the defense over what he called conspiracy-theory questions."
+    }
+   ],
+   "sources": [
+    {
+     "outlet": "FOX5 Vegas",
+     "url": "https://www.fox5vegas.com/2026/08/24/witness-testimony-continues-week-two-tupac-murder-trial/"
+    },
+    {
+     "outlet": "WTOC",
+     "url": "https://www.wtoc.com/2026/08/25/week-two-testimony-tupac-murder-trial-begins-with-clashing-testimony-explosive-audio/"
+    }
+   ]
+  },
+  {
+   "day": 7,
+   "date": "2026-08-25",
+   "phase": "prosecution",
+   "headline": "An Outlaw's eyewitness account; LVMPD analysts detail the searches",
+   "summary": "Malcolm \"E.D.I. Mean\" Greenidge of the Outlawz, who was in the caravan with Shakur the night he was shot, described a light-colored Cadillac pulling alongside and gunfire — \"an arm and a gun\" he could not identify — and said no one in their group returned fire. LVMPD crime-scene analysts Jeffrey Scott and Steavie Felabom described the 2023 search of Davis's home, and Det. Justine Gatus testified about bins of newspaper and magazine clippings about the killing found there. Officer Mark Hatton, a NIBIN firearms examiner, testified that the seven cartridge casings from the 1996 scene bore marks consistent with a single firearm.",
+   "witnesses": [
+    {
+     "name": "Malcolm Greenidge",
+     "role": "Rapper, the Outlawz (\"E.D.I. Mean\") — eyewitness (prosecution)",
+     "gist": "In the caravan with Shakur; saw a light-colored Cadillac pull alongside and an arm and a gun, could not identify the shooter, and said no one in their group returned fire."
+    },
+    {
+     "name": "Jeffrey Scott",
+     "role": "Senior crime-scene analyst, LVMPD",
+     "gist": "Documented the 2023 search of Davis's home, photographing papers found in a Dodge Challenger in the garage."
+    },
+    {
+     "name": "Steavie Felabom",
+     "role": "Crime-scene analyst, LVMPD",
+     "gist": "Photographed items from the garage including a \"Compton Street Legend\" book and a 1996 VIBE magazine featuring Shakur."
+    },
+    {
+     "name": "Det. Justine Gatus",
+     "role": "Homicide detective, LVMPD",
+     "gist": "Testified about bins of newspaper and magazine clippings about the killing found in the home; could not say who assembled them."
+    },
+    {
+     "name": "Officer Mark Hatton",
+     "role": "Firearms/NIBIN examiner, LVMPD (prosecution)",
+     "gist": "Examined seven casings from the 1996 scene and testified they bore characteristics consistent with a single firearm."
+    }
+   ],
+   "sources": [
+    {
+     "outlet": "FOX5 Vegas",
+     "url": "https://www.fox5vegas.com/2026/08/25/live-testimony-continues-week-two-tupac-murder-trial/"
+    },
+    {
+     "outlet": "News 3 Las Vegas",
+     "url": "https://news3lv.com/news/local/testimony-continues-tupac-shakur-murder-trial-jury-duane-davis-keffe-d-crime-court-las-vegas-nevada-livestream"
+    }
+   ]
+  },
+  {
+   "day": 8,
+   "date": "2026-08-26",
+   "phase": "prosecution",
+   "headline": "The state rests, its case built largely on Davis's own words",
+   "summary": "The prosecution rested on Aug. 26, closing a case it had built largely on Davis's own accounts of the 1996 drive-by — his 2008 statement to police, his 2017 \"Death Row Chronicles\" interview, and his memoir — in which he placed himself in the front seat of the Cadillac and described the fatal shots coming from the back seat. Over roughly two weeks the state put on about two dozen people; with its case now closed, the defense was set to open the following morning.",
+   "witnesses": [],
+   "sources": [
+    {
+     "outlet": "CNN",
+     "url": "https://www.cnn.com/2026/08/26/us/tupac-shakur-murder-prosecution-rests"
+    },
+    {
+     "outlet": "ABC7 New York",
+     "url": "https://abc7ny.com/story/tupac-shakur-murder-trial-prosecutors-rest-putting-duane-davis-defense/19740798/"
+    },
+    {
+     "outlet": "FOX5 Vegas",
+     "url": "https://www.fox5vegas.com/2026/08/27/defense-set-begin-tupac-shakur-murder-trial-after-prosecution-rests/"
+    }
+   ]
+  },
+  {
+   "day": 9,
+   "date": "2026-08-27",
+   "phase": "defense",
+   "headline": "A three-witness defense rests; Davis will not testify",
+   "summary": "The defense presented its entire case on Aug. 27 and rested the same day, calling three witnesses. Retired LVMPD officer Stan Hyt, stationed at Suge Knight's residence during the Mike Tyson fight, testified he saw no damage to vehicles entering the property; Officer Charlie Mangrum, monitoring the party there, said he saw a BMW carrying Shakur arrive around 10:10–10:15 p.m.; and Dan Long, a former gang-crimes and homicide detective, testified that thousands of firearms were tested over the years but none matched the cartridge casings found at the crime scene. Duane \"Keffe D\" Davis waived his right to testify, and prosecutors declined to call rebuttal witnesses. With both sides rested, the judge held a charge conference on Friday, Aug. 28 — Davis waived his appearance for it — and set closing arguments before the 12 jurors and four alternates for Monday, Aug. 31.",
+   "witnesses": [
+    {
+     "name": "Stan Hyt",
+     "role": "Retired officer, LVMPD (defense)",
+     "gist": "Stationed at Suge Knight's residence the night of the shooting; testified he saw no damage to vehicles entering the property."
+    },
+    {
+     "name": "Charlie Mangrum",
+     "role": "Officer, LVMPD (defense)",
+     "gist": "On duty monitoring the party at Knight's house; said a BMW carrying Shakur arrived around 10:10–10:15 p.m."
+    },
+    {
+     "name": "Dan Long",
+     "role": "Former gang-crimes and homicide detective, LVMPD (defense)",
+     "gist": "Testified that thousands of firearms were tested over the years but none matched the cartridge casings recovered from the 1996 crime scene."
+    }
+   ],
+   "sources": [
+    {
+     "outlet": "FOX5 Vegas",
+     "url": "https://www.fox5vegas.com/2026/08/27/defense-set-begin-tupac-shakur-murder-trial-after-prosecution-rests/"
+    },
+    {
+     "outlet": "KRCR",
+     "url": "https://krcrtv.com/news/nation-world/today-defense-begins-case-in-tupac-shakur-murder-trial"
+    }
+   ]
+  }
+ ]
 }

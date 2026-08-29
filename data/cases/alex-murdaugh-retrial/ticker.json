@@ -183,6 +183,13 @@
       "flag": null
     },
     {
+      "ts": "2026-08-14T10:18:25.000Z",
+      "outlet": "via MSN",
+      "headline": "Live: Alex Murdaugh’s retrial moved out of South Carolina’s Lowcountry",
+      "url": "https://www.msn.com/en-us/news/crime/alex-murdaugh-returns-to-court-ahead-of-april-2027-retrial/ar-AA2a6Znf",
+      "flag": null
+    },
+    {
       "ts": "2026-08-14T09:54:00.000Z",
       "outlet": "krdo.com",
       "headline": "Alex Murdaugh’s retrial will be relocated, and his original testimony can be used conditionally, judge rules",
@@ -345,7 +352,6 @@
     }
   ],
   "seen": [
-    "g4huzq",
     "qx0hl7",
     "1if1wkl",
     "m5xleb",
@@ -944,6 +950,7 @@
     "1jc0y6",
     "ggo4jo",
     "12zwnqf",
-    "1g9ynfx"
+    "1g9ynfx",
+    "1g9yub7"
   ]
 }

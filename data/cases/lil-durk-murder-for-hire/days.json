@@ -366,6 +366,96 @@
           "url": "https://thegrio.com/2026/08/25/lil-durk-murder-for-hire-trial-revenge-plot/"
         }
       ]
+    },
+    {
+      "day": 2,
+      "date": "2026-08-25",
+      "phase": "prosecution",
+      "headline": "Prosecutors revisit King Von’s killing and Banks’s own words",
+      "summary": "On the trial’s second day the government returned to the 2020 killing of King Von — the death it says set the alleged revenge plot in motion — and put Banks’s own text messages before the jury, including one in which prosecutors say he wrote that Von’s death had turned him into “a different animal.” Jurors also heard how investigators say a pair of “Rats to Riches” pants tied evidence together in the case. The defense pushed back on the context prosecutors gave the messages.",
+      "witnesses": [],
+      "sources": [
+        {
+          "outlet": "Los Angeles Magazine",
+          "url": "https://lamag.com/crimeinla/texts-reveal-lil-durk-wrote-king-vons-death-turned-him-into-a-different-animal/"
+        },
+        {
+          "outlet": "AllHipHop",
+          "url": "https://allhiphop.com/news/exclusive-lil-durk-trial-reveals-how-rats-to-riches-pants-helped-police-crack-the-case/"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "date": "2026-08-26",
+      "phase": "prosecution",
+      "headline": "Cooperating witness OTF Jam takes the stand and names Banks",
+      "summary": "The prosecution’s central cooperating witness, Kacey Hester — the OTF associate known as “OTF Jam” — took the stand and identified Banks in court as a participant in the plot to kill Atlanta rapper Quando Rondo (Tyquian Bowman). Jurors were also shown an unreleased “Redman” video recovered from Banks’s phone, which the defense characterized as an expression of art, and the two sides fought over the context of the King Von text messages.",
+      "witnesses": [
+        {
+          "name": "Kacey Hester (“OTF Jam”)",
+          "role": "Cooperating witness — an OTF associate who pleaded guilty to his role in the August 2022 shooting that killed Saviay’a Robinson",
+          "gist": "Took the stand and identified Banks in court as a participant in the plot to kill Quando Rondo."
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "Primetimer",
+          "url": "https://www.primetimer.com/news/lil-durk-trial-otf-jam-takes-stand-to-identify-rapper-as-a-participant-in-murder"
+        },
+        {
+          "outlet": "AllHipHop",
+          "url": "https://allhiphop.com/news/lil-durk-trial-turns-to-king-von-texts-as-defense-challenges-context/"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "date": "2026-08-27",
+      "phase": "prosecution",
+      "headline": "OTF Jam details the alleged plan, and his own part in it",
+      "summary": "Hester laid out the alleged assassination plan for the jury: he said an early-morning call on Aug. 18, 2022 summoned him — “we need you” — to help target Quando Rondo, that the group obtained Rondo’s address through a marijuana-dealer connection and planned to shoot him as he left a hotel, and that the attempt was abandoned when police were present. Describing himself as a “shooter,” Hester called the scheme “sloppy” and said carrying it out “ain’t something I wanted to do.” Defense attorney Brian Steel began his cross-examination.",
+      "witnesses": [
+        {
+          "name": "Kacey Hester (“OTF Jam”)",
+          "role": "Cooperating witness — an OTF associate who pleaded guilty to his role in the August 2022 shooting that killed Saviay’a Robinson",
+          "gist": "Detailed the alleged plan — an Aug. 18, 2022 call to target Rondo in San Diego, an address obtained through a marijuana dealer, and an attempt abandoned when police were present — and admitted his own role as a “shooter.”"
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "Los Angeles Magazine",
+          "url": "https://lamag.com/crimeinla/otf-jam-testifies-against-lil-durk-details-alleged-plot-to-kill-quando-rondo/"
+        },
+        {
+          "outlet": "AllHipHop",
+          "url": "https://allhiphop.com/news/lil-durk-trial-day-6-otf-jam-lays-out-assassination-plan-says-he-has-no-respect-for-rapper/"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "date": "2026-08-28",
+      "phase": "prosecution",
+      "headline": "Defense attacks OTF Jam’s credibility on cross-examination",
+      "summary": "Defense attorney Brian Steel spent the day attacking Hester’s credibility. He confronted the witness with his history of armed robbery and murder, pressed whether a cooperation deal and a hoped-for early release — Steel suggested Hester had told his wife he could be out in 18 months if he testified — were driving his testimony, and used phone records to challenge his account of who called whom, after which Hester adjusted his story. Steel repeatedly noted that little beyond Hester’s own word corroborated his claims.",
+      "witnesses": [
+        {
+          "name": "Kacey Hester (“OTF Jam”)",
+          "role": "Cooperating witness — an OTF associate who pleaded guilty to his role in the August 2022 shooting that killed Saviay’a Robinson",
+          "gist": "Under cross-examination by Brian Steel, was confronted with his armed-robbery and murder history, a cooperation deal and hoped-for early release, and phone records that contradicted his account of who initiated the calls."
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "Los Angeles Magazine",
+          "url": "https://lamag.com/crimeinla/brian-steel-grills-otf-jam-over-criminal-past-credibility-in-lil-durk-trial/"
+        },
+        {
+          "outlet": "AllHipHop",
+          "url": "https://allhiphop.com/news/lil-durk-trial-day-7-brian-steel-challenges-otf-jams-changing-answers/"
+        }
+      ]
     }
   ]
 }

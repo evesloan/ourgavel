@@ -950,6 +950,11 @@ const modHub = c => _max(lastTicker(c), lastDay(c));
 const modRecord = c => _max(lastDay(c), lastPretrial(c));
 const modWitnesses = c => lastWitnessDay(c);
 const modBoard = c => lastCommunity(c);
+// The trial days that earn their own indexable page: a day the reader can search for by the
+// witness who testified. One helper feeds the page emitter AND the sitemap, so the two can
+// never disagree about which day URLs exist - the bug class seo.test guards. Days with no
+// named witness stay folded into the record; there is nothing long-tail to rank for them.
+const dayPagesFor = c => (c.days.days || []).filter(d => (d.witnesses || []).length);
 // Schema.org wants a datetime; the sitemap wants a date. Same source, two shapes.
 const asDateTime = d => d ? d + 'T00:00:00Z' : '';
 // Honest status chip: only say "now in court" when a trial is actually running.
@@ -1384,12 +1389,77 @@ ${tickerHtml(c.ticker.items, 8, false, `/cases/${c.slug}/live.json`)}
 function dayBlock(c, d) {
   const ws = d.witnesses || [];
   const wits = ws.map(w => `<li><span class="wn">${esc(w.name)}</span> <span class="wr">— ${esc(w.role)}</span><br>${esc(w.gist)}</li>`).join('');
+  // A day with a named witness has its own page; link the headline to it so the record
+  // hands its crawl equity to the long-tail page instead of ending the trail here.
+  const hasPage = ws.length > 0;
+  const head = hasPage
+    ? `<a href="/cases/${c.slug}/day/${d.day}/">${esc(d.headline)}</a>`
+    : esc(d.headline);
   return `<div class="day" id="day-${d.day}">
   <div class="dh"><span class="dn">Day ${d.day}</span><span class="dd">${fmtDate(d.date)}</span><span class="badge phase">${esc(d.phase)}</span></div>
-  <h3 style="margin:6px 0 4px">${esc(d.headline)}</h3>
+  <h3 style="margin:6px 0 4px">${head}</h3>
   <p style="font-size:14.5px">${esc(d.summary)} ${srcLinks(d.sources)}</p>
   ${wits ? `<details class="wit-details"><summary>Who testified — ${ws.length} witness${ws.length === 1 ? '' : 'es'}</summary><ul class="wit">${wits}</ul></details>` : ''}
 </div>`;
+}
+
+// One indexable page per trial day a reader might search for by name: "Kacey Hester Lil Durk
+// trial", "who testified day 12 Clancy". The value is a dated, sourced, single-day answer that
+// the sprawling record page cannot rank for. Every marked-up claim is rendered on the page.
+function dayPage(c, d) {
+  const cc = c.case;
+  const list = dayPagesFor(c);
+  const idx = list.findIndex(x => x.day === d.day);
+  const prev = list[idx - 1], next = list[idx + 1];
+  const ws = d.witnesses || [];
+  const witLi = ws.map(w => `<li><b>${esc(w.name)}</b> — ${esc(w.role)}. ${esc(w.gist)}</li>`).join('');
+  const url = `/cases/${c.slug}/day/${d.day}/`;
+  return page({
+    ogType: 'article',
+    modified: d.date,
+    title: `Day ${d.day}: ${d.headline} — ${cc.shortTitle}`,
+    desc: `${cc.shortTitle}, day ${d.day} (${fmtDate(d.date)}): ${d.summary}`.slice(0, 300),
+    canonical: url,
+    ld: [
+      {
+        '@context': 'https://schema.org', '@type': 'NewsArticle',
+        headline: `Day ${d.day}: ${d.headline}`,
+        description: d.summary,
+        datePublished: d.date, dateModified: d.date,
+        mainEntityOfPage: `${SITE}${url}`,
+        isPartOf: { '@type': 'CreativeWorkSeries', name: `${cc.shortTitle} — the record, day by day`, url: `${SITE}/cases/${c.slug}/timeline/` },
+        publisher: { '@type': 'Organization', name: SITE_NAME, url: SITE },
+        isAccessibleForFree: true,
+        citation: (d.sources || []).map(x => ({ '@type': 'CreativeWork', name: x.outlet, url: safeUrl(x.url) })),
+      },
+      ws.length ? {
+        '@context': 'https://schema.org', '@type': 'ItemList',
+        name: `Witnesses on day ${d.day} of ${cc.shortTitle}`,
+        numberOfItems: ws.length,
+        itemListElement: ws.map((w, i) => ({
+          '@type': 'ListItem', position: i + 1,
+          item: { '@type': 'Person', name: w.name, description: `${w.role} — ${w.gist}`, url: `${SITE}/cases/${c.slug}/witnesses/` },
+        })),
+      } : null,
+    ].filter(Boolean),
+    active: '/cases/',
+    crumbs: `<a href="/">Home</a> › <a href="${caseUrl(c)}">${esc(cc.shortTitle)}</a> › <a href="${caseUrl(c, 'timeline/')}">The Record</a> › Day ${d.day}`,
+    body: `
+<div class="dh" style="margin-top:6px"><span class="dn">Day ${d.day}</span><span class="dd">${fmtDate(d.date)}</span><span class="badge phase">${esc(d.phase)}</span></div>
+<h1 style="margin:8px 0 4px">${esc(d.headline)}</h1>
+<p class="sub" style="margin:0 0 14px"><a href="${caseUrl(c)}">${esc(cc.shortTitle)}</a> · <a href="${caseUrl(c, 'timeline/')}">The full record</a></p>
+<div class="card">
+<p style="font-size:15px">${esc(d.summary)} ${srcLinks(d.sources)}</p>
+</div>
+${ws.length ? `<h2>Who testified</h2>
+<div class="card"><ul class="wit">${witLi}</ul></div>
+<p class="sub" style="margin-top:10px"><a href="${caseUrl(c, 'witnesses/')}">The full witness index for this case →</a></p>` : ''}
+<nav class="daynav" style="margin-top:18px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap">
+${prev ? `<a class="btn sm ghost" href="/cases/${c.slug}/day/${prev.day}/">← Day ${prev.day}</a>` : '<span></span>'}
+<a class="btn sm" href="${caseUrl(c, 'timeline/')}">Back to the record</a>
+${next ? `<a class="btn sm ghost" href="/cases/${c.slug}/day/${next.day}/">Day ${next.day} →</a>` : '<span></span>'}
+</nav>
+`});
 }
 function timelinePage(c) {
   const mod = modRecord(c);
@@ -1446,7 +1516,7 @@ function witnessesPage(c) {
         '@type': 'ListItem', position: i + 1,
         item: {
           '@type': 'Person', name: w.name, description: `${w.role} — ${w.gist}`,
-          url: `${SITE}/cases/${c.slug}/timeline/#day-${w.day}`,
+          url: `${SITE}/cases/${c.slug}/day/${w.day}/`,
         },
       })),
     } : null,
@@ -1460,7 +1530,7 @@ ${caseNav(c, 'witnesses')}
 <p class="sub" style="margin-top:12px">${allWits.length} witnesses indexed from the day-by-day record. Click a day for full context.</p>
 <div class="card" style="overflow-x:auto"><table class="witx">
 <tr><th>Witness</th><th>Role</th><th>Day</th><th>Testimony, in one line</th></tr>
-${allWits.map(w => `<tr><td><b>${esc(w.name)}</b></td><td>${esc(w.role)}</td><td><a href="${caseUrl(c, 'timeline/')}#day-${w.day}">Day ${w.day}</a></td><td>${esc(w.gist)}</td></tr>`).join('\n')}
+${allWits.map(w => `<tr><td><b>${esc(w.name)}</b></td><td>${esc(w.role)}</td><td><a href="${caseUrl(c, 'day/' + w.day + '/')}">Day ${w.day}</a></td><td>${esc(w.gist)}</td></tr>`).join('\n')}
 </table></div>
 `});
 }
@@ -2285,6 +2355,7 @@ for (const c of CASES) {
   files[`cases/${c.slug}/board/embed/index.html`] = boardPage(c, { embed: true });
   const sp = standardPage(c);
   if (sp) files[`cases/${c.slug}/standard/index.html`] = sp;
+  for (const d of dayPagesFor(c)) files[`cases/${c.slug}/day/${d.day}/index.html`] = dayPage(c, d);
 }
 for (const [rel, html] of Object.entries(files)) {
   const p = path.join(OUT, rel);
@@ -2357,6 +2428,9 @@ for (const c of CASES) {
   addUrl(`/cases/${c.slug}/board/`, live ? 'hourly' : 'weekly', '0.8', modBoard(c));
   addUrl(`/cases/${c.slug}/witnesses/`, live ? 'daily' : 'monthly', '0.6', modWitnesses(c));
   if (c.case.legalStandard) addUrl(`/cases/${c.slug}/standard/`, 'weekly', '0.6');
+  // Day pages are dated to the day they cover and change only on a correction: a real lastmod
+  // and a low churn frequency. Same helper as the emitter, so no sitemap-only orphans.
+  for (const d of dayPagesFor(c)) addUrl(`/cases/${c.slug}/day/${d.day}/`, 'monthly', '0.5', d.date);
 }
 fs.writeFileSync(path.join(OUT, 'sitemap.xml'),
   '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'

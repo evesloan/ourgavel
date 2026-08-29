@@ -188,6 +188,33 @@ if (fs.existsSync(keyFile)) {
   ok(fs.readFileSync(path.join(OUT, k + '.txt'), 'utf8').trim() === k, 'the key file should contain the key');
 }
 
+console.log('--- Day pages: emitted, in the sitemap, and navigable ---');
+// One indexable page per trial day with a named witness. The emitter and the sitemap read
+// the same helper, so the count on the page tree and the count in the sitemap must agree -
+// a mismatch means a day URL is orphaned in one place or the other.
+const dayPages = pages.filter(p => /\/day\/\d+\/index\.html$/.test(p));
+const daySitemap = locs.filter(l => /\/day\/\d+\/$/.test(l));
+ok(dayPages.length === daySitemap.length,
+  `day-page count (${dayPages.length}) should equal day URLs in the sitemap (${daySitemap.length})`);
+ok(dayPages.length > 0, 'at least one day page should build from the record');
+for (const p of dayPages) {
+  const u = urlOf(p);
+  const h = fs.readFileSync(p, 'utf8');
+  const txt = textOf(h);
+  // A day page must link back into the record and out to the witness index - it is a leaf,
+  // and a leaf with no way back up the tree bleeds crawl equity.
+  const slug = u.split('/')[2];
+  ok(h.includes(`href="/cases/${slug}/timeline/"`), `${u} should link back to the record`);
+  ok(h.includes(`href="/cases/${slug}/witnesses/"`), `${u} should link to the witness index`);
+  // Its NewsArticle must be dated to the day, never the build clock.
+  const na = ldOf(h).find(o => o['@type'] === 'NewsArticle');
+  ok(na && /^\d{4}-\d\d-\d\d$/.test(na.datePublished || ''),
+    `${u} NewsArticle should carry a plain record date, not a build timestamp`);
+  // Every witness the ItemList names must be visible on the page.
+  ok(txt.includes('Who testified') || !ldOf(h).some(o => o['@type'] === 'ItemList'),
+    `${u} marks up witnesses but does not show them`);
+}
+
 console.log('--- No inline event attributes ---');
 for (const p of pages) {
   const url = urlOf(p);

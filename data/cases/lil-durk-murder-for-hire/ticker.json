@@ -15,6 +15,13 @@
       "flag": "verdict-watch"
     },
     {
+      "ts": "2026-08-28T15:55:00.000Z",
+      "outlet": "billboard.com",
+      "headline": "Lil Durk Trial Week 1 Recap: Flipped OTF Crew Member Calls Quando Rondo Shooting ‘Sloppy’",
+      "url": "https://www.billboard.com/pro/lil-durk-murder-trial-week-1-recap/",
+      "flag": null
+    },
+    {
       "ts": "2026-08-28T12:38:00.000Z",
       "outlet": "thesource.com",
       "headline": "OTF Jam Testifies in Lil Durk Trial, Calling Alleged Plot to Kill Quando Rondo “Sloppy”",
@@ -26,6 +33,13 @@
       "outlet": "AllHipHop",
       "headline": "Lil Durk Trial Day 7: Brian Steel Challenges OTF Jam’s Changing Answers",
       "url": "https://allhiphop.com/news/lil-durk-trial-day-7-brian-steel-challenges-otf-jams-changing-answers/",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-28T02:27:00.000Z",
+      "outlet": "DancehallMag",
+      "headline": "Lil Durk Trial Day 6: OTF Jam Details Alleged Assassination Plan",
+      "url": "https://www.dancehallmag.com/2026/08/28/news/lil-durk-trial-day-6-otf-jam-details-alleged-assassination-plan.html",
       "flag": null
     },
     {
@@ -337,6 +351,8 @@
     "1a6yl7v",
     "kr99m5",
     "1gakd29",
-    "7qkllj"
+    "7qkllj",
+    "1a7veld",
+    "1toaet4"
   ]
 }

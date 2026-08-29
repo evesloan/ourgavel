@@ -15,6 +15,20 @@
       "flag": null
     },
     {
+      "ts": "2026-08-18T10:18:00.000Z",
+      "outlet": "via AOL",
+      "headline": "Alex Murdaugh moves for new home for double-murder retrial",
+      "url": "https://www.aol.com/articles/alex-murdaugh-moves-home-double-171911000.html",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-18T10:18:00.000Z",
+      "outlet": "Fox News",
+      "headline": "Alex Murdaugh solicita un nuevo lugar para el nuevo juicio por doble asesinato",
+      "url": "https://noticias.foxnews.com/us/alex-murdaugh-moves-new-trial-double-murder-retrial",
+      "flag": null
+    },
+    {
       "ts": "2026-08-18T08:28:10.000Z",
       "outlet": "via MSN",
       "headline": "Alex Murdaugh's legal team shifts focus to Richland County for double-murder retrial",
@@ -57,6 +71,13 @@
       "flag": null
     },
     {
+      "ts": "2026-08-15T12:36:00.000Z",
+      "outlet": "infobae.com",
+      "headline": "Caso Alex Murdaugh: qu&#233; dictaminaron en la audiencia preliminar antes del nuevo juicio",
+      "url": "https://www.infobae.com/estados-unidos/2026/08/15/caso-alex-murdaugh-que-dictamino-la-jueza-en-la-audiencia-preliminar-antes-del-nuevo-juicio/",
+      "flag": null
+    },
+    {
       "ts": "2026-08-14T17:25:18.000Z",
       "outlet": "via MSN",
       "headline": "8 decisions that could shape Alex Murdaugh's upcoming murder retrial",
@@ -72,9 +93,9 @@
     },
     {
       "ts": "2026-08-14T14:15:00.000Z",
-      "outlet": "via Yahoo News",
+      "outlet": "fox35orlando.com",
       "headline": "Judge moves Alex Murdaugh murder retrial from small rural county amid ongoing legal twists",
-      "url": "https://www.yahoo.com/news/us/articles/judge-moves-alex-murdaugh-murder-211526376.html",
+      "url": "https://www.fox35orlando.com/news/judge-moves-alex-murdaugh-murder-retrial-from-small-rural-county-amid-ongoing-legal-twists",
       "flag": null
     },
     {
@@ -82,6 +103,20 @@
       "outlet": "via MSN",
       "headline": "South Carolina judge grants Alex Murdaugh change of venue for murder retrial",
       "url": "https://www.msn.com/en-us/news/other/south-carolina-judge-grants-alex-murdaugh-change-of-venue-for-murder-retrial/ar-AA2a8D3Q",
+      "flag": "verdict-watch"
+    },
+    {
+      "ts": "2026-08-14T13:09:00.000Z",
+      "outlet": "ctpost.com",
+      "headline": "Jueza acepta trasladar nuevo juicio a Alex Murdaugh de condado donde ocurrieron los asesinatos",
+      "url": "https://www.ctpost.com/news/world/article/jueza-acepta-trasladar-nuevo-juicio-a-alex-22388936.php",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-14T12:25:00.000Z",
+      "outlet": "wokv.com",
+      "headline": "Judge rules Alex Murdaugh's retrial will have a change of venue, but no location set",
+      "url": "https://www.wokv.com/news/national/judge-rules-alex-murdaughs-retrial-will-have-change-venue-no-location-set/XYXPWBEC2M2RNM3SR46MB3SXPM/",
       "flag": "verdict-watch"
     },
     {
@@ -99,17 +134,10 @@
       "flag": null
     },
     {
-      "ts": "2026-08-14T12:10:51.000Z",
-      "outlet": "via MSN",
-      "headline": "Alex Murdaugh granted change of venue for murder retrial, past testimony allowed",
-      "url": "https://www.msn.com/en-us/news/crime/alex-murdaugh-granted-change-of-venue-for-murder-retrial-past-testimony-allowed/ar-AA2a8EDl",
-      "flag": "verdict-watch"
-    },
-    {
       "ts": "2026-08-14T12:10:00.000Z",
-      "outlet": "via Yahoo News",
+      "outlet": "NBC News",
       "headline": "Alex Murdaugh granted change of venue for murder retrial, past testimony allowed",
-      "url": "https://www.yahoo.com/news/us/articles/alex-murdaugh-granted-change-venue-191051629.html",
+      "url": "https://www.nbcnews.com/news/us-news/alex-murdaugh-granted-change-venue-murder-retrial-rcna592594",
       "flag": "verdict-watch"
     },
     {
@@ -124,6 +152,13 @@
       "outlet": "AP",
       "headline": "Judge moves Alex Murdaugh retrial from small county",
       "url": "https://apnews.com/video/judge-moves-alex-murdaugh-retrial-from-small-county-ee4ead63ad964654b27c4c18fd8816d7",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-14T11:50:00.000Z",
+      "outlet": "via Yahoo News",
+      "headline": "Judge moves Alex Murdaugh retrial from small county, but motion to toss out case will wait",
+      "url": "https://www.yahoo.com/news/us/articles/judge-moves-alex-murdaugh-retrial-184949962.html",
       "flag": null
     },
     {
@@ -180,6 +215,13 @@
       "outlet": "nypost.com",
       "headline": "Alex Murdaugh’s ‘explosive’ request to blow up murder trial depends on DNA, stolen money and lies: attorney",
       "url": "https://nypost.com/2026/08/14/us-news/alex-murdaughs-bid-to-dismiss-murder-trial-depends-on-dna-stolen-money-and-lies-attorney/",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-14T05:23:00.000Z",
+      "outlet": "via Yahoo News",
+      "headline": "Alex Murdaugh's double murder retrial to be moved over jury fairness concerns, judge rules",
+      "url": "https://uk.news.yahoo.com/alex-murdaughs-double-murder-retrial-to-be-moved-over-jury-fairness-concerns-judge-rules-161302163.html",
       "flag": null
     },
     {
@@ -274,6 +316,13 @@
       "flag": null
     },
     {
+      "ts": "2026-06-29T03:54:00.000Z",
+      "outlet": "infobae.com",
+      "headline": "El caso Alex Murdaugh: todo sobre el comienzo del nuevo juicio tras la anulaci&#243;n de su condena en Carolina del Sur",
+      "url": "https://www.infobae.com/estados-unidos/2026/06/29/el-caso-alex-murdaugh-todo-sobre-el-comienzo-del-nuevo-juicio-tras-la-anulacion-de-su-condena-en-carolina-del-sur/",
+      "flag": null
+    },
+    {
       "ts": "2026-06-28T21:07:00.000Z",
       "outlet": "10TV Columbus",
       "headline": "Alex Murdaugh's true crime saga returns as the date for his new murder trial is set",
@@ -289,18 +338,6 @@
     }
   ],
   "seen": [
-    "wvm1ti",
-    "2m4jym",
-    "mk0nh8",
-    "6b9gcx",
-    "jbiymk",
-    "10iya4y",
-    "130ymwh",
-    "19sfwqx",
-    "1iwi6kh",
-    "1s7vb3w",
-    "r47uqg",
-    "1yey9pi",
     "1gu0ell",
     "g4huzq",
     "qx0hl7",
@@ -888,6 +925,18 @@
     "vp4ghn",
     "1eahpdt",
     "1jpo4oj",
-    "1crev2k"
+    "1crev2k",
+    "r3hwb0",
+    "1g9zccw",
+    "157fbd",
+    "1xpty7k",
+    "ykpug1",
+    "yii5zn",
+    "1xdahue",
+    "14rt0gb",
+    "1lq5ju9",
+    "1jc0y6",
+    "ggo4jo",
+    "12zwnqf"
   ]
 }

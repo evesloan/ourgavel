@@ -19,20 +19,21 @@
     },
     {
       "id": "q-slip",
-      "type": "question",
+      "type": "resolved",
       "x": 500,
       "y": 720,
-      "title": "Will the jury get a middle option?",
-      "body": "The defense wants involuntary manslaughter on the verdict form \u2014 a landing spot between murder and full acquittal. Prosecutors say no: the evidence shows intent to kill. The judge hasn't ruled yet.",
-      "status": "open",
+      "title": "SETTLED: the jury got its middle option",
+      "body": "The defense asked for involuntary manslaughter on the verdict form \u2014 a landing spot between murder and full acquittal \u2014 and prosecutors opposed it, arguing the evidence showed an intent to kill. Judge William Sullivan sided with the defense and put it on the slip. The jury that began deliberating Aug. 27 now weighs five outcomes for the three children's deaths: guilty of first-degree murder, guilty of second-degree murder, guilty of manslaughter, not guilty, or not guilty by reason of lack of criminal responsibility.",
+      "status": "resolved",
+      "day": 23,
       "sources": [
         {
-          "outlet": "Boston 25 News",
-          "url": "https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-defense-expected-call-final-witness-before-resting/3SY5KO3XLBG5NJ5F3S2VCFJKUY/"
+          "outlet": "The Boston Globe",
+          "url": "https://www.bostonglobe.com/2026/08/28/metro/lindsay-clancy-trial-live-updates/"
         },
         {
-          "outlet": "Boston Globe",
-          "url": "https://www.bostonglobe.com/2026/08/20/metro/lindsay-clancy-trial-live-updates/"
+          "outlet": "Boston 25 News",
+          "url": "https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-jury-resumes-deliberations-with-5-verdict-options-table/X47PPLV3HBG7JMZTLKPHNBBIBU/"
         }
       ]
     },

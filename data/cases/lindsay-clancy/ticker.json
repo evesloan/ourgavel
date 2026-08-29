@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-08-29T17:14:17.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Psychiatrist resigns from children’s hospital in Delaware after testifying in Lindsay Clancy trial",
+      "url": "https://www.boston25news.com/news/local/psychiatrist-resigns-childrens-hospital-delaware-after-testifying-lindsay-clancy-trial/EUQBOPV2DFCUJOKG56MNFRLWTU/",
+      "flag": null
+    },
+    {
       "ts": "2026-08-29T13:06:54.000Z",
       "outlet": "Court TV",
       "headline": "Tragedy, Tension &#038; Testimony: 10 Unforgettable Moments From Lindsay Clancy’s Murder Trial",
@@ -675,6 +682,7 @@
     "p1cfxz",
     "16vgsvt",
     "1v6uz89",
-    "jk86eh"
+    "jk86eh",
+    "q4oq85"
   ]
 }

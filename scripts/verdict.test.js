@@ -81,6 +81,36 @@ const withCrimeYear = [
 ];
 for (const [h, want] of withCrimeYear) ok(classify(h) === want, 'want ' + want + ', got ' + classify(h) + ': ' + h);
 
+console.log('--- Gate 1c: split / partial verdicts must HOLD (never a single outcome) ---');
+// The Clancy failure mode, found by running the classifier over realistic verdict-day phrasings:
+// a five-option jury can acquit on the top charge and convict on a lesser one, and outlets write
+// that as ONE headline. classify() tested NOT_GUILTY before GUILTY, so it returned NOT_GUILTY —
+// three newsrooms phrasing a real manslaughter conviction that way would have published a FALSE
+// ACQUITTAL. A headline asserting both an acquittal and a conviction is ambiguous by construction
+// and must classify as null so the engine holds for a human.
+const splitVerdicts = [
+  'Lindsay Clancy found not guilty of first-degree murder, guilty of manslaughter',
+  'Clancy acquitted of first-degree murder but convicted of manslaughter',
+  'Jury finds Clancy not guilty of murder, guilty on lesser charge',
+  'Clancy cleared of first-degree murder; convicted of involuntary manslaughter',
+  'Guilty of manslaughter, not guilty of first-degree murder: the Clancy verdict',
+  'Jury acquits Davis of murder but convicts him of a lesser count',
+];
+for (const h of splitVerdicts) ok(classify(h) === null, 'split verdict must hold, got ' + classify(h) + ': ' + h);
+
+console.log('--- and a CLEAN single-outcome verdict must still pass the split guard ---');
+// The guard is subtractive: it must never turn a real one-outcome verdict into a hold.
+const cleanThroughSplitGuard = [
+  ['Lindsay Clancy found not guilty by reason of insanity', 'NGRI'],
+  ['Clancy found not guilty on all counts', 'NOT_GUILTY'],
+  ['Mario Fernandez Saldana acquitted of all charges', 'NOT_GUILTY'],
+  ['Jury found her not criminally responsible', 'NGRI'],
+  ['Lindsay Clancy convicted of manslaughter in deaths of her three children', 'GUILTY'],
+  ['Jury finds Lindsay Clancy guilty of second-degree murder', 'GUILTY'],
+  ['Durk Banks convicted of murder-for-hire', 'GUILTY'],
+];
+for (const [h, want] of cleanThroughSplitGuard) ok(classify(h) === want, 'split guard ate a clean verdict, want ' + want + ' got ' + classify(h) + ': ' + h);
+
 console.log('--- Gate 2: consensus ---');
 ok(assess([], now).status === 'none', 'empty feed should be none');
 
@@ -110,6 +140,15 @@ ok(assess(consensus, now).outcome === 'GUILTY', 'consensus outcome should be GUI
 console.log('--- Gate 2: disagreement stops everything ---');
 const split = consensus.concat([at(7, 'NBC', 'Jury acquits Davis on all counts')]);
 ok(assess(split, now).status === 'conflict', 'contradicting outlets must produce conflict, never publish');
+
+console.log('--- Gate 2d: three newsrooms all running a SPLIT verdict must never publish ---');
+// The end-to-end guarantee: even a full consensus of split-verdict headlines yields nothing to
+// publish, so the engine holds and a human resolves the partial verdict.
+ok(assess([
+  at(10, 'Court TV', 'Clancy found not guilty of first-degree murder, guilty of manslaughter'),
+  at(9, 'AP', 'Clancy acquitted of murder but convicted of manslaughter'),
+  at(8, 'Boston Globe', 'Clancy cleared of first-degree murder, found guilty of manslaughter'),
+], now).status === 'none', 'a consensus of split-verdict headlines must publish nothing');
 
 console.log('--- Window ---');
 ok(assess(consensus.map(i => ({ ...i, ts: new Date(now - 40 * 3600 * 1000).toISOString() })), now).status === 'none',

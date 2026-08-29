@@ -88,6 +88,22 @@ function datesThePastVerdict(text, at, len) {
   return !CRIME_NOUN.test(tail.slice(m.index + m[0].length));
 }
 
+// SPLIT / PARTIAL verdicts. A five-option case — Clancy's jury may return first-degree murder,
+// second-degree murder, manslaughter, not guilty, OR not-guilty-by-reason-of-lack-of-criminal-
+// responsibility — routinely produces headlines that ACQUIT on the top charge and CONVICT on a
+// lesser one: "found not guilty of first-degree murder, guilty of manslaughter". classify() tests
+// NOT_GUILTY before GUILTY, so it read the acquittal phrase and returned NOT_GUILTY — and three
+// newsrooms phrasing a real conviction that way would have PUBLISHED A FALSE ACQUITTAL for a
+// defendant who was in fact convicted. A single headline that asserts BOTH an acquittal and a
+// conviction is ambiguous about the OVERALL outcome by construction; it proves nothing on its own.
+// So it is classified as null and the engine holds — a human writes the nuanced split-verdict
+// aftermath (AGENT.md), which is exactly the case a machine must not decide. Purely subtractive:
+// this can only turn a would-be single tag into null, never invent a positive, so it cannot cause
+// a publication — only ever a hold. (A clean verdict names one outcome and never trips both.)
+const ACQUITTAL_SIGNAL  = /\bnot[\s-]+guilty\b|\bacquit(?:ted|tal|s)?\b|\bcleared\s+of\b|\bnot[\s-]+criminally[\s-]+responsible\b/i;
+const CONVICTION_SIGNAL = /\bconvict(?:s|ed|ion)?\b|(?<!\bnot[\s-])\bguilty\b/i;
+function isSplitVerdict(t) { return ACQUITTAL_SIGNAL.test(t) && CONVICTION_SIGNAL.test(t); }
+
 const OUTCOME_LABEL = {
   GUILTY: 'Guilty',
   NOT_GUILTY: 'Not guilty',
@@ -114,6 +130,9 @@ function outletFamily(urlOrLabel, fallbackLabel) {
 function classify(text) {
   const t = String(text || '').replace(/\s+/g, ' ').trim();
   if (!t) return null;
+  // A split/partial verdict (acquittal on one charge, conviction on another) is ambiguous about
+  // the overall outcome — hold, never read the first phrase as THE verdict. See isSplitVerdict.
+  if (isSplitVerdict(t)) return null;
   for (const [tag, re] of OUTCOMES) {
     const m = t.match(re);
     if (!m) continue;
@@ -180,4 +199,4 @@ function assess(items, now = Date.now()) {
   return { status: 'ready', outcome: top.outcome, outlets: top.outlets, items: top.items };
 }
 
-module.exports = { classify, assess, outletFamily, copyKey, OUTCOME_LABEL, MIN_OUTLETS, WINDOW_HOURS };
+module.exports = { classify, assess, outletFamily, copyKey, isSplitVerdict, OUTCOME_LABEL, MIN_OUTLETS, WINDOW_HOURS };

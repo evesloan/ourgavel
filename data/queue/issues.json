@@ -1,5 +1,5 @@
 {
-  "synced": "2026-08-29T12:55:16.297Z",
+  "synced": "2026-08-29T13:22:52.344Z",
   "open": [
     {
       "number": 33,
@@ -16,22 +16,6 @@
         "down": 0
       },
       "url": "https://github.com/evesloan/ourgavel/issues/33"
-    },
-    {
-      "number": 32,
-      "title": "[handoff:development] Clancy manslaughter fold — board q-slip resolved (procedural ruling, sourced)",
-      "body": "### Lane\ndevelopment\n\n### SHA-256 of the decoded payload\n9da26c76b65fd716a3442550daa66af563ddc0ad2993f4a4ff21d99e9fd59a0c\n\n### Payload (base64 of a gzipped JSON apply-plan)\n```\n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",
-      "labels": [
-        "handoff",
-        "lane:development"
-      ],
-      "user": "evesloan",
-      "created": "2026-08-29T12:30:11Z",
-      "reactions": {
-        "up": 0,
-        "down": 0
-      },
-      "url": "https://github.com/evesloan/ourgavel/issues/32"
     },
     {
       "number": 13,

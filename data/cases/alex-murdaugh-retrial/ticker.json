@@ -1,27 +1,6 @@
 {
   "items": [
     {
-      "ts": "2026-08-27T20:16:02.000Z",
-      "outlet": "WLTX News19",
-      "headline": "SLED charges 71-year-old man in Lexington parking lot assault",
-      "url": "https://www.wltx.com/article/news/crime/sled-charges-71-year-old-man-in-lexington-parking-lot-assault/101-6f230a21-91de-45b4-a503-93c1fa018e4c",
-      "flag": null
-    },
-    {
-      "ts": "2026-08-27T14:50:21.000Z",
-      "outlet": "WLTX News19",
-      "headline": "Orangeburg officer hit, slammed handcuffed suspect who spit on him, SLED says",
-      "url": "https://www.wltx.com/article/news/local/street-squad/orangeburg/orangeburg-officer-hit-slammed-handcuffed-suspect-who-spit/101-6b41dc75-1476-42f6-9caa-b8c04a2b7ae2",
-      "flag": null
-    },
-    {
-      "ts": "2026-08-23T21:54:37.000Z",
-      "outlet": "WLTX News19",
-      "headline": "Woman dies after exchanging gunfire with Anderson County deputies, SLED says",
-      "url": "https://www.wltx.com/article/news/crime/woman-dies-gunfire-anderson-county-deputies-sled-says/101-51c78994-eee2-44ea-9796-25fb6ba79939",
-      "flag": null
-    },
-    {
       "ts": "2026-08-21T02:30:00.000Z",
       "outlet": "via MSN",
       "headline": "Murdaugh prosecutor Creighton Waters says he'll let judge decide on new trial site",
@@ -310,7 +289,6 @@
     }
   ],
   "seen": [
-    "1rsrzke",
     "wvm1ti",
     "2m4jym",
     "mk0nh8",
@@ -909,6 +887,7 @@
     "1sbum5p",
     "vp4ghn",
     "1eahpdt",
-    "1jpo4oj"
+    "1jpo4oj",
+    "1crev2k"
   ]
 }

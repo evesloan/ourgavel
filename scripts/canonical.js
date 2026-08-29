@@ -170,4 +170,24 @@ function dedupeItems(items) {
   return out;
 }
 
-module.exports = { resolveUrl, itemKey, dedupeItems, decodeEntities, copyKey };
+/* #22 — off-topic veto. A case may declare `excludeKeywords`: substrings that mark a headline
+   as a SEPARATE MATTER which must never enter the case's record even though it matched a case
+   keyword. Two live reasons this exists, both a keyword doing double duty:
+     - Fernandez, post-conviction: "New molestation charges against Mario Fernandez-Saldana"
+       matches the case keyword "mario fernandez", but it is a separate prosecution the lead
+       ruled OFF this record (EDITORIAL §5, separate matter).
+     - Murdaugh: "SLED charges 71-year-old man in Lexington parking lot assault" matches the
+       keyword "sled" — an agency name, not the retrial — and is unrelated crime-blotter.
+   The veto runs at BOTH ingest (never add) and sweep (drop stored rows a live feed re-ingests
+   the moment a one-time scrub removes them), which is why it lives here beside dedupe rather
+   than as a manual data patch. Substring, case-insensitive, first hit wins. An empty or absent
+   list vetoes nothing, so the behaviour of every case without the field is unchanged. */
+function isOffTopic(headline, excludeKeywords) {
+  const t = String(headline || '').toLowerCase();
+  return (excludeKeywords || []).some(k => {
+    const kk = String(k || '').toLowerCase().trim();
+    return kk.length > 0 && t.includes(kk);
+  });
+}
+
+module.exports = { resolveUrl, itemKey, dedupeItems, decodeEntities, copyKey, isOffTopic };

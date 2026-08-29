@@ -15,7 +15,7 @@ const { assess, OUTCOME_LABEL, MIN_OUTLETS } = require('./verdict.js');
 const ROOT = path.join(__dirname, '..');
 const { discoverCase, safeToDiscover } = require('./media-fetch.js');
 const { implicationReason, shouldEscalate } = require('./screen.js');
-const { resolveUrl, itemKey, dedupeItems } = require('./canonical.js');
+const { resolveUrl, itemKey, dedupeItems, isOffTopic } = require('./canonical.js');
 const { nameFor } = require('./outlets.js');
 const { applyHandoffs } = require('./apply.js');
 const DATA = path.join(ROOT, 'data');
@@ -108,6 +108,18 @@ async function pollCase(slug) {
     const name = nameFor(it.url, it.outlet);
     if (name && name !== it.outlet) { it.outlet = name; relabelled++; }
   }
+  // #22 veto sweep. A one-time manual scrub of an off-topic row is undone by the very next
+  // poll, which re-ingests it from the still-live feed. So on EVERY pulse, drop stored rows
+  // whose headline matches an exclude keyword — the durable partner to the ingest-time veto
+  // below. Runs before the verdict engine reads T.items, so a separate-matter row can never
+  // reach `assess()` either.
+  const ekws = CASE.excludeKeywords || [];
+  let vetoed = 0;
+  if (ekws.length) {
+    const kept = T.items.filter(it => !isOffTopic(it.headline, ekws));
+    vetoed = T.items.length - kept.length;
+    T.items = kept;
+  }
   // `seen` is capped at 600 ids; the redirector churn used to blow that cap in a
   // few polls and take real dedupe memory with it. The stored list is the durable
   // second check.
@@ -121,6 +133,10 @@ async function pollCase(slug) {
       for (const it of parseRss(xml).slice(0, 40)) {
         const tl = it.title.toLowerCase();
         if (!kws.some(k => tl.includes(k))) continue;
+        // #22: matched a case keyword, but the keyword is doing double duty (an agency name,
+        // a defendant's name now attached to a separate prosecution). A declared exclude
+        // keyword vetoes it at the door so it never enters the record. See canonical.isOffTopic.
+        if (isOffTopic(it.title, ekws)) continue;
         // Identity is the ARTICLE, not the feed's link to it: Bing wraps every
         // item in a redirector whose token rotates each request, so hashing the
         // raw link re-ingested the same story every 15 minutes. See canonical.js.
@@ -137,7 +153,7 @@ async function pollCase(slug) {
       feed._ok = true;
     } catch (e) { feed._ok = false; console.error('feed fail', feed.outlet, e.message); }
   }
-  if (fresh.length || healed || relabelled) {
+  if (fresh.length || healed || relabelled || vetoed) {
     fresh.sort((a, b) => b.ts.localeCompare(a.ts));
     // Sorted, not just prepended: the ticker is rendered as "latest", and with
     // duplicates gone a mis-ordered row is now plainly visible in a four-row list.
@@ -147,7 +163,8 @@ async function pollCase(slug) {
     write(tickerPath, T);
     console.log(slug + ':', fresh.length, 'new items'
       + (healed ? ', ' + healed + ' duplicate(s) collapsed' : '')
-      + (relabelled ? ', ' + relabelled + ' source label(s) corrected' : ''));
+      + (relabelled ? ', ' + relabelled + ' source label(s) corrected' : '')
+      + (vetoed ? ', ' + vetoed + ' off-topic row(s) vetoed' : ''));
   } else console.log(slug + ': no new items');
 
   // ---- verdict -------------------------------------------------------------

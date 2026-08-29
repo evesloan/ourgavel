@@ -74,6 +74,11 @@
       "url": "https://abcnews.com/US/court-clerk-alex-murdaugh-murder-trial-pleads-guilty/story?id=128212120"
     }
   ],
+  "excludeKeywords": [
+    "parking lot assault",
+    "orangeburg",
+    "anderson county"
+  ],
   "keywords": [
     "murdaugh retrial",
     "alex murdaugh",

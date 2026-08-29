@@ -12,7 +12,7 @@
 'use strict';
 const fs = require('fs');
 const path = require('path');
-const { resolveUrl, itemKey, dedupeItems, decodeEntities } = require('./canonical.js');
+const { resolveUrl, itemKey, dedupeItems, decodeEntities, isOffTopic } = require('./canonical.js');
 
 let pass = 0; const fails = [];
 const eq = (got, want, label) => {
@@ -97,11 +97,35 @@ for (const slug of fs.readdirSync(CASES)) {
   eq(new Set(top).size, top.length, slug + ': the eight rendered ticker rows are eight distinct stories');
 }
 
+// ---- isOffTopic (#22) ------------------------------------------------------
+// A keyword doing double duty pulls a separate matter onto the record; excludeKeywords
+// vetoes it. Behavioural, against the two live headlines this shipped for.
+ok(isOffTopic("New molestation charges against Mario Fernandez-Saldana", ['molestation', 'new charges']),
+  'isOffTopic: Fernandez separate-matter row is vetoed');
+ok(isOffTopic("Attorney says new charges against Mario Fernandez have 'radically changed' the case", ['molestation', 'new charges']),
+  'isOffTopic: Fernandez "new charges" row is vetoed');
+ok(!isOffTopic("'Truth won today,' says Jared Bridegan's widow after Mario Fernandez convicted", ['molestation', 'new charges']),
+  'isOffTopic: the verdict headline is NOT vetoed');
+ok(isOffTopic("SLED charges 71-year-old man in Lexington parking lot assault", ['parking lot assault', 'orangeburg', 'anderson county']),
+  'isOffTopic: Murdaugh unrelated-SLED blotter row is vetoed');
+ok(!isOffTopic("Alex Murdaugh defense asks judge to move retrial to Richland County", ['parking lot assault', 'orangeburg', 'anderson county']),
+  'isOffTopic: legitimate Murdaugh retrial coverage survives the veto');
+ok(!isOffTopic("Anything at all", []) && !isOffTopic("Anything at all"),
+  'isOffTopic: an empty or absent list vetoes nothing');
+ok(!isOffTopic(null, ['x']) && !isOffTopic(undefined, ['x']),
+  'isOffTopic: a missing headline never throws');
+ok(isOffTopic("The ORANGEBURG story", ['orangeburg']) && isOffTopic("orangeburg", ['ORANGEBURG']),
+  'isOffTopic: matching is case-insensitive both ways');
+ok(!isOffTopic("a plain headline", ['', '   ']),
+  'isOffTopic: blank keywords never match everything');
+
 // ---- wiring ----------------------------------------------------------------
 // Mutation-checked: reverting either line in poll.js fails these.
 {
   const src = fs.readFileSync(path.join(__dirname, 'poll.js'), 'utf8');
   ok(/require\('\.\/canonical\.js'\)/.test(src), 'poll.js requires canonical.js');
+  ok(/isOffTopic/.test(src), 'poll.js wires in the off-topic veto');
+  ok(/excludeKeywords/.test(src), 'poll.js reads excludeKeywords from the case');
   ok(!/hash\(it\.link\)/.test(src), 'poll.js no longer hashes the raw feed link');
   ok(/hash\(itemKey\(/.test(src), 'poll.js hashes the article identity');
   ok(/url: url\b|url,/.test(src), 'poll.js stores the resolved url');

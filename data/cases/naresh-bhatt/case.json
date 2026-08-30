@@ -255,6 +255,22 @@
       "bytes": 299742,
       "addedAt": "2026-08-30T00:37:11.746Z",
       "verified": "commons-api"
+    },
+    {
+      "type": "image",
+      "query": "Prince William County Courthouse Manassas Virginia",
+      "local": "media/naresh-bhatt/5f2df35800aa.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Courthouse_in_Manassas,_Virginia.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Courthouse_in_Manassas,_Virginia.jpg",
+      "caption": "Courthouse in Manassas, Virginia",
+      "alt": "Courthouse in Manassas, Virginia",
+      "credit": "VOA",
+      "rights": "public-domain",
+      "licence": "Public domain",
+      "licenceUrl": "",
+      "bytes": 296261,
+      "addedAt": "2026-08-30T01:20:23.465Z",
+      "verified": "commons-api"
     }
   ]
 }

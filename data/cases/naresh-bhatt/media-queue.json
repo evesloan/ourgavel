@@ -1,17 +1,17 @@
 {
-  "updated": "2026-08-30T00:37:11.746Z",
+  "updated": "2026-08-30T01:20:23.465Z",
   "published": [
     {
-      "local": "media/naresh-bhatt/a39a5367035a.jpg",
-      "licence": "CC BY-SA 3.0",
-      "credit": "Billy Hathorn"
-    },
-    {
-      "local": "media/naresh-bhatt/5e98ca756bd6.jpg",
+      "local": "media/naresh-bhatt/5f2df35800aa.jpg",
       "licence": "Public domain",
-      "credit": "Robert Underwood Johnson and Clarence Clough Buel (book authors)."
+      "credit": "VOA"
     }
   ],
   "heldForReview": [],
-  "refused": []
+  "refused": [
+    {
+      "query": "Manassas Virginia old courthouse",
+      "reason": "nothing publishable: 1 file(s) verified, none cleared the gate"
+    }
+  ]
 }

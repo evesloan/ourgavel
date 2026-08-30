@@ -15,7 +15,7 @@ const { assess, defendantTokens, OUTCOME_LABEL, MIN_OUTLETS } = require('./verdi
 const ROOT = path.join(__dirname, '..');
 const { discoverCase, safeToDiscover } = require('./media-fetch.js');
 const { implicationReason, shouldEscalate } = require('./screen.js');
-const { resolveUrl, itemKey, dedupeItems, isOffTopic } = require('./canonical.js');
+const { resolveUrl, itemKey, dedupeItems, isOffTopic, matchesCaseKeywords } = require('./canonical.js');
 const { nameFor } = require('./outlets.js');
 const { applyHandoffs } = require('./apply.js');
 const DATA = path.join(ROOT, 'data');
@@ -124,7 +124,6 @@ async function pollCase(slug) {
   // few polls and take real dedupe memory with it. The stored list is the durable
   // second check.
   const have = new Set(T.items.map(i => itemKey(i.url)));
-  const kws = CASE.keywords.map(k => k.toLowerCase());
   const vkws = (CASE.verdictKeywords || []).map(k => k.toLowerCase());
   const fresh = [];
   for (const feed of CASE.feeds) {
@@ -132,7 +131,9 @@ async function pollCase(slug) {
       const xml = await get(feed.url);
       for (const it of parseRss(xml).slice(0, 40)) {
         const tl = it.title.toLowerCase();
-        if (!kws.some(k => tl.includes(k))) continue;
+        // A case match needs a STRONG keyword — a keyword listed in `geoKeywords` (a bare
+        // county/city name) corroborates but never matches alone. See canonical.matchesCaseKeywords.
+        if (!matchesCaseKeywords(it.title, CASE.keywords, CASE.geoKeywords)) continue;
         // #22: matched a case keyword, but the keyword is doing double duty (an agency name,
         // a defendant's name now attached to a separate prosecution). A declared exclude
         // keyword vetoes it at the door so it never enters the record. See canonical.isOffTopic.

@@ -12,7 +12,7 @@
 'use strict';
 const fs = require('fs');
 const path = require('path');
-const { resolveUrl, itemKey, dedupeItems, decodeEntities, isOffTopic } = require('./canonical.js');
+const { resolveUrl, itemKey, dedupeItems, decodeEntities, isOffTopic, matchesCaseKeywords } = require('./canonical.js');
 
 let pass = 0; const fails = [];
 const eq = (got, want, label) => {
@@ -119,12 +119,50 @@ ok(isOffTopic("The ORANGEBURG story", ['orangeburg']) && isOffTopic("orangeburg"
 ok(!isOffTopic("a plain headline", ['', '   ']),
   'isOffTopic: blank keywords never match everything');
 
+// ---- matchesCaseKeywords: geo keyword needs corroboration ------------------
+// The live defect (community sweep 2026-08-30 14:41): a bare "duval county" match
+// pulled a charity story onto Gardner's ticker. Behavioural, against the real headlines.
+{
+  const KW = ['shanna gardner', 'henry tenon', 'gardner bridegan', 'duval county'];
+  const GEO = ['duval county'];
+  ok(!matchesCaseKeywords(
+    "'Two Dope Chicks Who Give A Care' organization pencils in year-round support for 4 Duval County schools", KW, GEO),
+    'matchesCaseKeywords: THE BUG — a geo-only "duval county" charity row is NOT a case match');
+  ok(matchesCaseKeywords(
+    "Court filing gives window into new defense strategy for Shanna Gardner in Jared Bridegan murder trial", KW, GEO),
+    'matchesCaseKeywords: a real Gardner headline still matches on the strong keyword');
+  ok(matchesCaseKeywords("Shanna Gardner hearing set in Duval County court", KW, GEO),
+    'matchesCaseKeywords: strong + geo together still matches (geo only ever corroborates)');
+  ok(!matchesCaseKeywords("Duval County weather advisory issued", KW, GEO),
+    'matchesCaseKeywords: another geo-only row is declined too, not just the one we scrubbed');
+  // No geoKeywords → identical to the old keywords.some(includes); every other case is unchanged.
+  ok(matchesCaseKeywords("Anything mentioning Duval County", KW, []),
+    'matchesCaseKeywords: with no geoKeywords a keyword hit still matches (behaviour unchanged for other cases)');
+  ok(matchesCaseKeywords("HENRY TENON change of plea", KW, GEO) && matchesCaseKeywords("henry tenon", ['Henry Tenon'], GEO),
+    'matchesCaseKeywords: matching is case-insensitive both ways');
+  ok(!matchesCaseKeywords("a plain headline", [], GEO) && !matchesCaseKeywords(null, KW, GEO) && !matchesCaseKeywords("x", ['', '  '], []),
+    'matchesCaseKeywords: empty/blank keywords and a missing headline never match and never throw');
+}
+
+// The scrubbed row must be gone from the live record AND stay gone (ingest guard, not a patch).
+{
+  const gt = JSON.parse(fs.readFileSync(path.join(CASES, 'shanna-gardner', 'ticker.json'), 'utf8')).items || [];
+  ok(!gt.some(i => /two dope chicks/i.test(i.headline)), 'Gardner ticker no longer carries the Duval-County charity row');
+  const gcase = JSON.parse(fs.readFileSync(path.join(CASES, 'shanna-gardner', 'case.json'), 'utf8'));
+  ok((gcase.geoKeywords || []).map(k => k.toLowerCase()).includes('duval county'),
+    'Gardner declares "duval county" as a geoKeyword so re-ingest is blocked at the door');
+  ok((gcase.keywords || []).map(k => k.toLowerCase()).includes('duval county'),
+    'and "duval county" stays in keywords — it still corroborates a real Gardner row');
+}
+
 // ---- wiring ----------------------------------------------------------------
 // Mutation-checked: reverting either line in poll.js fails these.
 {
   const src = fs.readFileSync(path.join(__dirname, 'poll.js'), 'utf8');
   ok(/require\('\.\/canonical\.js'\)/.test(src), 'poll.js requires canonical.js');
   ok(/isOffTopic/.test(src), 'poll.js wires in the off-topic veto');
+  ok(/matchesCaseKeywords\(it\.title, CASE\.keywords, CASE\.geoKeywords\)/.test(src),
+    'poll.js gates ingest on matchesCaseKeywords with the case geoKeywords');
   ok(/excludeKeywords/.test(src), 'poll.js reads excludeKeywords from the case');
   ok(!/hash\(it\.link\)/.test(src), 'poll.js no longer hashes the raw feed link');
   ok(/hash\(itemKey\(/.test(src), 'poll.js hashes the article identity');

@@ -190,4 +190,26 @@ function isOffTopic(headline, excludeKeywords) {
   });
 }
 
-module.exports = { resolveUrl, itemKey, dedupeItems, decodeEntities, copyKey, isOffTopic };
+/* Ticker relevance — a case keyword may be too GENERIC to pull a row on its own.
+   Live defect found 2026-08-30 (community sweep 14:41): Gardner's ticker carried
+   "'Two Dope Chicks Who Give A Care' ... 4 Duval County schools" — a charity story
+   that matched only the geographic keyword "duval county". A county or city name is
+   real signal WITH a case-specific term and pure noise without one: every Jacksonville
+   school-board, weather and blotter story shares the county. So a case may declare
+   `geoKeywords` — a subset of its own `keywords` that count only as corroboration. A
+   headline is a case match only when it hits at least one STRONG (non-geo) keyword;
+   a geo keyword alone is insufficient and the row never enters the record. A case with
+   no `geoKeywords` is unchanged — every keyword is strong, identical to the old
+   `keywords.some(includes)`. This can only DECLINE a too-thin match, never suppress a
+   row that also names the defendant, so it cannot cost real coverage. Substring,
+   case-insensitive, mirroring isOffTopic. */
+function matchesCaseKeywords(headline, keywords, geoKeywords) {
+  const t = String(headline || '').toLowerCase();
+  const geo = new Set((geoKeywords || []).map(k => String(k || '').toLowerCase().trim()).filter(Boolean));
+  return (keywords || []).some(k => {
+    const kk = String(k || '').toLowerCase().trim();
+    return kk.length > 0 && !geo.has(kk) && t.includes(kk);
+  });
+}
+
+module.exports = { resolveUrl, itemKey, dedupeItems, decodeEntities, copyKey, isOffTopic, matchesCaseKeywords };

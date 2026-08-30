@@ -1,0 +1,215 @@
+{
+  "note": "The question the jury will be asked, and the evidence pulling on each side — labeled until a jury weighs it. Left: what helps the defense. Right: the prosecution's evidence, described as allegation. Nothing here is a claim about whether Naresh Bhatt did it; every card is something in a court filing or attributed reporting, with the source attached. This is a pretrial no-body case — no jury has heard evidence, and Mamta Kafle Bhatt's body has never been found. Only the charged defendant is named; no uncharged person is accused of anything here.",
+  "nodes": [
+    {
+      "id": "she-vanished",
+      "type": "fact",
+      "x": 500,
+      "y": 60,
+      "status": "verified",
+      "title": "A nurse vanished, and has never been found",
+      "body": "Mamta Kafle Bhatt, a 28-year-old Manassas Park nurse and mother, was last seen in late July 2024 and reported missing that August. Two years on, her body has never been recovered. That single fact defines the case: the Commonwealth is trying a murder with no body, and must prove she is dead and was killed at all before it can prove who did it.",
+      "sources": [
+        {
+          "outlet": "WTOP — two years after she disappeared, husband's murder trial nears",
+          "url": "https://wtop.com/virginia/2026/08/thurs-mid-two-years-after-mamta-kafle-bhatt-disappeared-husbands-murder-trial-nears/"
+        },
+        {
+          "outlet": "Prince William Times — substantial evidence of blood led to arrest",
+          "url": "https://www.princewilliamtimes.com/news/breaking-substantial-evidence-of-blood-in-manassas-park-home-led-to-husbands-arrest/article_e2d14238-6151-11ef-810a-97c94d5122c6.html"
+        }
+      ]
+    },
+    {
+      "id": "central-question",
+      "type": "question",
+      "x": 500,
+      "y": 340,
+      "status": "open",
+      "central": true,
+      "title": "Can the state prove Naresh Bhatt murdered his wife with no body?",
+      "body": "Bhatt has pleaded not guilty to first-degree murder, concealing a dead body, and defiling a dead human body. Virginia does not require a body to convict, but the Commonwealth must still prove beyond a reasonable doubt that Mamta Kafle Bhatt is dead and that Bhatt criminally caused her death. Everything on this board pulls toward or away from that question.",
+      "sources": [
+        {
+          "outlet": "InsideNova — what's next in the Mamta Kafle Bhatt case",
+          "url": "https://www.insidenova.com/news/prince_william/whats-next-in-the-case-of-mamta-kafle-bhatt-the-missing-manassas-park-nurse-and/article_3b054a9c-dd20-4c3e-9481-2a985755ef23.html"
+        }
+      ]
+    },
+    {
+      "id": "blood-in-home",
+      "type": "fact",
+      "x": 850,
+      "y": 60,
+      "status": "verified",
+      "title": "Prosecutors allege pooled blood in the home",
+      "body": "Police say they found significant pooled blood and spatter in the master bedroom and that forensic testing indicated blood loss no one could survive, with signs a body had been moved to the bathroom. A cadaver dog is reported to have alerted in the bedroom and bathroom. This is the state's evidence, not a finding — no jury has weighed it.",
+      "sources": [
+        {
+          "outlet": "Prince William Times — substantial evidence of blood led to arrest",
+          "url": "https://www.princewilliamtimes.com/news/breaking-substantial-evidence-of-blood-in-manassas-park-home-led-to-husbands-arrest/article_e2d14238-6151-11ef-810a-97c94d5122c6.html"
+        },
+        {
+          "outlet": "WUSA9 — Naresh Bhatt denied bond a second time",
+          "url": "https://www.wusa9.com/article/news/local/missing/naresh-bhatt-denied-bond-second-time-amid-newly-released-details-investigation/65-05c77f24-3bc9-4ef2-afa1-00531ad5bdd7"
+        }
+      ]
+    },
+    {
+      "id": "knives-cleaning",
+      "type": "fact",
+      "x": 850,
+      "y": 300,
+      "status": "verified",
+      "title": "Prosecutors allege knife and cleaning-supply purchases, then dumped bags",
+      "body": "The state says surveillance captured Bhatt buying a set of knives and cleaning supplies in the days around Mamta's disappearance, and that vehicle and camera data show him discarding bags in dumpsters around Northern Virginia before he was arrested. Some items, the state says, were never recovered. Attributed to prosecutors; the defense contests the inferences.",
+      "sources": [
+        {
+          "outlet": "Prince William Times — substantial evidence of blood led to arrest",
+          "url": "https://www.princewilliamtimes.com/news/breaking-substantial-evidence-of-blood-in-manassas-park-home-led-to-husbands-arrest/article_e2d14238-6151-11ef-810a-97c94d5122c6.html"
+        },
+        {
+          "outlet": "WUSA9 — Naresh Bhatt denied bond a second time",
+          "url": "https://www.wusa9.com/article/news/local/missing/naresh-bhatt-denied-bond-second-time-amid-newly-released-details-investigation/65-05c77f24-3bc9-4ef2-afa1-00531ad5bdd7"
+        }
+      ]
+    },
+    {
+      "id": "power-saw",
+      "type": "fact",
+      "x": 850,
+      "y": 540,
+      "status": "verified",
+      "title": "Prosecutors allege human hair on a power saw",
+      "body": "A 2026 forensic report cited in court says a handheld power saw taken from the home carried human hairs and hair fragments, referred for nuclear DNA testing, and reporting describes a claimed match between the saw and Mamta's hairbrush. Prosecutors allege it points to a dismemberment. The DNA testing and its handling were the subject of a closed pretrial hearing and remain contested.",
+      "sources": [
+        {
+          "outlet": "WJLA/ABC7 — closed hearing as new forensic evidence emerges",
+          "url": "https://wjla.com/news/local/naresh-bhatt-ex-parte-closed-hearing-mamta-kafle-prince-william-county-virginia-murder-forensic-evidence-dna-testing-human-hair-fragments-power-saw-court-crime-investigation-judge-court-motion"
+        },
+        {
+          "outlet": "InsideNova — what's next in the Mamta Kafle Bhatt case",
+          "url": "https://www.insidenova.com/news/prince_william/whats-next-in-the-case-of-mamta-kafle-bhatt-the-missing-manassas-park-nurse-and/article_3b054a9c-dd20-4c3e-9481-2a985755ef23.html"
+        }
+      ]
+    },
+    {
+      "id": "digital-silence",
+      "type": "fact",
+      "x": 850,
+      "y": 780,
+      "status": "verified",
+      "title": "Prosecutors allege her phone and accounts went permanently dark",
+      "body": "The state says Mamta's phone was operational until about July 29, 2024, then went to voicemail, last pinged in Loudoun County, and that she never again used it or her social accounts. Prosecutors have signaled an FBI cellular-analysis agent will testify to phone-tower data. Reporting also describes internet searches on Bhatt's work laptop the state calls incriminating. All attributed to the prosecution.",
+      "sources": [
+        {
+          "outlet": "ABC3340 — FBI agent to testify at Naresh Bhatt trial",
+          "url": "https://abc3340.com/news/nation-world/fbi-special-agent-to-stand-for-naresh-bhatt-trial-virginia-murder-investigation-manassas-loudoun-county-mamta-kafle-bhatt-prince-william-county"
+        },
+        {
+          "outlet": "InsideNova — what's next in the Mamta Kafle Bhatt case",
+          "url": "https://www.insidenova.com/news/prince_william/whats-next-in-the-case-of-mamta-kafle-bhatt-the-missing-manassas-park-nurse-and/article_3b054a9c-dd20-4c3e-9481-2a985755ef23.html"
+        }
+      ]
+    },
+    {
+      "id": "not-guilty",
+      "type": "fact",
+      "x": 160,
+      "y": 140,
+      "status": "verified",
+      "title": "He has pleaded not guilty",
+      "body": "Naresh Bhatt has pleaded not guilty to all three charges and is presumed innocent. He does not have to prove anything at trial; the burden stays on the Commonwealth to prove every element beyond a reasonable doubt to a unanimous jury.",
+      "sources": [
+        {
+          "outlet": "Potomac Local News — Bhatt trial, 300 jurors, seven weeks",
+          "url": "https://www.potomaclocal.com/2026/08/18/news-links-bhatt-murder-trial-ice-detentions-gainesville-data-centers-parking-tickets/"
+        }
+      ]
+    },
+    {
+      "id": "no-body-defense",
+      "type": "fact",
+      "x": 160,
+      "y": 420,
+      "status": "verified",
+      "title": "The defense argues there is no body and no proven death",
+      "body": "At the bond stage Bhatt's lawyers argued the state cannot prove a murder without a recovered body, and asserted Mamta had left to visit family amid a marital separation. With no remains and no cause of death, the defense says the circumstantial case leaves reasonable doubt about whether a killing happened at all.",
+      "sources": [
+        {
+          "outlet": "WJLA/ABC7 — Naresh Bhatt denied bond, new evidence",
+          "url": "https://wjla.com/news/local/missing-manassas-park-woman-mamta-kafle-bhatt-naresh-husband-murder-denied-bond-court-appearance-new-evidence-flight-risk-community-threat-concealing-dead-body-charges-domestic-violence"
+        }
+      ]
+    },
+    {
+      "id": "discovery-dispute",
+      "type": "fact",
+      "x": 160,
+      "y": 700,
+      "status": "verified",
+      "title": "The defense fought over 1.5 terabytes of digital evidence",
+      "body": "The trial was pushed from 2025 to October 2026 after the defense said it needed time to review more than 1.5 terabytes of digital discovery handed over through a limited online system that took days to download. The volume and handling of that electronic evidence — the same phone, laptop, and vehicle data the state relies on — is itself contested.",
+      "sources": [
+        {
+          "outlet": "WJLA/ABC7 — trial delayed over digital evidence",
+          "url": "https://wjla.com/news/local/manassas-park-naresh-bhatt-mamta-kafle-virginia-crime-missing-woman-murder-trial-prince-william-county-court-hearing-domestic-violence-unsolved-case-jury-trial-delay-legal-battle-digital-evidence"
+        },
+        {
+          "outlet": "InsideNova — murder trial delayed in mind-blowing development",
+          "url": "https://www.insidenova.com/headlines/murder-trial-delayed-in-mind-blowing-development-for-mamta-kafle-bhatt-case/article_e1172c65-fc02-4c2a-b091-c7cb66f5f30a.html"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "she-vanished",
+      "to": "central-question",
+      "type": "explains",
+      "label": "no body is the whole difficulty of the case"
+    },
+    {
+      "from": "blood-in-home",
+      "to": "central-question",
+      "type": "supports",
+      "label": "state says the blood shows a fatal attack in the home"
+    },
+    {
+      "from": "knives-cleaning",
+      "to": "central-question",
+      "type": "supports",
+      "label": "state says purchases and dumped bags show a cover-up"
+    },
+    {
+      "from": "power-saw",
+      "to": "central-question",
+      "type": "contested",
+      "label": "alleged DNA on the saw, disputed at a closed hearing"
+    },
+    {
+      "from": "digital-silence",
+      "to": "central-question",
+      "type": "supports",
+      "label": "state says her permanent silence shows she is dead"
+    },
+    {
+      "from": "not-guilty",
+      "to": "central-question",
+      "type": "explains",
+      "label": "burden stays on the state throughout"
+    },
+    {
+      "from": "no-body-defense",
+      "to": "central-question",
+      "type": "contradicts",
+      "label": "defense says no body means no proven murder"
+    },
+    {
+      "from": "discovery-dispute",
+      "to": "digital-silence",
+      "type": "contested",
+      "label": "the electronic evidence itself is disputed"
+    }
+  ]
+}

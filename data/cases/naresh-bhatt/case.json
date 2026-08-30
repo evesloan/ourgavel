@@ -1,0 +1,227 @@
+{
+  "slug": "naresh-bhatt",
+  "title": "Commonwealth of Virginia v. Naresh Bhatt",
+  "shortTitle": "Naresh Bhatt No-Body Murder Trial",
+  "status": "active",
+  "phase": "Pretrial — jury trial begins the week of Oct. 5, 2026",
+  "court": "Prince William County Circuit Court, Virginia",
+  "judge": "Judge Kimberly A. Irving",
+  "incidentDate": "2024-07-27",
+  "trialStart": "2026-10-05",
+  "charges": "Three charges by indictment: first-degree murder, concealment of a dead body, and defilement of a dead human body. Naresh Bhatt is the husband of Mamta Kafle Bhatt, a Manassas Park nurse who has been missing and presumed dead since July 2024. Her body has never been found. He has pleaded not guilty and is held without bond.",
+  "defendant": "Naresh Bhatt, 37",
+  "plea": "Not guilty. Bhatt has pleaded not guilty to all three charges and is held without bond; his defense argued at the bond stage that the state cannot prove a murder without a body.",
+  "victims": "Mamta Kafle Bhatt, 28",
+  "plainSummary": "Mamta Kafle Bhatt, a 28-year-old nurse in Manassas Park, Virginia, was last seen in late July 2024 and has never been found. Police say they found pooled blood in the couple's home and that her husband, Naresh Bhatt, bought knives and cleaning supplies and was recorded disposing of bags in dumpsters before he was arrested. He is charged with her murder, has pleaded not guilty, and goes to trial in October 2026 — a no-body prosecution the state must prove without a recovered body.",
+  "statusNow": "Bhatt's jury trial is set to begin the week of Oct. 5, 2026 in Prince William County Circuit Court before Judge Kimberly A. Irving, and is expected to run about seven weeks. At an August 2026 hearing the judge ordered an unusually large pool of about 300 prospective jurors summoned and declined to mail advance juror questionnaires, agreeing with the defense that they might prompt residents to research the heavily covered case. A pretrial hearing is set for Sept. 10, 2026. The trial was continued from 2025 after the defense said it needed time to review more than 1.5 terabytes of digital evidence.",
+  "statusNowSources": [
+    {
+      "outlet": "WTOP — two years after she disappeared, husband's murder trial nears",
+      "url": "https://wtop.com/virginia/2026/08/thurs-mid-two-years-after-mamta-kafle-bhatt-disappeared-husbands-murder-trial-nears/"
+    },
+    {
+      "outlet": "Potomac Local News — Bhatt trial, 300 jurors, seven weeks",
+      "url": "https://www.potomaclocal.com/2026/08/18/news-links-bhatt-murder-trial-ice-detentions-gainesville-data-centers-parking-tickets/"
+    },
+    {
+      "outlet": "InsideNova — what's next in the Mamta Kafle Bhatt case",
+      "url": "https://www.insidenova.com/news/prince_william/whats-next-in-the-case-of-mamta-kafle-bhatt-the-missing-manassas-park-nurse-and/article_3b054a9c-dd20-4c3e-9481-2a985755ef23.html"
+    }
+  ],
+  "storySoFar": "Mamta Kafle Bhatt, a nurse and mother who moved to Virginia from Nepal, was reported missing from Manassas Park in August 2024, about two weeks after she was last seen. Investigators say they found significant pooled blood in the home and that surveillance and vehicle data captured her husband, Naresh Bhatt, buying knives and cleaning supplies and later discarding bags in dumpsters around Northern Virginia. He was arrested in August 2024, initially charged with concealing a dead body, and indicted for first-degree murder that December. Her body has never been recovered, and Bhatt maintains his innocence — the case turns on whether the Commonwealth can prove a killing without one.",
+  "storySoFarSources": [
+    {
+      "outlet": "Prince William Times — substantial evidence of blood led to arrest",
+      "url": "https://www.princewilliamtimes.com/news/breaking-substantial-evidence-of-blood-in-manassas-park-home-led-to-husbands-arrest/article_e2d14238-6151-11ef-810a-97c94d5122c6.html"
+    },
+    {
+      "outlet": "WTOP — two years after she disappeared, husband's murder trial nears",
+      "url": "https://wtop.com/virginia/2026/08/thurs-mid-two-years-after-mamta-kafle-bhatt-disappeared-husbands-murder-trial-nears/"
+    }
+  ],
+  "keywords": [
+    "naresh bhatt",
+    "naresh bhatt trial",
+    "mamta kafle bhatt",
+    "mamta kafle",
+    "mamta kafle bhatt case",
+    "manassas park nurse missing",
+    "naresh bhatt murder trial",
+    "prince william county murder trial",
+    "kimberly irving"
+  ],
+  "weakKeywords": [
+    "no body murder",
+    "manassas park",
+    "missing nurse virginia",
+    "prince william county",
+    "northern virginia murder"
+  ],
+  "mediaQueries": [
+    {
+      "q": "Prince William County Courthouse Manassas Virginia",
+      "kind": "place",
+      "must": [
+        "prince william"
+      ],
+      "caption": "The Prince William County Courthouse in Manassas, Virginia",
+      "alt": "Exterior of the Prince William County Courthouse in Manassas, Virginia"
+    },
+    {
+      "q": "Manassas Virginia old courthouse",
+      "kind": "place",
+      "must": [
+        "manassas"
+      ],
+      "deny": [
+        "bhatt",
+        "kafle"
+      ],
+      "caption": "Manassas, Virginia",
+      "alt": "A historic courthouse building in Manassas, Virginia"
+    }
+  ],
+  "verdictKeywords": [
+    "verdict",
+    "guilty",
+    "not guilty",
+    "acquit",
+    "convict",
+    "mistrial",
+    "hung jury",
+    "deliberat"
+  ],
+  "feeds": [
+    {
+      "outlet": "Court TV — Naresh Bhatt tag",
+      "url": "https://www.courttv.com/tag/naresh-bhatt/feed/",
+      "verified": true,
+      "_ok": true
+    },
+    {
+      "outlet": "Court TV — all news",
+      "url": "https://www.courttv.com/feed/",
+      "verified": true,
+      "_ok": true
+    },
+    {
+      "outlet": "FOX 5 DC — news",
+      "url": "https://www.fox5dc.com/rss/category/news",
+      "verified": true,
+      "_ok": true
+    },
+    {
+      "outlet": "NBC Washington — local news",
+      "url": "https://www.nbcwashington.com/news/local/feed/",
+      "verified": true,
+      "_ok": true
+    }
+  ],
+  "watchPages": [
+    {
+      "outlet": "WTOP — Prince William County section",
+      "url": "https://wtop.com/prince-william-county/",
+      "verified": true
+    },
+    {
+      "outlet": "WUSA9 — Mamta Kafle Bhatt coverage",
+      "url": "https://www.wusa9.com/article/news/crime/naresh-bhatt-case-continued-october-2026-mamta-kafle-bhatt-trial/65-4da969e9-6e49-4300-9964-c7566d7051c5",
+      "verified": false
+    },
+    {
+      "outlet": "InsideNova — Prince William news",
+      "url": "https://www.insidenova.com/news/prince_william/",
+      "verified": true
+    },
+    {
+      "outlet": "Court TV — Naresh Bhatt tag page",
+      "url": "https://www.courttv.com/tag/naresh-bhatt/",
+      "verified": true
+    },
+    {
+      "outlet": "Virginia Judiciary — Online Case Information System",
+      "url": "https://eapps.courts.state.va.us/ocis/",
+      "verified": true
+    }
+  ],
+  "verdictOptions": [
+    {
+      "option": "Guilty of first-degree murder",
+      "consequence": "First-degree murder is a Class 2 felony in Virginia, punished by 20 years to life in prison. A jury would decide guilt; unless Bhatt asks the jury to fix the sentence, the judge sets it within that range at a later hearing. A guilty verdict on this count means the Commonwealth convinced the jury a killing happened and that Bhatt caused it, even with no body recovered.",
+      "sources": [
+        {
+          "outlet": "Va. Code § 18.2-32 — first and second degree murder",
+          "url": "https://law.lis.virginia.gov/vacode/18.2-32/"
+        },
+        {
+          "outlet": "Va. Code § 18.2-10 — punishment for conviction of felony",
+          "url": "https://law.lis.virginia.gov/vacode/18.2-10/"
+        }
+      ]
+    },
+    {
+      "option": "Guilty only of concealing or defiling the body, not murder",
+      "consequence": "Concealment of a dead body and defilement of a dead human body are each Class 6 felonies in Virginia, carrying one to five years in prison, or at the jury's or judge's discretion up to 12 months in jail and a fine. The jury could convict on these counts while acquitting on murder if it believed Bhatt hid or harmed the body but was not satisfied a murder was proven.",
+      "sources": [
+        {
+          "outlet": "Va. Code § 18.2-323.02 — concealing a dead body",
+          "url": "https://law.lis.virginia.gov/vacode/18.2-323.02/"
+        },
+        {
+          "outlet": "Va. Code § 18.2-126 — defilement of a dead human body",
+          "url": "https://law.lis.virginia.gov/vacode/18.2-126/"
+        }
+      ]
+    },
+    {
+      "option": "Not guilty on all counts",
+      "consequence": "Bhatt would be acquitted and could not be tried again for these charges. Because Mamta Kafle Bhatt's body has never been found, the defense argues the state cannot meet its burden; an acquittal would mean the jury agreed the proof fell short of reasonable doubt.",
+      "sources": [
+        {
+          "outlet": "WTOP — two years after she disappeared, husband's murder trial nears",
+          "url": "https://wtop.com/virginia/2026/08/thurs-mid-two-years-after-mamta-kafle-bhatt-disappeared-husbands-murder-trial-nears/"
+        }
+      ]
+    },
+    {
+      "option": "Hung jury (no unanimous verdict)",
+      "consequence": "If the jurors cannot agree unanimously, the judge declares a mistrial and nothing is decided. Prosecutors would be free to try Bhatt again before a new jury, because a hung jury is not an acquittal.",
+      "sources": [
+        {
+          "outlet": "Va. Code § 18.2-32 — first and second degree murder",
+          "url": "https://law.lis.virginia.gov/vacode/18.2-32/"
+        }
+      ]
+    }
+  ],
+  "legalStandard": {
+    "name": "A no-body murder — how Virginia proves a killing with no body",
+    "test": "Virginia does not require a body to convict for murder. The Commonwealth must prove two things beyond a reasonable doubt: that Mamta Kafle Bhatt is dead, and that a criminal act by the defendant caused her death. Both can be shown with circumstantial evidence — blood, forensic testing, surveillance, phone and vehicle data, and a person's sudden and permanent disappearance — rather than a recovered body. Because the top charge is first-degree murder, the state must also prove the killing was willful, deliberate, and premeditated. Bhatt has pleaded not guilty, and the burden rests entirely on the state.",
+    "burden": "Entirely on the Commonwealth, beyond a reasonable doubt, on every charge. Bhatt does not have to prove anything, does not have to testify, and does not have to explain any piece of the state's evidence. His side's task is to leave the jury unsure that a murder was proven at all. The verdict must be unanimous either way.",
+    "sources": [
+      {
+        "outlet": "Va. Code § 18.2-32 — first and second degree murder",
+        "url": "https://law.lis.virginia.gov/vacode/18.2-32/"
+      },
+      {
+        "outlet": "WTOP — two years after she disappeared, husband's murder trial nears",
+        "url": "https://wtop.com/virginia/2026/08/thurs-mid-two-years-after-mamta-kafle-bhatt-disappeared-husbands-murder-trial-nears/"
+      }
+    ],
+    "qa": [
+      {
+        "q": "Can someone be convicted of murder if the body is never found?",
+        "a": "Yes. Virginia has no rule requiring a body. The state must still prove beyond a reasonable doubt that the person is dead and that the defendant criminally caused the death, but it can do so with circumstantial evidence such as blood, forensics, and a permanent disappearance."
+      },
+      {
+        "q": "Why is this called a no-body case?",
+        "a": "Mamta Kafle Bhatt has been missing since July 2024 and her body has never been recovered. The prosecution is built on physical, digital, and surveillance evidence rather than remains, which is what makes it a no-body prosecution."
+      },
+      {
+        "q": "What does the jury actually have to decide?",
+        "a": "Whether the Commonwealth has proven, beyond a reasonable doubt, that Mamta Kafle Bhatt is dead and that Naresh Bhatt caused her death, and for the murder count that the killing was willful, deliberate, and premeditated. Bhatt has pleaded not guilty and does not have to prove anything."
+      }
+    ]
+  },
+  "media": []
+}

@@ -236,6 +236,26 @@ async function pollCase(slug) {
       write(statePath, { ...state, pending: v.outcome, firstSeen: NOW });
       console.log(slug + ': verdict consensus seen (' + v.outcome + ') — holding one cycle to confirm');
     }
+  } else if (v.status === 'split') {
+    // Newsrooms report a SPLIT/PARTIAL verdict (acquittal on one charge, conviction on another).
+    // The engine holds — a machine must not decide the overall outcome — but it must NOT hold
+    // silently: raise a verdict-watch issue so a human writes the nuanced aftermath (AGENT.md).
+    // Never publishes, never sets pending. Fires once per case (gated on state.alerted), and not
+    // at all once a verdict is on the record — the aftermath is already a human's job by then.
+    if (!CASE.verdict && TOKEN && state.alerted !== 'split') {
+      await gh(`/repos/${REPO}/issues`, { method: 'POST', body: {
+        title: `SPLIT VERDICT: outlets report a partial ${CASE.shortTitle} verdict — nothing published`,
+        body: `Newsrooms are reporting a SPLIT/PARTIAL verdict — an acquittal on one charge AND a `
+          + `conviction on another in the same reporting. The engine has published NOTHING: a split `
+          + `outcome is ambiguous about the overall result by construction and a human must write it.\n\n`
+          + `Reported by: ${v.outlets.join(', ')}\n\n`
+          + v.items.map(i => `- ${i.outlet}: ${i.headline}\n  ${i.url}`).join('\n')
+          + `\n\nAction (AGENT.md verdict aftermath): read the sources, set the verdict per charge, `
+          + `write the closing day entry, resolve the board's central question, update phase/statusNow.`,
+        labels: ['verdict-watch', 'red-lane'] } });
+    }
+    write(statePath, { ...state, pending: null, alerted: 'split' });
+    console.log(slug + ': VERDICT SPLIT — escalating, withholding');
   } else if (v.status === 'watch') {
     write(statePath, { ...state, pending: null });
     console.log(slug + ': verdict signal below threshold (' + v.outlets.length + '/' + MIN_OUTLETS + ')');

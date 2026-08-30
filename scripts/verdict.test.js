@@ -4,7 +4,7 @@
  * them is real-shaped: the phrasing newsrooms actually use while a jury is still out.
  * If this file does not exit 0, verdict publishing must not ship.
  */
-const { classify, assess, copyKey } = require('./verdict.js');
+const { classify, assess, copyKey, isDecidedSplit } = require('./verdict.js');
 
 let pass = 0, fail = 0;
 const ok = (cond, label) => { cond ? pass++ : (fail++, console.log('  FAIL  ' + label)); };
@@ -141,14 +141,60 @@ console.log('--- Gate 2: disagreement stops everything ---');
 const split = consensus.concat([at(7, 'NBC', 'Jury acquits Davis on all counts')]);
 ok(assess(split, now).status === 'conflict', 'contradicting outlets must produce conflict, never publish');
 
-console.log('--- Gate 2d: three newsrooms all running a SPLIT verdict must never publish ---');
-// The end-to-end guarantee: even a full consensus of split-verdict headlines yields nothing to
-// publish, so the engine holds and a human resolves the partial verdict.
-ok(assess([
+console.log('--- Gate 2d: newsrooms running a SPLIT verdict must never publish, and must ESCALATE ---');
+// The end-to-end guarantee: a consensus of split-verdict headlines yields no single outcome to
+// publish, so the engine holds. But holding SILENTLY is its own failure — nobody would learn a
+// verdict landed. A decided split now escalates ('split') so a human writes the aftermath.
+const splitConsensus = [
   at(10, 'Court TV', 'Clancy found not guilty of first-degree murder, guilty of manslaughter'),
   at(9, 'AP', 'Clancy acquitted of murder but convicted of manslaughter'),
   at(8, 'Boston Globe', 'Clancy cleared of first-degree murder, found guilty of manslaughter'),
-], now).status === 'none', 'a consensus of split-verdict headlines must publish nothing');
+];
+ok(assess(splitConsensus, now).status === 'split', 'a consensus of split-verdict headlines must escalate as split');
+ok(assess(splitConsensus, now).status !== 'ready', 'a split must NEVER be ready to publish');
+ok(assess(splitConsensus, now).outcome === undefined, 'a split carries no single outcome');
+ok(assess(splitConsensus, now).outlets.length >= 2, 'the split alert names the newsrooms reporting it');
+
+console.log('--- Gate 2e: split escalation is decided, thresholded, and never suppresses a clean verdict ---');
+// Two independent newsrooms are enough to raise the alert (it never publishes, so the bar is low).
+ok(assess([
+  at(10, 'Court TV', 'Clancy found not guilty of first-degree murder, guilty of manslaughter'),
+  at(9, 'AP', 'Clancy acquitted of murder but convicted of manslaughter'),
+], now).status === 'split', 'two newsrooms reporting a decided split must escalate');
+
+// One lone split headline is below threshold — no alert, no publish.
+ok(assess([
+  at(10, 'Court TV', 'Clancy found not guilty of first-degree murder, guilty of manslaughter'),
+], now).status === 'none', 'a single split headline is below the escalation threshold');
+
+// One newsroom filing the same split twice is one source — not enough to escalate.
+ok(assess([
+  at(10, 'Court TV', 'Clancy found not guilty of murder, guilty of manslaughter'),
+  at(9, 'CourtTV.com', 'Clancy found not guilty of murder, guilty of manslaughter'),
+], now).status === 'none', 'one newsroom filing a split twice is one source');
+
+// A HYPOTHETICAL both-outcomes headline is not a decided split — an explainer must never alert.
+ok(!isDecidedSplit('Clancy could be found not guilty of murder but guilty of manslaughter'),
+   'a conditional both-outcomes headline is not a decided split');
+ok(!isDecidedSplit('What a split verdict would mean: acquittal on murder, conviction on manslaughter'),
+   'an explainer of a possible split is not a decided split');
+ok(assess([
+  at(10, 'Court TV', 'Clancy could be found not guilty of murder but guilty of manslaughter'),
+  at(9, 'AP', 'What a split verdict would mean if the jury acquits on murder, convicts on manslaughter'),
+], now).status === 'none', 'hypothetical split explainers must not escalate');
+
+// A retrospective of a past split (overturned/first trial) is not today's event.
+ok(!isDecidedSplit('In the first trial, Clancy was acquitted of murder but convicted of manslaughter'),
+   'a retrospective of a past split must not fire');
+
+// A clean, publishable conviction on a lesser charge must still PUBLISH even when split
+// headlines are also present — the alert must never suppress a real verdict.
+ok(assess([
+  at(12, 'Court TV', 'Lindsay Clancy convicted of manslaughter in deaths of her three children'),
+  at(11, 'AP', 'Clancy found guilty of manslaughter'),
+  at(10, '8 News Now', 'Jury finds Clancy guilty of manslaughter'),
+  at(9, 'Boston Globe', 'Clancy not guilty of first-degree murder, guilty of manslaughter'),
+], now).status === 'ready', 'a clean lesser-charge consensus still publishes despite split coverage');
 
 console.log('--- Window ---');
 ok(assess(consensus.map(i => ({ ...i, ts: new Date(now - 40 * 3600 * 1000).toISOString() })), now).status === 'none',

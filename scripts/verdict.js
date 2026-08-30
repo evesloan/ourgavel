@@ -104,6 +104,33 @@ const ACQUITTAL_SIGNAL  = /\bnot[\s-]+guilty\b|\bacquit(?:ted|tal|s)?\b|\bcleare
 const CONVICTION_SIGNAL = /\bconvict(?:s|ed|ion)?\b|(?<!\bnot[\s-])\bguilty\b/i;
 function isSplitVerdict(t) { return ACQUITTAL_SIGNAL.test(t) && CONVICTION_SIGNAL.test(t); }
 
+// isSplitVerdict tells classify() to HOLD, but holding silently is its own failure: if every
+// newsroom phrases a real split verdict this way, assess() sees no outcome at all and the engine
+// says NOTHING — no publish, and no alert either. Nobody learns a verdict landed. So a decided
+// split must ESCALATE (open a verdict-watch issue), exactly like a conflict does. This never
+// publishes and never invents an outcome — it only raises a hand so a human writes the aftermath.
+//
+// "Decided" is the same bar classify() uses for a single outcome: the split must be asserted, not
+// somebody's hypothetical ("could be found not guilty of murder but guilty of manslaughter") and
+// not a retrospective of an overturned verdict. Both signals must sit in indicative, present
+// clauses. This is deliberately stricter than isSplitVerdict alone so a preview or explainer that
+// merely mentions both possible outcomes never fires an alert.
+function isDecidedSplit(text) {
+  const t = String(text || '').replace(/\s+/g, ' ').trim();
+  if (!isSplitVerdict(t)) return false;
+  if (HISTORICAL.test(t)) return false;
+  for (const re of [ACQUITTAL_SIGNAL, CONVICTION_SIGNAL]) {
+    const m = t.match(re);
+    if (!m) return false;
+    const at = m.index || 0;
+    const clause = t.slice(Math.max(0, at - 100), at + m[0].length + 70);
+    if (HYPOTHETICAL.test(clause)) return false;   // conditional/anticipatory next to a signal
+  }
+  return true;
+}
+
+const SPLIT_MIN = 2;        // independent newsrooms carrying a decided split → escalate (never publish)
+
 const OUTCOME_LABEL = {
   GUILTY: 'Guilty',
   NOT_GUILTY: 'Not guilty',
@@ -159,11 +186,26 @@ function classify(text) {
 function assess(items, now = Date.now()) {
   const cutoff = now - WINDOW_HOURS * 3600 * 1000;
   const byOutcome = new Map();
+  const splitFams = new Map();               // family -> item, for DECIDED split-verdict headlines
+  const splitCopies = new Set();             // one wire split story on many mastheads is one story
   for (const it of items || []) {
     const ts = new Date(it.ts).getTime();
     if (!ts || ts < cutoff) continue;
     const tag = classify(it.headline);
-    if (!tag) continue;
+    if (!tag) {
+      // classify() held. A decided split (asserted acquittal AND conviction, not hypothetical or
+      // historical) proves nothing single but is a real event a human must resolve — track it so
+      // an otherwise-silent picture can still raise an alert. Same family/copy dedupe as outcomes.
+      if (isDecidedSplit(it.headline)) {
+        const fam = outletFamily(it.url, it.outlet);
+        if (!fam) continue;
+        const copy = copyKey(it.headline);
+        const already = splitFams.has(fam) || (copy && splitCopies.has(copy));
+        if (copy) splitCopies.add(copy);
+        if (!already) splitFams.set(fam, it);
+      }
+      continue;
+    }
     const fam = outletFamily(it.url, it.outlet);
     if (!fam) continue;                       // aggregator, or unattributable
     if (!byOutcome.has(tag)) byOutcome.set(tag, { fams: new Map(), copies: new Set() });
@@ -176,7 +218,11 @@ function assess(items, now = Date.now()) {
     if (already) continue;
     bucket.fams.set(fam, it);                 // first report from that newsroom
   }
-  if (!byOutcome.size) return { status: 'none' };
+  // A decided split escalates only when there is no clean outcome to publish or conflict on. It
+  // is computed once here so every early return can consider it.
+  const split = splitFams.size >= SPLIT_MIN
+    ? { status: 'split', outlets: [...splitFams.keys()], items: [...splitFams.values()] }
+    : null;
 
   const ranked = [...byOutcome.entries()]
     .map(([outcome, b]) => ({ outcome, outlets: [...b.fams.keys()], items: [...b.fams.values()] }))
@@ -193,10 +239,16 @@ function assess(items, now = Date.now()) {
       items: top.items, conflict: rivals.map(r => ({ outcome: r.outcome, outlets: r.outlets })),
     };
   }
-  if (top.outlets.length < MIN_OUTLETS) {
-    return { status: 'watch', outcome: top.outcome, outlets: top.outlets, items: top.items };
+  // A clean, publishable consensus wins outright — a real conviction on a lesser charge, phrased
+  // cleanly by enough newsrooms, must still publish; the split alert never suppresses it.
+  if (top && top.outlets.length >= MIN_OUTLETS) {
+    return { status: 'ready', outcome: top.outcome, outlets: top.outlets, items: top.items };
   }
-  return { status: 'ready', outcome: top.outcome, outlets: top.outlets, items: top.items };
+  // No publishable single outcome. If enough newsrooms report a decided split, raise the alert
+  // (this outranks a lone below-threshold 'watch' — a split is the more actionable signal).
+  if (split) return split;
+  if (top) return { status: 'watch', outcome: top.outcome, outlets: top.outlets, items: top.items };
+  return { status: 'none' };
 }
 
-module.exports = { classify, assess, outletFamily, copyKey, isSplitVerdict, OUTCOME_LABEL, MIN_OUTLETS, WINDOW_HOURS };
+module.exports = { classify, assess, outletFamily, copyKey, isSplitVerdict, isDecidedSplit, OUTCOME_LABEL, MIN_OUTLETS, SPLIT_MIN, WINDOW_HOURS };

@@ -309,6 +309,13 @@
       "flag": null
     },
     {
+      "ts": "2026-08-13T05:57:45.000Z",
+      "outlet": "via MSN",
+      "headline": "Alex Murdaugh's retrial in Charleston? Judge to hear host of issues Friday",
+      "url": "https://www.msn.com/en-us/news/crime/dna-prior-testimony-fridays-alex-murdaugh-hearing-to-air-swarm-of-contested-issues/ar-AA29Ys4H",
+      "flag": null
+    },
+    {
       "ts": "2026-08-13T02:09:19.000Z",
       "outlet": "via MSN",
       "headline": "Alex Murdaugh pre-trial hearing: Court venue, evidence, testimony",
@@ -394,7 +401,6 @@
     }
   ],
   "seen": [
-    "3mry0b",
     "1gds0io",
     "1p6ge5m",
     "24cwz8",
@@ -993,6 +999,7 @@
     "zcvf0c",
     "19dojtz",
     "1g9wkkw",
-    "1oww7bo"
+    "1oww7bo",
+    "1fp5o4d"
   ]
 }

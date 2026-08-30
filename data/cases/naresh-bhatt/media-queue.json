@@ -1,6 +1,17 @@
 {
-  "updated": null,
-  "published": [],
+  "updated": "2026-08-30T00:37:11.746Z",
+  "published": [
+    {
+      "local": "media/naresh-bhatt/a39a5367035a.jpg",
+      "licence": "CC BY-SA 3.0",
+      "credit": "Billy Hathorn"
+    },
+    {
+      "local": "media/naresh-bhatt/5e98ca756bd6.jpg",
+      "licence": "Public domain",
+      "credit": "Robert Underwood Johnson and Clarence Clough Buel (book authors)."
+    }
+  ],
   "heldForReview": [],
   "refused": []
 }

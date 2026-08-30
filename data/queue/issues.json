@@ -1,6 +1,22 @@
 {
-  "synced": "2026-08-29T23:55:22.899Z",
+  "synced": "2026-08-30T00:37:11.746Z",
   "open": [
+    {
+      "number": 38,
+      "title": "[handoff:development] dev: split-verdict escalation (verdict-watch issue on a decided split)",
+      "body": "### Lane\ndevelopment\n\n### SHA-256 of the decoded payload\n6b98fec7ed975f6b7a9eafba72521f8861ca0b044336291bbc2b0217c7e82081\n\n### Payload (base64 of a gzipped JSON apply-plan)\n```\n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",
+      "labels": [
+        "handoff",
+        "lane:development"
+      ],
+      "user": "evesloan",
+      "created": "2026-08-30T00:33:05Z",
+      "reactions": {
+        "up": 0,
+        "down": 0
+      },
+      "url": "https://github.com/evesloan/ourgavel/issues/38"
+    },
     {
       "number": 13,
       "title": "Discussion: Why was she on so many different drugs?",

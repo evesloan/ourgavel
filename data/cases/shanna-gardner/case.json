@@ -324,5 +324,18 @@
       "addedAt": "2026-08-28T16:50:53.798Z",
       "verified": "commons-api"
     }
+  ],
+  "relatedCases": [
+    {
+      "slug": "mario-fernandez-bridegan",
+      "label": "The Mario Fernandez verdict",
+      "note": "Gardner's husband was convicted of first-degree murder in the same case on Aug. 26, 2026.",
+      "sources": [
+        {
+          "outlet": "News4JAX",
+          "url": "https://www.news4jax.com/news/local/2026/08/26/truth-won-today-says-jared-bridegans-widow-after-mario-fernandez-convicted-of-murder-in-2022-shooting/"
+        }
+      ]
+    }
   ]
 }

@@ -881,7 +881,7 @@ const caseSlugs = fs.readdirSync(path.join(DATA, 'cases')).filter(d => fs.exists
 // to a list once, here, rather than guarded at forty separate call sites.
 const LIST_FIELDS = ['charges', 'prosecution', 'defense', 'victims', 'verdictOptions', 'keywords',
   'verdictKeywords', 'feeds', 'watchPages', 'statusNowSources', 'storySoFarSources',
-  'courtRecords', 'media', 'mediaQueries', 'links'];
+  'courtRecords', 'media', 'mediaQueries', 'links', 'relatedCases'];
 function normaliseCase(c, slug) {
   const out = Object.assign({ slug }, c);
   for (const f of LIST_FIELDS) if (!Array.isArray(out[f])) out[f] = out[f] == null ? [] : [out[f]];
@@ -1373,6 +1373,7 @@ ${boardPreview(c)}
 ${cc.livestream ? `<p style="margin-top:8px"><b>Watch live:</b> ${cc.livestream.sources.map(s => `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.outlet)}</a>`).join(' · ')}</p>` : ''}
 <p class="factline" style="margin-top:10px"><b>${esc(cc.defendant)}</b> · ${esc(cc.charges)}<br>${esc(cc.plea)}<br>${[cc.court, cc.judge, list(cc.prosecution) && 'Prosecution: ' + list(cc.prosecution), list(cc.defense) && 'Defense: ' + list(cc.defense)].filter(Boolean).map(esc).join(' · ')}</p>
 </div>
+${relatedBlock(c)}
 ${mediaBlock(c)}
 ${watchBlock(c)}
 <details class="fold"><summary>How this can end</summary>
@@ -1384,6 +1385,24 @@ ${cc.verdictOptions.map(v => `<div class="vopt"><b>${esc(v.option)}</b><br><span
 <h2>Latest updates</h2>
 ${tickerHtml(c.ticker.items, 8, false, `/cases/${c.slug}/live.json`)}
 `});
+}
+
+
+/* RELATED_CASES_V1 — internal cross-links between cases that share one underlying matter
+   (a concluded case to its still-pending successor, and back). Data-driven from case.json
+   `relatedCases`; a link renders only when the target case is actually built this run, never
+   to itself, and every relationship names the source that backs it. Standing SEO priority:
+   deliberate internal linking that hands crawl equity between related boards. */
+function relatedBlock(c) {
+  const rels = (c.case.relatedCases || [])
+    .map(r => ({ r, t: CASES.find(x => x.slug === r.slug) }))
+    .filter(x => x.t && x.t.slug !== c.slug);
+  if (!rels.length) return '';
+  const items = rels.map(({ r, t }) => {
+    const label = r.label || t.case.shortTitle;
+    return `<p style="margin:0 0 10px"><a href="/cases/${t.slug}/">${esc(label)} &rarr;</a><br><span style="font-size:14px;color:var(--mut)">${esc(r.note)}</span> ${srcLinks(r.sources)}</p>`;
+  }).join('');
+  return `<h2>Related case</h2><div class="card">${items}</div>`;
 }
 
 function dayBlock(c, d) {

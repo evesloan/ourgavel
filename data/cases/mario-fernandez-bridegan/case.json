@@ -453,5 +453,18 @@
         "url": "https://www.wokv.com/news/local/jury-deliberating-case-accused-murder-for-hire-suspect-mario-fernandez-saldana/YRMMWFLHZZBSJHEHCDIA35QKDE/"
       }
     ]
-  }
+  },
+  "relatedCases": [
+    {
+      "slug": "shanna-gardner",
+      "label": "Shanna Gardner's trial",
+      "note": "Bridegan's ex-wife is charged in the same murder-for-hire scheme; her trial is set for May 2027, to be tried alongside the accused gunman, Henry Tenon.",
+      "sources": [
+        {
+          "outlet": "News4Jax/WJXT",
+          "url": "https://www.news4jax.com/news/local/2026/08/27/judge-to-settle-final-motions-before-jury-selection-starts-monday-in-shanna-gardner-trial-in-jared-bridegan-murder/"
+        }
+      ]
+    }
+  ]
 }

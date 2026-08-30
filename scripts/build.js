@@ -863,7 +863,7 @@ ${body.includes('id="caseviewer"') ? `<script>${CASEVIEWER_SCRIPT}</script>` : '
 ${body.includes('id="ticker"') ? `<script>${LIVE_SCRIPT}</script>` : ''}
 <script>${COMPOSER_SCRIPT}</script>
 <footer><div class="wrap">
-  <p class="disc" style="border:none;margin:0;padding:0">Every defendant is presumed innocent unless and until proven guilty. Community theories are labeled, not facts. Quoted material belongs to the cited outlets; nothing here is legal advice. <a href="/about/">Full policies</a> · <button class="linkbtn footbtn" type="button" data-compose="correction">Suggest a correction</button> · <span class="hb">◉ ${esc(BUILT_AT.slice(0, 16).replace('T', ' '))} UTC</span></p>
+  <p class="disc" style="border:none;margin:0;padding:0">Every defendant is presumed innocent unless and until proven guilty. Community theories are labeled, not facts. Quoted material belongs to the cited outlets; nothing here is legal advice. <a href="/about/">Full policies</a> · <a href="/embed/">Embed a board</a> · <button class="linkbtn footbtn" type="button" data-compose="correction">Suggest a correction</button> · <span class="hb">◉ ${esc(BUILT_AT.slice(0, 16).replace('T', ' '))} UTC</span></p>
 </div></footer>
 </body></html>`;
 }

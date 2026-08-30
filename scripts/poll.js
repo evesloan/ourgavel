@@ -10,7 +10,7 @@
    No dependencies. Node 18+ (global fetch). */
 const fs = require('fs');
 const path = require('path');
-const { assess, OUTCOME_LABEL, MIN_OUTLETS } = require('./verdict.js');
+const { assess, defendantTokens, OUTCOME_LABEL, MIN_OUTLETS } = require('./verdict.js');
 
 const ROOT = path.join(__dirname, '..');
 const { discoverCase, safeToDiscover } = require('./media-fetch.js');
@@ -174,7 +174,9 @@ async function pollCase(slug) {
   // survive a second pulse cycle. Disagreement never publishes — it escalates.
   const statePath = path.join(dir, 'verdict-state.json');
   const state = fs.existsSync(statePath) ? read(statePath) : {};
-  const v = assess(T.items);
+  // Scoped to this case's own lead defendant, so a co-defendant's or co-conspirator's verdict in
+  // this ticker can never publish as this defendant's (see verdict.js subjectIsOther).
+  const v = assess(T.items, Date.now(), { defendantTokens: defendantTokens(CASE) });
 
   if (v.status === 'conflict') {
     if (TOKEN && state.alerted !== 'conflict') {

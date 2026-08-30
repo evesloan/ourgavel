@@ -4,7 +4,7 @@
  * them is real-shaped: the phrasing newsrooms actually use while a jury is still out.
  * If this file does not exit 0, verdict publishing must not ship.
  */
-const { classify, assess, copyKey, isDecidedSplit } = require('./verdict.js');
+const { classify, assess, copyKey, isDecidedSplit, defendantTokens, verdictSubjectName, subjectIsOther } = require('./verdict.js');
 
 let pass = 0, fail = 0;
 const ok = (cond, label) => { cond ? pass++ : (fail++, console.log('  FAIL  ' + label)); };
@@ -267,6 +267,65 @@ ok(assess([
 // Short headlines two newsrooms could plausibly reach alone are NOT treated as one copy.
 ok(copyKey('Guilty verdict returned') === '', 'a three-word headline is not a copy fingerprint');
 ok(copyKey(wire) !== '', 'a full sentence is a copy fingerprint');
+
+console.log('--- Gate 2f: verdict is SCOPED to the case\'s own defendant (co-defendant spillover) ---');
+// A case ticker carries co-defendants and co-conspirators by name. Three newsrooms reporting a
+// CO-DEFENDANT'S guilty verdict must NEVER publish as THIS defendant's. The guard is subtractive:
+// it only DECLINES to count an item when the verdict is about a different, named person AND this
+// defendant is not mentioned at all; a no-name wire stays publishable.
+const durkCase = { title: 'United States v. Durk Banks', defendant: 'Durk Devontay Banks, 33 — the Chicago rapper known as Lil Durk. He is on trial alongside two co-defendants, Deandre Wilson ("OTF DeDe") and David Lindsey ("Browneyez").' };
+const davisCase = { title: 'State of Nevada v. Duane Davis', defendant: 'Duane Keith "Keffe D" Davis, 63, of Henderson, Nevada' };
+const fernCase = { title: 'State of Florida v. Mario Fernandez Saldana', defendant: 'Mario Fernandez Saldana, 40' };
+const durkTok = defendantTokens(durkCase), davisTok = defendantTokens(davisCase), fernTok = defendantTokens(fernCase);
+
+// token extraction: lead only, co-defendants and victim excluded, alias folded
+ok(durkTok.has('durk') && durkTok.has('banks'), 'Durk tokens include the lead name');
+ok(!durkTok.has('deandre') && !durkTok.has('wilson') && !durkTok.has('lindsey'), 'Durk tokens EXCLUDE co-defendants');
+ok(davisTok.has('davis') && davisTok.has('keffe'), 'Davis tokens include surname and quoted alias');
+
+// subjectIsOther: skip a co-defendant, keep the real defendant, keep a no-name wire
+ok(subjectIsOther('Jury finds Deandre Wilson guilty of murder', durkTok), 'co-defendant Wilson is a different subject');
+ok(subjectIsOther('David Lindsey convicted on all counts', durkTok), 'co-defendant Lindsey is a different subject');
+ok(!subjectIsOther('Durk Banks convicted of murder-for-hire', durkTok), 'the defendant himself is not "other"');
+ok(!subjectIsOther('Lil Durk found guilty on all counts', durkTok), 'an alias containing a defendant token is not "other"');
+ok(!subjectIsOther('Man convicted in murder-for-hire killing of Microsoft manager', fernTok), 'a no-name wire is never "other" (stays publishable)');
+ok(!subjectIsOther("Suspect in Jared Bridegan's murder convicted in roadside ambush", fernTok), 'a victim-named, defendant-less wire is not "other"');
+ok(!subjectIsOther('Jury finds Duane Davis guilty of murder', davisTok), 'Duane Davis is the defendant');
+ok(!subjectIsOther('Anything at all', new Set()), 'empty tokens: guard inert');
+ok(!subjectIsOther('Jury finds Deandre Wilson guilty', null), 'null tokens: guard inert');
+ok(verdictSubjectName('Jury found her not criminally responsible') === null, 'a pronoun subject yields no name');
+
+// end-to-end: a co-defendant consensus in Durk's feed must NOT publish as Durk's verdict
+const coDefConsensus = [
+  at(10, 'Court TV', 'Jury finds Deandre Wilson guilty of murder'),
+  at(9, 'AP', 'Deandre Wilson convicted of murder in OTF case'),
+  at(8, 'ABC7', 'Guilty verdict returned against Deandre Wilson'),
+];
+ok(assess(coDefConsensus, now, { defendantTokens: durkTok }).status !== 'ready', 'a co-defendant consensus must NOT be ready as the lead defendant');
+ok(assess(coDefConsensus, now).status === 'ready', 'the SAME items, unscoped, would have published — proves the guard is what stops it');
+
+// the real defendant's own verdict still publishes under scoping
+const durkReal = [
+  at(10, 'Court TV', 'Jury finds Durk Banks guilty of murder-for-hire'),
+  at(9, 'AP', 'Durk Banks convicted in federal murder-for-hire trial'),
+  at(8, 'ABC7', 'Guilty verdict returned against Durk Banks'),
+];
+ok(assess(durkReal, now, { defendantTokens: durkTok }).status === 'ready', 'the lead defendant\'s own verdict still publishes under scoping');
+ok(assess(durkReal, now, { defendantTokens: durkTok }).outcome === 'GUILTY', 'and carries the right outcome');
+
+// the Fernandez no-name AP wire still reaches consensus under scoping (the proven real case)
+const fernWire = [
+  at(10, 'Court TV', 'Man convicted in murder-for-hire killing of Microsoft manager'),
+  at(9, 'AP', 'Suspect convicted in roadside ambush killing of Microsoft executive'),
+  at(8, 'News4JAX', 'Jury returns guilty verdict in murder-for-hire trial'),
+];
+ok(assess(fernWire, now, { defendantTokens: fernTok }).status === 'ready', 'the real no-name Fernandez wire still publishes under scoping');
+
+// a co-defendant SPLIT headline must not escalate as the lead defendant's split either
+ok(assess([
+  at(10, 'Court TV', 'Deandre Wilson found not guilty of murder, guilty of a lesser count'),
+  at(9, 'AP', 'Wilson acquitted of murder but convicted of a lesser charge'),
+], now, { defendantTokens: durkTok }).status !== 'split', 'a co-defendant split does not escalate as the lead defendant');
 
 console.log('\n  ' + pass + ' passed, ' + fail + ' failed');
 if (fail) { console.log('\n  VERDICT PUBLISHING MUST NOT SHIP WITH FAILING TESTS.\n'); process.exit(1); }

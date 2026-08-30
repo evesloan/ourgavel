@@ -175,6 +175,89 @@ function classify(text) {
   return null;
 }
 
+// ---- SUBJECT SCOPING ------------------------------------------------------------------------
+// A case's ticker carries co-defendants and co-conspirators by name — Durk's carries Deandre
+// Wilson, David Lindsey and "Bankroll Freddie"; Fernandez's carries Henry Tenon. If three
+// newsrooms report a CO-DEFENDANT'S guilty verdict, the base engine would read three agreeing
+// "convicted" headlines and publish it as THIS defendant's verdict. This scopes assess() to the
+// case's own lead defendant.
+//
+// It is subtractive by construction: it can only DECLINE to count an item, never invent or publish
+// one. It fires only when we are CONFIDENT the verdict is about a different, NAMED person — the
+// headline mentions no token of this defendant's name anywhere AND names another person as the
+// verdict's subject. A no-name wire ("Man convicted in murder-for-hire killing…", the real
+// Fernandez AP headline) has no other-subject, so it is NEVER skipped and stays publishable. The
+// worst an extraction error can do is skip a real verdict, which only makes the engine HOLD — the
+// safe direction, resolved by the human aftermath path. Inert unless assess() is given tokens.
+const TOK_STOP = new Set(['of','the','and','a','an','jr','sr','ii','iii','iv','de','van','von','only','family','otf']);
+// Capitalized words that are roles/labels/places, never a person's identifying name.
+const NAME_STOP = new Set([
+  'Jury','Juror','Jurors','Judge','Justice','Court','Panel','Foreman','Man','Woman','Men','Women',
+  'Suspect','Suspects','Defendant','Defendants','Accused','Ex','Former','Mother','Father','Son',
+  'Daughter','Husband','Wife','Widow','Rapper','Singer','Star','Mogul','Executive','Manager','Boss',
+  'State','Commonwealth','People','Prosecutor','Prosecutors','Prosecution','Defense','Grammy',
+  'Only','Family','The','A','An','Trial','Verdict','Guilty','Not','Murder','Killing','Both','All',
+  'Counts','Count','First','Second','Third','News','Live','Updates','Update','Analysis','What','How',
+  'Why','Federal','United','States','Nevada','Florida','Virginia','Carolina','Georgia','Chicago','Las',
+  'Vegas','County','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday','Appeal',
+]);
+
+function nameToks(span) {
+  const out = [];
+  for (const w of String(span || '').split(/\s+/)) {
+    const bare = w.replace(/[^A-Za-z’'-]/g, '');
+    if (!bare || !/^[A-Z]/.test(bare) || NAME_STOP.has(bare)) continue;
+    const t = bare.replace(/[^A-Za-z]/g, '').toLowerCase();
+    if (t.length >= 3) out.push(t);
+  }
+  return out;
+}
+
+/** Lowercased name tokens for a case's LEAD defendant — from the "PLAINTIFF v. DEFENDANT" title
+ * (parentheticals stripped) plus any quoted Title-Case alias in the bio BEFORE a co-defendant is
+ * introduced. Co-defendants (named later in the bio) and the victim (shortTitle) are excluded. */
+function defendantTokens(CASE) {
+  const toks = new Set();
+  const addRaw = s => { for (const w of String(s || '').split(/[^A-Za-z]+/)) { const t = w.toLowerCase(); if (t.length >= 3 && !TOK_STOP.has(t)) toks.add(t); } };
+  const parts = String((CASE && CASE.title) || '').split(/\sv\.?\s/i);
+  if (parts.length > 1) addRaw(parts[parts.length - 1].replace(/\([^)]*\)/g, ''));
+  let bio = String((CASE && CASE.defendant) || '');
+  const cut = bio.search(/co-?defendant|alongside|along with|co-?accused|two other/i);
+  const head = cut >= 0 ? bio.slice(0, cut) : bio;
+  for (const m of head.matchAll(/["“‘’”']([^"“‘’”']{2,30})["“‘’”']/g)) {
+    const span = m[1].trim();
+    const words = span.split(/\s+/);
+    if (words.length <= 3 && words.every(w => /^[A-Z]/.test(w))) for (const t of nameToks(span)) toks.add(t);
+  }
+  return toks;
+}
+
+/** The proper name the verdict verb acts on, as a Set of lowercased tokens, or null if none. */
+function verdictSubjectName(headline) {
+  const t = String(headline || '').replace(/\s+/g, ' ').trim();
+  const grab = span => { const n = nameToks(span); return n.length ? new Set(n) : null; };
+  let m;
+  m = t.match(/\b(?:finds?|found|convicts?|convicted|acquits?|acquitted|clears?|cleared|sentences?|sentenced)\s+((?:[A-Z][\w.’'-]+\s+){1,4})(?:guilty|not|of|on|in|to|after|at|—|,|$)/);
+  if (m) { const n = grab(m[1]); if (n) return n; }
+  m = t.match(/\b([A-Z][\w.’'-]+(?:\s+[A-Z][\w.’'-]+){0,3})\s+(?:is\s+|was\s+|has\s+been\s+)?(?:found|convicted|acquitted|cleared|sentenced)\b/);
+  if (m) { const n = grab(m[1]); if (n) return n; }
+  m = t.match(/\bverdict\s+(?:for|against)\s+((?:[A-Z][\w.’'-]+\s*){1,4})/);
+  if (m) { const n = grab(m[1]); if (n) return n; }
+  return null;
+}
+
+/** True only when CONFIDENT this verdict item is about a DIFFERENT named person than the case's
+ * defendant. Subtractive: absent a positive other-subject it returns false (item stays counted). */
+function subjectIsOther(headline, defTokens) {
+  if (!defTokens || !defTokens.size) return false;
+  const t = String(headline || '');
+  for (const tok of defTokens) if (new RegExp('\\b' + tok.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\b', 'i').test(t)) return false;
+  const subj = verdictSubjectName(t);
+  if (!subj) return false;
+  for (const s of subj) if (defTokens.has(s)) return false;
+  return true;
+}
+
 /**
  * Assess a case's recent ticker items.
  * Returns { status, outcome, outlets, items, conflict } where status is one of:
@@ -183,14 +266,21 @@ function classify(text) {
  *   'conflict'  outlets disagree on the outcome — never publish, escalate loudly
  *   'ready'     consensus met; publish once it has survived a second cycle
  */
-function assess(items, now = Date.now()) {
+function assess(items, now = Date.now(), opts = {}) {
   const cutoff = now - WINDOW_HOURS * 3600 * 1000;
+  // Scope to this case's own defendant when tokens are supplied (poll.js passes them). Absent
+  // tokens the guard is inert and assess() behaves exactly as before.
+  const defTokens = (opts && opts.defendantTokens instanceof Set) ? opts.defendantTokens
+    : (opts && Array.isArray(opts.defendantTokens)) ? new Set(opts.defendantTokens) : null;
   const byOutcome = new Map();
   const splitFams = new Map();               // family -> item, for DECIDED split-verdict headlines
   const splitCopies = new Set();             // one wire split story on many mastheads is one story
   for (const it of items || []) {
     const ts = new Date(it.ts).getTime();
     if (!ts || ts < cutoff) continue;
+    // A co-defendant's or co-conspirator's verdict is NOT this defendant's. Skip before it can
+    // count toward an outcome OR escalate a split. Subtractive — see subjectIsOther above.
+    if (defTokens && subjectIsOther(it.headline, defTokens)) continue;
     const tag = classify(it.headline);
     if (!tag) {
       // classify() held. A decided split (asserted acquittal AND conviction, not hypothetical or
@@ -251,4 +341,4 @@ function assess(items, now = Date.now()) {
   return { status: 'none' };
 }
 
-module.exports = { classify, assess, outletFamily, copyKey, isSplitVerdict, isDecidedSplit, OUTCOME_LABEL, MIN_OUTLETS, SPLIT_MIN, WINDOW_HOURS };
+module.exports = { classify, assess, outletFamily, copyKey, isSplitVerdict, isDecidedSplit, defendantTokens, verdictSubjectName, subjectIsOther, OUTCOME_LABEL, MIN_OUTLETS, SPLIT_MIN, WINDOW_HOURS };

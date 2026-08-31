@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-08-31T12:15:00.000Z",
+      "outlet": "complex.com",
+      "headline": "Lil Durk Trial: Akademiks Alleges Kanye West and Drake Are Among Those Funding Rapper’s Defense",
+      "url": "https://www.complex.com/music/a/jaelaniturnerwilliams/lil-durk-trial-ye-drake-legal-fund",
+      "flag": null
+    },
+    {
       "ts": "2026-08-30T13:45:00.000Z",
       "outlet": "hotnewhiphop.com",
       "headline": "Prosecutors In Lil Durk Trial Plan To Rest Their Case This Week",
@@ -377,6 +384,7 @@
     "1toaet4",
     "1f535ux",
     "gph8bc",
-    "1guwmz3"
+    "1guwmz3",
+    "12kg5o9"
   ]
 }

@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-08-31T09:21:00.000Z",
+      "outlet": "WCVB",
+      "headline": "Deliberations continue Friday in Lindsay Clancy's murder trial",
+      "url": "https://www.wcvb.com/article/lindsay-clancy-trial-live-updates-aug-31/73567058",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-08-29T19:13:00.000Z",
       "outlet": "WCVB",
       "headline": "Psychiatrist in Clancy trial resigns from Delaware hospital",
@@ -699,6 +706,7 @@
     "jk86eh",
     "q4oq85",
     "eks2fp",
-    "1iiud3w"
+    "1iiud3w",
+    "16xwrn6"
   ]
 }

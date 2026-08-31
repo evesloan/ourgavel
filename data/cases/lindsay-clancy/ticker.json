@@ -1,10 +1,24 @@
 {
   "items": [
     {
+      "ts": "2026-08-31T11:03:10.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Lindsay Clancy trial: Verdict watch continues as deliberations enter 3rd day",
+      "url": "https://www.boston25news.com/news/local/lindsay-clancy-trial-verdict-watch-continues-deliberations-enter-3rd-day/TQIG4USXOFEWXLAWFBGRVY3XNQ/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-08-31T09:21:00.000Z",
       "outlet": "WCVB",
       "headline": "Deliberations continue Friday in Lindsay Clancy's murder trial",
       "url": "https://www.wcvb.com/article/lindsay-clancy-trial-live-updates-aug-31/73567058",
+      "flag": "verdict-watch"
+    },
+    {
+      "ts": "2026-08-31T07:20:27.000Z",
+      "outlet": "NBC10 Boston",
+      "headline": "No verdict yet in Lindsay Clancy trial. Here are key moments jurors could be considering",
+      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-verdict-watch-live-stream-live-updates/4006343/",
       "flag": "verdict-watch"
     },
     {
@@ -707,6 +721,8 @@
     "q4oq85",
     "eks2fp",
     "1iiud3w",
-    "16xwrn6"
+    "16xwrn6",
+    "1cae137",
+    "1qiuihg"
   ]
 }

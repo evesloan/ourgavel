@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-08-31T16:08:29.000Z",
+      "outlet": "FOX5 Las Vegas",
+      "headline": "Closing arguments set to begin in Tupac murder trial",
+      "url": "https://www.fox5vegas.com/2026/08/31/closing-arguments-set-begin-tupac-murder-trial/",
+      "flag": null
+    },
+    {
       "ts": "2026-08-31T15:14:45.000Z",
       "outlet": "8 News Now",
       "headline": "Live updates: Day 11 of Tupac murder trial, including closing arguments",
@@ -392,6 +399,7 @@
     "23dhz3",
     "jhfm1y",
     "o217sr",
-    "4p6jmu"
+    "4p6jmu",
+    "z3xbd5"
   ]
 }

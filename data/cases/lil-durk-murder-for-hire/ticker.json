@@ -1,6 +1,20 @@
 {
   "items": [
     {
+      "ts": "2026-08-31T15:59:00.000Z",
+      "outlet": "via Yahoo News",
+      "headline": "OTF Jam Testifies That Lil Durk Participated in Murder of Saviay'a Robinson",
+      "url": "https://www.yahoo.com/entertainment/music/articles/otf-jam-testifies-lil-durk-225854236.html",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-31T15:41:13.000Z",
+      "outlet": "via MSN",
+      "headline": "Keith Jones, a.k.a. Flacka, testifies that Lil Durk never paid him for his role in Quando Rondo hit, repeatedly asked Durk for money",
+      "url": "https://www.msn.com/en-us/entertainment/music/keith-jones-a-k-a-flacka-testifies-that-lil-durk-never-paid-him-for-his-role-in-quando-rondo-hit-repeatedly-asked-durk-for-money/ar-AA2biKBe",
+      "flag": null
+    },
+    {
       "ts": "2026-08-31T15:41:00.000Z",
       "outlet": "xxlmag.com",
       "headline": "Keith Jones Testifies Durk Never Paid Him For Quando Rondo Hit",
@@ -402,6 +416,8 @@
     "12kg5o9",
     "1jqqvnr",
     "1gbey31",
-    "1s2cza9"
+    "1s2cza9",
+    "r4ss2m",
+    "1gbevtp"
   ]
 }

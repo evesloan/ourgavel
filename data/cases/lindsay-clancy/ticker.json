@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-08-31T17:19:29.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Why the Lindsay Clancy jury deliberations may be taking time and what it could mean",
+      "url": "https://www.boston25news.com/news/local/why-lindsay-clancy-jury-deliberations-may-be-taking-time-what-it-could-mean/TJDXYTBCTFDKDFHXEK4N42A56M/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-08-31T13:38:00.000Z",
       "outlet": "WCVB",
       "headline": "Lindsay Clancy's attorney says coverage made weekend 'horrific'",
@@ -771,6 +778,7 @@
     "gcjhx6",
     "1xdmpkr",
     "1clxxei",
-    "1x4ua6z"
+    "1x4ua6z",
+    "11wvf5r"
   ]
 }

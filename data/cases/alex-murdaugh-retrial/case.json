@@ -98,7 +98,8 @@
     "othram",
     "fingernail dna",
     "jury tampering",
-    "clerk of court"
+    "clerk of court",
+    "murdaugh"
   ],
   "mediaQueries": [
     {
@@ -422,5 +423,9 @@
       "addedAt": "2026-08-22T09:45:19.970Z",
       "verified": "commons-api"
     }
+  ],
+  "geoKeywords": [
+    "sled",
+    "colleton county"
   ]
 }

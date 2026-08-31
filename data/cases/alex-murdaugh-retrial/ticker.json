@@ -15,6 +15,20 @@
       "flag": null
     },
     {
+      "ts": "2026-08-19T02:30:00.000Z",
+      "outlet": "via MSN",
+      "headline": "Picking a new Murdaugh murder trial site – no easy task for Judge McCaslin",
+      "url": "https://www.msn.com/en-us/news/other/picking-a-new-murdaugh-murder-trial-site-no-easy-task-for-judge-mccaslin/ar-AA2atgNa",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-19T02:06:00.000Z",
+      "outlet": "via Yahoo News",
+      "headline": "Here's why Murdaugh's attorneys want murder retrial in Richland County",
+      "url": "https://www.yahoo.com/news/us/articles/heres-why-murdaughs-attorneys-want-090650650.html",
+      "flag": null
+    },
+    {
       "ts": "2026-08-18T14:49:49.000Z",
       "outlet": "via MSN",
       "headline": "Is Alex Murdaugh Still in Prison After His Murder Convictions Were Overturned?",
@@ -124,6 +138,13 @@
       "outlet": "ctpost.com",
       "headline": "Jueza acepta trasladar nuevo juicio a Alex Murdaugh de condado donde ocurrieron los asesinatos",
       "url": "https://www.ctpost.com/news/world/article/jueza-acepta-trasladar-nuevo-juicio-a-alex-22388936.php",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-14T12:51:53.000Z",
+      "outlet": "via MSN",
+      "headline": "Murdaugh gun claim collides with bizarre Charleston showdown as lawyers battle over what next jury gets to see",
+      "url": "https://www.msn.com/en-us/news/crime/murdaugh-gun-claim-collides-with-bizarre-charleston-showdown-as-lawyers-battle-over-what-next-jury-gets-to-see/ar-AA2a6grK",
       "flag": null
     },
     {
@@ -394,9 +415,6 @@
     }
   ],
   "seen": [
-    "1gds0io",
-    "1p6ge5m",
-    "24cwz8",
     "u6uf8x",
     "aq753t",
     "veuys9",
@@ -993,6 +1011,9 @@
     "19dojtz",
     "1g9wkkw",
     "1oww7bo",
-    "1fp5o4d"
+    "1fp5o4d",
+    "1g9ygbl",
+    "1p7l81q",
+    "1gb21el"
   ]
 }

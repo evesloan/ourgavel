@@ -1,13 +1,6 @@
 {
   "items": [
     {
-      "ts": "2026-08-30T12:59:41.000Z",
-      "outlet": "News4JAX",
-      "headline": "‘Two Dope Chicks Who Give A Care’ organization pencils in year-round support for 4 Duval County schools",
-      "url": "https://www.news4jax.com/positively-jax/2026/08/30/two-dope-chicks-who-give-a-care-organization-pencils-in-year-round-support-for-4-duval-county-schools/",
-      "flag": null
-    },
-    {
       "ts": "2026-08-27T20:13:39.000Z",
       "outlet": "News4JAX",
       "headline": "Court filing gives window into new defense strategy for Shanna Gardner in Jared Bridegan murder trial",
@@ -85,13 +78,6 @@
       "flag": null
     },
     {
-      "ts": "2026-08-24T22:44:29.000Z",
-      "outlet": "News4JAX",
-      "headline": "Duval County Public Schools launches website ahead of November millage vote",
-      "url": "https://www.news4jax.com/news/local/2026/08/24/duval-county-public-schools-launches-website-ahead-of-november-millage-vote/",
-      "flag": null
-    },
-    {
       "ts": "2026-08-24T13:10:55.000Z",
       "outlet": "Action News Jax",
       "headline": "Second week of testimony in trial for murder-for-hire suspect Mario Fernandez Saldana | WATCH LIVE",
@@ -110,20 +96,6 @@
       "outlet": "Action News Jax",
       "headline": "Appeal ruling says Bridegan widow’s phone is not evidence in murder-for-hire trial",
       "url": "https://www.actionnewsjax.com/news/local/appeal-ruling-says-bridegan-widows-phone-is-not-evidence-murder-for-hire-trial/GSJG6CTHH5EGDKV27XC424VT4Q/",
-      "flag": null
-    },
-    {
-      "ts": "2026-08-21T21:41:24.000Z",
-      "outlet": "News4JAX",
-      "headline": "Drunken dispute under Jacksonville Beach pier ends in fatal stabbing, murder charge, arrest report reveals",
-      "url": "https://www.news4jax.com/news/local/2026/08/21/drunken-dispute-under-jacksonville-beach-pier-ends-in-fatal-stabbing-murder-charge-arrest-report-reveals/",
-      "flag": null
-    },
-    {
-      "ts": "2026-08-21T20:19:39.000Z",
-      "outlet": "News4JAX",
-      "headline": "‘Homeless people are people just like us’: Jacksonville Beach fatal stabbing sparks conversation about homelessness",
-      "url": "https://www.news4jax.com/news/local/2026/08/21/homeless-people-are-people-just-like-us-jacksonville-beach-stabbing-sparks-conversation-about-homelessness/",
       "flag": null
     },
     {

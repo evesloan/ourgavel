@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-08-31T13:38:00.000Z",
+      "outlet": "WCVB",
+      "headline": "Lindsay Clancy's attorney says coverage made weekend 'horrific'",
+      "url": "https://www.wcvb.com/article/reddington-clancy-monday-remarks/73568970",
+      "flag": null
+    },
+    {
       "ts": "2026-08-31T13:08:26.000Z",
       "outlet": "Boston.com",
       "headline": "Lindsay Clancy trial: Verdict watch continues as jury deliberations resume",
@@ -747,6 +754,7 @@
     "1qiuihg",
     "10d7ucs",
     "ldhf8s",
-    "gcjhx6"
+    "gcjhx6",
+    "1xdmpkr"
   ]
 }

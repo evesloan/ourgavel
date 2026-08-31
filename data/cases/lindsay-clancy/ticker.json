@@ -1,6 +1,20 @@
 {
   "items": [
     {
+      "ts": "2026-08-31T20:39:00.000Z",
+      "outlet": "WCVB",
+      "headline": "What makes Lindsay Clancy's trial different from Dimone Fleming's case?",
+      "url": "https://www.wcvb.com/article/lindsay-clancys-trial-dimone-fleming-comparison/73572201",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-31T20:29:35.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "No verdict after 3 days of deliberations in the Lindsay Clancy trial over the killing of her kids",
+      "url": "https://www.boston25news.com/news/local/no-verdict-after-3-days-deliberations-lindsay-clancy-trial-over-killing-her-kids/UKU3CEGLWBBJZIFWPD33T72KBQ/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-08-31T17:19:29.000Z",
       "outlet": "Boston 25 News",
       "headline": "Why the Lindsay Clancy jury deliberations may be taking time and what it could mean",
@@ -779,6 +793,8 @@
     "1xdmpkr",
     "1clxxei",
     "1x4ua6z",
-    "11wvf5r"
+    "11wvf5r",
+    "1henj2g",
+    "cuc51o"
   ]
 }

@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-08-31T13:45:00.000Z",
+      "outlet": "thesource.com",
+      "headline": "Lil Durk Trial Takes Dramatic Turn As Witness Testifies About Alleged $1 Million Bounty",
+      "url": "https://thesource.com/2026/08/31/lil-durk-trial-takes-dramatic-turn-as-witness-testifies-about-alleged-1-million-bounty/",
+      "flag": null
+    },
+    {
       "ts": "2026-08-31T12:15:00.000Z",
       "outlet": "complex.com",
       "headline": "Lil Durk Trial: Akademiks Alleges Kanye West and Drake Are Among Those Funding Rapper’s Defense",
@@ -385,6 +392,8 @@
     "1f535ux",
     "gph8bc",
     "1guwmz3",
-    "12kg5o9"
+    "12kg5o9",
+    "1jqqvnr",
+    "1gbey31"
   ]
 }

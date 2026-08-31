@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-08-31T20:52:03.000Z",
+      "outlet": "PBS NewsHour",
+      "headline": "Prosecutor urges jurors to convict Duane 'Keffe D' Davis at Tupac Shakur murder trial",
+      "url": "https://www.pbs.org/newshour/nation/prosecutor-urges-jurors-to-convict-duane-keffe-d-davis-at-tupac-shakur-murder-trial",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-08-31T16:08:29.000Z",
       "outlet": "FOX5 Las Vegas",
       "headline": "Closing arguments set to begin in Tupac murder trial",
@@ -400,6 +407,7 @@
     "jhfm1y",
     "o217sr",
     "4p6jmu",
-    "z3xbd5"
+    "z3xbd5",
+    "1viqgrz"
   ]
 }

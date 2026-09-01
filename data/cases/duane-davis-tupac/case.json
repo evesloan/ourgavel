@@ -151,6 +151,16 @@
    "outlet": "PBS News Hour",
    "url": "https://www.pbs.org/newshour/feeds/rss/headlines",
    "verified": true
+  },
+  {
+   "outlet": "Las Vegas Review-Journal",
+   "url": "https://www.reviewjournal.com/crime/courts/feed/",
+   "verified": true
+  },
+  {
+   "outlet": "KTNV Las Vegas",
+   "url": "https://www.ktnv.com/news.rss",
+   "verified": true
   }
  ],
  "watchPages": [

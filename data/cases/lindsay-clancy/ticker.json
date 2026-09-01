@@ -1,6 +1,20 @@
 {
   "items": [
     {
+      "ts": "2026-09-01T15:20:20.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Lindsay Clancy trial reaches impasse as jury says it cannot reach unanimous verdict",
+      "url": "https://www.boston25news.com/news/local/lindsay-clancy-trial-reaches-impasse-jury-says-it-cannot-reach-unanimous-verdict/7ZJTUO4EK5DH5MDSYLKEQMYLKI/",
+      "flag": "verdict-watch"
+    },
+    {
+      "ts": "2026-09-01T15:10:05.000Z",
+      "outlet": "Court TV",
+      "headline": "Jury says it can’t reach a unanimous decision in Lindsay Clancy’s murder trial",
+      "url": "https://www.courttv.com/news/jury-says-it-cant-reach-a-unanimous-decision-in-lindsay-clancys-murder-trial/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-01T14:25:07.000Z",
       "outlet": "Boston 25 News",
       "headline": "Lindsay Clancy trial (live updates): Jury says it’s deadlocked; judge orders more deliberations",
@@ -685,20 +699,6 @@
       "headline": "Former mother-in-law says Lindsay Clancy was ‘begging for help’",
       "url": "https://www.courttv.com/news/former-mother-in-law-says-lindsay-clancy-was-begging-for-help/",
       "flag": null
-    },
-    {
-      "ts": "2026-08-17T21:00:33.000Z",
-      "outlet": "Court TV",
-      "headline": "TikTok user raises more than $800K for Lindsay Clancy’s family",
-      "url": "https://www.courttv.com/news/tiktok-user-raises-more-than-800k-for-lindsay-clancys-family/",
-      "flag": null
-    },
-    {
-      "ts": "2026-08-17T19:58:36.000Z",
-      "outlet": "Court TV",
-      "headline": "Lindsay Clancy’s mother says she was ‘afraid to be alone’ as defense begins its case",
-      "url": "https://www.courttv.com/news/lindsay-clancys-mother-says-she-was-afraid-to-be-alone-as-defense-begins-its-case/",
-      "flag": null
     }
   ],
   "seen": [
@@ -823,6 +823,8 @@
     "lr0k04",
     "1srmr1g",
     "jm8nt7",
-    "5lex62"
+    "5lex62",
+    "1gy4pp4",
+    "1ehyu5s"
   ]
 }

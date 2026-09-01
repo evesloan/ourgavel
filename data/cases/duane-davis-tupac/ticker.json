@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-01T04:57:01.000Z",
+      "outlet": "NPR",
+      "headline": "Jury convicts a man of first-degree murder for the 1996 killing of rap icon Tupac Shakur",
+      "url": "https://www.npr.org/2026/09/01/g-s1-141341/conviction-tupac-shakur-murder",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-01T00:16:11.000Z",
       "outlet": "8 News Now",
       "headline": "Duane 'Keffe D' Davis found guilty in connection to Tupac Shakur murder",
@@ -416,6 +423,7 @@
     "4p6jmu",
     "z3xbd5",
     "1viqgrz",
-    "15pmmru"
+    "15pmmru",
+    "1exbev5"
   ]
 }

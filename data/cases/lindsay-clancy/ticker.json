@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-01T09:34:00.000Z",
+      "outlet": "WCVB",
+      "headline": "Jury deliberations enter fourth day in Lindsay Clancy murder trial",
+      "url": "https://www.wcvb.com/article/lindsay-clancy-trial-live-updates-sept-1/73578070",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-08-31T20:39:00.000Z",
       "outlet": "WCVB",
       "headline": "What makes Lindsay Clancy's trial different from Dimone Fleming's case?",
@@ -803,6 +810,7 @@
     "11wvf5r",
     "1henj2g",
     "cuc51o",
-    "1i45n3f"
+    "1i45n3f",
+    "1ncmfba"
   ]
 }

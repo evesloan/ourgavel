@@ -85,6 +85,13 @@
       "flag": null
     },
     {
+      "ts": "2026-08-17T12:55:51.000Z",
+      "outlet": "via MSN",
+      "headline": "Murdaugh defense pushing for retrial to be in Richland County",
+      "url": "https://www.msn.com/en-us/news/crime/murdaugh-defense-pushing-for-retrial-to-be-in-richland-county/ar-AA2ak9wu",
+      "flag": null
+    },
+    {
       "ts": "2026-08-17T05:11:03.000Z",
       "outlet": "via MSN",
       "headline": "Judge rules Alex Murdaugh's trial testimony allowed in upcoming double murder retrial",
@@ -422,7 +429,6 @@
     }
   ],
   "seen": [
-    "sytzsw",
     "1cuorta",
     "zkxgfh",
     "17la83z",
@@ -1021,6 +1027,7 @@
     "7yj7ih",
     "1kx690s",
     "1izhq2c",
-    "1g9zyu3"
+    "1g9zyu3",
+    "1gavcn7"
   ]
 }

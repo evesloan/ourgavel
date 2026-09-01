@@ -8,6 +8,13 @@
       "flag": "verdict-watch"
     },
     {
+      "ts": "2026-09-01T07:02:49.000Z",
+      "outlet": "NBC10 Boston",
+      "headline": "Lindsay Clancy jury set to deliberate for another day",
+      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-trial-verdict-watch-live-stream-live-updates/4007052/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-08-31T20:39:00.000Z",
       "outlet": "WCVB",
       "headline": "What makes Lindsay Clancy's trial different from Dimone Fleming's case?",
@@ -811,6 +818,7 @@
     "1henj2g",
     "cuc51o",
     "1i45n3f",
-    "1ncmfba"
+    "1ncmfba",
+    "eq21np"
   ]
 }

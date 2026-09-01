@@ -1,6 +1,20 @@
 {
   "items": [
     {
+      "ts": "2026-09-01T23:04:48.000Z",
+      "outlet": "KTNV Las Vegas",
+      "headline": "'The jury delivered swift justice': Clark County DA reacts to Tupac Shakur murder trial verdict",
+      "url": "https://www.ktnv.com/news/the-jury-delivered-swift-justice-clark-county-da-reacts-to-tupac-shakur-murder-trial-verdict",
+      "flag": "verdict-watch"
+    },
+    {
+      "ts": "2026-09-01T23:00:49.000Z",
+      "outlet": "News 3 Las Vegas",
+      "headline": "Former FBI Las Vegas agent, Ray Johnson, weighs in on Duane Davis trial",
+      "url": "https://news3lv.com/news/local/former-fbi-las-vegas-agent-ray-johnson-weighs-in-on-duane-davis-trial",
+      "flag": null
+    },
+    {
       "ts": "2026-09-01T18:32:32.000Z",
       "outlet": "News 3 Las Vegas",
       "headline": "DA applauds guilty verdict in Tupac Shakur murder trial: 'Wasn't a difficult decision'",
@@ -536,6 +550,8 @@
     "138h2rn",
     "919cn2",
     "18heagx",
-    "1ieontv"
+    "1ieontv",
+    "172sikb",
+    "f05mz4"
   ]
 }

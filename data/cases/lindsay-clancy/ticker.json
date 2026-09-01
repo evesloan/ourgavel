@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-01T15:25:00.000Z",
+      "outlet": "WCVB",
+      "headline": "Could Lindsay Clancy's trial end like Karen Read's first trial?",
+      "url": "https://www.wcvb.com/article/massachusetts-clancy-read-tuey-rodriguez-jury-instruction/73581276",
+      "flag": null
+    },
+    {
       "ts": "2026-09-01T15:20:20.000Z",
       "outlet": "Boston 25 News",
       "headline": "Lindsay Clancy trial reaches impasse as jury says it cannot reach unanimous verdict",
@@ -692,13 +699,6 @@
       "headline": "Doctor reveals what Lindsay Clancy said in her first phone call after killing 3 children",
       "url": "https://www.courttv.com/news/doctor-reveals-what-lindsay-clancy-said-in-her-first-phone-call-after-killing-3-children/",
       "flag": null
-    },
-    {
-      "ts": "2026-08-18T18:41:04.000Z",
-      "outlet": "Court TV",
-      "headline": "Former mother-in-law says Lindsay Clancy was ‘begging for help’",
-      "url": "https://www.courttv.com/news/former-mother-in-law-says-lindsay-clancy-was-begging-for-help/",
-      "flag": null
     }
   ],
   "seen": [
@@ -825,6 +825,7 @@
     "jm8nt7",
     "5lex62",
     "1gy4pp4",
-    "1ehyu5s"
+    "1ehyu5s",
+    "y55rq1"
   ]
 }

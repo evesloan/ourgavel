@@ -1,6 +1,27 @@
 {
   "items": [
     {
+      "ts": "2026-09-01T20:11:14.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Lindsay Clancy jury goes home after a fourth day without a verdict and signals an impasse",
+      "url": "https://www.boston25news.com/news/local/lindsay-clancy-jury-goes-home-after-fourth-day-without-verdict-signals-an-impasse/INXT5HB3UBFLDGCWM53GH4SGT4/",
+      "flag": "verdict-watch"
+    },
+    {
+      "ts": "2026-09-01T20:02:28.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "LINDSAY CLANCY VERDICT STORY",
+      "url": "https://www.boston25news.com/news/local/lindsay-clancy-verdict-story/Y5EIQ2QGB5FCJKQ5VNVVR2ZL6M/",
+      "flag": "verdict-watch"
+    },
+    {
+      "ts": "2026-09-01T19:48:03.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Lindsay Clancy trial (updates): Jury can’t reach unanimous verdict; deliberations resume Wednesday",
+      "url": "https://www.boston25news.com/news/local/lindsay-clancy-trial-updates-jury-cant-reach-unanimous-verdict-deliberations-resume-wednesday/HXIRVCYLXRB5ZJMOTUT2RZKFR4/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-01T17:28:56.000Z",
       "outlet": "Boston 25 News",
       "headline": "Lindsay Clancy trial (live updates): Jury can’t reach verdict; judge orders more deliberations",
@@ -678,27 +699,6 @@
       "headline": "Rebuttal witness Dr. Avram Mack: Clancy suffered major depressive disorder, not psychosis",
       "url": "https://www.bostonglobe.com/2026/08/21/metro/lindsay-clancy-trial-mack-resnick/",
       "flag": null
-    },
-    {
-      "ts": "2026-08-21T18:33:58.000Z",
-      "outlet": "Court TV",
-      "headline": "‘She was a puppet and someone else was pulling the strings’: Lindsay Clancy’s defense rests after doctor says she wasn’t psychotic ‘every minute’",
-      "url": "https://www.courttv.com/news/she-was-a-puppet-and-someone-else-was-pulling-the-strings-lindsay-clancys-defense-rests-after-doctor-says-she-wasnt-psychotic-every-minute/",
-      "flag": null
-    },
-    {
-      "ts": "2026-08-21T16:00:00Z",
-      "outlet": "NBC10 Boston",
-      "headline": "Recap: Defense in Lindsay Clancy trial rests, prosecutors call 1st rebuttal witness",
-      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-murder-trial/",
-      "flag": null
-    },
-    {
-      "ts": "2026-08-21T08:48:51.000Z",
-      "outlet": "NBC10 Boston",
-      "headline": "Recap: Defense in Lindsay Clancy trial rests, prosecutors call 1st rebuttal witness",
-      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-trial-day-18-live-stream-live-updates/4001645/",
-      "flag": null
     }
   ],
   "seen": [
@@ -829,6 +829,9 @@
     "y55rq1",
     "1c71bk6",
     "qr3chx",
-    "ttsoi"
+    "ttsoi",
+    "mr4ds9",
+    "18qyu3k",
+    "19msu5u"
   ]
 }

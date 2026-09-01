@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-01T12:20:30.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Lindsay Clancy trial: Verdict watch resumes as jury deliberations enter 4th day",
+      "url": "https://www.boston25news.com/news/local/lindsay-clancy-trial-verdict-watch-resumes-jury-deliberations-enter-4th-day/4HSDV7PJVVCTZGM4A4QSG2PBQM/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-01T09:34:00.000Z",
       "outlet": "WCVB",
       "headline": "Jury deliberations enter fourth day in Lindsay Clancy murder trial",
@@ -692,13 +699,6 @@
       "headline": "‘That’s it?’: Lindsay Clancy’s defense attorney challenges digital evidence prosecutors say prove she murdered her kids",
       "url": "https://www.courttv.com/news/thats-it-lindsay-clancys-defense-attorney-challenges-digital-evidence-prosecutors-say-prove-she-murdered-her-kids/",
       "flag": null
-    },
-    {
-      "ts": "2026-08-12T19:54:05.000Z",
-      "outlet": "Court TV",
-      "headline": "Lawyers in Lindsay Clancy case get heated over whether she was instructed to claim she heard voices",
-      "url": "https://www.courttv.com/news/lawyers-in-lindsay-clancy-case-get-heated-over-whether-she-was-instructed-to-claim-she-heard-voices/",
-      "flag": null
     }
   ],
   "seen": [
@@ -819,6 +819,7 @@
     "cuc51o",
     "1i45n3f",
     "1ncmfba",
-    "eq21np"
+    "eq21np",
+    "lr0k04"
   ]
 }

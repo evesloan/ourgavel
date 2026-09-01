@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-08-31T17:00:00.000Z",
+      "outlet": "via Yahoo News",
+      "headline": "Trap Lore Ross Mulls Social Media Break Over Lil Durk Trial Interference",
+      "url": "https://www.yahoo.com/entertainment/celebrity/articles/trap-lore-ross-mulls-social-005704409.html",
+      "flag": null
+    },
+    {
       "ts": "2026-08-31T15:59:00.000Z",
       "outlet": "via Yahoo News",
       "headline": "OTF Jam Testifies That Lil Durk Participated in Murder of Saviay'a Robinson",
@@ -418,6 +425,7 @@
     "1gbey31",
     "1s2cza9",
     "r4ss2m",
-    "1gbevtp"
+    "1gbevtp",
+    "19vmvm2"
   ]
 }

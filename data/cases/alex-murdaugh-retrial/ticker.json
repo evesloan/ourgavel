@@ -23,6 +23,13 @@
     },
     {
       "ts": "2026-08-19T02:06:00.000Z",
+      "outlet": "via AOL",
+      "headline": "Here's why Murdaugh's attorneys want murder retrial in Richland County",
+      "url": "https://www.aol.com/articles/heres-why-murdaughs-attorneys-want-090650000.html",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-19T02:06:00.000Z",
       "outlet": "via Yahoo News",
       "headline": "Here's why Murdaugh's attorneys want murder retrial in Richland County",
       "url": "https://www.yahoo.com/news/us/articles/heres-why-murdaughs-attorneys-want-090650650.html",
@@ -204,20 +211,6 @@
       "flag": null
     },
     {
-      "ts": "2026-08-14T11:50:00.000Z",
-      "outlet": "via Yahoo News",
-      "headline": "Judge moves Alex Murdaugh retrial from small county, but motion to toss out case will wait",
-      "url": "https://www.yahoo.com/news/us/articles/judge-moves-alex-murdaugh-retrial-184949962.html",
-      "flag": null
-    },
-    {
-      "ts": "2026-08-14T11:49:49.000Z",
-      "outlet": "via MSN",
-      "headline": "Judge moves Alex Murdaugh retrial from small county, but motion to toss out case will wait",
-      "url": "https://www.msn.com/en-us/news/crime/judge-moves-alex-murdaugh-retrial-from-small-county-but-motion-to-toss-out-case-will-wait/ar-AA2a87pN",
-      "flag": null
-    },
-    {
       "ts": "2026-08-14T10:57:56.000Z",
       "outlet": "via MSN",
       "headline": "Alex Murdaugh scores victory in court as judge allows change of venue for upcoming double murder retrial",
@@ -257,6 +250,13 @@
       "outlet": "via MSN",
       "headline": "Alex Murdaugh retrial moved out of Colleton County, judge says",
       "url": "https://www.msn.com/en-us/news/crime/alex-murdaugh-retrial-moved-out-of-colleton-county-judge-says/ar-AA2a7y4p",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-14T07:49:00.000Z",
+      "outlet": "usnews.com",
+      "headline": "Judge Moves Alex Murdaugh Retrial From Small County, but Motion to Toss Out Case Will Wait",
+      "url": "https://www.usnews.com/news/us/articles/2026-08-14/judge-moves-alex-murdaugh-retrial-from-small-county-but-motion-to-toss-out-case-will-wait",
       "flag": null
     },
     {
@@ -372,6 +372,13 @@
       "flag": null
     },
     {
+      "ts": "2026-07-08T02:30:00.000Z",
+      "outlet": "via Yahoo News",
+      "headline": "Murdaugh Judge Debra McCaslin: a bona fide member of SC’s close-knit legal tribe",
+      "url": "https://www.yahoo.com/news/us/articles/murdaugh-judge-debra-mccaslin-bona-093000591.html",
+      "flag": null
+    },
+    {
       "ts": "2026-07-03T14:15:00.000Z",
       "outlet": "WCSC Live 5 News",
       "headline": "Deep Dive: Murdaugh Murders Retrial Ep 3: Alex Murdaugh’s first day in a court",
@@ -415,10 +422,6 @@
     }
   ],
   "seen": [
-    "u6uf8x",
-    "aq753t",
-    "veuys9",
-    "h6wftw",
     "sytzsw",
     "1cuorta",
     "zkxgfh",
@@ -1014,6 +1017,10 @@
     "1fp5o4d",
     "1g9ygbl",
     "1p7l81q",
-    "1gb21el"
+    "1gb21el",
+    "7yj7ih",
+    "1kx690s",
+    "1izhq2c",
+    "1g9zyu3"
   ]
 }

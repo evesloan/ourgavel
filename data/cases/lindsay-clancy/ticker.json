@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-01T21:12:00.000Z",
+      "outlet": "WCVB",
+      "headline": "'Heartening': Lindsay Clancy's attorney reacts to jury working through impasse",
+      "url": "https://www.wcvb.com/article/lindsay-clancy-sad-awaiting-verdict-sept-1/73584874",
+      "flag": null
+    },
+    {
       "ts": "2026-09-01T20:11:14.000Z",
       "outlet": "Boston 25 News",
       "headline": "Lindsay Clancy jury goes home after a fourth day without a verdict and signals an impasse",
@@ -692,13 +699,6 @@
       "headline": "Lindsay Clancy's defense rests after calling 10 witnesses",
       "url": "https://www.wbur.org/news/2026/08/21/lindsay-clancy-defense-rests",
       "flag": null
-    },
-    {
-      "ts": "2026-08-21T19:00:00Z",
-      "outlet": "The Boston Globe",
-      "headline": "Rebuttal witness Dr. Avram Mack: Clancy suffered major depressive disorder, not psychosis",
-      "url": "https://www.bostonglobe.com/2026/08/21/metro/lindsay-clancy-trial-mack-resnick/",
-      "flag": null
     }
   ],
   "seen": [
@@ -832,6 +832,7 @@
     "ttsoi",
     "mr4ds9",
     "18qyu3k",
-    "19msu5u"
+    "19msu5u",
+    "9ccnwm"
   ]
 }

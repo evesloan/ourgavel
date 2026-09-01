@@ -29,6 +29,13 @@
       "flag": "verdict-watch"
     },
     {
+      "ts": "2026-09-01T15:10:49.000Z",
+      "outlet": "NBC10 Boston",
+      "headline": "What happens if there's a hung jury in the Lindsay Clancy case? What lawyers say",
+      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-update-hung-jury-explained/4007439/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-01T15:10:05.000Z",
       "outlet": "Court TV",
       "headline": "Jury says it can’t reach a unanimous decision in Lindsay Clancy’s murder trial",
@@ -692,13 +699,6 @@
       "headline": "Recap: Defense in Lindsay Clancy trial rests, prosecutors call 1st rebuttal witness",
       "url": "https://www.nbcboston.com/news/local/lindsay-clancy-trial-day-18-live-stream-live-updates/4001645/",
       "flag": null
-    },
-    {
-      "ts": "2026-08-21T06:52:03.000Z",
-      "outlet": "NBC10 Boston",
-      "headline": "Defense rests its case in the Lindsay Clancy trial",
-      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-trial-today-could-defense-rest-case/4001586/",
-      "flag": null
     }
   ],
   "seen": [
@@ -828,6 +828,7 @@
     "1ehyu5s",
     "y55rq1",
     "1c71bk6",
-    "qr3chx"
+    "qr3chx",
+    "ttsoi"
   ]
 }

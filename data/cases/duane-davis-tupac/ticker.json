@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-01T00:16:11.000Z",
+      "outlet": "8 News Now",
+      "headline": "Duane 'Keffe D' Davis found guilty in connection to Tupac Shakur murder",
+      "url": "https://www.8newsnow.com/news/tupac-murder-trial/duane-keffe-d-davis-found-guilty-in-connection-to-tupac-shakur-murder/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-08-31T20:52:03.000Z",
       "outlet": "PBS NewsHour",
       "headline": "Prosecutor urges jurors to convict Duane 'Keffe D' Davis at Tupac Shakur murder trial",
@@ -408,6 +415,7 @@
     "o217sr",
     "4p6jmu",
     "z3xbd5",
-    "1viqgrz"
+    "1viqgrz",
+    "15pmmru"
   ]
 }

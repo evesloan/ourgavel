@@ -15,6 +15,13 @@
       "flag": null
     },
     {
+      "ts": "2026-09-01T22:20:11.000Z",
+      "outlet": "PBS NewsHour",
+      "headline": "Decades after Tupac Shakur's murder, Duane 'Keffe D' Davis convicted",
+      "url": "https://www.pbs.org/newshour/show/decades-after-tupac-shakurs-murder-duane-keffe-d-davis-convicted",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-01T18:32:32.000Z",
       "outlet": "News 3 Las Vegas",
       "headline": "DA applauds guilty verdict in Tupac Shakur murder trial: 'Wasn't a difficult decision'",
@@ -552,6 +559,7 @@
     "18heagx",
     "1ieontv",
     "172sikb",
-    "f05mz4"
+    "f05mz4",
+    "1yziivn"
   ]
 }

@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-01T18:16:48.000Z",
+      "outlet": "8 News Now",
+      "headline": "'Forever grateful,' family of Tupac Shakur issue statement after Keffe D found guilty in Las Vegas murder",
+      "url": "https://www.8newsnow.com/news/tupac-murder-trial/forever-grateful-family-of-tupac-shakur-issue-statement-after-keffe-d-found-guilty-in-las-vegas-murder/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-01T06:08:46.000Z",
       "outlet": "News 3 Las Vegas",
       "headline": "Why jurors convicted Duane Davis nearly 30 years after Tupac Shakur’s murder",
@@ -440,6 +447,7 @@
     "15pmmru",
     "1exbev5",
     "1896joi",
-    "ci7tmm"
+    "ci7tmm",
+    "1d2mbqq"
   ]
 }

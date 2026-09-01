@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-01T14:25:07.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Lindsay Clancy trial (live updates): Jury says it’s deadlocked; judge orders more deliberations",
+      "url": "https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-jury-says-its-deadlocked-judge-orders-more-deliberations/HXIRVCYLXRB5ZJMOTUT2RZKFR4/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-01T12:53:42.000Z",
       "outlet": "Boston.com",
       "headline": "Livestream: Lindsay Clancy trial verdict watch continues Tuesday as jury deliberations resume",
@@ -692,13 +699,6 @@
       "headline": "Lindsay Clancy’s mother says she was ‘afraid to be alone’ as defense begins its case",
       "url": "https://www.courttv.com/news/lindsay-clancys-mother-says-she-was-afraid-to-be-alone-as-defense-begins-its-case/",
       "flag": null
-    },
-    {
-      "ts": "2026-08-15T13:08:05.000Z",
-      "outlet": "Court TV",
-      "headline": "‘I know what I meant’: Explosive moments highlight Week 3 of Lindsay Clancy’s murder trial",
-      "url": "https://www.courttv.com/news/i-know-what-i-meant-explosive-moments-highlight-week-3-of-lindsay-clancys-murder-trial/",
-      "flag": null
     }
   ],
   "seen": [
@@ -822,6 +822,7 @@
     "eq21np",
     "lr0k04",
     "1srmr1g",
-    "jm8nt7"
+    "jm8nt7",
+    "5lex62"
   ]
 }

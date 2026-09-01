@@ -281,6 +281,13 @@
       "flag": null
     },
     {
+      "ts": "2026-08-14T07:16:55.000Z",
+      "outlet": "via MSN",
+      "headline": "Murdaugh retrial will not take place in Colleton County, judge says",
+      "url": "https://www.msn.com/en-us/news/news/live-alex-murdaugh-appears-in-court-for-pretrial-hearing/ar-AA2a7yVn",
+      "flag": null
+    },
+    {
       "ts": "2026-08-14T06:00:00.000Z",
       "outlet": "via MSN",
       "headline": "Murdaugh double-murder retrial to move out of Colleton County to parts still unknown, possibly Charleston",
@@ -429,7 +436,6 @@
     }
   ],
   "seen": [
-    "1cuorta",
     "zkxgfh",
     "17la83z",
     "edlvkx",
@@ -1028,6 +1034,7 @@
     "1kx690s",
     "1izhq2c",
     "1g9zyu3",
-    "1gavcn7"
+    "1gavcn7",
+    "1g9zgr5"
   ]
 }

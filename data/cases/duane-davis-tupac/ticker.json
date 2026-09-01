@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-01T18:32:32.000Z",
+      "outlet": "News 3 Las Vegas",
+      "headline": "DA applauds guilty verdict in Tupac Shakur murder trial: 'Wasn't a difficult decision'",
+      "url": "https://news3lv.com/news/local/clark-county-da-steve-wolfson-guilty-verdict-press-conference-tupac-shakur-murder-trial-duane-davis-keffe-d-las-vegas-shooting-crime",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-01T18:16:48.000Z",
       "outlet": "8 News Now",
       "headline": "'Forever grateful,' family of Tupac Shakur issue statement after Keffe D found guilty in Las Vegas murder",
@@ -36,6 +43,13 @@
       "flag": "verdict-watch"
     },
     {
+      "ts": "2026-08-31T21:12:55.000Z",
+      "outlet": "Las Vegas Review-Journal",
+      "headline": "Duane ‘Keffe D’ Davis found guilty in Tupac Shakur’s murder",
+      "url": "https://www.reviewjournal.com/crime/courts/las-vegas-jury-begins-deliberating-in-tupac-shakur-murder-trial-3872684/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-08-31T20:52:03.000Z",
       "outlet": "PBS NewsHour",
       "headline": "Prosecutor urges jurors to convict Duane 'Keffe D' Davis at Tupac Shakur murder trial",
@@ -61,6 +75,20 @@
       "outlet": "News 3 Las Vegas",
       "headline": "TODAY: Jury to hear closing arguments in Tupac Shakur murder trial",
       "url": "https://news3lv.com/news/local/jury-closing-arguments-tupac-shakur-murder-trial-duane-davis-keffe-d-las-vegas-clark-county-nevada-court-livestream",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-31T14:26:37.000Z",
+      "outlet": "KTNV Las Vegas",
+      "headline": "Duane 'Keefe D' Davis found guilty in 1996 killing of rapper Tupac Shakur",
+      "url": "https://www.ktnv.com/duane-keefe-d-davis-found-guilty-in-1996-killing-of-rapper-tupac-shakur",
+      "flag": "verdict-watch"
+    },
+    {
+      "ts": "2026-08-31T03:12:41.000Z",
+      "outlet": "KTNV Las Vegas",
+      "headline": "'RIP King': Fans pay respect to Tupac Shakur, hope for justice as murder trial nears the end",
+      "url": "https://www.ktnv.com/news/rip-king-fans-pay-respect-to-tupac-shakur-hope-for-justice-as-murder-trial-nears-the-end",
       "flag": null
     },
     {
@@ -96,6 +124,13 @@
       "outlet": "News 3 Las Vegas",
       "headline": "Bay Law Injury Attorneys’ Deniz Bayramoglu weighs in as Duane Davis trial nears end",
       "url": "https://news3lv.com/news/local/bay-law-injury-attorneys-deniz-bayramoglu-weighs-in-as-keffe-d-davis-trial-nears-end",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-27T20:02:46.000Z",
+      "outlet": "Las Vegas Review-Journal",
+      "headline": "Suge Knight talked to law enforcement about Tupac’s killing years before trial",
+      "url": "https://www.reviewjournal.com/crime/courts/suge-knight-talked-about-shakur-shooting-in-2024-interview-with-law-enforcement-source-says-3870450/",
       "flag": null
     },
     {
@@ -141,6 +176,20 @@
       "flag": null
     },
     {
+      "ts": "2026-08-26T21:39:40.000Z",
+      "outlet": "Las Vegas Review-Journal",
+      "headline": "Suge Knight alleges lawyers for ‘Keffe D’ offered him $1M to speak out",
+      "url": "https://www.reviewjournal.com/crime/courts/suge-knight-alleges-lawyers-for-keffe-d-offered-him-1m-to-speak-out-3869856/",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-26T21:33:40.000Z",
+      "outlet": "Las Vegas Review-Journal",
+      "headline": "Prosecution rests in trial of Tupac Shakur slaying suspect",
+      "url": "https://www.reviewjournal.com/crime/courts/prosecution-rests-in-trial-of-tupac-shakur-slaying-suspect-3869835/",
+      "flag": null
+    },
+    {
       "ts": "2026-08-26T19:59:36.000Z",
       "outlet": "FOX5 Las Vegas",
       "headline": "State expected to rest its case as Tupac murder trial enters day eight",
@@ -166,6 +215,13 @@
       "outlet": "News 3 Las Vegas",
       "headline": "Attorney addresses how case has unfolded in week two of Tupac Shakur murder trial",
       "url": "https://news3lv.com/news/local/attorney-addresses-how-tupac-shakur-case-has-unfolded-in-week-two-of-murder-trial",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-25T20:40:28.000Z",
+      "outlet": "Las Vegas Review-Journal",
+      "headline": "‘I’m horrified’: Witness to shooting of Tupac Shakur testifies",
+      "url": "https://www.reviewjournal.com/crime/courts/im-horrified-witness-to-shooting-of-tupac-shakur-testifies-3869256/",
       "flag": null
     },
     {
@@ -218,6 +274,13 @@
       "flag": null
     },
     {
+      "ts": "2026-08-22T04:09:49.000Z",
+      "outlet": "Las Vegas Review-Journal",
+      "headline": "Tupac murder trial: Key moments from the first week",
+      "url": "https://www.reviewjournal.com/crime/tupac-murder-trial-key-moments-from-the-first-week-3867726/",
+      "flag": null
+    },
+    {
       "ts": "2026-08-21T22:16:05.000Z",
       "outlet": "News 3 Las Vegas",
       "headline": "Former judge Tony Abbatangelo discusses Duane Davis, Tupac Murder trial",
@@ -246,10 +309,24 @@
       "flag": null
     },
     {
+      "ts": "2026-08-20T22:47:16.000Z",
+      "outlet": "Las Vegas Review-Journal",
+      "headline": "Tupac Shakur murder trial: 5 takeaways from Wednesday’s testimony",
+      "url": "https://www.reviewjournal.com/crime/courts/tupac-shakur-murder-trial-5-takeaways-from-wednesdays-testimony-3866912/",
+      "flag": null
+    },
+    {
       "ts": "2026-08-20T18:14:16.000Z",
       "outlet": "8 News Now",
       "headline": "Live updates: Day 4 of Tupac murder trial",
       "url": "https://www.8newsnow.com/news/tupac-murder-trial/live-updates-day-4-of-tupac-murder-trial/",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-20T02:31:02.000Z",
+      "outlet": "Las Vegas Review-Journal",
+      "headline": "Keffe D’s conflicting Tupac accounts take center stage at trial",
+      "url": "https://www.reviewjournal.com/crime/courts/keffe-ds-conflicting-tupac-accounts-take-center-stage-at-trial-3866455/",
       "flag": null
     },
     {
@@ -448,6 +525,17 @@
     "1exbev5",
     "1896joi",
     "ci7tmm",
-    "1d2mbqq"
+    "1d2mbqq",
+    "img1x3",
+    "zdipqi",
+    "popwp7",
+    "1331gwq",
+    "1cah9et",
+    "35bxme",
+    "eg3i3t",
+    "138h2rn",
+    "919cn2",
+    "18heagx",
+    "1ieontv"
   ]
 }

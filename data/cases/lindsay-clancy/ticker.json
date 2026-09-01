@@ -1,6 +1,20 @@
 {
   "items": [
     {
+      "ts": "2026-09-01T17:28:56.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Lindsay Clancy trial (live updates): Jury can’t reach verdict; judge orders more deliberations",
+      "url": "https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-jury-cant-reach-verdict-judge-orders-more-deliberations/HXIRVCYLXRB5ZJMOTUT2RZKFR4/",
+      "flag": "verdict-watch"
+    },
+    {
+      "ts": "2026-09-01T16:54:35.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Hung jury or eventual verdict? What comes next in the Lindsay Clancy trial",
+      "url": "https://www.boston25news.com/news/local/hung-jury-or-eventual-verdict-what-comes-next-lindsay-clancy-trial/QCB2VROOGRBIBDLWNGQBZLCHHI/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-01T15:25:00.000Z",
       "outlet": "WCVB",
       "headline": "Could Lindsay Clancy's trial end like Karen Read's first trial?",
@@ -685,20 +699,6 @@
       "headline": "Defense rests its case in the Lindsay Clancy trial",
       "url": "https://www.nbcboston.com/news/local/lindsay-clancy-trial-today-could-defense-rest-case/4001586/",
       "flag": null
-    },
-    {
-      "ts": "2026-08-20T14:29:25.000Z",
-      "outlet": "Court TV",
-      "headline": "‘Team Lindsay’: Hundreds line the street outside courthouse in silent support of Lindsay Clancy",
-      "url": "https://www.courttv.com/news/team-lindsay-hundreds-line-the-street-outside-courthouse-in-silent-support-of-lindsay-clancy/",
-      "flag": null
-    },
-    {
-      "ts": "2026-08-19T20:01:14.000Z",
-      "outlet": "Court TV",
-      "headline": "Doctor reveals what Lindsay Clancy said in her first phone call after killing 3 children",
-      "url": "https://www.courttv.com/news/doctor-reveals-what-lindsay-clancy-said-in-her-first-phone-call-after-killing-3-children/",
-      "flag": null
     }
   ],
   "seen": [
@@ -826,6 +826,8 @@
     "5lex62",
     "1gy4pp4",
     "1ehyu5s",
-    "y55rq1"
+    "y55rq1",
+    "1c71bk6",
+    "qr3chx"
   ]
 }

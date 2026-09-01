@@ -1,6 +1,20 @@
 {
   "items": [
     {
+      "ts": "2026-09-01T12:53:42.000Z",
+      "outlet": "Boston.com",
+      "headline": "Livestream: Lindsay Clancy trial verdict watch continues Tuesday as jury deliberations resume",
+      "url": "https://www.boston.com/news/crime/2026/09/01/lindsay-clancy-trial-verdict-watch-tuesday-september-1/",
+      "flag": "verdict-watch"
+    },
+    {
+      "ts": "2026-09-01T12:41:43.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Lindsay Clancy trial (live updates): Verdict watch continues into 4th day of deliberations",
+      "url": "https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-verdict-watch-continues-into-4th-day-deliberations/HXIRVCYLXRB5ZJMOTUT2RZKFR4/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-01T12:20:30.000Z",
       "outlet": "Boston 25 News",
       "headline": "Lindsay Clancy trial: Verdict watch resumes as jury deliberations enter 4th day",
@@ -685,20 +699,6 @@
       "headline": "‘I know what I meant’: Explosive moments highlight Week 3 of Lindsay Clancy’s murder trial",
       "url": "https://www.courttv.com/news/i-know-what-i-meant-explosive-moments-highlight-week-3-of-lindsay-clancys-murder-trial/",
       "flag": null
-    },
-    {
-      "ts": "2026-08-14T16:40:27.000Z",
-      "outlet": "Court TV",
-      "headline": "‘Terrible job’: Attorneys, social media watchers join chorus critical of Lindsay Clancy prosecutors",
-      "url": "https://www.courttv.com/news/terrible-job-attorneys-social-media-watchers-join-chorus-critical-of-lindsay-clancy-prosecutors/",
-      "flag": null
-    },
-    {
-      "ts": "2026-08-13T20:24:12.000Z",
-      "outlet": "Court TV",
-      "headline": "‘That’s it?’: Lindsay Clancy’s defense attorney challenges digital evidence prosecutors say prove she murdered her kids",
-      "url": "https://www.courttv.com/news/thats-it-lindsay-clancys-defense-attorney-challenges-digital-evidence-prosecutors-say-prove-she-murdered-her-kids/",
-      "flag": null
     }
   ],
   "seen": [
@@ -820,6 +820,8 @@
     "1i45n3f",
     "1ncmfba",
     "eq21np",
-    "lr0k04"
+    "lr0k04",
+    "1srmr1g",
+    "jm8nt7"
   ]
 }

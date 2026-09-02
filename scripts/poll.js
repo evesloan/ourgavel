@@ -10,7 +10,7 @@
    No dependencies. Node 18+ (global fetch). */
 const fs = require('fs');
 const path = require('path');
-const { assess, defendantTokens, OUTCOME_LABEL, MIN_OUTLETS } = require('./verdict.js');
+const { assess, watchWarrantsEscalation, defendantTokens, OUTCOME_LABEL, MIN_OUTLETS, WINDOW_HOURS } = require('./verdict.js');
 
 const ROOT = path.join(__dirname, '..');
 const { discoverCase, safeToDiscover } = require('./media-fetch.js');
@@ -260,8 +260,26 @@ async function pollCase(slug) {
     write(statePath, { ...state, pending: null, alerted: 'split' });
     console.log(slug + ': VERDICT SPLIT — escalating, withholding');
   } else if (v.status === 'watch') {
-    write(statePath, { ...state, pending: null });
-    console.log(slug + ': verdict signal below threshold (' + v.outlets.length + '/' + MIN_OUTLETS + ')');
+    // A below-threshold signal usually IS below threshold — one stray "guilty" headline, noise.
+    // But when WATCH_ESCALATE_MIN+ independent newsrooms assert the SAME outcome with zero rivals
+    // and no verdict is on record, that is a real verdict the engine simply can't self-confirm (too
+    // few families inside the window), not noise. Holding silently is exactly how the Tupac GUILTY
+    // went unhandled on every pulse. Raise a verdict-watch issue so a human takes the red-lane
+    // publish decision. NEVER publishes, NEVER sets a verdict; fires once per case (state.alerted).
+    if (!CASE.verdict && TOKEN && state.alerted !== 'watch' && watchWarrantsEscalation(v)) {
+      await gh(`/repos/${REPO}/issues`, { method: 'POST', body: {
+        title: `VERDICT WATCH: ${v.outlets.length} newsrooms report a ${CASE.shortTitle} ${OUTCOME_LABEL[v.outcome] || v.outcome} verdict — engine can't self-confirm, nothing published`,
+        body: `${v.outlets.length} independent newsrooms report the same outcome — **${OUTCOME_LABEL[v.outcome] || v.outcome}** — and no outlet asserts a different one, but that is below the ${MIN_OUTLETS}-family bar the engine requires to publish a criminal verdict on its own. The site has published NOTHING and set no verdict.\n\n`
+          + `Reported by: ${v.outlets.join(', ')}\n\n`
+          + v.items.map(i => `- ${i.outlet}: ${i.headline}\n  ${i.url}`).join('\n')
+          + `\n\nThis is the RED LANE (AGENT.md §3b). A human confirms the outcome against the sources, then EITHER the aftermath is written on approval, OR the engine publishes on its own once a ${MIN_OUTLETS}th independent family drops a fresh report inside the ${WINDOW_HOURS}h window. The verdict is never inferred from this alert and never published automatically from it.`,
+        labels: ['verdict-watch', 'red-lane'] } });
+      write(statePath, { ...state, pending: null, alerted: 'watch' });
+      console.log(slug + ': VERDICT WATCH — escalating (' + v.outlets.length + '/' + MIN_OUTLETS + '), withholding');
+    } else {
+      write(statePath, { ...state, pending: null });
+      console.log(slug + ': verdict signal below threshold (' + v.outlets.length + '/' + MIN_OUTLETS + ')');
+    }
   }
 
   // A published verdict that later contradicts the newsroom picture must be flagged loudly.

@@ -131,6 +131,22 @@ function isDecidedSplit(text) {
 
 const SPLIT_MIN = 2;        // independent newsrooms carrying a decided split → escalate (never publish)
 
+// A below-threshold 'watch' — one outcome asserted by fewer newsrooms than MIN_OUTLETS, with zero
+// rivals — is how the engine currently SWALLOWS a real verdict it just can't self-confirm. The
+// flagship Tupac/Davis GUILTY reached only 2 of the 3 required independent families inside the 12h
+// window, so every pulse returned 'watch' and said nothing at all: no publish (correct — a machine
+// must not decide a verdict on 2 families) and no alert (the bug — nobody ever learned it landed).
+// So a watch carried by WATCH_ESCALATE_MIN+ independent families on ONE outcome must raise a hand —
+// open a verdict-watch issue — exactly as a conflict or a decided split does. This is a pure
+// predicate: it NEVER publishes and NEVER sets a verdict; it only tells poll.js the signal is strong
+// enough to surface for the human red-lane path (AGENT.md). assess() already guarantees a 'watch'
+// has zero rivals (any rival makes it a conflict), so a positive here is one-sided by construction.
+const WATCH_ESCALATE_MIN = 2;   // independent families on one outcome, no rival → escalate the watch
+function watchWarrantsEscalation(v) {
+  return !!v && v.status === 'watch' && !!v.outcome
+    && Array.isArray(v.outlets) && v.outlets.length >= WATCH_ESCALATE_MIN;
+}
+
 const OUTCOME_LABEL = {
   GUILTY: 'Guilty',
   NOT_GUILTY: 'Not guilty',
@@ -341,4 +357,4 @@ function assess(items, now = Date.now(), opts = {}) {
   return { status: 'none' };
 }
 
-module.exports = { classify, assess, outletFamily, copyKey, isSplitVerdict, isDecidedSplit, defendantTokens, verdictSubjectName, subjectIsOther, OUTCOME_LABEL, MIN_OUTLETS, SPLIT_MIN, WINDOW_HOURS };
+module.exports = { classify, assess, outletFamily, copyKey, isSplitVerdict, isDecidedSplit, watchWarrantsEscalation, defendantTokens, verdictSubjectName, subjectIsOther, OUTCOME_LABEL, MIN_OUTLETS, SPLIT_MIN, WATCH_ESCALATE_MIN, WINDOW_HOURS };

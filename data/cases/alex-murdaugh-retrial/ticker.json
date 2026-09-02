@@ -22,6 +22,13 @@
       "flag": null
     },
     {
+      "ts": "2026-08-19T02:06:50.000Z",
+      "outlet": "via MSN",
+      "headline": "Here's why Murdaugh's attorneys want murder retrial in Richland County",
+      "url": "https://www.msn.com/en-us/news/other/here-s-why-murdaugh-s-attorneys-want-murder-retrial-in-richland-county/ar-AA2asfBm",
+      "flag": null
+    },
+    {
       "ts": "2026-08-19T02:06:00.000Z",
       "outlet": "via AOL",
       "headline": "Here's why Murdaugh's attorneys want murder retrial in Richland County",
@@ -436,7 +443,6 @@
     }
   ],
   "seen": [
-    "zkxgfh",
     "17la83z",
     "edlvkx",
     "36vczz",
@@ -1035,6 +1041,7 @@
     "1izhq2c",
     "1g9zyu3",
     "1gavcn7",
-    "1g9zgr5"
+    "1g9zgr5",
+    "1gb1ded"
   ]
 }

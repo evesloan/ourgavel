@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-02T10:00:00.000Z",
+      "outlet": "WCVB",
+      "headline": "Lindsay Clancy trial: Jurors set to return for fifth day after deadlock note",
+      "url": "https://www.wcvb.com/article/lindsay-clancy-trial-live-updates-sept-2/73590232",
+      "flag": null
+    },
+    {
       "ts": "2026-09-02T03:31:19.000Z",
       "outlet": "Boston 25 News",
       "headline": "Sutton woman faces intimidation charges after incident outside Lindsay Clancy trial",
@@ -692,13 +699,6 @@
       "headline": "Defense rests in Lindsay Clancy murder trial",
       "url": "https://www.boston25news.com/news/local/defense-rests-lindsay-clancy-murder-trial/LWOMPUZ4DJE3ZKQFLW3PCVYBIE/",
       "flag": null
-    },
-    {
-      "ts": "2026-08-21T21:40:00.000Z",
-      "outlet": "WCVB",
-      "headline": "What to know today from the Lindsay Clancy murder trial",
-      "url": "https://www.wcvb.com/article/lindsay-clancy-trial-key-takeaways/73276054",
-      "flag": null
     }
   ],
   "seen": [
@@ -836,6 +836,7 @@
     "9ccnwm",
     "1fc33uo",
     "1s0kstw",
-    "1tnb1ic"
+    "1tnb1ic",
+    "1k4kz7b"
   ]
 }

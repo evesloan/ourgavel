@@ -64,6 +64,13 @@
       "flag": "verdict-watch"
     },
     {
+      "ts": "2026-09-02T13:00:26.000Z",
+      "outlet": "NBC10 Boston",
+      "headline": "What's it like on the Lindsay Clancy jury? Karen Read juror shares his experience",
+      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-trial-jury-karen-read-juror-experience/4007980/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-02T12:48:13.000Z",
       "outlet": "Boston 25 News",
       "headline": "What the Lindsay Clancy jury’s silence could mean as deliberations enter 5th day",
@@ -692,13 +699,6 @@
       "headline": "Lindsay Clancy trial resumes today after mistrial request denied",
       "url": "https://www.nbcboston.com/news/local/lindsay-clancy-trial-final-days/4003323/",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-08-24T21:42:16.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "Judge denies Lindsay Clancy mistrial following testimony about religion, warns prosecution",
-      "url": "https://www.boston25news.com/news/local/judge-denies-lindsay-clancy-mistrial-following-testimony-about-religion-warns-prosecution/Y5UERSEYJFHNJFC7GZKZYKMR24/",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
@@ -851,6 +851,7 @@
     "1qhd3se",
     "lxfwfo",
     "1rq5eb8",
-    "1rnjuqh"
+    "1rnjuqh",
+    "bkf2lf"
   ]
 }

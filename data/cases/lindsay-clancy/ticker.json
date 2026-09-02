@@ -15,6 +15,20 @@
       "flag": null
     },
     {
+      "ts": "2026-09-02T08:00:51.000Z",
+      "outlet": "NBC10 Boston",
+      "headline": "What happens next if Lindsay Clancy jury can't reach a verdict?",
+      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-trial-what-happens-with-hung-jury-mistrial/4007820/",
+      "flag": "verdict-watch"
+    },
+    {
+      "ts": "2026-09-02T07:55:28.000Z",
+      "outlet": "NBC10 Boston",
+      "headline": "Lindsay Clancy verdict watch: Deadlocked jury returns for Day 5 of deliberations",
+      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-trial-verdict-live-stream-live-updates-2/4007790/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-02T03:31:19.000Z",
       "outlet": "Boston 25 News",
       "headline": "Sutton woman faces intimidation charges after incident outside Lindsay Clancy trial",
@@ -685,20 +699,6 @@
       "headline": "As the Clancy case highlights postpartum psychosis, a mom shares her story of hope",
       "url": "https://www.nbcboston.com/news/local/postpartum-psychosis-experience-clancy-case/4002462/",
       "flag": null
-    },
-    {
-      "ts": "2026-08-22T13:02:14.000Z",
-      "outlet": "Court TV",
-      "headline": "‘Mortal sin,’ TikTok and a rally: Week 4 in Lindsay Clancy’s murder trial",
-      "url": "https://www.courttv.com/news/mortal-sin-tiktok-and-a-rally-week-4-in-lindsay-clancys-murder-trial/",
-      "flag": null
-    },
-    {
-      "ts": "2026-08-21T22:36:13.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "Lindsay Clancy’s case shines a light on postpartum support",
-      "url": "https://www.boston25news.com/news/local/lindsay-clancys-case-shines-light-postpartum-support/YHYIHLFWLRFIHLKQQZTBS7VS4A/",
-      "flag": null
     }
   ],
   "seen": [
@@ -838,6 +838,8 @@
     "1s0kstw",
     "1tnb1ic",
     "1k4kz7b",
-    "q3elb4"
+    "q3elb4",
+    "4gl2dp",
+    "1m3nkjg"
   ]
 }

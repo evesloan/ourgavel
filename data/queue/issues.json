@@ -1,6 +1,22 @@
 {
-  "synced": "2026-09-02T01:10:19.989Z",
+  "synced": "2026-09-02T01:55:18.676Z",
   "open": [
+    {
+      "number": 53,
+      "title": "VERDICT WATCH: 2 newsrooms report a Tupac Shakur Murder Trial Guilty verdict — engine can't self-confirm, nothing published",
+      "body": "2 independent newsrooms report the same outcome — **Guilty** — and no outlet asserts a different one, but that is below the 3-family bar the engine requires to publish a criminal verdict on its own. The site has published NOTHING and set no verdict.\n\nReported by: news3lv, 8newsnow\n\n- News 3 Las Vegas: DA applauds guilty verdict in Tupac Shakur murder trial: 'Wasn't a difficult decision'\n  https://news3lv.com/news/local/clark-county-da-steve-wolfson-guilty-verdict-press-conference-tupac-shakur-murder-trial-duane-davis-keffe-d-las-vegas-shooting-crime\n- 8 News Now: 'Forever grateful,' family of Tupac Shakur issue statement after Keffe D found guilty in Las Vegas murder\n  https://www.8newsnow.com/news/tupac-murder-trial/forever-grateful-family-of-tupac-shakur-issue-statement-after-keffe-d-found-guilty-in-las-vegas-murder/\n\nThis is the RED LANE (AGENT.md §3b). A human confirms the outcome against the sources, then EITHER the aftermath is written on approval, OR the engine publishes on its own once a 3th independent family drops a fresh report inside the 12h window. The verdict is never inferred from this alert and never published automatically from it.",
+      "labels": [
+        "verdict-watch",
+        "red-lane"
+      ],
+      "user": "github-actions[bot]",
+      "created": "2026-09-02T01:55:24Z",
+      "reactions": {
+        "up": 0,
+        "down": 0
+      },
+      "url": "https://github.com/evesloan/ourgavel/issues/53"
+    },
     {
       "number": 13,
       "title": "Discussion: Why was she on so many different drugs?",

@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-02T01:19:24.000Z",
+      "outlet": "FOX5 Las Vegas",
+      "headline": "Defense attorney: Jury did not take enough time reviewing evidence in Tupac Shakur murder trial",
+      "url": "https://www.fox5vegas.com/2026/09/02/defense-attorney-jury-did-not-take-enough-time-reviewing-evidence-tupac-shakur-murder-trial/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-01T23:04:48.000Z",
       "outlet": "KTNV Las Vegas",
       "headline": "'The jury delivered swift justice': Clark County DA reacts to Tupac Shakur murder trial verdict",
@@ -560,6 +567,7 @@
     "1ieontv",
     "172sikb",
     "f05mz4",
-    "1yziivn"
+    "1yziivn",
+    "wjrrpa"
   ]
 }

@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-02T02:13:34.000Z",
+      "outlet": "News 3 Las Vegas",
+      "headline": "Las Vegas prosecutors on Tupac Shakur murder verdict and possibility of more charges",
+      "url": "https://news3lv.com/news/local/las-vegas-prosecutors-on-tupac-shakur-murder-verdict-and-possibility-of-more-charges",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-02T01:19:24.000Z",
       "outlet": "FOX5 Las Vegas",
       "headline": "Defense attorney: Jury did not take enough time reviewing evidence in Tupac Shakur murder trial",
@@ -568,6 +575,7 @@
     "172sikb",
     "f05mz4",
     "1yziivn",
-    "wjrrpa"
+    "wjrrpa",
+    "eiec8q"
   ]
 }

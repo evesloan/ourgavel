@@ -43,6 +43,13 @@
       "flag": "verdict-watch"
     },
     {
+      "ts": "2026-09-02T10:29:32.000Z",
+      "outlet": "NBC10 Boston",
+      "headline": "Woman charged with photographing jurors outside courthouse where Lindsay Clancy trial is being held",
+      "url": "https://www.nbcboston.com/news/local/dawn-light-arrested-for-photographing-lindsay-clancy-jurors/4007991/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-02T10:00:00.000Z",
       "outlet": "WCVB",
       "headline": "Lindsay Clancy trial: Jurors set to return for fifth day after deadlock note",
@@ -692,13 +699,6 @@
       "headline": "Lindsay Clancy trial: Prosecutors expected to call final rebuttal witnesses",
       "url": "https://www.boston25news.com/news/local/lindsay-clancy-trial-prosecutors-expected-call-final-rebuttal-witnesses/BBNWTJG34VFCFNKSHU26BIEHTA/",
       "flag": null
-    },
-    {
-      "ts": "2026-08-24T10:07:00.000Z",
-      "outlet": "WCVB",
-      "headline": "As the Clancy case highlights postpartum psychosis, a mom stricken by it shares her story of hope",
-      "url": "https://www.wcvb.com/article/as-the-clancy-case-highlights-postpartum-psychosis-a-mom-stricken-by-it-shares-her-story-of-hope/73508744",
-      "flag": null
     }
   ],
   "seen": [
@@ -845,6 +845,7 @@
     "1q2g6hj",
     "1lhsnp1",
     "exgfbg",
-    "1e841lp"
+    "1e841lp",
+    "1a2xoxc"
   ]
 }

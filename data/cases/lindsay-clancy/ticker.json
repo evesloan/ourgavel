@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-02T20:34:35.000Z",
+      "outlet": "Boston.com",
+      "headline": "Lindsay Clancy trial: Scenes from the courthouse as jury still unable to reach verdict",
+      "url": "https://www.boston.com/news/local-news/2026/09/02/lindsay-clancy-trial-scenes-from-the-courthouse-as-jury-still-unable-to-reach-verdict/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-02T19:56:30.000Z",
       "outlet": "Boston 25 News",
       "headline": "What is the Tuey-Rodriguez instruction that Lindsay Clancy’s judge gave to the jury?",
@@ -692,13 +699,6 @@
       "headline": "Psychologist testifies Lindsay Clancy was criminally responsible for killing her 3 children",
       "url": "https://www.boston25news.com/news/local/psychologist-testifies-lindsay-clancy-was-criminally-responsible-killing-her-3-children/4ZR2FR43LFCNJHZSRQD77W3TQU/",
       "flag": null
-    },
-    {
-      "ts": "2026-08-25T20:13:48.000Z",
-      "outlet": "Court TV",
-      "headline": "Prosecution’s expert concedes Lindsay Clancy had ‘adverse reactions’ to medications",
-      "url": "https://www.courttv.com/news/prosecutions-expert-concedes-lindsay-clancy-had-adverse-reactions-to-medications/",
-      "flag": null
     }
   ],
   "seen": [
@@ -858,6 +858,7 @@
     "g46not",
     "1fhunya",
     "1y0gabx",
-    "9qbh33"
+    "9qbh33",
+    "1aejifz"
   ]
 }

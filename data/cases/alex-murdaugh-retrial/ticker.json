@@ -162,10 +162,10 @@
       "flag": null
     },
     {
-      "ts": "2026-08-14T12:51:53.000Z",
+      "ts": "2026-08-14T12:58:13.000Z",
       "outlet": "via MSN",
-      "headline": "Murdaugh gun claim collides with bizarre Charleston showdown as lawyers battle over what next jury gets to see",
-      "url": "https://www.msn.com/en-us/news/crime/murdaugh-gun-claim-collides-with-bizarre-charleston-showdown-as-lawyers-battle-over-what-next-jury-gets-to-see/ar-AA2a6grK",
+      "headline": "Alex Murdaugh's retrial moved to a different county",
+      "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-s-retrial-moved-to-a-different-county/ar-AA2a8CwM",
       "flag": null
     },
     {
@@ -323,6 +323,13 @@
       "flag": null
     },
     {
+      "ts": "2026-08-14T03:00:00.000Z",
+      "outlet": "Fox News",
+      "headline": "Murdaugh gun claim collides with bizarre Charleston showdown as lawyers battle over what next jury gets to see",
+      "url": "https://www.foxnews.com/us/alex-murdaugh-explosive-bid-blow-up-murder-case-hinging-dna-dirty-money-lies-expert",
+      "flag": null
+    },
+    {
       "ts": "2026-08-14T02:30:00.000Z",
       "outlet": "via Yahoo News",
       "headline": "Judge orders Alex Murdaugh’s murder retrial moved out of Colleton",
@@ -450,8 +457,6 @@
     }
   ],
   "seen": [
-    "iuj0dl",
-    "zsu6xn",
     "1sjqk55",
     "1m6n37h",
     "hy6sgb",
@@ -1049,6 +1054,8 @@
     "1gb1ded",
     "bc22ws",
     "1c53ue",
-    "1fnhjn4"
+    "1fnhjn4",
+    "1g9zng8",
+    "1cwry4d"
   ]
 }

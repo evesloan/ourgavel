@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-02T03:31:19.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Sutton woman faces intimidation charges after incident outside Lindsay Clancy trial",
+      "url": "https://www.boston25news.com/news/local/sutton-woman-faces-intimidation-charges-after-incident-outside-lindsay-clancy-trial/BFTHINQKXFAVVDFBVAPXJCMDXU/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-02T00:47:00.000Z",
       "outlet": "WCVB",
       "headline": "Woman charged with intimidation outside courthouse where Lindsay Clancy jury is deliberating",
@@ -692,13 +699,6 @@
       "headline": "What to know today from the Lindsay Clancy murder trial",
       "url": "https://www.wcvb.com/article/lindsay-clancy-trial-key-takeaways/73276054",
       "flag": null
-    },
-    {
-      "ts": "2026-08-21T21:20:00.000Z",
-      "outlet": "WCVB",
-      "headline": "Lindsay Clancy trial: Prosecution presents rebuttal as case nears conclusion",
-      "url": "https://www.wcvb.com/article/lindsay-clancy-trial-live-updates-aug-21/73492912",
-      "flag": null
     }
   ],
   "seen": [
@@ -835,6 +835,7 @@
     "19msu5u",
     "9ccnwm",
     "1fc33uo",
-    "1s0kstw"
+    "1s0kstw",
+    "1tnb1ic"
   ]
 }

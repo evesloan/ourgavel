@@ -1,6 +1,20 @@
 {
   "items": [
     {
+      "ts": "2026-09-02T18:24:49.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Lindsay Clancy trial (live updates): Deadlocked jury continues deliberations after judge’s warning",
+      "url": "https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-deadlocked-jury-day-5-deliberations-after-judges-warning/KBFJCBSS6VH4BLJOAW6MO6ZYL4/",
+      "flag": "verdict-watch"
+    },
+    {
+      "ts": "2026-09-02T17:43:55.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "What’s taking so long? Our legal expert breaks down the Lindsay Clancy jury deliberations",
+      "url": "https://www.boston25news.com/news/local/whats-taking-so-long-our-legal-expert-breaks-down-lindsay-clancy-jury-deliberations/IV7RABMWHZG6FAZPRDSSBQWFNE/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-02T15:57:49.000Z",
       "outlet": "Boston 25 News",
       "headline": "Lindsay Clancy judge issues warning as deliberations continue after courthouse arrest",
@@ -685,20 +699,6 @@
       "headline": "Testimony continues after Lindsay Clancy's defense denied mistrial",
       "url": "https://www.wcvb.com/article/lindsay-clancy-trial-live-updates-aug-25/73518460",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-08-25T08:39:39.000Z",
-      "outlet": "NBC10 Boston",
-      "headline": "Live updates: Lindsay Clancy trial continues after failed motion for mistrial",
-      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-trial-day-20-live-updates/4003382/",
-      "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-08-25T06:16:15.000Z",
-      "outlet": "NBC10 Boston",
-      "headline": "Lindsay Clancy trial resumes today after mistrial request denied",
-      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-trial-final-days/4003323/",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
@@ -852,6 +852,8 @@
     "lxfwfo",
     "1rq5eb8",
     "1rnjuqh",
-    "bkf2lf"
+    "bkf2lf",
+    "1iw1yig",
+    "11yopp3"
   ]
 }

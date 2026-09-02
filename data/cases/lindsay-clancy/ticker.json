@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-02T14:36:34.000Z",
+      "outlet": "Boston.com",
+      "headline": "Lindsay Clancy trial: Mass. woman arrested for allegedly filming jurors",
+      "url": "https://www.boston.com/news/crime/2026/09/02/lindsay-clancy-trial-woman-arrested-filming-jurors/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-02T13:34:10.000Z",
       "outlet": "Court TV",
       "headline": "Woman accused of intimidating jurors in Lindsay Clancy’s murder trial",
@@ -692,13 +699,6 @@
       "headline": "Lindsay Clancy trial (live updates): Prosecutors expected to call final rebuttal witnesses",
       "url": "https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-prosecutors-expected-call-final-rebuttal-witnesses/BBNWTJG34VFCFNKSHU26BIEHTA/",
       "flag": null
-    },
-    {
-      "ts": "2026-08-24T11:04:57.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "Lindsay Clancy trial: Prosecutors expected to call final rebuttal witnesses",
-      "url": "https://www.boston25news.com/news/local/lindsay-clancy-trial-prosecutors-expected-call-final-rebuttal-witnesses/BBNWTJG34VFCFNKSHU26BIEHTA/",
-      "flag": null
     }
   ],
   "seen": [
@@ -846,6 +846,7 @@
     "1lhsnp1",
     "exgfbg",
     "1e841lp",
-    "1a2xoxc"
+    "1a2xoxc",
+    "txd2nx"
   ]
 }

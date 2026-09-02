@@ -1,10 +1,24 @@
 {
   "items": [
     {
+      "ts": "2026-09-02T00:47:00.000Z",
+      "outlet": "WCVB",
+      "headline": "Woman charged with intimidation outside courthouse where Lindsay Clancy jury is deliberating",
+      "url": "https://www.wcvb.com/article/lindsay-clancy-trial-courthouse-arrest/73586498",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-01T21:12:00.000Z",
       "outlet": "WCVB",
       "headline": "'Heartening': Lindsay Clancy's attorney reacts to jury working through impasse",
       "url": "https://www.wcvb.com/article/lindsay-clancy-sad-awaiting-verdict-sept-1/73584874",
+      "flag": null
+    },
+    {
+      "ts": "2026-09-01T20:37:58.000Z",
+      "outlet": "NBC10 Boston",
+      "headline": "Woman arrested outside courthouse where Lindsay Clancy trial is being held",
+      "url": "https://www.nbcboston.com/news/local/woman-arrested-outside-courthouse-where-lindsay-clancy-trial-is-being-held/4007656/",
       "flag": null
     },
     {
@@ -685,20 +699,6 @@
       "headline": "Lindsay Clancy trial: Prosecution presents rebuttal as case nears conclusion",
       "url": "https://www.wcvb.com/article/lindsay-clancy-trial-live-updates-aug-21/73492912",
       "flag": null
-    },
-    {
-      "ts": "2026-08-21T20:08:39.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "Lindsay Clancy trial (live updates): Defense rests case, prosecution calling rebuttal witnesses",
-      "url": "https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-defense-expected-call-final-witness-before-resting/3SY5KO3XLBG5NJ5F3S2VCFJKUY/",
-      "flag": null
-    },
-    {
-      "ts": "2026-08-21T20:00:00Z",
-      "outlet": "WBUR",
-      "headline": "Lindsay Clancy's defense rests after calling 10 witnesses",
-      "url": "https://www.wbur.org/news/2026/08/21/lindsay-clancy-defense-rests",
-      "flag": null
     }
   ],
   "seen": [
@@ -833,6 +833,8 @@
     "mr4ds9",
     "18qyu3k",
     "19msu5u",
-    "9ccnwm"
+    "9ccnwm",
+    "1fc33uo",
+    "1s0kstw"
   ]
 }

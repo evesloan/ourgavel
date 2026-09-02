@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-02T21:29:00.000Z",
+      "outlet": "WCVB",
+      "headline": "Doctor explains postpartum psychosis in Lindsay Clancy case",
+      "url": "https://www.wcvb.com/article/postpartum-psychosis-lindsay-clancy-trial-explain/73597370",
+      "flag": null
+    },
+    {
       "ts": "2026-09-02T20:34:35.000Z",
       "outlet": "Boston.com",
       "headline": "Lindsay Clancy trial: Scenes from the courthouse as jury still unable to reach verdict",
@@ -692,13 +699,6 @@
       "headline": "Lindsay Clancy trial nearing its end, final witness expected back on stand today",
       "url": "https://www.nbcboston.com/news/local/lindsay-clancy-trial-when-will-closing-arguments-be/4004030/",
       "flag": null
-    },
-    {
-      "ts": "2026-08-25T21:39:08.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "Psychologist testifies Lindsay Clancy was criminally responsible for killing her 3 children",
-      "url": "https://www.boston25news.com/news/local/psychologist-testifies-lindsay-clancy-was-criminally-responsible-killing-her-3-children/4ZR2FR43LFCNJHZSRQD77W3TQU/",
-      "flag": null
     }
   ],
   "seen": [
@@ -859,6 +859,7 @@
     "1fhunya",
     "1y0gabx",
     "9qbh33",
-    "1aejifz"
+    "1aejifz",
+    "funztz"
   ]
 }

@@ -1,6 +1,20 @@
 {
   "items": [
     {
+      "ts": "2026-09-02T19:02:00.000Z",
+      "outlet": "WCVB",
+      "headline": "What is the Tuey-Rodriguez instruction, aka 'dynamite charge,' given in Lindsay Clancy's trial?",
+      "url": "https://www.wcvb.com/article/tuey-rodriguez-dynamite-charge-lindsay-clancy-trial/73595868",
+      "flag": null
+    },
+    {
+      "ts": "2026-09-02T18:44:25.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Lindsay Clancy trial (live updates): Jury says it still can’t agree; judge gives final instructions",
+      "url": "https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-jury-says-it-still-cant-agree-judge-gives-final-instructions/KBFJCBSS6VH4BLJOAW6MO6ZYL4/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-02T18:24:49.000Z",
       "outlet": "Boston 25 News",
       "headline": "Lindsay Clancy trial (live updates): Deadlocked jury continues deliberations after judge’s warning",
@@ -685,20 +699,6 @@
       "headline": "Lindsay Clancy trial (live updates): Prosecution to call final rebuttal witness after near mistrial",
       "url": "https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-prosecution-call-final-rebuttal-witness-after-near-mistrial/PXGYBU7WWVFRVOZNCZ3CNBOWMQ/",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-08-25T11:11:07.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "Lindsay Clancy murder trial: Prosecution to call final rebuttal witness after near mistrial",
-      "url": "https://www.boston25news.com/news/local/lindsay-clancy-murder-trial-prosecution-call-final-rebuttal-witness-after-near-mistrial/TZE7T2QBWJDZLET5SLEDNPTEEQ/",
-      "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-08-25T09:26:00.000Z",
-      "outlet": "WCVB",
-      "headline": "Testimony continues after Lindsay Clancy's defense denied mistrial",
-      "url": "https://www.wcvb.com/article/lindsay-clancy-trial-live-updates-aug-25/73518460",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
@@ -854,6 +854,8 @@
     "1rnjuqh",
     "bkf2lf",
     "1iw1yig",
-    "11yopp3"
+    "11yopp3",
+    "g46not",
+    "1fhunya"
   ]
 }

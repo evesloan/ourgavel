@@ -435,6 +435,13 @@
       "flag": null
     },
     {
+      "ts": "2026-06-25T09:48:00.000Z",
+      "outlet": "via MSN",
+      "headline": "Alex Murdaugh wants new venue, DNA evidence review in murder retrial",
+      "url": "https://www.msn.com/en-us/crime/general/alex-murdaugh-wants-new-venue-dna-evidence-review-in-murder-retrial/ar-AA26xn4B",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-06-25T07:31:13.000Z",
       "outlet": "via MSN",
       "headline": "Alex Murdaugh's attorneys seek venue change, new DNA testing ahead of retrial hearing",
@@ -443,7 +450,6 @@
     }
   ],
   "seen": [
-    "36vczz",
     "iuj0dl",
     "zsu6xn",
     "1sjqk55",
@@ -1042,6 +1048,7 @@
     "1g9zgr5",
     "1gb1ded",
     "bc22ws",
-    "1c53ue"
+    "1c53ue",
+    "1fnhjn4"
   ]
 }

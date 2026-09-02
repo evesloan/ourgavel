@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-02T11:12:05.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Lindsay Clancy trial: Deadlocked jury returns for 5th day of deliberations",
+      "url": "https://www.boston25news.com/news/local/lindsay-clancy-trial-deadlocked-jury-returns-5th-day-deliberations/NLBPH3RFV5HETIGV2JA2ICE7LU/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-02T10:00:00.000Z",
       "outlet": "WCVB",
       "headline": "Lindsay Clancy trial: Jurors set to return for fifth day after deadlock note",
@@ -692,13 +699,6 @@
       "headline": "Lindsay Clancy’s case shines a light on postpartum support",
       "url": "https://www.boston25news.com/news/local/lindsay-clancys-case-shines-light-postpartum-support/YHYIHLFWLRFIHLKQQZTBS7VS4A/",
       "flag": null
-    },
-    {
-      "ts": "2026-08-21T22:15:29.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "Defense rests in Lindsay Clancy murder trial",
-      "url": "https://www.boston25news.com/news/local/defense-rests-lindsay-clancy-murder-trial/LWOMPUZ4DJE3ZKQFLW3PCVYBIE/",
-      "flag": null
     }
   ],
   "seen": [
@@ -837,6 +837,7 @@
     "1fc33uo",
     "1s0kstw",
     "1tnb1ic",
-    "1k4kz7b"
+    "1k4kz7b",
+    "q3elb4"
   ]
 }

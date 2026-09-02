@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-02T19:56:30.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "What is the Tuey-Rodriguez instruction that Lindsay Clancy’s judge gave to the jury?",
+      "url": "https://www.boston25news.com/news/local/what-is-tuey-rodriguez-instruction-that-lindsay-clancys-judge-gave-jury/VFG5X64MRJC67ATZONX6UMS2G4/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-02T19:20:02.000Z",
       "outlet": "Boston 25 News",
       "headline": "Lindsay Clancy verdict watch: Jury remains split despite days of deliberations",
@@ -692,13 +699,6 @@
       "headline": "Prosecution’s expert concedes Lindsay Clancy had ‘adverse reactions’ to medications",
       "url": "https://www.courttv.com/news/prosecutions-expert-concedes-lindsay-clancy-had-adverse-reactions-to-medications/",
       "flag": null
-    },
-    {
-      "ts": "2026-08-25T13:14:36.000Z",
-      "outlet": "Boston.com",
-      "headline": "Livestream: Lindsay Clancy murder trial nears its end as prosecution expert returns to the stand",
-      "url": "https://www.boston.com/news/crime/2026/08/25/lindsay-clancy-murder-trial-livestream-video-tuesday-august-25/",
-      "flag": null
     }
   ],
   "seen": [
@@ -857,6 +857,7 @@
     "11yopp3",
     "g46not",
     "1fhunya",
-    "1y0gabx"
+    "1y0gabx",
+    "9qbh33"
   ]
 }

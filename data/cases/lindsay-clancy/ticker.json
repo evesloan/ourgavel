@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-02T19:20:02.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Lindsay Clancy verdict watch: Jury remains split despite days of deliberations",
+      "url": "https://www.boston25news.com/news/local/lindsay-clancy-verdict-watch-jury-remains-split-despite-days-deliberations/73UM4EQII5GE5JG2SIQVPTKGQ4/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-02T19:02:00.000Z",
       "outlet": "WCVB",
       "headline": "What is the Tuey-Rodriguez instruction, aka 'dynamite charge,' given in Lindsay Clancy's trial?",
@@ -692,13 +699,6 @@
       "headline": "Livestream: Lindsay Clancy murder trial nears its end as prosecution expert returns to the stand",
       "url": "https://www.boston.com/news/crime/2026/08/25/lindsay-clancy-murder-trial-livestream-video-tuesday-august-25/",
       "flag": null
-    },
-    {
-      "ts": "2026-08-25T12:55:47.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "Lindsay Clancy trial (live updates): Prosecution to call final rebuttal witness after near mistrial",
-      "url": "https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-prosecution-call-final-rebuttal-witness-after-near-mistrial/PXGYBU7WWVFRVOZNCZ3CNBOWMQ/",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
@@ -856,6 +856,7 @@
     "1iw1yig",
     "11yopp3",
     "g46not",
-    "1fhunya"
+    "1fhunya",
+    "1y0gabx"
   ]
 }

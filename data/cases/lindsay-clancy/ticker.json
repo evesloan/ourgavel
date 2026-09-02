@@ -1,6 +1,27 @@
 {
   "items": [
     {
+      "ts": "2026-09-02T13:34:10.000Z",
+      "outlet": "Court TV",
+      "headline": "Woman accused of intimidating jurors in Lindsay Clancy’s murder trial",
+      "url": "https://www.courttv.com/news/woman-accused-of-intimidating-jurors-in-lindsay-clancys-murder-trial/",
+      "flag": null
+    },
+    {
+      "ts": "2026-09-02T13:09:52.000Z",
+      "outlet": "Boston.com",
+      "headline": "Livestream: Lindsay Clancy trial jurors resume deliberations after reporting deadlock",
+      "url": "https://www.boston.com/news/crime/2026/09/02/livestream-lindsay-clancy-jurors-deliberate-after-deadlock/",
+      "flag": "verdict-watch"
+    },
+    {
+      "ts": "2026-09-02T13:07:57.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "What happens if the Lindsay Clancy jury can’t reach a unanimous verdict?",
+      "url": "https://www.boston25news.com/news/local/what-happens-if-lindsay-clancy-jury-cant-reach-unanimous-verdict/7ESLPYMWTZFR5OFX2IOXZLXZRY/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-02T13:01:01.000Z",
       "outlet": "Boston 25 News",
       "headline": "Lindsay Clancy trial (live updates): Deadlocked jury returns for 5th day of deliberations",
@@ -678,27 +699,6 @@
       "headline": "As the Clancy case highlights postpartum psychosis, a mom stricken by it shares her story of hope",
       "url": "https://www.wcvb.com/article/as-the-clancy-case-highlights-postpartum-psychosis-a-mom-stricken-by-it-shares-her-story-of-hope/73508744",
       "flag": null
-    },
-    {
-      "ts": "2026-08-24T09:36:00.000Z",
-      "outlet": "WCVB",
-      "headline": "Rebuttal witnesses expected back on stand in Lindsay Clancy trial",
-      "url": "https://www.wcvb.com/article/lindsay-clancy-trial-live-updates-aug-24/73508400",
-      "flag": null
-    },
-    {
-      "ts": "2026-08-24T08:54:24.000Z",
-      "outlet": "NBC10 Boston",
-      "headline": "Live updates: Rebuttal witnesses testify in Lindsay Clancy trial",
-      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-trial-day-19-live-updates/4002724/",
-      "flag": null
-    },
-    {
-      "ts": "2026-08-24T05:38:51.000Z",
-      "outlet": "NBC10 Boston",
-      "headline": "Lindsay Clancy trial testimony to continue with rebuttal witnesses",
-      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-trial-testimony/4002669/",
-      "flag": null
     }
   ],
   "seen": [
@@ -842,6 +842,9 @@
     "4gl2dp",
     "1m3nkjg",
     "d68tdf",
-    "1q2g6hj"
+    "1q2g6hj",
+    "1lhsnp1",
+    "exgfbg",
+    "1e841lp"
   ]
 }

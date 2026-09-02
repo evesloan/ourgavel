@@ -127,10 +127,10 @@
       "flag": null
     },
     {
-      "ts": "2026-08-14T15:52:23.000Z",
-      "outlet": "via MSN",
+      "ts": "2026-08-14T15:52:00.000Z",
+      "outlet": "wtoc.com",
       "headline": "Key rulings shake up Alex Murdaugh retrial: Venue disputed, prior testimony and fingernail DNA approved",
-      "url": "https://www.msn.com/en-us/news/crime/key-rulings-shake-up-alex-murdaugh-retrial-venue-disputed-prior-testimony-and-fingernail-dna-approved/ar-AA2a9274",
+      "url": "https://www.wtoc.com/2026/08/14/key-rulings-shake-up-alex-murdaugh-retrial-venue-disputed-prior-testimony-fingernail-dna-approved/",
       "flag": "verdict-watch"
     },
     {
@@ -225,10 +225,10 @@
       "flag": null
     },
     {
-      "ts": "2026-08-14T10:57:56.000Z",
-      "outlet": "via MSN",
-      "headline": "Alex Murdaugh scores victory in court as judge allows change of venue for upcoming double murder retrial",
-      "url": "https://www.msn.com/en-us/news/crime/alex-murdaugh-scores-victory-in-court-as-judge-allows-change-of-venue-for-upcoming-double-murder-retrial/ar-AA2a7DE3",
+      "ts": "2026-08-14T10:57:00.000Z",
+      "outlet": "People",
+      "headline": "Alex Murdaugh Scores Victory in Court As Judge Allows Change of Venue for Upcoming Double Murder Retrial",
+      "url": "https://people.com/alex-murdaugh-wins-change-of-venue-12060174",
       "flag": "verdict-watch"
     },
     {
@@ -443,8 +443,6 @@
     }
   ],
   "seen": [
-    "17la83z",
-    "edlvkx",
     "36vczz",
     "iuj0dl",
     "zsu6xn",
@@ -1042,6 +1040,8 @@
     "1g9zyu3",
     "1gavcn7",
     "1g9zgr5",
-    "1gb1ded"
+    "1gb1ded",
+    "bc22ws",
+    "1c53ue"
   ]
 }

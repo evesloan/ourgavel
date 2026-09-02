@@ -1,6 +1,27 @@
 {
   "items": [
     {
+      "ts": "2026-09-02T15:57:49.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Lindsay Clancy judge issues warning as deliberations continue after courthouse arrest",
+      "url": "https://www.boston25news.com/news/local/lindsay-clancy-judge-issues-warning-deliberations-continue-after-courthouse-arrest/IV7RABMWHZG6FAZPRDSSBQWFNE/",
+      "flag": "verdict-watch"
+    },
+    {
+      "ts": "2026-09-02T15:50:35.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "‘Wanted to see Lindsay’: Sutton woman faces intimidation charges after allegedly filming Clancy jury",
+      "url": "https://www.boston25news.com/news/local/wanted-see-lindsay-sutton-woman-faces-intimidation-charges-after-allegedly-filming-clancy-jury/GTGVOP7AABGVHIXXIKL33IMZKU/",
+      "flag": null
+    },
+    {
+      "ts": "2026-09-02T15:36:00.000Z",
+      "outlet": "WCVB",
+      "headline": "Woman accused of recording Lindsay Clancy trial jury outside courthouse",
+      "url": "https://www.wcvb.com/article/lindsay-clancy-trial-courthouse-arrest-dawn-light/73593550",
+      "flag": null
+    },
+    {
       "ts": "2026-09-02T14:36:34.000Z",
       "outlet": "Boston.com",
       "headline": "Lindsay Clancy trial: Mass. woman arrested for allegedly filming jurors",
@@ -13,6 +34,13 @@
       "headline": "Woman accused of intimidating jurors in Lindsay Clancy’s murder trial",
       "url": "https://www.courttv.com/news/woman-accused-of-intimidating-jurors-in-lindsay-clancys-murder-trial/",
       "flag": null
+    },
+    {
+      "ts": "2026-09-02T13:09:52.000Z",
+      "outlet": "Boston.com",
+      "headline": "Livestream: Lindsay Clancy trial jurors resume deliberations after reporting deadlock",
+      "url": "https://www.boston.com/news/crime/2026/09/02/lindsay-clancy-trial-verdict-watch-wednesday-september-2/",
+      "flag": "verdict-watch"
     },
     {
       "ts": "2026-09-02T13:09:52.000Z",
@@ -671,34 +699,6 @@
       "headline": "Judge denies Lindsay Clancy mistrial following testimony about religion, warns prosecution",
       "url": "https://www.boston25news.com/news/local/judge-denies-lindsay-clancy-mistrial-following-testimony-about-religion-warns-prosecution/Y5UERSEYJFHNJFC7GZKZYKMR24/",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-08-24T20:55:30.000Z",
-      "outlet": "Court TV",
-      "headline": "Lindsay Clancy’s attorney accuses prosecutors of ‘intentional misconduct’ after 2nd reference to ‘mortal sin’",
-      "url": "https://www.courttv.com/news/lindsay-clancys-attorney-accuses-prosecutors-of-intentional-misconduct-after-2nd-reference-to-mortal-sin/",
-      "flag": null
-    },
-    {
-      "ts": "2026-08-24T16:26:47.000Z",
-      "outlet": "Court TV",
-      "headline": "Lindsay Clancy defense argues prosecution’s expert is ‘way off base’",
-      "url": "https://www.courttv.com/news/lindsay-clancy-defense-argues-prosecutions-expert-is-way-off-base/",
-      "flag": null
-    },
-    {
-      "ts": "2026-08-24T13:07:18.000Z",
-      "outlet": "Boston.com",
-      "headline": "Livestream: Lindsay Clancy murder trial continues with prosecution rebuttal expert on the stand",
-      "url": "https://www.boston.com/news/crime/2026/08/24/lindsay-clancy-murder-trial-livestream-video-monday-august-24/",
-      "flag": null
-    },
-    {
-      "ts": "2026-08-24T12:56:42.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "Lindsay Clancy trial (live updates): Prosecutors expected to call final rebuttal witnesses",
-      "url": "https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-prosecutors-expected-call-final-rebuttal-witnesses/BBNWTJG34VFCFNKSHU26BIEHTA/",
-      "flag": null
     }
   ],
   "seen": [
@@ -847,6 +847,10 @@
     "exgfbg",
     "1e841lp",
     "1a2xoxc",
-    "txd2nx"
+    "txd2nx",
+    "1qhd3se",
+    "lxfwfo",
+    "1rq5eb8",
+    "1rnjuqh"
   ]
 }

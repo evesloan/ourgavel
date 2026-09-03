@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-03T16:00:00.000Z",
+      "outlet": "AllHipHop",
+      "headline": "Lil Durk Trial: FBI Agent Says 17 Phone Changes Fit Celebrity Privacy Pattern",
+      "url": "https://allhiphop.com/news/lil-durk-trial-fbi-agent-says-17-phone-changes-fit-celebrity-privacy-pattern/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-03T06:00:00.000Z",
       "outlet": "hotnewhiphop.com",
       "headline": "Lil Durk Trial: Closing Arguments Given A Tentative Schedule As Jurors Grow Restless",
@@ -627,6 +634,7 @@
     "1gbm3k0",
     "1xn8ct5",
     "10gto5w",
-    "1gadfjf"
+    "1gadfjf",
+    "fmjalt"
   ]
 }

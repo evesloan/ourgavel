@@ -1,6 +1,20 @@
 {
   "items": [
     {
+      "ts": "2026-09-03T20:03:51.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Judge sends deadlocked Lindsay Clancy jury back after defense seeks 1 juror’s removal",
+      "url": "https://www.boston25news.com/news/local/judge-sends-deadlocked-lindsay-clancy-jury-back-after-defense-seeks-1-jurors-removal/FMR6EXM5EVCPBG5U7YPLHCUROU/",
+      "flag": null
+    },
+    {
+      "ts": "2026-09-03T19:55:13.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Lindsay Clancy Trial (updates): Defense wants juror to be removed as deliberations continue",
+      "url": "https://www.boston25news.com/news/local/clancys-defense-says-one-juror-has-spurned-court-instructions-deliberations-continue/ORPL46DF6BFABPK5MFOVRKUKMI/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-03T16:34:00.000Z",
       "outlet": "WCVB",
       "headline": "'Salute these jurors': Retired judge's perspective on Clancy trial deliberations",
@@ -685,20 +699,6 @@
       "headline": "Jury hears closing arguments in Lindsay Clancy trial",
       "url": "https://www.nbcboston.com/news/local/lindsay-clancy-trial-closing-arguments-today/4004733/",
       "flag": null
-    },
-    {
-      "ts": "2026-08-27T02:42:09.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "Testimony concludes in Lindsay Clancy’s murder trial. Jury to hear closing arguments Thursday",
-      "url": "https://www.boston25news.com/news/local/testimony-concludes-lindsay-clancys-murder-trial-jury-hear-closing-arguments-thursday/KKCD3C3CPFEDRDYKB54GG7IXPQ/",
-      "flag": null
-    },
-    {
-      "ts": "2026-08-27T00:25:02.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "Verdict options: What Lindsay Clancy’s jury will consider in deliberations",
-      "url": "https://www.boston25news.com/news/local/verdict-options-what-lindsay-clancys-jury-will-consider-deliberations/QGYEVGQQPFBI3HLPXWDHHNXQHU/",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
@@ -870,6 +870,8 @@
     "16vlps",
     "4i47di",
     "eoq4x7",
-    "1ak2re6"
+    "1ak2re6",
+    "1ooex0p",
+    "16d86fn"
   ]
 }

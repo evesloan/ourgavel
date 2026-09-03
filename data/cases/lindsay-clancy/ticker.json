@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-03T14:38:39.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "‘We’re going to do it quick’: Lindsay Clancy attorney prepares for possible retrial",
+      "url": "https://www.boston25news.com/news/local/were-going-do-it-quick-lindsay-clancy-attorney-prepares-possible-retrial/T2JZ7HSHOZHCLFOVLIP3L4K73M/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-03T13:53:00.000Z",
       "outlet": "WCVB",
       "headline": "Lindsay Clancy's lawyer brings her letters from 'all over the world'",
@@ -692,13 +699,6 @@
       "headline": "Why the manslaughter option could matter as the Lindsay Clancy trial heads to the jury",
       "url": "https://www.wcvb.com/article/manslaughter-clancy-trial/73537080",
       "flag": null
-    },
-    {
-      "ts": "2026-08-26T18:19:31.000Z",
-      "outlet": "Court TV",
-      "headline": "‘Are you kidding me?’: Tensions rise in courtroom during Lindsay Clancy’s murder trial",
-      "url": "https://www.courttv.com/news/are-you-kidding-me-tensions-rise-in-courtroom-during-lindsay-clancys-murder-trial/",
-      "flag": null
     }
   ],
   "seen": [
@@ -868,6 +868,7 @@
     "1jxgfr1",
     "plpdr1",
     "16vlps",
-    "4i47di"
+    "4i47di",
+    "eoq4x7"
   ]
 }

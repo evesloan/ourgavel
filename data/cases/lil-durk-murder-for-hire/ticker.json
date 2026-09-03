@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-03T22:02:45.000Z",
+      "outlet": "AllHipHop",
+      "headline": "Lil Durk Trial: Prosecution Rests As Defense Begins Calling Witnesses",
+      "url": "https://allhiphop.com/news/lil-durk-trial-prosecution-rests-as-defense-begins-calling-witnesses/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-03T16:00:00.000Z",
       "outlet": "AllHipHop",
       "headline": "Lil Durk Trial: FBI Agent Says 17 Phone Changes Fit Celebrity Privacy Pattern",
@@ -47,6 +54,13 @@
       "outlet": "via MSN",
       "headline": "Lil Durk’s trial just reopened the NBA YoungBoy beef: The message, King Von connection and years of bad blood explained",
       "url": "https://www.msn.com/en-us/crime/general/lil-durk-s-trial-just-reopened-the-nba-youngboy-beef-the-message-king-von-connection-and-years-of-bad-blood-explained/ar-AA2bttjR",
+      "flag": null
+    },
+    {
+      "ts": "2026-09-03T02:00:00.000Z",
+      "outlet": "hotnewhiphop.com",
+      "headline": "Lil Durk Trial: Prosecution Officially Rests Its Case",
+      "url": "https://www.hotnewhiphop.com/1008419-lil-durk-trial-prosecutions-rests",
       "flag": null
     },
     {
@@ -668,6 +682,8 @@
     "1nlwqxc",
     "4stgq4",
     "1gbn2ab",
-    "1idda9s"
+    "1idda9s",
+    "at8t6d",
+    "1cwhvqk"
   ]
 }

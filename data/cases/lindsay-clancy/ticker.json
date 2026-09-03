@@ -29,6 +29,13 @@
       "flag": "verdict-watch"
     },
     {
+      "ts": "2026-09-03T16:57:13.000Z",
+      "outlet": "NBC10 Boston",
+      "headline": "What did the Lindsay Clancy judge tell the jury about reasonable doubt?",
+      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-judge-jury-reasonable-doubt/4009034/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-03T16:34:00.000Z",
       "outlet": "WCVB",
       "headline": "'Salute these jurors': Retired judge's perspective on Clancy trial deliberations",
@@ -692,13 +699,6 @@
       "headline": "Lindsay Clancy verdict watch: Legal expert explains what could sway jurors",
       "url": "https://www.boston25news.com/news/local/lindsay-clancy-verdict-watch-legal-expert-explains-what-could-sway-jurors/B3CCAZMYIJDN5FEFQENQG6PA3U/",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-08-27T09:25:00.000Z",
-      "outlet": "WCVB",
-      "headline": "Closing arguments to be heard today in Lindsay Clancy murder trial",
-      "url": "https://www.wcvb.com/article/lindsay-clancy-trial-live-updates-aug-27/73540249",
-      "flag": null
     }
   ],
   "seen": [
@@ -874,6 +874,7 @@
     "1ooex0p",
     "16d86fn",
     "1jnb1m7",
-    "a39h1x"
+    "a39h1x",
+    "nwivz7"
   ]
 }

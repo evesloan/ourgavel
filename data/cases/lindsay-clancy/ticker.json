@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-03T01:50:20.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Boston 25’s Bob Ward, Cayle Thompson discuss Lindsay Clancy trial after Tuey-Rodriguez instructions",
+      "url": "https://www.boston25news.com/news/local/boston-25s-bob-ward-cayle-thompson-discuss-lindsay-clancy-trial-after-tuey-rodriguez-instructions/S7I6OLL2QZDIFHJ6PE6PJXBAKI/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-03T01:06:11.000Z",
       "outlet": "Boston 25 News",
       "headline": "Legal analyst outlines possibilities with looming Lindsay Clancy hung jury",
@@ -692,13 +699,6 @@
       "headline": "Final witness expected back on stand in Lindsay Clancy murder trial",
       "url": "https://www.wcvb.com/article/lindsay-clancy-trial-live-updates-aug-26/73529464",
       "flag": null
-    },
-    {
-      "ts": "2026-08-26T08:50:24.000Z",
-      "outlet": "NBC10 Boston",
-      "headline": "Live updates: Final witness testimony in Lindsay Clancy trial expected Wednesday",
-      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-trial-day-21/4004090/",
-      "flag": null
     }
   ],
   "seen": [
@@ -861,6 +861,7 @@
     "9qbh33",
     "1aejifz",
     "funztz",
-    "16fkmka"
+    "16fkmka",
+    "1jmmm0q"
   ]
 }

@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-02T19:12:46.000Z",
+      "outlet": "via MSN",
+      "headline": "Lil Durk trial: Prosecutors detail rapper's alleged escape plan upon search warrants",
+      "url": "https://www.msn.com/en-us/news/other/lil-durk-trial-prosecutors-detail-rappers-alleged-escape-plan-upon-search-warrants/ar-AA2bsQV7",
+      "flag": null
+    },
+    {
       "ts": "2026-09-02T16:01:48.000Z",
       "outlet": "AllHipHop",
       "headline": "Lil Durk Trial: OTF Vonni Says Guns Came From Rapper’s Home",
@@ -587,6 +594,7 @@
     "1td9pl8",
     "eg1h7m",
     "1gbl32e",
-    "ut814k"
+    "ut814k",
+    "1gblel3"
   ]
 }

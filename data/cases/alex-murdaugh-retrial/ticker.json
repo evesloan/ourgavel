@@ -247,6 +247,13 @@
     },
     {
       "ts": "2026-08-14T10:27:00.000Z",
+      "outlet": "via Yahoo News",
+      "headline": "Can Alex Murdaugh get a fair trial? Judge to make key venue decision",
+      "url": "https://www.yahoo.com/news/us/articles/alex-murdaugh-fair-trial-judge-172632082.html",
+      "flag": "verdict-watch"
+    },
+    {
+      "ts": "2026-08-14T10:27:00.000Z",
       "outlet": "KRCR",
       "headline": "Judge orders Alex Murdaugh retrial moved outside 14th Circuit over jury fairness concerns",
       "url": "https://krcrtv.com/news/nation-world/judge-orders-alex-murdaugh-retrial-moved-outside-14th-circuit-over-jury-fairness-concerns",
@@ -471,7 +478,6 @@
     }
   ],
   "seen": [
-    "hy6sgb",
     "1omhntz",
     "ccbzj0",
     "16dt0mk",
@@ -1070,6 +1076,7 @@
     "1g9zng8",
     "1cwry4d",
     "pp0n3g",
-    "4ja3qo"
+    "4ja3qo",
+    "qb7r7i"
   ]
 }

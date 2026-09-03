@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-03T12:54:41.000Z",
+      "outlet": "Boston.com",
+      "headline": "Livestream: Lindsay Clancy trial jury heads back into deliberations after twice reporting deadlock",
+      "url": "https://www.boston.com/news/crime/2026/09/03/lindsay-clancy-trial-verdict-watch-thursday-september-3/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-03T12:45:14.000Z",
       "outlet": "Boston 25 News",
       "headline": "Lindsay Clancy trial (live updates): Potential final day of jury deliberations after 2nd deadlock",
@@ -692,13 +699,6 @@
       "headline": "Lindsay Clancy trial (live updates): Commonwealth rests its rebuttal case",
       "url": "https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-commonwealth-rests-its-rebuttal-case/XPN4GGETFRBB5DJD6BCWWX3KLE/",
       "flag": null
-    },
-    {
-      "ts": "2026-08-26T15:58:58.000Z",
-      "outlet": "NBC10 Boston",
-      "headline": "The spectacle in the Lindsay Clancy courtroom has moved beyond the witness stand",
-      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-trial-spectacle/4004296/",
-      "flag": null
     }
   ],
   "seen": [
@@ -866,6 +866,7 @@
     "1h7p8z6",
     "1q3j5ow",
     "1jxgfr1",
-    "plpdr1"
+    "plpdr1",
+    "16vlps"
   ]
 }

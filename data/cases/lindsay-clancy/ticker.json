@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-03T01:06:11.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Legal analyst outlines possibilities with looming Lindsay Clancy hung jury",
+      "url": "https://www.boston25news.com/news/local/legal-analyst-outlines-possibilities-with-looming-lindsay-clancy-hung-jury/QTINOTRTMVAZXOR4PA6XMUMYYA/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-02T21:29:00.000Z",
       "outlet": "WCVB",
       "headline": "Doctor explains postpartum psychosis in Lindsay Clancy case",
@@ -692,13 +699,6 @@
       "headline": "Live updates: Final witness testimony in Lindsay Clancy trial expected Wednesday",
       "url": "https://www.nbcboston.com/news/local/lindsay-clancy-trial-day-21/4004090/",
       "flag": null
-    },
-    {
-      "ts": "2026-08-26T06:47:26.000Z",
-      "outlet": "NBC10 Boston",
-      "headline": "Lindsay Clancy trial nearing its end, final witness expected back on stand today",
-      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-trial-when-will-closing-arguments-be/4004030/",
-      "flag": null
     }
   ],
   "seen": [
@@ -860,6 +860,7 @@
     "1y0gabx",
     "9qbh33",
     "1aejifz",
-    "funztz"
+    "funztz",
+    "16fkmka"
   ]
 }

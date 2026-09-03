@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-03T09:25:00.000Z",
+      "outlet": "WCVB",
+      "headline": "Deliberations to continue after Lindsay Clancy jurors hear 'dynamite charge'",
+      "url": "https://www.wcvb.com/article/lindsay-clancy-trial-live-updates-sept-3/73601866",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-03T01:50:20.000Z",
       "outlet": "Boston 25 News",
       "headline": "Boston 25’s Bob Ward, Cayle Thompson discuss Lindsay Clancy trial after Tuey-Rodriguez instructions",
@@ -692,13 +699,6 @@
       "headline": "Lindsay Clancy murder trial: Final state experts testify on Lindsay Clancy’s mental state",
       "url": "https://www.boston25news.com/news/local/lindsay-clancy-murder-trial-final-state-experts-testify-lindsay-clancys-mental-state/W2SJZ4NOHJGJRJUXLZD3P243DU/",
       "flag": null
-    },
-    {
-      "ts": "2026-08-26T09:33:00.000Z",
-      "outlet": "WCVB",
-      "headline": "Final witness expected back on stand in Lindsay Clancy murder trial",
-      "url": "https://www.wcvb.com/article/lindsay-clancy-trial-live-updates-aug-26/73529464",
-      "flag": null
     }
   ],
   "seen": [
@@ -862,6 +862,7 @@
     "1aejifz",
     "funztz",
     "16fkmka",
-    "1jmmm0q"
+    "1jmmm0q",
+    "1h7p8z6"
   ]
 }

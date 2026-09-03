@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-03T13:53:00.000Z",
+      "outlet": "WCVB",
+      "headline": "Lindsay Clancy's lawyer brings her letters from 'all over the world'",
+      "url": "https://www.wcvb.com/article/reddington-lindsay-clancy-letters/73604200",
+      "flag": null
+    },
+    {
       "ts": "2026-09-03T12:54:41.000Z",
       "outlet": "Boston.com",
       "headline": "Livestream: Lindsay Clancy trial jury heads back into deliberations after twice reporting deadlock",
@@ -692,13 +699,6 @@
       "headline": "‘Are you kidding me?’: Tensions rise in courtroom during Lindsay Clancy’s murder trial",
       "url": "https://www.courttv.com/news/are-you-kidding-me-tensions-rise-in-courtroom-during-lindsay-clancys-murder-trial/",
       "flag": null
-    },
-    {
-      "ts": "2026-08-26T17:30:22.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "Lindsay Clancy trial (live updates): Commonwealth rests its rebuttal case",
-      "url": "https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-commonwealth-rests-its-rebuttal-case/XPN4GGETFRBB5DJD6BCWWX3KLE/",
-      "flag": null
     }
   ],
   "seen": [
@@ -867,6 +867,7 @@
     "1q3j5ow",
     "1jxgfr1",
     "plpdr1",
-    "16vlps"
+    "16vlps",
+    "4i47di"
   ]
 }

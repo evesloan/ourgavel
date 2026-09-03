@@ -15,6 +15,13 @@
       "flag": "verdict-watch"
     },
     {
+      "ts": "2026-09-03T07:50:49.000Z",
+      "outlet": "NBC10 Boston",
+      "headline": "Lindsay Clancy verdict watch: Deadlocked jury returns as mistrial risk grows",
+      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-verdict-live-updates-tuey-rodriguez-idynamite-charge-mistrial-possible/4008506/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-03T01:50:20.000Z",
       "outlet": "Boston 25 News",
       "headline": "Boston 25’s Bob Ward, Cayle Thompson discuss Lindsay Clancy trial after Tuey-Rodriguez instructions",
@@ -692,13 +699,6 @@
       "headline": "Livestream: Lindsay Clancy murder trial continues with prosecution’s final expert witness on the stand",
       "url": "https://www.boston.com/news/crime/2026/08/26/lindsay-clancy-murder-trial-livestream-video-wednesday-august-26/",
       "flag": null
-    },
-    {
-      "ts": "2026-08-26T12:44:21.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "Lindsay Clancy trial (live updates): Final state expert back on the stand",
-      "url": "https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-final-state-expert-back-stand/XPN4GGETFRBB5DJD6BCWWX3KLE/",
-      "flag": null
     }
   ],
   "seen": [
@@ -864,6 +864,7 @@
     "16fkmka",
     "1jmmm0q",
     "1h7p8z6",
-    "1q3j5ow"
+    "1q3j5ow",
+    "1jxgfr1"
   ]
 }

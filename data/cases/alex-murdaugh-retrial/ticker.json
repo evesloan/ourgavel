@@ -50,6 +50,13 @@
       "flag": "verdict-watch"
     },
     {
+      "ts": "2026-08-18T14:49:00.000Z",
+      "outlet": "usmagazine.com",
+      "headline": "Is Alex Murdaugh Still in Prison After His Murder Convictions Were Overturned? Where He Is Today",
+      "url": "https://www.usmagazine.com/crime-news/news/is-alex-murdaugh-in-prison-after-overturned-convictions/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-08-18T10:18:00.000Z",
       "outlet": "via AOL",
       "headline": "Alex Murdaugh moves for new home for double-murder retrial",
@@ -457,7 +464,6 @@
     }
   ],
   "seen": [
-    "1sjqk55",
     "1m6n37h",
     "hy6sgb",
     "1omhntz",
@@ -1056,6 +1062,7 @@
     "1c53ue",
     "1fnhjn4",
     "1g9zng8",
-    "1cwry4d"
+    "1cwry4d",
+    "pp0n3g"
   ]
 }

@@ -57,6 +57,13 @@
       "flag": null
     },
     {
+      "ts": "2026-09-01T17:00:00.000Z",
+      "outlet": "AllHipHop",
+      "headline": "Lil Durk Trial: Jury Instructions Reveal Questions That Could Decide Verdict",
+      "url": "https://allhiphop.com/news/lil-durk-trial-jury-instructions-reveal-questions-that-could-decide-verdict/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-01T16:09:00.000Z",
       "outlet": "complex.com",
       "headline": "Lil Durk Trial: OTF Vonni Recounts His First Attempted Hit on Quando Rondo in Georgia",
@@ -579,6 +586,7 @@
     "1bjpsgp",
     "1td9pl8",
     "eg1h7m",
-    "1gbl32e"
+    "1gbl32e",
+    "ut814k"
   ]
 }

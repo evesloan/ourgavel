@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-03T22:34:24.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Is there a holdout? Defense says juror in Lindsay Clancy trial will be questioned Friday",
+      "url": "https://www.boston25news.com/news/local/is-there-holdout-defense-says-juror-lindsay-clancy-trial-will-be-questioned-friday/XCR5ETYN4VGPHLYROTKGKK2GP4/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-03T20:33:00.000Z",
       "outlet": "WCVB",
       "headline": "Lindsay Clancy's defense wants juror removed: Watch the arguments",
@@ -692,13 +699,6 @@
       "headline": "Lindsay Clancy’s attorney blames the medical system in his closing argument",
       "url": "https://www.boston25news.com/news/local/lindsay-clancys-attorney-blames-medical-system-his-closing-argument/WVE6QW6TEBFJVM6YI4B7ISZMFY/",
       "flag": null
-    },
-    {
-      "ts": "2026-08-27T15:09:28.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "Lindsay Clancy verdict watch: Legal expert explains what could sway jurors",
-      "url": "https://www.boston25news.com/news/local/lindsay-clancy-verdict-watch-legal-expert-explains-what-could-sway-jurors/B3CCAZMYIJDN5FEFQENQG6PA3U/",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
@@ -875,6 +875,7 @@
     "16d86fn",
     "1jnb1m7",
     "a39h1x",
-    "nwivz7"
+    "nwivz7",
+    "1nqqnzq"
   ]
 }

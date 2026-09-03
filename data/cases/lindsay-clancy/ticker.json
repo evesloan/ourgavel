@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-03T16:34:00.000Z",
+      "outlet": "WCVB",
+      "headline": "'Salute these jurors': Retired judge's perspective on Clancy trial deliberations",
+      "url": "https://www.wcvb.com/article/lindsay-clancy-trial-jury-perspectives-retired-judge-sept-3/73606259",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-03T14:38:39.000Z",
       "outlet": "Boston 25 News",
       "headline": "‘We’re going to do it quick’: Lindsay Clancy attorney prepares for possible retrial",
@@ -692,13 +699,6 @@
       "headline": "Verdict options: What Lindsay Clancy’s jury will consider in deliberations",
       "url": "https://www.boston25news.com/news/local/verdict-options-what-lindsay-clancys-jury-will-consider-deliberations/QGYEVGQQPFBI3HLPXWDHHNXQHU/",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-08-26T23:12:00.000Z",
-      "outlet": "WCVB",
-      "headline": "Why the manslaughter option could matter as the Lindsay Clancy trial heads to the jury",
-      "url": "https://www.wcvb.com/article/manslaughter-clancy-trial/73537080",
-      "flag": null
     }
   ],
   "seen": [
@@ -869,6 +869,7 @@
     "plpdr1",
     "16vlps",
     "4i47di",
-    "eoq4x7"
+    "eoq4x7",
+    "1ak2re6"
   ]
 }

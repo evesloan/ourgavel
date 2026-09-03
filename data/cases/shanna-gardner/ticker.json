@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-03T20:05:12.000Z",
+      "outlet": "News4JAX",
+      "headline": "Appeals court keeps Bridegan phone stay in place as Shanna Gardner trial delayed to 2027",
+      "url": "https://www.news4jax.com/news/local/2026/09/03/appeals-court-keeps-bridegan-phone-stay-in-place-as-shanna-gardner-trial-delayed-to-2027/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-03T18:52:19.000Z",
       "outlet": "Action News Jax",
       "headline": "Appeals court reviewing order for Jared Bridegan’s widow to give phone to Shanna Gardner’s attorneys",
@@ -34,6 +41,7 @@
     "1lfjc9n",
     "mfvqmr",
     "xy3h1o",
-    "zkqpf3"
+    "zkqpf3",
+    "1q4mqit"
   ]
 }

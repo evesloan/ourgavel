@@ -1,6 +1,20 @@
 {
   "items": [
     {
+      "ts": "2026-09-03T20:33:00.000Z",
+      "outlet": "WCVB",
+      "headline": "Lindsay Clancy's defense wants juror removed: Watch the arguments",
+      "url": "https://www.wcvb.com/article/lindsay-clancy-defense-juror-remove-motion-sept-3/73608353",
+      "flag": null
+    },
+    {
+      "ts": "2026-09-03T20:10:14.000Z",
+      "outlet": "Court TV",
+      "headline": "‘It’s a real shame’: Lindsay Clancy’s defense asks judge to remove single juror ‘who refuses to listen to the law’",
+      "url": "https://www.courttv.com/news/its-a-real-shame-lindsay-clancys-defense-asks-judge-to-remove-single-juror-who-refuses-to-listen-to-the-law/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-03T20:03:51.000Z",
       "outlet": "Boston 25 News",
       "headline": "Judge sends deadlocked Lindsay Clancy jury back after defense seeks 1 juror’s removal",
@@ -685,20 +699,6 @@
       "headline": "Closing arguments to be heard today in Lindsay Clancy murder trial",
       "url": "https://www.wcvb.com/article/lindsay-clancy-trial-live-updates-aug-27/73540249",
       "flag": null
-    },
-    {
-      "ts": "2026-08-27T08:47:26.000Z",
-      "outlet": "NBC10 Boston",
-      "headline": "Lindsay Clancy trial recap: Jury hears closing arguments and gets the case",
-      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-trial-closing-arguments-day-22/4004823/",
-      "flag": null
-    },
-    {
-      "ts": "2026-08-27T06:15:26.000Z",
-      "outlet": "NBC10 Boston",
-      "headline": "Jury hears closing arguments in Lindsay Clancy trial",
-      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-trial-closing-arguments-today/4004733/",
-      "flag": null
     }
   ],
   "seen": [
@@ -872,6 +872,8 @@
     "eoq4x7",
     "1ak2re6",
     "1ooex0p",
-    "16d86fn"
+    "16d86fn",
+    "1jnb1m7",
+    "a39h1x"
   ]
 }

@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-03T18:52:19.000Z",
+      "outlet": "Action News Jax",
+      "headline": "Appeals court reviewing order for Jared Bridegan’s widow to give phone to Shanna Gardner’s attorneys",
+      "url": "https://www.actionnewsjax.com/news/local/appeals-court-reviewing-order-jared-bridegans-widow-give-phone-shanna-gardners-attorneys/DJWYFFFRCFHYTNZJAWIV2P2CAI/",
+      "flag": null
+    },
+    {
       "ts": "2026-08-27T20:13:39.000Z",
       "outlet": "News4JAX",
       "headline": "Court filing gives window into new defense strategy for Shanna Gardner in Jared Bridegan murder trial",
@@ -150,6 +157,7 @@
     "1lfjc9n",
     "138cjyi",
     "1ew87gh",
-    "1dyj9pc"
+    "1dyj9pc",
+    "zkqpf3"
   ]
 }

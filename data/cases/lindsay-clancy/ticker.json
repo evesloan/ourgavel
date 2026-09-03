@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-03T10:35:55.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Lindsay Clancy trial: Jury returns for potential final day of deliberations after 2nd deadlock",
+      "url": "https://www.boston25news.com/news/local/lindsay-clancy-trial-jury-returns-potential-final-day-deliberations-after-2nd-deadlock/JWVISRCG7RATHAMW3KQOUKSHJY/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-03T09:25:00.000Z",
       "outlet": "WCVB",
       "headline": "Deliberations to continue after Lindsay Clancy jurors hear 'dynamite charge'",
@@ -692,13 +699,6 @@
       "headline": "Lindsay Clancy trial (live updates): Final state expert back on the stand",
       "url": "https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-final-state-expert-back-stand/XPN4GGETFRBB5DJD6BCWWX3KLE/",
       "flag": null
-    },
-    {
-      "ts": "2026-08-26T10:10:16.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "Lindsay Clancy murder trial: Final state experts testify on Lindsay Clancy’s mental state",
-      "url": "https://www.boston25news.com/news/local/lindsay-clancy-murder-trial-final-state-experts-testify-lindsay-clancys-mental-state/W2SJZ4NOHJGJRJUXLZD3P243DU/",
-      "flag": null
     }
   ],
   "seen": [
@@ -863,6 +863,7 @@
     "funztz",
     "16fkmka",
     "1jmmm0q",
-    "1h7p8z6"
+    "1h7p8z6",
+    "1q3j5ow"
   ]
 }

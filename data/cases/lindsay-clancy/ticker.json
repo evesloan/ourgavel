@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-03T12:45:14.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Lindsay Clancy trial (live updates): Potential final day of jury deliberations after 2nd deadlock",
+      "url": "https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-potential-final-day-jury-deliberations-after-2nd-deadlock/ORPL46DF6BFABPK5MFOVRKUKMI/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-03T10:35:55.000Z",
       "outlet": "Boston 25 News",
       "headline": "Lindsay Clancy trial: Jury returns for potential final day of deliberations after 2nd deadlock",
@@ -692,13 +699,6 @@
       "headline": "The spectacle in the Lindsay Clancy courtroom has moved beyond the witness stand",
       "url": "https://www.nbcboston.com/news/local/lindsay-clancy-trial-spectacle/4004296/",
       "flag": null
-    },
-    {
-      "ts": "2026-08-26T12:57:20.000Z",
-      "outlet": "Boston.com",
-      "headline": "Livestream: Lindsay Clancy murder trial continues with prosecution’s final expert witness on the stand",
-      "url": "https://www.boston.com/news/crime/2026/08/26/lindsay-clancy-murder-trial-livestream-video-wednesday-august-26/",
-      "flag": null
     }
   ],
   "seen": [
@@ -865,6 +865,7 @@
     "1jmmm0q",
     "1h7p8z6",
     "1q3j5ow",
-    "1jxgfr1"
+    "1jxgfr1",
+    "plpdr1"
   ]
 }

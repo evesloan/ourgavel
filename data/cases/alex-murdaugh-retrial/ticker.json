@@ -8,6 +8,13 @@
       "flag": null
     },
     {
+      "ts": "2026-08-20T12:37:00.000Z",
+      "outlet": "via Yahoo News",
+      "headline": "Alex Murdaugh defense attorney admits to false polygraph statement",
+      "url": "https://www.yahoo.com/news/us/articles/alex-murdaugh-defense-attorney-admits-193746686.html",
+      "flag": null
+    },
+    {
       "ts": "2026-08-20T06:54:00.000Z",
       "outlet": "Primetimer",
       "headline": "Why is Alex Murdaugh pushing Richland County over Charleston for his retrial?",
@@ -464,7 +471,6 @@
     }
   ],
   "seen": [
-    "1m6n37h",
     "hy6sgb",
     "1omhntz",
     "ccbzj0",
@@ -1063,6 +1069,7 @@
     "1fnhjn4",
     "1g9zng8",
     "1cwry4d",
-    "pp0n3g"
+    "pp0n3g",
+    "4ja3qo"
   ]
 }

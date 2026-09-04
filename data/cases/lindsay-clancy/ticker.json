@@ -1,6 +1,20 @@
 {
   "items": [
     {
+      "ts": "2026-09-04T18:11:36.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Lindsay Clancy Trial: Massachusetts SJC hears emergency appeal filed by defense",
+      "url": "https://www.boston25news.com/news/local/lindsay-clancy-trial-massachusetts-sjc-hears-emergency-appeal-filed-by-defense/J6QK7MR725CZZO3HSJX7QH4TIE/",
+      "flag": null
+    },
+    {
+      "ts": "2026-09-04T18:04:00.000Z",
+      "outlet": "WCVB",
+      "headline": "Read Lindsay Clancy's emergency request to the SJC",
+      "url": "https://www.wcvb.com/article/clancy-sjc-emergency-motion-request-relief/73617852",
+      "flag": null
+    },
+    {
       "ts": "2026-09-04T16:10:52.000Z",
       "outlet": "Boston 25 News",
       "headline": "Lindsay Clancy Trial: Mistrial ruling delayed as defense files emergency stay appeal with SJC",
@@ -685,20 +699,6 @@
       "headline": "Lindsay Clancy trial is latest to draw intense, widespread media attention",
       "url": "https://www.nbcboston.com/news/local/lindsay-clancy-trial-is-latest-to-draw-intense-widespread-media-attention/4005902/",
       "flag": null
-    },
-    {
-      "ts": "2026-08-28T21:08:27.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "Lindsay Clancy jury unable to reach verdict on day 2 of deliberations",
-      "url": "https://www.boston25news.com/news/local/jury-unable-reach-verdict-day-2-deliberations/EXKB7ZXRBRF2NLTYJC5QEXAFGM/",
-      "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-08-28T18:27:00.000Z",
-      "outlet": "WCVB",
-      "headline": "What happens if Clancy is found not guilty due to mental illness?",
-      "url": "https://www.wcvb.com/article/what-happens-lindsay-clancy-not-guilty-mental-illness/73555501",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
@@ -897,6 +897,8 @@
     "1jer92h",
     "1fn7v0e",
     "1288s3x",
-    "18b1pgu"
+    "18b1pgu",
+    "1v8argg",
+    "1awjptr"
   ]
 }

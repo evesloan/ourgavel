@@ -1,6 +1,20 @@
 {
   "items": [
     {
+      "ts": "2026-09-04T16:10:52.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Lindsay Clancy Trial: Mistrial ruling delayed as defense files emergency stay appeal with SJC",
+      "url": "https://www.boston25news.com/news/local/clancy-trial-mistrial-ruling-delayed-defense-files-emergency-stay-appeal-with-sjc/J6QK7MR725CZZO3HSJX7QH4TIE/",
+      "flag": "verdict-watch"
+    },
+    {
+      "ts": "2026-09-04T16:02:00.000Z",
+      "outlet": "WCVB",
+      "headline": "What just happened? Explaining 1-hour deadline for SJC intervention in Clancy trial",
+      "url": "https://www.wcvb.com/article/lindsay-clancy-reddington-sjc-stay-deadline-sept-4/73616942",
+      "flag": null
+    },
+    {
       "ts": "2026-09-04T15:31:00.000Z",
       "outlet": "WCVB",
       "headline": "Lindsay Clancy trial: Judge declares mistrial over deadlocked jury",
@@ -61,6 +75,13 @@
       "outlet": "NBC10 Boston",
       "headline": "Judge intends to declare mistrial in Lindsay Clancy case — watch live coverage from court",
       "url": "https://www.nbcboston.com/news/local/lindsay-clancy-trial-mistrial-live-stream-updates/4005224/",
+      "flag": "verdict-watch"
+    },
+    {
+      "ts": "2026-09-04T10:57:51.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Lindsay Clancy trial (live updates): Mistrial ruling delayed as defense files emergency stay appeal",
+      "url": "https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-mistrial-ruling-delayed-defense-files-emergency-stay-appeal/KVTQ5GLX7BB4JKAJLSJ4S5EJDY/",
       "flag": "verdict-watch"
     },
     {
@@ -678,27 +699,6 @@
       "headline": "What happens if Clancy is found not guilty due to mental illness?",
       "url": "https://www.wcvb.com/article/what-happens-lindsay-clancy-not-guilty-mental-illness/73555501",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-08-28T16:28:57.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "Lindsay Clancy jury question emerges. What does it mean & how long will deliberations last?",
-      "url": "https://www.boston25news.com/news/local/lindsay-clancy-jury-question-emerges-what-does-it-mean-how-long-will-deliberations-last/MNQ65L7SPVEZFGNKEVI5AJRNUE/",
-      "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-08-28T15:51:36.000Z",
-      "outlet": "Boston.com",
-      "headline": "Support for Lindsay Clancy, from pink T-shirts to conservative stars",
-      "url": "https://www.boston.com/news/crime/2026/08/28/support-for-lindsay-clancy-from-pink-t-shirts-to-conservative-stars/",
-      "flag": null
-    },
-    {
-      "ts": "2026-08-28T14:49:00.000Z",
-      "outlet": "WCVB",
-      "headline": "Lindsay Clancy 'nervous' awaiting verdict, her attorney says",
-      "url": "https://www.wcvb.com/article/lindsay-clancy-nervous-awaiting-verdict-aug-28/73553662",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
@@ -894,6 +894,9 @@
     "1tneew9",
     "o22igf",
     "avurg7",
-    "1jer92h"
+    "1jer92h",
+    "1fn7v0e",
+    "1288s3x",
+    "18b1pgu"
   ]
 }

@@ -1,6 +1,20 @@
 {
   "items": [
     {
+      "ts": "2026-09-04T14:36:22.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "‘Get a grasp’: Clancy defense challenges judge over refusal to question potential holdout juror",
+      "url": "https://www.boston25news.com/news/local/get-grasp-clancy-defense-challenges-judge-over-refusal-question-potential-holdout-juror/NE5LN37TJZHYNAMQY5QPGPPEPU/",
+      "flag": null
+    },
+    {
+      "ts": "2026-09-04T14:36:00.000Z",
+      "outlet": "WCVB",
+      "headline": "Judge's response to objection triggers laughter during Lindsay Clancy trial",
+      "url": "https://www.wcvb.com/article/lindsay-clancy-jury-holdout-instruction-debate-laughter-sept-4/73615797",
+      "flag": null
+    },
+    {
       "ts": "2026-09-04T13:49:00.000Z",
       "outlet": "Court TV",
       "headline": "Judge promises more ‘pizzazz’ after Lindsay Clancy’s attorney accuses him of being ‘soft’ with jury",
@@ -41,6 +55,20 @@
       "headline": "Lindsay Clancy trial (live updates): Judge to address juror issue as deliberations enter 7th day",
       "url": "https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-judge-address-juror-issues-deliberations-enter-7th-day/KVTQ5GLX7BB4JKAJLSJ4S5EJDY/",
       "flag": "verdict-watch"
+    },
+    {
+      "ts": "2026-09-04T10:43:39.000Z",
+      "outlet": "NBC10 Boston",
+      "headline": "‘Never seen this before': Legal expert on holdout juror clash in Lindsay Clancy case",
+      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-murder-trial/lindsay-clancy-trial-analysis-juror-holdout/4009442/",
+      "flag": null
+    },
+    {
+      "ts": "2026-09-04T10:03:59.000Z",
+      "outlet": "NBC10 Boston",
+      "headline": "WATCH: Judge, defense attorney clash during heated moment in Lindsay Clancy trial",
+      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-trial-kevin-reddington-william-sullivan-heated-exchange/4009403/",
+      "flag": null
     },
     {
       "ts": "2026-09-04T09:23:00.000Z",
@@ -671,34 +699,6 @@
       "headline": "Lindsay Clancy trial (live updates): Jury resumes deliberations with 5 verdict options on the table",
       "url": "https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-jury-resumes-deliberations-with-5-verdict-options-table/X47PPLV3HBG7JMZTLKPHNBBIBU/",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-08-28T12:32:19.000Z",
-      "outlet": "Boston.com",
-      "headline": "Watch live: Lindsay Clancy trial jury deliberations, wait for verdict continue",
-      "url": "https://www.boston.com/news/crime/2026/08/28/lindsay-clancy-trial-jury-deliberations-verdict-watch-august-28/",
-      "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-08-28T10:56:10.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "Lindsay Clancy trial: Jury to resume deliberations with 5 verdict options on the table",
-      "url": "https://www.boston25news.com/news/local/lindsay-clancy-trial-jury-resume-deliberations-with-5-verdict-options-table/7GJJH5656RDMDDJOXBWXIS3MLM/",
-      "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-08-28T09:18:00.000Z",
-      "outlet": "WCVB",
-      "headline": "Jury deliberations enter second day in Lindsay Clancy's murder trial",
-      "url": "https://www.wcvb.com/article/lindsay-clancy-trial-live-updates-aug-28/73551317",
-      "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-08-28T06:19:27.000Z",
-      "outlet": "NBC10 Boston",
-      "headline": "Jury in Lindsay Clancy trial to resume deliberations today",
-      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-verdict-watch-jury-deliberations/4005444/",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
@@ -888,6 +888,10 @@
     "zmt0yb",
     "19g3fkb",
     "1jtt7uf",
-    "1jfc3ep"
+    "1jfc3ep",
+    "zhjqsy",
+    "s0qcuv",
+    "1tneew9",
+    "o22igf"
   ]
 }

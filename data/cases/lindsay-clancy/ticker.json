@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-04T15:31:00.000Z",
+      "outlet": "WCVB",
+      "headline": "Lindsay Clancy trial: Judge declares mistrial over deadlocked jury",
+      "url": "https://www.wcvb.com/article/lindsay-clancy-mistrial-sept-4/73546067",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-04T14:36:22.000Z",
       "outlet": "Boston 25 News",
       "headline": "‘Get a grasp’: Clancy defense challenges judge over refusal to question potential holdout juror",
@@ -47,6 +54,13 @@
       "outlet": "WCVB",
       "headline": "'I don't want a mistrial' says Lindsay Clancy's defense attorney",
       "url": "https://www.wcvb.com/article/clancy-reddington-sept-3-interview/73615124",
+      "flag": "verdict-watch"
+    },
+    {
+      "ts": "2026-09-04T11:26:37.000Z",
+      "outlet": "NBC10 Boston",
+      "headline": "Judge intends to declare mistrial in Lindsay Clancy case — watch live coverage from court",
+      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-trial-mistrial-live-stream-updates/4005224/",
       "flag": "verdict-watch"
     },
     {
@@ -685,20 +699,6 @@
       "headline": "Lindsay Clancy 'nervous' awaiting verdict, her attorney says",
       "url": "https://www.wcvb.com/article/lindsay-clancy-nervous-awaiting-verdict-aug-28/73553662",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-08-28T13:51:31.000Z",
-      "outlet": "NBC10 Boston",
-      "headline": "Analysis: How quarters became a key part of closings in the Lindsay Clancy trial",
-      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-murder-trial/lindsay-clancy-analysis-closings-quarters-reddington/4005675/",
-      "flag": null
-    },
-    {
-      "ts": "2026-08-28T13:20:46.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "Lindsay Clancy trial (live updates): Jury resumes deliberations with 5 verdict options on the table",
-      "url": "https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-jury-resumes-deliberations-with-5-verdict-options-table/X47PPLV3HBG7JMZTLKPHNBBIBU/",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
@@ -892,6 +892,8 @@
     "zhjqsy",
     "s0qcuv",
     "1tneew9",
-    "o22igf"
+    "o22igf",
+    "avurg7",
+    "1jer92h"
   ]
 }

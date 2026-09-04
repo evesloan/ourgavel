@@ -8,6 +8,13 @@
       "flag": null
     },
     {
+      "ts": "2026-09-04T03:34:00.000Z",
+      "outlet": "DancehallMag",
+      "headline": "Lil Durk Trial: Judge Sets Timeline for Jury Deliberations",
+      "url": "https://www.dancehallmag.com/2026/09/04/news/lil-durk-trial-judge-sets-timeline-for-jury-deliberations.html",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-04T03:09:00.000Z",
       "outlet": "AllHipHop",
       "headline": "Lil Durk Trial: Engineer Admits Songs Described Revenge",
@@ -716,6 +723,7 @@
     "1gbo1b0",
     "y7od4g",
     "1ricdso",
-    "1kfmr85"
+    "1kfmr85",
+    "dldoji"
   ]
 }

@@ -1,35 +1,11 @@
 {
-  "updated": "2026-09-04T02:20:18.003Z",
+  "updated": "2026-09-04T03:05:18.682Z",
   "published": [],
   "heldForReview": [],
   "refused": [
     {
-      "title": "File:Postcard with a photograph of the Hall of Records in Los Angeles, ca.1910 (EXM-P-S-LOS-ANG-CIT-BUI-705).jpg",
-      "reason": "archival image — it would read as the present-day venue"
-    },
-    {
-      "title": "File:Panoramic view of downtown Los Angeles, looking south between Spring Street and Broadway from the Courthouse, ca.1905 (CHS-5066-p).jpg",
-      "reason": "archival image — it would read as the present-day venue"
-    },
-    {
-      "title": "File:Panoramic view of downtown Los Angeles, looking south between Spring Street and Broadway from the Courthouse, ca.1905 (CHS-5065).jpg",
-      "reason": "archival image — it would read as the present-day venue"
-    },
-    {
-      "title": "File:Panoramic view of downtown Los Angeles, looking south between Spring Street and Broadway from the Courthouse, ca.1905 (CHS-5066).jpg",
-      "reason": "archival image — it would read as the present-day venue"
-    },
-    {
-      "title": "File:Baist's real estate atlas of surveys of Los Angeles, California, 1921 (31294).jpg",
-      "reason": "filename dates the photograph to 1921"
-    },
-    {
-      "title": "File:A horse-drawn streetcar in front of the Los Angeles post office on Main Street, circa 1892.jpg",
-      "reason": "archival image — it would read as the present-day venue"
-    },
-    {
       "query": "United States Courthouse Los Angeles First Street",
-      "reason": "nothing publishable: 7 file(s) verified, none cleared the gate"
+      "reason": "search failed: HTTP 503"
     }
   ]
 }

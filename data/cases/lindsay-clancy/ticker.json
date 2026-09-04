@@ -1,6 +1,20 @@
 {
   "items": [
     {
+      "ts": "2026-09-04T02:34:18.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Tensions high outside courthouse as Lindsay Clancy jury deliberates for sixth day",
+      "url": "https://www.boston25news.com/news/local/tensions-high-outside-courthouse-lindsay-clancy-jury-deliberates-sixth-day/EZQYN7Z4YBHODOV74LSG2L7HZI/",
+      "flag": "verdict-watch"
+    },
+    {
+      "ts": "2026-09-04T02:18:10.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Legal experts dub courtroom developments in Clancy trial a ‘bombshell’",
+      "url": "https://www.boston25news.com/news/local/legal-experts-dub-courtroom-developments-clancy-trial-bombshell/AMFKBEQKMNCEPI2GZ6BKLJTNB4/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-03T22:34:24.000Z",
       "outlet": "Boston 25 News",
       "headline": "Is there a holdout? Defense says juror in Lindsay Clancy trial will be questioned Friday",
@@ -685,20 +699,6 @@
       "headline": "'I've done my best' Clancy's attorney says",
       "url": "https://www.wcvb.com/article/reddington-clancy-before-closing-arguments/73542888",
       "flag": null
-    },
-    {
-      "ts": "2026-08-27T16:45:51.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "Lindsay Clancy prosecutor says America’s medical system is ‘not on trial here’ in closing argument",
-      "url": "https://www.boston25news.com/news/local/lindsay-clancy-prosecutor-says-americas-medical-system-is-not-trial-here-closing-argument/USYYY2HX4BB7HAUO2YUVRCPJII/",
-      "flag": null
-    },
-    {
-      "ts": "2026-08-27T16:45:09.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "Lindsay Clancy’s attorney blames the medical system in his closing argument",
-      "url": "https://www.boston25news.com/news/local/lindsay-clancys-attorney-blames-medical-system-his-closing-argument/WVE6QW6TEBFJVM6YI4B7ISZMFY/",
-      "flag": null
     }
   ],
   "seen": [
@@ -876,6 +876,8 @@
     "1jnb1m7",
     "a39h1x",
     "nwivz7",
-    "1nqqnzq"
+    "1nqqnzq",
+    "dtlqu8",
+    "18f9050"
   ]
 }

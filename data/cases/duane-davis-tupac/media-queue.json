@@ -1,47 +1,15 @@
 {
-  "updated": "2026-09-04T02:20:18.003Z",
+  "updated": "2026-09-04T03:05:18.682Z",
   "published": [],
   "heldForReview": [],
   "refused": [
     {
       "query": "Regional Justice Center Las Vegas Nevada",
-      "reason": "nothing publishable: 1 file(s) verified, none cleared the gate"
-    },
-    {
-      "title": "File:Las Vegas (Nevada, USA), The Strip -- 2012 -- 6139.jpg",
-      "reason": "matched deny token: casino"
-    },
-    {
-      "title": "File:Las Vegas (Nevada, USA), The Strip -- 2012 -- 6286.jpg",
-      "reason": "matched deny token: casino"
-    },
-    {
-      "title": "File:Las Vegas (Nevada, USA), The Strip -- 2012 -- 6215.jpg",
-      "reason": "matched deny token: casino"
-    },
-    {
-      "title": "File:Las Vegas (Nevada, USA), The Strip -- 2012 -- 6232.jpg",
-      "reason": "matched deny token: casino"
-    },
-    {
-      "title": "File:Las Vegas 2016.- Main Street Station.JPG",
-      "reason": "matched deny token: casino"
-    },
-    {
-      "title": "File:Downtown Las Vegas 05.2020 - 49902256267.jpg",
-      "reason": "matched deny token: sign"
-    },
-    {
-      "title": "File:Stained glass inside Main Street Station casino and hotel in downtown Las Vegas (3).jpg",
-      "reason": "matched deny token: casino"
-    },
-    {
-      "title": "File:Letter box inside Main Street Station casino and hotel in downtown Las Vegas.jpg",
-      "reason": "matched deny token: casino"
+      "reason": "search failed: HTTP 503"
     },
     {
       "query": "Downtown Las Vegas Nevada street",
-      "reason": "nothing publishable: 8 file(s) verified, none cleared the gate"
+      "reason": "verify failed: HTTP 503"
     }
   ]
 }

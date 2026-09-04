@@ -1,6 +1,41 @@
 {
   "items": [
     {
+      "ts": "2026-09-04T20:30:56.000Z",
+      "outlet": "Boston.com",
+      "headline": "Here’s what Kevin Reddington, Lindsay Clancy’s defense attorney, said after the mistrial",
+      "url": "https://www.boston.com/uncategorized/crime/2026/09/04/heres-what-kevin-reddington-lindsay-clancys-defense-attorney-said-after-the-mistrial/",
+      "flag": "verdict-watch"
+    },
+    {
+      "ts": "2026-09-04T20:29:00.000Z",
+      "outlet": "WCVB",
+      "headline": "'Extraordinarily painful': Patrick Clancy comments on prospect of Lindsay Clancy retrial",
+      "url": "https://www.wcvb.com/article/patrick-clancy-statement-lindsay-mistrial/73618714",
+      "flag": null
+    },
+    {
+      "ts": "2026-09-04T20:26:52.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Patrick Clancy releases statement after Lindsay Clancy trial ends in mistrial",
+      "url": "https://www.boston25news.com/news/local/patrick-clancy-releases-statement-after-lindsay-clancy-trial-ends-mistrial/AUFLA2DIXJHJ7AJGRTYZL4JR3A/",
+      "flag": "verdict-watch"
+    },
+    {
+      "ts": "2026-09-04T20:16:42.000Z",
+      "outlet": "Boston.com",
+      "headline": "Here’s what Plymouth District Attorney Tim Cruz said after the Lindsay Clancy mistrial",
+      "url": "https://www.boston.com/news/crime/2026/09/04/heres-what-plymouth-district-attorney-tim-cruz-said-after-the-lindsay-clancy-mistrial/",
+      "flag": "verdict-watch"
+    },
+    {
+      "ts": "2026-09-04T20:00:26.000Z",
+      "outlet": "Court TV",
+      "headline": "Lindsay Clancy’s attorney has message for DA: ‘You, Tim, were crushed’",
+      "url": "https://www.courttv.com/news/lindsay-clancys-attorney-has-message-for-da-you-tim-were-crushed/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-04T19:47:00.000Z",
       "outlet": "WCVB",
       "headline": "Lindsay Clancy's attorneys vow to continue civil case against medical providers",
@@ -55,6 +90,13 @@
       "headline": "Read Lindsay Clancy's emergency request to the SJC",
       "url": "https://www.wcvb.com/article/clancy-sjc-emergency-motion-request-relief/73617852",
       "flag": null
+    },
+    {
+      "ts": "2026-09-04T16:34:51.000Z",
+      "outlet": "NBC10 Boston",
+      "headline": "After mistrial, Patrick Clancy's lawyer calls prosect of new trial very painful",
+      "url": "https://www.nbcboston.com/news/local/patrick-clancy-mistrial-new-trial-statement/4009904/",
+      "flag": "verdict-watch"
     },
     {
       "ts": "2026-09-04T16:10:52.000Z",
@@ -657,48 +699,6 @@
       "headline": "Why the Lindsay Clancy jury deliberations may be taking time and what it could mean",
       "url": "https://www.boston25news.com/news/local/why-lindsay-clancy-jury-deliberations-may-be-taking-time-what-it-could-mean/TJDXYTBCTFDKDFHXEK4N42A56M/",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-08-31T13:38:00.000Z",
-      "outlet": "WCVB",
-      "headline": "Lindsay Clancy's attorney says coverage made weekend 'horrific'",
-      "url": "https://www.wcvb.com/article/reddington-clancy-monday-remarks/73568970",
-      "flag": null
-    },
-    {
-      "ts": "2026-08-31T13:08:26.000Z",
-      "outlet": "Boston.com",
-      "headline": "Lindsay Clancy trial: Verdict watch continues as jury deliberations resume",
-      "url": "https://www.boston.com/news/crime/2026/08/31/livestream-lindsay-clancy-trial-verdict-watch/",
-      "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-08-31T12:53:13.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "Lindsay Clancy trial (live updates): Verdict watch continues as deliberations enter 3rd day",
-      "url": "https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-verdict-watch-continues-deliberations-enter-3rd-day/STHP5DUIYVE77DV6UDKEULEQVE/",
-      "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-08-31T12:39:00.000Z",
-      "outlet": "WCVB",
-      "headline": "5 key points Clancy jurors may be considering as deliberations continue",
-      "url": "https://www.wcvb.com/article/5-key-points-lindsay-clancy-jurors-considering-deliberations-murder-trial/73568667",
-      "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-08-31T11:19:52.000Z",
-      "outlet": "NBC10 Boston",
-      "headline": "Lindsay Clancy's attorney slams ‘horrific' national coverage of trial",
-      "url": "https://www.nbcboston.com/news/local/kevin-reddington-lindsday-clancy-attorney-slams-nancy-grace-sean-hannity/4006476/",
-      "flag": null
-    },
-    {
-      "ts": "2026-08-31T11:03:10.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "Lindsay Clancy trial: Verdict watch continues as deliberations enter 3rd day",
-      "url": "https://www.boston25news.com/news/local/lindsay-clancy-trial-verdict-watch-continues-deliberations-enter-3rd-day/TQIG4USXOFEWXLAWFBGRVY3XNQ/",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
@@ -907,6 +907,12 @@
     "1mlegh6",
     "6vl10v",
     "1pl1dvc",
-    "6xuioo"
+    "6xuioo",
+    "qwqaw9",
+    "1sj84t8",
+    "yrimt9",
+    "1f49pao",
+    "kp6xia",
+    "1twoj5p"
   ]
 }

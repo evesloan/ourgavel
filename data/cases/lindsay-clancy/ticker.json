@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-04T12:42:00.000Z",
+      "outlet": "WCVB",
+      "headline": "'I don't want a mistrial' says Lindsay Clancy's defense attorney",
+      "url": "https://www.wcvb.com/article/clancy-reddington-sept-3-interview/73615124",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-04T10:57:51.000Z",
       "outlet": "Boston 25 News",
       "headline": "Lindsay Clancy trial (live updates): Judge to address juror issue as deliberations enter 7th day",
@@ -13,6 +20,13 @@
       "headline": "Lindsay Clancy deliberations continue after request to remove juror rejected",
       "url": "https://www.wcvb.com/article/lindsay-clancy-trial-live-updates-sept-4/73613314",
       "flag": "verdict-watch"
+    },
+    {
+      "ts": "2026-09-04T08:52:12.000Z",
+      "outlet": "NBC10 Boston",
+      "headline": "Lindsay Clancy's attorney files emergency motion. Here's what it says",
+      "url": "https://www.nbcboston.com/news/local/lindsay-clancys-attorney-kevin-reddington-files-emergency-motion-heres-what-it-says/4009369/",
+      "flag": null
     },
     {
       "ts": "2026-09-04T07:47:04.000Z",
@@ -685,20 +699,6 @@
       "headline": "Lindsay Clancy’s fate now in jury’s hands after weeks of emotional testimony",
       "url": "https://www.boston25news.com/news/local/lindsay-clancys-fate-now-jurys-hands-after-weeks-emotional-testimony/OU7LFEKBVVHPPCF2RGUFF3KRNM/",
       "flag": null
-    },
-    {
-      "ts": "2026-08-27T18:40:00.000Z",
-      "outlet": "WCVB",
-      "headline": "What we know about Lindsay Clancy's jury and the decisions they face",
-      "url": "https://www.wcvb.com/article/lindsay-clancy-jury-deliberation-what-we-know/73545602",
-      "flag": null
-    },
-    {
-      "ts": "2026-08-27T18:15:43.000Z",
-      "outlet": "Boston.com",
-      "headline": "Photos: Scenes from the courthouse as jurors deliberate in Lindsay Clancy trial",
-      "url": "https://www.boston.com/news/crime/2026/08/27/photos-courthouse-lindsay-clancy-trial/",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
@@ -882,6 +882,8 @@
     "1qej0q6",
     "1dza8xa",
     "1sf7zbv",
-    "1fnv8vs"
+    "1fnv8vs",
+    "q1jjc9",
+    "elarbj"
   ]
 }

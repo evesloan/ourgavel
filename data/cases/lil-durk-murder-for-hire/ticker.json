@@ -1,10 +1,24 @@
 {
   "items": [
     {
+      "ts": "2026-09-04T16:02:00.000Z",
+      "outlet": "AllHipHop",
+      "headline": "Lil Durk Trial: Executive Says Violence Was A Sales Tool",
+      "url": "https://allhiphop.com/news/lil-durk-trial-executive-says-violence-was-a-sales-tool/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-04T06:56:00.000Z",
       "outlet": "hotnewhiphop.com",
       "headline": "Lil Durk's Sound Engineer Reportedly Claims 6ix9ine Inspired \"Pissed Me Off\"",
       "url": "https://www.hotnewhiphop.com/1008520-lil-durk-sound-engineer-6ix9ine-inspired-pissed-me-off",
+      "flag": null
+    },
+    {
+      "ts": "2026-09-04T05:02:00.000Z",
+      "outlet": "AllHipHop",
+      "headline": "Lil Durk Trial: Executive Says Violence Was A Sales Tool",
+      "url": "https://allhiphop.com/uncategorized/lil-durk-trial-executive-says-violence-was-a-sales-tool/",
       "flag": null
     },
     {
@@ -724,6 +738,8 @@
     "y7od4g",
     "1ricdso",
     "1kfmr85",
-    "dldoji"
+    "dldoji",
+    "7knq2h",
+    "eiblks"
   ]
 }

@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-04T23:35:00.000Z",
+      "outlet": "WCVB",
+      "headline": "Reddington blasts prosecution, holdout juror after Clancy trial ends in mistrial",
+      "url": "https://www.wcvb.com/article/lindsay-clancy-mistrial-jury-deadlock-reddington/73619861",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-04T21:17:05.000Z",
       "outlet": "Boston 25 News",
       "headline": "Reddington calls out apparent holdout juror after Clancy mistrial",
@@ -692,13 +699,6 @@
       "headline": "Lindsay Clancy trial (live updates): Verdict watch continues into 4th day of deliberations",
       "url": "https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-verdict-watch-continues-into-4th-day-deliberations/HXIRVCYLXRB5ZJMOTUT2RZKFR4/",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-09-01T12:20:30.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "Lindsay Clancy trial: Verdict watch resumes as jury deliberations enter 4th day",
-      "url": "https://www.boston25news.com/news/local/lindsay-clancy-trial-verdict-watch-resumes-jury-deliberations-enter-4th-day/4HSDV7PJVVCTZGM4A4QSG2PBQM/",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
@@ -919,6 +919,7 @@
     "u5qvnn",
     "coto1t",
     "1gjyr78",
-    "hk3unj"
+    "hk3unj",
+    "pitbi2"
   ]
 }

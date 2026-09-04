@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-04T09:23:00.000Z",
+      "outlet": "WCVB",
+      "headline": "Lindsay Clancy deliberations continue after request to remove juror rejected",
+      "url": "https://www.wcvb.com/article/lindsay-clancy-trial-live-updates-sept-4/73613314",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-04T02:34:18.000Z",
       "outlet": "Boston 25 News",
       "headline": "Tensions high outside courthouse as Lindsay Clancy jury deliberates for sixth day",
@@ -692,13 +699,6 @@
       "headline": "Lindsay Clancy’s attorney says ‘This prosecution is a mess’ in closing argument",
       "url": "https://www.courttv.com/news/lindsay-clancys-attorney-says-this-prosecution-is-a-mess-in-closing-argument/",
       "flag": null
-    },
-    {
-      "ts": "2026-08-27T16:58:00.000Z",
-      "outlet": "WCVB",
-      "headline": "Lindsay Clancy trial closing arguments: Watch again",
-      "url": "https://www.wcvb.com/article/lindsay-clancy-closing-arguments-videos/73544297",
-      "flag": null
     }
   ],
   "seen": [
@@ -879,6 +879,7 @@
     "1nqqnzq",
     "dtlqu8",
     "18f9050",
-    "1qej0q6"
+    "1qej0q6",
+    "1dza8xa"
   ]
 }

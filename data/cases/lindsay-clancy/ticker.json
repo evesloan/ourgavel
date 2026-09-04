@@ -15,6 +15,13 @@
       "flag": null
     },
     {
+      "ts": "2026-09-04T00:58:53.000Z",
+      "outlet": "NBC10 Boston",
+      "headline": "With Lindsay Clancy jury deadlocked, what might a potential retrial look like?",
+      "url": "https://www.nbcboston.com/news/local/massachusetts-court-famous-retrials/4009177/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-03T22:34:24.000Z",
       "outlet": "Boston 25 News",
       "headline": "Is there a holdout? Defense says juror in Lindsay Clancy trial will be questioned Friday",
@@ -692,13 +699,6 @@
       "headline": "Lindsay Clancy trial closing arguments: Watch again",
       "url": "https://www.wcvb.com/article/lindsay-clancy-closing-arguments-videos/73544297",
       "flag": null
-    },
-    {
-      "ts": "2026-08-27T16:48:00.000Z",
-      "outlet": "WCVB",
-      "headline": "'I've done my best' Clancy's attorney says",
-      "url": "https://www.wcvb.com/article/reddington-clancy-before-closing-arguments/73542888",
-      "flag": null
     }
   ],
   "seen": [
@@ -878,6 +878,7 @@
     "nwivz7",
     "1nqqnzq",
     "dtlqu8",
-    "18f9050"
+    "18f9050",
+    "1qej0q6"
   ]
 }

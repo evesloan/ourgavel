@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-03T09:40:23.000Z",
+      "outlet": "via MSN",
+      "headline": "Buster Murdaugh's libel lawsuit against media companies can go forward, judge rules",
+      "url": "https://www.msn.com/en-us/news/news/buster-murdaugh-s-libel-lawsuit-against-media-companies-can-go-forward-judge-rules/ar-AA2bwkPh",
+      "flag": null
+    },
+    {
       "ts": "2026-08-21T02:30:00.000Z",
       "outlet": "via MSN",
       "headline": "Murdaugh prosecutor Creighton Waters says he'll let judge decide on new trial site",
@@ -62,6 +69,13 @@
       "headline": "Is Alex Murdaugh Still in Prison After His Murder Convictions Were Overturned? Where He Is Today",
       "url": "https://www.usmagazine.com/crime-news/news/is-alex-murdaugh-in-prison-after-overturned-convictions/",
       "flag": "verdict-watch"
+    },
+    {
+      "ts": "2026-08-18T10:19:11.000Z",
+      "outlet": "via MSN",
+      "headline": "Alex Murdaugh moves for new home for double-murder retrial",
+      "url": "https://www.msn.com/en-us/news/us/alex-murdaugh-moves-for-new-home-for-double-murder-retrial/ar-AA2apogu",
+      "flag": null
     },
     {
       "ts": "2026-08-18T10:18:00.000Z",
@@ -436,6 +450,13 @@
     },
     {
       "ts": "2026-07-08T02:30:00.000Z",
+      "outlet": "via AOL",
+      "headline": "Murdaugh Judge Debra McCaslin: a bona fide member of SC’s close-knit legal tribe",
+      "url": "https://www.aol.com/articles/murdaugh-judge-debra-mccaslin-bona-093000000.html",
+      "flag": null
+    },
+    {
+      "ts": "2026-07-08T02:30:00.000Z",
       "outlet": "via Yahoo News",
       "headline": "Murdaugh Judge Debra McCaslin: a bona fide member of SC’s close-knit legal tribe",
       "url": "https://www.yahoo.com/news/us/articles/murdaugh-judge-debra-mccaslin-bona-093000591.html",
@@ -496,15 +517,16 @@
       "headline": "Alex Murdaugh defense attorney Dick Harpootlian speaks out on retrial timeline, strategy",
       "url": "https://www.msn.com/en-us/news/crime/alex-murdaugh-defense-attorney-dick-harpootlian-speaks-out-on-retrial-timeline-strategy/ar-AA23hql3",
       "flag": null
+    },
+    {
+      "ts": "2026-05-14T20:39:58.000Z",
+      "outlet": "via MSN",
+      "headline": "Alex Murdaugh is 'clearly not innocent' despite retrial: Attorney",
+      "url": "https://www.msn.com/en-us/news/crime/alex-murdaugh-is-clearly-not-innocent-despite-retrial-attorney/ar-AA23f8p5",
+      "flag": null
     }
   ],
   "seen": [
-    "cdbehd",
-    "jc8m5l",
-    "7s9s81",
-    "o96yzg",
-    "d76ivm",
-    "1nq4qns",
     "18brtqe",
     "1iazvsh",
     "10qudsd",
@@ -1098,6 +1120,12 @@
     "1g9ylbl",
     "rnx3j5",
     "mr35hn",
-    "1flk1ll"
+    "1flk1ll",
+    "1flhlgg",
+    "1gazn8k",
+    "1gbntz8",
+    "36rb9p",
+    "17nynn2",
+    "kc2gta"
   ]
 }

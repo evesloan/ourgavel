@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-04T10:57:51.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Lindsay Clancy trial (live updates): Judge to address juror issue as deliberations enter 7th day",
+      "url": "https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-judge-address-juror-issues-deliberations-enter-7th-day/KVTQ5GLX7BB4JKAJLSJ4S5EJDY/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-04T09:23:00.000Z",
       "outlet": "WCVB",
       "headline": "Lindsay Clancy deliberations continue after request to remove juror rejected",
@@ -692,13 +699,6 @@
       "headline": "Retired judge weighs closing arguments as Lindsay Clancy case goes to jury",
       "url": "https://www.wcvb.com/article/retired-judge-james-barretto-closing-arguments-lindsay-clancy/73544753",
       "flag": null
-    },
-    {
-      "ts": "2026-08-27T17:01:58.000Z",
-      "outlet": "Court TV",
-      "headline": "Lindsay Clancy’s attorney says ‘This prosecution is a mess’ in closing argument",
-      "url": "https://www.courttv.com/news/lindsay-clancys-attorney-says-this-prosecution-is-a-mess-in-closing-argument/",
-      "flag": null
     }
   ],
   "seen": [
@@ -880,6 +880,7 @@
     "dtlqu8",
     "18f9050",
     "1qej0q6",
-    "1dza8xa"
+    "1dza8xa",
+    "1sf7zbv"
   ]
 }

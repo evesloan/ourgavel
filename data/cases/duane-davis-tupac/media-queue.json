@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-04T17:05:18.783Z",
+  "updated": "2026-09-04T17:36:54.467Z",
   "published": [],
   "heldForReview": [],
   "refused": [
@@ -8,8 +8,40 @@
       "reason": "nothing publishable: 1 file(s) verified, none cleared the gate"
     },
     {
+      "title": "File:Las Vegas (Nevada, USA), The Strip -- 2012 -- 6139.jpg",
+      "reason": "matched deny token: casino"
+    },
+    {
+      "title": "File:Las Vegas (Nevada, USA), The Strip -- 2012 -- 6286.jpg",
+      "reason": "matched deny token: casino"
+    },
+    {
+      "title": "File:Las Vegas (Nevada, USA), The Strip -- 2012 -- 6215.jpg",
+      "reason": "matched deny token: casino"
+    },
+    {
+      "title": "File:Las Vegas (Nevada, USA), The Strip -- 2012 -- 6232.jpg",
+      "reason": "matched deny token: casino"
+    },
+    {
+      "title": "File:Las Vegas 2016.- Main Street Station.JPG",
+      "reason": "matched deny token: casino"
+    },
+    {
+      "title": "File:Downtown Las Vegas 05.2020 - 49902256267.jpg",
+      "reason": "matched deny token: sign"
+    },
+    {
+      "title": "File:Stained glass inside Main Street Station casino and hotel in downtown Las Vegas (3).jpg",
+      "reason": "matched deny token: casino"
+    },
+    {
+      "title": "File:Letter box inside Main Street Station casino and hotel in downtown Las Vegas.jpg",
+      "reason": "matched deny token: casino"
+    },
+    {
       "query": "Downtown Las Vegas Nevada street",
-      "reason": "search failed: HTTP 503"
+      "reason": "nothing publishable: 8 file(s) verified, none cleared the gate"
     }
   ]
 }

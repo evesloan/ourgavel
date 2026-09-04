@@ -1,11 +1,11 @@
 {
-  "updated": "2026-09-04T17:05:18.783Z",
+  "updated": "2026-09-04T17:36:54.467Z",
   "published": [],
   "heldForReview": [],
   "refused": [
     {
       "query": "Plymouth County Superior Court Brockton Massachusetts",
-      "reason": "verify failed: HTTP 503"
+      "reason": "8 search result(s), none were usable images (wrong file type, or no image data)"
     }
   ]
 }

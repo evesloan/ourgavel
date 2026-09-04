@@ -1,6 +1,41 @@
 {
   "items": [
     {
+      "ts": "2026-09-04T21:17:05.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Reddington calls out apparent holdout juror after Clancy mistrial",
+      "url": "https://www.boston25news.com/news/local/reddington-calls-out-apparent-holdout-juror-after-clancy-mistrial/ZR664PYGNBH47B3CXULNIQ7A5M/",
+      "flag": "verdict-watch"
+    },
+    {
+      "ts": "2026-09-04T21:06:23.000Z",
+      "outlet": "Boston.com",
+      "headline": "President Trump weighs in on Lindsay Clancy mistrial",
+      "url": "https://www.boston.com/news/crime/2026/09/04/president-trump-lindsay-clancy-mistrial/",
+      "flag": "verdict-watch"
+    },
+    {
+      "ts": "2026-09-04T21:00:47.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "‘There’ll be a price’: President Trump weighs in on Lindsay Clancy trial ending in mistrial",
+      "url": "https://www.boston25news.com/news/local/therell-be-price-president-trump-weighs-lindsay-clancy-trial-ending-mistrial/PVM4TIOC6FCAPP67FYAB7B22IY/",
+      "flag": "verdict-watch"
+    },
+    {
+      "ts": "2026-09-04T20:57:00.000Z",
+      "outlet": "WCVB",
+      "headline": "Cruz said decision to retry Clancy will be made 'shortly' after mistrial",
+      "url": "https://www.wcvb.com/article/lindsay-clancy-mistrial-plymouth-da-cruz-retrial/73618419",
+      "flag": "verdict-watch"
+    },
+    {
+      "ts": "2026-09-04T20:38:46.000Z",
+      "outlet": "Boston.com",
+      "headline": "Lindsay Clancy’s former husband, Patrick, issues statement following mistrial via attorney",
+      "url": "https://www.boston.com/news/crime/2026/09/04/lindsay-clancy-patrick-issues-statement-mistrial/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-04T20:30:56.000Z",
       "outlet": "Boston.com",
       "headline": "Here’s what Kevin Reddington, Lindsay Clancy’s defense attorney, said after the mistrial",
@@ -664,41 +699,6 @@
       "headline": "Jury deliberations enter fourth day in Lindsay Clancy murder trial",
       "url": "https://www.wcvb.com/article/lindsay-clancy-trial-live-updates-sept-1/73578070",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-09-01T07:02:49.000Z",
-      "outlet": "NBC10 Boston",
-      "headline": "Lindsay Clancy jury set to deliberate for another day",
-      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-trial-verdict-watch-live-stream-live-updates/4007052/",
-      "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-08-31T20:39:00.000Z",
-      "outlet": "WCVB",
-      "headline": "What makes Lindsay Clancy's trial different from Dimone Fleming's case?",
-      "url": "https://www.wcvb.com/article/lindsay-clancys-trial-dimone-fleming-comparison/73572201",
-      "flag": null
-    },
-    {
-      "ts": "2026-08-31T20:29:35.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "No verdict after 3 days of deliberations in the Lindsay Clancy trial over the killing of her kids",
-      "url": "https://www.boston25news.com/news/local/no-verdict-after-3-days-deliberations-lindsay-clancy-trial-over-killing-her-kids/UKU3CEGLWBBJZIFWPD33T72KBQ/",
-      "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-08-31T20:00:54.000Z",
-      "outlet": "NBC10 Boston",
-      "headline": "Jury continues deliberating after weeks of testimony in Lindsay Clancy trial",
-      "url": "https://www.nbcboston.com/news/local/jury-continues-deliberating-after-weeks-of-testimony-in-lindsay-clancy-trial/4006920/",
-      "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-08-31T17:19:29.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "Why the Lindsay Clancy jury deliberations may be taking time and what it could mean",
-      "url": "https://www.boston25news.com/news/local/why-lindsay-clancy-jury-deliberations-may-be-taking-time-what-it-could-mean/TJDXYTBCTFDKDFHXEK4N42A56M/",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
@@ -913,6 +913,11 @@
     "yrimt9",
     "1f49pao",
     "kp6xia",
-    "1twoj5p"
+    "1twoj5p",
+    "8dh7he",
+    "128dzqh",
+    "u5qvnn",
+    "coto1t",
+    "1gjyr78"
   ]
 }

@@ -1,6 +1,27 @@
 {
   "items": [
     {
+      "ts": "2026-09-04T13:20:35.000Z",
+      "outlet": "Court TV",
+      "headline": "Lindsay Clancy’s attorney wants no more sidebars, asks judge to handle things in ‘open court’",
+      "url": "https://www.courttv.com/news/lindsay-clancys-attorney-wants-no-more-sidebars-asks-judge-to-handle-things-in-open-court/",
+      "flag": null
+    },
+    {
+      "ts": "2026-09-04T13:10:37.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Lindsay Clancy’s attorney files motion on new sidebar",
+      "url": "https://www.boston25news.com/news/local/lindsay-clancys-attorney-files-motion-new-sidebar/RQY3NPBLUVEZ5GVPFTV7ASAURU/",
+      "flag": null
+    },
+    {
+      "ts": "2026-09-04T12:57:02.000Z",
+      "outlet": "Boston.com",
+      "headline": "Livestream: Jurors in Lindsay Clancy trial deliberating after judge declines to take further action regarding holdout juror",
+      "url": "https://www.boston.com/news/crime/2026/09/04/lindsay-clancy-trial-verdict-watch-friday-september-4/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-04T12:42:00.000Z",
       "outlet": "WCVB",
       "headline": "'I don't want a mistrial' says Lindsay Clancy's defense attorney",
@@ -678,27 +699,6 @@
       "headline": "Following closing remarks, Lindsay Clancy jury begins deliberations",
       "url": "https://www.boston25news.com/news/local/following-closing-remarks-lindsay-clancy-jury-begins-deliberations/COJUAKSM4ZFDLGIPHZSJMV6YLE/",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-08-27T19:36:55.000Z",
-      "outlet": "Boston.com",
-      "headline": "Lindsay Clancy trial: As verdict watch begins, hear each side’s closing argument",
-      "url": "https://www.boston.com/news/crime/2026/08/27/lindsay-clancy-trial-as-verdict-watch-begins-hear-each-sides-closing-argument/",
-      "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-08-27T18:45:52.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "Lindsay Clancy trial (live updates): Jury deliberations begin after closing arguments",
-      "url": "https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-closing-arguments-then-jury-deliberations-begin/GVTO3KUK3ZCL3FIGFJSQ2EGBIY/",
-      "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-08-27T18:42:51.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "Lindsay Clancy’s fate now in jury’s hands after weeks of emotional testimony",
-      "url": "https://www.boston25news.com/news/local/lindsay-clancys-fate-now-jurys-hands-after-weeks-emotional-testimony/OU7LFEKBVVHPPCF2RGUFF3KRNM/",
-      "flag": null
     }
   ],
   "seen": [
@@ -884,6 +884,9 @@
     "1sf7zbv",
     "1fnv8vs",
     "q1jjc9",
-    "elarbj"
+    "elarbj",
+    "zmt0yb",
+    "19g3fkb",
+    "1jtt7uf"
   ]
 }

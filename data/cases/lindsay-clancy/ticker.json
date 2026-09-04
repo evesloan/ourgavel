@@ -1,6 +1,20 @@
 {
   "items": [
     {
+      "ts": "2026-09-04T19:27:52.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "DA Cruz to decide next steps after Lindsay Clancy’s murder trial ends in mistrial",
+      "url": "https://www.boston25news.com/news/local/da-cruz-decide-next-steps-after-lindsay-clancys-murder-trial-ends-mistrial/32DFHBSRSNAGNLE6LSLRN5BA5A/",
+      "flag": "verdict-watch"
+    },
+    {
+      "ts": "2026-09-04T19:04:00.000Z",
+      "outlet": "WCVB",
+      "headline": "Judge sets September hearing after mistrial in Lindsay Clancy case",
+      "url": "https://www.wcvb.com/article/lindsay-clancy-mistrial-declared-status-hearing/73618227",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-04T19:00:00.000Z",
       "outlet": "WCVB",
       "headline": "Watch: Judge's final message to jurors in Lindsay Clancy trial",
@@ -54,6 +68,13 @@
       "outlet": "WCVB",
       "headline": "Lindsay Clancy trial: Judge declares mistrial over deadlocked jury",
       "url": "https://www.wcvb.com/article/lindsay-clancy-mistrial-sept-4/73546067",
+      "flag": "verdict-watch"
+    },
+    {
+      "ts": "2026-09-04T15:25:30.000Z",
+      "outlet": "NBC10 Boston",
+      "headline": "‘Horrible tragedy': President Trump sounds off on Clancy mistrial",
+      "url": "https://www.nbcboston.com/news/national-international/horrible-tragedy-president-trump-sounds-off-on-clancy-mistrial/4009852/",
       "flag": "verdict-watch"
     },
     {
@@ -678,27 +699,6 @@
       "headline": "Postpartum expert talks Lindsay Clancy trial, impact of social media misinformation",
       "url": "https://www.nbcboston.com/news/local/postpartum-expert-talks-lindsay-clancy-trial-impact-of-social-media-misinformation/4006404/",
       "flag": null
-    },
-    {
-      "ts": "2026-08-31T09:21:00.000Z",
-      "outlet": "WCVB",
-      "headline": "Deliberations continue Friday in Lindsay Clancy's murder trial",
-      "url": "https://www.wcvb.com/article/lindsay-clancy-trial-live-updates-aug-31/73567058",
-      "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-08-31T07:20:27.000Z",
-      "outlet": "NBC10 Boston",
-      "headline": "No verdict yet in Lindsay Clancy trial. Here are key moments jurors could be considering",
-      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-verdict-watch-live-stream-live-updates/4006343/",
-      "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-08-29T19:13:00.000Z",
-      "outlet": "WCVB",
-      "headline": "Psychiatrist in Clancy trial resigns from Delaware hospital",
-      "url": "https://www.wcvb.com/article/psychiatrist-clancy-trial-resigns-nemours/73560343",
-      "flag": null
     }
   ],
   "seen": [
@@ -903,6 +903,9 @@
     "1utbezw",
     "inkfao",
     "vbh4jb",
-    "pinw8v"
+    "pinw8v",
+    "1mlegh6",
+    "6vl10v",
+    "1pl1dvc"
   ]
 }

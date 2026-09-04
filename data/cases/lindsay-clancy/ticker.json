@@ -39,6 +39,13 @@
       "ts": "2026-09-04T20:30:56.000Z",
       "outlet": "Boston.com",
       "headline": "Here’s what Kevin Reddington, Lindsay Clancy’s defense attorney, said after the mistrial",
+      "url": "https://www.boston.com/news/crime/2026/09/04/heres-what-kevin-reddington-lindsay-clancys-defense-attorney-said-after-the-mistrial/",
+      "flag": "verdict-watch"
+    },
+    {
+      "ts": "2026-09-04T20:30:56.000Z",
+      "outlet": "Boston.com",
+      "headline": "Here’s what Kevin Reddington, Lindsay Clancy’s defense attorney, said after the mistrial",
       "url": "https://www.boston.com/uncategorized/crime/2026/09/04/heres-what-kevin-reddington-lindsay-clancys-defense-attorney-said-after-the-mistrial/",
       "flag": "verdict-watch"
     },
@@ -692,13 +699,6 @@
       "headline": "Lindsay Clancy trial: Verdict watch resumes as jury deliberations enter 4th day",
       "url": "https://www.boston25news.com/news/local/lindsay-clancy-trial-verdict-watch-resumes-jury-deliberations-enter-4th-day/4HSDV7PJVVCTZGM4A4QSG2PBQM/",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-09-01T09:34:00.000Z",
-      "outlet": "WCVB",
-      "headline": "Jury deliberations enter fourth day in Lindsay Clancy murder trial",
-      "url": "https://www.wcvb.com/article/lindsay-clancy-trial-live-updates-sept-1/73578070",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
@@ -918,6 +918,7 @@
     "128dzqh",
     "u5qvnn",
     "coto1t",
-    "1gjyr78"
+    "1gjyr78",
+    "hk3unj"
   ]
 }

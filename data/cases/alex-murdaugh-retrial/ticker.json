@@ -477,6 +477,13 @@
       "flag": null
     },
     {
+      "ts": "2026-06-30T11:52:00.000Z",
+      "outlet": "The Greenville News",
+      "headline": "State opposed to Murdaugh's request for independent DNA testing, laptop",
+      "url": "https://www.greenvilleonline.com/story/news/crime/2026/06/30/alex-murdaugh-dna-test-retrial-attorney-general/90750925007/",
+      "flag": null
+    },
+    {
       "ts": "2026-06-29T12:33:00.000Z",
       "outlet": "goerie.com",
       "headline": "Tentative date set for Alex Murdaugh retrial in 2027",
@@ -512,6 +519,13 @@
       "flag": "verdict-watch"
     },
     {
+      "ts": "2026-06-17T13:58:00.000Z",
+      "outlet": "Fox News",
+      "headline": "Alex Murdaugh's lawyer vows to dismantle infamous kennel video as defense weighs another turn on the stand",
+      "url": "https://www.foxnews.com/us/alex-murdaughs-lawyer-vows-dismantle-infamous-kennel-video-defense-weighs-another-turn-stand",
+      "flag": null
+    },
+    {
       "ts": "2026-05-15T06:56:54.000Z",
       "outlet": "via MSN",
       "headline": "Alex Murdaugh defense attorney Dick Harpootlian speaks out on retrial timeline, strategy",
@@ -527,8 +541,6 @@
     }
   ],
   "seen": [
-    "18brtqe",
-    "1iazvsh",
     "10qudsd",
     "vpkyij",
     "pucwr9",
@@ -1126,6 +1138,8 @@
     "1gbntz8",
     "36rb9p",
     "17nynn2",
-    "kc2gta"
+    "kc2gta",
+    "4pxgkv",
+    "18fusa4"
   ]
 }

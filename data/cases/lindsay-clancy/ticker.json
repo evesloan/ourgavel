@@ -1,6 +1,27 @@
 {
   "items": [
     {
+      "ts": "2026-09-04T19:00:00.000Z",
+      "outlet": "WCVB",
+      "headline": "Watch: Judge's final message to jurors in Lindsay Clancy trial",
+      "url": "https://www.wcvb.com/article/lindsay-clancy-judge-sullivan-jury-thanks/73617856",
+      "flag": null
+    },
+    {
+      "ts": "2026-09-04T18:22:00.000Z",
+      "outlet": "WCVB",
+      "headline": "What's next for Lindsay Clancy after mistrial declared?",
+      "url": "https://www.wcvb.com/article/lindsay-clancy-mistrial-next-steps/73617257",
+      "flag": "verdict-watch"
+    },
+    {
+      "ts": "2026-09-04T18:22:00.000Z",
+      "outlet": "WCVB",
+      "headline": "Comparing the mistrial in Lindsay Clancy's case to Karen Read's first trial",
+      "url": "https://www.wcvb.com/article/massachusetts-clancy-read-tuey-rodriguez-jury-mistrial-comparison/73617262",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-04T18:11:36.000Z",
       "outlet": "Boston 25 News",
       "headline": "Lindsay Clancy Trial: Massachusetts SJC hears emergency appeal filed by defense",
@@ -33,6 +54,13 @@
       "outlet": "WCVB",
       "headline": "Lindsay Clancy trial: Judge declares mistrial over deadlocked jury",
       "url": "https://www.wcvb.com/article/lindsay-clancy-mistrial-sept-4/73546067",
+      "flag": "verdict-watch"
+    },
+    {
+      "ts": "2026-09-04T14:47:45.000Z",
+      "outlet": "NBC10 Boston",
+      "headline": "Now that a mistrial has been declared, when could a second Lindsay Clancy happen?",
+      "url": "https://www.nbcboston.com/news/local/when-will-the-second-lindsay-clancy-trial-happen/4009792/",
       "flag": "verdict-watch"
     },
     {
@@ -671,34 +699,6 @@
       "headline": "Psychiatrist in Clancy trial resigns from Delaware hospital",
       "url": "https://www.wcvb.com/article/psychiatrist-clancy-trial-resigns-nemours/73560343",
       "flag": null
-    },
-    {
-      "ts": "2026-08-29T17:14:17.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "Psychiatrist resigns from children’s hospital in Delaware after testifying in Lindsay Clancy trial",
-      "url": "https://www.boston25news.com/news/local/psychiatrist-resigns-childrens-hospital-delaware-after-testifying-lindsay-clancy-trial/EUQBOPV2DFCUJOKG56MNFRLWTU/",
-      "flag": null
-    },
-    {
-      "ts": "2026-08-29T13:06:54.000Z",
-      "outlet": "Court TV",
-      "headline": "Tragedy, Tension &#038; Testimony: 10 Unforgettable Moments From Lindsay Clancy’s Murder Trial",
-      "url": "https://www.courttv.com/news/tragedy-tension-testimony-10-unforgettable-moments-from-lindsay-clancys-murder-trial/",
-      "flag": null
-    },
-    {
-      "ts": "2026-08-29T10:58:36.000Z",
-      "outlet": "NBC10 Boston",
-      "headline": "How Lindsay Clancy sought help before she killed her three children",
-      "url": "https://www.nbcboston.com/news/national-international/how-lindsay-clancy-sought-help-before-she-killed-her-three-children/4006003/",
-      "flag": null
-    },
-    {
-      "ts": "2026-08-28T21:15:37.000Z",
-      "outlet": "NBC10 Boston",
-      "headline": "Lindsay Clancy trial is latest to draw intense, widespread media attention",
-      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-trial-is-latest-to-draw-intense-widespread-media-attention/4005902/",
-      "flag": null
     }
   ],
   "seen": [
@@ -899,6 +899,10 @@
     "1288s3x",
     "18b1pgu",
     "1v8argg",
-    "1awjptr"
+    "1awjptr",
+    "1utbezw",
+    "inkfao",
+    "vbh4jb",
+    "pinw8v"
   ]
 }

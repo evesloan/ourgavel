@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-04T13:49:00.000Z",
+      "outlet": "Court TV",
+      "headline": "Judge promises more ‘pizzazz’ after Lindsay Clancy’s attorney accuses him of being ‘soft’ with jury",
+      "url": "https://www.courttv.com/news/judge-promises-more-pizzazz-after-lindsay-clancys-attorney-accuses-him-of-being-soft-with-jury/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-04T13:20:35.000Z",
       "outlet": "Court TV",
       "headline": "Lindsay Clancy’s attorney wants no more sidebars, asks judge to handle things in ‘open court’",
@@ -692,13 +699,6 @@
       "headline": "Jury in Lindsay Clancy trial to resume deliberations today",
       "url": "https://www.nbcboston.com/news/local/lindsay-clancy-verdict-watch-jury-deliberations/4005444/",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-08-27T21:15:31.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "Following closing remarks, Lindsay Clancy jury begins deliberations",
-      "url": "https://www.boston25news.com/news/local/following-closing-remarks-lindsay-clancy-jury-begins-deliberations/COJUAKSM4ZFDLGIPHZSJMV6YLE/",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
@@ -887,6 +887,7 @@
     "elarbj",
     "zmt0yb",
     "19g3fkb",
-    "1jtt7uf"
+    "1jtt7uf",
+    "1jfc3ep"
   ]
 }

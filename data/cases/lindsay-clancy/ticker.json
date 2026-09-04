@@ -15,6 +15,13 @@
       "flag": "verdict-watch"
     },
     {
+      "ts": "2026-09-04T07:47:04.000Z",
+      "outlet": "NBC10 Boston",
+      "headline": "Lindsay Clancy verdict watch: Deadlocked jury returns as single juror could decide trial",
+      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-trial-live-stream-live-updates-as-verdict-watch-continues/4009228/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-04T02:34:18.000Z",
       "outlet": "Boston 25 News",
       "headline": "Tensions high outside courthouse as Lindsay Clancy jury deliberates for sixth day",
@@ -692,13 +699,6 @@
       "headline": "Photos: Scenes from the courthouse as jurors deliberate in Lindsay Clancy trial",
       "url": "https://www.boston.com/news/crime/2026/08/27/photos-courthouse-lindsay-clancy-trial/",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-08-27T17:05:00.000Z",
-      "outlet": "WCVB",
-      "headline": "Retired judge weighs closing arguments as Lindsay Clancy case goes to jury",
-      "url": "https://www.wcvb.com/article/retired-judge-james-barretto-closing-arguments-lindsay-clancy/73544753",
-      "flag": null
     }
   ],
   "seen": [
@@ -881,6 +881,7 @@
     "18f9050",
     "1qej0q6",
     "1dza8xa",
-    "1sf7zbv"
+    "1sf7zbv",
+    "1fnv8vs"
   ]
 }

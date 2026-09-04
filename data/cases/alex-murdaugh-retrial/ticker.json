@@ -337,6 +337,13 @@
       "flag": null
     },
     {
+      "ts": "2026-08-14T05:12:00.000Z",
+      "outlet": "mynorthwest.com",
+      "headline": "Judge moves Alex Murdaugh retrial from small county, but motion to toss out case will wait",
+      "url": "https://mynorthwest.com/national/judge-moves-alex-murdaugh-retrial-from-small-county-but-motion-to-toss-out-case-will-wait/4266097",
+      "flag": null
+    },
+    {
       "ts": "2026-08-14T03:08:00.000Z",
       "outlet": "abcnews4.com",
       "headline": "Judge orders Alex Murdaugh retrial moved outside 14th Circuit over jury fairness concerns",
@@ -485,8 +492,6 @@
     }
   ],
   "seen": [
-    "ccbzj0",
-    "16dt0mk",
     "16gp8he",
     "cdbehd",
     "jc8m5l",
@@ -1084,6 +1089,8 @@
     "pp0n3g",
     "4ja3qo",
     "qb7r7i",
-    "1g9ylbl"
+    "1g9ylbl",
+    "rnx3j5",
+    "mr35hn"
   ]
 }

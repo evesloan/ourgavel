@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-05T22:10:00.000Z",
+      "outlet": "WCVB",
+      "headline": "Lindsay Clancy's attorneys allege medical failures in civil case",
+      "url": "https://www.wcvb.com/article/lindsay-clancys-attorneys-allege-medical-failures-in-civil-case/73622984",
+      "flag": null
+    },
+    {
       "ts": "2026-09-05T16:55:24.000Z",
       "outlet": "Boston 25 News",
       "headline": "Mistrial is declared in Lindsay Clancy child killings case after jury deadlocks",
@@ -692,13 +699,6 @@
       "headline": "Jury says it can’t reach a unanimous decision in Lindsay Clancy’s murder trial",
       "url": "https://www.courttv.com/news/jury-says-it-cant-reach-a-unanimous-decision-in-lindsay-clancys-murder-trial/",
       "flag": null
-    },
-    {
-      "ts": "2026-09-01T14:25:07.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "Lindsay Clancy trial (live updates): Jury says it’s deadlocked; judge orders more deliberations",
-      "url": "https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-jury-says-its-deadlocked-judge-orders-more-deliberations/HXIRVCYLXRB5ZJMOTUT2RZKFR4/",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
@@ -922,6 +922,7 @@
     "hk3unj",
     "pitbi2",
     "1gh6jry",
-    "1oa9z22"
+    "1oa9z22",
+    "10tb39"
   ]
 }

@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-05T11:00:00.000Z",
+      "outlet": "AllHipHop",
+      "headline": "Lil Durk Trial: Judge Says Flights Alone Cannot Prove A Hit",
+      "url": "https://allhiphop.com/news/lil-durk-trial-judge-says-flights-alone-cannot-prove-a-hit/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-05T05:19:00.000Z",
       "outlet": "DancehallMag",
       "headline": "King Von’s Son’s Mother Calls OTF Vonnie a Liar at Lil Durk Trial",
@@ -796,6 +803,7 @@
     "1gb9d7c",
     "ngouis",
     "15wzepm",
-    "uxldfo"
+    "uxldfo",
+    "qc2b5i"
   ]
 }

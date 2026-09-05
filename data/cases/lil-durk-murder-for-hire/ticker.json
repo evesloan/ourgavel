@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-05T04:24:00.000Z",
+      "outlet": "via MSN",
+      "headline": "Defense witness disputes key testimony in Lil Durk trial",
+      "url": "https://www.msn.com/en-us/news/other/defense-witness-disputes-key-testimony-in-lil-durk-trial/gm-GMBB11AF79",
+      "flag": null
+    },
+    {
       "ts": "2026-09-04T16:02:00.000Z",
       "outlet": "AllHipHop",
       "headline": "Lil Durk Trial: Executive Says Violence Was A Sales Tool",
@@ -772,6 +779,7 @@
     "1217v7q",
     "1gb9q4f",
     "jf2c27",
-    "1gb9d7c"
+    "1gb9d7c",
+    "ngouis"
   ]
 }

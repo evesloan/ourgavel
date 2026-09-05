@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-05T05:19:00.000Z",
+      "outlet": "DancehallMag",
+      "headline": "King Von’s Son’s Mother Calls OTF Vonnie a Liar at Lil Durk Trial",
+      "url": "https://www.dancehallmag.com/2026/09/05/news/king-vons-sons-mother-calls-otf-vonnie-a-liar-at-lil-durk-trial.html",
+      "flag": null
+    },
+    {
       "ts": "2026-09-05T04:24:00.000Z",
       "outlet": "via MSN",
       "headline": "Defense witness disputes key testimony in Lil Durk trial",
@@ -788,6 +795,7 @@
     "jf2c27",
     "1gb9d7c",
     "ngouis",
-    "15wzepm"
+    "15wzepm",
+    "uxldfo"
   ]
 }

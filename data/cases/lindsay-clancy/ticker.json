@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-05T16:55:24.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Mistrial is declared in Lindsay Clancy child killings case after jury deadlocks",
+      "url": "https://www.boston25news.com/news/local/mistrial-is-declared-lindsay-clancy-child-killings-case-after-jury-deadlocks/RVDQQ7H6C5DUZPBDXFTMB4G56Y/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-05T09:52:51.000Z",
       "outlet": "NBC10 Boston",
       "headline": "What happens to Lindsay Clancy now that a mistrial has been declared?",
@@ -692,13 +699,6 @@
       "headline": "Lindsay Clancy trial (live updates): Jury says it’s deadlocked; judge orders more deliberations",
       "url": "https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-jury-says-its-deadlocked-judge-orders-more-deliberations/HXIRVCYLXRB5ZJMOTUT2RZKFR4/",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-09-01T12:53:42.000Z",
-      "outlet": "Boston.com",
-      "headline": "Livestream: Lindsay Clancy trial verdict watch continues Tuesday as jury deliberations resume",
-      "url": "https://www.boston.com/news/crime/2026/09/01/lindsay-clancy-trial-verdict-watch-tuesday-september-1/",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
@@ -921,6 +921,7 @@
     "1gjyr78",
     "hk3unj",
     "pitbi2",
-    "1gh6jry"
+    "1gh6jry",
+    "1oa9z22"
   ]
 }

@@ -8,10 +8,24 @@
       "flag": null
     },
     {
+      "ts": "2026-08-26T20:17:46.000Z",
+      "outlet": "Court TV",
+      "headline": "‘Creative liberties’ in Murdaugh documentary means Buster’s lawsuit against Netflix can move forward: Judge",
+      "url": "https://www.courttv.com/news/creative-liberties-in-murdaugh-documentary-means-busters-lawsuit-against-netflix-can-move-forward-judge/",
+      "flag": null
+    },
+    {
       "ts": "2026-08-21T02:30:00.000Z",
       "outlet": "via MSN",
       "headline": "Murdaugh prosecutor Creighton Waters says he'll let judge decide on new trial site",
       "url": "https://www.msn.com/en-us/crime/general/murdaugh-prosecutor-creighton-waters-says-he-ll-let-judge-decide-on-new-trial-site/ar-AA2aEqDv",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-20T15:20:35.000Z",
+      "outlet": "Court TV",
+      "headline": "Prosecutors accuse Alex Murdaugh’s defense team of lying about polygraph",
+      "url": "https://www.courttv.com/news/prosecutors-accuse-alex-murdaughs-defense-team-of-lying-about-polygraph/",
       "flag": null
     },
     {
@@ -145,6 +159,13 @@
       "outlet": "infobae.com",
       "headline": "Caso Alex Murdaugh: qu&#233; dictaminaron en la audiencia preliminar antes del nuevo juicio",
       "url": "https://www.infobae.com/estados-unidos/2026/08/15/caso-alex-murdaugh-que-dictamino-la-jueza-en-la-audiencia-preliminar-antes-del-nuevo-juicio/",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-14T18:54:36.000Z",
+      "outlet": "Court TV",
+      "headline": "Alex Murdaugh wears suit to court as his defense accuses prosecution of having ‘secret agreements’",
+      "url": "https://www.courttv.com/news/alex-murdaugh-wears-suit-to-court-as-his-defense-accuses-prosecution-of-having-secret-agreements/",
       "flag": null
     },
     {
@@ -400,6 +421,13 @@
       "flag": null
     },
     {
+      "ts": "2026-08-13T15:22:36.000Z",
+      "outlet": "Court TV",
+      "headline": "Prosecution cites Masters week, flooding, parking as reasons not to move Alex Murdaugh’s trial",
+      "url": "https://www.courttv.com/news/prosecution-cites-masters-week-flooding-parking-as-reasons-not-to-move-alex-murdaughs-trial/",
+      "flag": null
+    },
+    {
       "ts": "2026-08-13T05:57:45.000Z",
       "outlet": "via MSN",
       "headline": "Alex Murdaugh's retrial in Charleston? Judge to hear host of issues Friday",
@@ -435,10 +463,31 @@
       "flag": null
     },
     {
+      "ts": "2026-08-10T19:16:17.000Z",
+      "outlet": "Court TV",
+      "headline": "‘Admitted was false’: Alex Murdaugh says he should walk free after SLED agent presented physical evidence ‘fabricated by law enforcement’ to grand jury, motion alleges",
+      "url": "https://www.courttv.com/news/admitted-was-false-alex-murdaugh-says-he-should-walk-free-after-sled-agent-presented-physical-evidence-fabricated-by-law-enforcement-to-grand-jury-motion-alleges/",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-06T14:21:46.000Z",
+      "outlet": "Court TV",
+      "headline": "Judge cites ‘fatal flaw’ in dismissing Alex Murdaugh’s lawsuit against clerk of court",
+      "url": "https://www.courttv.com/news/judge-cites-fatal-flaw-in-dismissing-alex-murdaughs-lawsuit-against-clerk-of-court/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-08-05T09:33:00.000Z",
       "outlet": "newsday.com",
       "headline": "Federal judge won't make disgraced clerk pay Alex Murdaugh's $600,000 in legal fees for 1st trial",
       "url": "https://www.newsday.com/news/nation/alex-murdaugh-killings-murder-retrial-defense-fees-p53347",
+      "flag": null
+    },
+    {
+      "ts": "2026-07-31T15:03:14.000Z",
+      "outlet": "Court TV",
+      "headline": "Alex Murdaugh’s attorneys fight for access to unknown male DNA found under victim’s nails",
+      "url": "https://www.courttv.com/news/alex-murdaughs-attorneys-fight-for-access-to-unknown-male-dna-found-under-victims-nails/",
       "flag": null
     },
     {
@@ -470,6 +519,13 @@
       "flag": null
     },
     {
+      "ts": "2026-07-02T17:56:01.000Z",
+      "outlet": "Court TV",
+      "headline": "Alex Murdaugh violated jail ‘security protocols,’ shouldn’t get laptop: State",
+      "url": "https://www.courttv.com/news/alex-murdaugh-violated-jail-security-protocols-shouldnt-get-laptop-state/",
+      "flag": null
+    },
+    {
       "ts": "2026-06-30T14:50:00.000Z",
       "outlet": "WIS News 10",
       "headline": "What’s next in the Alex Murdaugh case? What a legal expert told us.",
@@ -481,6 +537,13 @@
       "outlet": "The Greenville News",
       "headline": "State opposed to Murdaugh's request for independent DNA testing, laptop",
       "url": "https://www.greenvilleonline.com/story/news/crime/2026/06/30/alex-murdaugh-dna-test-retrial-attorney-general/90750925007/",
+      "flag": null
+    },
+    {
+      "ts": "2026-06-29T16:06:52.000Z",
+      "outlet": "Court TV",
+      "headline": "Murdaugh gets new trial date as defense fights for DNA analysis",
+      "url": "https://www.courttv.com/news/murdaugh-gets-new-trial-date-as-defense-fights-for-dna-analysis/",
       "flag": null
     },
     {
@@ -505,6 +568,13 @@
       "flag": null
     },
     {
+      "ts": "2026-06-25T21:01:31.000Z",
+      "outlet": "Court TV",
+      "headline": "Alex Murdaugh claims unknown male DNA was under slain wife’s nails",
+      "url": "https://www.courttv.com/news/alex-murdaugh-claims-unknown-male-dna-was-under-slain-wifes-nails/",
+      "flag": null
+    },
+    {
       "ts": "2026-06-25T09:48:00.000Z",
       "outlet": "via MSN",
       "headline": "Alex Murdaugh wants new venue, DNA evidence review in murder retrial",
@@ -519,10 +589,38 @@
       "flag": "verdict-watch"
     },
     {
+      "ts": "2026-06-19T15:40:49.000Z",
+      "outlet": "Court TV",
+      "headline": "Becky Hill fights to get Alex Murdaugh’s lawsuit dismissed",
+      "url": "https://www.courttv.com/news/becky-hill-fights-to-get-alex-murdaughs-lawsuit-dismissed/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-06-17T13:58:00.000Z",
       "outlet": "Fox News",
       "headline": "Alex Murdaugh's lawyer vows to dismantle infamous kennel video as defense weighs another turn on the stand",
       "url": "https://www.foxnews.com/us/alex-murdaughs-lawyer-vows-dismantle-infamous-kennel-video-defense-weighs-another-turn-stand",
+      "flag": null
+    },
+    {
+      "ts": "2026-05-29T22:01:31.000Z",
+      "outlet": "Court TV",
+      "headline": "Former housekeeper details life inside Murdaugh family home",
+      "url": "https://www.courttv.com/news/former-housekeeper-details-life-inside-murdaugh-family-home/",
+      "flag": null
+    },
+    {
+      "ts": "2026-05-18T17:40:16.000Z",
+      "outlet": "Court TV",
+      "headline": "Alex Murdaugh files lawsuit ‘to hold Becky Hill accountable’ as AG threatens death penalty",
+      "url": "https://www.courttv.com/news/alex-murdaugh-files-lawsuit-to-hold-becky-hill-accountable-as-ag-threatens-death-penalty/",
+      "flag": null
+    },
+    {
+      "ts": "2026-05-15T15:40:29.000Z",
+      "outlet": "Court TV",
+      "headline": "Buster supports his dad and named his son for him, Alex Murdaugh’s defense reveals",
+      "url": "https://www.courttv.com/news/buster-supports-his-dad-and-named-his-son-for-him-alex-murdaughs-defense-reveals/",
       "flag": null
     },
     {
@@ -538,48 +636,72 @@
       "headline": "Alex Murdaugh is 'clearly not innocent' despite retrial: Attorney",
       "url": "https://www.msn.com/en-us/news/crime/alex-murdaugh-is-clearly-not-innocent-despite-retrial-attorney/ar-AA23f8p5",
       "flag": null
+    },
+    {
+      "ts": "2026-05-13T14:50:52.000Z",
+      "outlet": "Court TV",
+      "headline": "Clerk of Court Becky Hill’s bad behavior earns Alex Murdaugh a new murder trial",
+      "url": "https://www.courttv.com/news/clerk-of-court-becky-hills-bad-behavior-earns-alex-murdaugh-a-new-murder-trial/",
+      "flag": null
+    },
+    {
+      "ts": "2026-02-12T19:36:13.000Z",
+      "outlet": "Court TV",
+      "headline": "Buster Murdaugh reaches settlement in lawsuit against Warner Bros.",
+      "url": "https://www.courttv.com/news/buster-murdaugh-reaches-settlement-in-lawsuit-against-warner-bros/",
+      "flag": null
+    },
+    {
+      "ts": "2026-02-11T16:12:38.000Z",
+      "outlet": "Court TV",
+      "headline": "Alex Murdaugh’s attorneys push for new trial but say ‘Nobody wants to do this again’",
+      "url": "https://www.courttv.com/news/alex-murdaughs-fight-for-new-trial-heads-to-south-carolina-supreme-court/",
+      "flag": null
+    },
+    {
+      "ts": "2025-12-08T15:29:05.000Z",
+      "outlet": "Court TV",
+      "headline": "Becky Hill pleads guilty to showing sealed exhibits in Alex Murdaugh’s trial",
+      "url": "https://www.courttv.com/news/becky-hill-pleads-guilty-to-showing-sealed-exhibits-in-alex-murdaughs-trial/",
+      "flag": "verdict-watch"
+    },
+    {
+      "ts": "2025-11-30T13:30:11.000Z",
+      "outlet": "Court TV",
+      "headline": "South Carolina Supreme Court sets date for Murdaugh appeal",
+      "url": "https://www.courttv.com/news/south-carolina-supreme-court-sets-date-for-murdaugh-appeal/",
+      "flag": null
+    },
+    {
+      "ts": "2025-11-19T15:27:23.000Z",
+      "outlet": "Court TV",
+      "headline": "Former Murdaugh housekeeper reveals family secrets in new book",
+      "url": "https://www.courttv.com/news/former-murdaugh-housekeeper-reveals-family-secrets-in-new-book/",
+      "flag": null
+    },
+    {
+      "ts": "2025-09-28T13:00:52.000Z",
+      "outlet": "Court TV",
+      "headline": "Alex Murdaugh’s banker faces prison time after guilty pleas",
+      "url": "https://www.courttv.com/news/alex-murdaughs-banker-faces-prison-time-after-guilty-pleas/",
+      "flag": "verdict-watch"
+    },
+    {
+      "ts": "2025-09-09T07:00:18.000Z",
+      "outlet": "Court TV",
+      "headline": "From Murdaugh to Morphew: Crime, media and the court of public opinion",
+      "url": "https://www.courttv.com/news/from-murdaugh-to-morphew-crime-media-and-the-court-of-public-opinion/",
+      "flag": null
+    },
+    {
+      "ts": "2025-08-11T20:21:46.000Z",
+      "outlet": "Court TV",
+      "headline": "State opposes new Alex Murdaugh trial for ‘fleeting, foolish’ comments",
+      "url": "https://www.courttv.com/news/state-opposes-new-alex-murdaugh-trial-for-fleeting-foolish-comments/",
+      "flag": null
     }
   ],
   "seen": [
-    "10qudsd",
-    "vpkyij",
-    "pucwr9",
-    "feyn5z",
-    "1yafpoj",
-    "1j3ev7r",
-    "1nyoggh",
-    "a4ayab",
-    "1eyu83g",
-    "ypkhqg",
-    "1uo1dld",
-    "11z6jcd",
-    "2piwsy",
-    "1vpdfhm",
-    "1qfypkw",
-    "zcvuup",
-    "1vciym1",
-    "13px2x3",
-    "8dd7i8",
-    "12flnw2",
-    "1mp2llq",
-    "1o19n4c",
-    "cil2qu",
-    "ww97te",
-    "33k7q8",
-    "22dt5k",
-    "1nq3y62",
-    "1t36zl0",
-    "1knspjt",
-    "1l839aj",
-    "15g2hgz",
-    "2s5wd4",
-    "1jihiy8",
-    "1lhdaka",
-    "1kpge5n",
-    "1hembd9",
-    "jdj4jj",
-    "mvuls",
-    "1vci8vi",
     "ris09h",
     "1pkkpd9",
     "1wxgsm8",
@@ -1140,6 +1262,45 @@
     "17nynn2",
     "kc2gta",
     "4pxgkv",
-    "18fusa4"
+    "18fusa4",
+    "x5ukr2",
+    "1mex2k9",
+    "18zosdu",
+    "1i3ifas",
+    "l9sdnw",
+    "5wdrda",
+    "1vgu1ed",
+    "1l09e5q",
+    "icp9bo",
+    "vzrwhs",
+    "i94ovm",
+    "jhzsm7",
+    "uzq4dc",
+    "p3gkfl",
+    "1y84vhs",
+    "1p354lx",
+    "d2wblp",
+    "1g5ushn",
+    "p9a7ff",
+    "14bckjg",
+    "3n5vlv",
+    "hkcgwv",
+    "4n6gae",
+    "1r5si2d",
+    "s6r3uy",
+    "s0o5gs",
+    "1dox5io",
+    "858vuz",
+    "16a80m",
+    "1ja8z15",
+    "h25yv5",
+    "lpjadm",
+    "nvp9am",
+    "ahj3iy",
+    "l9yhbe",
+    "169xkq5",
+    "qhivp9",
+    "yvk3en",
+    "16sgn9j"
   ]
 }

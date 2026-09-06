@@ -554,6 +554,13 @@
       "flag": null
     },
     {
+      "ts": "2026-06-29T13:00:00.000Z",
+      "outlet": "via MSN",
+      "headline": "Live updates: Alex Murdaugh appears in court as planning for retrial takes shape",
+      "url": "https://www.msn.com/en-us/news/news/live-updates-alex-murdaugh-appears-in-court-as-planning-for-retrial-takes-shape/ar-AA26Ob5l",
+      "flag": null
+    },
+    {
       "ts": "2026-06-29T12:33:00.000Z",
       "outlet": "goerie.com",
       "headline": "Tentative date set for Alex Murdaugh retrial in 2027",
@@ -692,17 +699,9 @@
       "headline": "Former Murdaugh housekeeper reveals family secrets in new book",
       "url": "https://www.courttv.com/news/former-murdaugh-housekeeper-reveals-family-secrets-in-new-book/",
       "flag": null
-    },
-    {
-      "ts": "2025-09-28T13:00:52.000Z",
-      "outlet": "Court TV",
-      "headline": "Alex Murdaugh’s banker faces prison time after guilty pleas",
-      "url": "https://www.courttv.com/news/alex-murdaughs-banker-faces-prison-time-after-guilty-pleas/",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
-    "1wxgsm8",
     "c52i59",
     "1lxygr2",
     "14s0d30",
@@ -1301,6 +1300,7 @@
     "yvk3en",
     "16sgn9j",
     "zl91g1",
-    "1fnbsof"
+    "1fnbsof",
+    "1fnbjw6"
   ]
 }

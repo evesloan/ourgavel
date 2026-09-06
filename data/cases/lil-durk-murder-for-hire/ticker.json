@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-05T19:11:00.000Z",
+      "outlet": "Los Angeles Magazine",
+      "headline": "What the Jury Must Decide in the Lil Durk Trial",
+      "url": "https://lamag.com/crimeinla/what-the-jury-must-decide-in-the-lil-durk-trial/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-05T11:00:00.000Z",
       "outlet": "AllHipHop",
       "headline": "Lil Durk Trial: Judge Says Flights Alone Cannot Prove A Hit",
@@ -804,6 +811,7 @@
     "ngouis",
     "15wzepm",
     "uxldfo",
-    "qc2b5i"
+    "qc2b5i",
+    "1gzer99"
   ]
 }

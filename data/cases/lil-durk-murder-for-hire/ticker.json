@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-06T16:08:00.000Z",
+      "outlet": "via Yahoo News",
+      "headline": "Lil Durk Trial: OTF Vonni Recounts His First Attempted Hit on Quando Rondo",
+      "url": "https://www.yahoo.com/entertainment/music/articles/lil-durk-trial-otf-vonni-230902329.html",
+      "flag": null
+    },
+    {
       "ts": "2026-09-06T14:45:00.000Z",
       "outlet": "via Yahoo News",
       "headline": "Lil Durk Trial: Flacka Says He Was Never Paid in Alleged Quando Rondo Hit",
@@ -828,6 +835,7 @@
     "qc2b5i",
     "1gzer99",
     "1p8dsll",
-    "1vmeg9l"
+    "1vmeg9l",
+    "1rlhbvv"
   ]
 }

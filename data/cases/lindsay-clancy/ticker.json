@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-06T14:12:48.000Z",
+      "outlet": "Court TV",
+      "headline": "What happens next after Lindsay Clancy’s mistrial?",
+      "url": "https://www.courttv.com/news/what-happens-next-after-lindsay-clancys-mistrial/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-05T22:10:00.000Z",
       "outlet": "WCVB",
       "headline": "Lindsay Clancy's attorneys allege medical failures in civil case",
@@ -692,13 +699,6 @@
       "headline": "What happens if there's a hung jury in the Lindsay Clancy case? What lawyers say",
       "url": "https://www.nbcboston.com/news/local/lindsay-clancy-update-hung-jury-explained/4007439/",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-09-01T15:10:05.000Z",
-      "outlet": "Court TV",
-      "headline": "Jury says it can’t reach a unanimous decision in Lindsay Clancy’s murder trial",
-      "url": "https://www.courttv.com/news/jury-says-it-cant-reach-a-unanimous-decision-in-lindsay-clancys-murder-trial/",
-      "flag": null
     }
   ],
   "seen": [
@@ -923,6 +923,7 @@
     "pitbi2",
     "1gh6jry",
     "1oa9z22",
-    "10tb39"
+    "10tb39",
+    "yn2o0d"
   ]
 }

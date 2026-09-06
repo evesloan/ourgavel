@@ -561,6 +561,13 @@
       "flag": null
     },
     {
+      "ts": "2026-06-29T08:01:13.000Z",
+      "outlet": "via MSN",
+      "headline": "Alex Murdaugh returns to court to hash out retrial details",
+      "url": "https://www.msn.com/en-us/crime/general/alex-murdaugh-returns-to-court-to-hash-out-retrial-details/ar-AA26OlNT",
+      "flag": null
+    },
+    {
       "ts": "2026-06-29T03:54:00.000Z",
       "outlet": "infobae.com",
       "headline": "El caso Alex Murdaugh: todo sobre el comienzo del nuevo juicio tras la anulaci&#243;n de su condena en Carolina del Sur",
@@ -692,17 +699,9 @@
       "headline": "Alex Murdaugh’s banker faces prison time after guilty pleas",
       "url": "https://www.courttv.com/news/alex-murdaughs-banker-faces-prison-time-after-guilty-pleas/",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2025-09-09T07:00:18.000Z",
-      "outlet": "Court TV",
-      "headline": "From Murdaugh to Morphew: Crime, media and the court of public opinion",
-      "url": "https://www.courttv.com/news/from-murdaugh-to-morphew-crime-media-and-the-court-of-public-opinion/",
-      "flag": null
     }
   ],
   "seen": [
-    "1pkkpd9",
     "1wxgsm8",
     "c52i59",
     "1lxygr2",
@@ -1301,6 +1300,7 @@
     "qhivp9",
     "yvk3en",
     "16sgn9j",
-    "zl91g1"
+    "zl91g1",
+    "1fnbsof"
   ]
 }

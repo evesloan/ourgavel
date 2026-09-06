@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-06T14:45:00.000Z",
+      "outlet": "via Yahoo News",
+      "headline": "Lil Durk Trial: Flacka Says He Was Never Paid in Alleged Quando Rondo Hit",
+      "url": "https://www.yahoo.com/entertainment/music/articles/lil-durk-trial-flacka-says-214522294.html",
+      "flag": null
+    },
+    {
       "ts": "2026-09-05T19:11:00.000Z",
       "outlet": "Los Angeles Magazine",
       "headline": "What the Jury Must Decide in the Lil Durk Trial",
@@ -820,6 +827,7 @@
     "uxldfo",
     "qc2b5i",
     "1gzer99",
-    "1p8dsll"
+    "1p8dsll",
+    "1vmeg9l"
   ]
 }

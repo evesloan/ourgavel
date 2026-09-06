@@ -323,6 +323,13 @@
       "flag": null
     },
     {
+      "ts": "2026-08-14T08:18:00.000Z",
+      "outlet": "abc7news.com",
+      "headline": "Judge rules Alex Murdaugh's retrial will have a change of venue, but no location set",
+      "url": "https://abc7news.com/story/alex-murdaugh-hearing-today-man-previously-convicted-murders-wife-son-due-back-court-ahead-april-2027-retrial/19678035/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-08-14T07:49:00.000Z",
       "outlet": "usnews.com",
       "headline": "Judge Moves Alex Murdaugh Retrial From Small County, but Motion to Toss Out Case Will Wait",
@@ -692,17 +699,9 @@
       "headline": "From Murdaugh to Morphew: Crime, media and the court of public opinion",
       "url": "https://www.courttv.com/news/from-murdaugh-to-morphew-crime-media-and-the-court-of-public-opinion/",
       "flag": null
-    },
-    {
-      "ts": "2025-08-11T20:21:46.000Z",
-      "outlet": "Court TV",
-      "headline": "State opposes new Alex Murdaugh trial for ‘fleeting, foolish’ comments",
-      "url": "https://www.courttv.com/news/state-opposes-new-alex-murdaugh-trial-for-fleeting-foolish-comments/",
-      "flag": null
     }
   ],
   "seen": [
-    "ris09h",
     "1pkkpd9",
     "1wxgsm8",
     "c52i59",
@@ -1301,6 +1300,7 @@
     "169xkq5",
     "qhivp9",
     "yvk3en",
-    "16sgn9j"
+    "16sgn9j",
+    "zl91g1"
   ]
 }

@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-07T13:09:38.000Z",
+      "outlet": "Boston.com",
+      "headline": "Lindsay Clancy faces years of confinement, no matter what comes next",
+      "url": "https://www.boston.com/news/crime/2026/09/07/what-happens-to-lindsay-clancy/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-07T09:48:00.000Z",
       "outlet": "WCVB",
       "headline": "Illinois mom charged in toddler's death was 'very invested' in Lindsay Clancy trial, prosecutors say",
@@ -692,13 +699,6 @@
       "headline": "Lindsay Clancy trial (live updates): Jury can’t reach verdict; judge orders more deliberations",
       "url": "https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-jury-cant-reach-verdict-judge-orders-more-deliberations/HXIRVCYLXRB5ZJMOTUT2RZKFR4/",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-09-01T16:54:35.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "Hung jury or eventual verdict? What comes next in the Lindsay Clancy trial",
-      "url": "https://www.boston25news.com/news/local/hung-jury-or-eventual-verdict-what-comes-next-lindsay-clancy-trial/QCB2VROOGRBIBDLWNGQBZLCHHI/",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
@@ -927,6 +927,7 @@
     "yn2o0d",
     "3b1sdv",
     "17pvbjs",
-    "14048y3"
+    "14048y3",
+    "vd63ir"
   ]
 }

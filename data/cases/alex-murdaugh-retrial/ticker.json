@@ -246,6 +246,13 @@
       "flag": null
     },
     {
+      "ts": "2026-08-14T12:15:00.000Z",
+      "outlet": "kwwl.com",
+      "headline": "Alex Murdaugh’s retrial will be relocated, and his original testimony can be used conditionally, judge rules",
+      "url": "https://www.kwwl.com/news/social/alex-murdaugh-s-retrial-will-be-relocated-and-his-original-testimony-can-be-used-conditionally/article_49253205-3c7a-53c1-85bc-381c8861bd4a.html",
+      "flag": null
+    },
+    {
       "ts": "2026-08-14T12:10:00.000Z",
       "outlet": "NBC News",
       "headline": "Alex Murdaugh granted change of venue for murder retrial, past testimony allowed",
@@ -692,17 +699,9 @@
       "headline": "South Carolina Supreme Court sets date for Murdaugh appeal",
       "url": "https://www.courttv.com/news/south-carolina-supreme-court-sets-date-for-murdaugh-appeal/",
       "flag": null
-    },
-    {
-      "ts": "2025-11-19T15:27:23.000Z",
-      "outlet": "Court TV",
-      "headline": "Former Murdaugh housekeeper reveals family secrets in new book",
-      "url": "https://www.courttv.com/news/former-murdaugh-housekeeper-reveals-family-secrets-in-new-book/",
-      "flag": null
     }
   ],
   "seen": [
-    "c52i59",
     "1lxygr2",
     "14s0d30",
     "x3l022",
@@ -1301,6 +1300,7 @@
     "16sgn9j",
     "zl91g1",
     "1fnbsof",
-    "1fnbjw6"
+    "1fnbjw6",
+    "1b0t6nh"
   ]
 }

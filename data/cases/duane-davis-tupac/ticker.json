@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-07T13:30:41.000Z",
+      "outlet": "FOX5 Las Vegas",
+      "headline": "Thirty years later: The anniversary of Tupac Shakur’s tragic death met with historic justice",
+      "url": "https://www.fox5vegas.com/2026/09/07/thirty-years-later-anniversary-tupac-shakurs-tragic-death-met-with-historic-justice/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-02T02:13:34.000Z",
       "outlet": "News 3 Las Vegas",
       "headline": "Las Vegas prosecutors on Tupac Shakur murder verdict and possibility of more charges",
@@ -576,6 +583,7 @@
     "f05mz4",
     "1yziivn",
     "wjrrpa",
-    "eiec8q"
+    "eiec8q",
+    "1em0q1m"
   ]
 }

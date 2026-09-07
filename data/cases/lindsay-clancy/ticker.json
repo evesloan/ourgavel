@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-07T21:36:08.000Z",
+      "outlet": "Law & Crime",
+      "headline": "Mom who was 'very invested' in Lindsay Clancy trial hanged 2-year-old son hours after 'actively discussing the case' with friends: Police",
+      "url": "https://lawandcrime.com/crime/mom-who-was-very-invested-in-lindsay-clancy-trial-hanged-2-year-old-son-hours-after-actively-discussing-the-case-with-friends-police/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-07T21:14:00.000Z",
       "outlet": "WCVB",
       "headline": "After Clancy mistrial, defense attorney Reddington set for GMA interview",
@@ -692,13 +699,6 @@
       "headline": "LINDSAY CLANCY VERDICT STORY",
       "url": "https://www.boston25news.com/news/local/lindsay-clancy-verdict-story/Y5EIQ2QGB5FCJKQ5VNVVR2ZL6M/",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-09-01T19:48:03.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "Lindsay Clancy trial (updates): Jury can’t reach unanimous verdict; deliberations resume Wednesday",
-      "url": "https://www.boston25news.com/news/local/lindsay-clancy-trial-updates-jury-cant-reach-unanimous-verdict-deliberations-resume-wednesday/HXIRVCYLXRB5ZJMOTUT2RZKFR4/",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
@@ -929,6 +929,7 @@
     "17pvbjs",
     "14048y3",
     "vd63ir",
-    "kouh12"
+    "kouh12",
+    "1ehmplw"
   ]
 }

@@ -1,6 +1,20 @@
 {
   "items": [
     {
+      "ts": "2026-09-07T09:48:00.000Z",
+      "outlet": "WCVB",
+      "headline": "Illinois mom charged in toddler's death was 'very invested' in Lindsay Clancy trial, prosecutors say",
+      "url": "https://www.wcvb.com/article/corie-walsh-illinois-mother-toddler-death-lindsay-clancy/73629339",
+      "flag": null
+    },
+    {
+      "ts": "2026-09-07T09:39:00.000Z",
+      "outlet": "WCVB",
+      "headline": "Wake Up Call from Duxbury Public Schools",
+      "url": "https://www.wcvb.com/article/wake-up-call-from-duxbury-public-schools/73629839",
+      "flag": null
+    },
+    {
       "ts": "2026-09-06T17:38:43.000Z",
       "outlet": "Boston.com",
       "headline": "A hard decision for the hard-nosed prosecutor in the Lindsay Clancy case",
@@ -685,20 +699,6 @@
       "headline": "Hung jury or eventual verdict? What comes next in the Lindsay Clancy trial",
       "url": "https://www.boston25news.com/news/local/hung-jury-or-eventual-verdict-what-comes-next-lindsay-clancy-trial/QCB2VROOGRBIBDLWNGQBZLCHHI/",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-09-01T15:25:00.000Z",
-      "outlet": "WCVB",
-      "headline": "Could Lindsay Clancy's trial end like Karen Read's first trial?",
-      "url": "https://www.wcvb.com/article/massachusetts-clancy-read-tuey-rodriguez-jury-instruction/73581276",
-      "flag": null
-    },
-    {
-      "ts": "2026-09-01T15:20:20.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "Lindsay Clancy trial reaches impasse as jury says it cannot reach unanimous verdict",
-      "url": "https://www.boston25news.com/news/local/lindsay-clancy-trial-reaches-impasse-jury-says-it-cannot-reach-unanimous-verdict/7ZJTUO4EK5DH5MDSYLKEQMYLKI/",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
@@ -925,6 +925,8 @@
     "1oa9z22",
     "10tb39",
     "yn2o0d",
-    "3b1sdv"
+    "3b1sdv",
+    "17pvbjs",
+    "14048y3"
   ]
 }

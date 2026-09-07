@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-07T15:35:46.000Z",
+      "outlet": "via MSN",
+      "headline": "Lil Durk trial: Both sides argue over rapper's accountability for murder",
+      "url": "https://www.msn.com/en-us/news/other/lil-durk-trial-both-sides-argue-over-rapper-s-accountability-for-murder/ar-AA2bLl4J",
+      "flag": null
+    },
+    {
       "ts": "2026-09-06T16:08:00.000Z",
       "outlet": "via Yahoo News",
       "headline": "Lil Durk Trial: OTF Vonni Recounts His First Attempted Hit on Quando Rondo",
@@ -222,6 +229,13 @@
       "outlet": "thesource.com",
       "headline": "Lil Durk Trial Gets Unexpectedly Wild After Trina, Others Reportedly Appears on Alleged ‘Opps’ List",
       "url": "https://thesource.com/2026/09/02/lil-durk-trial-gets-unexpectedly-wild-after-trina-others-reportedly-appears-on-alleged-opps-list/",
+      "flag": null
+    },
+    {
+      "ts": "2026-09-02T11:35:00.000Z",
+      "outlet": "complex.com",
+      "headline": "Young Thug Says He Sent Longtime Defense Attorney Brian Steel to Help Represent Lil Durk in Trial",
+      "url": "https://www.complex.com/music/a/markelibert/young-thug-brian-steel-lil-durk-defense-trial",
       "flag": null
     },
     {
@@ -836,6 +850,8 @@
     "1gzer99",
     "1p8dsll",
     "1vmeg9l",
-    "1rlhbvv"
+    "1rlhbvv",
+    "1gbgsfi",
+    "1sj1nvq"
   ]
 }

@@ -1,10 +1,31 @@
 {
   "items": [
     {
+      "ts": "2026-09-08T22:08:31.000Z",
+      "outlet": "WLTX News19",
+      "headline": "Alex Murdaugh murder retrial moved to Sumter County",
+      "url": "https://www.wltx.com/article/news/special-reports/alex-murdaugh/alex-murdaugh-murder-sumter-sc/101-14c94936-5303-42da-8509-59ac2d3d0c9c",
+      "flag": null
+    },
+    {
       "ts": "2026-09-08T21:01:46.000Z",
       "outlet": "FITSNews",
       "headline": "Alex Murdaugh Murder Retrial Moved To Sumter County",
       "url": "https://www.fitsnews.com/2026/09/08/alex-murdaugh-murder-retrial-moved-to-sumter-county/",
+      "flag": null
+    },
+    {
+      "ts": "2026-09-08T14:34:49.000Z",
+      "outlet": "via MSN",
+      "headline": "Judge orders Alex Murdaugh murder retrial moved to nearby county",
+      "url": "https://www.msn.com/en-us/crime/general/judge-orders-alex-murdaugh-murder-retrial-moved-to-nearby-county/ar-AA2bPruS",
+      "flag": null
+    },
+    {
+      "ts": "2026-09-08T14:34:00.000Z",
+      "outlet": "via Yahoo News",
+      "headline": "BREAKING: Murdaugh retrial to be moved out of Lowcountry",
+      "url": "https://www.yahoo.com/news/us/articles/breaking-murdaugh-retrial-moved-lowcountry-213455511.html",
       "flag": null
     },
     {
@@ -40,6 +61,20 @@
       "outlet": "via MSN",
       "headline": "Murdaugh retrial to take place in Sumter County",
       "url": "https://www.msn.com/en-us/news/news/murdaugh-retrial-to-take-place-in-sumter-county/ar-AA2bPtFr",
+      "flag": null
+    },
+    {
+      "ts": "2026-09-08T10:42:00.000Z",
+      "outlet": "The State",
+      "headline": "Sumter County to be site for Alex Murdaugh’s new double murder trial",
+      "url": "https://www.thestate.com/news/local/crime/article317170977.html",
+      "flag": null
+    },
+    {
+      "ts": "2026-09-08T10:35:00.000Z",
+      "outlet": "The Post and Courier",
+      "headline": "Retrial of Alex Murdaugh’s double murder case being moved to Sumter County",
+      "url": "https://www.postandcourier.com/murdaugh-updates/murdaugh-murder-retrial-venue-change-sumter-county-sc/article_d9e96862-77ef-49ca-9afc-903336df883c.html",
       "flag": null
     },
     {
@@ -664,51 +699,9 @@
       "headline": "Alex Murdaugh's attorneys seek venue change, new DNA testing ahead of retrial hearing",
       "url": "https://www.msn.com/en-us/news/crime/alex-murdaughs-attorneys-seek-venue-change-new-dna-testing-ahead-of-retrial-hearing/ar-AA26wCWj",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-06-19T15:40:49.000Z",
-      "outlet": "Court TV",
-      "headline": "Becky Hill fights to get Alex Murdaugh’s lawsuit dismissed",
-      "url": "https://www.courttv.com/news/becky-hill-fights-to-get-alex-murdaughs-lawsuit-dismissed/",
-      "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-06-17T13:58:00.000Z",
-      "outlet": "Fox News",
-      "headline": "Alex Murdaugh's lawyer vows to dismantle infamous kennel video as defense weighs another turn on the stand",
-      "url": "https://www.foxnews.com/us/alex-murdaughs-lawyer-vows-dismantle-infamous-kennel-video-defense-weighs-another-turn-stand",
-      "flag": null
-    },
-    {
-      "ts": "2026-05-29T22:01:31.000Z",
-      "outlet": "Court TV",
-      "headline": "Former housekeeper details life inside Murdaugh family home",
-      "url": "https://www.courttv.com/news/former-housekeeper-details-life-inside-murdaugh-family-home/",
-      "flag": null
-    },
-    {
-      "ts": "2026-05-18T17:40:16.000Z",
-      "outlet": "Court TV",
-      "headline": "Alex Murdaugh files lawsuit ‘to hold Becky Hill accountable’ as AG threatens death penalty",
-      "url": "https://www.courttv.com/news/alex-murdaugh-files-lawsuit-to-hold-becky-hill-accountable-as-ag-threatens-death-penalty/",
-      "flag": null
-    },
-    {
-      "ts": "2026-05-15T15:40:29.000Z",
-      "outlet": "Court TV",
-      "headline": "Buster supports his dad and named his son for him, Alex Murdaugh’s defense reveals",
-      "url": "https://www.courttv.com/news/buster-supports-his-dad-and-named-his-son-for-him-alex-murdaughs-defense-reveals/",
-      "flag": null
     }
   ],
   "seen": [
-    "z2av79",
-    "5lyb6r",
-    "rjo629",
-    "yd9v",
-    "1xqdnjl",
-    "17fzl5l",
-    "12rrpmq",
     "49094a",
     "qp5pys",
     "vsldrb",
@@ -1301,6 +1294,13 @@
     "1gbjlx6",
     "g97qb5",
     "1tn3kkj",
-    "1gbjndu"
+    "1gbjndu",
+    "1gbjie0",
+    "1nxmf1",
+    "1uoutel",
+    "s5nr12",
+    "drstye",
+    "1gbi6ye",
+    "174bum8"
   ]
 }

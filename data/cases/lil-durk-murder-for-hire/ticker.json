@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-08T05:24:00.000Z",
+      "outlet": "DancehallMag",
+      "headline": "Lil Durk Trial: Prosecutors Push Shared-Blame Rule Ahead of Closing Arguments",
+      "url": "https://www.dancehallmag.com/2026/09/08/news/lil-durk-trial-prosecutors-push-shared-blame-rule-ahead-of-closing-arguments.html",
+      "flag": null
+    },
+    {
       "ts": "2026-09-07T15:35:46.000Z",
       "outlet": "via MSN",
       "headline": "Lil Durk trial: Both sides argue over rapper's accountability for murder",
@@ -692,13 +699,6 @@
       "headline": "Prosecutors Call Lil Durk Song a 'Call to Arms' for Revenging King Von",
       "url": "https://www.yahoo.com/entertainment/music/articles/prosecutors-call-lil-durk-song-223304539.html",
       "flag": null
-    },
-    {
-      "ts": "2026-08-13T16:10:00.000Z",
-      "outlet": "Rolling Stone",
-      "headline": "Lil Durk Murder-for-Hire Trial: Judge Rules ‘Pissed Me Off’ Video Can Be Used as Evidence",
-      "url": "https://www.rollingstone.com/music/music-news/lil-durk-murder-for-hire-trial-video-lyrics-used-evidence-1235608235/",
-      "flag": null
     }
   ],
   "seen": [
@@ -868,6 +868,7 @@
     "1gbgsfi",
     "1sj1nvq",
     "1t8gtr0",
-    "1ogndvh"
+    "1ogndvh",
+    "18cwxnk"
   ]
 }

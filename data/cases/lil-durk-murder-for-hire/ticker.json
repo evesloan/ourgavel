@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-08T11:15:00.000Z",
+      "outlet": "via Yahoo News",
+      "headline": "Lil Durk Trial: Judge Says When Jury Can Expect Deliberations to Start",
+      "url": "https://www.yahoo.com/entertainment/celebrity/articles/lil-durk-trial-judge-says-181556905.html",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-08T10:40:00.000Z",
       "outlet": "complex.com",
       "headline": "Lil Durk Trial Verdict: Why He Might Stay in Jail Even If He's Found Not Guilty",
@@ -692,13 +699,6 @@
       "headline": "Lil Durk Trial Underway",
       "url": "https://lamag.com/crimeinla/lil-durk-trial-underway/",
       "flag": null
-    },
-    {
-      "ts": "2026-08-21T01:28:10.000Z",
-      "outlet": "via MSN",
-      "headline": "Lil Durk trial begins: Rapper faces life in prison in explosive case prosecutors say involves alleged hit plot",
-      "url": "https://www.msn.com/en-gb/news/news/lil-durk-trial-begins-rapper-faces-life-in-prison-in-explosive-case-prosecutors-say-involves-alleged-hit-plot/ar-AA2aCovu",
-      "flag": null
     }
   ],
   "seen": [
@@ -870,6 +870,7 @@
     "1t8gtr0",
     "1ogndvh",
     "18cwxnk",
-    "i4he1e"
+    "i4he1e",
+    "1mcy2pp"
   ]
 }

@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-08T04:18:20.000Z",
+      "outlet": "News 3 Las Vegas",
+      "headline": "Exclusive: Tupac Shakur investigator speaks publicly for first time after conviction",
+      "url": "https://news3lv.com/news/local/exclusive-tupac-shakur-investigator-speaks-publicly-for-first-time-after-conviction",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-07T14:44:46.000Z",
       "outlet": "News 3 Las Vegas",
       "headline": "LOOK BACK: 30 years since shooting of Tupac Shakur on Las Vegas Strip",
@@ -592,6 +599,7 @@
     "wjrrpa",
     "eiec8q",
     "1em0q1m",
-    "jyvucm"
+    "jyvucm",
+    "1he1imz"
   ]
 }

@@ -15,6 +15,20 @@
       "flag": null
     },
     {
+      "ts": "2026-09-08T16:03:00.000Z",
+      "outlet": "via Yahoo News",
+      "headline": "Alex Murdaugh murder retrial moved to Sumter County, judge rules",
+      "url": "https://www.yahoo.com/news/us/articles/alex-murdaugh-murder-retrial-moved-230323595.html",
+      "flag": null
+    },
+    {
+      "ts": "2026-09-08T16:02:00.000Z",
+      "outlet": "union-bulletin.com",
+      "headline": "Sumter County to be site for Alex Murdaugh’s new double murder trial",
+      "url": "https://www.union-bulletin.com/news/national/sumter-county-to-be-site-for-alex-murdaugh-s-new-double-murder-trial/article_2fb8bc1e-391d-5d37-965d-b1eba827eb7d.html",
+      "flag": null
+    },
+    {
       "ts": "2026-09-08T15:38:24.000Z",
       "outlet": "via MSN",
       "headline": "Judge picks new location for Alex Murdaugh's double-murder retrial",
@@ -33,6 +47,13 @@
       "outlet": "wrdw.com",
       "headline": "Murdaugh retrial to take place in Sumter County, judge rules",
       "url": "https://www.wrdw.com/2026/09/08/murdaugh-retrial-take-place-sumter-county-judge-rules/",
+      "flag": null
+    },
+    {
+      "ts": "2026-09-08T14:34:55.000Z",
+      "outlet": "via MSN",
+      "headline": "Breaking: Murdaugh retrial to be moved out of Lowcountry",
+      "url": "https://www.msn.com/en-us/news/news/breaking-murdaugh-retrial-to-be-moved-out-of-lowcountry/ar-AA2bQ8rR",
       "flag": null
     },
     {
@@ -72,9 +93,9 @@
     },
     {
       "ts": "2026-09-08T14:06:00.000Z",
-      "outlet": "via Yahoo News",
+      "outlet": "WCBD News 2",
       "headline": "Murdaugh trial moves to Sumter County, court orders",
-      "url": "https://www.yahoo.com/news/us/articles/murdaugh-trial-moves-sumter-county-210611008.html",
+      "url": "https://www.counton2.com/the-murdaugh-investigation/murdaugh-trial-moves-to-sumter-county-court-orders/",
       "flag": null
     },
     {
@@ -678,35 +699,9 @@
       "headline": "Tentative date set for Alex Murdaugh retrial in 2027",
       "url": "https://www.goerie.com/story/news/crime/2026/06/29/alex-murdaugh-murder-retrial-begins/90735924007/",
       "flag": null
-    },
-    {
-      "ts": "2026-06-29T08:01:13.000Z",
-      "outlet": "via MSN",
-      "headline": "Alex Murdaugh returns to court to hash out retrial details",
-      "url": "https://www.msn.com/en-us/crime/general/alex-murdaugh-returns-to-court-to-hash-out-retrial-details/ar-AA26OlNT",
-      "flag": null
-    },
-    {
-      "ts": "2026-06-29T03:54:00.000Z",
-      "outlet": "infobae.com",
-      "headline": "El caso Alex Murdaugh: todo sobre el comienzo del nuevo juicio tras la anulaci&#243;n de su condena en Carolina del Sur",
-      "url": "https://www.infobae.com/estados-unidos/2026/06/29/el-caso-alex-murdaugh-todo-sobre-el-comienzo-del-nuevo-juicio-tras-la-anulacion-de-su-condena-en-carolina-del-sur/",
-      "flag": null
-    },
-    {
-      "ts": "2026-06-28T21:07:00.000Z",
-      "outlet": "10TV Columbus",
-      "headline": "Alex Murdaugh's true crime saga returns as the date for his new murder trial is set",
-      "url": "https://www.10tv.com/article/syndication/associatedpress/alex-murdaughs-true-crime-saga-continues-as-he-heads-to-court-for-hearing-on-murder-retrial/616-29b580c5-0fe6-4bd9-b6fa-bf22f946e388",
-      "flag": null
     }
   ],
   "seen": [
-    "vkkj4f",
-    "9myfu",
-    "nar3c3",
-    "jzmqeu",
-    "18o7a10",
     "1yf73bj",
     "d0q6up",
     "11w97en",
@@ -1301,6 +1296,11 @@
     "174bum8",
     "1gbjm66",
     "q5mx1q",
-    "u527v5"
+    "u527v5",
+    "1gbjn5h",
+    "dtw1on",
+    "motvz0",
+    "1gbiyan",
+    "1q10222"
   ]
 }

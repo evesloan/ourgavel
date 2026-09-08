@@ -1,6 +1,20 @@
 {
   "items": [
     {
+      "ts": "2026-09-08T12:16:00.000Z",
+      "outlet": "WCVB",
+      "headline": "Defense attorney asks President Trump to pardon Lindsay Clancy after mistrial",
+      "url": "https://www.wcvb.com/article/reddington-clancy-trial-gma-sept-8/73639026",
+      "flag": "verdict-watch"
+    },
+    {
+      "ts": "2026-09-08T11:27:22.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Patrick Clancy’s attorney issues new statement after ‘escalating’ misinformation campaign",
+      "url": "https://www.boston25news.com/news/local/patrick-clancys-attorney-issues-new-statement-after-escalating-misinformation-campaign/3XP2RZKCSFCSJG57K5RZYYKZHA/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-08T11:27:22.000Z",
       "outlet": "Boston 25 News",
       "headline": "Patrick Clancy attorney issues new statement after ‘escalating’ misinformation campaign",
@@ -12,6 +26,13 @@
       "outlet": "WCVB",
       "headline": "'Enough is enough': Patrick Clancy at center of 'destructive defamation campaign,' attorney says",
       "url": "https://www.wcvb.com/article/patrick-clancy-statement-lindsay-mistrial-sept-8/73639494",
+      "flag": null
+    },
+    {
+      "ts": "2026-09-08T07:56:48.000Z",
+      "outlet": "NBC10 Boston",
+      "headline": "Defense attorney calls on President Trump to pardon Lindsay Clancy",
+      "url": "https://www.nbcboston.com/news/local/kevin-reddington-in-gma-interview-calls-for-lindsay-clancy-pardon/4010811/",
       "flag": null
     },
     {
@@ -678,27 +699,6 @@
       "headline": "What happens next if Lindsay Clancy jury can't reach a verdict?",
       "url": "https://www.nbcboston.com/news/local/lindsay-clancy-trial-what-happens-with-hung-jury-mistrial/4007820/",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-09-02T07:55:28.000Z",
-      "outlet": "NBC10 Boston",
-      "headline": "Lindsay Clancy verdict watch: Deadlocked jury returns for Day 5 of deliberations",
-      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-trial-verdict-live-stream-live-updates-2/4007790/",
-      "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-09-02T03:31:19.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "Sutton woman faces intimidation charges after incident outside Lindsay Clancy trial",
-      "url": "https://www.boston25news.com/news/local/sutton-woman-faces-intimidation-charges-after-incident-outside-lindsay-clancy-trial/BFTHINQKXFAVVDFBVAPXJCMDXU/",
-      "flag": null
-    },
-    {
-      "ts": "2026-09-02T00:47:00.000Z",
-      "outlet": "WCVB",
-      "headline": "Woman charged with intimidation outside courthouse where Lindsay Clancy jury is deliberating",
-      "url": "https://www.wcvb.com/article/lindsay-clancy-trial-courthouse-arrest/73586498",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
@@ -934,6 +934,9 @@
     "8fjor2",
     "rxonoa",
     "pwfpmh",
-    "98rmzf"
+    "98rmzf",
+    "1x0jdyo",
+    "1nuypjr",
+    "i61lb8"
   ]
 }

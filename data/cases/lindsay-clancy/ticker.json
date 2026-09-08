@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-08T15:18:32.000Z",
+      "outlet": "Court TV",
+      "headline": "‘Law enforcement has been notified’: Lindsay Clancy’s husband threatens legal action for ‘outright falsehoods’",
+      "url": "https://www.courttv.com/news/law-enforcement-has-been-notified-lindsay-clancys-husband-threatens-legal-action-for-outright-falsehoods/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-08T14:26:04.000Z",
       "outlet": "Boston.com",
       "headline": "Patrick Clancy threatens legal action over ‘vile’ conspiracy theories in new statement via lawyer",
@@ -692,13 +699,6 @@
       "headline": "Lindsay Clancy trial: Deadlocked jury returns for 5th day of deliberations",
       "url": "https://www.boston25news.com/news/local/lindsay-clancy-trial-deadlocked-jury-returns-5th-day-deliberations/NLBPH3RFV5HETIGV2JA2ICE7LU/",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-09-02T10:29:32.000Z",
-      "outlet": "NBC10 Boston",
-      "headline": "Woman charged with photographing jurors outside courthouse where Lindsay Clancy trial is being held",
-      "url": "https://www.nbcboston.com/news/local/dawn-light-arrested-for-photographing-lindsay-clancy-jurors/4007991/",
-      "flag": null
     }
   ],
   "seen": [
@@ -939,6 +939,7 @@
     "1nuypjr",
     "i61lb8",
     "1iwkfff",
-    "1adcnjg"
+    "1adcnjg",
+    "c8hpb6"
   ]
 }

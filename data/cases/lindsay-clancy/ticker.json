@@ -1,6 +1,27 @@
 {
   "items": [
     {
+      "ts": "2026-09-08T20:04:27.000Z",
+      "outlet": "Court TV",
+      "headline": "Attorney says mom ‘invested’ in Lindsay Clancy trial had psychotic episode before son was killed",
+      "url": "https://www.courttv.com/news/attorney-says-mom-invested-in-lindsay-clancy-trial-had-psychotic-episode-before-son-was-killed/",
+      "flag": null
+    },
+    {
+      "ts": "2026-09-08T19:59:55.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "What’s next for Lindsay Clancy? Attorney asks for presidential pardon after mistrial",
+      "url": "https://www.boston25news.com/news/local/whats-next-lindsay-clancy-attorney-asks-presidential-pardon-after-mistrial/ZPLKYR6LKZF3DO4SFG6DZTL4WE/",
+      "flag": "verdict-watch"
+    },
+    {
+      "ts": "2026-09-08T16:06:06.000Z",
+      "outlet": "NBC10 Boston",
+      "headline": "3 Lindsay Clancy jurors speak out in new interview",
+      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-trial-juror-interview-video/4011169/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-08T15:45:41.000Z",
       "outlet": "Boston.com",
       "headline": "Lindsay Clancy attorney Kevin Reddington asks Trump to pardon her on ‘Good Morning America’",
@@ -678,27 +699,6 @@
       "headline": "Livestream: Lindsay Clancy trial jurors resume deliberations after reporting deadlock",
       "url": "https://www.boston.com/news/crime/2026/09/02/livestream-lindsay-clancy-jurors-deliberate-after-deadlock/",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-09-02T13:07:57.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "What happens if the Lindsay Clancy jury can’t reach a unanimous verdict?",
-      "url": "https://www.boston25news.com/news/local/what-happens-if-lindsay-clancy-jury-cant-reach-unanimous-verdict/7ESLPYMWTZFR5OFX2IOXZLXZRY/",
-      "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-09-02T13:01:01.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "Lindsay Clancy trial (live updates): Deadlocked jury returns for 5th day of deliberations",
-      "url": "https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-deadlocked-jury-returns-5th-day-deliberations/KBFJCBSS6VH4BLJOAW6MO6ZYL4/",
-      "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-09-02T13:00:26.000Z",
-      "outlet": "NBC10 Boston",
-      "headline": "What's it like on the Lindsay Clancy jury? Karen Read juror shares his experience",
-      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-trial-jury-karen-read-juror-experience/4007980/",
-      "flag": null
     }
   ],
   "seen": [
@@ -942,6 +942,9 @@
     "1adcnjg",
     "c8hpb6",
     "15m2q1k",
-    "hd68c8"
+    "hd68c8",
+    "pnnwpn",
+    "wyhpua",
+    "79oct0"
   ]
 }

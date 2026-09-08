@@ -1,6 +1,20 @@
 {
   "items": [
     {
+      "ts": "2026-09-08T11:27:22.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Patrick Clancy attorney issues new statement after ‘escalating’ misinformation campaign",
+      "url": "https://www.boston25news.com/news/local/patrick-clancy-attorney-issues-new-statement-after-escalating-misinformation-campaign/3XP2RZKCSFCSJG57K5RZYYKZHA/",
+      "flag": null
+    },
+    {
+      "ts": "2026-09-08T11:24:00.000Z",
+      "outlet": "WCVB",
+      "headline": "'Enough is enough': Patrick Clancy at center of 'destructive defamation campaign,' attorney says",
+      "url": "https://www.wcvb.com/article/patrick-clancy-statement-lindsay-mistrial-sept-8/73639494",
+      "flag": null
+    },
+    {
       "ts": "2026-09-08T00:33:37.000Z",
       "outlet": "Boston 25 News",
       "headline": "Illinois mom charged with killing toddler was closely following Lindsay Clancy trial, officials say",
@@ -685,20 +699,6 @@
       "headline": "Woman charged with intimidation outside courthouse where Lindsay Clancy jury is deliberating",
       "url": "https://www.wcvb.com/article/lindsay-clancy-trial-courthouse-arrest/73586498",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-09-01T21:12:00.000Z",
-      "outlet": "WCVB",
-      "headline": "'Heartening': Lindsay Clancy's attorney reacts to jury working through impasse",
-      "url": "https://www.wcvb.com/article/lindsay-clancy-sad-awaiting-verdict-sept-1/73584874",
-      "flag": null
-    },
-    {
-      "ts": "2026-09-01T20:37:58.000Z",
-      "outlet": "NBC10 Boston",
-      "headline": "Woman arrested outside courthouse where Lindsay Clancy trial is being held",
-      "url": "https://www.nbcboston.com/news/local/woman-arrested-outside-courthouse-where-lindsay-clancy-trial-is-being-held/4007656/",
-      "flag": null
     }
   ],
   "seen": [
@@ -932,6 +932,8 @@
     "kouh12",
     "1ehmplw",
     "8fjor2",
-    "rxonoa"
+    "rxonoa",
+    "pwfpmh",
+    "98rmzf"
   ]
 }

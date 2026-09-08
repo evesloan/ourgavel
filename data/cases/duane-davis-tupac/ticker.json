@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-08T05:10:16.000Z",
+      "outlet": "KTNV Las Vegas",
+      "headline": "Tupac Shakur fans gather on 30th anniversary of his death after conviction in case",
+      "url": "https://www.ktnv.com/news/tupac-shakur-fans-gather-on-30th-anniversary-of-his-death-after-conviction-in-case",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-08T04:18:20.000Z",
       "outlet": "News 3 Las Vegas",
       "headline": "Exclusive: Tupac Shakur investigator speaks publicly for first time after conviction",
@@ -600,6 +607,7 @@
     "eiec8q",
     "1em0q1m",
     "jyvucm",
-    "1he1imz"
+    "1he1imz",
+    "uejeic"
   ]
 }

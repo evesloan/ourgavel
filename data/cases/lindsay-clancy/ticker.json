@@ -1,6 +1,20 @@
 {
   "items": [
     {
+      "ts": "2026-09-08T15:45:41.000Z",
+      "outlet": "Boston.com",
+      "headline": "Lindsay Clancy attorney Kevin Reddington asks Trump to pardon her on ‘Good Morning America’",
+      "url": "https://www.boston.com/news/crime/2026/09/08/lindsay-clancy-kevin-reddington-trump-pardon-gma/",
+      "flag": null
+    },
+    {
+      "ts": "2026-09-08T15:45:00.000Z",
+      "outlet": "WCVB",
+      "headline": "Woman with reported interest in Lindsay Clancy case to appear in court for alleged murder of her son",
+      "url": "https://www.wcvb.com/article/illinois-woman-charged-son-murder-hearing/73641754",
+      "flag": null
+    },
+    {
       "ts": "2026-09-08T15:18:32.000Z",
       "outlet": "Court TV",
       "headline": "‘Law enforcement has been notified’: Lindsay Clancy’s husband threatens legal action for ‘outright falsehoods’",
@@ -685,20 +699,6 @@
       "headline": "What's it like on the Lindsay Clancy jury? Karen Read juror shares his experience",
       "url": "https://www.nbcboston.com/news/local/lindsay-clancy-trial-jury-karen-read-juror-experience/4007980/",
       "flag": null
-    },
-    {
-      "ts": "2026-09-02T12:48:13.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "What the Lindsay Clancy jury’s silence could mean as deliberations enter 5th day",
-      "url": "https://www.boston25news.com/news/local/what-lindsay-clancy-jurys-silence-could-mean-deliberations-enter-5th-day/7ESLPYMWTZFR5OFX2IOXZLXZRY/",
-      "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-09-02T11:12:05.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "Lindsay Clancy trial: Deadlocked jury returns for 5th day of deliberations",
-      "url": "https://www.boston25news.com/news/local/lindsay-clancy-trial-deadlocked-jury-returns-5th-day-deliberations/NLBPH3RFV5HETIGV2JA2ICE7LU/",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
@@ -940,6 +940,8 @@
     "i61lb8",
     "1iwkfff",
     "1adcnjg",
-    "c8hpb6"
+    "c8hpb6",
+    "15m2q1k",
+    "hd68c8"
   ]
 }

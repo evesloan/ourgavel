@@ -389,6 +389,13 @@
       "ts": "2026-08-14T05:12:00.000Z",
       "outlet": "mynorthwest.com",
       "headline": "Judge moves Alex Murdaugh retrial from small county, but motion to toss out case will wait",
+      "url": "https://mynorthwest.com/national/judge-moves-alex-murdaugh-retrial-from-small-county-but-motion-to-toss-out-case-will-wait",
+      "flag": null
+    },
+    {
+      "ts": "2026-08-14T05:12:00.000Z",
+      "outlet": "mynorthwest.com",
+      "headline": "Judge moves Alex Murdaugh retrial from small county, but motion to toss out case will wait",
       "url": "https://mynorthwest.com/national/judge-moves-alex-murdaugh-retrial-from-small-county-but-motion-to-toss-out-case-will-wait/4266097",
       "flag": null
     },
@@ -692,17 +699,9 @@
       "headline": "Becky Hill pleads guilty to showing sealed exhibits in Alex Murdaugh’s trial",
       "url": "https://www.courttv.com/news/becky-hill-pleads-guilty-to-showing-sealed-exhibits-in-alex-murdaughs-trial/",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2025-11-30T13:30:11.000Z",
-      "outlet": "Court TV",
-      "headline": "South Carolina Supreme Court sets date for Murdaugh appeal",
-      "url": "https://www.courttv.com/news/south-carolina-supreme-court-sets-date-for-murdaugh-appeal/",
-      "flag": null
     }
   ],
   "seen": [
-    "1lxygr2",
     "14s0d30",
     "x3l022",
     "aw659d",
@@ -1301,6 +1300,7 @@
     "zl91g1",
     "1fnbsof",
     "1fnbjw6",
-    "1b0t6nh"
+    "1b0t6nh",
+    "1a1yt7k"
   ]
 }

@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-08T00:33:37.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Illinois mom charged with killing toddler was closely following Lindsay Clancy trial, officials say",
+      "url": "https://www.boston25news.com/news/local/illinois-mom-charged-with-killing-toddler-was-closely-following-lindsay-clancy-trial-officials-say/NACO77H5LNCBVPKQH7PBYRTIBA/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-08T00:03:45.000Z",
       "outlet": "Boston.com",
       "headline": "Illinois mom charged with killing toddler was closely following Lindsay Clancy trial, officials say",
@@ -692,13 +699,6 @@
       "headline": "Woman arrested outside courthouse where Lindsay Clancy trial is being held",
       "url": "https://www.nbcboston.com/news/local/woman-arrested-outside-courthouse-where-lindsay-clancy-trial-is-being-held/4007656/",
       "flag": null
-    },
-    {
-      "ts": "2026-09-01T20:11:14.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "Lindsay Clancy jury goes home after a fourth day without a verdict and signals an impasse",
-      "url": "https://www.boston25news.com/news/local/lindsay-clancy-jury-goes-home-after-fourth-day-without-verdict-signals-an-impasse/INXT5HB3UBFLDGCWM53GH4SGT4/",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
@@ -931,6 +931,7 @@
     "vd63ir",
     "kouh12",
     "1ehmplw",
-    "8fjor2"
+    "8fjor2",
+    "rxonoa"
   ]
 }

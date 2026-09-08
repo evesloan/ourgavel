@@ -1,6 +1,20 @@
 {
   "items": [
     {
+      "ts": "2026-09-08T21:01:46.000Z",
+      "outlet": "FITSNews",
+      "headline": "Alex Murdaugh Murder Retrial Moved To Sumter County",
+      "url": "https://www.fitsnews.com/2026/09/08/alex-murdaugh-murder-retrial-moved-to-sumter-county/",
+      "flag": null
+    },
+    {
+      "ts": "2026-09-08T13:56:00.000Z",
+      "outlet": "via MSN",
+      "headline": "Murdaugh retrial to take place in Sumter County",
+      "url": "https://www.msn.com/en-us/news/news/murdaugh-retrial-to-take-place-in-sumter-county/ar-AA2bPtFr",
+      "flag": null
+    },
+    {
       "ts": "2026-09-03T09:40:23.000Z",
       "outlet": "via MSN",
       "headline": "Buster Murdaugh's libel lawsuit against media companies can go forward, judge rules",
@@ -685,25 +699,9 @@
       "headline": "Buster Murdaugh reaches settlement in lawsuit against Warner Bros.",
       "url": "https://www.courttv.com/news/buster-murdaugh-reaches-settlement-in-lawsuit-against-warner-bros/",
       "flag": null
-    },
-    {
-      "ts": "2026-02-11T16:12:38.000Z",
-      "outlet": "Court TV",
-      "headline": "Alex Murdaugh’s attorneys push for new trial but say ‘Nobody wants to do this again’",
-      "url": "https://www.courttv.com/news/alex-murdaughs-fight-for-new-trial-heads-to-south-carolina-supreme-court/",
-      "flag": null
-    },
-    {
-      "ts": "2025-12-08T15:29:05.000Z",
-      "outlet": "Court TV",
-      "headline": "Becky Hill pleads guilty to showing sealed exhibits in Alex Murdaugh’s trial",
-      "url": "https://www.courttv.com/news/becky-hill-pleads-guilty-to-showing-sealed-exhibits-in-alex-murdaughs-trial/",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
-    "14s0d30",
-    "x3l022",
     "aw659d",
     "17ynuir",
     "1ovzg19",
@@ -1301,6 +1299,8 @@
     "1fnbsof",
     "1fnbjw6",
     "1b0t6nh",
-    "1a1yt7k"
+    "1a1yt7k",
+    "1gbjjig",
+    "161mtqb"
   ]
 }

@@ -15,6 +15,27 @@
       "flag": null
     },
     {
+      "ts": "2026-09-08T15:38:24.000Z",
+      "outlet": "via MSN",
+      "headline": "Judge picks new location for Alex Murdaugh's double-murder retrial",
+      "url": "https://www.msn.com/en-us/news/news/judge-picks-new-location-for-alex-murdaugh-s-double-murder-retrial/ar-AA2bPwXW",
+      "flag": null
+    },
+    {
+      "ts": "2026-09-08T15:09:00.000Z",
+      "outlet": "via MSN",
+      "headline": "South Carolina judge moves Alex Murdaugh’s double murder retrial to Sumter County",
+      "url": "https://www.msn.com/en-us/news/other/south-carolina-judge-moves-alex-murdaugh-s-double-murder-retrial-to-sumter-county/vi-AA2bPYbW",
+      "flag": null
+    },
+    {
+      "ts": "2026-09-08T14:57:00.000Z",
+      "outlet": "wrdw.com",
+      "headline": "Murdaugh retrial to take place in Sumter County, judge rules",
+      "url": "https://www.wrdw.com/2026/09/08/murdaugh-retrial-take-place-sumter-county-judge-rules/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-08T14:34:49.000Z",
       "outlet": "via MSN",
       "headline": "Judge orders Alex Murdaugh murder retrial moved to nearby county",
@@ -678,33 +699,9 @@
       "headline": "Alex Murdaugh's true crime saga returns as the date for his new murder trial is set",
       "url": "https://www.10tv.com/article/syndication/associatedpress/alex-murdaughs-true-crime-saga-continues-as-he-heads-to-court-for-hearing-on-murder-retrial/616-29b580c5-0fe6-4bd9-b6fa-bf22f946e388",
       "flag": null
-    },
-    {
-      "ts": "2026-06-25T21:01:31.000Z",
-      "outlet": "Court TV",
-      "headline": "Alex Murdaugh claims unknown male DNA was under slain wife’s nails",
-      "url": "https://www.courttv.com/news/alex-murdaugh-claims-unknown-male-dna-was-under-slain-wifes-nails/",
-      "flag": null
-    },
-    {
-      "ts": "2026-06-25T09:48:00.000Z",
-      "outlet": "via MSN",
-      "headline": "Alex Murdaugh wants new venue, DNA evidence review in murder retrial",
-      "url": "https://www.msn.com/en-us/crime/general/alex-murdaugh-wants-new-venue-dna-evidence-review-in-murder-retrial/ar-AA26xn4B",
-      "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-06-25T07:31:13.000Z",
-      "outlet": "via MSN",
-      "headline": "Alex Murdaugh's attorneys seek venue change, new DNA testing ahead of retrial hearing",
-      "url": "https://www.msn.com/en-us/news/crime/alex-murdaughs-attorneys-seek-venue-change-new-dna-testing-ahead-of-retrial-hearing/ar-AA26wCWj",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
-    "49094a",
-    "qp5pys",
-    "vsldrb",
     "vkkj4f",
     "9myfu",
     "nar3c3",
@@ -1301,6 +1298,9 @@
     "s5nr12",
     "drstye",
     "1gbi6ye",
-    "174bum8"
+    "174bum8",
+    "1gbjm66",
+    "q5mx1q",
+    "u527v5"
   ]
 }

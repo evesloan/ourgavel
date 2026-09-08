@@ -8,6 +8,34 @@
       "flag": null
     },
     {
+      "ts": "2026-09-08T14:34:00.000Z",
+      "outlet": "wsav.com",
+      "headline": "Murdaugh trial to be moved out of lowcountry",
+      "url": "https://www.wsav.com/news/murdaugh-trial-to-be-moved-out-of-lowcountry/",
+      "flag": null
+    },
+    {
+      "ts": "2026-09-08T14:09:05.000Z",
+      "outlet": "via MSN",
+      "headline": "Alex Murdaugh retrial to take place in Sumter County, judge rules",
+      "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-retrial-to-take-place-in-sumter-county-judge-rules/ar-AA2bPwnI",
+      "flag": null
+    },
+    {
+      "ts": "2026-09-08T14:09:02.000Z",
+      "outlet": "via MSN",
+      "headline": "Judge orders Murdaugh retrial venue transfer to Sumter County",
+      "url": "https://www.msn.com/en-us/news/other/judge-orders-murdaugh-retrial-venue-transfer-to-sumter-county/ar-AA2bPyMn",
+      "flag": "verdict-watch"
+    },
+    {
+      "ts": "2026-09-08T14:06:00.000Z",
+      "outlet": "via Yahoo News",
+      "headline": "Murdaugh trial moves to Sumter County, court orders",
+      "url": "https://www.yahoo.com/news/us/articles/murdaugh-trial-moves-sumter-county-210611008.html",
+      "flag": null
+    },
+    {
       "ts": "2026-09-08T13:56:00.000Z",
       "outlet": "via MSN",
       "headline": "Murdaugh retrial to take place in Sumter County",
@@ -671,41 +699,9 @@
       "headline": "Buster supports his dad and named his son for him, Alex Murdaugh’s defense reveals",
       "url": "https://www.courttv.com/news/buster-supports-his-dad-and-named-his-son-for-him-alex-murdaughs-defense-reveals/",
       "flag": null
-    },
-    {
-      "ts": "2026-05-15T06:56:54.000Z",
-      "outlet": "via MSN",
-      "headline": "Alex Murdaugh defense attorney Dick Harpootlian speaks out on retrial timeline, strategy",
-      "url": "https://www.msn.com/en-us/news/crime/alex-murdaugh-defense-attorney-dick-harpootlian-speaks-out-on-retrial-timeline-strategy/ar-AA23hql3",
-      "flag": null
-    },
-    {
-      "ts": "2026-05-14T20:39:58.000Z",
-      "outlet": "via MSN",
-      "headline": "Alex Murdaugh is 'clearly not innocent' despite retrial: Attorney",
-      "url": "https://www.msn.com/en-us/news/crime/alex-murdaugh-is-clearly-not-innocent-despite-retrial-attorney/ar-AA23f8p5",
-      "flag": null
-    },
-    {
-      "ts": "2026-05-13T14:50:52.000Z",
-      "outlet": "Court TV",
-      "headline": "Clerk of Court Becky Hill’s bad behavior earns Alex Murdaugh a new murder trial",
-      "url": "https://www.courttv.com/news/clerk-of-court-becky-hills-bad-behavior-earns-alex-murdaugh-a-new-murder-trial/",
-      "flag": null
-    },
-    {
-      "ts": "2026-02-12T19:36:13.000Z",
-      "outlet": "Court TV",
-      "headline": "Buster Murdaugh reaches settlement in lawsuit against Warner Bros.",
-      "url": "https://www.courttv.com/news/buster-murdaugh-reaches-settlement-in-lawsuit-against-warner-bros/",
-      "flag": null
     }
   ],
   "seen": [
-    "aw659d",
-    "17ynuir",
-    "1ovzg19",
-    "qgeyxn",
     "z2av79",
     "5lyb6r",
     "rjo629",
@@ -1301,6 +1297,10 @@
     "1b0t6nh",
     "1a1yt7k",
     "1gbjjig",
-    "161mtqb"
+    "161mtqb",
+    "1gbjlx6",
+    "g97qb5",
+    "1tn3kkj",
+    "1gbjndu"
   ]
 }

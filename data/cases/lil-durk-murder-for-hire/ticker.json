@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-08T10:40:00.000Z",
+      "outlet": "complex.com",
+      "headline": "Lil Durk Trial Verdict: Why He Might Stay in Jail Even If He's Found Not Guilty",
+      "url": "https://www.complex.com/music/a/shawn-setaro/lil-durk-acquitted-feds-will-try-keep-him-in-jail",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-08T05:24:00.000Z",
       "outlet": "DancehallMag",
       "headline": "Lil Durk Trial: Prosecutors Push Shared-Blame Rule Ahead of Closing Arguments",
@@ -692,13 +699,6 @@
       "headline": "Lil Durk trial begins: Rapper faces life in prison in explosive case prosecutors say involves alleged hit plot",
       "url": "https://www.msn.com/en-gb/news/news/lil-durk-trial-begins-rapper-faces-life-in-prison-in-explosive-case-prosecutors-say-involves-alleged-hit-plot/ar-AA2aCovu",
       "flag": null
-    },
-    {
-      "ts": "2026-08-18T15:33:00.000Z",
-      "outlet": "via Yahoo News",
-      "headline": "Prosecutors Call Lil Durk Song a 'Call to Arms' for Revenging King Von",
-      "url": "https://www.yahoo.com/entertainment/music/articles/prosecutors-call-lil-durk-song-223304539.html",
-      "flag": null
     }
   ],
   "seen": [
@@ -869,6 +869,7 @@
     "1sj1nvq",
     "1t8gtr0",
     "1ogndvh",
-    "18cwxnk"
+    "18cwxnk",
+    "i4he1e"
   ]
 }

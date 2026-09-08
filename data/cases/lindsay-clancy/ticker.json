@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-08T00:03:45.000Z",
+      "outlet": "Boston.com",
+      "headline": "Illinois mom charged with killing toddler was closely following Lindsay Clancy trial, officials say",
+      "url": "https://www.boston.com/news/crime/2026/09/07/illinois-mom-charged-with-killing-toddler-was-closely-following-lindsay-clancy-trial-officials-say/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-07T21:36:08.000Z",
       "outlet": "Law & Crime",
       "headline": "Mom who was 'very invested' in Lindsay Clancy trial hanged 2-year-old son hours after 'actively discussing the case' with friends: Police",
@@ -692,13 +699,6 @@
       "headline": "Lindsay Clancy jury goes home after a fourth day without a verdict and signals an impasse",
       "url": "https://www.boston25news.com/news/local/lindsay-clancy-jury-goes-home-after-fourth-day-without-verdict-signals-an-impasse/INXT5HB3UBFLDGCWM53GH4SGT4/",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-09-01T20:02:28.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "LINDSAY CLANCY VERDICT STORY",
-      "url": "https://www.boston25news.com/news/local/lindsay-clancy-verdict-story/Y5EIQ2QGB5FCJKQ5VNVVR2ZL6M/",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
@@ -930,6 +930,7 @@
     "14048y3",
     "vd63ir",
     "kouh12",
-    "1ehmplw"
+    "1ehmplw",
+    "8fjor2"
   ]
 }

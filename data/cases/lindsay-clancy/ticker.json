@@ -1,6 +1,20 @@
 {
   "items": [
     {
+      "ts": "2026-09-09T13:53:48.000Z",
+      "outlet": "Court TV",
+      "headline": "Lindsay Clancy jurors say prosecution was ‘biased’ and ‘unprofessional’",
+      "url": "https://www.courttv.com/news/lindsay-clancy-jurors-say-prosecution-was-biased-and-unprofessional/",
+      "flag": null
+    },
+    {
+      "ts": "2026-09-09T09:27:56.000Z",
+      "outlet": "NBC10 Boston",
+      "headline": "Lindsay Clancy trial jurors break their silence. Here's what they told us",
+      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-jurors-speak-about-deliberations-hold-out-juror/4011580/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-09T01:13:45.000Z",
       "outlet": "Boston.com",
       "headline": "Jurors in the Lindsay Clancy trial are starting to break their silence. Here’s what they’re saying.",
@@ -685,20 +699,6 @@
       "headline": "Woman accused of recording Lindsay Clancy trial jury outside courthouse",
       "url": "https://www.wcvb.com/article/lindsay-clancy-trial-courthouse-arrest-dawn-light/73593550",
       "flag": null
-    },
-    {
-      "ts": "2026-09-02T14:36:34.000Z",
-      "outlet": "Boston.com",
-      "headline": "Lindsay Clancy trial: Mass. woman arrested for allegedly filming jurors",
-      "url": "https://www.boston.com/news/crime/2026/09/02/lindsay-clancy-trial-woman-arrested-filming-jurors/",
-      "flag": null
-    },
-    {
-      "ts": "2026-09-02T13:34:10.000Z",
-      "outlet": "Court TV",
-      "headline": "Woman accused of intimidating jurors in Lindsay Clancy’s murder trial",
-      "url": "https://www.courttv.com/news/woman-accused-of-intimidating-jurors-in-lindsay-clancys-murder-trial/",
-      "flag": null
     }
   ],
   "seen": [
@@ -947,6 +947,8 @@
     "wyhpua",
     "79oct0",
     "ph1m7g",
-    "3hetoo"
+    "3hetoo",
+    "1yixow",
+    "ar5we0"
   ]
 }

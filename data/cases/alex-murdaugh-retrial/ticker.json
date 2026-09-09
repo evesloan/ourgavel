@@ -29,6 +29,13 @@
       "flag": null
     },
     {
+      "ts": "2026-09-08T23:42:00.000Z",
+      "outlet": "abc7chicago.com",
+      "headline": "Alex Murdaugh case: Judge picks new location for double-murder retrial",
+      "url": "https://abc7chicago.com/story/alex-murdaugh-today-judge-picks-new-location-double-murder-retrial/19810409/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-08T22:45:00.000Z",
       "outlet": "via Yahoo News",
       "headline": "Judge orders Alex Murdaugh retrial to be moved to Sumter County, citing fair trial and security needs in eight-page court order",
@@ -48,6 +55,13 @@
       "headline": "Alex Murdaugh Murder Retrial Moved To Sumter County",
       "url": "https://www.fitsnews.com/2026/09/08/alex-murdaugh-murder-retrial-moved-to-sumter-county/",
       "flag": null
+    },
+    {
+      "ts": "2026-09-08T18:38:48.000Z",
+      "outlet": "via MSN",
+      "headline": "Alex Murdaugh retrial gets new venue after defense raises jury bias concerns",
+      "url": "https://www.msn.com/en-us/news/news/alex-murdaugh-retrial-gets-new-venue-after-defense-raises-jury-bias-concerns/ar-AA2bPFrB",
+      "flag": "verdict-watch"
     },
     {
       "ts": "2026-09-08T17:01:00.000Z",
@@ -685,25 +699,9 @@
       "headline": "Alex Murdaugh wants to bring murder retrial and media circus to Charleston. Prosecutors disagree.",
       "url": "https://www.postandcourier.com/murdaugh-updates/alex-murdaugh-murder-retrial-venue-charleston-sc/article_c55c896f-cb6d-4af4-afa9-64bf5cd40279.html",
       "flag": null
-    },
-    {
-      "ts": "2026-08-10T19:16:17.000Z",
-      "outlet": "Court TV",
-      "headline": "‘Admitted was false’: Alex Murdaugh says he should walk free after SLED agent presented physical evidence ‘fabricated by law enforcement’ to grand jury, motion alleges",
-      "url": "https://www.courttv.com/news/admitted-was-false-alex-murdaugh-says-he-should-walk-free-after-sled-agent-presented-physical-evidence-fabricated-by-law-enforcement-to-grand-jury-motion-alleges/",
-      "flag": null
-    },
-    {
-      "ts": "2026-08-06T14:21:46.000Z",
-      "outlet": "Court TV",
-      "headline": "Judge cites ‘fatal flaw’ in dismissing Alex Murdaugh’s lawsuit against clerk of court",
-      "url": "https://www.courttv.com/news/judge-cites-fatal-flaw-in-dismissing-alex-murdaughs-lawsuit-against-clerk-of-court/",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
-    "rl2xbq",
-    "14neoni",
     "u4x2f5",
     "1wlo1r0",
     "uvgmh9",
@@ -1301,6 +1299,8 @@
     "1gbjhke",
     "79l7bw",
     "1gshvo9",
-    "15jxobb"
+    "15jxobb",
+    "aea0de",
+    "1gbj9em"
   ]
 }

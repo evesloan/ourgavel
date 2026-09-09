@@ -1,6 +1,20 @@
 {
   "items": [
     {
+      "ts": "2026-09-09T15:03:44.000Z",
+      "outlet": "AllHipHop",
+      "headline": "Lil Durk Trial: Five Of The Best Defenses Jurors Must Weigh",
+      "url": "https://allhiphop.com/news/lil-durk-trial-five-of-the-best-defenses-jurors-must-weigh/",
+      "flag": null
+    },
+    {
+      "ts": "2026-09-09T14:03:44.000Z",
+      "outlet": "AllHipHop",
+      "headline": "Lil Durk Trial: Five Prosecution Points Jurors Must Weigh",
+      "url": "https://allhiphop.com/news/lil-durk-trial-five-prosecution-points-jurors-must-weigh/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-09T04:30:00.000Z",
       "outlet": "thesource.com",
       "headline": "Lil Durk Trial Handed to Jury: Prosecutors Say He Had “Shooters on Speed Dial,” Defense Fires Back!",
@@ -685,20 +699,6 @@
       "headline": "Lil Durk Trial Opens With Competing Accounts of ‘Revenge’ Killing",
       "url": "https://lamag.com/crimeinla/lil-durk-trial-opens-with-competing-accounts-of-revenge-killing/",
       "flag": null
-    },
-    {
-      "ts": "2026-08-24T16:46:00.000Z",
-      "outlet": "via Yahoo News",
-      "headline": "Lil Durk Trial: Prosecutors' Case And Defense Explained",
-      "url": "https://www.yahoo.com/entertainment/music/articles/lil-durk-trial-prosecutors-case-234549669.html",
-      "flag": null
-    },
-    {
-      "ts": "2026-08-24T16:45:49.000Z",
-      "outlet": "via MSN",
-      "headline": "Lil Durk trial: Prosecutors' case and defense explained",
-      "url": "https://www.msn.com/en-us/crime/general/lil-durk-trial-prosecutors-case-and-defense-explained/ar-AA2aQtyn",
-      "flag": null
     }
   ],
   "seen": [
@@ -880,6 +880,8 @@
     "9qkot9",
     "1gbju9p",
     "1gbjfxp",
-    "1feco4s"
+    "1feco4s",
+    "1dg7opf",
+    "e8iz6c"
   ]
 }

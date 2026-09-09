@@ -15,6 +15,13 @@
       "flag": null
     },
     {
+      "ts": "2026-09-08T17:01:00.000Z",
+      "outlet": "via Yahoo News",
+      "headline": "Alex Murdaugh Retrial Gets New Venue After Defense Raises Jury Bias Concerns",
+      "url": "https://www.yahoo.com/news/us/articles/alex-murdaugh-retrial-gets-venue-013848393.html",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-08T16:03:31.000Z",
       "outlet": "via MSN",
       "headline": "Alex Murdaugh murder retrial moved to Sumter County, judge rules",
@@ -50,6 +57,13 @@
       "flag": null
     },
     {
+      "ts": "2026-09-08T14:42:14.000Z",
+      "outlet": "via MSN",
+      "headline": "Sumter County to be the site for Alex Murdaugh's new double murder trial",
+      "url": "https://www.msn.com/en-us/crime/general/sumter-county-to-be-the-site-for-alex-murdaugh-s-new-double-murder-trial/ar-AA2bQw60",
+      "flag": null
+    },
+    {
       "ts": "2026-09-08T14:34:55.000Z",
       "outlet": "via MSN",
       "headline": "Breaking: Murdaugh retrial to be moved out of Lowcountry",
@@ -75,6 +89,13 @@
       "outlet": "wsav.com",
       "headline": "Murdaugh trial to be moved out of lowcountry",
       "url": "https://www.wsav.com/news/murdaugh-trial-to-be-moved-out-of-lowcountry/",
+      "flag": null
+    },
+    {
+      "ts": "2026-09-08T14:09:05.000Z",
+      "outlet": "via MSN",
+      "headline": "Alex Murdaugh retrial to take place in Sumter County, judge rules",
+      "url": "https://www.msn.com/en-us/crime/general/alex-murdaugh-retrial-to-take-place-in-sumter-county-judge-rules/ar-AA2bPkfd",
       "flag": null
     },
     {
@@ -678,33 +699,9 @@
       "headline": "What’s next in the Alex Murdaugh case? What a legal expert told us.",
       "url": "https://www.wistv.com/2026/06/30/legal-expert-weighs-murdaugh-retrial/",
       "flag": null
-    },
-    {
-      "ts": "2026-06-30T11:52:00.000Z",
-      "outlet": "The Greenville News",
-      "headline": "State opposed to Murdaugh's request for independent DNA testing, laptop",
-      "url": "https://www.greenvilleonline.com/story/news/crime/2026/06/30/alex-murdaugh-dna-test-retrial-attorney-general/90750925007/",
-      "flag": null
-    },
-    {
-      "ts": "2026-06-29T16:06:52.000Z",
-      "outlet": "Court TV",
-      "headline": "Murdaugh gets new trial date as defense fights for DNA analysis",
-      "url": "https://www.courttv.com/news/murdaugh-gets-new-trial-date-as-defense-fights-for-dna-analysis/",
-      "flag": null
-    },
-    {
-      "ts": "2026-06-29T13:00:00.000Z",
-      "outlet": "via MSN",
-      "headline": "Live updates: Alex Murdaugh appears in court as planning for retrial takes shape",
-      "url": "https://www.msn.com/en-us/news/news/live-updates-alex-murdaugh-appears-in-court-as-planning-for-retrial-takes-shape/ar-AA26Ob5l",
-      "flag": null
     }
   ],
   "seen": [
-    "11w97en",
-    "11x0ca5",
-    "rplyh3",
     "1dmtem1",
     "1k7xsbb",
     "nq2w7z",
@@ -1301,6 +1298,9 @@
     "1gbiyan",
     "1q10222",
     "1mse8ul",
-    "1gbiv9b"
+    "1gbiv9b",
+    "1cqke6i",
+    "1gbjctt",
+    "1gbk7iw"
   ]
 }

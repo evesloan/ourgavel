@@ -8,6 +8,13 @@
       "flag": null
     },
     {
+      "ts": "2026-09-08T17:54:00.000Z",
+      "outlet": "hindustantimes.com",
+      "headline": "Lil Durk trial: Why the rapper may remain behind bars even if he is found not guilty",
+      "url": "https://www.hindustantimes.com/world-news/us-news/lil-durk-trial-why-the-rapper-may-remain-behind-bars-even-if-he-is-found-not-guilty-101788901722030.html",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-08T16:55:15.000Z",
       "outlet": "via MSN",
       "headline": "Lil Durk trial: Brian Steel says OTF Jam 'is not human,' insists he's a 'serial killer'",
@@ -20,13 +27,6 @@
       "headline": "Brian Steel Says OTF Jam “Not Human” In Lil Durk Trial: Says The Feds Wants Jurors To Trust A “Serial Killer”",
       "url": "https://www.msn.com/en-us/news/other/brian-steel-says-otf-jam-not-human-in-lil-durk-trial-says-the-feds-wants-jurors-to-trust-a-serial-killer/ar-AA2bPuAy",
       "flag": null
-    },
-    {
-      "ts": "2026-09-08T14:57:24.000Z",
-      "outlet": "via MSN",
-      "headline": "Lil Durk trial: Why the rapper may remain behind bars even if he is found not guilty",
-      "url": "https://www.msn.com/en-in/news/other/lil-durk-trial-why-the-rapper-may-remain-behind-bars-even-if-he-is-found-not-guilty/ar-AA2bQ0EE",
-      "flag": "verdict-watch"
     },
     {
       "ts": "2026-09-08T11:15:00.000Z",
@@ -876,6 +876,7 @@
     "1gbis1j",
     "1pn3lol",
     "1gbjk51",
-    "1gbj8rt"
+    "1gbj8rt",
+    "9qkot9"
   ]
 }

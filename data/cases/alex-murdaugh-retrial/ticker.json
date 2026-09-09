@@ -15,6 +15,13 @@
       "flag": null
     },
     {
+      "ts": "2026-09-08T16:03:31.000Z",
+      "outlet": "via MSN",
+      "headline": "Alex Murdaugh murder retrial moved to Sumter County, judge rules",
+      "url": "https://www.msn.com/en-us/crime/general/alex-murdaugh-murder-retrial-moved-to-sumter-county-judge-rules/ar-AA2bQ635",
+      "flag": null
+    },
+    {
       "ts": "2026-09-08T16:03:00.000Z",
       "outlet": "via Yahoo News",
       "headline": "Alex Murdaugh murder retrial moved to Sumter County, judge rules",
@@ -26,13 +33,6 @@
       "outlet": "union-bulletin.com",
       "headline": "Sumter County to be site for Alex Murdaugh’s new double murder trial",
       "url": "https://www.union-bulletin.com/news/national/sumter-county-to-be-site-for-alex-murdaugh-s-new-double-murder-trial/article_2fb8bc1e-391d-5d37-965d-b1eba827eb7d.html",
-      "flag": null
-    },
-    {
-      "ts": "2026-09-08T15:38:24.000Z",
-      "outlet": "via MSN",
-      "headline": "Judge picks new location for Alex Murdaugh's double-murder retrial",
-      "url": "https://www.msn.com/en-us/news/news/judge-picks-new-location-for-alex-murdaugh-s-double-murder-retrial/ar-AA2bPwXW",
       "flag": null
     },
     {
@@ -117,6 +117,13 @@
       "outlet": "The Post and Courier",
       "headline": "Retrial of Alex Murdaugh’s double murder case being moved to Sumter County",
       "url": "https://www.postandcourier.com/murdaugh-updates/murdaugh-murder-retrial-venue-change-sumter-county-sc/article_d9e96862-77ef-49ca-9afc-903336df883c.html",
+      "flag": null
+    },
+    {
+      "ts": "2026-09-08T08:38:00.000Z",
+      "outlet": "abcnews.com",
+      "headline": "Judge picks new location for Alex Murdaugh's double-murder retrial",
+      "url": "https://abcnews.com/US/judge-picks-new-location-alex-murdaughs-double-murder/story?id=136286360",
       "flag": null
     },
     {
@@ -692,18 +699,9 @@
       "headline": "Live updates: Alex Murdaugh appears in court as planning for retrial takes shape",
       "url": "https://www.msn.com/en-us/news/news/live-updates-alex-murdaugh-appears-in-court-as-planning-for-retrial-takes-shape/ar-AA26Ob5l",
       "flag": null
-    },
-    {
-      "ts": "2026-06-29T12:33:00.000Z",
-      "outlet": "goerie.com",
-      "headline": "Tentative date set for Alex Murdaugh retrial in 2027",
-      "url": "https://www.goerie.com/story/news/crime/2026/06/29/alex-murdaugh-murder-retrial-begins/90735924007/",
-      "flag": null
     }
   ],
   "seen": [
-    "1yf73bj",
-    "d0q6up",
     "11w97en",
     "11x0ca5",
     "rplyh3",
@@ -1301,6 +1299,8 @@
     "dtw1on",
     "motvz0",
     "1gbiyan",
-    "1q10222"
+    "1q10222",
+    "1mse8ul",
+    "1gbiv9b"
   ]
 }

@@ -8,6 +8,13 @@
       "flag": null
     },
     {
+      "ts": "2026-09-08T16:55:15.000Z",
+      "outlet": "via MSN",
+      "headline": "Lil Durk trial: Brian Steel says OTF Jam 'is not human,' insists he's a 'serial killer'",
+      "url": "https://www.msn.com/en-us/crime/general/lil-durk-trial-brian-steel-says-otf-jam-is-not-human-insists-he-s-a-serial-killer/ar-AA2bPEVR",
+      "flag": null
+    },
+    {
       "ts": "2026-09-08T16:26:01.000Z",
       "outlet": "via MSN",
       "headline": "Brian Steel Says OTF Jam “Not Human” In Lil Durk Trial: Says The Feds Wants Jurors To Trust A “Serial Killer”",
@@ -692,13 +699,6 @@
       "headline": "Lil Durk trial: Defense claims rapper unfairly offered as 'big fish'",
       "url": "https://www.msn.com/en-us/music/news/lil-durk-trial-defense-claims-rapper-unfairly-offered-as-big-fish/ar-AA2aPOy9",
       "flag": null
-    },
-    {
-      "ts": "2026-08-24T11:27:00.000Z",
-      "outlet": "billboard.com",
-      "headline": "Lil Durk Put a Bounty on Quando Rondo for ‘Revenge,’ Jury Told as Murder-for-Hire Trial Opens",
-      "url": "https://www.billboard.com/pro/lil-durk-murder-for-hire-trial-begins/",
-      "flag": null
     }
   ],
   "seen": [
@@ -875,6 +875,7 @@
     "1gbjldr",
     "1gbis1j",
     "1pn3lol",
-    "1gbjk51"
+    "1gbjk51",
+    "1gbj8rt"
   ]
 }

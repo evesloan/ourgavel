@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-09T22:23:00.000Z",
+      "outlet": "WCVB",
+      "headline": "Lindsay Clancy defense to seek dismissal after hung jury",
+      "url": "https://www.wcvb.com/article/lindsay-clancy-double-jeopardy-motion/73658045",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-09T16:56:29.000Z",
       "outlet": "NBC10 Boston",
       "headline": "Have questions about our Lindsay Clancy juror interview? Ask Sue O'Connell here",
@@ -692,13 +699,6 @@
       "headline": "Lindsay Clancy trial (live updates): Deadlocked jury continues deliberations after judge’s warning",
       "url": "https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-deadlocked-jury-day-5-deliberations-after-judges-warning/KBFJCBSS6VH4BLJOAW6MO6ZYL4/",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-09-02T17:43:55.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "What’s taking so long? Our legal expert breaks down the Lindsay Clancy jury deliberations",
-      "url": "https://www.boston25news.com/news/local/whats-taking-so-long-our-legal-expert-breaks-down-lindsay-clancy-jury-deliberations/IV7RABMWHZG6FAZPRDSSBQWFNE/",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
@@ -952,6 +952,7 @@
     "ar5we0",
     "17rmw18",
     "11wef97",
-    "2cmqs6"
+    "2cmqs6",
+    "okf4dr"
   ]
 }

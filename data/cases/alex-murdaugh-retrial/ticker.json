@@ -1,6 +1,20 @@
 {
   "items": [
     {
+      "ts": "2026-09-09T22:45:54.000Z",
+      "outlet": "WLTX News19",
+      "headline": "Sumter businesses anticipate economic impact of Alex Murdaugh murder retrial",
+      "url": "https://www.wltx.com/article/news/local/sumter-businesses-economic-impact-alex-murdaugh-murder-retrial/101-24a7596f-ca3d-4bf1-87dd-5b1ce69c849f",
+      "flag": null
+    },
+    {
+      "ts": "2026-09-09T15:04:26.000Z",
+      "outlet": "via MSN",
+      "headline": "‘On the map’: Sumter prepares to host Alex Murdaugh retrial",
+      "url": "https://www.msn.com/en-us/crime/general/on-the-map-sumter-prepares-to-host-alex-murdaugh-retrial/ar-AA2bUt77",
+      "flag": null
+    },
+    {
       "ts": "2026-09-09T13:43:00.000Z",
       "outlet": "foxcarolina.com",
       "headline": "Alex Murdaugh's retrial will be in Sumter County",
@@ -685,26 +699,9 @@
       "headline": "Judge orders Alex Murdaugh’s murder retrial moved out of Colleton",
       "url": "https://www.yahoo.com/news/us/articles/alex-murdaugh-friday-murder-hearing-093000305.html",
       "flag": null
-    },
-    {
-      "ts": "2026-08-14T02:06:00.000Z",
-      "outlet": "WCBD News 2",
-      "headline": "Could Alex Murdaugh’s retrial happen in Charleston? Defense pushes for venue change",
-      "url": "https://www.counton2.com/news/local-news/could-alex-murdaughs-retrial-happen-in-charleston-defense-pushes-for-venue-change/",
-      "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-08-13T16:38:49.000Z",
-      "outlet": "via MSN",
-      "headline": "Live: Alex Murdaugh returns to court as prosecutors, defense battle over evidence ahead of retrial",
-      "url": "https://www.msn.com/en-us/news/crime/live-alex-murdaugh-returns-to-court-as-prosecutors-defense-battle-over-evidence-ahead-of-retrial/ar-AA2a3IGJ",
-      "flag": null
     }
   ],
   "seen": [
-    "xz9org",
-    "n408tw",
-    "1onmwbm",
     "176mg70",
     "1ykk5ny",
     "15n6u30",
@@ -1301,6 +1298,9 @@
     "1gbkoh9",
     "1gbkvdm",
     "1kw7ht3",
-    "1gblsll"
+    "1gblsll",
+    "1gbmd1w",
+    "1gbmp9z",
+    "w0a5vh"
   ]
 }

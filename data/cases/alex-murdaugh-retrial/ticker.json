@@ -1,6 +1,20 @@
 {
   "items": [
     {
+      "ts": "2026-09-09T05:26:00.000Z",
+      "outlet": "baltimoresun.com",
+      "headline": "Judge makes decision on new location for Murdaugh retrial in South Carolina",
+      "url": "https://www.baltimoresun.com/2026/09/09/judge-makes-decision-on-new-location-for-murdaugh-retrial-in-south-carolina/",
+      "flag": null
+    },
+    {
+      "ts": "2026-09-09T05:01:00.000Z",
+      "outlet": "wyff4.com",
+      "headline": "Alex Murdaugh retrial to be held in Sumter County in 2027",
+      "url": "https://www.wyff4.com/article/alex-murdaugh-retrial-sumter-county-2027/73651383",
+      "flag": null
+    },
+    {
       "ts": "2026-09-09T03:00:00.000Z",
       "outlet": "via Yahoo News",
       "headline": "Why Alex Murdaugh’s Retrial Had To Leave Colleton County",
@@ -117,6 +131,13 @@
       "outlet": "wsav.com",
       "headline": "Murdaugh trial to be moved out of lowcountry",
       "url": "https://www.wsav.com/news/murdaugh-trial-to-be-moved-out-of-lowcountry/",
+      "flag": null
+    },
+    {
+      "ts": "2026-09-08T14:09:05.000Z",
+      "outlet": "via MSN",
+      "headline": "Alex Murdaugh retrial to take place in Sumter County, judge rules",
+      "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-retrial-to-take-place-in-sumter-county-judge-rules/ar-AA2bPQrg",
       "flag": null
     },
     {
@@ -678,33 +699,9 @@
       "headline": "Federal judge won't make disgraced clerk pay Alex Murdaugh's $600,000 in legal fees for 1st trial",
       "url": "https://www.newsday.com/news/nation/alex-murdaugh-killings-murder-retrial-defense-fees-p53347",
       "flag": null
-    },
-    {
-      "ts": "2026-07-31T15:03:14.000Z",
-      "outlet": "Court TV",
-      "headline": "Alex Murdaugh’s attorneys fight for access to unknown male DNA found under victim’s nails",
-      "url": "https://www.courttv.com/news/alex-murdaughs-attorneys-fight-for-access-to-unknown-male-dna-found-under-victims-nails/",
-      "flag": null
-    },
-    {
-      "ts": "2026-07-30T22:00:00.000Z",
-      "outlet": "The Post and Courier",
-      "headline": "Murdaugh defense lawyers and prosecutors hit snag over fingernail DNA evidence",
-      "url": "https://www.postandcourier.com/murdaugh-updates/alex-murdaugh-retrial-dna-evidence-maggie-fingernail/article_c33e7323-1b36-4b45-92c4-19061ac84f24.html",
-      "flag": null
-    },
-    {
-      "ts": "2026-07-08T02:30:00.000Z",
-      "outlet": "via AOL",
-      "headline": "Murdaugh Judge Debra McCaslin: a bona fide member of SC’s close-knit legal tribe",
-      "url": "https://www.aol.com/articles/murdaugh-judge-debra-mccaslin-bona-093000000.html",
-      "flag": null
     }
   ],
   "seen": [
-    "1tmyjd1",
-    "1z0y6ih",
-    "bseck1",
     "1nkttd9",
     "rl2xbq",
     "14neoni",
@@ -1301,6 +1298,9 @@
     "kznlwm",
     "op8c7i",
     "13jxbnq",
-    "1s1hnwk"
+    "1s1hnwk",
+    "1gbjhke",
+    "79l7bw",
+    "1gshvo9"
   ]
 }

@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-08T22:45:34.000Z",
+      "outlet": "via MSN",
+      "headline": "Lil Durk trial update: What did he do and when could the verdict come in murder-for-hire case?",
+      "url": "https://www.msn.com/en-gb/news/other/lil-durk-trial-update-what-did-he-do-and-when-could-the-verdict-come-in-murder-for-hire-case/ar-AA2bR1Lb",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-08T22:28:09.000Z",
       "outlet": "via MSN",
       "headline": "Lil Durk trial update: When is the verdict and what happens next for the rapper after murder-for-hire case?",
@@ -692,13 +699,6 @@
       "headline": "Cooperating witnesses revealed in Lil Durk’s murder-for-hire trial include OTF Jam and two men allegedly hired by Durk to kill Quando Rondo – report",
       "url": "https://www.msn.com/en-us/news/other/cooperating-witnesses-revealed-in-lil-durk-s-murder-for-hire-trial-include-otf-jam-and-two-men-allegedly-hired-by-durk-to-kill-quando-rondo-report/ar-AA2aR0at",
       "flag": null
-    },
-    {
-      "ts": "2026-08-24T13:46:06.000Z",
-      "outlet": "via MSN",
-      "headline": "Lil Durk’s defense says Kavon Grant was the murder for hire mastermind who framed Durk as the “big fish”",
-      "url": "https://www.msn.com/en-us/news/crime/lil-durk-s-defense-says-kavon-grant-was-the-murder-for-hire-mastermind-who-framed-durk-as-the-big-fish/ar-AA2aPRgb",
-      "flag": null
     }
   ],
   "seen": [
@@ -878,6 +878,7 @@
     "1gbjk51",
     "1gbj8rt",
     "9qkot9",
-    "1gbju9p"
+    "1gbju9p",
+    "1gbjfxp"
   ]
 }

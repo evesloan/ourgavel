@@ -64,6 +64,13 @@
       "flag": null
     },
     {
+      "ts": "2026-09-08T14:41:00.000Z",
+      "outlet": "via Yahoo News",
+      "headline": "Sumter County to be the site for Alex Murdaugh’s new double murder trial",
+      "url": "https://www.yahoo.com/news/us/articles/sumter-county-alex-murdaugh-double-214214476.html",
+      "flag": null
+    },
+    {
       "ts": "2026-09-08T14:34:55.000Z",
       "outlet": "via MSN",
       "headline": "Breaking: Murdaugh retrial to be moved out of Lowcountry",
@@ -692,17 +699,9 @@
       "headline": "Alex Murdaugh violated jail ‘security protocols,’ shouldn’t get laptop: State",
       "url": "https://www.courttv.com/news/alex-murdaugh-violated-jail-security-protocols-shouldnt-get-laptop-state/",
       "flag": null
-    },
-    {
-      "ts": "2026-06-30T14:50:00.000Z",
-      "outlet": "WIS News 10",
-      "headline": "What’s next in the Alex Murdaugh case? What a legal expert told us.",
-      "url": "https://www.wistv.com/2026/06/30/legal-expert-weighs-murdaugh-retrial/",
-      "flag": null
     }
   ],
   "seen": [
-    "1dmtem1",
     "1k7xsbb",
     "nq2w7z",
     "hylj8p",
@@ -1301,6 +1300,7 @@
     "1gbiv9b",
     "1cqke6i",
     "1gbjctt",
-    "1gbk7iw"
+    "1gbk7iw",
+    "kznlwm"
   ]
 }

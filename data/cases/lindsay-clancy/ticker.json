@@ -3,6 +3,13 @@
     {
       "ts": "2026-09-09T01:13:45.000Z",
       "outlet": "Boston.com",
+      "headline": "Jurors in the Lindsay Clancy trial are starting to break their silence. Here’s what they’re saying.",
+      "url": "https://www.boston.com/news/crime/2026/09/08/lindsay-clancy-trial-jurors/",
+      "flag": null
+    },
+    {
+      "ts": "2026-09-09T01:13:45.000Z",
+      "outlet": "Boston.com",
       "headline": "Holdout in Lindsay Clancy trial said he had reasonable doubt but still wouldn’t acquit, juror says",
       "url": "https://www.boston.com/news/local-news/2026/09/08/holdout-in-lindsay-clancy-trial-said-he-had-reasonable-doubt-but-still-wouldnt-acquit-juror-says/",
       "flag": "verdict-watch"
@@ -692,13 +699,6 @@
       "headline": "Woman accused of intimidating jurors in Lindsay Clancy’s murder trial",
       "url": "https://www.courttv.com/news/woman-accused-of-intimidating-jurors-in-lindsay-clancys-murder-trial/",
       "flag": null
-    },
-    {
-      "ts": "2026-09-02T13:09:52.000Z",
-      "outlet": "Boston.com",
-      "headline": "Livestream: Lindsay Clancy trial jurors resume deliberations after reporting deadlock",
-      "url": "https://www.boston.com/news/crime/2026/09/02/lindsay-clancy-trial-verdict-watch-wednesday-september-2/",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
@@ -946,6 +946,7 @@
     "pnnwpn",
     "wyhpua",
     "79oct0",
-    "ph1m7g"
+    "ph1m7g",
+    "3hetoo"
   ]
 }

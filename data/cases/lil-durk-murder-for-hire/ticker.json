@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-09T04:30:00.000Z",
+      "outlet": "thesource.com",
+      "headline": "Lil Durk Trial Handed to Jury: Prosecutors Say He Had “Shooters on Speed Dial,” Defense Fires Back!",
+      "url": "https://thesource.com/2026/09/09/lil-durk-trial-handed-to-jury-prosecutors-say-he-had-shooters-on-speed-dial-defense-fires-back/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-08T22:45:34.000Z",
       "outlet": "via MSN",
       "headline": "Lil Durk trial update: What did he do and when could the verdict come in murder-for-hire case?",
@@ -692,13 +699,6 @@
       "headline": "Lil Durk trial: Prosecutors' case and defense explained",
       "url": "https://www.msn.com/en-us/crime/general/lil-durk-trial-prosecutors-case-and-defense-explained/ar-AA2aQtyn",
       "flag": null
-    },
-    {
-      "ts": "2026-08-24T16:13:47.000Z",
-      "outlet": "via MSN",
-      "headline": "Cooperating witnesses revealed in Lil Durk’s murder-for-hire trial include OTF Jam and two men allegedly hired by Durk to kill Quando Rondo – report",
-      "url": "https://www.msn.com/en-us/news/other/cooperating-witnesses-revealed-in-lil-durk-s-murder-for-hire-trial-include-otf-jam-and-two-men-allegedly-hired-by-durk-to-kill-quando-rondo-report/ar-AA2aR0at",
-      "flag": null
     }
   ],
   "seen": [
@@ -879,6 +879,7 @@
     "1gbj8rt",
     "9qkot9",
     "1gbju9p",
-    "1gbjfxp"
+    "1gbjfxp",
+    "1feco4s"
   ]
 }

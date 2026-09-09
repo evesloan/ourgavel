@@ -15,6 +15,13 @@
       "flag": null
     },
     {
+      "ts": "2026-09-09T04:49:00.000Z",
+      "outlet": "via Yahoo News",
+      "headline": "Alex Murdaugh murder retrial will be moved to different county, judge rules",
+      "url": "https://www.yahoo.com/news/videos/alex-murdaugh-murder-retrial-moved-114852090.html",
+      "flag": null
+    },
+    {
       "ts": "2026-09-09T03:00:00.000Z",
       "outlet": "via Yahoo News",
       "headline": "Why Alex Murdaugh’s Retrial Had To Leave Colleton County",
@@ -692,17 +699,9 @@
       "headline": "Judge cites ‘fatal flaw’ in dismissing Alex Murdaugh’s lawsuit against clerk of court",
       "url": "https://www.courttv.com/news/judge-cites-fatal-flaw-in-dismissing-alex-murdaughs-lawsuit-against-clerk-of-court/",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-08-05T09:33:00.000Z",
-      "outlet": "newsday.com",
-      "headline": "Federal judge won't make disgraced clerk pay Alex Murdaugh's $600,000 in legal fees for 1st trial",
-      "url": "https://www.newsday.com/news/nation/alex-murdaugh-killings-murder-retrial-defense-fees-p53347",
-      "flag": null
     }
   ],
   "seen": [
-    "1nkttd9",
     "rl2xbq",
     "14neoni",
     "u4x2f5",
@@ -1301,6 +1300,7 @@
     "1s1hnwk",
     "1gbjhke",
     "79l7bw",
-    "1gshvo9"
+    "1gshvo9",
+    "15jxobb"
   ]
 }

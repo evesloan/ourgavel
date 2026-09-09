@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-08T22:45:00.000Z",
+      "outlet": "via Yahoo News",
+      "headline": "Judge orders Alex Murdaugh retrial to be moved to Sumter County, citing fair trial and security needs in eight-page court order",
+      "url": "https://ca.style.yahoo.com/judge-orders-alex-murdaugh-retrial-054500913.html",
+      "flag": null
+    },
+    {
       "ts": "2026-09-08T22:08:31.000Z",
       "outlet": "WLTX News19",
       "headline": "Alex Murdaugh murder retrial moved to Sumter County",
@@ -692,17 +699,9 @@
       "headline": "Murdaugh Judge Debra McCaslin: a bona fide member of SC’s close-knit legal tribe",
       "url": "https://www.yahoo.com/news/us/articles/murdaugh-judge-debra-mccaslin-bona-093000591.html",
       "flag": null
-    },
-    {
-      "ts": "2026-07-03T14:15:00.000Z",
-      "outlet": "WCSC Live 5 News",
-      "headline": "Deep Dive: Murdaugh Murders Retrial Ep 3: Alex Murdaugh’s first day in a court",
-      "url": "https://www.live5news.com/2026/07/03/deep-dive-murdaugh-murders-retrial-ep-3-alex-murdaughs-first-day-court/",
-      "flag": null
     }
   ],
   "seen": [
-    "nq2w7z",
     "hylj8p",
     "1tmyjd1",
     "1z0y6ih",
@@ -1301,6 +1300,7 @@
     "1gbjctt",
     "1gbk7iw",
     "kznlwm",
-    "op8c7i"
+    "op8c7i",
+    "13jxbnq"
   ]
 }

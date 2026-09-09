@@ -16,6 +16,13 @@
     },
     {
       "ts": "2026-09-08T17:01:00.000Z",
+      "outlet": "The Post and Courier",
+      "headline": "Retrial of Alex Murdaugh’s double murder case being moved to Sumter County",
+      "url": "https://www.postandcourier.com/epaper/page-a7/page_00cbe06f-4a2d-57ac-9f3d-6024c1c1bffa.html",
+      "flag": null
+    },
+    {
+      "ts": "2026-09-08T17:01:00.000Z",
       "outlet": "via Yahoo News",
       "headline": "Alex Murdaugh Retrial Gets New Venue After Defense Raises Jury Bias Concerns",
       "url": "https://www.yahoo.com/news/us/articles/alex-murdaugh-retrial-gets-venue-013848393.html",
@@ -692,17 +699,9 @@
       "headline": "Deep Dive: Murdaugh Murders Retrial Ep 3: Alex Murdaugh’s first day in a court",
       "url": "https://www.live5news.com/2026/07/03/deep-dive-murdaugh-murders-retrial-ep-3-alex-murdaughs-first-day-court/",
       "flag": null
-    },
-    {
-      "ts": "2026-07-02T17:56:01.000Z",
-      "outlet": "Court TV",
-      "headline": "Alex Murdaugh violated jail ‘security protocols,’ shouldn’t get laptop: State",
-      "url": "https://www.courttv.com/news/alex-murdaugh-violated-jail-security-protocols-shouldnt-get-laptop-state/",
-      "flag": null
     }
   ],
   "seen": [
-    "1k7xsbb",
     "nq2w7z",
     "hylj8p",
     "1tmyjd1",
@@ -1301,6 +1300,7 @@
     "1cqke6i",
     "1gbjctt",
     "1gbk7iw",
-    "kznlwm"
+    "kznlwm",
+    "op8c7i"
   ]
 }

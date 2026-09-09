@@ -1,10 +1,24 @@
 {
   "items": [
     {
+      "ts": "2026-09-09T16:36:23.000Z",
+      "outlet": "Boston.com",
+      "headline": "Lindsay Clancy defense attorney says he will file motion to dismiss on double jeopardy grounds",
+      "url": "https://www.boston.com/news/crime/2026/09/09/lindsay-clancy-kevin-reddington-motion-to-dismiss/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-09T13:53:48.000Z",
       "outlet": "Court TV",
       "headline": "Lindsay Clancy jurors say prosecution was ‘biased’ and ‘unprofessional’",
       "url": "https://www.courttv.com/news/lindsay-clancy-jurors-say-prosecution-was-biased-and-unprofessional/",
+      "flag": null
+    },
+    {
+      "ts": "2026-09-09T12:51:34.000Z",
+      "outlet": "NBC10 Boston",
+      "headline": "Lindsay Clancy's lawyer shares new details about the trial in NBC News interview",
+      "url": "https://www.nbcboston.com/news/local/kevin-reddington-shares-new-details-on-lindsay-clancy-trial/4011762/",
       "flag": null
     },
     {
@@ -685,20 +699,6 @@
       "headline": "Lindsay Clancy judge issues warning as deliberations continue after courthouse arrest",
       "url": "https://www.boston25news.com/news/local/lindsay-clancy-judge-issues-warning-deliberations-continue-after-courthouse-arrest/IV7RABMWHZG6FAZPRDSSBQWFNE/",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-09-02T15:50:35.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "‘Wanted to see Lindsay’: Sutton woman faces intimidation charges after allegedly filming Clancy jury",
-      "url": "https://www.boston25news.com/news/local/wanted-see-lindsay-sutton-woman-faces-intimidation-charges-after-allegedly-filming-clancy-jury/GTGVOP7AABGVHIXXIKL33IMZKU/",
-      "flag": null
-    },
-    {
-      "ts": "2026-09-02T15:36:00.000Z",
-      "outlet": "WCVB",
-      "headline": "Woman accused of recording Lindsay Clancy trial jury outside courthouse",
-      "url": "https://www.wcvb.com/article/lindsay-clancy-trial-courthouse-arrest-dawn-light/73593550",
-      "flag": null
     }
   ],
   "seen": [
@@ -949,6 +949,8 @@
     "ph1m7g",
     "3hetoo",
     "1yixow",
-    "ar5we0"
+    "ar5we0",
+    "17rmw18",
+    "11wef97"
   ]
 }

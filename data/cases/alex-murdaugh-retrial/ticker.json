@@ -1,6 +1,27 @@
 {
   "items": [
     {
+      "ts": "2026-09-09T09:06:00.000Z",
+      "outlet": "abajournal.com",
+      "headline": "After granting change of venue, judge announces location for Alex Murdaugh's retrial",
+      "url": "https://www.abajournal.com/news/article/after-granting-change-of-venue-judge-announces-location-for-alex-murdaugh-retrial/",
+      "flag": "verdict-watch"
+    },
+    {
+      "ts": "2026-09-09T09:01:00.000Z",
+      "outlet": "via MSN",
+      "headline": "Judge moves Alex Murdaugh retrial out of Colleton County",
+      "url": "https://www.msn.com/en-us/news/other/judge-moves-alex-murdaugh-retrial-out-of-colleton-county/ar-AA2bT8Wu",
+      "flag": null
+    },
+    {
+      "ts": "2026-09-09T07:20:00.000Z",
+      "outlet": "kyma.com",
+      "headline": "Judge in Alex Murdaugh murder trial grants new venue for retrial",
+      "url": "https://kyma.com/news/national-world/2026/09/09/judge-in-alex-murdaugh-murder-trial-grants-new-venue-for-retrial/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-09T05:26:00.000Z",
       "outlet": "baltimoresun.com",
       "headline": "Judge makes decision on new location for Murdaugh retrial in South Carolina",
@@ -19,6 +40,13 @@
       "outlet": "via Yahoo News",
       "headline": "Alex Murdaugh murder retrial will be moved to different county, judge rules",
       "url": "https://www.yahoo.com/news/videos/alex-murdaugh-murder-retrial-moved-114852090.html",
+      "flag": null
+    },
+    {
+      "ts": "2026-09-09T03:00:00.000Z",
+      "outlet": "via MSN",
+      "headline": "Why Alex Murdaugh’s Retrial Had To Leave Colleton County",
+      "url": "https://www.msn.com/en-us/news/other/why-alex-murdaugh-s-retrial-had-to-leave-colleton-county/ar-AA2bRo0h",
       "flag": null
     },
     {
@@ -671,41 +699,9 @@
       "headline": "Alex Murdaugh's retrial in Charleston? Judge to hear host of issues Friday",
       "url": "https://www.msn.com/en-us/news/crime/dna-prior-testimony-fridays-alex-murdaugh-hearing-to-air-swarm-of-contested-issues/ar-AA29Ys4H",
       "flag": null
-    },
-    {
-      "ts": "2026-08-13T02:09:19.000Z",
-      "outlet": "via MSN",
-      "headline": "Alex Murdaugh pre-trial hearing: Court venue, evidence, testimony",
-      "url": "https://www.msn.com/en-us/news/crime/alex-murdaugh-pre-trial-hearing-court-venue-evidence-testimony/ar-AA2a0YSS",
-      "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-08-12T14:30:07.000Z",
-      "outlet": "via MSN",
-      "headline": "Why Does Alex Murdaugh Want His Murder Retrial Moved?",
-      "url": "https://www.msn.com/en-us/news/crime/why-does-alex-murdaugh-want-his-murder-retrial-moved/ar-AA29XJJB",
-      "flag": null
-    },
-    {
-      "ts": "2026-08-12T09:21:00.000Z",
-      "outlet": "via AOL",
-      "headline": "Alex Murdaugh’s retrial in Charleston? Judge to hear host of issues Friday",
-      "url": "https://www.aol.com/articles/dna-prior-testimony-friday-alex-162134000.html",
-      "flag": null
-    },
-    {
-      "ts": "2026-08-12T08:35:00.000Z",
-      "outlet": "The Post and Courier",
-      "headline": "Alex Murdaugh wants to bring murder retrial and media circus to Charleston. Prosecutors disagree.",
-      "url": "https://www.postandcourier.com/murdaugh-updates/alex-murdaugh-murder-retrial-venue-charleston-sc/article_c55c896f-cb6d-4af4-afa9-64bf5cd40279.html",
-      "flag": null
     }
   ],
   "seen": [
-    "u4x2f5",
-    "1wlo1r0",
-    "uvgmh9",
-    "1olj1i5",
     "1sptnl7",
     "rh5yka",
     "xz9org",
@@ -1301,6 +1297,10 @@
     "1gshvo9",
     "15jxobb",
     "aea0de",
-    "1gbj9em"
+    "1gbj9em",
+    "1y4gnou",
+    "1ywd1gx",
+    "1gbkoh9",
+    "1gbkvdm"
   ]
 }

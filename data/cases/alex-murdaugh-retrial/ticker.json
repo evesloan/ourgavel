@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-09T03:00:00.000Z",
+      "outlet": "via Yahoo News",
+      "headline": "Why Alex Murdaugh’s Retrial Had To Leave Colleton County",
+      "url": "https://www.yahoo.com/news/us/articles/why-alex-murdaugh-retrial-had-100000896.html",
+      "flag": null
+    },
+    {
       "ts": "2026-09-08T22:45:00.000Z",
       "outlet": "via Yahoo News",
       "headline": "Judge orders Alex Murdaugh retrial to be moved to Sumter County, citing fair trial and security needs in eight-page court order",
@@ -692,17 +699,9 @@
       "headline": "Murdaugh Judge Debra McCaslin: a bona fide member of SC’s close-knit legal tribe",
       "url": "https://www.aol.com/articles/murdaugh-judge-debra-mccaslin-bona-093000000.html",
       "flag": null
-    },
-    {
-      "ts": "2026-07-08T02:30:00.000Z",
-      "outlet": "via Yahoo News",
-      "headline": "Murdaugh Judge Debra McCaslin: a bona fide member of SC’s close-knit legal tribe",
-      "url": "https://www.yahoo.com/news/us/articles/murdaugh-judge-debra-mccaslin-bona-093000591.html",
-      "flag": null
     }
   ],
   "seen": [
-    "hylj8p",
     "1tmyjd1",
     "1z0y6ih",
     "bseck1",
@@ -1301,6 +1300,7 @@
     "1gbk7iw",
     "kznlwm",
     "op8c7i",
-    "13jxbnq"
+    "13jxbnq",
+    "1s1hnwk"
   ]
 }

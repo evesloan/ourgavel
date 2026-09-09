@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-09T01:13:45.000Z",
+      "outlet": "Boston.com",
+      "headline": "Holdout in Lindsay Clancy trial said he had reasonable doubt but still wouldn’t acquit, juror says",
+      "url": "https://www.boston.com/news/local-news/2026/09/08/holdout-in-lindsay-clancy-trial-said-he-had-reasonable-doubt-but-still-wouldnt-acquit-juror-says/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-08T20:04:27.000Z",
       "outlet": "Court TV",
       "headline": "Attorney says mom ‘invested’ in Lindsay Clancy trial had psychotic episode before son was killed",
@@ -692,13 +699,6 @@
       "headline": "Livestream: Lindsay Clancy trial jurors resume deliberations after reporting deadlock",
       "url": "https://www.boston.com/news/crime/2026/09/02/lindsay-clancy-trial-verdict-watch-wednesday-september-2/",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-09-02T13:09:52.000Z",
-      "outlet": "Boston.com",
-      "headline": "Livestream: Lindsay Clancy trial jurors resume deliberations after reporting deadlock",
-      "url": "https://www.boston.com/news/crime/2026/09/02/livestream-lindsay-clancy-jurors-deliberate-after-deadlock/",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
@@ -945,6 +945,7 @@
     "hd68c8",
     "pnnwpn",
     "wyhpua",
-    "79oct0"
+    "79oct0",
+    "ph1m7g"
   ]
 }

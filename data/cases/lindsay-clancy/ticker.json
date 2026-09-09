@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-09T16:56:29.000Z",
+      "outlet": "NBC10 Boston",
+      "headline": "Have questions about our Lindsay Clancy juror interview? Ask Sue O'Connell here",
+      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-trial-jury-interview-questions/4011932/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-09T16:36:23.000Z",
       "outlet": "Boston.com",
       "headline": "Lindsay Clancy defense attorney says he will file motion to dismiss on double jeopardy grounds",
@@ -692,13 +699,6 @@
       "headline": "What’s taking so long? Our legal expert breaks down the Lindsay Clancy jury deliberations",
       "url": "https://www.boston25news.com/news/local/whats-taking-so-long-our-legal-expert-breaks-down-lindsay-clancy-jury-deliberations/IV7RABMWHZG6FAZPRDSSBQWFNE/",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-09-02T15:57:49.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "Lindsay Clancy judge issues warning as deliberations continue after courthouse arrest",
-      "url": "https://www.boston25news.com/news/local/lindsay-clancy-judge-issues-warning-deliberations-continue-after-courthouse-arrest/IV7RABMWHZG6FAZPRDSSBQWFNE/",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
@@ -951,6 +951,7 @@
     "1yixow",
     "ar5we0",
     "17rmw18",
-    "11wef97"
+    "11wef97",
+    "2cmqs6"
   ]
 }

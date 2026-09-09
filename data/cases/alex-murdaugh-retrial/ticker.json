@@ -1,6 +1,20 @@
 {
   "items": [
     {
+      "ts": "2026-09-09T13:43:00.000Z",
+      "outlet": "foxcarolina.com",
+      "headline": "Alex Murdaugh's retrial will be in Sumter County",
+      "url": "https://www.foxcarolina.com/video/2026/09/09/alex-murdaughs-retrial-will-be-sumter-county/",
+      "flag": null
+    },
+    {
+      "ts": "2026-09-09T12:59:45.000Z",
+      "outlet": "via MSN",
+      "headline": "How a personal injury lawsuit is shaping Alex Murdaugh murder retrial",
+      "url": "https://www.msn.com/en-us/news/other/how-a-personal-injury-lawsuit-is-shaping-alex-murdaugh-murder-retrial/ar-AA2bTEqQ",
+      "flag": null
+    },
+    {
       "ts": "2026-09-09T09:06:00.000Z",
       "outlet": "abajournal.com",
       "headline": "After granting change of venue, judge announces location for Alex Murdaugh's retrial",
@@ -685,25 +699,9 @@
       "headline": "Live: Alex Murdaugh returns to court as prosecutors, defense battle over evidence ahead of retrial",
       "url": "https://www.msn.com/en-us/news/crime/live-alex-murdaugh-returns-to-court-as-prosecutors-defense-battle-over-evidence-ahead-of-retrial/ar-AA2a3IGJ",
       "flag": null
-    },
-    {
-      "ts": "2026-08-13T15:22:36.000Z",
-      "outlet": "Court TV",
-      "headline": "Prosecution cites Masters week, flooding, parking as reasons not to move Alex Murdaugh’s trial",
-      "url": "https://www.courttv.com/news/prosecution-cites-masters-week-flooding-parking-as-reasons-not-to-move-alex-murdaughs-trial/",
-      "flag": null
-    },
-    {
-      "ts": "2026-08-13T05:57:45.000Z",
-      "outlet": "via MSN",
-      "headline": "Alex Murdaugh's retrial in Charleston? Judge to hear host of issues Friday",
-      "url": "https://www.msn.com/en-us/news/crime/dna-prior-testimony-fridays-alex-murdaugh-hearing-to-air-swarm-of-contested-issues/ar-AA29Ys4H",
-      "flag": null
     }
   ],
   "seen": [
-    "1sptnl7",
-    "rh5yka",
     "xz9org",
     "n408tw",
     "1onmwbm",
@@ -1301,6 +1299,8 @@
     "1y4gnou",
     "1ywd1gx",
     "1gbkoh9",
-    "1gbkvdm"
+    "1gbkvdm",
+    "1kw7ht3",
+    "1gblsll"
   ]
 }

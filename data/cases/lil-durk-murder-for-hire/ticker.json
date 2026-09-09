@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-08T22:28:09.000Z",
+      "outlet": "via MSN",
+      "headline": "Lil Durk trial update: When is the verdict and what happens next for the rapper after murder-for-hire case?",
+      "url": "https://www.msn.com/en-in/news/other/lil-durk-trial-update-when-is-the-verdict-and-what-happens-next-for-the-rapper-after-murder-for-hire-case/ar-AA2bQCvi",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-08T22:16:27.000Z",
       "outlet": "AllHipHop",
       "headline": "Lil Durk Trial Closings: Prosecutors Allege Revenge Plot As Defense Attacks Cooperators",
@@ -692,13 +699,6 @@
       "headline": "Lil Durk’s defense says Kavon Grant was the murder for hire mastermind who framed Durk as the “big fish”",
       "url": "https://www.msn.com/en-us/news/crime/lil-durk-s-defense-says-kavon-grant-was-the-murder-for-hire-mastermind-who-framed-durk-as-the-big-fish/ar-AA2aPRgb",
       "flag": null
-    },
-    {
-      "ts": "2026-08-24T11:44:21.000Z",
-      "outlet": "via MSN",
-      "headline": "Lil Durk trial: Defense claims rapper unfairly offered as 'big fish'",
-      "url": "https://www.msn.com/en-us/music/news/lil-durk-trial-defense-claims-rapper-unfairly-offered-as-big-fish/ar-AA2aPOy9",
-      "flag": null
     }
   ],
   "seen": [
@@ -877,6 +877,7 @@
     "1pn3lol",
     "1gbjk51",
     "1gbj8rt",
-    "9qkot9"
+    "9qkot9",
+    "1gbju9p"
   ]
 }

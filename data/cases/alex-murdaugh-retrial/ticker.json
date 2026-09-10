@@ -50,6 +50,13 @@
       "flag": "verdict-watch"
     },
     {
+      "ts": "2026-09-09T06:29:00.000Z",
+      "outlet": "charlestoncitypaper.com",
+      "headline": "Murdaugh’s retrial to be in Sumter County",
+      "url": "https://charlestoncitypaper.com/2026/09/09/murdaughs-retrial-to-be-in-sumter-county/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-09T05:26:00.000Z",
       "outlet": "baltimoresun.com",
       "headline": "Judge makes decision on new location for Murdaugh retrial in South Carolina",
@@ -692,17 +699,9 @@
       "headline": "Murdaugh gun claim collides with bizarre Charleston showdown as lawyers battle over what next jury gets to see",
       "url": "https://www.foxnews.com/us/alex-murdaugh-explosive-bid-blow-up-murder-case-hinging-dna-dirty-money-lies-expert",
       "flag": null
-    },
-    {
-      "ts": "2026-08-14T02:30:00.000Z",
-      "outlet": "via Yahoo News",
-      "headline": "Judge orders Alex Murdaugh’s murder retrial moved out of Colleton",
-      "url": "https://www.yahoo.com/news/us/articles/alex-murdaugh-friday-murder-hearing-093000305.html",
-      "flag": null
     }
   ],
   "seen": [
-    "176mg70",
     "1ykk5ny",
     "15n6u30",
     "1loizd6",
@@ -1301,6 +1300,7 @@
     "1gblsll",
     "1gbmd1w",
     "1gbmp9z",
-    "w0a5vh"
+    "w0a5vh",
+    "8fdcx3"
   ]
 }

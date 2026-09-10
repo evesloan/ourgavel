@@ -1,6 +1,27 @@
 {
   "items": [
     {
+      "ts": "2026-09-10T04:05:59.000Z",
+      "outlet": "via MSN",
+      "headline": "‘On the map’: Sumter prepares to host Alex Murdaugh retrial",
+      "url": "https://www.msn.com/en-us/news/other/on-the-map-sumter-prepares-to-host-alex-murdaugh-retrial/ar-AA2bX1d9",
+      "flag": null
+    },
+    {
+      "ts": "2026-09-10T02:01:00.000Z",
+      "outlet": "via Yahoo News",
+      "headline": "Sumter County readies itself for hosting the circus of Alex Murdaugh's double-murder retrial",
+      "url": "https://www.yahoo.com/news/us/articles/sumter-county-readies-itself-hosting-090000201.html",
+      "flag": null
+    },
+    {
+      "ts": "2026-09-10T02:00:00.000Z",
+      "outlet": "via MSN",
+      "headline": "Sumter County readies itself for hosting the circus of Alex Murdaugh's double-murder retrial",
+      "url": "https://www.msn.com/en-us/news/other/sumter-county-readies-itself-for-hosting-the-circus-of-alex-murdaughs-double-murder-retrial/ar-AA2bWmkw",
+      "flag": null
+    },
+    {
       "ts": "2026-09-09T22:45:54.000Z",
       "outlet": "WLTX News19",
       "headline": "Sumter businesses anticipate economic impact of Alex Murdaugh murder retrial",
@@ -678,33 +699,9 @@
       "headline": "Judge moves Alex Murdaugh retrial from small county, but motion to toss out case will wait",
       "url": "https://mynorthwest.com/national/judge-moves-alex-murdaugh-retrial-from-small-county-but-motion-to-toss-out-case-will-wait/4266097",
       "flag": null
-    },
-    {
-      "ts": "2026-08-14T03:08:00.000Z",
-      "outlet": "abcnews4.com",
-      "headline": "Judge orders Alex Murdaugh retrial moved outside 14th Circuit over jury fairness concerns",
-      "url": "https://abcnews4.com/news/local/judge-orders-alex-murdaugh-retrial-moved-outside-14th-circuit-over-jury-fairness-concerns",
-      "flag": null
-    },
-    {
-      "ts": "2026-08-14T03:06:00.000Z",
-      "outlet": "The Greenville News",
-      "headline": "Alex Murdaugh returns to court as judge weighs key retrial motions",
-      "url": "https://www.greenvilleonline.com/story/news/crime/2026/08/14/alex-murdaugh-retrial-hearing/91291455007/",
-      "flag": null
-    },
-    {
-      "ts": "2026-08-14T03:00:00.000Z",
-      "outlet": "Fox News",
-      "headline": "Murdaugh gun claim collides with bizarre Charleston showdown as lawyers battle over what next jury gets to see",
-      "url": "https://www.foxnews.com/us/alex-murdaugh-explosive-bid-blow-up-murder-case-hinging-dna-dirty-money-lies-expert",
-      "flag": null
     }
   ],
   "seen": [
-    "1ykk5ny",
-    "15n6u30",
-    "1loizd6",
     "2oenry",
     "1rmg6t6",
     "bjpd44",
@@ -1301,6 +1298,9 @@
     "1gbmd1w",
     "1gbmp9z",
     "w0a5vh",
-    "8fdcx3"
+    "8fdcx3",
+    "1gbnvcq",
+    "1gbn9mu",
+    "1uevp1b"
   ]
 }

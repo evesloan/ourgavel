@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-10T12:46:35.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Lindsay Clancy’s attorney to seek dismissal of case, argues retrial would violate double jeopardy",
+      "url": "https://www.boston25news.com/news/local/lindsay-clancys-attorney-seek-dismissal-case-argues-retrial-would-violate-double-jeopardy/3KQCNSDHE5BA3JBNZB7HHYZA7E/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-10T02:10:00.000Z",
       "outlet": "WCVB",
       "headline": "Male juror details contentious deliberations in Lindsay Clancy trial",
@@ -692,13 +699,6 @@
       "headline": "Lindsay Clancy verdict watch: Jury remains split despite days of deliberations",
       "url": "https://www.boston25news.com/news/local/lindsay-clancy-verdict-watch-jury-remains-split-despite-days-deliberations/73UM4EQII5GE5JG2SIQVPTKGQ4/",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-09-02T19:02:00.000Z",
-      "outlet": "WCVB",
-      "headline": "What is the Tuey-Rodriguez instruction, aka 'dynamite charge,' given in Lindsay Clancy's trial?",
-      "url": "https://www.wcvb.com/article/tuey-rodriguez-dynamite-charge-lindsay-clancy-trial/73595868",
-      "flag": null
     }
   ],
   "seen": [
@@ -955,6 +955,7 @@
     "2cmqs6",
     "okf4dr",
     "abncfh",
-    "1gw2mhd"
+    "1gw2mhd",
+    "11ejhol"
   ]
 }

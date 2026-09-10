@@ -1,6 +1,20 @@
 {
   "items": [
     {
+      "ts": "2026-09-10T11:11:21.000Z",
+      "outlet": "via MSN",
+      "headline": "DJ Akademiks says the prosecutor in the Lil Durk trial put his life in danger by bringing up his name",
+      "url": "https://www.msn.com/en-us/news/other/dj-akademiks-says-the-prosecutor-in-the-lil-durk-trial-put-his-life-in-danger-by-bringing-up-his-name/ar-AA2bYfPC",
+      "flag": null
+    },
+    {
+      "ts": "2026-09-10T10:28:00.000Z",
+      "outlet": "hindustantimes.com",
+      "headline": "Lil Durk trial: Will there be a verdict in the case today? Details amid Day 2 of jury deliberation",
+      "url": "https://www.hindustantimes.com/world-news/us-news/lil-durk-trial-will-there-be-a-verdict-in-the-case-today-details-amid-day-2-of-jury-deliberation-101789058422669.html",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-09T15:03:44.000Z",
       "outlet": "AllHipHop",
       "headline": "Lil Durk Trial: Five Of The Best Defenses Jurors Must Weigh",
@@ -685,20 +699,6 @@
       "headline": "Lil Durk’s murder-for-hire trial begins as prosecutors allege revenge plot against Quando Rondo",
       "url": "https://www.msn.com/en-us/news/other/lil-durk-s-murder-for-hire-trial-begins-as-prosecutors-allege-revenge-plot-against-quando-rondo/ar-AA2aVf5x",
       "flag": null
-    },
-    {
-      "ts": "2026-08-25T11:09:00.000Z",
-      "outlet": "AllHipHop",
-      "headline": "EXCLUSIVE: Lil Durk Trial Reveals How “Rats To Riches” Pants Helped Police Crack The Case",
-      "url": "https://allhiphop.com/news/exclusive-lil-durk-trial-reveals-how-rats-to-riches-pants-helped-police-crack-the-case/",
-      "flag": null
-    },
-    {
-      "ts": "2026-08-25T06:05:00.000Z",
-      "outlet": "via Yahoo News",
-      "headline": "MGK’s Unexpected Lil Durk Trial Appearance Turns Heads",
-      "url": "https://www.yahoo.com/entertainment/music/articles/mgk-unexpected-lil-durk-trial-130512227.html",
-      "flag": null
     }
   ],
   "seen": [
@@ -883,6 +883,8 @@
     "1feco4s",
     "1dg7opf",
     "e8iz6c",
-    "1gbmm0i"
+    "1gbmm0i",
+    "dtac9r",
+    "1gbp08o"
   ]
 }

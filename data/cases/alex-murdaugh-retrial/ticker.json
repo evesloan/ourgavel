@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-10T08:42:00.000Z",
+      "outlet": "lexingtonchronicle.com",
+      "headline": "Court moves Alex Murdaugh retrial to Sumter County",
+      "url": "https://www.lexingtonchronicle.com/stories/court-moves-alex-murdaugh-retrial-to-sumter-county,192107",
+      "flag": null
+    },
+    {
       "ts": "2026-09-10T04:05:59.000Z",
       "outlet": "via MSN",
       "headline": "‘On the map’: Sumter prepares to host Alex Murdaugh retrial",
@@ -692,17 +699,9 @@
       "headline": "Judge moves Alex Murdaugh retrial from small county, but motion to toss out case will wait",
       "url": "https://mynorthwest.com/national/judge-moves-alex-murdaugh-retrial-from-small-county-but-motion-to-toss-out-case-will-wait",
       "flag": null
-    },
-    {
-      "ts": "2026-08-14T05:12:00.000Z",
-      "outlet": "mynorthwest.com",
-      "headline": "Judge moves Alex Murdaugh retrial from small county, but motion to toss out case will wait",
-      "url": "https://mynorthwest.com/national/judge-moves-alex-murdaugh-retrial-from-small-county-but-motion-to-toss-out-case-will-wait/4266097",
-      "flag": null
     }
   ],
   "seen": [
-    "2oenry",
     "1rmg6t6",
     "bjpd44",
     "10xmzi7",
@@ -1301,6 +1300,7 @@
     "8fdcx3",
     "1gbnvcq",
     "1gbn9mu",
-    "1uevp1b"
+    "1uevp1b",
+    "1v4hgfw"
   ]
 }

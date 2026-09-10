@@ -1,6 +1,27 @@
 {
   "items": [
     {
+      "ts": "2026-09-10T18:33:00.000Z",
+      "outlet": "Boston.com",
+      "headline": "Lindsay Clancy’s lawyer renews motion for not-guilty finding ahead of potential retrial",
+      "url": "https://www.boston.com/news/crime/2026/09/10/lindsay-clancy-kevin-reddington-required-finding-motion/",
+      "flag": "verdict-watch"
+    },
+    {
+      "ts": "2026-09-10T18:29:54.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Lindsay Clancy seeks acquittal following mistrial, arguing evidence was legally insufficient",
+      "url": "https://www.boston25news.com/news/local/lindsay-clancy-seeks-acquittal-following-mistrial-arguing-evidence-was-legally-insufficient/OO33X5EBWZC7HILK2ORTAVJH7E/",
+      "flag": "verdict-watch"
+    },
+    {
+      "ts": "2026-09-10T17:13:00.000Z",
+      "outlet": "WCVB",
+      "headline": "Lindsay Clancy asks judge to find her not guilty after mistrial",
+      "url": "https://www.wcvb.com/article/lindsay-clancy-motion-for-required-finding-sept-10/73669616",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-10T16:53:16.000Z",
       "outlet": "Boston.com",
       "headline": "Lindsay Clancy and her ex-husband both filed lawsuits over their children’s deaths. Where do those cases stand?",
@@ -19,6 +40,13 @@
       "outlet": "Law & Crime",
       "headline": "One juror, no verdict: What the Lindsay Clancy mistrial tells us about jury unanimity",
       "url": "https://lawandcrime.com/analysis/one-juror-no-verdict-what-the-lindsay-clancy-mistrial-tells-us-about-jury-unanimity/",
+      "flag": "verdict-watch"
+    },
+    {
+      "ts": "2026-09-10T13:07:22.000Z",
+      "outlet": "NBC10 Boston",
+      "headline": "Lindsay Clancy's attorney files motion arguing for not guilty ruling by court",
+      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-motion-kevin-reddington-update/4012575/",
       "flag": "verdict-watch"
     },
     {
@@ -671,34 +699,6 @@
       "headline": "Lindsay Clancy trial: Jury returns for potential final day of deliberations after 2nd deadlock",
       "url": "https://www.boston25news.com/news/local/lindsay-clancy-trial-jury-returns-potential-final-day-deliberations-after-2nd-deadlock/JWVISRCG7RATHAMW3KQOUKSHJY/",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-09-03T09:25:00.000Z",
-      "outlet": "WCVB",
-      "headline": "Deliberations to continue after Lindsay Clancy jurors hear 'dynamite charge'",
-      "url": "https://www.wcvb.com/article/lindsay-clancy-trial-live-updates-sept-3/73601866",
-      "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-09-03T07:50:49.000Z",
-      "outlet": "NBC10 Boston",
-      "headline": "Lindsay Clancy verdict watch: Deadlocked jury returns as mistrial risk grows",
-      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-verdict-live-updates-tuey-rodriguez-idynamite-charge-mistrial-possible/4008506/",
-      "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-09-03T01:50:20.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "Boston 25’s Bob Ward, Cayle Thompson discuss Lindsay Clancy trial after Tuey-Rodriguez instructions",
-      "url": "https://www.boston25news.com/news/local/boston-25s-bob-ward-cayle-thompson-discuss-lindsay-clancy-trial-after-tuey-rodriguez-instructions/S7I6OLL2QZDIFHJ6PE6PJXBAKI/",
-      "flag": null
-    },
-    {
-      "ts": "2026-09-03T01:06:11.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "Legal analyst outlines possibilities with looming Lindsay Clancy hung jury",
-      "url": "https://www.boston25news.com/news/local/legal-analyst-outlines-possibilities-with-looming-lindsay-clancy-hung-jury/QTINOTRTMVAZXOR4PA6XMUMYYA/",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
@@ -960,6 +960,10 @@
     "1mr68gi",
     "14qt47c",
     "mas585",
-    "v4riei"
+    "v4riei",
+    "nc0vlu",
+    "ysa7lu",
+    "14vxt3e",
+    "1hc3ud9"
   ]
 }

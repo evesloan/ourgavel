@@ -1,6 +1,20 @@
 {
   "items": [
     {
+      "ts": "2026-09-10T18:53:59.000Z",
+      "outlet": "Action News Jax",
+      "headline": "Kirsten Bridegan loses bid to disqualify judge",
+      "url": "https://www.actionnewsjax.com/news/local/kirsten-bridegan-loses-bid-disqualify-judge/Q4W2NAVLJJHERDWTLOGXLLCY2Y/",
+      "flag": null
+    },
+    {
+      "ts": "2026-09-10T17:07:36.000Z",
+      "outlet": "News4JAX",
+      "headline": "Judge refuses to step aside in Shanna Gardner trial for death of Jared Bridegan",
+      "url": "https://www.news4jax.com/news/local/2026/09/10/judge-refuses-to-step-aside-in-shanna-gardner-trial-for-death-of-jared-bridegan/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-09T12:29:30.000Z",
       "outlet": "Action News Jax",
       "headline": "Defense team seeks new trial for Mario Fernandez Saldana in the Jared Bridegan murder case",
@@ -374,6 +388,8 @@
     "16izh3d",
     "1lc5cdm",
     "4wcxg6",
-    "knr5or"
+    "knr5or",
+    "1e9j6u",
+    "122w9lv"
   ]
 }

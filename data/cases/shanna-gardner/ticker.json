@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-10T17:07:36.000Z",
+      "outlet": "News4JAX",
+      "headline": "Judge refuses to step aside in Shanna Gardner trial for death of Jared Bridegan",
+      "url": "https://www.news4jax.com/news/local/2026/09/10/judge-refuses-to-step-aside-in-shanna-gardner-trial-for-death-of-jared-bridegan/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-03T20:05:12.000Z",
       "outlet": "News4JAX",
       "headline": "Appeals court keeps Bridegan phone stay in place as Shanna Gardner trial delayed to 2027",
@@ -42,6 +49,7 @@
     "mfvqmr",
     "xy3h1o",
     "zkqpf3",
-    "1q4mqit"
+    "1q4mqit",
+    "1e9j6u"
   ]
 }

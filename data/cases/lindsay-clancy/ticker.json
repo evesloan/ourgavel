@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-10T02:10:00.000Z",
+      "outlet": "WCVB",
+      "headline": "Male juror details contentious deliberations in Lindsay Clancy trial",
+      "url": "https://www.wcvb.com/article/lindsay-clancy-male-juror-speaks-out-mistrial/73658980",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-09T22:23:00.000Z",
       "outlet": "WCVB",
       "headline": "Lindsay Clancy defense to seek dismissal after hung jury",
@@ -692,13 +699,6 @@
       "headline": "Lindsay Clancy trial (live updates): Jury says it still can’t agree; judge gives final instructions",
       "url": "https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-jury-says-it-still-cant-agree-judge-gives-final-instructions/KBFJCBSS6VH4BLJOAW6MO6ZYL4/",
       "flag": null
-    },
-    {
-      "ts": "2026-09-02T18:24:49.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "Lindsay Clancy trial (live updates): Deadlocked jury continues deliberations after judge’s warning",
-      "url": "https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-deadlocked-jury-day-5-deliberations-after-judges-warning/KBFJCBSS6VH4BLJOAW6MO6ZYL4/",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
@@ -953,6 +953,7 @@
     "17rmw18",
     "11wef97",
     "2cmqs6",
-    "okf4dr"
+    "okf4dr",
+    "abncfh"
   ]
 }

@@ -1,10 +1,38 @@
 {
   "items": [
     {
+      "ts": "2026-09-10T16:53:16.000Z",
+      "outlet": "Boston.com",
+      "headline": "Lindsay Clancy and her ex-husband both filed lawsuits over their children’s deaths. Where do those cases stand?",
+      "url": "https://www.boston.com/news/crime/2026/09/10/lindsay-clancy-patrick-clancy-civil-lawsuits/",
+      "flag": null
+    },
+    {
+      "ts": "2026-09-10T15:58:29.000Z",
+      "outlet": "Boston.com",
+      "headline": "Lindsay Clancy juror says holdout scrolled his phone during deliberations and couldn’t back up his stance",
+      "url": "https://www.boston.com/news/crime/2026/09/10/lindsay-clancy-juror-interview-nick-dargie/",
+      "flag": "verdict-watch"
+    },
+    {
+      "ts": "2026-09-10T13:36:00.000Z",
+      "outlet": "Law & Crime",
+      "headline": "One juror, no verdict: What the Lindsay Clancy mistrial tells us about jury unanimity",
+      "url": "https://lawandcrime.com/analysis/one-juror-no-verdict-what-the-lindsay-clancy-mistrial-tells-us-about-jury-unanimity/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-10T12:46:35.000Z",
       "outlet": "Boston 25 News",
       "headline": "Lindsay Clancy’s attorney to seek dismissal of case, argues retrial would violate double jeopardy",
       "url": "https://www.boston25news.com/news/local/lindsay-clancys-attorney-seek-dismissal-case-argues-retrial-would-violate-double-jeopardy/3KQCNSDHE5BA3JBNZB7HHYZA7E/",
+      "flag": null
+    },
+    {
+      "ts": "2026-09-10T10:00:42.000Z",
+      "outlet": "NBC10 Boston",
+      "headline": "Lindsay Clancy juror reveals ‘shocking' behavior by lone holdout",
+      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-juror-reveals-shocking-behavior-by-lone-holdout/4012473/",
       "flag": null
     },
     {
@@ -671,34 +699,6 @@
       "headline": "Legal analyst outlines possibilities with looming Lindsay Clancy hung jury",
       "url": "https://www.boston25news.com/news/local/legal-analyst-outlines-possibilities-with-looming-lindsay-clancy-hung-jury/QTINOTRTMVAZXOR4PA6XMUMYYA/",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-09-02T21:29:00.000Z",
-      "outlet": "WCVB",
-      "headline": "Doctor explains postpartum psychosis in Lindsay Clancy case",
-      "url": "https://www.wcvb.com/article/postpartum-psychosis-lindsay-clancy-trial-explain/73597370",
-      "flag": null
-    },
-    {
-      "ts": "2026-09-02T20:34:35.000Z",
-      "outlet": "Boston.com",
-      "headline": "Lindsay Clancy trial: Scenes from the courthouse as jury still unable to reach verdict",
-      "url": "https://www.boston.com/news/local-news/2026/09/02/lindsay-clancy-trial-scenes-from-the-courthouse-as-jury-still-unable-to-reach-verdict/",
-      "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-09-02T19:56:30.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "What is the Tuey-Rodriguez instruction that Lindsay Clancy’s judge gave to the jury?",
-      "url": "https://www.boston25news.com/news/local/what-is-tuey-rodriguez-instruction-that-lindsay-clancys-judge-gave-jury/VFG5X64MRJC67ATZONX6UMS2G4/",
-      "flag": null
-    },
-    {
-      "ts": "2026-09-02T19:20:02.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "Lindsay Clancy verdict watch: Jury remains split despite days of deliberations",
-      "url": "https://www.boston25news.com/news/local/lindsay-clancy-verdict-watch-jury-remains-split-despite-days-deliberations/73UM4EQII5GE5JG2SIQVPTKGQ4/",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
@@ -956,6 +956,10 @@
     "okf4dr",
     "abncfh",
     "1gw2mhd",
-    "11ejhol"
+    "11ejhol",
+    "1mr68gi",
+    "14qt47c",
+    "mas585",
+    "v4riei"
   ]
 }

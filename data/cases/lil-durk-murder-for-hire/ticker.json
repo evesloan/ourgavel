@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-11T09:36:46.000Z",
+      "outlet": "via MSN",
+      "headline": "Lil Durk trial: Verdict in Quando Rondo case expected today as jury deliberation enters day 3",
+      "url": "https://www.msn.com/en-in/news/other/lil-durk-trial-verdict-in-quando-rondo-case-expected-today-as-jury-deliberation-enters-day-3/ar-AA2c1PMq",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-11T07:00:00.000Z",
       "outlet": "hotnewhiphop.com",
       "headline": "Drew Findling Proclaims \"The Voice Is Innocent\" Amid Lil Durk Deliberations",
@@ -692,13 +699,6 @@
       "headline": "Lil Durk murder-for-hire trial: Prosecutors revisit the murder of King Von",
       "url": "https://www.msn.com/en-us/news/other/lil-durk-murder-for-hire-trial-prosecutors-revisit-the-murder-of-king-von/ar-AA2aVtXo",
       "flag": null
-    },
-    {
-      "ts": "2026-08-25T19:41:00.000Z",
-      "outlet": "Los Angeles Magazine",
-      "headline": "Texts Reveal Lil Durk Wrote King Von’s Death Turned Him Into “A Different Animal”",
-      "url": "https://lamag.com/crimeinla/texts-reveal-lil-durk-wrote-king-vons-death-turned-him-into-a-different-animal/",
-      "flag": null
     }
   ],
   "seen": [
@@ -887,6 +887,7 @@
     "dtac9r",
     "1gbp08o",
     "1gbpk0r",
-    "roofov"
+    "roofov",
+    "1gaz14s"
   ]
 }

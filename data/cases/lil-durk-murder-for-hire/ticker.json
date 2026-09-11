@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-10T20:16:57.000Z",
+      "outlet": "via MSN",
+      "headline": "Who are Lil Durk’s lawyers Brian Steel, Drew Findling, Marissa Goldberg, and Christy O’Connor? All you need to know",
+      "url": "https://www.msn.com/en-in/crime/general/who-are-lil-durk-s-lawyers-brian-steel-drew-findling-marissa-goldberg-and-christy-o-connor-all-you-need-to-know/ar-AA2bZbFa",
+      "flag": null
+    },
+    {
       "ts": "2026-09-10T11:11:21.000Z",
       "outlet": "via MSN",
       "headline": "DJ Akademiks says the prosecutor in the Lil Durk trial put his life in danger by bringing up his name",
@@ -692,13 +699,6 @@
       "headline": "Lil Durk’s murder-for-hire trial begins as prosecutors allege revenge plot against Quando Rondo",
       "url": "https://www.yahoo.com/news/us/articles/lil-durk-murder-hire-trial-191500915.html",
       "flag": null
-    },
-    {
-      "ts": "2026-08-25T12:15:00.000Z",
-      "outlet": "via MSN",
-      "headline": "Lil Durk’s murder-for-hire trial begins as prosecutors allege revenge plot against Quando Rondo",
-      "url": "https://www.msn.com/en-us/news/other/lil-durk-s-murder-for-hire-trial-begins-as-prosecutors-allege-revenge-plot-against-quando-rondo/ar-AA2aVf5x",
-      "flag": null
     }
   ],
   "seen": [
@@ -885,6 +885,7 @@
     "e8iz6c",
     "1gbmm0i",
     "dtac9r",
-    "1gbp08o"
+    "1gbp08o",
+    "1gbpk0r"
   ]
 }

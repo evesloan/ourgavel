@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-11T20:38:19.000Z",
+      "outlet": "fox5dc.com",
+      "headline": "Judge limits mentions of abuse claims for Mamta Kafle Bhatt murder trial",
+      "url": "https://www.fox5dc.com/news/judge-limits-abuse-claims-virginia-mamta-kafle-bhatt-murder-trial",
+      "flag": null
+    },
+    {
       "ts": "2026-08-21T13:00:00.000Z",
       "outlet": "wtop.com",
       "headline": "2 years after Mamta Kafle Bhatt disappeared, husband's murder trial nears",
@@ -25,6 +32,7 @@
   "seen": [
     "5pf2sc",
     "duvdfv",
-    "15g0x7p"
+    "15g0x7p",
+    "8sy0o0"
   ]
 }

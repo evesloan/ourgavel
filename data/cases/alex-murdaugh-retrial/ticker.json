@@ -484,6 +484,13 @@
       "flag": null
     },
     {
+      "ts": "2026-08-14T17:25:00.000Z",
+      "outlet": "via Yahoo News",
+      "headline": "8 decisions that could shape Alex Murdaugh's upcoming murder retrial",
+      "url": "https://www.yahoo.com/news/us/articles/8-decisions-could-shape-alex-002509230.html",
+      "flag": null
+    },
+    {
       "ts": "2026-08-14T15:52:00.000Z",
       "outlet": "wtoc.com",
       "headline": "Key rulings shake up Alex Murdaugh retrial: Venue disputed, prior testimony and fingernail DNA approved",
@@ -692,17 +699,9 @@
       "headline": "Alex Murdaugh's double murder retrial to be moved over jury fairness concerns, judge rules",
       "url": "https://uk.news.yahoo.com/alex-murdaughs-double-murder-retrial-to-be-moved-over-jury-fairness-concerns-judge-rules-161302163.html",
       "flag": null
-    },
-    {
-      "ts": "2026-08-14T05:12:00.000Z",
-      "outlet": "mynorthwest.com",
-      "headline": "Judge moves Alex Murdaugh retrial from small county, but motion to toss out case will wait",
-      "url": "https://mynorthwest.com/national/judge-moves-alex-murdaugh-retrial-from-small-county-but-motion-to-toss-out-case-will-wait",
-      "flag": null
     }
   ],
   "seen": [
-    "1rmg6t6",
     "bjpd44",
     "10xmzi7",
     "uwtou7",
@@ -1301,6 +1300,7 @@
     "1gbnvcq",
     "1gbn9mu",
     "1uevp1b",
-    "1v4hgfw"
+    "1v4hgfw",
+    "gcege9"
   ]
 }

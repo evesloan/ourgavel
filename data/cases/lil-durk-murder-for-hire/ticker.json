@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-11T07:00:00.000Z",
+      "outlet": "hotnewhiphop.com",
+      "headline": "Drew Findling Proclaims \"The Voice Is Innocent\" Amid Lil Durk Deliberations",
+      "url": "https://www.hotnewhiphop.com/1009266-drew-findling-the-voice-innocent-lil-durk-deliberations",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-10T20:16:57.000Z",
       "outlet": "via MSN",
       "headline": "Who are Lil Durk’s lawyers Brian Steel, Drew Findling, Marissa Goldberg, and Christy O’Connor? All you need to know",
@@ -692,13 +699,6 @@
       "headline": "Texts Reveal Lil Durk Wrote King Von’s Death Turned Him Into “A Different Animal”",
       "url": "https://lamag.com/crimeinla/texts-reveal-lil-durk-wrote-king-vons-death-turned-him-into-a-different-animal/",
       "flag": null
-    },
-    {
-      "ts": "2026-08-25T12:15:00.000Z",
-      "outlet": "via Yahoo News",
-      "headline": "Lil Durk’s murder-for-hire trial begins as prosecutors allege revenge plot against Quando Rondo",
-      "url": "https://www.yahoo.com/news/us/articles/lil-durk-murder-hire-trial-191500915.html",
-      "flag": null
     }
   ],
   "seen": [
@@ -886,6 +886,7 @@
     "1gbmm0i",
     "dtac9r",
     "1gbp08o",
-    "1gbpk0r"
+    "1gbpk0r",
+    "roofov"
   ]
 }

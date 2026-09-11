@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-11T16:20:18.000Z",
+      "outlet": "News4JAX",
+      "headline": "Shanna Gardner’s defense asks judge to review communications involving Jared Bridegan’s widow, prosecutors",
+      "url": "https://www.news4jax.com/news/local/2026/09/11/shanna-gardners-defense-asks-judge-to-review-communications-involving-jared-bridegans-widow-prosecutors/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-10T18:53:59.000Z",
       "outlet": "Action News Jax",
       "headline": "Kirsten Bridegan loses bid to disqualify judge",
@@ -390,6 +397,7 @@
     "4wcxg6",
     "knr5or",
     "1e9j6u",
-    "122w9lv"
+    "122w9lv",
+    "1lcckvg"
   ]
 }

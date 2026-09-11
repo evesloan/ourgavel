@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-11T14:31:00.000Z",
+      "outlet": "WCVB",
+      "headline": "'We let down Lindsay,' says juror who served in Clancy trial",
+      "url": "https://www.wcvb.com/article/juror-interview-lindsay-clancy-trial-paula/73671485",
+      "flag": null
+    },
+    {
       "ts": "2026-09-10T18:33:00.000Z",
       "outlet": "Boston.com",
       "headline": "Lindsay Clancy’s lawyer renews motion for not-guilty finding ahead of potential retrial",
@@ -692,13 +699,6 @@
       "headline": "Lindsay Clancy trial (live updates): Potential final day of jury deliberations after 2nd deadlock",
       "url": "https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-potential-final-day-jury-deliberations-after-2nd-deadlock/ORPL46DF6BFABPK5MFOVRKUKMI/",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-09-03T10:35:55.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "Lindsay Clancy trial: Jury returns for potential final day of deliberations after 2nd deadlock",
-      "url": "https://www.boston25news.com/news/local/lindsay-clancy-trial-jury-returns-potential-final-day-deliberations-after-2nd-deadlock/JWVISRCG7RATHAMW3KQOUKSHJY/",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
@@ -964,6 +964,7 @@
     "nc0vlu",
     "ysa7lu",
     "14vxt3e",
-    "1hc3ud9"
+    "1hc3ud9",
+    "uxk3sa"
   ]
 }

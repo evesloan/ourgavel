@@ -29,6 +29,27 @@
       "flag": null
     },
     {
+      "ts": "2026-09-10T17:00:00.000Z",
+      "outlet": "billboard.com",
+      "headline": "Lil Durk Acquitted of All Charges in Murder-for-Hire Trial Over Quando Rondo Attack",
+      "url": "https://www.billboard.com/pro/lil-durk-acquitted-murder-for-hire-trial-quando-rondo/",
+      "flag": "verdict-watch"
+    },
+    {
+      "ts": "2026-09-10T17:00:00.000Z",
+      "outlet": "AllHipHop",
+      "headline": "BREAKING: Lil Durk Found Not Guilty In Federal Quando Rondo Plot & Lul Pab Murder",
+      "url": "https://allhiphop.com/news/breaking-lil-durk-found-not-guilty-in-federal-quando-rondo-plot-lul-pab-murder/",
+      "flag": "verdict-watch"
+    },
+    {
+      "ts": "2026-09-10T17:00:00.000Z",
+      "outlet": "Rolling Stone",
+      "headline": "Lil Durk Acquitted of All Charges at Trial Over Shooting That Killed Quando Rondo’s Cousin",
+      "url": "https://www.rollingstone.com/music/music-news/lil-durk-verdict-quando-rondo-conspiracy-trial-akademiks-1235622493/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-10T11:11:21.000Z",
       "outlet": "via MSN",
       "headline": "DJ Akademiks says the prosecutor in the Lil Durk trial put his life in danger by bringing up his name",
@@ -678,27 +699,6 @@
       "headline": "Lil Durk Trial Turns To King Von Texts As Defense Challenges Context",
       "url": "https://allhiphop.com/news/lil-durk-trial-turns-to-king-von-texts-as-defense-challenges-context/",
       "flag": null
-    },
-    {
-      "ts": "2026-08-26T15:56:32.000Z",
-      "outlet": "via MSN",
-      "headline": "Lil Durk Trial Jurors See 'Redman' Video, Defense Calls It 'Art'",
-      "url": "https://www.msn.com/en-us/news/other/lil-durk-trial-jurors-see-redman-video-defense-calls-it-art/ar-AA2aZy9x",
-      "flag": null
-    },
-    {
-      "ts": "2026-08-26T15:47:09.000Z",
-      "outlet": "via MSN",
-      "headline": "OTF Jam identifies Lil Durk in court as a participant in murder of Quando Rondo’s cousin – report",
-      "url": "https://www.msn.com/en-us/crime/general/otf-jam-identifies-lil-durk-in-court-as-a-participant-in-murder-of-quando-rondo-s-cousin-report/ar-AA2b0h1O",
-      "flag": null
-    },
-    {
-      "ts": "2026-08-26T02:16:00.000Z",
-      "outlet": "DancehallMag",
-      "headline": "Lil Durk Trial: How ‘Rats to Riches’ Pants Helped Police Crack the Case",
-      "url": "https://www.dancehallmag.com/2026/08/26/news/lil-durk-trial-how-rats-to-riches-pants-helped-police-crack-the-case.html",
-      "flag": null
     }
   ],
   "seen": [
@@ -889,6 +889,10 @@
     "1gbpk0r",
     "roofov",
     "1gaz14s",
-    "1ss9zzq"
+    "1ss9zzq",
+    "1te2s9u",
+    "ah18s3",
+    "1gb04ml",
+    "173260a"
   ]
 }

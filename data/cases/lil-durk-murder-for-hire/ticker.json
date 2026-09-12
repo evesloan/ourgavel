@@ -1,6 +1,20 @@
 {
   "items": [
     {
+      "ts": "2026-09-12T14:35:00.000Z",
+      "outlet": "via Yahoo News",
+      "headline": "Lil Durk Trial: Both Sides Argue Over Rapper’s Accountability for Murder",
+      "url": "https://www.yahoo.com/entertainment/music/articles/lil-durk-trial-both-sides-213546459.html",
+      "flag": null
+    },
+    {
+      "ts": "2026-09-11T20:59:00.000Z",
+      "outlet": "vice.com",
+      "headline": "Lil Durk Won’t Leave Prison Despite Being Found Not Guilty of All Charges in Murder for Hire Trial",
+      "url": "https://www.vice.com/en/article/lil-durk-wont-leave-prison-despite-being-found-not-guilty-of-all-charges-in-murder-for-hire-trial/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-11T17:01:00.000Z",
       "outlet": "hindustantimes.com",
       "headline": "Lil Durk trial: What happens after big Friday verdict? Outcomes of guilty and not guilty scenarios explained",
@@ -685,20 +699,6 @@
       "headline": "New Footage of King Von’s Murder Showed at Lil Durk’s Murder-for-Hire Trial",
       "url": "https://thesource.com/2026/08/27/new-footage-of-king-vons-murder-showed-at-lil-durks-murder-for-hire-trial/",
       "flag": null
-    },
-    {
-      "ts": "2026-08-26T20:19:00.000Z",
-      "outlet": "Primetimer",
-      "headline": "Lil Durk Trial: OTF Jam takes stand to identify rapper as a participant in murder",
-      "url": "https://www.primetimer.com/news/lil-durk-trial-otf-jam-takes-stand-to-identify-rapper-as-a-participant-in-murder",
-      "flag": null
-    },
-    {
-      "ts": "2026-08-26T16:30:00.000Z",
-      "outlet": "AllHipHop",
-      "headline": "Lil Durk Trial Turns To King Von Texts As Defense Challenges Context",
-      "url": "https://allhiphop.com/news/lil-durk-trial-turns-to-king-von-texts-as-defense-challenges-context/",
-      "flag": null
     }
   ],
   "seen": [
@@ -894,6 +894,8 @@
     "ah18s3",
     "1gb04ml",
     "173260a",
-    "prhzct"
+    "prhzct",
+    "19vfqtm",
+    "1el5zl2"
   ]
 }

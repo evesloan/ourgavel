@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-12T13:38:04.000Z",
+      "outlet": "FITSNews",
+      "headline": "Week in Review &#8211; Southern Charm, Clemson Drama, Murdaugh Venue and Saylor Hayes",
+      "url": "https://www.fitsnews.com/2026/09/12/week-in-review-southern-charm-clemson-drama-murdaugh-venue-and-saylor-hayes/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-10T08:42:00.000Z",
       "outlet": "lexingtonchronicle.com",
       "headline": "Court moves Alex Murdaugh retrial to Sumter County",
@@ -692,17 +699,9 @@
       "headline": "Alex Murdaugh's legal team clashes with prosecutors over where to hold retrial",
       "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-s-legal-team-clashes-with-prosecutors-over-where-to-hold-retrial/ar-AA2a6njl",
       "flag": null
-    },
-    {
-      "ts": "2026-08-14T05:23:00.000Z",
-      "outlet": "via Yahoo News",
-      "headline": "Alex Murdaugh's double murder retrial to be moved over jury fairness concerns, judge rules",
-      "url": "https://uk.news.yahoo.com/alex-murdaughs-double-murder-retrial-to-be-moved-over-jury-fairness-concerns-judge-rules-161302163.html",
-      "flag": null
     }
   ],
   "seen": [
-    "bjpd44",
     "10xmzi7",
     "uwtou7",
     "50gcbo",
@@ -1301,6 +1300,7 @@
     "1gbn9mu",
     "1uevp1b",
     "1v4hgfw",
-    "gcege9"
+    "gcege9",
+    "1m3k9vy"
   ]
 }

@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-11T17:01:00.000Z",
+      "outlet": "hindustantimes.com",
+      "headline": "Lil Durk trial: What happens after big Friday verdict? Outcomes of guilty and not guilty scenarios explained",
+      "url": "https://www.hindustantimes.com/world-news/us-news/lil-durk-trial-what-happens-after-big-friday-verdict-outcomes-of-guilty-and-not-guilty-scenarios-explained-101789169774399.html",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-11T09:36:46.000Z",
       "outlet": "via MSN",
       "headline": "Lil Durk trial: Verdict in Quando Rondo case expected today as jury deliberation enters day 3",
@@ -692,13 +699,6 @@
       "headline": "Lil Durk Trial: How ‘Rats to Riches’ Pants Helped Police Crack the Case",
       "url": "https://www.dancehallmag.com/2026/08/26/news/lil-durk-trial-how-rats-to-riches-pants-helped-police-crack-the-case.html",
       "flag": null
-    },
-    {
-      "ts": "2026-08-25T20:16:45.000Z",
-      "outlet": "via MSN",
-      "headline": "Lil Durk murder-for-hire trial: Prosecutors revisit the murder of King Von",
-      "url": "https://www.msn.com/en-us/news/other/lil-durk-murder-for-hire-trial-prosecutors-revisit-the-murder-of-king-von/ar-AA2aVtXo",
-      "flag": null
     }
   ],
   "seen": [
@@ -888,6 +888,7 @@
     "1gbp08o",
     "1gbpk0r",
     "roofov",
-    "1gaz14s"
+    "1gaz14s",
+    "1ss9zzq"
   ]
 }

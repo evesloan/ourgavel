@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-13T10:39:00.000Z",
+      "outlet": "via Yahoo News",
+      "headline": "Lil Durk Trial Verdict: Why He Might Stay in Jail",
+      "url": "https://www.yahoo.com/entertainment/celebrity/articles/lil-durk-trial-verdict-why-174031942.html",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-12T14:35:00.000Z",
       "outlet": "via Yahoo News",
       "headline": "Lil Durk Trial: Both Sides Argue Over Rapper’s Accountability for Murder",
@@ -692,13 +699,6 @@
       "headline": "OTF Jam Takes the Stand in Lil Durk Trial With Explosive Testimony About Quando Rondo",
       "url": "https://thesource.com/2026/08/27/otf-jam-takes-the-stand-in-lil-durk-trial-with-explosive-testimony-about-quando-rondo/",
       "flag": null
-    },
-    {
-      "ts": "2026-08-27T02:56:00.000Z",
-      "outlet": "thesource.com",
-      "headline": "New Footage of King Von’s Murder Showed at Lil Durk’s Murder-for-Hire Trial",
-      "url": "https://thesource.com/2026/08/27/new-footage-of-king-vons-murder-showed-at-lil-durks-murder-for-hire-trial/",
-      "flag": null
     }
   ],
   "seen": [
@@ -896,6 +896,7 @@
     "173260a",
     "prhzct",
     "19vfqtm",
-    "1el5zl2"
+    "1el5zl2",
+    "6q8j10"
   ]
 }

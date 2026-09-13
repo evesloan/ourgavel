@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-12T20:42:09.000Z",
+      "outlet": "Las Vegas Review-Journal",
+      "headline": "Suge Knight recording offers new claims in Tupac Shakur killing",
+      "url": "https://www.reviewjournal.com/crime/suge-knight-recording-offers-new-claims-in-tupac-shakur-killing-3885542/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-08T05:10:16.000Z",
       "outlet": "KTNV Las Vegas",
       "headline": "Tupac Shakur fans gather on 30th anniversary of his death after conviction in case",
@@ -608,6 +615,7 @@
     "1em0q1m",
     "jyvucm",
     "1he1imz",
-    "uejeic"
+    "uejeic",
+    "1udq68v"
   ]
 }

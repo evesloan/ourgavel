@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-14T19:18:28.000Z",
+      "outlet": "Boston.com",
+      "headline": "Trump responds to calls for Lindsay Clancy pardon: ‘I hope they can work it out’",
+      "url": "https://www.boston.com/news/crime/2026/09/14/lindsay-clancy-donald-trump-pardon-plea/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-14T17:58:20.000Z",
       "outlet": "Boston 25 News",
       "headline": "President Trump says he won’t intervene in Lindsay Clancy case after mistrial",
@@ -692,13 +699,6 @@
       "headline": "'Salute these jurors': Retired judge's perspective on Clancy trial deliberations",
       "url": "https://www.wcvb.com/article/lindsay-clancy-trial-jury-perspectives-retired-judge-sept-3/73606259",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-09-03T14:38:39.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "‘We’re going to do it quick’: Lindsay Clancy attorney prepares for possible retrial",
-      "url": "https://www.boston25news.com/news/local/were-going-do-it-quick-lindsay-clancy-attorney-prepares-possible-retrial/T2JZ7HSHOZHCLFOVLIP3L4K73M/",
-      "flag": null
     }
   ],
   "seen": [
@@ -968,6 +968,7 @@
     "uxk3sa",
     "mdfvrz",
     "s0e8pf",
-    "doo68h"
+    "doo68h",
+    "16gjo8s"
   ]
 }

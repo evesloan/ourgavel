@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-14T17:58:20.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "President Trump says he won’t intervene in Lindsay Clancy case after mistrial",
+      "url": "https://www.boston25news.com/news/local/president-trump-says-he-wont-intervene-lindsay-clancy-case-after-mistrial/2EW74M7OTBA4DOAG2FY7YBTOFE/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-14T10:10:00.000Z",
       "outlet": "WCVB",
       "headline": "'State situation, not federal': Trump responds to Lindsay Clancy pardon request",
@@ -692,13 +699,6 @@
       "headline": "‘We’re going to do it quick’: Lindsay Clancy attorney prepares for possible retrial",
       "url": "https://www.boston25news.com/news/local/were-going-do-it-quick-lindsay-clancy-attorney-prepares-possible-retrial/T2JZ7HSHOZHCLFOVLIP3L4K73M/",
       "flag": null
-    },
-    {
-      "ts": "2026-09-03T13:53:00.000Z",
-      "outlet": "WCVB",
-      "headline": "Lindsay Clancy's lawyer brings her letters from 'all over the world'",
-      "url": "https://www.wcvb.com/article/reddington-lindsay-clancy-letters/73604200",
-      "flag": null
     }
   ],
   "seen": [
@@ -967,6 +967,7 @@
     "1hc3ud9",
     "uxk3sa",
     "mdfvrz",
-    "s0e8pf"
+    "s0e8pf",
+    "doo68h"
   ]
 }

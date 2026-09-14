@@ -155,10 +155,10 @@
       "flag": null
     },
     {
-      "ts": "2026-09-08T18:38:48.000Z",
-      "outlet": "via MSN",
-      "headline": "Alex Murdaugh retrial gets new venue after defense raises jury bias concerns",
-      "url": "https://www.msn.com/en-us/news/news/alex-murdaugh-retrial-gets-new-venue-after-defense-raises-jury-bias-concerns/ar-AA2bPFrB",
+      "ts": "2026-09-08T18:38:00.000Z",
+      "outlet": "People",
+      "headline": "Alex Murdaugh Retrial Gets New Venue After Defense Raises Jury Bias Concerns",
+      "url": "https://people.com/alex-murdaugh-retrial-gets-new-venue-after-defense-raises-jury-bias-concerns-12112039",
       "flag": "verdict-watch"
     },
     {
@@ -167,13 +167,6 @@
       "headline": "Retrial of Alex Murdaugh’s double murder case being moved to Sumter County",
       "url": "https://www.postandcourier.com/epaper/page-a7/page_00cbe06f-4a2d-57ac-9f3d-6024c1c1bffa.html",
       "flag": null
-    },
-    {
-      "ts": "2026-09-08T17:01:00.000Z",
-      "outlet": "via Yahoo News",
-      "headline": "Alex Murdaugh Retrial Gets New Venue After Defense Raises Jury Bias Concerns",
-      "url": "https://www.yahoo.com/news/us/articles/alex-murdaugh-retrial-gets-venue-013848393.html",
-      "flag": "verdict-watch"
     },
     {
       "ts": "2026-09-08T16:03:31.000Z",
@@ -236,6 +229,13 @@
       "outlet": "via MSN",
       "headline": "Judge orders Alex Murdaugh murder retrial moved to nearby county",
       "url": "https://www.msn.com/en-us/crime/general/judge-orders-alex-murdaugh-murder-retrial-moved-to-nearby-county/ar-AA2bPruS",
+      "flag": null
+    },
+    {
+      "ts": "2026-09-08T14:34:00.000Z",
+      "outlet": "Fox News",
+      "headline": "Un juez ordena que el nuevo juicio por el asesinato de Murdaugh, en &#171; Alex &#187;, se traslade a un condado cercano",
+      "url": "https://noticias.foxnews.com/us/judge-orders-alex-murdaugh-murder-retrial-moved-nearby-county",
       "flag": null
     },
     {
@@ -400,17 +400,10 @@
       "flag": "verdict-watch"
     },
     {
-      "ts": "2026-08-18T10:19:11.000Z",
-      "outlet": "via MSN",
-      "headline": "Alex Murdaugh moves for new home for double-murder retrial",
-      "url": "https://www.msn.com/en-us/news/us/alex-murdaugh-moves-for-new-home-for-double-murder-retrial/ar-AA2apogu",
-      "flag": null
-    },
-    {
       "ts": "2026-08-18T10:18:00.000Z",
-      "outlet": "via AOL",
+      "outlet": "Fox News",
       "headline": "Alex Murdaugh moves for new home for double-murder retrial",
-      "url": "https://www.aol.com/articles/alex-murdaugh-moves-home-double-171911000.html",
+      "url": "https://www.foxnews.com/us/alex-murdaugh-moves-new-trial-double-murder-retrial",
       "flag": null
     },
     {
@@ -702,9 +695,6 @@
     }
   ],
   "seen": [
-    "10xmzi7",
-    "uwtou7",
-    "50gcbo",
     "levi4c",
     "1wquddb",
     "tyogry",
@@ -1301,6 +1291,9 @@
     "1uevp1b",
     "1v4hgfw",
     "gcege9",
-    "1m3k9vy"
+    "1m3k9vy",
+    "hfmz77",
+    "sp793s",
+    "1393qqs"
   ]
 }

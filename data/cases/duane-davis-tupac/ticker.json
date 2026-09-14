@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-14T12:48:47.000Z",
+      "outlet": "News 3 Las Vegas",
+      "headline": "Detective who helped bring Tupac Shakur case to trial speaks publicly for first time",
+      "url": "https://news3lv.com/news/local/detective-tupac-shakur-case-trial-speaks-publicly-clifford-mogg-exclusive-interview-las-vegas-cops-duane-keffe-d-davis-nevada",
+      "flag": null
+    },
+    {
       "ts": "2026-09-12T20:42:09.000Z",
       "outlet": "Las Vegas Review-Journal",
       "headline": "Suge Knight recording offers new claims in Tupac Shakur killing",
@@ -616,6 +623,7 @@
     "jyvucm",
     "1he1imz",
     "uejeic",
-    "1udq68v"
+    "1udq68v",
+    "1wzmxss"
   ]
 }

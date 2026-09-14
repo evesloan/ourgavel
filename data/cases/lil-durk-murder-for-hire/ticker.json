@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-13T15:56:00.000Z",
+      "outlet": "via Yahoo News",
+      "headline": "Lil Durk Trial: Brian Steel Says OTF Jam is a 'Serial Killer'",
+      "url": "https://www.yahoo.com/entertainment/celebrity/articles/lil-durk-trial-brian-steel-225515713.html",
+      "flag": null
+    },
+    {
       "ts": "2026-09-13T10:39:00.000Z",
       "outlet": "via Yahoo News",
       "headline": "Lil Durk Trial Verdict: Why He Might Stay in Jail",
@@ -692,13 +699,6 @@
       "headline": "Lil Durk Trial Day 6: OTF Jam Lays Out Assassination Plan, Says He Has No Respect For Rapper",
       "url": "https://allhiphop.com/news/lil-durk-trial-day-6-otf-jam-lays-out-assassination-plan-says-he-has-no-respect-for-rapper/",
       "flag": null
-    },
-    {
-      "ts": "2026-08-27T05:01:00.000Z",
-      "outlet": "thesource.com",
-      "headline": "OTF Jam Takes the Stand in Lil Durk Trial With Explosive Testimony About Quando Rondo",
-      "url": "https://thesource.com/2026/08/27/otf-jam-takes-the-stand-in-lil-durk-trial-with-explosive-testimony-about-quando-rondo/",
-      "flag": null
     }
   ],
   "seen": [
@@ -897,6 +897,7 @@
     "prhzct",
     "19vfqtm",
     "1el5zl2",
-    "6q8j10"
+    "6q8j10",
+    "1wfdlom"
   ]
 }

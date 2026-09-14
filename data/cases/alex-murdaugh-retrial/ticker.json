@@ -596,6 +596,13 @@
       "flag": null
     },
     {
+      "ts": "2026-08-14T11:59:00.000Z",
+      "outlet": "newsweek.com",
+      "headline": "4 Biggest Bombshells From Alex Murdaugh’s Pretrial Hearing",
+      "url": "https://www.newsweek.com/alex-murdaugh-hearing-pretrial-case-family-murders-12324867",
+      "flag": null
+    },
+    {
       "ts": "2026-08-14T10:57:00.000Z",
       "outlet": "People",
       "headline": "Alex Murdaugh Scores Victory in Court As Judge Allows Change of Venue for Upcoming Double Murder Retrial",
@@ -695,7 +702,6 @@
     }
   ],
   "seen": [
-    "levi4c",
     "1wquddb",
     "tyogry",
     "ea0hcv",
@@ -1294,6 +1300,7 @@
     "1m3k9vy",
     "hfmz77",
     "sp793s",
-    "1393qqs"
+    "1393qqs",
+    "e89rsf"
   ]
 }

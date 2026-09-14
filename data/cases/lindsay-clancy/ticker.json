@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-14T10:10:00.000Z",
+      "outlet": "WCVB",
+      "headline": "'State situation, not federal': Trump responds to Lindsay Clancy pardon request",
+      "url": "https://www.wcvb.com/article/pardon-request-lindsay-clancy-trump-response/73717801",
+      "flag": null
+    },
+    {
       "ts": "2026-09-11T16:00:04.000Z",
       "outlet": "NBC10 Boston",
       "headline": "Domestic violence allegations raise questions about holdout juror in Lindsay Clancy trial",
@@ -692,13 +699,6 @@
       "headline": "Lindsay Clancy's lawyer brings her letters from 'all over the world'",
       "url": "https://www.wcvb.com/article/reddington-lindsay-clancy-letters/73604200",
       "flag": null
-    },
-    {
-      "ts": "2026-09-03T12:54:41.000Z",
-      "outlet": "Boston.com",
-      "headline": "Livestream: Lindsay Clancy trial jury heads back into deliberations after twice reporting deadlock",
-      "url": "https://www.boston.com/news/crime/2026/09/03/lindsay-clancy-trial-verdict-watch-thursday-september-3/",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
@@ -966,6 +966,7 @@
     "14vxt3e",
     "1hc3ud9",
     "uxk3sa",
-    "mdfvrz"
+    "mdfvrz",
+    "s0e8pf"
   ]
 }

@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-15T02:05:00.000Z",
+      "outlet": "via Yahoo News",
+      "headline": "Why was Sumter, SC, chosen to host Alex Murdaugh double-murder retrial?",
+      "url": "https://www.yahoo.com/news/us/articles/why-sumter-sc-chosen-host-090539925.html",
+      "flag": null
+    },
+    {
       "ts": "2026-09-12T13:38:04.000Z",
       "outlet": "FITSNews",
       "headline": "Week in Review &#8211; Southern Charm, Clemson Drama, Murdaugh Venue and Saylor Hayes",
@@ -400,6 +407,13 @@
       "flag": "verdict-watch"
     },
     {
+      "ts": "2026-08-18T11:46:00.000Z",
+      "outlet": "baltimoresun.com",
+      "headline": "Murdaugh’s legal team shifts focus to South Carolina state capital for retrial",
+      "url": "https://www.baltimoresun.com/2026/08/18/murdaughs-legal-team-shifts-focus-to-south-carolina-state-capital-for-retrial/",
+      "flag": null
+    },
+    {
       "ts": "2026-08-18T10:18:00.000Z",
       "outlet": "Fox News",
       "headline": "Alex Murdaugh moves for new home for double-murder retrial",
@@ -685,25 +699,9 @@
       "headline": "Murdaugh retrial will not take place in Colleton County, judge says",
       "url": "https://www.msn.com/en-us/news/news/live-alex-murdaugh-appears-in-court-for-pretrial-hearing/ar-AA2a7yVn",
       "flag": null
-    },
-    {
-      "ts": "2026-08-14T06:00:00.000Z",
-      "outlet": "via MSN",
-      "headline": "Murdaugh double-murder retrial to move out of Colleton County to parts still unknown, possibly Charleston",
-      "url": "https://www.msn.com/en-us/crime/general/murdaugh-saga-back-in-court-to-hammer-out-indictments-dna-evidence-trial-venue-and-more/ar-AA2a6qfA",
-      "flag": null
-    },
-    {
-      "ts": "2026-08-14T05:57:00.000Z",
-      "outlet": "via MSN",
-      "headline": "Alex Murdaugh's legal team clashes with prosecutors over where to hold retrial",
-      "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-s-legal-team-clashes-with-prosecutors-over-where-to-hold-retrial/ar-AA2a6njl",
-      "flag": null
     }
   ],
   "seen": [
-    "ea0hcv",
-    "yw6txn",
     "oi8h95",
     "1lqmq0r",
     "1r3ha5s",
@@ -1301,6 +1299,8 @@
     "1393qqs",
     "e89rsf",
     "c8f5qc",
-    "kx6glo"
+    "kx6glo",
+    "oiietj",
+    "pedknd"
   ]
 }

@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-15T02:14:07.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Doxing to death threats to six-figure fundraiser, Lindsay Clancy jurors face intense public scrutiny",
+      "url": "https://www.boston25news.com/news/local/doxing-death-threats-six-figure-fundraiser-lindsay-clancy-jurors-face-intense-public-scrutiny/VQ6D7747FBCOVA2VWD4RF3WSNA/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-14T19:18:28.000Z",
       "outlet": "Boston.com",
       "headline": "Trump responds to calls for Lindsay Clancy pardon: ‘I hope they can work it out’",
@@ -692,13 +699,6 @@
       "headline": "What did the Lindsay Clancy judge tell the jury about reasonable doubt?",
       "url": "https://www.nbcboston.com/news/local/lindsay-clancy-judge-jury-reasonable-doubt/4009034/",
       "flag": null
-    },
-    {
-      "ts": "2026-09-03T16:34:00.000Z",
-      "outlet": "WCVB",
-      "headline": "'Salute these jurors': Retired judge's perspective on Clancy trial deliberations",
-      "url": "https://www.wcvb.com/article/lindsay-clancy-trial-jury-perspectives-retired-judge-sept-3/73606259",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
@@ -969,6 +969,7 @@
     "mdfvrz",
     "s0e8pf",
     "doo68h",
-    "16gjo8s"
+    "16gjo8s",
+    "1vngsxn"
   ]
 }

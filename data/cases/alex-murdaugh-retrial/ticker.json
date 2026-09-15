@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-15T02:05:39.000Z",
+      "outlet": "via MSN",
+      "headline": "Why was Sumter, SC, chosen to host Alex Murdaugh double-murder retrial?",
+      "url": "https://www.msn.com/en-us/news/other/why-was-sumter-sc-chosen-to-host-alex-murdaugh-double-murder-retrial/ar-AA2cfzEU",
+      "flag": null
+    },
+    {
       "ts": "2026-09-15T02:05:00.000Z",
       "outlet": "via Yahoo News",
       "headline": "Why was Sumter, SC, chosen to host Alex Murdaugh double-murder retrial?",
@@ -692,17 +699,9 @@
       "headline": "Alex Murdaugh’s ‘explosive’ request to blow up murder trial depends on DNA, stolen money and lies: attorney",
       "url": "https://nypost.com/2026/08/14/us-news/alex-murdaughs-bid-to-dismiss-murder-trial-depends-on-dna-stolen-money-and-lies-attorney/",
       "flag": null
-    },
-    {
-      "ts": "2026-08-14T07:16:55.000Z",
-      "outlet": "via MSN",
-      "headline": "Murdaugh retrial will not take place in Colleton County, judge says",
-      "url": "https://www.msn.com/en-us/news/news/live-alex-murdaugh-appears-in-court-for-pretrial-hearing/ar-AA2a7yVn",
-      "flag": null
     }
   ],
   "seen": [
-    "oi8h95",
     "1lqmq0r",
     "1r3ha5s",
     "1s8tz3p",
@@ -1301,6 +1300,7 @@
     "c8f5qc",
     "kx6glo",
     "oiietj",
-    "pedknd"
+    "pedknd",
+    "1gbx2nx"
   ]
 }

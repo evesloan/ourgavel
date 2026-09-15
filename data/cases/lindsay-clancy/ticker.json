@@ -1,6 +1,34 @@
 {
   "items": [
     {
+      "ts": "2026-09-15T16:36:25.000Z",
+      "outlet": "Boston.com",
+      "headline": "Judge in Lindsay Clancy case impounds jurors’ names indefinitely, says at least one has gotten threats",
+      "url": "https://www.boston.com/news/crime/2026/09/15/lindsay-clancy-juror-names-impounded-indefinitely/",
+      "flag": null
+    },
+    {
+      "ts": "2026-09-15T15:48:56.000Z",
+      "outlet": "Boston.com",
+      "headline": "Who is Kelsie Cote? What to know about Lindsay Clancy’s attorney’s other big murder case.",
+      "url": "https://www.boston.com/news/crime/2026/09/15/kevin-reddington-defense-attorney-kelsie-cote-lindsay-clancy/",
+      "flag": null
+    },
+    {
+      "ts": "2026-09-15T13:22:21.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Lindsay Clancy judge indefinitely extends order shielding identities of jurors",
+      "url": "https://www.boston25news.com/news/local/lindsay-clancy-judge-indefinitely-extends-order-shielding-identities-jurors/C7M7GI6HJVHYFMWI52NGPZ3LQ4/",
+      "flag": null
+    },
+    {
+      "ts": "2026-09-15T12:07:40.000Z",
+      "outlet": "NBC10 Boston",
+      "headline": "Judge keeping names of jurors in Lindsay Clancy trial impounded",
+      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-juror-list-impounded/4014797/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-15T02:14:07.000Z",
       "outlet": "Boston 25 News",
       "headline": "Doxing to death threats to six-figure fundraiser, Lindsay Clancy jurors face intense public scrutiny",
@@ -671,34 +699,6 @@
       "headline": "Lindsay Clancy's defense wants juror removed: Watch the arguments",
       "url": "https://www.wcvb.com/article/lindsay-clancy-defense-juror-remove-motion-sept-3/73608353",
       "flag": null
-    },
-    {
-      "ts": "2026-09-03T20:10:14.000Z",
-      "outlet": "Court TV",
-      "headline": "‘It’s a real shame’: Lindsay Clancy’s defense asks judge to remove single juror ‘who refuses to listen to the law’",
-      "url": "https://www.courttv.com/news/its-a-real-shame-lindsay-clancys-defense-asks-judge-to-remove-single-juror-who-refuses-to-listen-to-the-law/",
-      "flag": null
-    },
-    {
-      "ts": "2026-09-03T20:03:51.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "Judge sends deadlocked Lindsay Clancy jury back after defense seeks 1 juror’s removal",
-      "url": "https://www.boston25news.com/news/local/judge-sends-deadlocked-lindsay-clancy-jury-back-after-defense-seeks-1-jurors-removal/FMR6EXM5EVCPBG5U7YPLHCUROU/",
-      "flag": null
-    },
-    {
-      "ts": "2026-09-03T19:55:13.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "Lindsay Clancy Trial (updates): Defense wants juror to be removed as deliberations continue",
-      "url": "https://www.boston25news.com/news/local/clancys-defense-says-one-juror-has-spurned-court-instructions-deliberations-continue/ORPL46DF6BFABPK5MFOVRKUKMI/",
-      "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-09-03T16:57:13.000Z",
-      "outlet": "NBC10 Boston",
-      "headline": "What did the Lindsay Clancy judge tell the jury about reasonable doubt?",
-      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-judge-jury-reasonable-doubt/4009034/",
-      "flag": null
     }
   ],
   "seen": [
@@ -970,6 +970,10 @@
     "s0e8pf",
     "doo68h",
     "16gjo8s",
-    "1vngsxn"
+    "1vngsxn",
+    "1i6evf4",
+    "jray7i",
+    "11k5x5g",
+    "8ysdu6"
   ]
 }

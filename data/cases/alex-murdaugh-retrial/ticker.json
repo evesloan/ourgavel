@@ -270,6 +270,13 @@
       "ts": "2026-09-08T14:09:05.000Z",
       "outlet": "via MSN",
       "headline": "Alex Murdaugh retrial to take place in Sumter County, judge rules",
+      "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-retrial-to-take-place-in-sumter-county-judge-rules/ar-AA2bP55m",
+      "flag": null
+    },
+    {
+      "ts": "2026-09-08T14:09:05.000Z",
+      "outlet": "via MSN",
+      "headline": "Alex Murdaugh retrial to take place in Sumter County, judge rules",
       "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-retrial-to-take-place-in-sumter-county-judge-rules/ar-AA2bPQrg",
       "flag": null
     },
@@ -692,17 +699,9 @@
       "headline": "Judge orders Alex Murdaugh's murder retrial moved out of Colleton",
       "url": "https://www.msn.com/en-us/news/crime/judge-orders-alex-murdaughs-murder-retrial-moved-out-of-colleton/ar-AA2a7uez",
       "flag": null
-    },
-    {
-      "ts": "2026-08-14T07:23:00.000Z",
-      "outlet": "nypost.com",
-      "headline": "Alex Murdaugh’s ‘explosive’ request to blow up murder trial depends on DNA, stolen money and lies: attorney",
-      "url": "https://nypost.com/2026/08/14/us-news/alex-murdaughs-bid-to-dismiss-murder-trial-depends-on-dna-stolen-money-and-lies-attorney/",
-      "flag": null
     }
   ],
   "seen": [
-    "1lqmq0r",
     "1r3ha5s",
     "1s8tz3p",
     "1xr5i7s",
@@ -1301,6 +1300,7 @@
     "kx6glo",
     "oiietj",
     "pedknd",
-    "1gbx2nx"
+    "1gbx2nx",
+    "1gbi7md"
   ]
 }

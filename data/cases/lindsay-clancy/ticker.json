@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-16T18:19:57.000Z",
+      "outlet": "Boston.com",
+      "headline": "Patrick Clancy to give first interview since Lindsay Clancy mistrial Sunday night on ‘60 Minutes’",
+      "url": "https://www.boston.com/news/crime/2026/09/16/patrick-clancy-interview-60-minutes/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-16T15:19:00.000Z",
       "outlet": "WCVB",
       "headline": "Lindsay Clancy hires attorney who was briefly part of Karen Read's legal team",
@@ -12,6 +19,13 @@
       "outlet": "Boston.com",
       "headline": "Massachusetts governor proposes improved postpartum healthcare after Lindsay Clancy trial",
       "url": "https://www.boston.com/news/health/2026/09/16/massachusetts-governor-proposes-improved-postpartum-healthcare-after-lindsay-clancy-trial/",
+      "flag": null
+    },
+    {
+      "ts": "2026-09-16T14:03:11.000Z",
+      "outlet": "NBC10 Boston",
+      "headline": "Patrick Clancy gives his 1st interview after the Lindsay Clancy trial",
+      "url": "https://www.nbcboston.com/news/local/patrick-clancy-first-interview/4015837/",
       "flag": null
     },
     {
@@ -685,20 +699,6 @@
       "headline": "Lindsay Clancy's attorney files emergency motion. Here's what it says",
       "url": "https://www.nbcboston.com/news/local/lindsay-clancys-attorney-kevin-reddington-files-emergency-motion-heres-what-it-says/4009369/",
       "flag": null
-    },
-    {
-      "ts": "2026-09-04T07:47:04.000Z",
-      "outlet": "NBC10 Boston",
-      "headline": "Lindsay Clancy verdict watch: Deadlocked jury returns as single juror could decide trial",
-      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-trial-live-stream-live-updates-as-verdict-watch-continues/4009228/",
-      "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-09-04T02:34:18.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "Tensions high outside courthouse as Lindsay Clancy jury deliberates for sixth day",
-      "url": "https://www.boston25news.com/news/local/tensions-high-outside-courthouse-lindsay-clancy-jury-deliberates-sixth-day/EZQYN7Z4YBHODOV74LSG2L7HZI/",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
@@ -978,6 +978,8 @@
     "coq939",
     "gzjfuz",
     "1lc0qan",
-    "137yd8m"
+    "137yd8m",
+    "yw12l7",
+    "1l4mds7"
   ]
 }

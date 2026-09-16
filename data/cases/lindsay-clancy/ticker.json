@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-16T14:05:56.000Z",
+      "outlet": "Boston.com",
+      "headline": "Massachusetts governor proposes improved postpartum healthcare after Lindsay Clancy trial",
+      "url": "https://www.boston.com/news/health/2026/09/16/massachusetts-governor-proposes-improved-postpartum-healthcare-after-lindsay-clancy-trial/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-16T01:49:00.000Z",
       "outlet": "Boston 25 News",
       "headline": "Lindsay Clancy juror reacts to recently proposed state postpartum proposal",
@@ -692,13 +699,6 @@
       "headline": "Legal experts dub courtroom developments in Clancy trial a ‘bombshell’",
       "url": "https://www.boston25news.com/news/local/legal-experts-dub-courtroom-developments-clancy-trial-bombshell/AMFKBEQKMNCEPI2GZ6BKLJTNB4/",
       "flag": null
-    },
-    {
-      "ts": "2026-09-04T00:58:53.000Z",
-      "outlet": "NBC10 Boston",
-      "headline": "With Lindsay Clancy jury deadlocked, what might a potential retrial look like?",
-      "url": "https://www.nbcboston.com/news/local/massachusetts-court-famous-retrials/4009177/",
-      "flag": null
     }
   ],
   "seen": [
@@ -976,6 +976,7 @@
     "11k5x5g",
     "8ysdu6",
     "coq939",
-    "gzjfuz"
+    "gzjfuz",
+    "1lc0qan"
   ]
 }

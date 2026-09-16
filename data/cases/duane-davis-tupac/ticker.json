@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-16T01:32:11.000Z",
+      "outlet": "News 3 Las Vegas",
+      "headline": "Suge Knight disputes key details in Tupac Shakur killing during 2024 prison interview",
+      "url": "https://news3lv.com/news/local/2024-prison-interview-reveals-new-claims-by-hip-hop-mogul-suge-knight",
+      "flag": null
+    },
+    {
       "ts": "2026-09-14T12:48:47.000Z",
       "outlet": "News 3 Las Vegas",
       "headline": "Detective who helped bring Tupac Shakur case to trial speaks publicly for first time",
@@ -624,6 +631,7 @@
     "1he1imz",
     "uejeic",
     "1udq68v",
-    "1wzmxss"
+    "1wzmxss",
+    "1elqc84"
   ]
 }

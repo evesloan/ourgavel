@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-16T01:49:00.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Lindsay Clancy juror reacts to recently proposed state postpartum proposal",
+      "url": "https://www.boston25news.com/news/local/lindsay-clancy-juror-reacts-recently-proposed-state-postpartum-proposal/5G5B4ECA3RE6JMNYOTAHNZYNR4/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-15T16:36:25.000Z",
       "outlet": "Boston.com",
       "headline": "Judge in Lindsay Clancy case impounds jurors’ names indefinitely, says at least one has gotten threats",
@@ -692,13 +699,6 @@
       "headline": "Is there a holdout? Defense says juror in Lindsay Clancy trial will be questioned Friday",
       "url": "https://www.boston25news.com/news/local/is-there-holdout-defense-says-juror-lindsay-clancy-trial-will-be-questioned-friday/XCR5ETYN4VGPHLYROTKGKK2GP4/",
       "flag": null
-    },
-    {
-      "ts": "2026-09-03T20:33:00.000Z",
-      "outlet": "WCVB",
-      "headline": "Lindsay Clancy's defense wants juror removed: Watch the arguments",
-      "url": "https://www.wcvb.com/article/lindsay-clancy-defense-juror-remove-motion-sept-3/73608353",
-      "flag": null
     }
   ],
   "seen": [
@@ -974,6 +974,7 @@
     "1i6evf4",
     "jray7i",
     "11k5x5g",
-    "8ysdu6"
+    "8ysdu6",
+    "coq939"
   ]
 }

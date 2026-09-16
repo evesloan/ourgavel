@@ -8,6 +8,13 @@
       "flag": null
     },
     {
+      "ts": "2026-09-15T22:42:22.000Z",
+      "outlet": "NBC10 Boston",
+      "headline": "How are juries selected in Mass.? Lindsay Clancy case puts process in spotlight",
+      "url": "https://www.nbcboston.com/news/local/massachusetts-jury-selection-process-lindsay-clancy/4015471/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-15T16:36:25.000Z",
       "outlet": "Boston.com",
       "headline": "Judge in Lindsay Clancy case impounds jurors’ names indefinitely, says at least one has gotten threats",
@@ -692,13 +699,6 @@
       "headline": "With Lindsay Clancy jury deadlocked, what might a potential retrial look like?",
       "url": "https://www.nbcboston.com/news/local/massachusetts-court-famous-retrials/4009177/",
       "flag": null
-    },
-    {
-      "ts": "2026-09-03T22:34:24.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "Is there a holdout? Defense says juror in Lindsay Clancy trial will be questioned Friday",
-      "url": "https://www.boston25news.com/news/local/is-there-holdout-defense-says-juror-lindsay-clancy-trial-will-be-questioned-friday/XCR5ETYN4VGPHLYROTKGKK2GP4/",
-      "flag": null
     }
   ],
   "seen": [
@@ -975,6 +975,7 @@
     "jray7i",
     "11k5x5g",
     "8ysdu6",
-    "coq939"
+    "coq939",
+    "gzjfuz"
   ]
 }

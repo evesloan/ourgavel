@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-16T15:19:00.000Z",
+      "outlet": "WCVB",
+      "headline": "Lindsay Clancy hires attorney who was briefly part of Karen Read's legal team",
+      "url": "https://www.wcvb.com/article/lindsay-clancy-hires-martin-weinberg/73759765",
+      "flag": null
+    },
+    {
       "ts": "2026-09-16T14:05:56.000Z",
       "outlet": "Boston.com",
       "headline": "Massachusetts governor proposes improved postpartum healthcare after Lindsay Clancy trial",
@@ -692,13 +699,6 @@
       "headline": "Tensions high outside courthouse as Lindsay Clancy jury deliberates for sixth day",
       "url": "https://www.boston25news.com/news/local/tensions-high-outside-courthouse-lindsay-clancy-jury-deliberates-sixth-day/EZQYN7Z4YBHODOV74LSG2L7HZI/",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-09-04T02:18:10.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "Legal experts dub courtroom developments in Clancy trial a ‘bombshell’",
-      "url": "https://www.boston25news.com/news/local/legal-experts-dub-courtroom-developments-clancy-trial-bombshell/AMFKBEQKMNCEPI2GZ6BKLJTNB4/",
-      "flag": null
     }
   ],
   "seen": [
@@ -977,6 +977,7 @@
     "8ysdu6",
     "coq939",
     "gzjfuz",
-    "1lc0qan"
+    "1lc0qan",
+    "137yd8m"
   ]
 }

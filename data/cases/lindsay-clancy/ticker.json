@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-16T19:21:43.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Lindsay Clancy adds ex-Karen Read attorney for double jeopardy fight",
+      "url": "https://www.boston25news.com/news/local/lindsay-clancy-adds-ex-karen-read-attorney-double-jeopardy-fight/T4MC6AUOZBDFTB6NBSU47WO7DQ/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-16T18:19:57.000Z",
       "outlet": "Boston.com",
       "headline": "Patrick Clancy to give first interview since Lindsay Clancy mistrial Sunday night on ‘60 Minutes’",
@@ -692,13 +699,6 @@
       "headline": "Lindsay Clancy deliberations continue after request to remove juror rejected",
       "url": "https://www.wcvb.com/article/lindsay-clancy-trial-live-updates-sept-4/73613314",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-09-04T08:52:12.000Z",
-      "outlet": "NBC10 Boston",
-      "headline": "Lindsay Clancy's attorney files emergency motion. Here's what it says",
-      "url": "https://www.nbcboston.com/news/local/lindsay-clancys-attorney-kevin-reddington-files-emergency-motion-heres-what-it-says/4009369/",
-      "flag": null
     }
   ],
   "seen": [
@@ -980,6 +980,7 @@
     "1lc0qan",
     "137yd8m",
     "yw12l7",
-    "1l4mds7"
+    "1l4mds7",
+    "1t7801u"
   ]
 }

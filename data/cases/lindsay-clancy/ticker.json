@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-17T15:39:24.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "What comes next after former Karen Read attorney joins Lindsay Clancy’s legal team?",
+      "url": "https://www.boston25news.com/news/local/what-comes-next-after-former-karen-read-attorney-joins-lindsay-clancys-legal-team/FSJMF5UFZJGXVMZ4GSASNXJQDI/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-16T22:36:21.000Z",
       "outlet": "NBC10 Boston",
       "headline": "Retired judge weighs in on Lindsay Clancy mistrial and jury questions",
@@ -692,13 +699,6 @@
       "headline": "‘Never seen this before': Legal expert on holdout juror clash in Lindsay Clancy case",
       "url": "https://www.nbcboston.com/news/local/lindsay-clancy-murder-trial/lindsay-clancy-trial-analysis-juror-holdout/4009442/",
       "flag": null
-    },
-    {
-      "ts": "2026-09-04T10:03:59.000Z",
-      "outlet": "NBC10 Boston",
-      "headline": "WATCH: Judge, defense attorney clash during heated moment in Lindsay Clancy trial",
-      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-trial-kevin-reddington-william-sullivan-heated-exchange/4009403/",
-      "flag": null
     }
   ],
   "seen": [
@@ -982,6 +982,7 @@
     "yw12l7",
     "1l4mds7",
     "1t7801u",
-    "4ufa20"
+    "4ufa20",
+    "e6df7o"
   ]
 }

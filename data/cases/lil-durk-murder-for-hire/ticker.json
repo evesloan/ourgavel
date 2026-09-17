@@ -8,6 +8,13 @@
       "flag": null
     },
     {
+      "ts": "2026-09-16T17:00:00.000Z",
+      "outlet": "via Yahoo News",
+      "headline": "Lil Durk Fans Swarm Brian Steel After Rapper Beats Murder-For-Hire Case",
+      "url": "https://www.yahoo.com/entertainment/music/articles/lil-durk-fans-swarm-brian-030615734.html",
+      "flag": null
+    },
+    {
       "ts": "2026-09-14T05:00:00.000Z",
       "outlet": "mediatakeout.com",
       "headline": "Lul Pab’s Family Vows to Take Lil Durk to Civil Court After M*rder-for-Hire Acquittal!",
@@ -692,13 +699,6 @@
       "headline": "Lil Durk's murder-for-hire trial revives debate over rap lyrics as evidence",
       "url": "https://www.msn.com/en-us/news/other/lil-durks-murder-for-hire-trial-revives-debate-over-rap-lyrics-as-evidence/ar-AA2b4qVJ",
       "flag": null
-    },
-    {
-      "ts": "2026-08-27T12:16:31.000Z",
-      "outlet": "AllHipHop",
-      "headline": "Lil Durk Trial: OTF Jam Testifies, Explains Weed Dealer Gave The Drop On Quando Rondo",
-      "url": "https://allhiphop.com/news/lil-durk-trial-otf-jam-testifies-explains-weed-dealer-gave-the-drop-on-quando-rondo/",
-      "flag": null
     }
   ],
   "seen": [
@@ -900,6 +900,7 @@
     "6q8j10",
     "1wfdlom",
     "1gl5ein",
-    "fudse8"
+    "fudse8",
+    "1a0isif"
   ]
 }

@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-17T00:02:43.000Z",
+      "outlet": "AllHipHop",
+      "headline": "Lil Durk Attorney Brian Steel Credits Preparation For Trial Victory",
+      "url": "https://allhiphop.com/news/lil-durk-attorney-brian-steel-credits-preparation-for-trial-victory/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-14T05:00:00.000Z",
       "outlet": "mediatakeout.com",
       "headline": "Lul Pab’s Family Vows to Take Lil Durk to Civil Court After M*rder-for-Hire Acquittal!",
@@ -692,13 +699,6 @@
       "headline": "Lil Durk Trial: OTF Jam Testifies, Explains Weed Dealer Gave The Drop On Quando Rondo",
       "url": "https://allhiphop.com/news/lil-durk-trial-otf-jam-testifies-explains-weed-dealer-gave-the-drop-on-quando-rondo/",
       "flag": null
-    },
-    {
-      "ts": "2026-08-27T10:55:00.000Z",
-      "outlet": "hiphopwired.com",
-      "headline": "Lil Durk “Didn’t Like People Trolling Him” After King Von’s Death",
-      "url": "https://hiphopwired.com/3063918/lil-durk-allegedly-didnt-like-people-trolling-him-after-king-vons-death-otf-jam-testifies/",
-      "flag": null
     }
   ],
   "seen": [
@@ -899,6 +899,7 @@
     "1el5zl2",
     "6q8j10",
     "1wfdlom",
-    "1gl5ein"
+    "1gl5ein",
+    "fudse8"
   ]
 }

@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-16T22:36:21.000Z",
+      "outlet": "NBC10 Boston",
+      "headline": "Retired judge weighs in on Lindsay Clancy mistrial and jury questions",
+      "url": "https://www.nbcboston.com/news/local/retired-judge-weighs-in-on-lindsay-clancy-mistrial-and-jury-questions/4016095/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-16T19:21:43.000Z",
       "outlet": "Boston 25 News",
       "headline": "Lindsay Clancy adds ex-Karen Read attorney for double jeopardy fight",
@@ -692,13 +699,6 @@
       "headline": "WATCH: Judge, defense attorney clash during heated moment in Lindsay Clancy trial",
       "url": "https://www.nbcboston.com/news/local/lindsay-clancy-trial-kevin-reddington-william-sullivan-heated-exchange/4009403/",
       "flag": null
-    },
-    {
-      "ts": "2026-09-04T09:23:00.000Z",
-      "outlet": "WCVB",
-      "headline": "Lindsay Clancy deliberations continue after request to remove juror rejected",
-      "url": "https://www.wcvb.com/article/lindsay-clancy-trial-live-updates-sept-4/73613314",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
@@ -981,6 +981,7 @@
     "137yd8m",
     "yw12l7",
     "1l4mds7",
-    "1t7801u"
+    "1t7801u",
+    "4ufa20"
   ]
 }

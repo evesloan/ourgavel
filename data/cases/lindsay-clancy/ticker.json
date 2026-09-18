@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-18T19:55:11.000Z",
+      "outlet": "Law & Crime",
+      "headline": "Clancy holdout juror called 'Champion of Justice' by his Trump-connected lawyer who declares war on 'evil people' upset he wanted to convict",
+      "url": "https://lawandcrime.com/high-profile/clancy-holdout-juror-called-champion-of-justice-by-his-trump-connected-lawyer-who-declares-war-on-evil-people-upset-he-wanted-to-convict/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-18T16:23:00.000Z",
       "outlet": "WCVB",
       "headline": "'I didn't have any doubts': Lindsay Clancy trial holdout juror speaks out",
@@ -692,13 +699,6 @@
       "headline": "Lindsay Clancy’s attorney files motion on new sidebar",
       "url": "https://www.boston25news.com/news/local/lindsay-clancys-attorney-files-motion-new-sidebar/RQY3NPBLUVEZ5GVPFTV7ASAURU/",
       "flag": null
-    },
-    {
-      "ts": "2026-09-04T12:57:02.000Z",
-      "outlet": "Boston.com",
-      "headline": "Livestream: Jurors in Lindsay Clancy trial deliberating after judge declines to take further action regarding holdout juror",
-      "url": "https://www.boston.com/news/crime/2026/09/04/lindsay-clancy-trial-verdict-watch-friday-september-4/",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
@@ -988,6 +988,7 @@
     "1ddhyuc",
     "gjzk39",
     "1xh25gu",
-    "vcpsxo"
+    "vcpsxo",
+    "1eldf36"
   ]
 }

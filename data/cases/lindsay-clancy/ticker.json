@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-18T14:01:02.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "‘Didn’t have any doubts’: Holdout juror in Lindsay Clancy trial speaks out",
+      "url": "https://www.boston25news.com/news/local/didnt-have-any-doubts-holdout-juror-lindsay-clancy-trial-speaks-out/HZ3XEJMRFNH4ZHEFCNM7QQ4BSA/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-17T15:39:24.000Z",
       "outlet": "Boston 25 News",
       "headline": "What comes next after former Karen Read attorney joins Lindsay Clancy’s legal team?",
@@ -692,13 +699,6 @@
       "headline": "Lindsay Clancy trial (live updates): Judge to address juror issue as deliberations enter 7th day",
       "url": "https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-judge-address-juror-issues-deliberations-enter-7th-day/KVTQ5GLX7BB4JKAJLSJ4S5EJDY/",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-09-04T10:43:39.000Z",
-      "outlet": "NBC10 Boston",
-      "headline": "‘Never seen this before': Legal expert on holdout juror clash in Lindsay Clancy case",
-      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-murder-trial/lindsay-clancy-trial-analysis-juror-holdout/4009442/",
-      "flag": null
     }
   ],
   "seen": [
@@ -983,6 +983,7 @@
     "1l4mds7",
     "1t7801u",
     "4ufa20",
-    "e6df7o"
+    "e6df7o",
+    "f3uqsf"
   ]
 }

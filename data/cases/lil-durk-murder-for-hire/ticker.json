@@ -50,6 +50,13 @@
       "flag": "verdict-watch"
     },
     {
+      "ts": "2026-09-11T18:02:00.000Z",
+      "outlet": "complex.com",
+      "headline": "Lil Durk Trial: Kanye West, Drake, and More React to Verdict in Rapper's Murder-for-Hire Case",
+      "url": "https://www.complex.com/music/a/jadegomez510/celebrities-react-lil-durk-verdict",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-11T17:01:00.000Z",
       "outlet": "hindustantimes.com",
       "headline": "Lil Durk trial: What happens after big Friday verdict? Outcomes of guilty and not guilty scenarios explained",
@@ -692,13 +699,6 @@
       "headline": "Have Kanye West and Lil Durk worked together? Details explored as Ye shows support for Durk at murder for hire trial",
       "url": "https://www.primetimer.com/news/have-kanye-west-and-lil-durk-worked-together-details-explored-as-ye-shows-support-for-durk-at-murder-for-hire-trial",
       "flag": null
-    },
-    {
-      "ts": "2026-08-27T13:51:51.000Z",
-      "outlet": "via MSN",
-      "headline": "Lil Durk's murder-for-hire trial revives debate over rap lyrics as evidence",
-      "url": "https://www.msn.com/en-us/news/other/lil-durks-murder-for-hire-trial-revives-debate-over-rap-lyrics-as-evidence/ar-AA2b4qVJ",
-      "flag": null
     }
   ],
   "seen": [
@@ -901,6 +901,7 @@
     "1wfdlom",
     "1gl5ein",
     "fudse8",
-    "1a0isif"
+    "1a0isif",
+    "k1szaf"
   ]
 }

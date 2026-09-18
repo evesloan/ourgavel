@@ -8,6 +8,34 @@
       "flag": null
     },
     {
+      "ts": "2026-09-18T14:59:12.000Z",
+      "outlet": "via MSN",
+      "headline": "Murdaugh attorneys request further evidence ahead of Sumter retrial, accuses State of withholding evidence",
+      "url": "https://www.msn.com/en-us/news/other/murdaugh-attorneys-request-further-evidence-ahead-of-sumter-retrial-accuses-state-of-withholding-evidence/ar-AA2cx1qm",
+      "flag": null
+    },
+    {
+      "ts": "2026-09-18T14:30:00.000Z",
+      "outlet": "via Yahoo News",
+      "headline": "Murdaugh attorneys continue push for access to untested DNA evidence",
+      "url": "https://www.yahoo.com/news/us/articles/murdaugh-attorneys-continue-push-access-213000464.html",
+      "flag": null
+    },
+    {
+      "ts": "2026-09-18T14:27:46.000Z",
+      "outlet": "via MSN",
+      "headline": "Murdaugh defense team asks judge to intervene over alleged withheld evidence ahead of murder retrial",
+      "url": "https://www.msn.com/en-us/news/other/murdaugh-defense-team-asks-judge-to-intervene-over-alleged-withheld-evidence-ahead-of-murder-retrial/ar-AA2cwYUx",
+      "flag": null
+    },
+    {
+      "ts": "2026-09-18T13:56:54.000Z",
+      "outlet": "via MSN",
+      "headline": "Murdaugh defense seeks DNA, ballistics and crime scene data before November hearing",
+      "url": "https://www.msn.com/en-us/news/other/murdaugh-defense-seeks-dna-ballistics-and-crime-scene-data-before-november-hearing/ar-AA2cwuOv",
+      "flag": null
+    },
+    {
       "ts": "2026-09-15T02:05:39.000Z",
       "outlet": "via MSN",
       "headline": "Why was Sumter, SC, chosen to host Alex Murdaugh double-murder retrial?",
@@ -671,41 +699,9 @@
       "headline": "Alex Murdaugh’s retrial will be relocated, and his original testimony can be used conditionally, judge rules",
       "url": "https://krdo.com/news/national-world/cnn-national/2026/08/14/alex-murdaugh-hearing-today-may-see-clash-over-whether-to-move-2nd-trial-to-charleston/",
       "flag": null
-    },
-    {
-      "ts": "2026-08-14T09:45:00.000Z",
-      "outlet": "wbal.com",
-      "headline": "Judge rules Alex Murdaugh’s retrial will have a change of venue, but no location set",
-      "url": "https://www.wbal.com/judge-rules-alex-murdaughs-retrial-will-have-a-change-of-venue-but-no-location-set",
-      "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-08-14T08:28:21.000Z",
-      "outlet": "via MSN",
-      "headline": "Alex Murdaugh retrial moved out of Colleton County, judge says",
-      "url": "https://www.msn.com/en-us/news/crime/alex-murdaugh-retrial-moved-out-of-colleton-county-judge-says/ar-AA2a7y4p",
-      "flag": null
-    },
-    {
-      "ts": "2026-08-14T08:18:00.000Z",
-      "outlet": "abc7news.com",
-      "headline": "Judge rules Alex Murdaugh's retrial will have a change of venue, but no location set",
-      "url": "https://abc7news.com/story/alex-murdaugh-hearing-today-man-previously-convicted-murders-wife-son-due-back-court-ahead-april-2027-retrial/19678035/",
-      "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-08-14T07:49:00.000Z",
-      "outlet": "usnews.com",
-      "headline": "Judge Moves Alex Murdaugh Retrial From Small County, but Motion to Toss Out Case Will Wait",
-      "url": "https://www.usnews.com/news/us/articles/2026-08-14/judge-moves-alex-murdaugh-retrial-from-small-county-but-motion-to-toss-out-case-will-wait",
-      "flag": null
     }
   ],
   "seen": [
-    "1xr5i7s",
-    "1bo7y1q",
-    "i9h8ru",
-    "1hrmvcw",
     "u0ij9q",
     "144ueqy",
     "pl7p86",
@@ -1301,6 +1297,10 @@
     "1gbx2nx",
     "1gbi7md",
     "1are8xg",
-    "v4hk4u"
+    "v4hk4u",
+    "1gc72ku",
+    "1gc7x32",
+    "kvvj2i",
+    "1gc7tz2"
   ]
 }

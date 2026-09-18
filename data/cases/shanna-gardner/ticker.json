@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-18T15:20:13.000Z",
+      "outlet": "News4JAX",
+      "headline": "State combines Shanna Gardner, Henry Tenon trials, drops some charges against pair in Jared Bridegan murder",
+      "url": "https://www.news4jax.com/news/local/2026/09/18/state-combines-shanna-gardner-henry-tenon-trials-drops-some-charges-against-pair-in-jared-bridegan-murder/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-11T16:20:18.000Z",
       "outlet": "News4JAX",
       "headline": "Shanna Gardner’s defense asks judge to review communications involving Jared Bridegan’s widow, prosecutors",
@@ -58,6 +65,7 @@
     "zkqpf3",
     "1q4mqit",
     "1e9j6u",
-    "1lcckvg"
+    "1lcckvg",
+    "1yzrczy"
   ]
 }

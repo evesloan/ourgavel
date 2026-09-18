@@ -1,10 +1,24 @@
 {
   "items": [
     {
+      "ts": "2026-09-18T15:08:08.000Z",
+      "outlet": "Boston.com",
+      "headline": "Holdout juror says he ‘didn’t have any doubts’ about Lindsay Clancy’s criminal responsibility",
+      "url": "https://www.boston.com/news/crime/2026/09/18/lindsay-clancy-trial-holdout-juror-michael-desronvil/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-18T14:01:02.000Z",
       "outlet": "Boston 25 News",
       "headline": "‘Didn’t have any doubts’: Holdout juror in Lindsay Clancy trial speaks out",
       "url": "https://www.boston25news.com/news/local/didnt-have-any-doubts-holdout-juror-lindsay-clancy-trial-speaks-out/HZ3XEJMRFNH4ZHEFCNM7QQ4BSA/",
+      "flag": null
+    },
+    {
+      "ts": "2026-09-18T11:29:41.000Z",
+      "outlet": "NBC10 Boston",
+      "headline": "Patrick Clancy, wife to give joint ‘60 Minutes' interview Sunday. Here's what we know",
+      "url": "https://www.nbcboston.com/news/local/patrick-clancy-wife-rachel-danis-60-minutes-interview-sunday-how-to-watch/4017030/",
       "flag": null
     },
     {
@@ -685,20 +699,6 @@
       "headline": "Judge intends to declare mistrial in Lindsay Clancy case — watch live coverage from court",
       "url": "https://www.nbcboston.com/news/local/lindsay-clancy-trial-mistrial-live-stream-updates/4005224/",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-09-04T10:57:51.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "Lindsay Clancy trial (live updates): Mistrial ruling delayed as defense files emergency stay appeal",
-      "url": "https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-mistrial-ruling-delayed-defense-files-emergency-stay-appeal/KVTQ5GLX7BB4JKAJLSJ4S5EJDY/",
-      "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-09-04T10:57:51.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "Lindsay Clancy trial (live updates): Judge to address juror issue as deliberations enter 7th day",
-      "url": "https://www.boston25news.com/news/local/lindsay-clancy-trial-live-updates-judge-address-juror-issues-deliberations-enter-7th-day/KVTQ5GLX7BB4JKAJLSJ4S5EJDY/",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
@@ -984,6 +984,8 @@
     "1t7801u",
     "4ufa20",
     "e6df7o",
-    "f3uqsf"
+    "f3uqsf",
+    "1ddhyuc",
+    "gjzk39"
   ]
 }

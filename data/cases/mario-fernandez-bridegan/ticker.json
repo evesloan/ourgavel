@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-18T16:18:24.000Z",
+      "outlet": "Action News Jax",
+      "headline": "Jared Bridegan murder: 2 charges against Shanna Gardner dropped ahead of trial",
+      "url": "https://www.actionnewsjax.com/news/local/jared-bridegan-murder-2-charges-against-shanna-gardner-dropped-ahead-trial/CLUPHGIER5G6ZGEW3XBPW4RJYY/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-18T15:20:13.000Z",
       "outlet": "News4JAX",
       "headline": "State combines Shanna Gardner, Henry Tenon trials, drops some charges against pair in Jared Bridegan murder",
@@ -406,6 +413,7 @@
     "1e9j6u",
     "122w9lv",
     "1lcckvg",
-    "1yzrczy"
+    "1yzrczy",
+    "p1n13d"
   ]
 }

@@ -15,6 +15,13 @@
       "flag": null
     },
     {
+      "ts": "2026-09-18T12:04:07.000Z",
+      "outlet": "NBC10 Boston",
+      "headline": "Holdout Lindsay Clancy juror will not be giving interviews, his attorney says",
+      "url": "https://www.nbcboston.com/news/national-international/lindsay-clancy-holdout-juror-no-interviews/4017053/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-18T11:29:41.000Z",
       "outlet": "NBC10 Boston",
       "headline": "Patrick Clancy, wife to give joint ‘60 Minutes' interview Sunday. Here's what we know",
@@ -692,13 +699,6 @@
       "headline": "'I don't want a mistrial' says Lindsay Clancy's defense attorney",
       "url": "https://www.wcvb.com/article/clancy-reddington-sept-3-interview/73615124",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-09-04T11:26:37.000Z",
-      "outlet": "NBC10 Boston",
-      "headline": "Judge intends to declare mistrial in Lindsay Clancy case — watch live coverage from court",
-      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-trial-mistrial-live-stream-updates/4005224/",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
@@ -986,6 +986,7 @@
     "e6df7o",
     "f3uqsf",
     "1ddhyuc",
-    "gjzk39"
+    "gjzk39",
+    "1xh25gu"
   ]
 }

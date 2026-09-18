@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-18T20:58:50.000Z",
+      "outlet": "FITSNews",
+      "headline": "DNA, Bullets And Missing Data: Murdaugh Defense Presses State",
+      "url": "https://www.fitsnews.com/2026/09/18/dna-bullets-and-missing-scan-data-murdaugh-defense-presses-state/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-15T02:05:39.000Z",
       "outlet": "via MSN",
       "headline": "Why was Sumter, SC, chosen to host Alex Murdaugh double-murder retrial?",
@@ -692,18 +699,9 @@
       "headline": "Judge Moves Alex Murdaugh Retrial From Small County, but Motion to Toss Out Case Will Wait",
       "url": "https://www.usnews.com/news/us/articles/2026-08-14/judge-moves-alex-murdaugh-retrial-from-small-county-but-motion-to-toss-out-case-will-wait",
       "flag": null
-    },
-    {
-      "ts": "2026-08-14T07:47:00.000Z",
-      "outlet": "via MSN",
-      "headline": "Judge orders Alex Murdaugh's murder retrial moved out of Colleton",
-      "url": "https://www.msn.com/en-us/news/crime/judge-orders-alex-murdaughs-murder-retrial-moved-out-of-colleton/ar-AA2a7uez",
-      "flag": null
     }
   ],
   "seen": [
-    "1r3ha5s",
-    "1s8tz3p",
     "1xr5i7s",
     "1bo7y1q",
     "i9h8ru",
@@ -1301,6 +1299,8 @@
     "oiietj",
     "pedknd",
     "1gbx2nx",
-    "1gbi7md"
+    "1gbi7md",
+    "1are8xg",
+    "v4hk4u"
   ]
 }

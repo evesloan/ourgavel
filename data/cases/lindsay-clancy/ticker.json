@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-18T21:16:22.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Holdout juror in the Lindsay Clancy Murder Trial speaks out",
+      "url": "https://www.boston25news.com/news/local/holdout-juror-lindsay-clancy-murder-trial-speaks-out/2O5WMUKYKNAOLLRQABV7FM2NNA/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-18T19:55:11.000Z",
       "outlet": "Law & Crime",
       "headline": "Clancy holdout juror called 'Champion of Justice' by his Trump-connected lawyer who declares war on 'evil people' upset he wanted to convict",
@@ -692,13 +699,6 @@
       "headline": "Lindsay Clancy’s attorney wants no more sidebars, asks judge to handle things in ‘open court’",
       "url": "https://www.courttv.com/news/lindsay-clancys-attorney-wants-no-more-sidebars-asks-judge-to-handle-things-in-open-court/",
       "flag": null
-    },
-    {
-      "ts": "2026-09-04T13:10:37.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "Lindsay Clancy’s attorney files motion on new sidebar",
-      "url": "https://www.boston25news.com/news/local/lindsay-clancys-attorney-files-motion-new-sidebar/RQY3NPBLUVEZ5GVPFTV7ASAURU/",
-      "flag": null
     }
   ],
   "seen": [
@@ -989,6 +989,7 @@
     "gjzk39",
     "1xh25gu",
     "vcpsxo",
-    "1eldf36"
+    "1eldf36",
+    "11fs46p"
   ]
 }

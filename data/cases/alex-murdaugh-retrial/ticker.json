@@ -8,6 +8,13 @@
       "flag": null
     },
     {
+      "ts": "2026-09-19T14:55:00.000Z",
+      "outlet": "radaronline.com",
+      "headline": "Alex Murdaugh's Attorneys Demand New DNA and Ballistics Evidence Ahead of 2027 Murder Retrial",
+      "url": "https://radaronline.com/p/alex-murdaugh-attorneys-new-dna-ballistics-evidence-2027-murder-retrial/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-18T20:58:50.000Z",
       "outlet": "FITSNews",
       "headline": "DNA, Bullets And Missing Data: Murdaugh Defense Presses State",
@@ -692,17 +699,9 @@
       "headline": "Can Alex Murdaugh get a fair trial? Judge to make key venue decision",
       "url": "https://www.yahoo.com/news/us/articles/alex-murdaugh-fair-trial-judge-172632082.html",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-08-14T10:27:00.000Z",
-      "outlet": "KRCR",
-      "headline": "Judge orders Alex Murdaugh retrial moved outside 14th Circuit over jury fairness concerns",
-      "url": "https://krcrtv.com/news/nation-world/judge-orders-alex-murdaugh-retrial-moved-outside-14th-circuit-over-jury-fairness-concerns",
-      "flag": null
     }
   ],
   "seen": [
-    "1p27e3v",
     "19azyue",
     "7nalfc",
     "s4ty1p",
@@ -1301,6 +1300,7 @@
     "1gc7tz2",
     "7d4eta",
     "1gc7he1",
-    "1ru34ay"
+    "1ru34ay",
+    "1yrh8hw"
   ]
 }

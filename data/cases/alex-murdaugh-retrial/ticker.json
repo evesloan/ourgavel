@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-19T16:38:05.000Z",
+      "outlet": "WLTX News19",
+      "headline": "Murdaugh defense seeks DNA, casing data before April 2027 retrial",
+      "url": "https://www.wltx.com/article/news/special-reports/alex-murdaugh/murdaugh-defense-dna-casing-data-before-april-2027-retrial/101-35a3d31f-cb3f-49ca-9301-bda3a382a3cb",
+      "flag": null
+    },
+    {
       "ts": "2026-09-18T20:58:50.000Z",
       "outlet": "FITSNews",
       "headline": "DNA, Bullets And Missing Data: Murdaugh Defense Presses State",
@@ -692,17 +699,9 @@
       "headline": "Judge orders Alex Murdaugh retrial moved outside 14th Circuit over jury fairness concerns",
       "url": "https://krcrtv.com/news/nation-world/judge-orders-alex-murdaugh-retrial-moved-outside-14th-circuit-over-jury-fairness-concerns",
       "flag": null
-    },
-    {
-      "ts": "2026-08-14T10:18:25.000Z",
-      "outlet": "via MSN",
-      "headline": "Live: Alex Murdaugh’s retrial moved out of South Carolina’s Lowcountry",
-      "url": "https://www.msn.com/en-us/news/crime/alex-murdaugh-returns-to-court-ahead-of-april-2027-retrial/ar-AA2a6Znf",
-      "flag": null
     }
   ],
   "seen": [
-    "pl7p86",
     "1p27e3v",
     "19azyue",
     "7nalfc",
@@ -1301,6 +1300,7 @@
     "kvvj2i",
     "1gc7tz2",
     "7d4eta",
-    "1gc7he1"
+    "1gc7he1",
+    "1ru34ay"
   ]
 }

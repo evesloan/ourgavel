@@ -15,6 +15,13 @@
       "flag": null
     },
     {
+      "ts": "2026-09-18T14:37:50.000Z",
+      "outlet": "via MSN",
+      "headline": "Alex Murdaugh defense seeks DNA, ballistic data ahead of retrial",
+      "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-defense-seeks-dna-ballistic-data-ahead-of-retrial/ar-AA2cwF2S",
+      "flag": null
+    },
+    {
       "ts": "2026-09-18T14:27:46.000Z",
       "outlet": "via MSN",
       "headline": "Murdaugh defense team asks judge to intervene over alleged withheld evidence ahead of murder retrial",
@@ -692,17 +699,9 @@
       "headline": "Live: Alex Murdaugh’s retrial moved out of South Carolina’s Lowcountry",
       "url": "https://www.msn.com/en-us/news/crime/alex-murdaugh-returns-to-court-ahead-of-april-2027-retrial/ar-AA2a6Znf",
       "flag": null
-    },
-    {
-      "ts": "2026-08-14T09:54:00.000Z",
-      "outlet": "krdo.com",
-      "headline": "Alex Murdaugh’s retrial will be relocated, and his original testimony can be used conditionally, judge rules",
-      "url": "https://krdo.com/news/national-world/cnn-national/2026/08/14/alex-murdaugh-hearing-today-may-see-clash-over-whether-to-move-2nd-trial-to-charleston/",
-      "flag": null
     }
   ],
   "seen": [
-    "144ueqy",
     "pl7p86",
     "1p27e3v",
     "19azyue",
@@ -1301,6 +1300,7 @@
     "1gc7x32",
     "kvvj2i",
     "1gc7tz2",
-    "7d4eta"
+    "7d4eta",
+    "1gc7he1"
   ]
 }

@@ -8,6 +8,13 @@
       "flag": null
     },
     {
+      "ts": "2026-09-21T02:02:00.000Z",
+      "outlet": "via Yahoo News",
+      "headline": "Will Alex Murdaugh stand trial again for murders? Key ruling still pending",
+      "url": "https://www.yahoo.com/news/us/articles/alex-murdaugh-stand-trial-again-090223861.html",
+      "flag": null
+    },
+    {
       "ts": "2026-09-19T16:38:05.000Z",
       "outlet": "WLTX News19",
       "headline": "Murdaugh defense seeks DNA, casing data before April 2027 retrial",
@@ -692,17 +699,9 @@
       "headline": "4 Biggest Bombshells From Alex Murdaugh’s Pretrial Hearing",
       "url": "https://www.newsweek.com/alex-murdaugh-hearing-pretrial-case-family-murders-12324867",
       "flag": null
-    },
-    {
-      "ts": "2026-08-14T10:57:00.000Z",
-      "outlet": "People",
-      "headline": "Alex Murdaugh Scores Victory in Court As Judge Allows Change of Venue for Upcoming Double Murder Retrial",
-      "url": "https://people.com/alex-murdaugh-wins-change-of-venue-12060174",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
-    "s4ty1p",
     "19t585",
     "li7ymt",
     "1ubwkcm",
@@ -1301,6 +1300,7 @@
     "1ru34ay",
     "1yrh8hw",
     "spitte",
-    "1gbvyc2"
+    "1gbvyc2",
+    "14hnnrx"
   ]
 }

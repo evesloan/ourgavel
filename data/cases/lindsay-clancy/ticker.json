@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-21T17:07:15.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Lindsay Clancy’s attorney seeks investigation into holdout juror after mistrial",
+      "url": "https://www.boston25news.com/news/local/lindsay-clancys-attorney-seeks-investigation-into-juror-after-mistrial/TOLCXJJLOBFXLO3JGEPBL3DYLU/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-21T16:33:00.000Z",
       "outlet": "WCVB",
       "headline": "Kevin Reddington responds to Patrick Clancy's interview",
@@ -692,13 +699,6 @@
       "headline": "Lindsay Clancy Trial: Mistrial ruling delayed as defense files emergency stay appeal with SJC",
       "url": "https://www.boston25news.com/news/local/clancy-trial-mistrial-ruling-delayed-defense-files-emergency-stay-appeal-with-sjc/J6QK7MR725CZZO3HSJX7QH4TIE/",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-09-04T16:02:00.000Z",
-      "outlet": "WCVB",
-      "headline": "What just happened? Explaining 1-hour deadline for SJC intervention in Clancy trial",
-      "url": "https://www.wcvb.com/article/lindsay-clancy-reddington-sjc-stay-deadline-sept-4/73616942",
-      "flag": null
     }
   ],
   "seen": [
@@ -997,6 +997,7 @@
     "1cg5ean",
     "1l1b13j",
     "19qrmfd",
-    "1ukebbh"
+    "1ukebbh",
+    "9yhfir"
   ]
 }

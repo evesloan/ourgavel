@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-21T12:52:56.000Z",
+      "outlet": "via MSN",
+      "headline": "Former prosecutor breaks down the DNA 'gamble' in Murdaugh's retrial fight",
+      "url": "https://www.msn.com/en-us/news/other/former-prosecutor-breaks-down-the-dna-gamble-in-murdaughs-retrial-fight/vi-AA2cHesM",
+      "flag": null
+    },
+    {
       "ts": "2026-09-21T10:47:00.000Z",
       "outlet": "southcarolinapublicradio.org",
       "headline": "Alex Murdaugh's defense seeks DNA, ballistics and other evidence",
@@ -692,17 +699,9 @@
       "headline": "Can Alex Murdaugh get a fair trial? Judge to make key venue decision",
       "url": "https://www.msn.com/en-us/news/crime/can-alex-murdaugh-get-a-fair-trial-judge-to-make-key-venue-decision/ar-AA2a7iJK",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-08-14T12:01:00.000Z",
-      "outlet": "AP",
-      "headline": "Judge moves Alex Murdaugh retrial from small county",
-      "url": "https://apnews.com/video/judge-moves-alex-murdaugh-retrial-from-small-county-ee4ead63ad964654b27c4c18fd8816d7",
-      "flag": null
     }
   ],
   "seen": [
-    "1ubwkcm",
     "15en8b6",
     "xp7ts4",
     "tdaocy",
@@ -1301,6 +1300,7 @@
     "1gbvyc2",
     "14hnnrx",
     "oy9age",
-    "fierw5"
+    "fierw5",
+    "5gu5s4"
   ]
 }

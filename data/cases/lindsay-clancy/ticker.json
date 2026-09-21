@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-21T07:54:51.000Z",
+      "outlet": "NBC10 Boston",
+      "headline": "Patrick Clancy's first TV interview after mistrial: Here's what we learned.",
+      "url": "https://www.nbcboston.com/news/local/patrick-clancy-interview-mistrial-new-wife/4017963/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-21T01:13:06.000Z",
       "outlet": "Boston.com",
       "headline": "Patrick Clancy’s ‘60 Minutes’ interview: Lindsay Clancy’s former husband says he and new wife are starting a family",
@@ -692,13 +699,6 @@
       "headline": "‘Horrible tragedy': President Trump sounds off on Clancy mistrial",
       "url": "https://www.nbcboston.com/news/national-international/horrible-tragedy-president-trump-sounds-off-on-clancy-mistrial/4009852/",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-09-04T14:47:45.000Z",
-      "outlet": "NBC10 Boston",
-      "headline": "Now that a mistrial has been declared, when could a second Lindsay Clancy happen?",
-      "url": "https://www.nbcboston.com/news/local/when-will-the-second-lindsay-clancy-trial-happen/4009792/",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
@@ -994,6 +994,7 @@
     "s3a4n2",
     "1f1r52f",
     "1uk67t0",
-    "1cg5ean"
+    "1cg5ean",
+    "1l1b13j"
   ]
 }

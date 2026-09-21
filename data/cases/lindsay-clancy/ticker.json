@@ -1,6 +1,20 @@
 {
   "items": [
     {
+      "ts": "2026-09-20T23:50:00.000Z",
+      "outlet": "WCVB",
+      "headline": "Patrick Clancy opens up about the loss of his children in new interview",
+      "url": "https://www.wcvb.com/article/patrick-clancy-statement-lindsay-clancy-60-minutes/73788433",
+      "flag": null
+    },
+    {
+      "ts": "2026-09-20T19:42:43.000Z",
+      "outlet": "NBC10 Boston",
+      "headline": "Patrick Clancy gives first TV interview after Lindsay Clancy mistrial, says he's ‘starting a family'",
+      "url": "https://www.nbcboston.com/news/local/patrick-clancy-rachel-danis-60-minutes-interview/4017809/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-18T21:16:22.000Z",
       "outlet": "Boston 25 News",
       "headline": "Holdout juror in the Lindsay Clancy Murder Trial speaks out",
@@ -685,20 +699,6 @@
       "headline": "Judge's response to objection triggers laughter during Lindsay Clancy trial",
       "url": "https://www.wcvb.com/article/lindsay-clancy-jury-holdout-instruction-debate-laughter-sept-4/73615797",
       "flag": null
-    },
-    {
-      "ts": "2026-09-04T13:49:00.000Z",
-      "outlet": "Court TV",
-      "headline": "Judge promises more ‘pizzazz’ after Lindsay Clancy’s attorney accuses him of being ‘soft’ with jury",
-      "url": "https://www.courttv.com/news/judge-promises-more-pizzazz-after-lindsay-clancys-attorney-accuses-him-of-being-soft-with-jury/",
-      "flag": null
-    },
-    {
-      "ts": "2026-09-04T13:20:35.000Z",
-      "outlet": "Court TV",
-      "headline": "Lindsay Clancy’s attorney wants no more sidebars, asks judge to handle things in ‘open court’",
-      "url": "https://www.courttv.com/news/lindsay-clancys-attorney-wants-no-more-sidebars-asks-judge-to-handle-things-in-open-court/",
-      "flag": null
     }
   ],
   "seen": [
@@ -990,6 +990,8 @@
     "1xh25gu",
     "vcpsxo",
     "1eldf36",
-    "11fs46p"
+    "11fs46p",
+    "s3a4n2",
+    "1f1r52f"
   ]
 }

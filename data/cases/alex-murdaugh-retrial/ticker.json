@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-21T12:55:18.000Z",
+      "outlet": "via MSN",
+      "headline": "Murdaugh defense says detectives found male DNA under victim's nails but skipped key testing",
+      "url": "https://www.msn.com/en-us/news/other/murdaugh-defense-says-detectives-found-male-dna-under-victims-nails-but-skipped-key-testing/ar-AA2cHhm2",
+      "flag": null
+    },
+    {
       "ts": "2026-09-21T12:52:56.000Z",
       "outlet": "via MSN",
       "headline": "Former prosecutor breaks down the DNA 'gamble' in Murdaugh's retrial fight",
@@ -692,17 +699,9 @@
       "headline": "Alex Murdaugh granted change of venue for murder retrial, past testimony allowed",
       "url": "https://www.nbcnews.com/news/us-news/alex-murdaugh-granted-change-venue-murder-retrial-rcna592594",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-08-14T12:08:19.000Z",
-      "outlet": "via MSN",
-      "headline": "Can Alex Murdaugh get a fair trial? Judge to make key venue decision",
-      "url": "https://www.msn.com/en-us/news/crime/can-alex-murdaugh-get-a-fair-trial-judge-to-make-key-venue-decision/ar-AA2a7iJK",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
-    "15en8b6",
     "xp7ts4",
     "tdaocy",
     "1faqjas",
@@ -1301,6 +1300,7 @@
     "14hnnrx",
     "oy9age",
     "fierw5",
-    "5gu5s4"
+    "5gu5s4",
+    "1gbxzfi"
   ]
 }

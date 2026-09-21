@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-21T00:34:48.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Patrick Clancy gives first TV interview on ’60 Minutes’ after Lindsay Clancy mistrial",
+      "url": "https://www.boston25news.com/news/local/patrick-clancy-gives-first-tv-interview-60-minutes-after-lindsay-clancy-mistrial/CK7JENVFCVFEHLOYUERFE7LO34/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-20T23:50:00.000Z",
       "outlet": "WCVB",
       "headline": "Patrick Clancy opens up about the loss of his children in new interview",
@@ -692,13 +699,6 @@
       "headline": "‘Get a grasp’: Clancy defense challenges judge over refusal to question potential holdout juror",
       "url": "https://www.boston25news.com/news/local/get-grasp-clancy-defense-challenges-judge-over-refusal-question-potential-holdout-juror/NE5LN37TJZHYNAMQY5QPGPPEPU/",
       "flag": null
-    },
-    {
-      "ts": "2026-09-04T14:36:00.000Z",
-      "outlet": "WCVB",
-      "headline": "Judge's response to objection triggers laughter during Lindsay Clancy trial",
-      "url": "https://www.wcvb.com/article/lindsay-clancy-jury-holdout-instruction-debate-laughter-sept-4/73615797",
-      "flag": null
     }
   ],
   "seen": [
@@ -992,6 +992,7 @@
     "1eldf36",
     "11fs46p",
     "s3a4n2",
-    "1f1r52f"
+    "1f1r52f",
+    "1uk67t0"
   ]
 }

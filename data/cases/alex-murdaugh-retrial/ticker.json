@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-21T10:47:00.000Z",
+      "outlet": "southcarolinapublicradio.org",
+      "headline": "Alex Murdaugh's defense seeks DNA, ballistics and other evidence",
+      "url": "https://www.southcarolinapublicradio.org/sc-news/2026-09-21/alex-murdaughs-defense-seeks-dna-ballistics-and-other-evidence",
+      "flag": null
+    },
+    {
       "ts": "2026-09-21T03:00:00.000Z",
       "outlet": "via Yahoo News",
       "headline": "Defense in Murdaugh case says state must release additional DNA and ballistics evidence for new trial",
@@ -692,17 +699,9 @@
       "headline": "Judge moves Alex Murdaugh retrial from small county",
       "url": "https://apnews.com/video/judge-moves-alex-murdaugh-retrial-from-small-county-ee4ead63ad964654b27c4c18fd8816d7",
       "flag": null
-    },
-    {
-      "ts": "2026-08-14T11:59:04.000Z",
-      "outlet": "via MSN",
-      "headline": "What to know about the Alex Murdaugh pretrial hearing",
-      "url": "https://www.msn.com/en-us/crime/general/what-to-know-about-the-alex-murdaugh-pretrial-hearing/ar-AA2a7XPu",
-      "flag": null
     }
   ],
   "seen": [
-    "li7ymt",
     "1ubwkcm",
     "15en8b6",
     "xp7ts4",
@@ -1301,6 +1300,7 @@
     "spitte",
     "1gbvyc2",
     "14hnnrx",
-    "oy9age"
+    "oy9age",
+    "fierw5"
   ]
 }

@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-21T15:31:39.000Z",
+      "outlet": "Boston.com",
+      "headline": "Lindsay Clancy’s lawyer probes ‘Juror Doe’s’ domestic violence record, alleged phone use during deliberations",
+      "url": "https://www.boston.com/news/crime/2026/09/21/lindsay-clancy-lawyer-juror-doe-domestic-violence-cellphone/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-21T07:54:51.000Z",
       "outlet": "NBC10 Boston",
       "headline": "Patrick Clancy's first TV interview after mistrial: Here's what we learned.",
@@ -692,13 +699,6 @@
       "headline": "Lindsay Clancy trial: Judge declares mistrial over deadlocked jury",
       "url": "https://www.wcvb.com/article/lindsay-clancy-mistrial-sept-4/73546067",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-09-04T15:25:30.000Z",
-      "outlet": "NBC10 Boston",
-      "headline": "‘Horrible tragedy': President Trump sounds off on Clancy mistrial",
-      "url": "https://www.nbcboston.com/news/national-international/horrible-tragedy-president-trump-sounds-off-on-clancy-mistrial/4009852/",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
@@ -995,6 +995,7 @@
     "1f1r52f",
     "1uk67t0",
     "1cg5ean",
-    "1l1b13j"
+    "1l1b13j",
+    "19qrmfd"
   ]
 }

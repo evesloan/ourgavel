@@ -15,6 +15,13 @@
       "flag": null
     },
     {
+      "ts": "2026-09-21T18:30:31.000Z",
+      "outlet": "NBC10 Boston",
+      "headline": "Lindsay Clancy's lawyer wants review of holdout juror's record",
+      "url": "https://www.nbcboston.com/news/local/lindsay-clancys-lawyer-wants-juror-records-preserved-access-to-holdout-jurors-record/4018031/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-21T17:07:15.000Z",
       "outlet": "Boston 25 News",
       "headline": "Lindsay Clancy’s attorney seeks investigation into holdout juror after mistrial",
@@ -692,13 +699,6 @@
       "headline": "Lindsay Clancy Trial: Massachusetts SJC hears emergency appeal filed by defense",
       "url": "https://www.boston25news.com/news/local/lindsay-clancy-trial-massachusetts-sjc-hears-emergency-appeal-filed-by-defense/J6QK7MR725CZZO3HSJX7QH4TIE/",
       "flag": null
-    },
-    {
-      "ts": "2026-09-04T18:04:00.000Z",
-      "outlet": "WCVB",
-      "headline": "Read Lindsay Clancy's emergency request to the SJC",
-      "url": "https://www.wcvb.com/article/clancy-sjc-emergency-motion-request-relief/73617852",
-      "flag": null
     }
   ],
   "seen": [
@@ -1000,6 +1000,7 @@
     "1ukebbh",
     "9yhfir",
     "jc8zci",
-    "1qnfmx7"
+    "1qnfmx7",
+    "1szc373"
   ]
 }

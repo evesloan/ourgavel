@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-21T22:05:00.000Z",
+      "outlet": "WCVB",
+      "headline": "Lindsay Clancy seeks dismissal, argues retrial violates double jeopardy",
+      "url": "https://www.wcvb.com/article/lindsay-clancy-motion-to-dismiss-double-jeopardy/73827174",
+      "flag": null
+    },
+    {
       "ts": "2026-09-21T20:19:00.000Z",
       "outlet": "WCVB",
       "headline": "Lindsay Clancy’s attorney requests investigation into holdout juror",
@@ -692,13 +699,6 @@
       "headline": "Read Lindsay Clancy's emergency request to the SJC",
       "url": "https://www.wcvb.com/article/clancy-sjc-emergency-motion-request-relief/73617852",
       "flag": null
-    },
-    {
-      "ts": "2026-09-04T16:34:51.000Z",
-      "outlet": "NBC10 Boston",
-      "headline": "After mistrial, Patrick Clancy's lawyer calls prosect of new trial very painful",
-      "url": "https://www.nbcboston.com/news/local/patrick-clancy-mistrial-new-trial-statement/4009904/",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
@@ -999,6 +999,7 @@
     "19qrmfd",
     "1ukebbh",
     "9yhfir",
-    "jc8zci"
+    "jc8zci",
+    "1qnfmx7"
   ]
 }

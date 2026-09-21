@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-21T16:33:00.000Z",
+      "outlet": "WCVB",
+      "headline": "Kevin Reddington responds to Patrick Clancy's interview",
+      "url": "https://www.wcvb.com/article/kevin-reddington-responds-patrick-clancy-interview/73823599",
+      "flag": null
+    },
+    {
       "ts": "2026-09-21T15:31:39.000Z",
       "outlet": "Boston.com",
       "headline": "Lindsay Clancy’s lawyer probes ‘Juror Doe’s’ domestic violence record, alleged phone use during deliberations",
@@ -692,13 +699,6 @@
       "headline": "What just happened? Explaining 1-hour deadline for SJC intervention in Clancy trial",
       "url": "https://www.wcvb.com/article/lindsay-clancy-reddington-sjc-stay-deadline-sept-4/73616942",
       "flag": null
-    },
-    {
-      "ts": "2026-09-04T15:31:00.000Z",
-      "outlet": "WCVB",
-      "headline": "Lindsay Clancy trial: Judge declares mistrial over deadlocked jury",
-      "url": "https://www.wcvb.com/article/lindsay-clancy-mistrial-sept-4/73546067",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
@@ -996,6 +996,7 @@
     "1uk67t0",
     "1cg5ean",
     "1l1b13j",
-    "19qrmfd"
+    "19qrmfd",
+    "1ukebbh"
   ]
 }

@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-21T03:00:00.000Z",
+      "outlet": "via Yahoo News",
+      "headline": "Defense in Murdaugh case says state must release additional DNA and ballistics evidence for new trial",
+      "url": "https://ca.style.yahoo.com/defense-murdaugh-case-says-state-100000787.html",
+      "flag": null
+    },
+    {
       "ts": "2026-09-21T02:02:23.000Z",
       "outlet": "via MSN",
       "headline": "Will Alex Murdaugh stand trial again for murders? Key ruling still pending",
@@ -692,17 +699,9 @@
       "headline": "What to know about the Alex Murdaugh pretrial hearing",
       "url": "https://www.msn.com/en-us/crime/general/what-to-know-about-the-alex-murdaugh-pretrial-hearing/ar-AA2a7XPu",
       "flag": null
-    },
-    {
-      "ts": "2026-08-14T11:59:00.000Z",
-      "outlet": "newsweek.com",
-      "headline": "4 Biggest Bombshells From Alex Murdaugh’s Pretrial Hearing",
-      "url": "https://www.newsweek.com/alex-murdaugh-hearing-pretrial-case-family-murders-12324867",
-      "flag": null
     }
   ],
   "seen": [
-    "19t585",
     "li7ymt",
     "1ubwkcm",
     "15en8b6",
@@ -1301,6 +1300,7 @@
     "1yrh8hw",
     "spitte",
     "1gbvyc2",
-    "14hnnrx"
+    "14hnnrx",
+    "oy9age"
   ]
 }

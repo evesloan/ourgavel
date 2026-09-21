@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-21T01:13:06.000Z",
+      "outlet": "Boston.com",
+      "headline": "Patrick Clancy’s ‘60 Minutes’ interview: Lindsay Clancy’s former husband says he and new wife are starting a family",
+      "url": "https://www.boston.com/news/crime/2026/09/20/patrick-clancys-60-minutes-interview/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-21T00:34:48.000Z",
       "outlet": "Boston 25 News",
       "headline": "Patrick Clancy gives first TV interview on ’60 Minutes’ after Lindsay Clancy mistrial",
@@ -692,13 +699,6 @@
       "headline": "Now that a mistrial has been declared, when could a second Lindsay Clancy happen?",
       "url": "https://www.nbcboston.com/news/local/when-will-the-second-lindsay-clancy-trial-happen/4009792/",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-09-04T14:36:22.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "‘Get a grasp’: Clancy defense challenges judge over refusal to question potential holdout juror",
-      "url": "https://www.boston25news.com/news/local/get-grasp-clancy-defense-challenges-judge-over-refusal-question-potential-holdout-juror/NE5LN37TJZHYNAMQY5QPGPPEPU/",
-      "flag": null
     }
   ],
   "seen": [
@@ -993,6 +993,7 @@
     "11fs46p",
     "s3a4n2",
     "1f1r52f",
-    "1uk67t0"
+    "1uk67t0",
+    "1cg5ean"
   ]
 }

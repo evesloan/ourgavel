@@ -368,6 +368,13 @@
       "ts": "2026-09-08T14:09:05.000Z",
       "outlet": "via MSN",
       "headline": "Alex Murdaugh retrial to take place in Sumter County, judge rules",
+      "url": "https://www.msn.com/en-us/news/news/alex-murdaugh-retrial-to-take-place-in-sumter-county-judge-rules/ar-AA2bP2pA",
+      "flag": null
+    },
+    {
+      "ts": "2026-09-08T14:09:05.000Z",
+      "outlet": "via MSN",
+      "headline": "Alex Murdaugh retrial to take place in Sumter County, judge rules",
       "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-retrial-to-take-place-in-sumter-county-judge-rules/ar-AA2bP55m",
       "flag": null
     },
@@ -692,17 +699,9 @@
       "headline": "Alex Murdaugh’s retrial will be relocated, and his original testimony can be used conditionally, judge rules",
       "url": "https://www.kwwl.com/news/social/alex-murdaugh-s-retrial-will-be-relocated-and-his-original-testimony-can-be-used-conditionally/article_49253205-3c7a-53c1-85bc-381c8861bd4a.html",
       "flag": null
-    },
-    {
-      "ts": "2026-08-14T12:10:00.000Z",
-      "outlet": "NBC News",
-      "headline": "Alex Murdaugh granted change of venue for murder retrial, past testimony allowed",
-      "url": "https://www.nbcnews.com/news/us-news/alex-murdaugh-granted-change-venue-murder-retrial-rcna592594",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
-    "xp7ts4",
     "tdaocy",
     "1faqjas",
     "qu74t8",
@@ -1301,6 +1300,7 @@
     "oy9age",
     "fierw5",
     "5gu5s4",
-    "1gbxzfi"
+    "1gbxzfi",
+    "1gbi6sr"
   ]
 }

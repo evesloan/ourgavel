@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-22T15:01:47.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "‘Going to backfire’: Holdout juror’s attorney reacts to Lindsay Clancy’s defense team’s request",
+      "url": "https://www.boston25news.com/news/local/going-backfire-holdout-jurors-attorney-reacts-lindsay-clancys-defense-teams-request/EEBJZLXGTRBJTFV2VLWYHSNLAU/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-22T12:08:00.000Z",
       "outlet": "WCVB",
       "headline": "Holdout juror's lawyer predicts Clancy's request is 'going to backfire'",
@@ -692,13 +699,6 @@
       "headline": "Watch: Judge's final message to jurors in Lindsay Clancy trial",
       "url": "https://www.wcvb.com/article/lindsay-clancy-judge-sullivan-jury-thanks/73617856",
       "flag": null
-    },
-    {
-      "ts": "2026-09-04T18:22:00.000Z",
-      "outlet": "WCVB",
-      "headline": "What's next for Lindsay Clancy after mistrial declared?",
-      "url": "https://www.wcvb.com/article/lindsay-clancy-mistrial-next-steps/73617257",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
@@ -1003,6 +1003,7 @@
     "1qnfmx7",
     "1szc373",
     "1ed5pgo",
-    "1scekzp"
+    "1scekzp",
+    "192wvt7"
   ]
 }

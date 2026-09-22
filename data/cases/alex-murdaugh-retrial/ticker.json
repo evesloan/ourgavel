@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-22T02:04:00.000Z",
+      "outlet": "via Yahoo News",
+      "headline": "Alex Murdaugh attorneys seek DNA, ballistic evidence before retrial",
+      "url": "https://www.yahoo.com/news/us/articles/alex-murdaugh-attorneys-seek-dna-090545787.html",
+      "flag": null
+    },
+    {
       "ts": "2026-09-21T20:30:15.000Z",
       "outlet": "via MSN",
       "headline": "Fight over forensic evidence heats up ahead of Alex Murdaugh’s double murder retrial",
@@ -692,17 +699,9 @@
       "headline": "Alex Murdaugh’s retrial will be relocated, and his original testimony can be used conditionally, judge rules",
       "url": "https://www.koat.com/article/alex-murdaugh-testimony-second-trial/73437356",
       "flag": null
-    },
-    {
-      "ts": "2026-08-14T12:18:00.000Z",
-      "outlet": "kcci.com",
-      "headline": "Alex Murdaugh’s retrial will be relocated, and his original testimony can be used conditionally, judge rules",
-      "url": "https://www.kcci.com/article/alex-murdaugh-testimony-second-trial/73437356",
-      "flag": null
     }
   ],
   "seen": [
-    "1faqjas",
     "qu74t8",
     "1kch28a",
     "zzttd0",
@@ -1301,6 +1300,7 @@
     "5gu5s4",
     "1gbxzfi",
     "1gbi6sr",
-    "1gbyrju"
+    "1gbyrju",
+    "8a9yqd"
   ]
 }

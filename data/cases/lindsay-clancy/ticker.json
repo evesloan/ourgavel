@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-22T15:41:41.000Z",
+      "outlet": "Boston.com",
+      "headline": "Lindsay Clancy’s lawyers filed a motion to dismiss her case on double jeopardy grounds. Here’s what that means.",
+      "url": "https://www.boston.com/news/crime/2026/09/22/lindsay-clancy-motion-to-dismiss-double-jeopardy/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-22T15:01:47.000Z",
       "outlet": "Boston 25 News",
       "headline": "‘Going to backfire’: Holdout juror’s attorney reacts to Lindsay Clancy’s defense team’s request",
@@ -692,13 +699,6 @@
       "headline": "Judge sets September hearing after mistrial in Lindsay Clancy case",
       "url": "https://www.wcvb.com/article/lindsay-clancy-mistrial-declared-status-hearing/73618227",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-09-04T19:00:00.000Z",
-      "outlet": "WCVB",
-      "headline": "Watch: Judge's final message to jurors in Lindsay Clancy trial",
-      "url": "https://www.wcvb.com/article/lindsay-clancy-judge-sullivan-jury-thanks/73617856",
-      "flag": null
     }
   ],
   "seen": [
@@ -1004,6 +1004,7 @@
     "1szc373",
     "1ed5pgo",
     "1scekzp",
-    "192wvt7"
+    "192wvt7",
+    "16tm128"
   ]
 }

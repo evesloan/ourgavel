@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-22T12:08:00.000Z",
+      "outlet": "WCVB",
+      "headline": "Holdout juror's lawyer predicts Clancy's request is 'going to backfire'",
+      "url": "https://www.wcvb.com/article/desronvil-paltzik-reddington-clancy-objection-6th-amendment-sept-22/73833000",
+      "flag": null
+    },
+    {
       "ts": "2026-09-21T22:05:00.000Z",
       "outlet": "WCVB",
       "headline": "Lindsay Clancy seeks dismissal, argues retrial violates double jeopardy",
@@ -692,13 +699,6 @@
       "headline": "What's next for Lindsay Clancy after mistrial declared?",
       "url": "https://www.wcvb.com/article/lindsay-clancy-mistrial-next-steps/73617257",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-09-04T18:22:00.000Z",
-      "outlet": "WCVB",
-      "headline": "Comparing the mistrial in Lindsay Clancy's case to Karen Read's first trial",
-      "url": "https://www.wcvb.com/article/massachusetts-clancy-read-tuey-rodriguez-jury-mistrial-comparison/73617262",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
@@ -1002,6 +1002,7 @@
     "jc8zci",
     "1qnfmx7",
     "1szc373",
-    "1ed5pgo"
+    "1ed5pgo",
+    "1scekzp"
   ]
 }

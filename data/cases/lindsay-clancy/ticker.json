@@ -15,6 +15,13 @@
       "flag": null
     },
     {
+      "ts": "2026-09-21T19:43:11.000Z",
+      "outlet": "NBC10 Boston",
+      "headline": "Lindsay Clancy files to dismiss charges as attorney speaks on ex-husband's interview",
+      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-attorney-motion-dismiss-lawyer-interview/4018193/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-21T18:30:31.000Z",
       "outlet": "NBC10 Boston",
       "headline": "Lindsay Clancy's lawyer wants review of holdout juror's record",
@@ -692,13 +699,6 @@
       "headline": "Comparing the mistrial in Lindsay Clancy's case to Karen Read's first trial",
       "url": "https://www.wcvb.com/article/massachusetts-clancy-read-tuey-rodriguez-jury-mistrial-comparison/73617262",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-09-04T18:11:36.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "Lindsay Clancy Trial: Massachusetts SJC hears emergency appeal filed by defense",
-      "url": "https://www.boston25news.com/news/local/lindsay-clancy-trial-massachusetts-sjc-hears-emergency-appeal-filed-by-defense/J6QK7MR725CZZO3HSJX7QH4TIE/",
-      "flag": null
     }
   ],
   "seen": [
@@ -1001,6 +1001,7 @@
     "9yhfir",
     "jc8zci",
     "1qnfmx7",
-    "1szc373"
+    "1szc373",
+    "1ed5pgo"
   ]
 }

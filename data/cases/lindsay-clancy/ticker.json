@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-22T18:17:55.000Z",
+      "outlet": "Boston.com",
+      "headline": "Patrick Clancy suggests a ‘compassionate way’ to handle cases like Lindsay Clancy’s in ‘60 Minutes’ extended cut",
+      "url": "https://www.boston.com/news/crime/2026/09/22/patrick-clancy-60-minutes-interview-extended-cut/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-22T15:41:41.000Z",
       "outlet": "Boston.com",
       "headline": "Lindsay Clancy’s lawyers filed a motion to dismiss her case on double jeopardy grounds. Here’s what that means.",
@@ -692,13 +699,6 @@
       "headline": "DA Cruz to decide next steps after Lindsay Clancy’s murder trial ends in mistrial",
       "url": "https://www.boston25news.com/news/local/da-cruz-decide-next-steps-after-lindsay-clancys-murder-trial-ends-mistrial/32DFHBSRSNAGNLE6LSLRN5BA5A/",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-09-04T19:04:00.000Z",
-      "outlet": "WCVB",
-      "headline": "Judge sets September hearing after mistrial in Lindsay Clancy case",
-      "url": "https://www.wcvb.com/article/lindsay-clancy-mistrial-declared-status-hearing/73618227",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
@@ -1005,6 +1005,7 @@
     "1ed5pgo",
     "1scekzp",
     "192wvt7",
-    "16tm128"
+    "16tm128",
+    "v25bwx"
   ]
 }

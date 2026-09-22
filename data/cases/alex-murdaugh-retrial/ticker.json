@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-21T20:30:15.000Z",
+      "outlet": "via MSN",
+      "headline": "Fight over forensic evidence heats up ahead of Alex Murdaugh’s double murder retrial",
+      "url": "https://www.msn.com/en-us/news/other/fight-over-forensic-evidence-heats-up-ahead-of-alex-murdaugh-s-double-murder-retrial/ar-AA2cIOiD",
+      "flag": null
+    },
+    {
       "ts": "2026-09-21T12:55:18.000Z",
       "outlet": "via MSN",
       "headline": "Murdaugh defense says detectives found male DNA under victim's nails but skipped key testing",
@@ -692,17 +699,9 @@
       "headline": "Alex Murdaugh’s retrial will be relocated, and his original testimony can be used conditionally, judge rules",
       "url": "https://www.kcci.com/article/alex-murdaugh-testimony-second-trial/73437356",
       "flag": null
-    },
-    {
-      "ts": "2026-08-14T12:15:00.000Z",
-      "outlet": "kwwl.com",
-      "headline": "Alex Murdaugh’s retrial will be relocated, and his original testimony can be used conditionally, judge rules",
-      "url": "https://www.kwwl.com/news/social/alex-murdaugh-s-retrial-will-be-relocated-and-his-original-testimony-can-be-used-conditionally/article_49253205-3c7a-53c1-85bc-381c8861bd4a.html",
-      "flag": null
     }
   ],
   "seen": [
-    "tdaocy",
     "1faqjas",
     "qu74t8",
     "1kch28a",
@@ -1301,6 +1300,7 @@
     "fierw5",
     "5gu5s4",
     "1gbxzfi",
-    "1gbi6sr"
+    "1gbi6sr",
+    "1gbyrju"
   ]
 }

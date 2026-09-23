@@ -1,11 +1,25 @@
 {
   "items": [
     {
+      "ts": "2026-09-23T16:26:55.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Judge extends secrecy orders protecting jurors in Lindsay Clancy trial",
+      "url": "https://www.boston25news.com/news/local/judge-extends-secrecy-orders-protecting-jurors-lindsay-clancy-trial/IVOYIFUSUBCJRDWNGGNP3JHE7I/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-23T15:54:00.000Z",
       "outlet": "WCVB",
       "headline": "Judge keeps Clancy juror names, questionnaires sealed after mistrial",
       "url": "https://www.wcvb.com/article/judge-keeps-clancy-juror-records-sealed/73852120",
       "flag": "verdict-watch"
+    },
+    {
+      "ts": "2026-09-23T12:30:54.000Z",
+      "outlet": "NBC10 Boston",
+      "headline": "Judge in Lindsay Clancy trial extends impoundment order on juror list, questionnaires",
+      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-juror-questionnaires-impoundment-order/4019426/",
+      "flag": null
     },
     {
       "ts": "2026-09-22T18:17:55.000Z",
@@ -685,20 +699,6 @@
       "headline": "Here’s what Plymouth District Attorney Tim Cruz said after the Lindsay Clancy mistrial",
       "url": "https://www.boston.com/news/crime/2026/09/04/heres-what-plymouth-district-attorney-tim-cruz-said-after-the-lindsay-clancy-mistrial/",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-09-04T20:00:26.000Z",
-      "outlet": "Court TV",
-      "headline": "Lindsay Clancy’s attorney has message for DA: ‘You, Tim, were crushed’",
-      "url": "https://www.courttv.com/news/lindsay-clancys-attorney-has-message-for-da-you-tim-were-crushed/",
-      "flag": null
-    },
-    {
-      "ts": "2026-09-04T19:47:00.000Z",
-      "outlet": "WCVB",
-      "headline": "Lindsay Clancy's attorneys vow to continue civil case against medical providers",
-      "url": "https://www.wcvb.com/article/lindsay-clancy-medical-case-continue-after-mistrial-sept-4/73618484",
-      "flag": null
     }
   ],
   "seen": [
@@ -1007,6 +1007,8 @@
     "192wvt7",
     "16tm128",
     "v25bwx",
-    "1vp5p70"
+    "1vp5p70",
+    "nry2r2",
+    "1hu5wse"
   ]
 }

@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-23T15:54:00.000Z",
+      "outlet": "WCVB",
+      "headline": "Judge keeps Clancy juror names, questionnaires sealed after mistrial",
+      "url": "https://www.wcvb.com/article/judge-keeps-clancy-juror-records-sealed/73852120",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-22T18:17:55.000Z",
       "outlet": "Boston.com",
       "headline": "Patrick Clancy suggests a ‘compassionate way’ to handle cases like Lindsay Clancy’s in ‘60 Minutes’ extended cut",
@@ -692,13 +699,6 @@
       "headline": "Lindsay Clancy's attorneys vow to continue civil case against medical providers",
       "url": "https://www.wcvb.com/article/lindsay-clancy-medical-case-continue-after-mistrial-sept-4/73618484",
       "flag": null
-    },
-    {
-      "ts": "2026-09-04T19:27:52.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "DA Cruz to decide next steps after Lindsay Clancy’s murder trial ends in mistrial",
-      "url": "https://www.boston25news.com/news/local/da-cruz-decide-next-steps-after-lindsay-clancys-murder-trial-ends-mistrial/32DFHBSRSNAGNLE6LSLRN5BA5A/",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
@@ -1006,6 +1006,7 @@
     "1scekzp",
     "192wvt7",
     "16tm128",
-    "v25bwx"
+    "v25bwx",
+    "1vp5p70"
   ]
 }

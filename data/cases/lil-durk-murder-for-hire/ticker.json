@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-25T12:53:36.000Z",
+      "outlet": "via MSN",
+      "headline": "Lil Durk's lawyer Drew Findling on the verdict, rap lyrics, and his devotion to The Voice",
+      "url": "https://www.msn.com/en-us/entertainment/celebrities/lil-durk-s-lawyer-drew-findling-on-the-verdict-rap-lyrics-and-his-devotion-to-the-voice/ar-AA2cYP2U",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-22T13:51:00.000Z",
       "outlet": "complex.com",
       "headline": "Juror In Lil Durk Trial Says Jury Was 'Thorough' In Reaching Acquittal",
@@ -692,13 +699,6 @@
       "headline": "Lil Durk Trial Day 7: Brian Steel Challenges OTF Jam’s Changing Answers",
       "url": "https://allhiphop.com/news/lil-durk-trial-day-7-brian-steel-challenges-otf-jams-changing-answers/",
       "flag": null
-    },
-    {
-      "ts": "2026-08-28T02:27:00.000Z",
-      "outlet": "DancehallMag",
-      "headline": "Lil Durk Trial Day 6: OTF Jam Details Alleged Assassination Plan",
-      "url": "https://www.dancehallmag.com/2026/08/28/news/lil-durk-trial-day-6-otf-jam-details-alleged-assassination-plan.html",
-      "flag": null
     }
   ],
   "seen": [
@@ -904,6 +904,7 @@
     "1a0isif",
     "k1szaf",
     "imsslm",
-    "1gc17ol"
+    "1gc17ol",
+    "1gc8ys3"
   ]
 }

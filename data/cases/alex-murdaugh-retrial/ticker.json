@@ -8,6 +8,13 @@
       "flag": null
     },
     {
+      "ts": "2026-09-25T12:34:00.000Z",
+      "outlet": "sclawyersweekly.com",
+      "headline": "Sumter chosen as venue for Alex Murdaugh double-murder retrial",
+      "url": "https://sclawyersweekly.com/news/2026/09/25/sumter-chosen-alex-murdaugh-double-murder-retrial/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-22T06:38:00.000Z",
       "outlet": "FITSNews",
       "headline": "New Murdaugh Filing Elevates Sanctions Battle, Previews Fight to Dismiss Indictments",
@@ -692,17 +699,9 @@
       "headline": "Jueza acepta trasladar nuevo juicio a Alex Murdaugh de condado donde ocurrieron los asesinatos",
       "url": "https://www.ctpost.com/news/world/article/jueza-acepta-trasladar-nuevo-juicio-a-alex-22388936.php",
       "flag": null
-    },
-    {
-      "ts": "2026-08-14T12:58:13.000Z",
-      "outlet": "via MSN",
-      "headline": "Alex Murdaugh's retrial moved to a different county",
-      "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-s-retrial-moved-to-a-different-county/ar-AA2a8CwM",
-      "flag": null
     }
   ],
   "seen": [
-    "1a1d7ba",
     "1vy6v5o",
     "9u6wv6",
     "p82pjl",
@@ -1301,6 +1300,7 @@
     "xbqeny",
     "bjo3kw",
     "vhazcl",
-    "6apdj7"
+    "6apdj7",
+    "1lftdar"
   ]
 }

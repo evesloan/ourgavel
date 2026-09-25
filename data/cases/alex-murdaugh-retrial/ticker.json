@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-25T14:53:02.000Z",
+      "outlet": "FITSNews",
+      "headline": "Murdaugh Murders Bombshell: Alleged Crime Scene Coverup Focus of Grand Jury Probe",
+      "url": "https://www.fitsnews.com/2026/09/25/murdaugh-murders-bombshell-alleged-crime-scene-coverup-focus-of-grand-jury-probe/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-22T06:38:00.000Z",
       "outlet": "FITSNews",
       "headline": "New Murdaugh Filing Elevates Sanctions Battle, Previews Fight to Dismiss Indictments",
@@ -692,17 +699,9 @@
       "headline": "Alex Murdaugh's retrial moved to a different county",
       "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-s-retrial-moved-to-a-different-county/ar-AA2a8CwM",
       "flag": null
-    },
-    {
-      "ts": "2026-08-14T12:25:00.000Z",
-      "outlet": "wokv.com",
-      "headline": "Judge rules Alex Murdaugh's retrial will have a change of venue, but no location set",
-      "url": "https://www.wokv.com/news/national/judge-rules-alex-murdaughs-retrial-will-have-change-venue-no-location-set/XYXPWBEC2M2RNM3SR46MB3SXPM/",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
-    "1d75wyq",
     "1a1d7ba",
     "1vy6v5o",
     "9u6wv6",
@@ -1301,6 +1300,7 @@
     "aeuwvt",
     "xbqeny",
     "bjo3kw",
-    "vhazcl"
+    "vhazcl",
+    "6apdj7"
   ]
 }

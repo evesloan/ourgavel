@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-25T15:36:29.000Z",
+      "outlet": "via MSN",
+      "headline": "Alex Murdaugh retrial rocked by grand jury probe into alleged crime scene manipulation",
+      "url": "https://www.msn.com/en-ca/news/other/alex-murdaugh-retrial-rocked-by-grand-jury-probe-into-alleged-crime-scene-manipulation/ar-AA2cYUz4",
+      "flag": null
+    },
+    {
       "ts": "2026-09-25T14:53:02.000Z",
       "outlet": "FITSNews",
       "headline": "Murdaugh Murders Bombshell: Alleged Crime Scene Coverup Focus of Grand Jury Probe",
@@ -692,17 +699,9 @@
       "headline": "South Carolina judge grants Alex Murdaugh change of venue for murder retrial",
       "url": "https://www.msn.com/en-us/news/other/south-carolina-judge-grants-alex-murdaugh-change-of-venue-for-murder-retrial/ar-AA2a8D3Q",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-08-14T13:09:00.000Z",
-      "outlet": "ctpost.com",
-      "headline": "Jueza acepta trasladar nuevo juicio a Alex Murdaugh de condado donde ocurrieron los asesinatos",
-      "url": "https://www.ctpost.com/news/world/article/jueza-acepta-trasladar-nuevo-juicio-a-alex-22388936.php",
-      "flag": null
     }
   ],
   "seen": [
-    "1vy6v5o",
     "9u6wv6",
     "p82pjl",
     "pldlil",
@@ -1301,6 +1300,7 @@
     "bjo3kw",
     "vhazcl",
     "6apdj7",
-    "1lftdar"
+    "1lftdar",
+    "1gc945r"
   ]
 }

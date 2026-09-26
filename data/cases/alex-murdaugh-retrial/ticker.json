@@ -11,6 +11,13 @@
       "ts": "2026-09-25T15:36:29.000Z",
       "outlet": "via MSN",
       "headline": "Alex Murdaugh retrial rocked by grand jury probe into alleged crime scene manipulation",
+      "url": "https://www.msn.com/en-au/news/other/alex-murdaugh-retrial-rocked-by-grand-jury-probe-into-alleged-crime-scene-manipulation/ar-AA2cZB4N",
+      "flag": null
+    },
+    {
+      "ts": "2026-09-25T15:36:29.000Z",
+      "outlet": "via MSN",
+      "headline": "Alex Murdaugh retrial rocked by grand jury probe into alleged crime scene manipulation",
       "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-retrial-rocked-by-grand-jury-probe-into-alleged-crime-scene-manipulation/ar-AA2cZqXh",
       "flag": null
     },
@@ -692,17 +699,9 @@
       "headline": "Key rulings shake up Alex Murdaugh retrial: Venue disputed, prior testimony and fingernail DNA approved",
       "url": "https://www.wtoc.com/2026/08/14/key-rulings-shake-up-alex-murdaugh-retrial-venue-disputed-prior-testimony-fingernail-dna-approved/",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-08-14T14:15:00.000Z",
-      "outlet": "fox29.com",
-      "headline": "Judge moves Alex Murdaugh murder retrial from small rural county amid ongoing legal twists",
-      "url": "https://www.fox29.com/news/judge-moves-alex-murdaugh-murder-retrial-from-small-rural-county-amid-ongoing-legal-twists",
-      "flag": null
     }
   ],
   "seen": [
-    "pldlil",
     "106kc8m",
     "jh2olq",
     "f9en18",
@@ -1301,6 +1300,7 @@
     "1lftdar",
     "1gc945r",
     "7icfiv",
-    "1gc9o68"
+    "1gc9o68",
+    "1gc9bff"
   ]
 }

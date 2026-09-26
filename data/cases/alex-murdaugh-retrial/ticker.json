@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-25T16:29:00.000Z",
+      "outlet": "via Yahoo News",
+      "headline": "Alex Murdaugh's Police Chief Friend Denies Tampering With Crime Scene Ahead of Retrial",
+      "url": "https://ca.style.yahoo.com/alex-murdaughs-police-chief-friend-232906876.html",
+      "flag": null
+    },
+    {
       "ts": "2026-09-25T15:36:29.000Z",
       "outlet": "via MSN",
       "headline": "Alex Murdaugh retrial rocked by grand jury probe into alleged crime scene manipulation",
@@ -692,17 +699,9 @@
       "headline": "Judge moves Alex Murdaugh murder retrial from small rural county amid ongoing legal twists",
       "url": "https://www.fox35orlando.com/news/judge-moves-alex-murdaugh-murder-retrial-from-small-rural-county-amid-ongoing-legal-twists",
       "flag": null
-    },
-    {
-      "ts": "2026-08-14T13:58:15.000Z",
-      "outlet": "via MSN",
-      "headline": "South Carolina judge grants Alex Murdaugh change of venue for murder retrial",
-      "url": "https://www.msn.com/en-us/news/other/south-carolina-judge-grants-alex-murdaugh-change-of-venue-for-murder-retrial/ar-AA2a8D3Q",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
-    "9u6wv6",
     "p82pjl",
     "pldlil",
     "106kc8m",
@@ -1301,6 +1300,7 @@
     "vhazcl",
     "6apdj7",
     "1lftdar",
-    "1gc945r"
+    "1gc945r",
+    "7icfiv"
   ]
 }

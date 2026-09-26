@@ -8,6 +8,13 @@
       "flag": "verdict-watch"
     },
     {
+      "ts": "2026-09-25T11:50:00.000Z",
+      "outlet": "hotnewhiphop.com",
+      "headline": "Lil Durk’s Lawyer Drew Findling Reflects On Acquittal & What Comes Next",
+      "url": "https://www.hotnewhiphop.com/1010975-lil-durk-lawyer-drew-findling",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-22T13:51:00.000Z",
       "outlet": "complex.com",
       "headline": "Juror In Lil Durk Trial Says Jury Was 'Thorough' In Reaching Acquittal",
@@ -692,13 +699,6 @@
       "headline": "OTF Jam Testifies in Lil Durk Trial, Calling Alleged Plot to Kill Quando Rondo “Sloppy”",
       "url": "https://thesource.com/2026/08/28/otf-jam-testifies-in-lil-durk-trial-calling-alleged-plot-to-kill-quando-rondo-sloppy/",
       "flag": null
-    },
-    {
-      "ts": "2026-08-28T11:05:00.000Z",
-      "outlet": "AllHipHop",
-      "headline": "Lil Durk Trial Day 7: Brian Steel Challenges OTF Jam’s Changing Answers",
-      "url": "https://allhiphop.com/news/lil-durk-trial-day-7-brian-steel-challenges-otf-jams-changing-answers/",
-      "flag": null
     }
   ],
   "seen": [
@@ -905,6 +905,7 @@
     "k1szaf",
     "imsslm",
     "1gc17ol",
-    "1gc8ys3"
+    "1gc8ys3",
+    "g71od1"
   ]
 }

@@ -11,6 +11,13 @@
       "ts": "2026-09-25T15:36:29.000Z",
       "outlet": "via MSN",
       "headline": "Alex Murdaugh retrial rocked by grand jury probe into alleged crime scene manipulation",
+      "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-retrial-rocked-by-grand-jury-probe-into-alleged-crime-scene-manipulation/ar-AA2cZqXh",
+      "flag": null
+    },
+    {
+      "ts": "2026-09-25T15:36:29.000Z",
+      "outlet": "via MSN",
+      "headline": "Alex Murdaugh retrial rocked by grand jury probe into alleged crime scene manipulation",
       "url": "https://www.msn.com/en-ca/news/other/alex-murdaugh-retrial-rocked-by-grand-jury-probe-into-alleged-crime-scene-manipulation/ar-AA2cYUz4",
       "flag": null
     },
@@ -692,17 +699,9 @@
       "headline": "Judge moves Alex Murdaugh murder retrial from small rural county amid ongoing legal twists",
       "url": "https://www.fox29.com/news/judge-moves-alex-murdaugh-murder-retrial-from-small-rural-county-amid-ongoing-legal-twists",
       "flag": null
-    },
-    {
-      "ts": "2026-08-14T14:15:00.000Z",
-      "outlet": "fox35orlando.com",
-      "headline": "Judge moves Alex Murdaugh murder retrial from small rural county amid ongoing legal twists",
-      "url": "https://www.fox35orlando.com/news/judge-moves-alex-murdaugh-murder-retrial-from-small-rural-county-amid-ongoing-legal-twists",
-      "flag": null
     }
   ],
   "seen": [
-    "p82pjl",
     "pldlil",
     "106kc8m",
     "jh2olq",
@@ -1301,6 +1300,7 @@
     "6apdj7",
     "1lftdar",
     "1gc945r",
-    "7icfiv"
+    "7icfiv",
+    "1gc9o68"
   ]
 }

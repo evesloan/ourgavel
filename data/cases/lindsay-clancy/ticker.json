@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-28T16:25:00.000Z",
+      "outlet": "WCVB",
+      "headline": "Kevin Reddington crisscrossing Mass. for Cote, Clancy hearings",
+      "url": "https://www.wcvb.com/article/reddington-clancy-cote-sept-28/73925495",
+      "flag": null
+    },
+    {
       "ts": "2026-09-28T14:56:50.000Z",
       "outlet": "Boston 25 News",
       "headline": "Will Lindsay Clancy face a second murder trial? Key court hearing set for Tuesday",
@@ -692,13 +699,6 @@
       "headline": "Here’s what Kevin Reddington, Lindsay Clancy’s defense attorney, said after the mistrial",
       "url": "https://www.boston.com/uncategorized/crime/2026/09/04/heres-what-kevin-reddington-lindsay-clancys-defense-attorney-said-after-the-mistrial/",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-09-04T20:29:00.000Z",
-      "outlet": "WCVB",
-      "headline": "'Extraordinarily painful': Patrick Clancy comments on prospect of Lindsay Clancy retrial",
-      "url": "https://www.wcvb.com/article/patrick-clancy-statement-lindsay-mistrial/73618714",
-      "flag": null
     }
   ],
   "seen": [
@@ -1011,6 +1011,7 @@
     "nry2r2",
     "1hu5wse",
     "1eah961",
-    "imacd7"
+    "imacd7",
+    "dt3ail"
   ]
 }

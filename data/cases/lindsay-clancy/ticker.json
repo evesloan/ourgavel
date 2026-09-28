@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-28T14:56:50.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Will Lindsay Clancy face a second murder trial? Key court hearing set for Tuesday",
+      "url": "https://www.boston25news.com/news/local/will-lindsay-clancy-face-second-murder-trial-key-court-hearing-set-tuesday/7HVXPGGNA5CSXG7RBFEQOWEZLI/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-28T13:05:00.000Z",
       "outlet": "WCVB",
       "headline": "Tuesday hearing could determine future of Lindsay Clancy prosecution",
@@ -692,13 +699,6 @@
       "headline": "'Extraordinarily painful': Patrick Clancy comments on prospect of Lindsay Clancy retrial",
       "url": "https://www.wcvb.com/article/patrick-clancy-statement-lindsay-mistrial/73618714",
       "flag": null
-    },
-    {
-      "ts": "2026-09-04T20:26:52.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "Patrick Clancy releases statement after Lindsay Clancy trial ends in mistrial",
-      "url": "https://www.boston25news.com/news/local/patrick-clancy-releases-statement-after-lindsay-clancy-trial-ends-mistrial/AUFLA2DIXJHJ7AJGRTYZL4JR3A/",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
@@ -1010,6 +1010,7 @@
     "1vp5p70",
     "nry2r2",
     "1hu5wse",
-    "1eah961"
+    "1eah961",
+    "imacd7"
   ]
 }

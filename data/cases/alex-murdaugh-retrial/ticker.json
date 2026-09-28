@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-28T00:33:09.000Z",
+      "outlet": "via MSN",
+      "headline": "Grand Jury probe investigates sensational claims police chief and at least one other cop had role in Murdaugh murders cover-up",
+      "url": "https://www.msn.com/en-us/news/other/grand-jury-probe-investigates-sensational-claims-police-chief-and-at-least-one-other-cop-had-role-in-murdaugh-murders-cover-up/ar-AA2d7EiO",
+      "flag": null
+    },
+    {
       "ts": "2026-09-26T22:00:00.000Z",
       "outlet": "The Post and Courier",
       "headline": "Pair of Lowcountry cops investigated for allegedly handling missing Murdaugh murder weapons",
@@ -692,17 +699,9 @@
       "headline": "Alex Murdaugh wears suit to court as his defense accuses prosecution of having ‘secret agreements’",
       "url": "https://www.courttv.com/news/alex-murdaugh-wears-suit-to-court-as-his-defense-accuses-prosecution-of-having-secret-agreements/",
       "flag": null
-    },
-    {
-      "ts": "2026-08-14T17:25:18.000Z",
-      "outlet": "via MSN",
-      "headline": "8 decisions that could shape Alex Murdaugh's upcoming murder retrial",
-      "url": "https://www.msn.com/en-us/news/crime/8-decisions-that-could-shape-alex-murdaughs-upcoming-murder-retrial/ar-AA2a9Cg0",
-      "flag": null
     }
   ],
   "seen": [
-    "y5umq6",
     "rq8dtc",
     "ehki5c",
     "1f6avri",
@@ -1301,6 +1300,7 @@
     "1gbiurc",
     "auzoek",
     "iupcw1",
-    "tsyqve"
+    "tsyqve",
+    "1gbmfe6"
   ]
 }

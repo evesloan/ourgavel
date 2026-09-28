@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-28T12:04:00.000Z",
+      "outlet": "via Yahoo News",
+      "headline": "Murdaugh defense seeks cell phone data ahead of retrial",
+      "url": "https://www.yahoo.com/news/us/articles/murdaugh-defense-seeks-cell-phone-190424960.html",
+      "flag": null
+    },
+    {
       "ts": "2026-09-28T00:33:09.000Z",
       "outlet": "via MSN",
       "headline": "Grand Jury probe investigates sensational claims police chief and at least one other cop had role in Murdaugh murders cover-up",
@@ -692,17 +699,9 @@
       "headline": "Caso Alex Murdaugh: qu&#233; dictaminaron en la audiencia preliminar antes del nuevo juicio",
       "url": "https://www.infobae.com/estados-unidos/2026/08/15/caso-alex-murdaugh-que-dictamino-la-jueza-en-la-audiencia-preliminar-antes-del-nuevo-juicio/",
       "flag": null
-    },
-    {
-      "ts": "2026-08-14T18:54:36.000Z",
-      "outlet": "Court TV",
-      "headline": "Alex Murdaugh wears suit to court as his defense accuses prosecution of having ‘secret agreements’",
-      "url": "https://www.courttv.com/news/alex-murdaugh-wears-suit-to-court-as-his-defense-accuses-prosecution-of-having-secret-agreements/",
-      "flag": null
     }
   ],
   "seen": [
-    "rq8dtc",
     "ehki5c",
     "1f6avri",
     "ppe6e2",
@@ -1301,6 +1300,7 @@
     "auzoek",
     "iupcw1",
     "tsyqve",
-    "1gbmfe6"
+    "1gbmfe6",
+    "e0ogv6"
   ]
 }

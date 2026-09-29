@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-29T11:47:55.000Z",
+      "outlet": "News4JAX",
+      "headline": "Mario Fernandez, convicted in Jared Bridegan murder, expected to plead not guilty to separate child sex charges",
+      "url": "https://www.news4jax.com/news/local/2026/09/29/mario-fernandez-convicted-in-jared-bridegan-murder-expected-to-plead-not-guilty-to-separate-child-sex-charges/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-18T16:18:24.000Z",
       "outlet": "Action News Jax",
       "headline": "Jared Bridegan murder: 2 charges against Shanna Gardner dropped ahead of trial",
@@ -414,6 +421,7 @@
     "122w9lv",
     "1lcckvg",
     "1yzrczy",
-    "p1n13d"
+    "p1n13d",
+    "17s8rty"
   ]
 }

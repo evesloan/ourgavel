@@ -1,6 +1,20 @@
 {
   "items": [
     {
+      "ts": "2026-09-29T18:08:24.000Z",
+      "outlet": "Court TV",
+      "headline": "Judge weighs dismissing charges against Lindsay Clancy after attorney blasts ‘total and complete lack of evidence’",
+      "url": "https://www.courttv.com/news/judge-weighs-dismissing-charges-against-lindsay-clancy-after-attorney-blasts-total-and-complete-lack-of-evidence/",
+      "flag": null
+    },
+    {
+      "ts": "2026-09-29T17:54:08.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Lindsay Clancy holdout juror speaks out: ‘Put the focus on the three angels’",
+      "url": "https://www.boston25news.com/news/local/lindsay-clancy-holdout-juror-speaks-out-put-focus-three-angels/WSKVDZKHPFCH5GHFUP3BDWWLJM/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-29T16:42:00.000Z",
       "outlet": "WCVB",
       "headline": "Will Lindsay Clancy face retrial? DA says he's still 'working on' decision",
@@ -685,20 +699,6 @@
       "headline": "A hard decision for the hard-nosed prosecutor in the Lindsay Clancy case",
       "url": "https://www.boston.com/news/crime/2026/09/06/hard-decision-prosecutor-lindsay-clancy/",
       "flag": null
-    },
-    {
-      "ts": "2026-09-06T14:12:48.000Z",
-      "outlet": "Court TV",
-      "headline": "What happens next after Lindsay Clancy’s mistrial?",
-      "url": "https://www.courttv.com/news/what-happens-next-after-lindsay-clancys-mistrial/",
-      "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-09-05T22:10:00.000Z",
-      "outlet": "WCVB",
-      "headline": "Lindsay Clancy's attorneys allege medical failures in civil case",
-      "url": "https://www.wcvb.com/article/lindsay-clancys-attorneys-allege-medical-failures-in-civil-case/73622984",
-      "flag": null
     }
   ],
   "seen": [
@@ -1022,6 +1022,8 @@
     "y29b60",
     "1gv5eve",
     "qshk57",
-    "14l0ggk"
+    "14l0ggk",
+    "8q9nu8",
+    "mqdsha"
   ]
 }

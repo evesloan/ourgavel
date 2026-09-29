@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-28T19:59:50.000Z",
+      "outlet": "NBC10 Boston",
+      "headline": "What to expect at Lindsay Clancy's 1st hearing since murder case mistrial",
+      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-first-hearing-after-mistrial/4022299/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-28T16:25:00.000Z",
       "outlet": "WCVB",
       "headline": "Kevin Reddington crisscrossing Mass. for Cote, Clancy hearings",
@@ -692,13 +699,6 @@
       "headline": "Here’s what Kevin Reddington, Lindsay Clancy’s defense attorney, said after the mistrial",
       "url": "https://www.boston.com/news/crime/2026/09/04/heres-what-kevin-reddington-lindsay-clancys-defense-attorney-said-after-the-mistrial/",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-09-04T20:30:56.000Z",
-      "outlet": "Boston.com",
-      "headline": "Here’s what Kevin Reddington, Lindsay Clancy’s defense attorney, said after the mistrial",
-      "url": "https://www.boston.com/uncategorized/crime/2026/09/04/heres-what-kevin-reddington-lindsay-clancys-defense-attorney-said-after-the-mistrial/",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
@@ -1012,6 +1012,7 @@
     "1hu5wse",
     "1eah961",
     "imacd7",
-    "dt3ail"
+    "dt3ail",
+    "klcl89"
   ]
 }

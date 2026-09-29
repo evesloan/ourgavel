@@ -9,9 +9,9 @@
     },
     {
       "ts": "2026-09-28T15:52:00.000Z",
-      "outlet": "via Yahoo News",
+      "outlet": "wsav.com",
       "headline": "Officials investigating local police chief over Murdaugh evidence",
-      "url": "https://www.yahoo.com/news/us/articles/officials-investigating-local-police-chief-225223799.html",
+      "url": "https://www.wsav.com/crime-safety/officials-investigating-local-police-chief-over-murdaugh-evidence/",
       "flag": null
     },
     {
@@ -702,7 +702,6 @@
     }
   ],
   "seen": [
-    "ga9pk8",
     "1pxoxy6",
     "1b7naue",
     "1ytqiou",
@@ -1301,6 +1300,7 @@
     "e0ogv6",
     "1gbngcu",
     "1wps2a2",
-    "131icv2"
+    "131icv2",
+    "1lrs8dg"
   ]
 }

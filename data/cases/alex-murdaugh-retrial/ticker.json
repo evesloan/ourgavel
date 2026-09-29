@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-29T12:28:00.000Z",
+      "outlet": "via Yahoo News",
+      "headline": "Alex Murdaugh's Defense Requests Raw Cellphone Data Behind Murder Timeline Ahead of 2027 Retrial",
+      "url": "https://ca.style.yahoo.com/alex-murdaughs-defense-requests-raw-192729006.html",
+      "flag": null
+    },
+    {
       "ts": "2026-09-29T08:29:40.000Z",
       "outlet": "via MSN",
       "headline": "Alex Murdaugh's attorneys demand raw cellphone data used to build murder timeline ahead of retrial",
@@ -692,17 +699,9 @@
       "headline": "Alex Murdaugh moves for new home for double-murder retrial",
       "url": "https://www.foxnews.com/us/alex-murdaugh-moves-new-trial-double-murder-retrial",
       "flag": null
-    },
-    {
-      "ts": "2026-08-18T10:18:00.000Z",
-      "outlet": "Fox News",
-      "headline": "Alex Murdaugh solicita un nuevo lugar para el nuevo juicio por doble asesinato",
-      "url": "https://noticias.foxnews.com/us/alex-murdaugh-moves-new-trial-double-murder-retrial",
-      "flag": null
     }
   ],
   "seen": [
-    "1rzp3lt",
     "176kny2",
     "18z8qhu",
     "15xu8od",
@@ -1301,6 +1300,7 @@
     "1gcdl2u",
     "1gcewux",
     "1gcf3ha",
-    "1gcevoo"
+    "1gcevoo",
+    "xlarih"
   ]
 }

@@ -1,6 +1,20 @@
 {
   "items": [
     {
+      "ts": "2026-09-29T15:31:00.000Z",
+      "outlet": "WCVB",
+      "headline": "What just happened? Retired judge explains Lindsay Clancy hearing",
+      "url": "https://www.wcvb.com/article/lindsay-clancy-judge-barretto-hearing-explained-sept-29/73942259",
+      "flag": null
+    },
+    {
+      "ts": "2026-09-29T15:19:10.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Lindsay Clancy’s lawyer now questions whether she killed her 3 children",
+      "url": "https://www.boston25news.com/news/local/lindsay-clancys-lawyer-now-questions-whether-she-killed-her-3-children/PJ5AZFCH2NC5ZOIRLGQFFA52WU/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-29T12:50:48.000Z",
       "outlet": "Boston 25 News",
       "headline": "Live updates: Lindsay Clancy returns to court as defense moves to dismiss case after mistrial",
@@ -685,20 +699,6 @@
       "headline": "Mistrial is declared in Lindsay Clancy child killings case after jury deadlocks",
       "url": "https://www.boston25news.com/news/local/mistrial-is-declared-lindsay-clancy-child-killings-case-after-jury-deadlocks/RVDQQ7H6C5DUZPBDXFTMB4G56Y/",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-09-05T09:52:51.000Z",
-      "outlet": "NBC10 Boston",
-      "headline": "What happens to Lindsay Clancy now that a mistrial has been declared?",
-      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-what-happens-after-mistrial-tewksbury-state-hospital/4010081/",
-      "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-09-04T23:35:00.000Z",
-      "outlet": "WCVB",
-      "headline": "Reddington blasts prosecution, holdout juror after Clancy trial ends in mistrial",
-      "url": "https://www.wcvb.com/article/lindsay-clancy-mistrial-jury-deadlock-reddington/73619861",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
@@ -1019,6 +1019,8 @@
     "12xrdar",
     "1w9rthc",
     "1hhxbxg",
-    "y29b60"
+    "y29b60",
+    "1gv5eve",
+    "qshk57"
   ]
 }

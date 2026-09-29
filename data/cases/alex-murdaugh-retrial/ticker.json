@@ -1,6 +1,20 @@
 {
   "items": [
     {
+      "ts": "2026-09-29T08:29:40.000Z",
+      "outlet": "via MSN",
+      "headline": "Alex Murdaugh's attorneys demand raw cellphone data used to build murder timeline ahead of retrial",
+      "url": "https://www.msn.com/en-ca/news/other/alex-murdaughs-attorneys-demand-raw-cellphone-data-used-to-build-murder-timeline-ahead-of-retrial/ar-AA2dcxI3",
+      "flag": null
+    },
+    {
+      "ts": "2026-09-29T07:44:19.000Z",
+      "outlet": "via MSN",
+      "headline": "Alex Murdaugh defense seeks cell phone data ahead of retrial",
+      "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-defense-seeks-cell-phone-data-ahead-of-retrial/ar-AA2ddbEk",
+      "flag": null
+    },
+    {
       "ts": "2026-09-29T05:26:09.000Z",
       "outlet": "via MSN",
       "headline": "Murdaugh defense seeks cell phone data ahead of retrial",
@@ -685,25 +699,9 @@
       "headline": "Alex Murdaugh's legal team shifts focus to Richland County for double-murder retrial",
       "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-s-legal-team-shifts-focus-to-richland-county-for-double-murder-retrial/ar-AA2aocx5",
       "flag": null
-    },
-    {
-      "ts": "2026-08-18T07:21:00.000Z",
-      "outlet": "via MSN",
-      "headline": "Alex Murdaugh now wants double-murder retrial moved to Columbia",
-      "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-now-wants-double-murder-retrial-moved-to-columbia/ar-AA2aofar",
-      "flag": null
-    },
-    {
-      "ts": "2026-08-18T03:22:00.000Z",
-      "outlet": "via Yahoo News",
-      "headline": "Alex Murdaugh defense asks judge to move retrial to Richland County",
-      "url": "https://www.yahoo.com/news/us/articles/alex-murdaugh-defense-asks-judge-102259187.html",
-      "flag": null
     }
   ],
   "seen": [
-    "1p38jbg",
-    "b11id1",
     "1ox1mnx",
     "1rzp3lt",
     "176kny2",
@@ -1301,6 +1299,8 @@
     "1lrs8dg",
     "1ivg14y",
     "vmzpqd",
-    "1gcdl2u"
+    "1gcdl2u",
+    "1gcewux",
+    "1gcf3ha"
   ]
 }

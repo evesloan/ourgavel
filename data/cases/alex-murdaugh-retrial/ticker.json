@@ -345,6 +345,13 @@
     },
     {
       "ts": "2026-09-09T03:00:00.000Z",
+      "outlet": "via Yahoo News",
+      "headline": "Why Alex Murdaugh’s Retrial Had To Leave Colleton County",
+      "url": "https://uk.news.yahoo.com/why-alex-murdaugh-retrial-had-100000896.html",
+      "flag": null
+    },
+    {
+      "ts": "2026-09-09T03:00:00.000Z",
       "outlet": "via MSN",
       "headline": "Why Alex Murdaugh’s Retrial Had To Leave Colleton County",
       "url": "https://www.msn.com/en-us/news/other/why-alex-murdaugh-s-retrial-had-to-leave-colleton-county/ar-AA2bRo0h",
@@ -692,18 +699,9 @@
       "headline": "Alex Murdaugh defense suggests Richland County for murder retrial",
       "url": "https://www.wltx.com/article/news/special-reports/alex-murdaugh/alex-murdaugh-defense-suggests-richland-county-murder-retrial/101-a19643e3-5fa3-49e2-97a0-815bd5f6ff5e",
       "flag": null
-    },
-    {
-      "ts": "2026-08-17T12:55:51.000Z",
-      "outlet": "via MSN",
-      "headline": "Murdaugh defense pushing for retrial to be in Richland County",
-      "url": "https://www.msn.com/en-us/news/crime/murdaugh-defense-pushing-for-retrial-to-be-in-richland-county/ar-AA2ak9wu",
-      "flag": null
     }
   ],
   "seen": [
-    "1pxoxy6",
-    "1b7naue",
     "1ytqiou",
     "1p38jbg",
     "b11id1",
@@ -1301,6 +1299,8 @@
     "1gbngcu",
     "1wps2a2",
     "131icv2",
-    "1lrs8dg"
+    "1lrs8dg",
+    "1ivg14y",
+    "vmzpqd"
   ]
 }

@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-29T16:45:49.000Z",
+      "outlet": "Action News Jax",
+      "headline": "Convicted murderer Mario Fernandez Saldana pleads not guilty to molesting two children",
+      "url": "https://www.actionnewsjax.com/news/local/convicted-murderer-mario-fernandez-saldana-pleads-not-guilty-molesting-two-children/PRAELSKKXNHD3D7FQFPNMXZQ6M/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-29T11:47:55.000Z",
       "outlet": "News4JAX",
       "headline": "Mario Fernandez, convicted in Jared Bridegan murder, expected to plead not guilty to separate child sex charges",
@@ -422,6 +429,7 @@
     "1lcckvg",
     "1yzrczy",
     "p1n13d",
-    "17s8rty"
+    "17s8rty",
+    "k0qiwz"
   ]
 }

@@ -1,6 +1,20 @@
 {
   "items": [
     {
+      "ts": "2026-09-29T11:02:44.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Lindsay Clancy returns to court as defense moves to dismiss case after mistrial",
+      "url": "https://www.boston25news.com/news/local/lindsay-clancy-returns-court-defense-moves-dismiss-case-after-mistrial/5LIT5X7QHFEU3EVYPVQEEITIG4/",
+      "flag": "verdict-watch"
+    },
+    {
+      "ts": "2026-09-29T06:54:54.000Z",
+      "outlet": "NBC10 Boston",
+      "headline": "Will Lindsay Clancy face a 2nd trial? She returns to court today for important hearing",
+      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-court-hearing-livestream-second-trial-updates/4022412/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-28T19:59:50.000Z",
       "outlet": "NBC10 Boston",
       "headline": "What to expect at Lindsay Clancy's 1st hearing since murder case mistrial",
@@ -685,20 +699,6 @@
       "headline": "Cruz said decision to retry Clancy will be made 'shortly' after mistrial",
       "url": "https://www.wcvb.com/article/lindsay-clancy-mistrial-plymouth-da-cruz-retrial/73618419",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-09-04T20:38:46.000Z",
-      "outlet": "Boston.com",
-      "headline": "Lindsay Clancy’s former husband, Patrick, issues statement following mistrial via attorney",
-      "url": "https://www.boston.com/news/crime/2026/09/04/lindsay-clancy-patrick-issues-statement-mistrial/",
-      "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-09-04T20:30:56.000Z",
-      "outlet": "Boston.com",
-      "headline": "Here’s what Kevin Reddington, Lindsay Clancy’s defense attorney, said after the mistrial",
-      "url": "https://www.boston.com/news/crime/2026/09/04/heres-what-kevin-reddington-lindsay-clancys-defense-attorney-said-after-the-mistrial/",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
@@ -1013,6 +1013,8 @@
     "1eah961",
     "imacd7",
     "dt3ail",
-    "klcl89"
+    "klcl89",
+    "wo0wg",
+    "hih84e"
   ]
 }

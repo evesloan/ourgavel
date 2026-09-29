@@ -4,6 +4,13 @@
       "ts": "2026-09-29T08:29:40.000Z",
       "outlet": "via MSN",
       "headline": "Alex Murdaugh's attorneys demand raw cellphone data used to build murder timeline ahead of retrial",
+      "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-s-attorneys-demand-raw-cellphone-data-used-to-build-murder-timeline-ahead-of-retrial/ar-AA2dcX6o",
+      "flag": null
+    },
+    {
+      "ts": "2026-09-29T08:29:40.000Z",
+      "outlet": "via MSN",
+      "headline": "Alex Murdaugh's attorneys demand raw cellphone data used to build murder timeline ahead of retrial",
       "url": "https://www.msn.com/en-ca/news/other/alex-murdaughs-attorneys-demand-raw-cellphone-data-used-to-build-murder-timeline-ahead-of-retrial/ar-AA2dcxI3",
       "flag": null
     },
@@ -692,17 +699,9 @@
       "headline": "Alex Murdaugh solicita un nuevo lugar para el nuevo juicio por doble asesinato",
       "url": "https://noticias.foxnews.com/us/alex-murdaugh-moves-new-trial-double-murder-retrial",
       "flag": null
-    },
-    {
-      "ts": "2026-08-18T08:28:10.000Z",
-      "outlet": "via MSN",
-      "headline": "Alex Murdaugh's legal team shifts focus to Richland County for double-murder retrial",
-      "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-s-legal-team-shifts-focus-to-richland-county-for-double-murder-retrial/ar-AA2aocx5",
-      "flag": null
     }
   ],
   "seen": [
-    "1ox1mnx",
     "1rzp3lt",
     "176kny2",
     "18z8qhu",
@@ -1301,6 +1300,7 @@
     "vmzpqd",
     "1gcdl2u",
     "1gcewux",
-    "1gcf3ha"
+    "1gcf3ha",
+    "1gcevoo"
   ]
 }

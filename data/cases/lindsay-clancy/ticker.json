@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-29T19:53:00.000Z",
+      "outlet": "WCVB",
+      "headline": "Reddington’s apparent reversal stuns in Lindsay Clancy hearing",
+      "url": "https://www.wcvb.com/article/kevin-reddington-lindsay-clancy-evidence-argument-barretto-response-sept-29/73946654",
+      "flag": null
+    },
+    {
       "ts": "2026-09-29T18:08:24.000Z",
       "outlet": "Court TV",
       "headline": "Judge weighs dismissing charges against Lindsay Clancy after attorney blasts ‘total and complete lack of evidence’",
@@ -692,13 +699,6 @@
       "headline": "Wake Up Call from Duxbury Public Schools",
       "url": "https://www.wcvb.com/article/wake-up-call-from-duxbury-public-schools/73629839",
       "flag": null
-    },
-    {
-      "ts": "2026-09-06T17:38:43.000Z",
-      "outlet": "Boston.com",
-      "headline": "A hard decision for the hard-nosed prosecutor in the Lindsay Clancy case",
-      "url": "https://www.boston.com/news/crime/2026/09/06/hard-decision-prosecutor-lindsay-clancy/",
-      "flag": null
     }
   ],
   "seen": [
@@ -1024,6 +1024,7 @@
     "qshk57",
     "14l0ggk",
     "8q9nu8",
-    "mqdsha"
+    "mqdsha",
+    "1065sqd"
   ]
 }

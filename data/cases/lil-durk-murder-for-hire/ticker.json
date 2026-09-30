@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-30T11:53:00.000Z",
+      "outlet": "via Yahoo News",
+      "headline": "Lil Durk's Lawyer Drew Findling on the Verdict and His 'Devotion' to Durk",
+      "url": "https://www.yahoo.com/entertainment/celebrity/articles/lil-durks-lawyer-drew-findling-185336331.html",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-25T12:53:36.000Z",
       "outlet": "via MSN",
       "headline": "Lil Durk's lawyer Drew Findling on the verdict, rap lyrics, and his devotion to The Voice",
@@ -692,13 +699,6 @@
       "headline": "Lil Durk trial: 6ix9ine says he'll throw a 'going away party' if rapper is found guilty",
       "url": "https://www.msn.com/en-us/news/other/lil-durk-trial-6ix9ine-says-hell-throw-a-going-away-party-if-rapper-is-found-guilty/ar-AA2b9qHY",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-08-28T15:55:00.000Z",
-      "outlet": "billboard.com",
-      "headline": "Lil Durk Trial Week 1 Recap: Flipped OTF Crew Member Calls Quando Rondo Shooting ‘Sloppy’",
-      "url": "https://www.billboard.com/pro/lil-durk-murder-trial-week-1-recap/",
-      "flag": null
     }
   ],
   "seen": [
@@ -908,6 +908,7 @@
     "1gc8ys3",
     "g71od1",
     "k13b4",
-    "zd5l3p"
+    "zd5l3p",
+    "1h8ka05"
   ]
 }

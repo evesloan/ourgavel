@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-30T14:56:15.000Z",
+      "outlet": "via MSN",
+      "headline": "Alex Murdaugh’s legal team demands records tied to grand jury police probe",
+      "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-s-legal-team-demands-records-tied-to-grand-jury-police-probe/ar-AA2dj6oc",
+      "flag": null
+    },
+    {
       "ts": "2026-09-30T14:14:00.000Z",
       "outlet": "FITSNews",
       "headline": "Murdaugh Attorneys Demand Evidence From Alleged Crime Scene Coverup",
@@ -695,7 +702,6 @@
     }
   ],
   "seen": [
-    "9wnur4",
     "1lrfmmh",
     "15m8ot3",
     "darvtt",
@@ -1294,6 +1300,7 @@
     "xlarih",
     "1gch761",
     "an417k",
-    "9n7hhc"
+    "9n7hhc",
+    "1gci10a"
   ]
 }

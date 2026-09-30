@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-30T03:41:31.000Z",
+      "outlet": "via MSN",
+      "headline": "Alex Murdaugh defense team seeks phone data as 2027 murder retrial nears",
+      "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-defense-team-seeks-phone-data-as-2027-murder-retrial-nears/ar-AA2dgKI4",
+      "flag": null
+    },
+    {
       "ts": "2026-09-29T12:28:00.000Z",
       "outlet": "via Yahoo News",
       "headline": "Alex Murdaugh's Defense Requests Raw Cellphone Data Behind Murder Timeline Ahead of 2027 Retrial",
@@ -692,17 +699,9 @@
       "headline": "Murdaugh’s legal team shifts focus to South Carolina state capital for retrial",
       "url": "https://www.baltimoresun.com/2026/08/18/murdaughs-legal-team-shifts-focus-to-south-carolina-state-capital-for-retrial/",
       "flag": null
-    },
-    {
-      "ts": "2026-08-18T10:18:00.000Z",
-      "outlet": "Fox News",
-      "headline": "Alex Murdaugh moves for new home for double-murder retrial",
-      "url": "https://www.foxnews.com/us/alex-murdaugh-moves-new-trial-double-murder-retrial",
-      "flag": null
     }
   ],
   "seen": [
-    "176kny2",
     "18z8qhu",
     "15xu8od",
     "9wnur4",
@@ -1301,6 +1300,7 @@
     "1gcewux",
     "1gcf3ha",
     "1gcevoo",
-    "xlarih"
+    "xlarih",
+    "1gch761"
   ]
 }

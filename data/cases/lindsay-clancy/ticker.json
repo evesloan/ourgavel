@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-30T11:54:13.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Lindsay Clancy’s lawyer makes stunning new argument: Where’s the proof she did it?",
+      "url": "https://www.boston25news.com/news/local/lindsay-clancys-lawyer-makes-stunning-new-argument-wheres-proof-she-did-it/BU5UHJ5QENHWXDUAAWUDF5X6VU/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-29T20:54:28.000Z",
       "outlet": "Boston.com",
       "headline": "‘Where’s the evidence that she did this?’: Lindsay Clancy’s lawyer attacks case against her at first hearing after mistrial",
@@ -692,13 +699,6 @@
       "headline": "Lindsay Clancy faces years of confinement, no matter what comes next",
       "url": "https://www.boston.com/news/crime/2026/09/07/what-happens-to-lindsay-clancy/",
       "flag": null
-    },
-    {
-      "ts": "2026-09-07T09:48:00.000Z",
-      "outlet": "WCVB",
-      "headline": "Illinois mom charged in toddler's death was 'very invested' in Lindsay Clancy trial, prosecutors say",
-      "url": "https://www.wcvb.com/article/corie-walsh-illinois-mother-toddler-death-lindsay-clancy/73629339",
-      "flag": null
     }
   ],
   "seen": [
@@ -1026,6 +1026,7 @@
     "8q9nu8",
     "mqdsha",
     "1065sqd",
-    "1uu3hr7"
+    "1uu3hr7",
+    "b7lcr8"
   ]
 }

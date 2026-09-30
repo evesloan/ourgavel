@@ -8,6 +8,13 @@
       "flag": null
     },
     {
+      "ts": "2026-09-30T08:41:53.000Z",
+      "outlet": "NBC10 Boston",
+      "headline": "When could a second Lindsay Clancy trial be held?",
+      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-trial-update-yesterday-hearing/4023221/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-29T20:54:28.000Z",
       "outlet": "Boston.com",
       "headline": "‘Where’s the evidence that she did this?’: Lindsay Clancy’s lawyer attacks case against her at first hearing after mistrial",
@@ -692,13 +699,6 @@
       "headline": "After Clancy mistrial, defense attorney Reddington set for GMA interview",
       "url": "https://www.wcvb.com/article/reddington-clancy-trial-gma-tuesday/73634287",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-09-07T13:09:38.000Z",
-      "outlet": "Boston.com",
-      "headline": "Lindsay Clancy faces years of confinement, no matter what comes next",
-      "url": "https://www.boston.com/news/crime/2026/09/07/what-happens-to-lindsay-clancy/",
-      "flag": null
     }
   ],
   "seen": [
@@ -1027,6 +1027,7 @@
     "mqdsha",
     "1065sqd",
     "1uu3hr7",
-    "b7lcr8"
+    "b7lcr8",
+    "1vhmkp9"
   ]
 }

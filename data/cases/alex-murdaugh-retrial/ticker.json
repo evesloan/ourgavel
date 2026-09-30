@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-30T15:02:06.000Z",
+      "outlet": "via MSN",
+      "headline": "Murdaugh defense team seeks evidence on police involvement with murder weapons",
+      "url": "https://www.msn.com/en-us/news/other/murdaugh-defense-team-seeks-evidence-on-police-involvement-with-murder-weapons/ar-AA2diRtI",
+      "flag": null
+    },
+    {
       "ts": "2026-09-30T14:56:15.000Z",
       "outlet": "via MSN",
       "headline": "Alex Murdaugh’s legal team demands records tied to grand jury police probe",
@@ -692,17 +699,9 @@
       "headline": "Is Alex Murdaugh Still in Prison After His Murder Convictions Were Overturned? Where He Is Today",
       "url": "https://www.usmagazine.com/crime-news/news/is-alex-murdaugh-in-prison-after-overturned-convictions/",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-08-18T11:46:00.000Z",
-      "outlet": "baltimoresun.com",
-      "headline": "Murdaugh’s legal team shifts focus to South Carolina state capital for retrial",
-      "url": "https://www.baltimoresun.com/2026/08/18/murdaughs-legal-team-shifts-focus-to-south-carolina-state-capital-for-retrial/",
-      "flag": null
     }
   ],
   "seen": [
-    "1lrfmmh",
     "15m8ot3",
     "darvtt",
     "1vdu2oj",
@@ -1301,6 +1300,7 @@
     "1gch761",
     "an417k",
     "9n7hhc",
-    "1gci10a"
+    "1gci10a",
+    "1gcimmw"
   ]
 }

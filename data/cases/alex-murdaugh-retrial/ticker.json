@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-09-30T14:14:00.000Z",
+      "outlet": "FITSNews",
+      "headline": "Murdaugh Attorneys Demand Evidence From Alleged Crime Scene Coverup",
+      "url": "https://www.fitsnews.com/2026/09/30/murdaugh-attorneys-demand-evidence-from-alleged-crime-scene-coverup/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-30T03:41:31.000Z",
       "outlet": "via MSN",
       "headline": "Alex Murdaugh defense team seeks phone data as 2027 murder retrial nears",
@@ -688,7 +695,6 @@
     }
   ],
   "seen": [
-    "15xu8od",
     "9wnur4",
     "1lrfmmh",
     "15m8ot3",
@@ -1287,6 +1293,7 @@
     "1gcevoo",
     "xlarih",
     "1gch761",
-    "an417k"
+    "an417k",
+    "9n7hhc"
   ]
 }

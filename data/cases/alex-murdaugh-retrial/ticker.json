@@ -36,13 +36,6 @@
       "flag": null
     },
     {
-      "ts": "2026-09-29T05:26:09.000Z",
-      "outlet": "via MSN",
-      "headline": "Murdaugh defense seeks cell phone data ahead of retrial",
-      "url": "https://www.msn.com/en-us/news/other/murdaugh-defense-seeks-cell-phone-data-ahead-of-retrial/ar-AA2dc7ya",
-      "flag": null
-    },
-    {
       "ts": "2026-09-28T21:40:31.000Z",
       "outlet": "FITSNews",
       "headline": "Murdaugh Defense Demands Raw Cellphone Data Behind Murder Timeline",
@@ -57,17 +50,10 @@
       "flag": null
     },
     {
-      "ts": "2026-09-28T12:04:24.000Z",
-      "outlet": "via MSN",
-      "headline": "Murdaugh defense seeks cell phone data ahead of retrial",
-      "url": "https://www.msn.com/en-us/news/other/murdaugh-defense-seeks-cell-phone-data-ahead-of-retrial/ar-AA2d8XDX",
-      "flag": null
-    },
-    {
       "ts": "2026-09-28T12:04:00.000Z",
-      "outlet": "via Yahoo News",
+      "outlet": "WCBD News 2",
       "headline": "Murdaugh defense seeks cell phone data ahead of retrial",
-      "url": "https://www.yahoo.com/news/us/articles/murdaugh-defense-seeks-cell-phone-190424960.html",
+      "url": "https://www.counton2.com/the-murdaugh-investigation/murdaugh-defense-seeks-cell-phone-data-for-retrial/",
       "flag": null
     },
     {
@@ -702,7 +688,6 @@
     }
   ],
   "seen": [
-    "18z8qhu",
     "15xu8od",
     "9wnur4",
     "1lrfmmh",
@@ -1301,6 +1286,7 @@
     "1gcf3ha",
     "1gcevoo",
     "xlarih",
-    "1gch761"
+    "1gch761",
+    "an417k"
   ]
 }

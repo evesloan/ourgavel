@@ -386,6 +386,13 @@
       "flag": "verdict-watch"
     },
     {
+      "ts": "2026-09-09T06:42:00.000Z",
+      "outlet": "6abc.com",
+      "headline": "Alex Murdaugh case: Judge picks new location for double-murder retrial",
+      "url": "https://6abc.com/story/alex-murdaugh-today-judge-picks-new-location-double-murder-retrial/19810409/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-09T06:29:00.000Z",
       "outlet": "charlestoncitypaper.com",
       "headline": "Murdaugh’s retrial to be in Sumter County",
@@ -692,17 +699,9 @@
       "headline": "Here's why Murdaugh's attorneys want murder retrial in Richland County",
       "url": "https://www.msn.com/en-us/news/other/here-s-why-murdaugh-s-attorneys-want-murder-retrial-in-richland-county/ar-AA2asfBm",
       "flag": null
-    },
-    {
-      "ts": "2026-08-19T02:06:00.000Z",
-      "outlet": "via AOL",
-      "headline": "Here's why Murdaugh's attorneys want murder retrial in Richland County",
-      "url": "https://www.aol.com/articles/heres-why-murdaughs-attorneys-want-090650000.html",
-      "flag": null
     }
   ],
   "seen": [
-    "1mu1gnf",
     "10m0ntx",
     "10eevar",
     "1gfeykh",
@@ -1301,6 +1300,7 @@
     "1gchz83",
     "7q4idf",
     "1gcjp9j",
-    "8djb2k"
+    "8djb2k",
+    "g46dax"
   ]
 }

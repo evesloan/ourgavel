@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-01T19:32:44.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Death row inmate Christa Pike mentioned Lindsay Clancy before botched execution attempt",
+      "url": "https://www.boston25news.com/news/local/death-row-inmate-christa-pike-mentioned-lindsay-clancy-before-botched-execution-attempt/KK2WXUVSRZDIRJCHGUOBEQ3CPI/",
+      "flag": null
+    },
+    {
       "ts": "2026-10-01T08:47:47.000Z",
       "outlet": "NBC10 Boston",
       "headline": "Woman who survived 2 lethal injections had expressed feeling of ‘kinship' with Lindsay Clancy",
@@ -692,13 +699,6 @@
       "headline": "Illinois mom charged with killing toddler was closely following Lindsay Clancy trial, officials say",
       "url": "https://www.boston.com/news/crime/2026/09/07/illinois-mom-charged-with-killing-toddler-was-closely-following-lindsay-clancy-trial-officials-say/",
       "flag": null
-    },
-    {
-      "ts": "2026-09-07T21:36:08.000Z",
-      "outlet": "Law & Crime",
-      "headline": "Mom who was 'very invested' in Lindsay Clancy trial hanged 2-year-old son hours after 'actively discussing the case' with friends: Police",
-      "url": "https://lawandcrime.com/crime/mom-who-was-very-invested-in-lindsay-clancy-trial-hanged-2-year-old-son-hours-after-actively-discussing-the-case-with-friends-police/",
-      "flag": null
     }
   ],
   "seen": [
@@ -1029,6 +1029,7 @@
     "1uu3hr7",
     "b7lcr8",
     "1vhmkp9",
-    "1qqybcr"
+    "1qqybcr",
+    "1g8sj6n"
   ]
 }

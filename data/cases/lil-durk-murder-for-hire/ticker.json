@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-01T04:13:00.000Z",
+      "outlet": "DancehallMag",
+      "headline": "Lil Durk’s Second Federal Trial Pushed to 2027 After Murder for Hire Acquittal",
+      "url": "https://www.dancehallmag.com/2026/10/01/news/lil-durks-second-federal-trial-pushed-to-2027-after-murder-for-hire-acquittal.html",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-30T11:53:00.000Z",
       "outlet": "via Yahoo News",
       "headline": "Lil Durk's Lawyer Drew Findling on the Verdict and His 'Devotion' to Durk",
@@ -692,13 +699,6 @@
       "headline": "OTF Jam Says ‘It’s Durk’s Fault’ as Defense Challenges His Accounts in Lil Durk Trial",
       "url": "https://lamag.com/crimeinla/otf-jam-says-its-durks-fault-as-defense-challenges-his-accounts-in-lil-durk-trial/",
       "flag": null
-    },
-    {
-      "ts": "2026-08-28T19:30:13.000Z",
-      "outlet": "via MSN",
-      "headline": "Lil Durk trial: 6ix9ine says he'll throw a 'going away party' if rapper is found guilty",
-      "url": "https://www.msn.com/en-us/news/other/lil-durk-trial-6ix9ine-says-hell-throw-a-going-away-party-if-rapper-is-found-guilty/ar-AA2b9qHY",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
@@ -910,6 +910,7 @@
     "k13b4",
     "zd5l3p",
     "1h8ka05",
-    "1gboxom"
+    "1gboxom",
+    "g4t8e7"
   ]
 }

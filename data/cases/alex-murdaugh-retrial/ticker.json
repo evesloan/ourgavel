@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-01T02:22:59.000Z",
+      "outlet": "via MSN",
+      "headline": "Murdaugh defense asks state to release more details on alleged murder weapon",
+      "url": "https://www.msn.com/en-us/news/other/murdaugh-defense-asks-state-to-release-more-details-on-alleged-murder-weapon/ar-AA2dkHWg",
+      "flag": null
+    },
+    {
       "ts": "2026-10-01T02:00:00.000Z",
       "outlet": "via Yahoo News",
       "headline": "Murdaugh lawyers demand more info on supposed murder cover-up",
@@ -692,17 +699,9 @@
       "headline": "Here's why Murdaugh's attorneys want murder retrial in Richland County",
       "url": "https://www.aol.com/articles/heres-why-murdaughs-attorneys-want-090650000.html",
       "flag": null
-    },
-    {
-      "ts": "2026-08-19T02:06:00.000Z",
-      "outlet": "via Yahoo News",
-      "headline": "Here's why Murdaugh's attorneys want murder retrial in Richland County",
-      "url": "https://www.yahoo.com/news/us/articles/heres-why-murdaughs-attorneys-want-090650650.html",
-      "flag": null
     }
   ],
   "seen": [
-    "1vdu2oj",
     "106ofml",
     "1mu1gnf",
     "10m0ntx",
@@ -1301,6 +1300,7 @@
     "1gci10a",
     "1gcimmw",
     "1gchz83",
-    "7q4idf"
+    "7q4idf",
+    "1gcjp9j"
   ]
 }

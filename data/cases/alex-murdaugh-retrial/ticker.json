@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-01T04:45:00.000Z",
+      "outlet": "Court TV",
+      "headline": "Murdaugh defense: State hid claims police chief took key evidence in homicides",
+      "url": "https://www.courttv.com/news/murdaugh-defense-state-hid-claims-police-chief-took-key-evidence-in-homicides/",
+      "flag": null
+    },
+    {
       "ts": "2026-10-01T02:22:59.000Z",
       "outlet": "via MSN",
       "headline": "Murdaugh defense asks state to release more details on alleged murder weapon",
@@ -692,17 +699,9 @@
       "headline": "Picking a new Murdaugh murder trial site – no easy task for Judge McCaslin",
       "url": "https://www.msn.com/en-us/news/other/picking-a-new-murdaugh-murder-trial-site-no-easy-task-for-judge-mccaslin/ar-AA2atgNa",
       "flag": null
-    },
-    {
-      "ts": "2026-08-19T02:06:50.000Z",
-      "outlet": "via MSN",
-      "headline": "Here's why Murdaugh's attorneys want murder retrial in Richland County",
-      "url": "https://www.msn.com/en-us/news/other/here-s-why-murdaugh-s-attorneys-want-murder-retrial-in-richland-county/ar-AA2asfBm",
-      "flag": null
     }
   ],
   "seen": [
-    "10m0ntx",
     "10eevar",
     "1gfeykh",
     "rjtbvb",
@@ -1301,6 +1300,7 @@
     "7q4idf",
     "1gcjp9j",
     "8djb2k",
-    "g46dax"
+    "g46dax",
+    "1l02euw"
   ]
 }

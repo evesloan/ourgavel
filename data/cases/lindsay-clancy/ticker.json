@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-01T08:47:47.000Z",
+      "outlet": "NBC10 Boston",
+      "headline": "Woman who survived 2 lethal injections had expressed feeling of ‘kinship' with Lindsay Clancy",
+      "url": "https://www.nbcboston.com/news/local/christa-gail-pike-expressed-kinship-with-lindsay-clancy-in-interview/4023953/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-30T11:54:13.000Z",
       "outlet": "Boston 25 News",
       "headline": "Lindsay Clancy’s lawyer makes stunning new argument: Where’s the proof she did it?",
@@ -692,13 +699,6 @@
       "headline": "Mom who was 'very invested' in Lindsay Clancy trial hanged 2-year-old son hours after 'actively discussing the case' with friends: Police",
       "url": "https://lawandcrime.com/crime/mom-who-was-very-invested-in-lindsay-clancy-trial-hanged-2-year-old-son-hours-after-actively-discussing-the-case-with-friends-police/",
       "flag": null
-    },
-    {
-      "ts": "2026-09-07T21:14:00.000Z",
-      "outlet": "WCVB",
-      "headline": "After Clancy mistrial, defense attorney Reddington set for GMA interview",
-      "url": "https://www.wcvb.com/article/reddington-clancy-trial-gma-tuesday/73634287",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
@@ -1028,6 +1028,7 @@
     "1065sqd",
     "1uu3hr7",
     "b7lcr8",
-    "1vhmkp9"
+    "1vhmkp9",
+    "1qqybcr"
   ]
 }

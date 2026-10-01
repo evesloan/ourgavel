@@ -1,6 +1,20 @@
 {
   "items": [
     {
+      "ts": "2026-10-01T13:00:00.000Z",
+      "outlet": "via MSN",
+      "headline": "Murdaugh’s attorney writes letter to judge, said the state ‘resolved nothing’",
+      "url": "https://www.msn.com/en-us/news/other/murdaugh-s-attorney-writes-letter-to-judge-said-the-state-resolved-nothing/ar-AA2dmMrf",
+      "flag": null
+    },
+    {
+      "ts": "2026-10-01T12:53:55.000Z",
+      "outlet": "via MSN",
+      "headline": "'At a standstill' Harpootlian urges judge to help speed up Murdaugh retrial discovery",
+      "url": "https://www.msn.com/en-us/news/other/at-a-standstill-harpootlian-urges-judge-to-help-speed-up-murdaugh-retrial-discovery/ar-AA2dmJEv",
+      "flag": null
+    },
+    {
       "ts": "2026-10-01T12:16:25.000Z",
       "outlet": "via MSN",
       "headline": "Murdaugh’s attorney writes letter to judge, said the state ‘resolved nothing’",
@@ -685,25 +699,9 @@
       "headline": "Buster Murdaugh's libel lawsuit against media companies can go forward, judge rules",
       "url": "https://www.msn.com/en-us/news/news/buster-murdaugh-s-libel-lawsuit-against-media-companies-can-go-forward-judge-rules/ar-AA2bwkPh",
       "flag": null
-    },
-    {
-      "ts": "2026-08-26T20:17:46.000Z",
-      "outlet": "Court TV",
-      "headline": "‘Creative liberties’ in Murdaugh documentary means Buster’s lawsuit against Netflix can move forward: Judge",
-      "url": "https://www.courttv.com/news/creative-liberties-in-murdaugh-documentary-means-busters-lawsuit-against-netflix-can-move-forward-judge/",
-      "flag": null
-    },
-    {
-      "ts": "2026-08-21T02:30:00.000Z",
-      "outlet": "via MSN",
-      "headline": "Murdaugh prosecutor Creighton Waters says he'll let judge decide on new trial site",
-      "url": "https://www.msn.com/en-us/crime/general/murdaugh-prosecutor-creighton-waters-says-he-ll-let-judge-decide-on-new-trial-site/ar-AA2aEqDv",
-      "flag": null
     }
   ],
   "seen": [
-    "1bjwj4z",
-    "y5ejko",
     "fpfx50",
     "1hiqmhm",
     "9lj1tr",
@@ -1301,6 +1299,8 @@
     "1nhx8xk",
     "1gckfqz",
     "acb98t",
-    "1gcl7zl"
+    "1gcl7zl",
+    "1gcl0aw",
+    "1gcl2tq"
   ]
 }

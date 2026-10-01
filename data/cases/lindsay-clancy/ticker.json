@@ -1,6 +1,20 @@
 {
   "items": [
     {
+      "ts": "2026-10-01T20:14:49.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Judge denies Lindsay Clancy’s motion for required finding of not guilty in murder case",
+      "url": "https://www.boston25news.com/news/local/judge-denies-lindsay-clancys-motion-required-finding-not-guilty-murder-case/SBD6XSIPOFCZDD4M7S6NHAR53E/",
+      "flag": "verdict-watch"
+    },
+    {
+      "ts": "2026-10-01T20:07:00.000Z",
+      "outlet": "WCVB",
+      "headline": "Court denies Reddington motion to find Lindsay Clancy not guilty",
+      "url": "https://www.wcvb.com/article/motion-denied-lindsay-clancy-not-guilty/73983954",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-10-01T19:32:44.000Z",
       "outlet": "Boston 25 News",
       "headline": "Death row inmate Christa Pike mentioned Lindsay Clancy before botched execution attempt",
@@ -685,20 +699,6 @@
       "headline": "Defense attorney calls on President Trump to pardon Lindsay Clancy",
       "url": "https://www.nbcboston.com/news/local/kevin-reddington-in-gma-interview-calls-for-lindsay-clancy-pardon/4010811/",
       "flag": null
-    },
-    {
-      "ts": "2026-09-08T00:33:37.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "Illinois mom charged with killing toddler was closely following Lindsay Clancy trial, officials say",
-      "url": "https://www.boston25news.com/news/local/illinois-mom-charged-with-killing-toddler-was-closely-following-lindsay-clancy-trial-officials-say/NACO77H5LNCBVPKQH7PBYRTIBA/",
-      "flag": null
-    },
-    {
-      "ts": "2026-09-08T00:03:45.000Z",
-      "outlet": "Boston.com",
-      "headline": "Illinois mom charged with killing toddler was closely following Lindsay Clancy trial, officials say",
-      "url": "https://www.boston.com/news/crime/2026/09/07/illinois-mom-charged-with-killing-toddler-was-closely-following-lindsay-clancy-trial-officials-say/",
-      "flag": null
     }
   ],
   "seen": [
@@ -1030,6 +1030,8 @@
     "b7lcr8",
     "1vhmkp9",
     "1qqybcr",
-    "1g8sj6n"
+    "1g8sj6n",
+    "1jeikna",
+    "tpyaob"
   ]
 }

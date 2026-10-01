@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-01T10:03:00.000Z",
+      "outlet": "via Yahoo News",
+      "headline": "Judge sets new Alex Murdaugh hearing ahead of retrial",
+      "url": "https://www.yahoo.com/news/us/articles/judge-sets-alex-murdaugh-hearing-170321644.html",
+      "flag": null
+    },
+    {
       "ts": "2026-10-01T04:45:00.000Z",
       "outlet": "Court TV",
       "headline": "Murdaugh defense: State hid claims police chief took key evidence in homicides",
@@ -692,17 +699,9 @@
       "headline": "Why is Alex Murdaugh pushing Richland County over Charleston for his retrial?",
       "url": "https://www.primetimer.com/features/why-is-alex-murdaugh-pushing-richland-county-over-charleston-for-his-retrial",
       "flag": null
-    },
-    {
-      "ts": "2026-08-19T02:30:00.000Z",
-      "outlet": "via MSN",
-      "headline": "Picking a new Murdaugh murder trial site – no easy task for Judge McCaslin",
-      "url": "https://www.msn.com/en-us/news/other/picking-a-new-murdaugh-murder-trial-site-no-easy-task-for-judge-mccaslin/ar-AA2atgNa",
-      "flag": null
     }
   ],
   "seen": [
-    "10eevar",
     "1gfeykh",
     "rjtbvb",
     "d73efv",
@@ -1301,6 +1300,7 @@
     "1gcjp9j",
     "8djb2k",
     "g46dax",
-    "1l02euw"
+    "1l02euw",
+    "1nhx8xk"
   ]
 }

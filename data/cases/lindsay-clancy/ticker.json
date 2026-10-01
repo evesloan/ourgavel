@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-01T20:52:43.000Z",
+      "outlet": "Boston.com",
+      "headline": "Judge denies defense motion asking Lindsay Clancy be found not guilty due to a lack of evidence",
+      "url": "https://www.boston.com/news/crime/2026/10/01/judge-denies-defense-motion-asking-lindsay-clancy-be-found-not-guilty-due-to-a-lack-of-evidence/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-10-01T20:14:49.000Z",
       "outlet": "Boston 25 News",
       "headline": "Judge denies Lindsay Clancy’s motion for required finding of not guilty in murder case",
@@ -20,6 +27,13 @@
       "headline": "Death row inmate Christa Pike mentioned Lindsay Clancy before botched execution attempt",
       "url": "https://www.boston25news.com/news/local/death-row-inmate-christa-pike-mentioned-lindsay-clancy-before-botched-execution-attempt/KK2WXUVSRZDIRJCHGUOBEQ3CPI/",
       "flag": null
+    },
+    {
+      "ts": "2026-10-01T16:08:08.000Z",
+      "outlet": "NBC10 Boston",
+      "headline": "Judge denies Lindsay Clancy's request to find her not guilty",
+      "url": "https://www.nbcboston.com/news/local/judge-denies-lindsay-clancy-request-find-not-guilty/4024362/",
+      "flag": "verdict-watch"
     },
     {
       "ts": "2026-10-01T08:47:47.000Z",
@@ -685,20 +699,6 @@
       "headline": "Patrick Clancy attorney issues new statement after ‘escalating’ misinformation campaign",
       "url": "https://www.boston25news.com/news/local/patrick-clancy-attorney-issues-new-statement-after-escalating-misinformation-campaign/3XP2RZKCSFCSJG57K5RZYYKZHA/",
       "flag": null
-    },
-    {
-      "ts": "2026-09-08T11:24:00.000Z",
-      "outlet": "WCVB",
-      "headline": "'Enough is enough': Patrick Clancy at center of 'destructive defamation campaign,' attorney says",
-      "url": "https://www.wcvb.com/article/patrick-clancy-statement-lindsay-mistrial-sept-8/73639494",
-      "flag": null
-    },
-    {
-      "ts": "2026-09-08T07:56:48.000Z",
-      "outlet": "NBC10 Boston",
-      "headline": "Defense attorney calls on President Trump to pardon Lindsay Clancy",
-      "url": "https://www.nbcboston.com/news/local/kevin-reddington-in-gma-interview-calls-for-lindsay-clancy-pardon/4010811/",
-      "flag": null
     }
   ],
   "seen": [
@@ -1032,6 +1032,8 @@
     "1qqybcr",
     "1g8sj6n",
     "1jeikna",
-    "tpyaob"
+    "tpyaob",
+    "1sz1iq1",
+    "l5ir84"
   ]
 }

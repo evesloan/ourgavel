@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-02T02:06:00.000Z",
+      "outlet": "WCBD News 2",
+      "headline": "Alex Murdaugh attorneys ask judge to order state to respond to discovery requests ahead of retrial",
+      "url": "https://www.counton2.com/the-murdaugh-investigation/alex-murdaugh-attorneys-ask-judge-to-order-state-to-respond-to-discovery-requests-ahead-of-retrial/",
+      "flag": null
+    },
+    {
       "ts": "2026-10-01T14:31:00.000Z",
       "outlet": "WLTX News19",
       "headline": "Alex Murdaugh defense asks judge to intervene in discovery disputes ahead of 2027 trial",
@@ -692,17 +699,9 @@
       "headline": "Sumter County to be site for Alex Murdaugh’s new double murder trial",
       "url": "https://www.thestate.com/news/local/crime/article317170977.html",
       "flag": null
-    },
-    {
-      "ts": "2026-09-08T10:35:00.000Z",
-      "outlet": "The Post and Courier",
-      "headline": "Retrial of Alex Murdaugh’s double murder case being moved to Sumter County",
-      "url": "https://www.postandcourier.com/murdaugh-updates/murdaugh-murder-retrial-venue-change-sumter-county-sc/article_d9e96862-77ef-49ca-9afc-903336df883c.html",
-      "flag": null
     }
   ],
   "seen": [
-    "10vlel3",
     "11igokz",
     "1pqoi6i",
     "r7wf38",
@@ -1301,6 +1300,7 @@
     "1gcl2tq",
     "uhgorg",
     "p9csjs",
-    "1gcl8hu"
+    "1gcl8hu",
+    "xwcqyg"
   ]
 }

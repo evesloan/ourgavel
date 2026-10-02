@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-02T12:42:34.000Z",
+      "outlet": "via MSN",
+      "headline": "Hearing on DNA, ballistics evidence in Murdaugh case scheduled for Oct. 16",
+      "url": "https://www.msn.com/en-us/news/other/hearing-on-dna-ballistics-evidence-in-murdaugh-case-scheduled-for-oct-16/ar-AA2drAqH",
+      "flag": null
+    },
+    {
       "ts": "2026-10-02T04:39:04.000Z",
       "outlet": "via MSN",
       "headline": "Alex Murdaugh defense asks judge to intervene ahead of murder retrial",
@@ -692,17 +699,9 @@
       "headline": "Murdaugh trial moves to Sumter County, court orders",
       "url": "https://www.counton2.com/the-murdaugh-investigation/murdaugh-trial-moves-to-sumter-county-court-orders/",
       "flag": null
-    },
-    {
-      "ts": "2026-09-08T13:56:00.000Z",
-      "outlet": "via MSN",
-      "headline": "Murdaugh retrial to take place in Sumter County",
-      "url": "https://www.msn.com/en-us/news/news/murdaugh-retrial-to-take-place-in-sumter-county/ar-AA2bPtFr",
-      "flag": null
     }
   ],
   "seen": [
-    "r7wf38",
     "11zwfjo",
     "1not2ee",
     "ofvram",
@@ -1301,6 +1300,7 @@
     "1gcl8hu",
     "xwcqyg",
     "1gclvy1",
-    "1pcf37u"
+    "1pcf37u",
+    "1gco0u8"
   ]
 }

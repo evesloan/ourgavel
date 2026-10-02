@@ -8,6 +8,13 @@
       "flag": null
     },
     {
+      "ts": "2026-10-02T11:23:00.000Z",
+      "outlet": "via Yahoo News",
+      "headline": "Murdaugh lawyers allege prosecutors withheld witness claim that police chief handled murder weapons: filing",
+      "url": "https://www.yahoo.com/news/us/articles/murdaugh-lawyers-allege-prosecutors-withheld-182303648.html",
+      "flag": null
+    },
+    {
       "ts": "2026-10-02T04:39:04.000Z",
       "outlet": "via MSN",
       "headline": "Alex Murdaugh defense asks judge to intervene ahead of murder retrial",
@@ -692,17 +699,9 @@
       "headline": "Judge orders Murdaugh retrial venue transfer to Sumter County",
       "url": "https://www.msn.com/en-us/news/other/judge-orders-murdaugh-retrial-venue-transfer-to-sumter-county/ar-AA2bPyMn",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-09-08T14:06:00.000Z",
-      "outlet": "WCBD News 2",
-      "headline": "Murdaugh trial moves to Sumter County, court orders",
-      "url": "https://www.counton2.com/the-murdaugh-investigation/murdaugh-trial-moves-to-sumter-county-court-orders/",
-      "flag": null
     }
   ],
   "seen": [
-    "11zwfjo",
     "1not2ee",
     "ofvram",
     "79a0cw",
@@ -1301,6 +1300,7 @@
     "xwcqyg",
     "1gclvy1",
     "1pcf37u",
-    "1gco0u8"
+    "1gco0u8",
+    "10jn20c"
   ]
 }

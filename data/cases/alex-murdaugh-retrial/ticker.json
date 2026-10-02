@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-02T04:39:04.000Z",
+      "outlet": "via MSN",
+      "headline": "Alex Murdaugh defense asks judge to intervene ahead of murder retrial",
+      "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-defense-asks-judge-to-intervene-ahead-of-murder-retrial/vi-AA2dqc6T",
+      "flag": null
+    },
+    {
       "ts": "2026-10-02T02:06:00.000Z",
       "outlet": "WCBD News 2",
       "headline": "Alex Murdaugh attorneys ask judge to order state to respond to discovery requests ahead of retrial",
@@ -692,17 +699,9 @@
       "headline": "Murdaugh retrial to take place in Sumter County",
       "url": "https://www.msn.com/en-us/news/news/murdaugh-retrial-to-take-place-in-sumter-county/ar-AA2bPtFr",
       "flag": null
-    },
-    {
-      "ts": "2026-09-08T10:42:00.000Z",
-      "outlet": "The State",
-      "headline": "Sumter County to be site for Alex Murdaugh’s new double murder trial",
-      "url": "https://www.thestate.com/news/local/crime/article317170977.html",
-      "flag": null
     }
   ],
   "seen": [
-    "1pqoi6i",
     "r7wf38",
     "11zwfjo",
     "1not2ee",
@@ -1301,6 +1300,7 @@
     "p9csjs",
     "1gcl8hu",
     "xwcqyg",
-    "1gclvy1"
+    "1gclvy1",
+    "1pcf37u"
   ]
 }

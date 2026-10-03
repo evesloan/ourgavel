@@ -22,6 +22,13 @@
       "flag": null
     },
     {
+      "ts": "2026-10-02T11:23:03.000Z",
+      "outlet": "via MSN",
+      "headline": "Murdaugh lawyers allege prosecutors withheld witness claim that police chief handled murder weapons: filing",
+      "url": "https://www.msn.com/en-us/news/other/murdaugh-lawyers-allege-prosecutors-withheld-witness-claim-that-police-chief-handled-murder-weapons-filing/ar-AA2driIj",
+      "flag": null
+    },
+    {
       "ts": "2026-10-02T11:23:00.000Z",
       "outlet": "via Yahoo News",
       "headline": "Murdaugh lawyers allege prosecutors withheld witness claim that police chief handled murder weapons: filing",
@@ -692,17 +699,9 @@
       "headline": "Alex Murdaugh retrial to take place in Sumter County, judge rules",
       "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-retrial-to-take-place-in-sumter-county-judge-rules/ar-AA2bPQrg",
       "flag": null
-    },
-    {
-      "ts": "2026-09-08T14:09:05.000Z",
-      "outlet": "via MSN",
-      "headline": "Alex Murdaugh retrial to take place in Sumter County, judge rules",
-      "url": "https://www.msn.com/en-us/crime/general/alex-murdaugh-retrial-to-take-place-in-sumter-county-judge-rules/ar-AA2bPkfd",
-      "flag": null
     }
   ],
   "seen": [
-    "cfqzn2",
     "6xsea0",
     "1cxqxyo",
     "1drgev2",
@@ -1301,6 +1300,7 @@
     "fekz1e",
     "1xxk6h4",
     "1gco76s",
-    "1yrwezy"
+    "1yrwezy",
+    "1gco6ky"
   ]
 }

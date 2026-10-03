@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-03T06:41:00.000Z",
+      "outlet": "FITSNews",
+      "headline": "Week in Review: Murdaugh Murder Weapons Fallout",
+      "url": "https://www.fitsnews.com/2026/10/03/week-in-review-murdaugh-murder-weapons-fallout/",
+      "flag": null
+    },
+    {
       "ts": "2026-10-02T15:01:00.000Z",
       "outlet": "WLTX News19",
       "headline": "Judge to hear Alex Murdaugh evidence disputes at Oct. 16 hearing",
@@ -692,17 +699,9 @@
       "headline": "Alex Murdaugh retrial to take place in Sumter County, judge rules",
       "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-retrial-to-take-place-in-sumter-county-judge-rules/ar-AA2bP55m",
       "flag": null
-    },
-    {
-      "ts": "2026-09-08T14:09:05.000Z",
-      "outlet": "via MSN",
-      "headline": "Alex Murdaugh retrial to take place in Sumter County, judge rules",
-      "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-retrial-to-take-place-in-sumter-county-judge-rules/ar-AA2bPQrg",
-      "flag": null
     }
   ],
   "seen": [
-    "1cxqxyo",
     "1drgev2",
     "ci9sns",
     "bkhjra",
@@ -1301,6 +1300,7 @@
     "1gco76s",
     "1yrwezy",
     "1gco6ky",
-    "m1q98h"
+    "m1q98h",
+    "ivk26p"
   ]
 }

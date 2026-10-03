@@ -64,17 +64,17 @@
       "flag": null
     },
     {
+      "ts": "2026-10-01T13:01:00.000Z",
+      "outlet": "abccolumbia.com",
+      "headline": "‘At a standstill;’ Harpootlian urges judge to help speed up Murdaugh retrial discovery",
+      "url": "https://www.abccolumbia.com/2026/10/01/at-a-standstill-harpootlian-urges-judge-to-help-speed-up-murdaugh-retrial-discovery/",
+      "flag": null
+    },
+    {
       "ts": "2026-10-01T13:00:00.000Z",
       "outlet": "via MSN",
       "headline": "Murdaugh’s attorney writes letter to judge, said the state ‘resolved nothing’",
       "url": "https://www.msn.com/en-us/news/other/murdaugh-s-attorney-writes-letter-to-judge-said-the-state-resolved-nothing/ar-AA2dmMrf",
-      "flag": null
-    },
-    {
-      "ts": "2026-10-01T12:53:55.000Z",
-      "outlet": "via MSN",
-      "headline": "'At a standstill' Harpootlian urges judge to help speed up Murdaugh retrial discovery",
-      "url": "https://www.msn.com/en-us/news/other/at-a-standstill-harpootlian-urges-judge-to-help-speed-up-murdaugh-retrial-discovery/ar-AA2dmJEv",
       "flag": null
     },
     {
@@ -702,7 +702,6 @@
     }
   ],
   "seen": [
-    "6xsea0",
     "1cxqxyo",
     "1drgev2",
     "ci9sns",
@@ -1301,6 +1300,7 @@
     "1xxk6h4",
     "1gco76s",
     "1yrwezy",
-    "1gco6ky"
+    "1gco6ky",
+    "m1q98h"
   ]
 }

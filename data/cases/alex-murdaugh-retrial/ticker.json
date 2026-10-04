@@ -106,10 +106,10 @@
       "flag": null
     },
     {
-      "ts": "2026-10-01T10:03:00.000Z",
-      "outlet": "via Yahoo News",
+      "ts": "2026-10-01T11:03:00.000Z",
+      "outlet": "The Greenville News",
       "headline": "Judge sets new Alex Murdaugh hearing ahead of retrial",
-      "url": "https://www.yahoo.com/news/us/articles/judge-sets-alex-murdaugh-hearing-170321644.html",
+      "url": "https://www.greenvilleonline.com/story/news/crime/2026/10/01/alex-murdaughs-attorneys-seek-evidence-in-murder-retrial-battle/92036195007/",
       "flag": null
     },
     {
@@ -702,7 +702,6 @@
     }
   ],
   "seen": [
-    "ci9sns",
     "bkhjra",
     "1r423cu",
     "2y55z5",
@@ -1301,6 +1300,7 @@
     "1gco6ky",
     "m1q98h",
     "ivk26p",
-    "rj2ct6"
+    "rj2ct6",
+    "ky2bts"
   ]
 }

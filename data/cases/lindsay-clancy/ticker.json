@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-04T03:00:05.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Hundreds gather in Duxbury to raise awareness for perinatal mental health support",
+      "url": "https://www.boston25news.com/news/local/hundreds-gather-duxbury-raise-awareness-perinatal-mental-health-support/FBMUSFROWJCJBDCLSTDWP3LIHA/",
+      "flag": null
+    },
+    {
       "ts": "2026-10-01T20:52:43.000Z",
       "outlet": "Boston.com",
       "headline": "Judge denies defense motion asking Lindsay Clancy be found not guilty due to a lack of evidence",
@@ -692,13 +699,6 @@
       "headline": "Patrick Clancy’s attorney issues new statement after ‘escalating’ misinformation campaign",
       "url": "https://www.boston25news.com/news/local/patrick-clancys-attorney-issues-new-statement-after-escalating-misinformation-campaign/3XP2RZKCSFCSJG57K5RZYYKZHA/",
       "flag": null
-    },
-    {
-      "ts": "2026-09-08T11:27:22.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "Patrick Clancy attorney issues new statement after ‘escalating’ misinformation campaign",
-      "url": "https://www.boston25news.com/news/local/patrick-clancy-attorney-issues-new-statement-after-escalating-misinformation-campaign/3XP2RZKCSFCSJG57K5RZYYKZHA/",
-      "flag": null
     }
   ],
   "seen": [
@@ -1034,6 +1034,7 @@
     "1jeikna",
     "tpyaob",
     "1sz1iq1",
-    "l5ir84"
+    "l5ir84",
+    "1823tfa"
   ]
 }

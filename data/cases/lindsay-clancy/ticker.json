@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-05T17:53:14.000Z",
+      "outlet": "Court TV",
+      "headline": "Hospital responds to Lindsay Clancy’s malpractice lawsuit",
+      "url": "https://www.courttv.com/news/hospital-responds-to-lindsay-clancys-malpractice-lawsuit/",
+      "flag": null
+    },
+    {
       "ts": "2026-10-04T03:00:05.000Z",
       "outlet": "Boston 25 News",
       "headline": "Hundreds gather in Duxbury to raise awareness for perinatal mental health support",
@@ -692,13 +699,6 @@
       "headline": "Defense attorney asks President Trump to pardon Lindsay Clancy after mistrial",
       "url": "https://www.wcvb.com/article/reddington-clancy-trial-gma-sept-8/73639026",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-09-08T11:27:22.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "Patrick Clancy’s attorney issues new statement after ‘escalating’ misinformation campaign",
-      "url": "https://www.boston25news.com/news/local/patrick-clancys-attorney-issues-new-statement-after-escalating-misinformation-campaign/3XP2RZKCSFCSJG57K5RZYYKZHA/",
-      "flag": null
     }
   ],
   "seen": [
@@ -1035,6 +1035,7 @@
     "tpyaob",
     "1sz1iq1",
     "l5ir84",
-    "1823tfa"
+    "1823tfa",
+    "d01inl"
   ]
 }

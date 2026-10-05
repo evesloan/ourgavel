@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-05T10:41:51.000Z",
+      "outlet": "fox5dc.com",
+      "headline": "Trial opens for Naresh Bhatt, Virginia man accused of killing, dismembering missing wife",
+      "url": "https://www.fox5dc.com/news/trial-opens-naresh-bhatt-virginia-man-accused-killing-dismembering-missing-wife",
+      "flag": null
+    },
+    {
       "ts": "2026-09-27T15:15:57.000Z",
       "outlet": "fox5dc.com",
       "headline": "Judge rules on camera access ahead of Naresh Bhatt murder trial",
@@ -49,6 +56,7 @@
     "15g0x7p",
     "8sy0o0",
     "21z03r",
-    "mkupna"
+    "mkupna",
+    "15h1xy4"
   ]
 }

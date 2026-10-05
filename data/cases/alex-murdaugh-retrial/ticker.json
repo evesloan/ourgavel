@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-05T05:12:47.000Z",
+      "outlet": "via MSN",
+      "headline": "Murdaugh defense team asks judge to force evidence release before retrial",
+      "url": "https://www.msn.com/en-us/news/other/murdaugh-defense-team-asks-judge-to-force-evidence-release-before-retrial/ar-AA2dBzMN",
+      "flag": null
+    },
+    {
       "ts": "2026-10-03T06:41:00.000Z",
       "outlet": "FITSNews",
       "headline": "Week in Review: Murdaugh Murder Weapons Fallout",
@@ -692,17 +699,9 @@
       "headline": "Alex Murdaugh retrial to take place in Sumter County, judge rules",
       "url": "https://www.msn.com/en-us/news/news/alex-murdaugh-retrial-to-take-place-in-sumter-county-judge-rules/ar-AA2bP2pA",
       "flag": null
-    },
-    {
-      "ts": "2026-09-08T14:09:05.000Z",
-      "outlet": "via MSN",
-      "headline": "Alex Murdaugh retrial to take place in Sumter County, judge rules",
-      "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-retrial-to-take-place-in-sumter-county-judge-rules/ar-AA2bP55m",
-      "flag": null
     }
   ],
   "seen": [
-    "1r423cu",
     "2y55z5",
     "1jogdj7",
     "xuuo8r",
@@ -1301,6 +1300,7 @@
     "ivk26p",
     "rj2ct6",
     "ky2bts",
-    "16dr8bh"
+    "16dr8bh",
+    "1gcebhv"
   ]
 }

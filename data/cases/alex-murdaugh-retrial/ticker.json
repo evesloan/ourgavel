@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-05T08:41:00.000Z",
+      "outlet": "FITSNews",
+      "headline": "Alex Murdaugh On I-95? Pump The Brakes",
+      "url": "https://www.fitsnews.com/2026/10/05/murdaugh/",
+      "flag": null
+    },
+    {
       "ts": "2026-10-05T05:12:47.000Z",
       "outlet": "via MSN",
       "headline": "Murdaugh defense team asks judge to force evidence release before retrial",
@@ -692,17 +699,9 @@
       "headline": "Murdaugh trial to be moved out of lowcountry",
       "url": "https://www.wsav.com/news/murdaugh-trial-to-be-moved-out-of-lowcountry/",
       "flag": null
-    },
-    {
-      "ts": "2026-09-08T14:09:05.000Z",
-      "outlet": "via MSN",
-      "headline": "Alex Murdaugh retrial to take place in Sumter County, judge rules",
-      "url": "https://www.msn.com/en-us/news/news/alex-murdaugh-retrial-to-take-place-in-sumter-county-judge-rules/ar-AA2bP2pA",
-      "flag": null
     }
   ],
   "seen": [
-    "2y55z5",
     "1jogdj7",
     "xuuo8r",
     "8uukzk",
@@ -1301,6 +1300,7 @@
     "rj2ct6",
     "ky2bts",
     "16dr8bh",
-    "1gcebhv"
+    "1gcebhv",
+    "ozxahb"
   ]
 }

@@ -15,6 +15,13 @@
       "flag": null
     },
     {
+      "ts": "2026-10-06T12:25:00.000Z",
+      "outlet": "wjcl.com",
+      "headline": "South Carolina prosecutors clash with Alex Murdaugh defense over cellphone evidence in retrial fight",
+      "url": "https://www.wjcl.com/article/alex-murdaugh-cellphone-evidence-dispute/74055671",
+      "flag": null
+    },
+    {
       "ts": "2026-10-06T11:13:54.000Z",
       "outlet": "FITSNews",
       "headline": "Murdaugh Murders: Retracing Greg Alexander’s Road To Moselle",
@@ -692,17 +699,9 @@
       "headline": "Breaking: Murdaugh retrial to be moved out of Lowcountry",
       "url": "https://www.msn.com/en-us/news/news/breaking-murdaugh-retrial-to-be-moved-out-of-lowcountry/ar-AA2bQ8rR",
       "flag": null
-    },
-    {
-      "ts": "2026-09-08T14:34:49.000Z",
-      "outlet": "via MSN",
-      "headline": "Judge orders Alex Murdaugh murder retrial moved to nearby county",
-      "url": "https://www.msn.com/en-us/crime/general/judge-orders-alex-murdaugh-murder-retrial-moved-to-nearby-county/ar-AA2bPruS",
-      "flag": null
     }
   ],
   "seen": [
-    "14wfq94",
     "g400fe",
     "54isfn",
     "1hi4ken",
@@ -1301,6 +1300,7 @@
     "ozxahb",
     "nyx9k4",
     "1ifdqli",
-    "1c3r884"
+    "1c3r884",
+    "1mejxsl"
   ]
 }

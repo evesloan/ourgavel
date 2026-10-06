@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-06T16:46:08.000Z",
+      "outlet": "WLTX News19",
+      "headline": "State disputes Alex Murdaugh defense claims over cell phone evidence ahead of retrial",
+      "url": "https://www.wltx.com/article/news/special-reports/alex-murdaugh/state-disputes-alex-murdaugh-defense-claims-cell-phone-evidence-ahead-of-retrial/101-0540b714-56f5-478c-b2ea-cf2e33c38665",
+      "flag": null
+    },
+    {
       "ts": "2026-10-06T11:13:54.000Z",
       "outlet": "FITSNews",
       "headline": "Murdaugh Murders: Retracing Greg Alexander’s Road To Moselle",
@@ -692,17 +699,9 @@
       "headline": "Un juez ordena que el nuevo juicio por el asesinato de Murdaugh, en &#171; Alex &#187;, se traslade a un condado cercano",
       "url": "https://noticias.foxnews.com/us/judge-orders-alex-murdaugh-murder-retrial-moved-nearby-county",
       "flag": null
-    },
-    {
-      "ts": "2026-09-08T14:34:00.000Z",
-      "outlet": "via Yahoo News",
-      "headline": "BREAKING: Murdaugh retrial to be moved out of Lowcountry",
-      "url": "https://www.yahoo.com/news/us/articles/breaking-murdaugh-retrial-moved-lowcountry-213455511.html",
-      "flag": null
     }
   ],
   "seen": [
-    "xuuo8r",
     "8uukzk",
     "14wfq94",
     "g400fe",
@@ -1301,6 +1300,7 @@
     "16dr8bh",
     "1gcebhv",
     "ozxahb",
-    "nyx9k4"
+    "nyx9k4",
+    "1ifdqli"
   ]
 }

@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-06T10:49:47.000Z",
+      "outlet": "fox5dc.com",
+      "headline": "Jury selection resumes for Naresh Bhatt, Virginia man accused of killing, dismembering missing wife",
+      "url": "https://www.fox5dc.com/news/jury-selection-resumes-naresh-bhatt-virginia-man-accused-killing-dismembering-missing-wife",
+      "flag": null
+    },
+    {
       "ts": "2026-10-05T10:41:51.000Z",
       "outlet": "fox5dc.com",
       "headline": "Trial opens for Naresh Bhatt, Virginia man accused of killing, dismembering missing wife",
@@ -57,6 +64,7 @@
     "8sy0o0",
     "21z03r",
     "mkupna",
-    "15h1xy4"
+    "15h1xy4",
+    "1fb594u"
   ]
 }

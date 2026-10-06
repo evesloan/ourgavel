@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-06T11:13:54.000Z",
+      "outlet": "FITSNews",
+      "headline": "Murdaugh Murders: Retracing Greg Alexander’s Road To Moselle",
+      "url": "https://www.fitsnews.com/2026/10/06/murdaugh-murders-retracing-greg-alexander/",
+      "flag": null
+    },
+    {
       "ts": "2026-10-05T08:41:00.000Z",
       "outlet": "FITSNews",
       "headline": "Alex Murdaugh On I-95? Pump The Brakes",
@@ -692,17 +699,9 @@
       "headline": "BREAKING: Murdaugh retrial to be moved out of Lowcountry",
       "url": "https://www.yahoo.com/news/us/articles/breaking-murdaugh-retrial-moved-lowcountry-213455511.html",
       "flag": null
-    },
-    {
-      "ts": "2026-09-08T14:34:00.000Z",
-      "outlet": "wsav.com",
-      "headline": "Murdaugh trial to be moved out of lowcountry",
-      "url": "https://www.wsav.com/news/murdaugh-trial-to-be-moved-out-of-lowcountry/",
-      "flag": null
     }
   ],
   "seen": [
-    "1jogdj7",
     "xuuo8r",
     "8uukzk",
     "14wfq94",
@@ -1301,6 +1300,7 @@
     "ky2bts",
     "16dr8bh",
     "1gcebhv",
-    "ozxahb"
+    "ozxahb",
+    "nyx9k4"
   ]
 }

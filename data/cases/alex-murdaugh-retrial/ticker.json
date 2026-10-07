@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-07T03:21:00.000Z",
+      "outlet": "WIS News 10",
+      "headline": "State asks judge to deny Murdaugh request for additional cellphone data ahead of retrial",
+      "url": "https://www.wistv.com/2026/10/07/state-asks-judge-deny-murdaugh-request-additional-cellphone-data-ahead-retrial/",
+      "flag": null
+    },
+    {
       "ts": "2026-10-06T21:59:00.000Z",
       "outlet": "The Post and Courier",
       "headline": "Whom to trust? Allegations of lies and mistruths begin to overwhelm Alex Murdaugh saga",
@@ -692,17 +699,9 @@
       "headline": "Sumter County to be the site for Alex Murdaugh's new double murder trial",
       "url": "https://www.msn.com/en-us/crime/general/sumter-county-to-be-the-site-for-alex-murdaugh-s-new-double-murder-trial/ar-AA2bQw60",
       "flag": null
-    },
-    {
-      "ts": "2026-09-08T14:41:00.000Z",
-      "outlet": "via Yahoo News",
-      "headline": "Sumter County to be the site for Alex Murdaugh’s new double murder trial",
-      "url": "https://www.yahoo.com/news/us/articles/sumter-county-alex-murdaugh-double-214214476.html",
-      "flag": null
     }
   ],
   "seen": [
-    "1hi4ken",
     "1dr0al9",
     "1evyesb",
     "1x73119",
@@ -1301,6 +1300,7 @@
     "1c3r884",
     "1mejxsl",
     "1gchga7",
-    "r0a9xa"
+    "r0a9xa",
+    "15o4t9b"
   ]
 }

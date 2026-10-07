@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-07T12:50:53.000Z",
+      "outlet": "fox5dc.com",
+      "headline": "Jury selection resumes Wednesday in trial of Naresh Bhatt, Virginia man accused of killing wife",
+      "url": "https://www.fox5dc.com/news/jury-selection-resumes-wednesday-trial-naresh-bhatt-virginia-man-accused-killing-wife",
+      "flag": null
+    },
+    {
       "ts": "2026-10-06T10:49:47.000Z",
       "outlet": "fox5dc.com",
       "headline": "Jury selection resumes for Naresh Bhatt, Virginia man accused of killing, dismembering missing wife",
@@ -65,6 +72,7 @@
     "21z03r",
     "mkupna",
     "15h1xy4",
-    "1fb594u"
+    "1fb594u",
+    "1r0o0to"
   ]
 }

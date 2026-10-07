@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-07T20:13:59.000Z",
+      "outlet": "Action News Jax",
+      "headline": "Jared Bridegan murder: Accused gunman Henry Tenon pleads not guilty",
+      "url": "https://www.actionnewsjax.com/news/local/jared-bridegan-murder-accused-gunman-henry-tenon-pleads-not-guilty/SF5IVZ7VGVF53D3R3NIBQTSM7I/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-10-07T14:38:45.000Z",
       "outlet": "News4JAX",
       "headline": "Accused gunman Henry Tenon appears in court for first time under updated charges in Jared Bridegan murder",
@@ -438,6 +445,7 @@
     "p1n13d",
     "17s8rty",
     "k0qiwz",
-    "s07hr5"
+    "s07hr5",
+    "1wt2jzw"
   ]
 }

@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-07T14:38:45.000Z",
+      "outlet": "News4JAX",
+      "headline": "Accused gunman Henry Tenon appears in court for first time under updated charges in Jared Bridegan murder",
+      "url": "https://www.news4jax.com/news/local/2026/10/07/accused-gunman-henry-tenon-appears-in-court-for-first-time-under-updated-charges-in-jared-bridegan-murder/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-29T16:45:49.000Z",
       "outlet": "Action News Jax",
       "headline": "Convicted murderer Mario Fernandez Saldana pleads not guilty to molesting two children",
@@ -430,6 +437,7 @@
     "1yzrczy",
     "p1n13d",
     "17s8rty",
-    "k0qiwz"
+    "k0qiwz",
+    "s07hr5"
   ]
 }

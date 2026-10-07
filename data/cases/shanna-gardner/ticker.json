@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-07T14:38:45.000Z",
+      "outlet": "News4JAX",
+      "headline": "Accused gunman Henry Tenon appears in court for first time under updated charges in Jared Bridegan murder",
+      "url": "https://www.news4jax.com/news/local/2026/10/07/accused-gunman-henry-tenon-appears-in-court-for-first-time-under-updated-charges-in-jared-bridegan-murder/",
+      "flag": null
+    },
+    {
       "ts": "2026-09-18T16:18:24.000Z",
       "outlet": "Action News Jax",
       "headline": "Jared Bridegan murder: 2 charges against Shanna Gardner dropped ahead of trial",
@@ -74,6 +81,7 @@
     "1e9j6u",
     "1lcckvg",
     "1yzrczy",
-    "p1n13d"
+    "p1n13d",
+    "s07hr5"
   ]
 }

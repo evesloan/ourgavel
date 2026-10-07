@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-07T06:47:00.000Z",
+      "outlet": "southcarolinapublicradio.org",
+      "headline": "Prosecutors ask judge to deny Alex Murdaugh's cellphone data motion",
+      "url": "https://www.southcarolinapublicradio.org/sc-news/2026-10-07/prosecutors-ask-judge-to-deny-alex-murdaughs-cellphone-data-motion",
+      "flag": null
+    },
+    {
       "ts": "2026-10-07T03:21:00.000Z",
       "outlet": "WIS News 10",
       "headline": "State asks judge to deny Murdaugh request for additional cellphone data ahead of retrial",
@@ -692,17 +699,9 @@
       "headline": "Murdaugh retrial to take place in Sumter County, judge rules",
       "url": "https://www.wrdw.com/2026/09/08/murdaugh-retrial-take-place-sumter-county-judge-rules/",
       "flag": null
-    },
-    {
-      "ts": "2026-09-08T14:42:14.000Z",
-      "outlet": "via MSN",
-      "headline": "Sumter County to be the site for Alex Murdaugh's new double murder trial",
-      "url": "https://www.msn.com/en-us/crime/general/sumter-county-to-be-the-site-for-alex-murdaugh-s-new-double-murder-trial/ar-AA2bQw60",
-      "flag": null
     }
   ],
   "seen": [
-    "1dr0al9",
     "1evyesb",
     "1x73119",
     "thx9wz",
@@ -1301,6 +1300,7 @@
     "1mejxsl",
     "1gchga7",
     "r0a9xa",
-    "15o4t9b"
+    "15o4t9b",
+    "1xid9q8"
   ]
 }

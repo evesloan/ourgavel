@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-08T17:57:54.000Z",
+      "outlet": "WLTX News19",
+      "headline": "State responds to Murdaugh evidence disputes ahead of Oct. 16 hearing",
+      "url": "https://www.wltx.com/article/news/special-reports/alex-murdaugh/state-responds-murdaugh-evidence-disputes-oct16-hearing/101-e7a3133f-207b-41cd-94dc-3a74bf89c4a7",
+      "flag": null
+    },
+    {
       "ts": "2026-10-08T17:16:59.000Z",
       "outlet": "FITSNews",
       "headline": "Murdaugh Retrial: Secrecy, Science And A Flood Of Filings",
@@ -692,17 +699,9 @@
       "headline": "Sumter County to be site for Alex Murdaugh’s new double murder trial",
       "url": "https://www.union-bulletin.com/news/national/sumter-county-to-be-site-for-alex-murdaugh-s-new-double-murder-trial/article_2fb8bc1e-391d-5d37-965d-b1eba827eb7d.html",
       "flag": null
-    },
-    {
-      "ts": "2026-09-08T15:09:00.000Z",
-      "outlet": "via MSN",
-      "headline": "South Carolina judge moves Alex Murdaugh’s double murder retrial to Sumter County",
-      "url": "https://www.msn.com/en-us/news/other/south-carolina-judge-moves-alex-murdaugh-s-double-murder-retrial-to-sumter-county/vi-AA2bPYbW",
-      "flag": null
     }
   ],
   "seen": [
-    "1lp2kjf",
     "hyha0d",
     "1a0f68b",
     "39it7v",
@@ -1301,6 +1300,7 @@
     "1gcjx02",
     "1gcjzgs",
     "1gcklg7",
-    "xrvjy4"
+    "xrvjy4",
+    "1ytvdw1"
   ]
 }

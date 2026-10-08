@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-08T17:16:59.000Z",
+      "outlet": "FITSNews",
+      "headline": "Murdaugh Retrial: Secrecy, Science And A Flood Of Filings",
+      "url": "https://www.fitsnews.com/2026/10/08/murdaugh-retrial-secrecy-science-and-a-flood-of-filings/",
+      "flag": null
+    },
+    {
       "ts": "2026-10-07T06:47:00.000Z",
       "outlet": "southcarolinapublicradio.org",
       "headline": "Prosecutors ask judge to deny Alex Murdaugh's cellphone data motion",
@@ -692,17 +699,9 @@
       "headline": "South Carolina judge moves Alex Murdaugh’s double murder retrial to Sumter County",
       "url": "https://www.msn.com/en-us/news/other/south-carolina-judge-moves-alex-murdaugh-s-double-murder-retrial-to-sumter-county/vi-AA2bPYbW",
       "flag": null
-    },
-    {
-      "ts": "2026-09-08T14:57:00.000Z",
-      "outlet": "wrdw.com",
-      "headline": "Murdaugh retrial to take place in Sumter County, judge rules",
-      "url": "https://www.wrdw.com/2026/09/08/murdaugh-retrial-take-place-sumter-county-judge-rules/",
-      "flag": null
     }
   ],
   "seen": [
-    "1nglsdd",
     "1lp2kjf",
     "hyha0d",
     "1a0f68b",
@@ -1301,6 +1300,7 @@
     "1xid9q8",
     "1gcjx02",
     "1gcjzgs",
-    "1gcklg7"
+    "1gcklg7",
+    "xrvjy4"
   ]
 }

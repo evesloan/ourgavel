@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-09T05:02:46.000Z",
+      "outlet": "via MSN",
+      "headline": "Alex Murdaugh retrial: State opposes evidence requests",
+      "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-retrial-state-opposes-evidence-requests/ar-AA2dTdzb",
+      "flag": null
+    },
+    {
       "ts": "2026-10-09T02:07:59.000Z",
       "outlet": "via MSN",
       "headline": "Murdaugh prosecutors: 'We can't \"confirm or deny\" Greg Alexander probe'",
@@ -692,17 +699,9 @@
       "headline": "Alex Murdaugh murder retrial moved to Sumter County, judge rules",
       "url": "https://www.msn.com/en-us/crime/general/alex-murdaugh-murder-retrial-moved-to-sumter-county-judge-rules/ar-AA2bQ635",
       "flag": null
-    },
-    {
-      "ts": "2026-09-08T16:03:00.000Z",
-      "outlet": "via Yahoo News",
-      "headline": "Alex Murdaugh murder retrial moved to Sumter County, judge rules",
-      "url": "https://www.yahoo.com/news/us/articles/alex-murdaugh-murder-retrial-moved-230323595.html",
-      "flag": null
     }
   ],
   "seen": [
-    "1lb6ddl",
     "zfgmqw",
     "113k08b",
     "1xogcv7",
@@ -1301,6 +1300,7 @@
     "1ytvdw1",
     "1gcn0va",
     "bsksz1",
-    "1gcp23c"
+    "1gcp23c",
+    "1gcpd8y"
   ]
 }

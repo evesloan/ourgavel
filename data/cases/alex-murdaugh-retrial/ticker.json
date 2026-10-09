@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-09T16:00:44.000Z",
+      "outlet": "FITSNews",
+      "headline": "Murdaugh Retrial: Defense Challenges State’s Secrecy",
+      "url": "https://www.fitsnews.com/2026/10/09/murdaugh-retrial-defense-challenges-states-secrecy/",
+      "flag": null
+    },
+    {
       "ts": "2026-10-09T05:02:46.000Z",
       "outlet": "via MSN",
       "headline": "Alex Murdaugh retrial: State opposes evidence requests",
@@ -692,17 +699,9 @@
       "headline": "Retrial of Alex Murdaugh’s double murder case being moved to Sumter County",
       "url": "https://www.postandcourier.com/epaper/page-a7/page_00cbe06f-4a2d-57ac-9f3d-6024c1c1bffa.html",
       "flag": null
-    },
-    {
-      "ts": "2026-09-08T16:03:31.000Z",
-      "outlet": "via MSN",
-      "headline": "Alex Murdaugh murder retrial moved to Sumter County, judge rules",
-      "url": "https://www.msn.com/en-us/crime/general/alex-murdaugh-murder-retrial-moved-to-sumter-county-judge-rules/ar-AA2bQ635",
-      "flag": null
     }
   ],
   "seen": [
-    "zfgmqw",
     "113k08b",
     "1xogcv7",
     "1sj3hqz",
@@ -1301,6 +1300,7 @@
     "1gcn0va",
     "bsksz1",
     "1gcp23c",
-    "1gcpd8y"
+    "1gcpd8y",
+    "1ffbwcz"
   ]
 }

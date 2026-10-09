@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-09T14:57:07.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Lindsay Clancy seeks evidentiary hearing over juror influence, double jeopardy claims",
+      "url": "https://www.boston25news.com/news/local/lindsay-clancy-seeks-evidentiary-hearing-over-juror-influence-double-jeopardy-claims/GZEHWKK2AREF5CCNNGUHPPNVWE/",
+      "flag": null
+    },
+    {
       "ts": "2026-10-05T17:53:14.000Z",
       "outlet": "Court TV",
       "headline": "Hospital responds to Lindsay Clancy’s malpractice lawsuit",
@@ -692,13 +699,6 @@
       "headline": "Lindsey Clancy’s attorney asks President Trump for a pardon",
       "url": "https://www.boston25news.com/news/local/lindsey-clancys-attorney-asks-president-trump-pardon/Q37ZMCOJYREKNJ2CYK7Z7SQW2Q/",
       "flag": null
-    },
-    {
-      "ts": "2026-09-08T12:16:00.000Z",
-      "outlet": "WCVB",
-      "headline": "Defense attorney asks President Trump to pardon Lindsay Clancy after mistrial",
-      "url": "https://www.wcvb.com/article/reddington-clancy-trial-gma-sept-8/73639026",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
@@ -1036,6 +1036,7 @@
     "1sz1iq1",
     "l5ir84",
     "1823tfa",
-    "d01inl"
+    "d01inl",
+    "19guoj6"
   ]
 }

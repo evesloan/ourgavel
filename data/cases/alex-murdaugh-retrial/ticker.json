@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-10T13:29:36.000Z",
+      "outlet": "FITSNews",
+      "headline": "Week in Review: S.C. Lawmaker Charges, Tragic Child Cases, Murdaugh Filing Flurry",
+      "url": "https://www.fitsnews.com/2026/10/10/week-in-review-s-c-lawmaker-charges-tragic-child-cases-murdaugh-filing-flurry/",
+      "flag": null
+    },
+    {
       "ts": "2026-10-09T16:00:44.000Z",
       "outlet": "FITSNews",
       "headline": "Murdaugh Retrial: Defense Challenges State’s Secrecy",
@@ -692,17 +699,9 @@
       "headline": "Alex Murdaugh Retrial Gets New Venue After Defense Raises Jury Bias Concerns",
       "url": "https://people.com/alex-murdaugh-retrial-gets-new-venue-after-defense-raises-jury-bias-concerns-12112039",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-09-08T17:01:00.000Z",
-      "outlet": "The Post and Courier",
-      "headline": "Retrial of Alex Murdaugh’s double murder case being moved to Sumter County",
-      "url": "https://www.postandcourier.com/epaper/page-a7/page_00cbe06f-4a2d-57ac-9f3d-6024c1c1bffa.html",
-      "flag": null
     }
   ],
   "seen": [
-    "113k08b",
     "1xogcv7",
     "1sj3hqz",
     "24w40w",
@@ -1301,6 +1300,7 @@
     "bsksz1",
     "1gcp23c",
     "1gcpd8y",
-    "1ffbwcz"
+    "1ffbwcz",
+    "1edwa8l"
   ]
 }

@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-12T18:49:16.000Z",
+      "outlet": "FOX5 Las Vegas",
+      "headline": "Lottery system to be used for seating at Duane Davis sentencing",
+      "url": "https://www.fox5vegas.com/2026/10/12/lottery-system-be-used-seating-duane-davis-sentencing/",
+      "flag": null
+    },
+    {
       "ts": "2026-10-12T15:53:24.000Z",
       "outlet": "News 3 Las Vegas",
       "headline": "Lottery system returns for observing Duane Davis sentencing in Tupac Shakur murder",
@@ -640,6 +647,7 @@
     "1udq68v",
     "1wzmxss",
     "1elqc84",
-    "piq4tg"
+    "piq4tg",
+    "10mcgrx"
   ]
 }

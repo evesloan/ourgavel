@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-12T04:37:00.000Z",
+      "outlet": "The State",
+      "headline": "South Carolina's justice system in focus: From Murdaugh to a cop arrest. Here's what to know",
+      "url": "https://www.thestate.com/news/local/crime/article317589398.html",
+      "flag": null
+    },
+    {
       "ts": "2026-10-11T13:03:36.000Z",
       "outlet": "FITSNews",
       "headline": "Becky Hill Lawsuit: Murdaugh Takes Fight To Appeals Court",
@@ -692,17 +699,9 @@
       "headline": "Alex Murdaugh murder retrial moved to Sumter County",
       "url": "https://www.wltx.com/article/news/special-reports/alex-murdaugh/alex-murdaugh-murder-sumter-sc/101-14c94936-5303-42da-8509-59ac2d3d0c9c",
       "flag": null
-    },
-    {
-      "ts": "2026-09-08T21:01:46.000Z",
-      "outlet": "FITSNews",
-      "headline": "Alex Murdaugh Murder Retrial Moved To Sumter County",
-      "url": "https://www.fitsnews.com/2026/09/08/alex-murdaugh-murder-retrial-moved-to-sumter-county/",
-      "flag": null
     }
   ],
   "seen": [
-    "wookso",
     "1054scq",
     "fs7pjn",
     "1f17lob",
@@ -1301,6 +1300,7 @@
     "1edwa8l",
     "2ezmo6",
     "14m0erh",
-    "sxn2g4"
+    "sxn2g4",
+    "1brcu61"
   ]
 }

@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-12T15:53:24.000Z",
+      "outlet": "News 3 Las Vegas",
+      "headline": "Lottery system returns for observing Duane Davis sentencing in Tupac Shakur murder",
+      "url": "https://news3lv.com/news/local/lottery-system-public-observing-clark-county-district-court-duane-davis-sentencing-keffe-d-tupac-shakur-murder-las-vegas-nevada",
+      "flag": null
+    },
+    {
       "ts": "2026-09-16T01:32:11.000Z",
       "outlet": "News 3 Las Vegas",
       "headline": "Suge Knight disputes key details in Tupac Shakur killing during 2024 prison interview",
@@ -632,6 +639,7 @@
     "uejeic",
     "1udq68v",
     "1wzmxss",
-    "1elqc84"
+    "1elqc84",
+    "piq4tg"
   ]
 }

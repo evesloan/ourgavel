@@ -1,6 +1,20 @@
 {
   "items": [
     {
+      "ts": "2026-10-13T19:28:14.000Z",
+      "outlet": "PBS NewsHour",
+      "headline": "Duane 'Keffe D' Davis gets 40 years to life in prison for orchestrating Tupac Shakur's murder",
+      "url": "https://www.pbs.org/newshour/nation/duane-keffe-d-davis-gets-40-years-to-life-in-prison-for-orchestrating-tupac-shakurs-murder",
+      "flag": null
+    },
+    {
+      "ts": "2026-10-13T18:54:41.000Z",
+      "outlet": "KTNV Las Vegas",
+      "headline": "Duane 'Keefe D' Davis to serve 40 years to life in prison for Tupac Shakur's murder",
+      "url": "https://www.ktnv.com/news/crime/duane-keefe-d-davis-to-serve-40-years-to-life-in-prison-for-tupac-shakurs-murder",
+      "flag": null
+    },
+    {
       "ts": "2026-10-13T17:28:39.000Z",
       "outlet": "Las Vegas Review-Journal",
       "headline": "Man who orchestrated killing of Tupac Shakur to learn his sentence",
@@ -688,6 +702,8 @@
     "f35be9",
     "ejx9lj",
     "ribqnn",
-    "obb24b"
+    "obb24b",
+    "8drmub",
+    "1moqriw"
   ]
 }

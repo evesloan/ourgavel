@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-13T13:39:56.000Z",
+      "outlet": "News 3 Las Vegas",
+      "headline": "TODAY: Duane Davis receives sentence for murder of Tupac Shakur",
+      "url": "https://news3lv.com/news/local/duane-davis-sentencing-murder-tupac-shakur-las-vegas-clark-county-nevada-court-crime-shooting",
+      "flag": null
+    },
+    {
       "ts": "2026-10-13T12:51:26.000Z",
       "outlet": "FOX5 Las Vegas",
       "headline": "Duane ‘Keffe D’ Davis to be sentenced in Tupac murder case",
@@ -664,6 +671,7 @@
     "piq4tg",
     "10mcgrx",
     "ejqlae",
-    "f35be9"
+    "f35be9",
+    "ejx9lj"
   ]
 }

@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-13T22:29:33.000Z",
+      "outlet": "News 3 Las Vegas",
+      "headline": "Reactions on Duane 'Keffe D' Davis sentenced in Tupac Shakur killing",
+      "url": "https://news3lv.com/news/local/duane-keffe-d-davis-sentenced-in-tupac-shakur-killing-defense-plans-appeal",
+      "flag": null
+    },
+    {
       "ts": "2026-10-13T19:28:14.000Z",
       "outlet": "PBS NewsHour",
       "headline": "Duane 'Keffe D' Davis gets 40 years to life in prison for orchestrating Tupac Shakur's murder",
@@ -704,6 +711,7 @@
     "ribqnn",
     "obb24b",
     "8drmub",
-    "1moqriw"
+    "1moqriw",
+    "sv6osq"
   ]
 }

@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-13T14:40:05.000Z",
+      "outlet": "nbcwashington.com",
+      "headline": "‘The whole room lit up': Detective testifies on blood evidence test in Naresh Bhatt trial",
+      "url": "https://www.nbcwashington.com/news/local/prosecutors-say-as-trial-resumes/4166749/",
+      "flag": null
+    },
+    {
       "ts": "2026-10-13T10:34:44.000Z",
       "outlet": "fox5dc.com",
       "headline": "Naresh Bhatt murder trial resumes Tuesday following testimony from family, friends",
@@ -97,6 +104,7 @@
     "1r0o0to",
     "19fqpg7",
     "oq9oug",
-    "1bze8bp"
+    "1bze8bp",
+    "1mh8yo9"
   ]
 }

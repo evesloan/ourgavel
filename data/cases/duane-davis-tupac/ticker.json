@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-13T17:01:48.000Z",
+      "outlet": "8 News Now",
+      "headline": "Duane Davis to be sentenced for orchestrating Las Vegas murder of Tupac Shakur",
+      "url": "https://www.8newsnow.com/news/local-news/duane-davis-to-be-sentenced-for-orchestrating-las-vegas-murder-of-tupac-shakur/",
+      "flag": null
+    },
+    {
       "ts": "2026-10-13T13:39:56.000Z",
       "outlet": "News 3 Las Vegas",
       "headline": "TODAY: Duane Davis receives sentence for murder of Tupac Shakur",
@@ -672,6 +679,7 @@
     "10mcgrx",
     "ejqlae",
     "f35be9",
-    "ejx9lj"
+    "ejx9lj",
+    "ribqnn"
   ]
 }

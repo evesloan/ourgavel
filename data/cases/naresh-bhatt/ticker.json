@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-13T10:34:44.000Z",
+      "outlet": "fox5dc.com",
+      "headline": "Naresh Bhatt murder trial resumes Tuesday following testimony from family, friends",
+      "url": "https://www.fox5dc.com/news/naresh-bhatt-murder-trial-resumes-tuesday-following-testimony-from-family-friends",
+      "flag": null
+    },
+    {
       "ts": "2026-10-08T15:28:38.000Z",
       "outlet": "fox5dc.com",
       "headline": "Naresh Bhatt trial: Jury seated, first witnesses testify as proceedings continue Thursday",
@@ -89,6 +96,7 @@
     "1fb594u",
     "1r0o0to",
     "19fqpg7",
-    "oq9oug"
+    "oq9oug",
+    "1bze8bp"
   ]
 }

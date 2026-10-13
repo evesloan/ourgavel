@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-13T17:28:39.000Z",
+      "outlet": "Las Vegas Review-Journal",
+      "headline": "Man who orchestrated killing of Tupac Shakur to learn his sentence",
+      "url": "https://www.reviewjournal.com/crime/courts/man-who-orchestrated-killing-of-tupac-shakur-to-learn-his-sentence-3899543/",
+      "flag": null
+    },
+    {
       "ts": "2026-10-13T17:01:48.000Z",
       "outlet": "8 News Now",
       "headline": "Duane Davis to be sentenced for orchestrating Las Vegas murder of Tupac Shakur",
@@ -680,6 +687,7 @@
     "ejqlae",
     "f35be9",
     "ejx9lj",
-    "ribqnn"
+    "ribqnn",
+    "obb24b"
   ]
 }

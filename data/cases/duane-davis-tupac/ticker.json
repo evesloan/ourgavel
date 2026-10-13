@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-13T12:51:26.000Z",
+      "outlet": "FOX5 Las Vegas",
+      "headline": "Duane ‘Keffe D’ Davis to be sentenced in Tupac murder case",
+      "url": "https://www.fox5vegas.com/2026/10/13/duane-keffe-d-davis-be-sentenced-tupac-murder-case/",
+      "flag": null
+    },
+    {
       "ts": "2026-10-13T01:06:03.000Z",
       "outlet": "KTNV Las Vegas",
       "headline": "Duane 'Keefe D' Davis to be sentenced for 1996 murder of rap legend Tupac Shakur",
@@ -656,6 +663,7 @@
     "1elqc84",
     "piq4tg",
     "10mcgrx",
-    "ejqlae"
+    "ejqlae",
+    "f35be9"
   ]
 }

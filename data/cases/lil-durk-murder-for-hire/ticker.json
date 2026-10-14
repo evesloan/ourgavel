@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-14T08:29:00.000Z",
+      "outlet": "hotnewhiphop.com",
+      "headline": "Brian Steel Reveals Why He Was Hesitant About Joining Lil Durk's Legal Team",
+      "url": "https://www.hotnewhiphop.com/1013014-brian-steel-lil-durk-defense-team",
+      "flag": null
+    },
+    {
       "ts": "2026-10-14T07:39:00.000Z",
       "outlet": "xxlmag.com",
       "headline": "Brian Steel Explains Why He Joined Lil Durk’s Legal Team After Young Thug Urged Him to Do So",
@@ -692,13 +699,6 @@
       "headline": "Prosecutors In Lil Durk Trial Plan To Rest Their Case This Week",
       "url": "https://www.hotnewhiphop.com/1007846-prosecutors-lil-durk-trial-plan-rest-case-this-week",
       "flag": null
-    },
-    {
-      "ts": "2026-08-29T21:02:20.000Z",
-      "outlet": "AllHipHop",
-      "headline": "Bankroll Freddie Loses Appeal As Court Allows Rap Lyrics As Evidence",
-      "url": "https://allhiphop.com/news/bankroll-freddie-loses-appeal-as-court-allows-rap-lyrics-as-evidence/",
-      "flag": null
     }
   ],
   "seen": [
@@ -912,6 +912,8 @@
     "1h8ka05",
     "1gboxom",
     "g4t8e7",
-    "1764yf2"
+    "1764yf2",
+    "1gcyp60",
+    "109fb30"
   ]
 }

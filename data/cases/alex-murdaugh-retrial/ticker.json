@@ -298,6 +298,13 @@
       "ts": "2026-09-29T08:29:40.000Z",
       "outlet": "via MSN",
       "headline": "Alex Murdaugh's attorneys demand raw cellphone data used to build murder timeline ahead of retrial",
+      "url": "https://www.msn.com/en-au/news/other/alex-murdaughs-attorneys-demand-raw-cellphone-data-used-to-build-murder-timeline-ahead-of-retrial/ar-AA2dcKw7",
+      "flag": null
+    },
+    {
+      "ts": "2026-09-29T08:29:40.000Z",
+      "outlet": "via MSN",
+      "headline": "Alex Murdaugh's attorneys demand raw cellphone data used to build murder timeline ahead of retrial",
       "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-s-attorneys-demand-raw-cellphone-data-used-to-build-murder-timeline-ahead-of-retrial/ar-AA2dcX6o",
       "flag": null
     },
@@ -692,17 +699,9 @@
       "headline": "Judge orders Alex Murdaugh retrial to be moved to Sumter County, citing fair trial and security needs in eight-page court order",
       "url": "https://ca.style.yahoo.com/judge-orders-alex-murdaugh-retrial-054500913.html",
       "flag": null
-    },
-    {
-      "ts": "2026-09-08T22:08:31.000Z",
-      "outlet": "WLTX News19",
-      "headline": "Alex Murdaugh murder retrial moved to Sumter County",
-      "url": "https://www.wltx.com/article/news/special-reports/alex-murdaugh/alex-murdaugh-murder-sumter-sc/101-14c94936-5303-42da-8509-59ac2d3d0c9c",
-      "flag": null
     }
   ],
   "seen": [
-    "1f17lob",
     "94t14f",
     "1bfa4ot",
     "1lqej9q",
@@ -1301,6 +1300,7 @@
     "sxn2g4",
     "1brcu61",
     "1q0wn8m",
-    "1gc53c5"
+    "1gc53c5",
+    "1gcenk2"
   ]
 }

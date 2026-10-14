@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-14T12:23:24.000Z",
+      "outlet": "fox5dc.com",
+      "headline": "Testimony resumes in Naresh Bhatt murder trial Wednesday following detective's body camera evidence",
+      "url": "https://www.fox5dc.com/news/testimony-resumes-naresh-bhatt-murder-trial-following-detectives-body-camera-evidence",
+      "flag": null
+    },
+    {
       "ts": "2026-10-13T14:40:05.000Z",
       "outlet": "nbcwashington.com",
       "headline": "‘The whole room lit up': Detective testifies on blood evidence test in Naresh Bhatt trial",
@@ -105,6 +112,7 @@
     "19fqpg7",
     "oq9oug",
     "1bze8bp",
-    "1mh8yo9"
+    "1mh8yo9",
+    "1hm2rll"
   ]
 }

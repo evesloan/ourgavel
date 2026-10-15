@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-15T12:45:41.000Z",
+      "outlet": "fox5dc.com",
+      "headline": "Naresh Bhatt trial resumes Thursday after jurors shown suspected blood evidence",
+      "url": "https://www.fox5dc.com/news/jurors-shown-suspected-blood-evidence-naresh-bhatt-murder-trial-resumes-thursday",
+      "flag": null
+    },
+    {
       "ts": "2026-10-14T18:40:29.000Z",
       "outlet": "nbcwashington.com",
       "headline": "Photos of blood stains, zip ties, knives shown to jury in Naresh Bhatt trial",
@@ -121,6 +128,7 @@
     "1bze8bp",
     "1mh8yo9",
     "1hm2rll",
-    "1vpmzqf"
+    "1vpmzqf",
+    "1vhyre3"
   ]
 }

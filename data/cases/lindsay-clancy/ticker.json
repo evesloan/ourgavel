@@ -1,6 +1,20 @@
 {
   "items": [
     {
+      "ts": "2026-10-15T02:33:00.000Z",
+      "outlet": "WCVB",
+      "headline": "Holdout juror breaks silence on Lindsay Clancy mistrial in new TV interview",
+      "url": "https://www.wcvb.com/article/holdout-juror-lindsay-clancy-interview/74138960",
+      "flag": "verdict-watch"
+    },
+    {
+      "ts": "2026-10-15T01:17:18.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Lone holdout juror in Lindsay Clancy murder trial speaks out on decision to vote guilty",
+      "url": "https://www.boston25news.com/news/local/lone-holdout-juror-lindsay-clancy-murder-trial-speaks-out-decision-vote-guilty/525OYD4ZH5HTBOGWWT6WR7MPRY/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-10-09T14:57:07.000Z",
       "outlet": "Boston 25 News",
       "headline": "Lindsay Clancy seeks evidentiary hearing over juror influence, double jeopardy claims",
@@ -685,20 +699,6 @@
       "headline": "‘Law enforcement has been notified’: Lindsay Clancy’s husband threatens legal action for ‘outright falsehoods’",
       "url": "https://www.courttv.com/news/law-enforcement-has-been-notified-lindsay-clancys-husband-threatens-legal-action-for-outright-falsehoods/",
       "flag": null
-    },
-    {
-      "ts": "2026-09-08T14:26:04.000Z",
-      "outlet": "Boston.com",
-      "headline": "Patrick Clancy threatens legal action over ‘vile’ conspiracy theories in new statement via lawyer",
-      "url": "https://www.boston.com/news/crime/2026/09/08/patrick-clancy-lawyer-statement-conspiracy-theories/",
-      "flag": null
-    },
-    {
-      "ts": "2026-09-08T14:07:14.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "Lindsey Clancy’s attorney asks President Trump for a pardon",
-      "url": "https://www.boston25news.com/news/local/lindsey-clancys-attorney-asks-president-trump-pardon/Q37ZMCOJYREKNJ2CYK7Z7SQW2Q/",
-      "flag": null
     }
   ],
   "seen": [
@@ -1037,6 +1037,8 @@
     "l5ir84",
     "1823tfa",
     "d01inl",
-    "19guoj6"
+    "19guoj6",
+    "18qzz8l",
+    "1azua6u"
   ]
 }

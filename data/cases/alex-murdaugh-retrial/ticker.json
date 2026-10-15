@@ -1,6 +1,27 @@
 {
   "items": [
     {
+      "ts": "2026-10-15T21:28:49.000Z",
+      "outlet": "WLTX News19",
+      "headline": "Alex Murdaugh is back in court Friday. Here's what could be decided",
+      "url": "https://www.wltx.com/article/news/special-reports/alex-murdaugh/alex-murdaugh-hearing-october-16-preview/101-ffe8a9fb-6c57-429a-8a32-c09c241e9eaf",
+      "flag": null
+    },
+    {
+      "ts": "2026-10-15T20:18:12.000Z",
+      "outlet": "FITSNews",
+      "headline": "Murdaugh Retrial: Evidence Fights Head To Court",
+      "url": "https://www.fitsnews.com/2026/10/15/murdaugh-evidence-fights-court/",
+      "flag": null
+    },
+    {
+      "ts": "2026-10-15T13:48:00.000Z",
+      "outlet": "WLTX News19",
+      "headline": "How to watch Alex Murdaugh's Oct. 16 pretrial hearing",
+      "url": "https://www.wltx.com/article/news/special-reports/alex-murdaugh/how-to-watch-alex-murdaughs-october-16-hearing/101-323d7f37-cefc-46d2-9272-66e1a218fb0e",
+      "flag": null
+    },
+    {
       "ts": "2026-10-12T04:37:00.000Z",
       "outlet": "The State",
       "headline": "South Carolina's justice system in focus: From Murdaugh to a cop arrest. Here's what to know",
@@ -678,33 +699,9 @@
       "headline": "Why Alex Murdaugh’s Retrial Had To Leave Colleton County",
       "url": "https://www.msn.com/en-us/news/other/why-alex-murdaugh-s-retrial-had-to-leave-colleton-county/ar-AA2bRo0h",
       "flag": null
-    },
-    {
-      "ts": "2026-09-09T03:00:00.000Z",
-      "outlet": "via Yahoo News",
-      "headline": "Why Alex Murdaugh’s Retrial Had To Leave Colleton County",
-      "url": "https://www.yahoo.com/news/us/articles/why-alex-murdaugh-retrial-had-100000896.html",
-      "flag": null
-    },
-    {
-      "ts": "2026-09-08T23:42:00.000Z",
-      "outlet": "abc7chicago.com",
-      "headline": "Alex Murdaugh case: Judge picks new location for double-murder retrial",
-      "url": "https://abc7chicago.com/story/alex-murdaugh-today-judge-picks-new-location-double-murder-retrial/19810409/",
-      "flag": null
-    },
-    {
-      "ts": "2026-09-08T22:45:00.000Z",
-      "outlet": "via Yahoo News",
-      "headline": "Judge orders Alex Murdaugh retrial to be moved to Sumter County, citing fair trial and security needs in eight-page court order",
-      "url": "https://ca.style.yahoo.com/judge-orders-alex-murdaugh-retrial-054500913.html",
-      "flag": null
     }
   ],
   "seen": [
-    "1bfa4ot",
-    "1lqej9q",
-    "ymw3u8",
     "1xj4h28",
     "u3j4sr",
     "fabrgu",
@@ -1301,6 +1298,9 @@
     "1q0wn8m",
     "1gc53c5",
     "1gcenk2",
-    "go5z3j"
+    "go5z3j",
+    "1gmbk2i",
+    "1bp9yb0",
+    "1bovnck"
   ]
 }

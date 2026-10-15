@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-14T18:40:29.000Z",
+      "outlet": "nbcwashington.com",
+      "headline": "Photos of blood stains, zip ties, knives shown to jury in Naresh Bhatt trial",
+      "url": "https://www.nbcwashington.com/news/local/northern-virginia/photos-of-blood-stains-zip-ties-knives-shown-to-jury-in-naresh-bhatt-trial/4167512/",
+      "flag": null
+    },
+    {
       "ts": "2026-10-14T12:23:24.000Z",
       "outlet": "fox5dc.com",
       "headline": "Testimony resumes in Naresh Bhatt murder trial Wednesday following detective's body camera evidence",
@@ -113,6 +120,7 @@
     "oq9oug",
     "1bze8bp",
     "1mh8yo9",
-    "1hm2rll"
+    "1hm2rll",
+    "1vpmzqf"
   ]
 }

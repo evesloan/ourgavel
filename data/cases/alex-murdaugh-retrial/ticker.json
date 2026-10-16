@@ -142,6 +142,13 @@
     },
     {
       "ts": "2026-10-15T21:12:00.000Z",
+      "outlet": "AP",
+      "headline": "Fight over evidence in Alex Murdaugh retrial turns to DNA and missing murder weapons",
+      "url": "https://apnews.com/article/alex-murdaugh-killings-pretrial-hearing-8543a045e48ee026a25dbd74ade3af3d",
+      "flag": null
+    },
+    {
+      "ts": "2026-10-15T21:12:00.000Z",
       "outlet": "via inkl",
       "headline": "Alex Murdaugh’s lawyers raise explosive questions about possible accomplice",
       "url": "https://www.inkl.com/news/alex-murdaughs-defense-and-prosecutors-expect-to-clash-over-evidence-during-pretrial-hearing",
@@ -692,17 +699,9 @@
       "headline": "Alex Murdaugh defense seeks DNA, ballistic data ahead of retrial",
       "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-defense-seeks-dna-ballistic-data-ahead-of-retrial/ar-AA2cwF2S",
       "flag": null
-    },
-    {
-      "ts": "2026-09-18T14:27:46.000Z",
-      "outlet": "via MSN",
-      "headline": "Murdaugh defense team asks judge to intervene over alleged withheld evidence ahead of murder retrial",
-      "url": "https://www.msn.com/en-us/news/other/murdaugh-defense-team-asks-judge-to-intervene-over-alleged-withheld-evidence-ahead-of-murder-retrial/ar-AA2cwYUx",
-      "flag": null
     }
   ],
   "seen": [
-    "1l6y4dm",
     "4xa6xn",
     "4kculd",
     "hvgv8d",
@@ -1301,6 +1300,7 @@
     "vvzut",
     "1gd59ev",
     "1gd4yte",
-    "1gd531b"
+    "1gd531b",
+    "1u7srbo"
   ]
 }

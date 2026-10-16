@@ -39,6 +39,13 @@
       "ts": "2026-10-16T02:03:22.000Z",
       "outlet": "via MSN",
       "headline": "Mystery cop and missing weapons haunt Alex Murdaugh retrial",
+      "url": "https://www.msn.com/en-ca/news/other/mystery-cop-and-missing-weapons-haunt-alex-murdaugh-retrial/ar-AA2en3FN",
+      "flag": null
+    },
+    {
+      "ts": "2026-10-16T02:03:22.000Z",
+      "outlet": "via MSN",
+      "headline": "Mystery cop and missing weapons haunt Alex Murdaugh retrial",
       "url": "https://www.msn.com/en-za/news/other/mystery-cop-and-missing-weapons-haunt-alex-murdaugh-retrial/ar-AA2emkDk",
       "flag": null
     },
@@ -68,6 +75,13 @@
       "outlet": "via inkl",
       "headline": "Alex Murdaugh’s lawyers raise explosive questions about possible accomplice",
       "url": "https://www.inkl.com/news/alex-murdaughs-defense-and-prosecutors-expect-to-clash-over-evidence-during-pretrial-hearing",
+      "flag": null
+    },
+    {
+      "ts": "2026-10-15T21:06:00.000Z",
+      "outlet": "Fox News",
+      "headline": "Alex Murdaugh retrial set as evidentiary hearings begin",
+      "url": "https://www.foxnews.com/video/6406955558112",
       "flag": null
     },
     {
@@ -685,26 +699,9 @@
       "headline": "Sumter businesses anticipate economic impact of Alex Murdaugh murder retrial",
       "url": "https://www.wltx.com/article/news/local/sumter-businesses-economic-impact-alex-murdaugh-murder-retrial/101-24a7596f-ca3d-4bf1-87dd-5b1ce69c849f",
       "flag": null
-    },
-    {
-      "ts": "2026-09-09T15:04:26.000Z",
-      "outlet": "via MSN",
-      "headline": "‘On the map’: Sumter prepares to host Alex Murdaugh retrial",
-      "url": "https://www.msn.com/en-us/crime/general/on-the-map-sumter-prepares-to-host-alex-murdaugh-retrial/ar-AA2bUt77",
-      "flag": null
-    },
-    {
-      "ts": "2026-09-09T13:43:00.000Z",
-      "outlet": "foxcarolina.com",
-      "headline": "Alex Murdaugh's retrial will be in Sumter County",
-      "url": "https://www.foxcarolina.com/video/2026/09/09/alex-murdaughs-retrial-will-be-sumter-county/",
-      "flag": null
     }
   ],
   "seen": [
-    "q6dr0g",
-    "10x7ab5",
-    "15vjmpl",
     "v16djb",
     "bhlvml",
     "1rhtj7j",
@@ -1301,6 +1298,9 @@
     "1gd4vfm",
     "1gd53nv",
     "1c5cyra",
-    "131cbaw"
+    "131cbaw",
+    "1opach",
+    "1gd4dyo",
+    "1gd4b48"
   ]
 }

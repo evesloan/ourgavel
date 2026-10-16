@@ -8,6 +8,13 @@
       "flag": null
     },
     {
+      "ts": "2026-10-16T16:14:29.000Z",
+      "outlet": "via MSN",
+      "headline": "Judge rules on DNA testing, denies ballistics request in Alex Murdaugh retrial hearing",
+      "url": "https://www.msn.com/en-us/news/other/judge-rules-on-dna-testing-denies-ballistics-request-in-alex-murdaugh-retrial-hearing/ar-AA2eoOqN",
+      "flag": null
+    },
+    {
       "ts": "2026-10-16T15:40:00.000Z",
       "outlet": "FITSNews",
       "headline": "Murdaugh Retrial Hearing: New Tests, Old Grievances",
@@ -692,17 +699,9 @@
       "headline": "Week in Review: The Hunt for the Murdaugh Murder Weapons",
       "url": "https://www.fitsnews.com/2026/09/26/week-in-review-the-hunt-for-the-murdaugh-murder-weapons/",
       "flag": null
-    },
-    {
-      "ts": "2026-09-25T16:29:00.000Z",
-      "outlet": "via Yahoo News",
-      "headline": "Alex Murdaugh's Police Chief Friend Denies Tampering With Crime Scene Ahead of Retrial",
-      "url": "https://ca.style.yahoo.com/alex-murdaughs-police-chief-friend-232906876.html",
-      "flag": null
     }
   ],
   "seen": [
-    "f1swoq",
     "4yeiwk",
     "1gnsdqo",
     "1586in2",
@@ -1301,6 +1300,7 @@
     "1gd6czw",
     "1gd5mkq",
     "1gd63ti",
-    "1o7za51"
+    "1o7za51",
+    "1gd66uw"
   ]
 }

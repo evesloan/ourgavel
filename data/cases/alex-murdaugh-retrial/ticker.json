@@ -8,10 +8,24 @@
       "flag": null
     },
     {
+      "ts": "2026-10-15T21:12:28.000Z",
+      "outlet": "via MSN",
+      "headline": "Alex Murdaugh's defense and prosecutors expect to clash over evidence during pretrial hearing",
+      "url": "https://www.msn.com/en-us/news/other/alex-murdaughs-defense-and-prosecutors-expect-to-clash-over-evidence-during-pretrial-hearing/ar-AA2elkcU",
+      "flag": null
+    },
+    {
       "ts": "2026-10-15T20:18:12.000Z",
       "outlet": "FITSNews",
       "headline": "Murdaugh Retrial: Evidence Fights Head To Court",
       "url": "https://www.fitsnews.com/2026/10/15/murdaugh-evidence-fights-court/",
+      "flag": null
+    },
+    {
+      "ts": "2026-10-15T17:01:00.000Z",
+      "outlet": "Fox News",
+      "headline": "Former prosecutor calls Alex Murdaugh defense's murder weapon claims a 'wild goose chase'",
+      "url": "https://www.foxnews.com/video/6406933240112",
       "flag": null
     },
     {
@@ -685,25 +699,9 @@
       "headline": "Alex Murdaugh murder retrial will be moved to different county, judge rules",
       "url": "https://www.yahoo.com/news/videos/alex-murdaugh-murder-retrial-moved-114852090.html",
       "flag": null
-    },
-    {
-      "ts": "2026-09-09T03:00:00.000Z",
-      "outlet": "via Yahoo News",
-      "headline": "Why Alex Murdaugh’s Retrial Had To Leave Colleton County",
-      "url": "https://uk.news.yahoo.com/why-alex-murdaugh-retrial-had-100000896.html",
-      "flag": null
-    },
-    {
-      "ts": "2026-09-09T03:00:00.000Z",
-      "outlet": "via MSN",
-      "headline": "Why Alex Murdaugh’s Retrial Had To Leave Colleton County",
-      "url": "https://www.msn.com/en-us/news/other/why-alex-murdaugh-s-retrial-had-to-leave-colleton-county/ar-AA2bRo0h",
-      "flag": null
     }
   ],
   "seen": [
-    "u3j4sr",
-    "fabrgu",
     "mx5p9k",
     "158yooo",
     "1g5h6xq",
@@ -1301,6 +1299,8 @@
     "1gmbk2i",
     "1bp9yb0",
     "1bovnck",
-    "1gd3jk6"
+    "1gd3jk6",
+    "1gd46lo",
+    "1jb2423"
   ]
 }

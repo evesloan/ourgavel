@@ -29,6 +29,13 @@
       "flag": null
     },
     {
+      "ts": "2026-10-16T05:48:00.000Z",
+      "outlet": "mysuncoast.com",
+      "headline": "Alex Murdaugh due back in court for retrial hearing",
+      "url": "https://www.mysuncoast.com/video/2026/10/16/alex-murdaugh-due-back-court-retrial-hearing/",
+      "flag": null
+    },
+    {
       "ts": "2026-10-16T05:46:00.000Z",
       "outlet": "Boston Herald",
       "headline": "Alex Murdaugh’s defense and prosecutors expect to clash over evidence during pretrial hearing",
@@ -117,6 +124,13 @@
       "outlet": "via MSN",
       "headline": "Mystery cop and missing weapons haunt Alex Murdaugh retrial",
       "url": "https://www.msn.com/en-us/news/other/mystery-cop-and-missing-weapons-haunt-alex-murdaugh-retrial/ar-AA2em2Rg",
+      "flag": null
+    },
+    {
+      "ts": "2026-10-16T02:03:00.000Z",
+      "outlet": "via AOL",
+      "headline": "Alex Murdaugh’s lawyers raise explosive questions about possible accomplice",
+      "url": "https://www.aol.com/articles/alex-murdaugh-lawyers-raise-explosive-090322000.html",
       "flag": null
     },
     {
@@ -685,26 +699,9 @@
       "headline": "DNA, Bullets And Missing Data: Murdaugh Defense Presses State",
       "url": "https://www.fitsnews.com/2026/09/18/dna-bullets-and-missing-scan-data-murdaugh-defense-presses-state/",
       "flag": null
-    },
-    {
-      "ts": "2026-09-18T14:59:12.000Z",
-      "outlet": "via MSN",
-      "headline": "Murdaugh attorneys request further evidence ahead of Sumter retrial, accuses State of withholding evidence",
-      "url": "https://www.msn.com/en-us/news/other/murdaugh-attorneys-request-further-evidence-ahead-of-sumter-retrial-accuses-state-of-withholding-evidence/ar-AA2cx1qm",
-      "flag": null
-    },
-    {
-      "ts": "2026-09-18T14:37:50.000Z",
-      "outlet": "via MSN",
-      "headline": "Alex Murdaugh defense seeks DNA, ballistic data ahead of retrial",
-      "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-defense-seeks-dna-ballistic-data-ahead-of-retrial/ar-AA2cwF2S",
-      "flag": null
     }
   ],
   "seen": [
-    "4xa6xn",
-    "4kculd",
-    "hvgv8d",
     "c0neh2",
     "o1j7ku",
     "1dcacr0",
@@ -1301,6 +1298,9 @@
     "1gd59ev",
     "1gd4yte",
     "1gd531b",
-    "1u7srbo"
+    "1u7srbo",
+    "1fot7fs",
+    "r0dkzj",
+    "uvh29j"
   ]
 }

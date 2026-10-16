@@ -8,10 +8,31 @@
       "flag": null
     },
     {
+      "ts": "2026-10-16T06:21:00.000Z",
+      "outlet": "Fox News",
+      "headline": "Alex Murdaugh returns to court for hearing on what evidence can be used in retrial",
+      "url": "https://www.foxnews.com/live-news/alex-murdaugh-returns-to-court-for-hearing-on-what-evidence-can-be-used-in-retrial",
+      "flag": null
+    },
+    {
+      "ts": "2026-10-16T05:46:00.000Z",
+      "outlet": "Boston Herald",
+      "headline": "Alex Murdaugh’s defense and prosecutors expect to clash over evidence during pretrial hearing",
+      "url": "https://www.bostonherald.com/2026/10/16/alex-murdaugh-pretrial-hearing/",
+      "flag": null
+    },
+    {
       "ts": "2026-10-16T05:46:00.000Z",
       "outlet": "courant.com",
       "headline": "Alex Murdaugh’s defense and prosecutors expect to clash over evidence during pretrial hearing",
       "url": "https://www.courant.com/2026/10/16/alex-murdaugh-pretrial-hearing/",
+      "flag": null
+    },
+    {
+      "ts": "2026-10-16T05:24:39.000Z",
+      "outlet": "via MSN",
+      "headline": "Murdaugh defense, prosecutors head back to court before double murder retrial",
+      "url": "https://www.msn.com/en-us/news/other/murdaugh-defense-prosecutors-head-back-to-court-before-double-murder-retrial/ar-AA2enaNg",
       "flag": null
     },
     {
@@ -678,33 +699,9 @@
       "headline": "Murdaugh attorneys continue push for access to untested DNA evidence",
       "url": "https://www.postandcourier.com/murdaugh-updates/murdaugh-more-dna-forensic-evidence-testing/article_14fe14a5-e2b3-4695-ac8c-14d72801ee81.html",
       "flag": null
-    },
-    {
-      "ts": "2026-09-15T02:05:39.000Z",
-      "outlet": "via MSN",
-      "headline": "Why was Sumter, SC, chosen to host Alex Murdaugh double-murder retrial?",
-      "url": "https://www.msn.com/en-us/news/other/why-was-sumter-sc-chosen-to-host-alex-murdaugh-double-murder-retrial/ar-AA2cfzEU",
-      "flag": null
-    },
-    {
-      "ts": "2026-09-15T02:05:00.000Z",
-      "outlet": "via Yahoo News",
-      "headline": "Why was Sumter, SC, chosen to host Alex Murdaugh double-murder retrial?",
-      "url": "https://www.yahoo.com/news/us/articles/why-sumter-sc-chosen-host-090539925.html",
-      "flag": null
-    },
-    {
-      "ts": "2026-09-12T13:38:04.000Z",
-      "outlet": "FITSNews",
-      "headline": "Week in Review &#8211; Southern Charm, Clemson Drama, Murdaugh Venue and Saylor Hayes",
-      "url": "https://www.fitsnews.com/2026/09/12/week-in-review-southern-charm-clemson-drama-murdaugh-venue-and-saylor-hayes/",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
-    "10uf0e1",
-    "1oi773f",
-    "1ylkb61",
     "1s3qewd",
     "6b2i9j",
     "1l6y4dm",
@@ -1301,6 +1298,9 @@
     "155zpnc",
     "113mkp",
     "qx3gb6",
-    "1nw8zoj"
+    "1nw8zoj",
+    "1jf23a",
+    "vvzut",
+    "1gd59ev"
   ]
 }

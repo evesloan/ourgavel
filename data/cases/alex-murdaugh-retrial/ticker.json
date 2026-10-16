@@ -1,10 +1,31 @@
 {
   "items": [
     {
+      "ts": "2026-10-16T02:28:00.000Z",
+      "outlet": "WCBD News 2",
+      "headline": "Alex Murdaugh due in court for status hearing ahead of 2027 murder retrial",
+      "url": "https://www.counton2.com/news/south-carolina-news/alex-murdaugh-due-in-court-for-status-hearing-ahead-of-2027-murder-retrial/",
+      "flag": null
+    },
+    {
+      "ts": "2026-10-16T02:18:22.000Z",
+      "outlet": "via MSN",
+      "headline": "Murdaugh defense, prosecutors head back to court ahead of retrial",
+      "url": "https://www.msn.com/en-us/news/other/murdaugh-defense-prosecutors-head-back-to-court-ahead-of-retrial/ar-AA2emniT",
+      "flag": null
+    },
+    {
       "ts": "2026-10-16T02:07:00.000Z",
       "outlet": "via MSN",
       "headline": "Alex Murdaugh retrial: Key evidence fight heads to court",
       "url": "https://www.msn.com/en-us/news/news/alex-murdaugh-retrial-key-evidence-fight-heads-to-court/ar-AA2emLSP",
+      "flag": null
+    },
+    {
+      "ts": "2026-10-16T02:03:22.000Z",
+      "outlet": "via MSN",
+      "headline": "Mystery cop and missing weapons haunt Alex Murdaugh retrial",
+      "url": "https://www.msn.com/en-za/news/other/mystery-cop-and-missing-weapons-haunt-alex-murdaugh-retrial/ar-AA2emkDk",
       "flag": null
     },
     {
@@ -678,33 +699,9 @@
       "headline": "Judge moves Alex Murdaugh retrial out of Colleton County",
       "url": "https://www.msn.com/en-us/news/other/judge-moves-alex-murdaugh-retrial-out-of-colleton-county/ar-AA2bT8Wu",
       "flag": null
-    },
-    {
-      "ts": "2026-09-09T07:20:00.000Z",
-      "outlet": "kyma.com",
-      "headline": "Judge in Alex Murdaugh murder trial grants new venue for retrial",
-      "url": "https://kyma.com/news/national-world/2026/09/09/judge-in-alex-murdaugh-murder-trial-grants-new-venue-for-retrial/",
-      "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-09-09T06:42:00.000Z",
-      "outlet": "6abc.com",
-      "headline": "Alex Murdaugh case: Judge picks new location for double-murder retrial",
-      "url": "https://6abc.com/story/alex-murdaugh-today-judge-picks-new-location-double-murder-retrial/19810409/",
-      "flag": null
-    },
-    {
-      "ts": "2026-09-09T06:29:00.000Z",
-      "outlet": "charlestoncitypaper.com",
-      "headline": "Murdaugh’s retrial to be in Sumter County",
-      "url": "https://charlestoncitypaper.com/2026/09/09/murdaughs-retrial-to-be-in-sumter-county/",
-      "flag": null
     }
   ],
   "seen": [
-    "5a2r2z",
-    "1tyw6tm",
-    "1uq831p",
     "1txvci9",
     "pfomtu",
     "1ekif8q",
@@ -1301,6 +1298,9 @@
     "1lrbwam",
     "1gd4upj",
     "1gd3no5",
-    "19txl2n"
+    "19txl2n",
+    "1gd4vyf",
+    "5hlwg9",
+    "1gd4tls"
   ]
 }

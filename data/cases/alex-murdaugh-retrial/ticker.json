@@ -8,6 +8,13 @@
       "flag": null
     },
     {
+      "ts": "2026-10-16T15:40:00.000Z",
+      "outlet": "FITSNews",
+      "headline": "Murdaugh Retrial Hearing: New Tests, Old Grievances",
+      "url": "https://www.fitsnews.com/2026/10/16/murdaugh-retrial-hearing-new-tests-old-grievances/",
+      "flag": null
+    },
+    {
       "ts": "2026-10-16T13:38:00.000Z",
       "outlet": "wng.org",
       "headline": "Retrial set for Alex Murdaugh’s alleged murder of wife, son",
@@ -40,6 +47,13 @@
       "outlet": "usmagazine.com",
       "headline": "Judge in Alex Murdaugh Case Warns She Won’t Let Murder Retrial ‘Become a Circus’",
       "url": "https://www.usmagazine.com/crime-news/news/alex-murdaugh-judge-says-retrial-wont-become-a-circus/",
+      "flag": null
+    },
+    {
+      "ts": "2026-10-16T11:14:00.000Z",
+      "outlet": "via MSN",
+      "headline": "Alex Murdaugh Judge Lays Down the Law, Warns She Won’t Let Retrial ‘Become a Circus’",
+      "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-judge-lays-down-the-law-warns-she-won-t-let-retrial-become-a-circus/ar-AA2eoKnM",
       "flag": null
     },
     {
@@ -685,25 +699,9 @@
       "headline": "Alex Murdaugh's Police Chief Friend Denies Tampering With Crime Scene Ahead of Retrial",
       "url": "https://ca.style.yahoo.com/alex-murdaughs-police-chief-friend-232906876.html",
       "flag": null
-    },
-    {
-      "ts": "2026-09-25T15:36:29.000Z",
-      "outlet": "via MSN",
-      "headline": "Alex Murdaugh retrial rocked by grand jury probe into alleged crime scene manipulation",
-      "url": "https://www.msn.com/en-au/news/other/alex-murdaugh-retrial-rocked-by-grand-jury-probe-into-alleged-crime-scene-manipulation/ar-AA2cZB4N",
-      "flag": null
-    },
-    {
-      "ts": "2026-09-25T15:36:29.000Z",
-      "outlet": "via MSN",
-      "headline": "Alex Murdaugh retrial rocked by grand jury probe into alleged crime scene manipulation",
-      "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-retrial-rocked-by-grand-jury-probe-into-alleged-crime-scene-manipulation/ar-AA2cZqXh",
-      "flag": null
     }
   ],
   "seen": [
-    "93qu2p",
-    "rvoivd",
     "f1swoq",
     "4yeiwk",
     "1gnsdqo",
@@ -1301,6 +1299,8 @@
     "yz340t",
     "17fu3bd",
     "1gd6czw",
-    "1gd5mkq"
+    "1gd5mkq",
+    "1gd63ti",
+    "1o7za51"
   ]
 }

@@ -8,6 +8,13 @@
       "flag": null
     },
     {
+      "ts": "2026-10-16T09:01:00.000Z",
+      "outlet": "thenews.com.pk",
+      "headline": "Alex Murdaugh lawyers question police handling of murder weapons ahead of retrial",
+      "url": "https://www.thenews.com.pk/latest/1420217-alex-murdaugh-lawyers-question-police-handling-of-murder-weapons-ahead-of-retrial",
+      "flag": null
+    },
+    {
       "ts": "2026-10-16T07:06:12.000Z",
       "outlet": "via MSN",
       "headline": "Live updates from Alex Murdaugh back in court for retrial hearing",
@@ -68,6 +75,13 @@
       "outlet": "ijr.com",
       "headline": "Murdaugh Retrial Evidence Disputes Set for Hearing",
       "url": "https://ijr.com/discover/murdaugh-retrial-evidence-disputes-set-for-hearing-5fa87731",
+      "flag": null
+    },
+    {
+      "ts": "2026-10-16T04:30:00.000Z",
+      "outlet": "via MSN",
+      "headline": "Live updates: What happened when Alex Murdaugh returned to court for new hearing",
+      "url": "https://www.msn.com/en-us/news/other/live-updates-what-happened-when-alex-murdaugh-returned-to-court-for-new-hearing/ar-AA2enSXf",
       "flag": null
     },
     {
@@ -685,25 +699,9 @@
       "headline": "Murdaugh defense seeks DNA, casing data before April 2027 retrial",
       "url": "https://www.wltx.com/article/news/special-reports/alex-murdaugh/murdaugh-defense-dna-casing-data-before-april-2027-retrial/101-35a3d31f-cb3f-49ca-9301-bda3a382a3cb",
       "flag": null
-    },
-    {
-      "ts": "2026-09-19T14:55:00.000Z",
-      "outlet": "radaronline.com",
-      "headline": "Alex Murdaugh's Attorneys Demand New DNA and Ballistics Evidence Ahead of 2027 Murder Retrial",
-      "url": "https://radaronline.com/p/alex-murdaugh-attorneys-new-dna-ballistics-evidence-2027-murder-retrial/",
-      "flag": null
-    },
-    {
-      "ts": "2026-09-18T20:58:50.000Z",
-      "outlet": "FITSNews",
-      "headline": "DNA, Bullets And Missing Data: Murdaugh Defense Presses State",
-      "url": "https://www.fitsnews.com/2026/09/18/dna-bullets-and-missing-scan-data-murdaugh-defense-presses-state/",
-      "flag": null
     }
   ],
   "seen": [
-    "c0neh2",
-    "o1j7ku",
     "1dcacr0",
     "qnl3rl",
     "ryebh",
@@ -1301,6 +1299,8 @@
     "1u7srbo",
     "1fot7fs",
     "r0dkzj",
-    "uvh29j"
+    "uvh29j",
+    "1o9ltv5",
+    "1gd5mzy"
   ]
 }

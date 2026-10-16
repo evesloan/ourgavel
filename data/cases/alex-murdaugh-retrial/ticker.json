@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-16T11:55:29.000Z",
+      "outlet": "FITSNews",
+      "headline": "LIVE FEED: Murdaugh Retrial Evidence Battles",
+      "url": "https://www.fitsnews.com/2026/10/16/murdaugh-pretrial-hearing/",
+      "flag": null
+    },
+    {
       "ts": "2026-10-16T03:00:46.000Z",
       "outlet": "via MSN",
       "headline": "Alex Murdaugh due back in court amid defense questions about police handling of missing murder weapons",
@@ -54,6 +61,13 @@
       "outlet": "via MSN",
       "headline": "Mystery cop and missing weapons haunt Alex Murdaugh retrial",
       "url": "https://www.msn.com/en-us/news/other/mystery-cop-and-missing-weapons-haunt-alex-murdaugh-retrial/ar-AA2em2Rg",
+      "flag": null
+    },
+    {
+      "ts": "2026-10-16T00:30:00.000Z",
+      "outlet": "The State",
+      "headline": "Live updates: Murdaugh returns to court as attorneys seek new retrial evidence",
+      "url": "https://www.thestate.com/news/local/crime/article317639302.html",
       "flag": null
     },
     {
@@ -685,25 +699,9 @@
       "headline": "Sumter County readies itself for hosting the circus of Alex Murdaugh's double-murder retrial",
       "url": "https://www.yahoo.com/news/us/articles/sumter-county-readies-itself-hosting-090000201.html",
       "flag": null
-    },
-    {
-      "ts": "2026-09-10T02:00:00.000Z",
-      "outlet": "via MSN",
-      "headline": "Sumter County readies itself for hosting the circus of Alex Murdaugh's double-murder retrial",
-      "url": "https://www.msn.com/en-us/news/other/sumter-county-readies-itself-for-hosting-the-circus-of-alex-murdaughs-double-murder-retrial/ar-AA2bWmkw",
-      "flag": null
-    },
-    {
-      "ts": "2026-09-09T22:45:54.000Z",
-      "outlet": "WLTX News19",
-      "headline": "Sumter businesses anticipate economic impact of Alex Murdaugh murder retrial",
-      "url": "https://www.wltx.com/article/news/local/sumter-businesses-economic-impact-alex-murdaugh-murder-retrial/101-24a7596f-ca3d-4bf1-87dd-5b1ce69c849f",
-      "flag": null
     }
   ],
   "seen": [
-    "v16djb",
-    "bhlvml",
     "1rhtj7j",
     "4ljsc1",
     "12co2vz",
@@ -1301,6 +1299,8 @@
     "131cbaw",
     "1opach",
     "1gd4dyo",
-    "1gd4b48"
+    "1gd4b48",
+    "15evl5o",
+    "155zpnc"
   ]
 }

@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-16T12:36:29.000Z",
+      "outlet": "via MSN",
+      "headline": "Lil Durk’s co-defendants argue Lul Pab’s death shouldn’t count as stalking: Prosecutors say the evidence proves otherwise",
+      "url": "https://www.msn.com/en-us/news/other/lil-durk-s-co-defendants-argue-lul-pab-s-death-shouldn-t-count-as-stalking-prosecutors-say-the-evidence-proves-otherwise/ar-AA2eojDg",
+      "flag": null
+    },
+    {
       "ts": "2026-10-14T08:29:00.000Z",
       "outlet": "hotnewhiphop.com",
       "headline": "Brian Steel Reveals Why He Was Hesitant About Joining Lil Durk's Legal Team",
@@ -692,13 +699,6 @@
       "headline": "Lil Durk Trial: Akademiks Alleges Kanye West and Drake Are Among Those Funding Rapper’s Defense",
       "url": "https://www.complex.com/music/a/jaelaniturnerwilliams/lil-durk-trial-ye-drake-legal-fund",
       "flag": null
-    },
-    {
-      "ts": "2026-08-30T13:45:00.000Z",
-      "outlet": "hotnewhiphop.com",
-      "headline": "Prosecutors In Lil Durk Trial Plan To Rest Their Case This Week",
-      "url": "https://www.hotnewhiphop.com/1007846-prosecutors-lil-durk-trial-plan-rest-case-this-week",
-      "flag": null
     }
   ],
   "seen": [
@@ -915,6 +915,7 @@
     "1764yf2",
     "1gcyp60",
     "109fb30",
-    "lzq5hl"
+    "lzq5hl",
+    "1gd62u1"
   ]
 }

@@ -8,6 +8,34 @@
       "flag": null
     },
     {
+      "ts": "2026-10-16T10:24:00.000Z",
+      "outlet": "via MSN",
+      "headline": "Judge tells attorneys to work out evidence disputes in Alex Murdaugh trial",
+      "url": "https://www.msn.com/en-us/news/other/judge-tells-attorneys-to-work-out-evidence-disputes-in-alex-murdaugh-trial/ar-AA2enTvk",
+      "flag": null
+    },
+    {
+      "ts": "2026-10-16T09:46:00.000Z",
+      "outlet": "dailymail.com",
+      "headline": "Alex Murdaugh's lawyer suggests his wife and son were killed in '$165k drug deal gone bad' as sensational theory takes center stage at retrial hearing",
+      "url": "https://www.dailymail.com/crime-desk/article-16214735/alex-murdaugh-trial-hearing-today.html",
+      "flag": null
+    },
+    {
+      "ts": "2026-10-16T09:39:00.000Z",
+      "outlet": "wsav.com",
+      "headline": "Alex Murdaugh defense wins request for new DNA testing ahead of retrial",
+      "url": "https://www.wsav.com/news/local-news/south-carolina-news/alex-murdaugh-defense-wins-request-for-new-dna-testing-ahead-of-retrial/",
+      "flag": null
+    },
+    {
+      "ts": "2026-10-16T09:24:00.000Z",
+      "outlet": "Fox News",
+      "headline": "Alex Murdaugh retrial hearing begins over key evidence in South Carolina",
+      "url": "https://www.foxnews.com/video/6406970645112",
+      "flag": null
+    },
+    {
       "ts": "2026-10-16T09:01:00.000Z",
       "outlet": "thenews.com.pk",
       "headline": "Alex Murdaugh lawyers question police handling of murder weapons ahead of retrial",
@@ -671,41 +699,9 @@
       "headline": "Alex Murdaugh's defense seeks DNA, ballistics and other evidence",
       "url": "https://www.southcarolinapublicradio.org/sc-news/2026-09-21/alex-murdaughs-defense-seeks-dna-ballistics-and-other-evidence",
       "flag": null
-    },
-    {
-      "ts": "2026-09-21T03:00:00.000Z",
-      "outlet": "via Yahoo News",
-      "headline": "Defense in Murdaugh case says state must release additional DNA and ballistics evidence for new trial",
-      "url": "https://ca.style.yahoo.com/defense-murdaugh-case-says-state-100000787.html",
-      "flag": null
-    },
-    {
-      "ts": "2026-09-21T02:02:23.000Z",
-      "outlet": "via MSN",
-      "headline": "Will Alex Murdaugh stand trial again for murders? Key ruling still pending",
-      "url": "https://www.msn.com/en-us/news/other/will-alex-murdaugh-stand-trial-again-for-murders-key-ruling-still-pending/ar-AA2cEBz6",
-      "flag": null
-    },
-    {
-      "ts": "2026-09-21T02:02:00.000Z",
-      "outlet": "via Yahoo News",
-      "headline": "Will Alex Murdaugh stand trial again for murders? Key ruling still pending",
-      "url": "https://www.yahoo.com/news/us/articles/alex-murdaugh-stand-trial-again-090223861.html",
-      "flag": null
-    },
-    {
-      "ts": "2026-09-19T16:38:05.000Z",
-      "outlet": "WLTX News19",
-      "headline": "Murdaugh defense seeks DNA, casing data before April 2027 retrial",
-      "url": "https://www.wltx.com/article/news/special-reports/alex-murdaugh/murdaugh-defense-dna-casing-data-before-april-2027-retrial/101-35a3d31f-cb3f-49ca-9301-bda3a382a3cb",
-      "flag": null
     }
   ],
   "seen": [
-    "1dcacr0",
-    "qnl3rl",
-    "ryebh",
-    "1kpv31p",
     "1b73trv",
     "2r01l3",
     "s3lm7d",
@@ -1301,6 +1297,10 @@
     "r0dkzj",
     "uvh29j",
     "1o9ltv5",
-    "1gd5mzy"
+    "1gd5mzy",
+    "1gd5np2",
+    "y0kwwn",
+    "1lfis63",
+    "dw7xsi"
   ]
 }

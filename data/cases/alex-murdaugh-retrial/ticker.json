@@ -8,6 +8,20 @@
       "flag": null
     },
     {
+      "ts": "2026-10-16T13:38:00.000Z",
+      "outlet": "wng.org",
+      "headline": "Retrial set for Alex Murdaugh’s alleged murder of wife, son",
+      "url": "https://wng.org/sift/retrial-set-for-alex-murdaughs-alleged-murder-of-wife-son-1792182765",
+      "flag": null
+    },
+    {
+      "ts": "2026-10-16T12:46:52.000Z",
+      "outlet": "via MSN",
+      "headline": "Murdaugh murder trial judge: 'I will not allow this to become a circus'",
+      "url": "https://www.msn.com/en-us/news/other/murdaugh-murder-trial-judge-i-will-not-allow-this-to-become-a-circus/ar-AA2ep5fP",
+      "flag": null
+    },
+    {
       "ts": "2026-10-16T12:04:19.000Z",
       "outlet": "via MSN",
       "headline": "Alex Murdaugh in court for evidence hearing",
@@ -685,26 +699,9 @@
       "headline": "Alex Murdaugh retrial rocked by grand jury probe into alleged crime scene manipulation",
       "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-retrial-rocked-by-grand-jury-probe-into-alleged-crime-scene-manipulation/ar-AA2cZqXh",
       "flag": null
-    },
-    {
-      "ts": "2026-09-25T15:36:29.000Z",
-      "outlet": "via MSN",
-      "headline": "Alex Murdaugh retrial rocked by grand jury probe into alleged crime scene manipulation",
-      "url": "https://www.msn.com/en-ca/news/other/alex-murdaugh-retrial-rocked-by-grand-jury-probe-into-alleged-crime-scene-manipulation/ar-AA2cYUz4",
-      "flag": null
-    },
-    {
-      "ts": "2026-09-25T14:53:02.000Z",
-      "outlet": "FITSNews",
-      "headline": "Murdaugh Murders Bombshell: Alleged Crime Scene Coverup Focus of Grand Jury Probe",
-      "url": "https://www.fitsnews.com/2026/09/25/murdaugh-murders-bombshell-alleged-crime-scene-coverup-focus-of-grand-jury-probe/",
-      "flag": null
     }
   ],
   "seen": [
-    "yeu32c",
-    "2xryje",
-    "gm706h",
     "93qu2p",
     "rvoivd",
     "f1swoq",
@@ -1301,6 +1298,9 @@
     "1r0sttl",
     "1r7w805",
     "1qwmoow",
-    "yz340t"
+    "yz340t",
+    "17fu3bd",
+    "1gd6czw",
+    "1gd5mkq"
   ]
 }

@@ -8,6 +8,27 @@
       "flag": null
     },
     {
+      "ts": "2026-10-16T05:46:00.000Z",
+      "outlet": "courant.com",
+      "headline": "Alex Murdaugh’s defense and prosecutors expect to clash over evidence during pretrial hearing",
+      "url": "https://www.courant.com/2026/10/16/alex-murdaugh-pretrial-hearing/",
+      "flag": null
+    },
+    {
+      "ts": "2026-10-16T05:23:00.000Z",
+      "outlet": "via Yahoo News",
+      "headline": "Alex Murdaugh heads back to court for motions leading up to retrial",
+      "url": "https://www.yahoo.com/news/us/articles/alex-murdaugh-heads-back-court-122338830.html",
+      "flag": null
+    },
+    {
+      "ts": "2026-10-16T04:55:00.000Z",
+      "outlet": "ijr.com",
+      "headline": "Murdaugh Retrial Evidence Disputes Set for Hearing",
+      "url": "https://ijr.com/discover/murdaugh-retrial-evidence-disputes-set-for-hearing-5fa87731",
+      "flag": null
+    },
+    {
       "ts": "2026-10-16T03:00:46.000Z",
       "outlet": "via MSN",
       "headline": "Alex Murdaugh due back in court amid defense questions about police handling of missing murder weapons",
@@ -678,33 +699,9 @@
       "headline": "Week in Review &#8211; Southern Charm, Clemson Drama, Murdaugh Venue and Saylor Hayes",
       "url": "https://www.fitsnews.com/2026/09/12/week-in-review-southern-charm-clemson-drama-murdaugh-venue-and-saylor-hayes/",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-09-10T08:42:00.000Z",
-      "outlet": "lexingtonchronicle.com",
-      "headline": "Court moves Alex Murdaugh retrial to Sumter County",
-      "url": "https://www.lexingtonchronicle.com/stories/court-moves-alex-murdaugh-retrial-to-sumter-county,192107",
-      "flag": null
-    },
-    {
-      "ts": "2026-09-10T04:05:59.000Z",
-      "outlet": "via MSN",
-      "headline": "‘On the map’: Sumter prepares to host Alex Murdaugh retrial",
-      "url": "https://www.msn.com/en-us/news/other/on-the-map-sumter-prepares-to-host-alex-murdaugh-retrial/ar-AA2bX1d9",
-      "flag": null
-    },
-    {
-      "ts": "2026-09-10T02:01:00.000Z",
-      "outlet": "via Yahoo News",
-      "headline": "Sumter County readies itself for hosting the circus of Alex Murdaugh's double-murder retrial",
-      "url": "https://www.yahoo.com/news/us/articles/sumter-county-readies-itself-hosting-090000201.html",
-      "flag": null
     }
   ],
   "seen": [
-    "1rhtj7j",
-    "4ljsc1",
-    "12co2vz",
     "10uf0e1",
     "1oi773f",
     "1ylkb61",
@@ -1301,6 +1298,9 @@
     "1gd4dyo",
     "1gd4b48",
     "15evl5o",
-    "155zpnc"
+    "155zpnc",
+    "113mkp",
+    "qx3gb6",
+    "1nw8zoj"
   ]
 }

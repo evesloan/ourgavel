@@ -8,6 +8,20 @@
       "flag": null
     },
     {
+      "ts": "2026-10-16T07:06:12.000Z",
+      "outlet": "via MSN",
+      "headline": "Live updates from Alex Murdaugh back in court for retrial hearing",
+      "url": "https://www.msn.com/en-us/news/other/live-updates-from-alex-murdaugh-back-in-court-for-retrial-hearing/ar-AA2eo4Eg",
+      "flag": null
+    },
+    {
+      "ts": "2026-10-16T06:54:43.000Z",
+      "outlet": "via MSN",
+      "headline": "LIVE: Murdaugh defense, prosecutors head back to court",
+      "url": "https://www.msn.com/en-us/news/other/live-murdaugh-defense-prosecutors-head-back-to-court/ar-AA2eo9zT",
+      "flag": null
+    },
+    {
       "ts": "2026-10-16T06:21:00.000Z",
       "outlet": "Fox News",
       "headline": "Alex Murdaugh returns to court for hearing on what evidence can be used in retrial",
@@ -685,25 +699,9 @@
       "headline": "Murdaugh defense team asks judge to intervene over alleged withheld evidence ahead of murder retrial",
       "url": "https://www.msn.com/en-us/news/other/murdaugh-defense-team-asks-judge-to-intervene-over-alleged-withheld-evidence-ahead-of-murder-retrial/ar-AA2cwYUx",
       "flag": null
-    },
-    {
-      "ts": "2026-09-18T13:56:54.000Z",
-      "outlet": "via MSN",
-      "headline": "Murdaugh defense seeks DNA, ballistics and crime scene data before November hearing",
-      "url": "https://www.msn.com/en-us/news/other/murdaugh-defense-seeks-dna-ballistics-and-crime-scene-data-before-november-hearing/ar-AA2cwuOv",
-      "flag": null
-    },
-    {
-      "ts": "2026-09-18T10:31:00.000Z",
-      "outlet": "The Post and Courier",
-      "headline": "Murdaugh attorneys continue push for access to untested DNA evidence",
-      "url": "https://www.postandcourier.com/murdaugh-updates/murdaugh-more-dna-forensic-evidence-testing/article_14fe14a5-e2b3-4695-ac8c-14d72801ee81.html",
-      "flag": null
     }
   ],
   "seen": [
-    "1s3qewd",
-    "6b2i9j",
     "1l6y4dm",
     "4xa6xn",
     "4kculd",
@@ -1301,6 +1299,8 @@
     "1nw8zoj",
     "1jf23a",
     "vvzut",
-    "1gd59ev"
+    "1gd59ev",
+    "1gd4yte",
+    "1gd531b"
   ]
 }

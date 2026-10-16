@@ -1,6 +1,20 @@
 {
   "items": [
     {
+      "ts": "2026-10-16T03:00:46.000Z",
+      "outlet": "via MSN",
+      "headline": "Alex Murdaugh due back in court amid defense questions about police handling of missing murder weapons",
+      "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-due-back-in-court-amid-defense-questions-about-police-handling-of-missing-murder-weapons/ar-AA2emZ7z",
+      "flag": null
+    },
+    {
+      "ts": "2026-10-16T03:00:00.000Z",
+      "outlet": "newsnationnow.com",
+      "headline": "Alex Murdaugh returns to court for key pretrial hearing",
+      "url": "https://www.newsnationnow.com/crime/alex-murdaugh-in-court-pretrial-hearing/",
+      "flag": null
+    },
+    {
       "ts": "2026-10-16T02:28:00.000Z",
       "outlet": "WCBD News 2",
       "headline": "Alex Murdaugh due in court for status hearing ahead of 2027 murder retrial",
@@ -47,6 +61,13 @@
       "outlet": "WLTX News19",
       "headline": "Alex Murdaugh is back in court Friday. Here's what could be decided",
       "url": "https://www.wltx.com/article/news/special-reports/alex-murdaugh/alex-murdaugh-hearing-october-16-preview/101-ffe8a9fb-6c57-429a-8a32-c09c241e9eaf",
+      "flag": null
+    },
+    {
+      "ts": "2026-10-15T21:12:00.000Z",
+      "outlet": "via inkl",
+      "headline": "Alex Murdaugh’s lawyers raise explosive questions about possible accomplice",
+      "url": "https://www.inkl.com/news/alex-murdaughs-defense-and-prosecutors-expect-to-clash-over-evidence-during-pretrial-hearing",
       "flag": null
     },
     {
@@ -678,34 +699,9 @@
       "headline": "Alex Murdaugh's retrial will be in Sumter County",
       "url": "https://www.foxcarolina.com/video/2026/09/09/alex-murdaughs-retrial-will-be-sumter-county/",
       "flag": null
-    },
-    {
-      "ts": "2026-09-09T12:59:45.000Z",
-      "outlet": "via MSN",
-      "headline": "How a personal injury lawsuit is shaping Alex Murdaugh murder retrial",
-      "url": "https://www.msn.com/en-us/news/other/how-a-personal-injury-lawsuit-is-shaping-alex-murdaugh-murder-retrial/ar-AA2bTEqQ",
-      "flag": null
-    },
-    {
-      "ts": "2026-09-09T09:06:00.000Z",
-      "outlet": "abajournal.com",
-      "headline": "After granting change of venue, judge announces location for Alex Murdaugh's retrial",
-      "url": "https://www.abajournal.com/news/article/after-granting-change-of-venue-judge-announces-location-for-alex-murdaugh-retrial/",
-      "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-09-09T09:01:00.000Z",
-      "outlet": "via MSN",
-      "headline": "Judge moves Alex Murdaugh retrial out of Colleton County",
-      "url": "https://www.msn.com/en-us/news/other/judge-moves-alex-murdaugh-retrial-out-of-colleton-county/ar-AA2bT8Wu",
-      "flag": null
     }
   ],
   "seen": [
-    "1txvci9",
-    "pfomtu",
-    "1ekif8q",
-    "y1cc7x",
     "q6dr0g",
     "10x7ab5",
     "15vjmpl",
@@ -1301,6 +1297,10 @@
     "19txl2n",
     "1gd4vyf",
     "5hlwg9",
-    "1gd4tls"
+    "1gd4tls",
+    "1gd4vfm",
+    "1gd53nv",
+    "1c5cyra",
+    "131cbaw"
   ]
 }

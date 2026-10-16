@@ -8,17 +8,17 @@
       "flag": null
     },
     {
-      "ts": "2026-10-15T21:12:28.000Z",
-      "outlet": "via MSN",
-      "headline": "Alex Murdaugh's defense and prosecutors expect to clash over evidence during pretrial hearing",
-      "url": "https://www.msn.com/en-us/news/other/alex-murdaughs-defense-and-prosecutors-expect-to-clash-over-evidence-during-pretrial-hearing/ar-AA2elkcU",
-      "flag": null
-    },
-    {
       "ts": "2026-10-15T20:18:12.000Z",
       "outlet": "FITSNews",
       "headline": "Murdaugh Retrial: Evidence Fights Head To Court",
       "url": "https://www.fitsnews.com/2026/10/15/murdaugh-evidence-fights-court/",
+      "flag": null
+    },
+    {
+      "ts": "2026-10-15T17:15:00.000Z",
+      "outlet": "newsday.com",
+      "headline": "Alex Murdaugh's defense and prosecutors expect to clash over evidence during pretrial hearing",
+      "url": "https://www.newsday.com/news/nation/alex-murdaugh-killings-pretrial-hearing-r14066",
       "flag": null
     },
     {
@@ -702,7 +702,6 @@
     }
   ],
   "seen": [
-    "mx5p9k",
     "158yooo",
     "1g5h6xq",
     "ehz57q",
@@ -1301,6 +1300,7 @@
     "1bovnck",
     "1gd3jk6",
     "1gd46lo",
-    "1jb2423"
+    "1jb2423",
+    "1lrbwam"
   ]
 }

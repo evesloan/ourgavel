@@ -57,13 +57,6 @@
       "flag": null
     },
     {
-      "ts": "2026-10-16T12:28:29.000Z",
-      "outlet": "via MSN",
-      "headline": "Alex Murdaugh judge warns against courtroom 'circus' as defense wins DNA fight, loses ballistics bid",
-      "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-judge-warns-against-courtroom-circus-as-defense-wins-dna-fight-loses-ballistics-bid/ar-AA2enppq",
-      "flag": null
-    },
-    {
       "ts": "2026-10-16T12:04:19.000Z",
       "outlet": "via MSN",
       "headline": "Alex Murdaugh in court for evidence hearing",
@@ -334,6 +327,13 @@
       "outlet": "Fox News",
       "headline": "Alex Murdaugh retrial set as evidentiary hearings begin",
       "url": "https://www.foxnews.com/video/6406955558112",
+      "flag": null
+    },
+    {
+      "ts": "2026-10-15T21:00:00.000Z",
+      "outlet": "Fox News",
+      "headline": "Alex Murdaugh judge warns against courtroom 'circus' as defense wins DNA fight, loses ballistics bid",
+      "url": "https://www.foxnews.com/us/alex-murdaughs-wild-goose-chase-missing-murder-guns-targets-police-chief-expert",
       "flag": null
     },
     {
@@ -702,7 +702,6 @@
     }
   ],
   "seen": [
-    "d8cdue",
     "1kn98ca",
     "1j1ltd4",
     "8srjcy",
@@ -1301,6 +1300,7 @@
     "1gd6uid",
     "1m8dfc",
     "1gd5kla",
-    "38s7m3"
+    "38s7m3",
+    "8zgw86"
   ]
 }

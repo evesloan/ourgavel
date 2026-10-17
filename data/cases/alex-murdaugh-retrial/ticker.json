@@ -8,6 +8,13 @@
       "flag": null
     },
     {
+      "ts": "2026-10-16T17:00:00.000Z",
+      "outlet": "hirunews.lk",
+      "headline": "Judge in Alex Murdaugh’s retrial insists case will not ‘become a circus’",
+      "url": "https://www.hirunews.lk/goldfmnews/494595/judge-in-alex-murdaughs-retrial-insists-case-will-not-become-a-circus",
+      "flag": null
+    },
+    {
       "ts": "2026-10-16T16:14:29.000Z",
       "outlet": "via MSN",
       "headline": "Judge rules on DNA testing, denies ballistics request in Alex Murdaugh retrial hearing",
@@ -19,6 +26,13 @@
       "outlet": "FITSNews",
       "headline": "Murdaugh Retrial Hearing: New Tests, Old Grievances",
       "url": "https://www.fitsnews.com/2026/10/16/murdaugh-retrial-hearing-new-tests-old-grievances/",
+      "flag": null
+    },
+    {
+      "ts": "2026-10-16T14:41:57.000Z",
+      "outlet": "via MSN",
+      "headline": "Judge rules on DNA testing, evidence motions ahead of Murdaugh retrial",
+      "url": "https://www.msn.com/en-us/news/other/judge-rules-on-dna-testing-evidence-motions-ahead-of-murdaugh-retrial/ar-AA2eppNH",
       "flag": null
     },
     {
@@ -685,25 +699,9 @@
       "headline": "Grand Jury probe investigates sensational claims police chief and at least one other cop had role in Murdaugh murders cover-up",
       "url": "https://www.msn.com/en-us/news/other/grand-jury-probe-investigates-sensational-claims-police-chief-and-at-least-one-other-cop-had-role-in-murdaugh-murders-cover-up/ar-AA2d7EiO",
       "flag": null
-    },
-    {
-      "ts": "2026-09-26T22:00:00.000Z",
-      "outlet": "The Post and Courier",
-      "headline": "Pair of Lowcountry cops investigated for allegedly handling missing Murdaugh murder weapons",
-      "url": "https://www.postandcourier.com/murdaugh-updates/murdaugh-missing-murder-weapons-coverup/article_2c1171a2-c113-407c-b18d-96fdedb149f2.html",
-      "flag": null
-    },
-    {
-      "ts": "2026-09-26T13:18:56.000Z",
-      "outlet": "FITSNews",
-      "headline": "Week in Review: The Hunt for the Murdaugh Murder Weapons",
-      "url": "https://www.fitsnews.com/2026/09/26/week-in-review-the-hunt-for-the-murdaugh-murder-weapons/",
-      "flag": null
     }
   ],
   "seen": [
-    "4yeiwk",
-    "1gnsdqo",
     "1586in2",
     "8nzlmc",
     "d8cdue",
@@ -1301,6 +1299,8 @@
     "1gd5mkq",
     "1gd63ti",
     "1o7za51",
-    "1gd66uw"
+    "1gd66uw",
+    "1gd6uid",
+    "1m8dfc"
   ]
 }

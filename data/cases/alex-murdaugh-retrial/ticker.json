@@ -99,6 +99,13 @@
       "flag": null
     },
     {
+      "ts": "2026-10-16T11:02:00.000Z",
+      "outlet": "nypost.com",
+      "headline": "Alex Murdaugh judge warns against courtroom ‘circus’ as defense wins DNA fight, loses ballistics bid",
+      "url": "https://nypost.com/2026/10/17/us-news/alex-murdaugh-judge-warns-against-courtroom-circus-as-defense-wins-dna-fight-loses-ballistics-bid/",
+      "flag": null
+    },
+    {
       "ts": "2026-10-16T10:30:00.000Z",
       "outlet": "via Yahoo News",
       "headline": "Alex Murdaugh Judge Lays Down the Law, Warns She Won’t Let Retrial ‘Become a Circus’",
@@ -692,17 +699,9 @@
       "headline": "Alex Murdaugh's attorneys demand raw cellphone data used to build murder timeline ahead of retrial",
       "url": "https://www.msn.com/en-ca/news/other/alex-murdaughs-attorneys-demand-raw-cellphone-data-used-to-build-murder-timeline-ahead-of-retrial/ar-AA2dcxI3",
       "flag": null
-    },
-    {
-      "ts": "2026-09-29T07:44:19.000Z",
-      "outlet": "via MSN",
-      "headline": "Alex Murdaugh defense seeks cell phone data ahead of retrial",
-      "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-defense-seeks-cell-phone-data-ahead-of-retrial/ar-AA2ddbEk",
-      "flag": null
     }
   ],
   "seen": [
-    "8srjcy",
     "1k3f16e",
     "wgydxg",
     "1xaf8e",
@@ -1301,6 +1300,7 @@
     "38s7m3",
     "8zgw86",
     "1gd6us5",
-    "rjauzx"
+    "rjauzx",
+    "16y31fw"
   ]
 }

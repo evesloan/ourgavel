@@ -71,6 +71,13 @@
       "flag": null
     },
     {
+      "ts": "2026-10-16T11:38:53.000Z",
+      "outlet": "via MSN",
+      "headline": "Judge in Alex Murdaugh case warns she won't let retrial ‘become a circus’",
+      "url": "https://www.msn.com/en-us/news/other/judge-in-alex-murdaugh-case-warns-she-wont-let-retrial-become-a-circus/ar-AA2epPyS",
+      "flag": null
+    },
+    {
       "ts": "2026-10-16T11:38:00.000Z",
       "outlet": "usmagazine.com",
       "headline": "Judge in Alex Murdaugh Case Warns She Won’t Let Murder Retrial ‘Become a Circus’",
@@ -692,17 +699,9 @@
       "headline": "Murdaugh Defense Demands Raw Cellphone Data Behind Murder Timeline",
       "url": "https://www.fitsnews.com/2026/09/28/murdaugh-defense-demands-raw-cellphone-data-behind-murder-timeline/",
       "flag": null
-    },
-    {
-      "ts": "2026-09-28T15:52:00.000Z",
-      "outlet": "wsav.com",
-      "headline": "Officials investigating local police chief over Murdaugh evidence",
-      "url": "https://www.wsav.com/crime-safety/officials-investigating-local-police-chief-over-murdaugh-evidence/",
-      "flag": null
     }
   ],
   "seen": [
-    "1kn98ca",
     "1j1ltd4",
     "8srjcy",
     "1k3f16e",
@@ -1301,6 +1300,7 @@
     "1m8dfc",
     "1gd5kla",
     "38s7m3",
-    "8zgw86"
+    "8zgw86",
+    "1gd6us5"
   ]
 }

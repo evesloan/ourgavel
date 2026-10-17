@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-16T18:56:00.000Z",
+      "outlet": "wyff4.com",
+      "headline": "Alex Murdaugh back in court for pretrial hearing ahead of double murder retrial",
+      "url": "https://www.wyff4.com/article/murdaugh-hearing-dna/74164265",
+      "flag": null
+    },
+    {
       "ts": "2026-10-16T18:13:02.000Z",
       "outlet": "WLTX News19",
       "headline": "Judge allows new DNA testing in Alex Murdaugh trial, warns both sides she won't allow trial to become 'circus'",
@@ -47,6 +54,13 @@
       "outlet": "via MSN",
       "headline": "Murdaugh murder trial judge: 'I will not allow this to become a circus'",
       "url": "https://www.msn.com/en-us/news/other/murdaugh-murder-trial-judge-i-will-not-allow-this-to-become-a-circus/ar-AA2ep5fP",
+      "flag": null
+    },
+    {
+      "ts": "2026-10-16T12:28:29.000Z",
+      "outlet": "via MSN",
+      "headline": "Alex Murdaugh judge warns against courtroom 'circus' as defense wins DNA fight, loses ballistics bid",
+      "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-judge-warns-against-courtroom-circus-as-defense-wins-dna-fight-loses-ballistics-bid/ar-AA2enppq",
       "flag": null
     },
     {
@@ -685,25 +699,9 @@
       "headline": "Officials investigating local police chief over Murdaugh evidence",
       "url": "https://www.wsav.com/crime-safety/officials-investigating-local-police-chief-over-murdaugh-evidence/",
       "flag": null
-    },
-    {
-      "ts": "2026-09-28T12:04:00.000Z",
-      "outlet": "WCBD News 2",
-      "headline": "Murdaugh defense seeks cell phone data ahead of retrial",
-      "url": "https://www.counton2.com/the-murdaugh-investigation/murdaugh-defense-seeks-cell-phone-data-for-retrial/",
-      "flag": null
-    },
-    {
-      "ts": "2026-09-28T00:33:09.000Z",
-      "outlet": "via MSN",
-      "headline": "Grand Jury probe investigates sensational claims police chief and at least one other cop had role in Murdaugh murders cover-up",
-      "url": "https://www.msn.com/en-us/news/other/grand-jury-probe-investigates-sensational-claims-police-chief-and-at-least-one-other-cop-had-role-in-murdaugh-murders-cover-up/ar-AA2d7EiO",
-      "flag": null
     }
   ],
   "seen": [
-    "1586in2",
-    "8nzlmc",
     "d8cdue",
     "1kn98ca",
     "1j1ltd4",
@@ -1301,6 +1299,8 @@
     "1o7za51",
     "1gd66uw",
     "1gd6uid",
-    "1m8dfc"
+    "1m8dfc",
+    "1gd5kla",
+    "38s7m3"
   ]
 }

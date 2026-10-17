@@ -205,6 +205,13 @@
     },
     {
       "ts": "2026-10-16T05:46:00.000Z",
+      "outlet": "twincities.com",
+      "headline": "Alex Murdaugh’s defense and prosecutors expect to clash over evidence during pretrial hearing",
+      "url": "https://www.twincities.com/2026/10/16/alex-murdaugh-pretrial-hearing/",
+      "flag": null
+    },
+    {
+      "ts": "2026-10-16T05:46:00.000Z",
       "outlet": "baltimoresun.com",
       "headline": "Alex Murdaugh’s defense and prosecutors expect to clash over evidence during pretrial hearing",
       "url": "https://www.baltimoresun.com/2026/10/16/alex-murdaugh-pretrial-hearing/",
@@ -692,17 +699,9 @@
       "headline": "Alex Murdaugh's attorneys demand raw cellphone data used to build murder timeline ahead of retrial",
       "url": "https://www.msn.com/en-au/news/other/alex-murdaughs-attorneys-demand-raw-cellphone-data-used-to-build-murder-timeline-ahead-of-retrial/ar-AA2dcKw7",
       "flag": null
-    },
-    {
-      "ts": "2026-09-29T08:29:40.000Z",
-      "outlet": "via MSN",
-      "headline": "Alex Murdaugh's attorneys demand raw cellphone data used to build murder timeline ahead of retrial",
-      "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-s-attorneys-demand-raw-cellphone-data-used-to-build-murder-timeline-ahead-of-retrial/ar-AA2dcX6o",
-      "flag": null
     }
   ],
   "seen": [
-    "1xaf8e",
     "1pvopq8",
     "67liro",
     "1douq7w",
@@ -1301,6 +1300,7 @@
     "rjauzx",
     "16y31fw",
     "1gd7cee",
-    "1gd6der"
+    "1gd6der",
+    "1xx0eth"
   ]
 }

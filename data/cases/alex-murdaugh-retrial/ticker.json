@@ -16,6 +16,13 @@
     },
     {
       "ts": "2026-10-16T17:00:00.000Z",
+      "outlet": "timesdaily.com",
+      "headline": "Fight over evidence in Murdaugh retrial turns to DNA",
+      "url": "https://www.timesdaily.com/news/crime/fight-over-evidence-in-murdaugh-retrial-turns-to-dna/article_356ab14a-5e13-4533-9b6a-ec73082cd8f5.html",
+      "flag": null
+    },
+    {
+      "ts": "2026-10-16T17:00:00.000Z",
       "outlet": "hirunews.lk",
       "headline": "Judge in Alex Murdaugh’s retrial insists case will not ‘become a circus’",
       "url": "https://www.hirunews.lk/goldfmnews/494595/judge-in-alex-murdaughs-retrial-insists-case-will-not-become-a-circus",
@@ -692,17 +699,9 @@
       "headline": "Alex Murdaugh defense seeks cell phone data ahead of retrial",
       "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-defense-seeks-cell-phone-data-ahead-of-retrial/ar-AA2ddbEk",
       "flag": null
-    },
-    {
-      "ts": "2026-09-28T21:40:31.000Z",
-      "outlet": "FITSNews",
-      "headline": "Murdaugh Defense Demands Raw Cellphone Data Behind Murder Timeline",
-      "url": "https://www.fitsnews.com/2026/09/28/murdaugh-defense-demands-raw-cellphone-data-behind-murder-timeline/",
-      "flag": null
     }
   ],
   "seen": [
-    "1j1ltd4",
     "8srjcy",
     "1k3f16e",
     "wgydxg",
@@ -1301,6 +1300,7 @@
     "1gd5kla",
     "38s7m3",
     "8zgw86",
-    "1gd6us5"
+    "1gd6us5",
+    "rjauzx"
   ]
 }

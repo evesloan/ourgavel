@@ -372,6 +372,13 @@
       "flag": null
     },
     {
+      "ts": "2026-10-15T21:16:00.000Z",
+      "outlet": "washingtonpost.com",
+      "headline": "Alex Murdaugh's defense and prosecutors expect to clash over evidence during pretrial hearing",
+      "url": "https://www.washingtonpost.com/national/2026/10/16/alex-murdaugh-killings-pretrial-hearing/4fc67d7e-c918-11f1-aefb-abe4112d087e_story.html",
+      "flag": null
+    },
+    {
       "ts": "2026-10-15T21:12:00.000Z",
       "outlet": "AP",
       "headline": "Fight over evidence in Alex Murdaugh retrial turns to DNA and missing murder weapons",
@@ -692,17 +699,9 @@
       "headline": "Murdaugh defense team seeks evidence on police involvement with murder weapons",
       "url": "https://www.msn.com/en-us/news/other/murdaugh-defense-team-seeks-evidence-on-police-involvement-with-murder-weapons/ar-AA2diRtI",
       "flag": null
-    },
-    {
-      "ts": "2026-09-30T14:56:15.000Z",
-      "outlet": "via MSN",
-      "headline": "Alex Murdaugh’s legal team demands records tied to grand jury police probe",
-      "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-s-legal-team-demands-records-tied-to-grand-jury-police-probe/ar-AA2dj6oc",
-      "flag": null
     }
   ],
   "seen": [
-    "eah5cj",
     "r9fc0v",
     "p2j04e",
     "wstbqy",
@@ -1301,6 +1300,7 @@
     "1gd8inw",
     "1gx2w2y",
     "1biewun",
-    "1ykgemm"
+    "1ykgemm",
+    "10dgvpd"
   ]
 }

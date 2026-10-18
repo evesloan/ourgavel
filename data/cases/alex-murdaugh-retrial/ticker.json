@@ -11,6 +11,13 @@
       "ts": "2026-10-17T12:42:57.000Z",
       "outlet": "via MSN",
       "headline": "Judge says she won't allow 'circus' in Alex Murdaugh's retrial over killings of wife and son",
+      "url": "https://www.msn.com/en-us/news/other/judge-says-she-won-t-allow-circus-in-alex-murdaugh-s-retrial-over-killings-of-wife-and-son/ar-AA2esf4b",
+      "flag": null
+    },
+    {
+      "ts": "2026-10-17T12:42:57.000Z",
+      "outlet": "via MSN",
+      "headline": "Judge says she won't allow 'circus' in Alex Murdaugh's retrial over killings of wife and son",
       "url": "https://www.msn.com/en-us/news/other/judge-says-she-wont-allow-circus-in-alex-murdaughs-retrial-over-killings-of-wife-and-son/ar-AA2erEXe",
       "flag": null
     },
@@ -692,17 +699,9 @@
       "headline": "Murdaugh Attorneys Demand Evidence From Alleged Crime Scene Coverup",
       "url": "https://www.fitsnews.com/2026/09/30/murdaugh-attorneys-demand-evidence-from-alleged-crime-scene-coverup/",
       "flag": null
-    },
-    {
-      "ts": "2026-09-30T03:41:31.000Z",
-      "outlet": "via MSN",
-      "headline": "Alex Murdaugh defense team seeks phone data as 2027 murder retrial nears",
-      "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-defense-team-seeks-phone-data-as-2027-murder-retrial-nears/ar-AA2dgKI4",
-      "flag": null
     }
   ],
   "seen": [
-    "1douq7w",
     "183qrvy",
     "r94yb4",
     "27faln",
@@ -1301,6 +1300,7 @@
     "1gd6der",
     "1xx0eth",
     "1kmogi8",
-    "1gd7wkb"
+    "1gd7wkb",
+    "1gd8inw"
   ]
 }

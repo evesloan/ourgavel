@@ -233,6 +233,13 @@
     },
     {
       "ts": "2026-10-16T05:46:00.000Z",
+      "outlet": "orlandosentinel.com",
+      "headline": "Alex Murdaugh’s defense and prosecutors expect to clash over evidence during pretrial hearing",
+      "url": "https://www.orlandosentinel.com/2026/10/16/alex-murdaugh-pretrial-hearing/",
+      "flag": null
+    },
+    {
+      "ts": "2026-10-16T05:46:00.000Z",
       "outlet": "twincities.com",
       "headline": "Alex Murdaugh’s defense and prosecutors expect to clash over evidence during pretrial hearing",
       "url": "https://www.twincities.com/2026/10/16/alex-murdaugh-pretrial-hearing/",
@@ -692,17 +699,9 @@
       "headline": "Alex Murdaugh’s legal team demands records tied to grand jury police probe",
       "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-s-legal-team-demands-records-tied-to-grand-jury-police-probe/ar-AA2dj4BQ",
       "flag": null
-    },
-    {
-      "ts": "2026-09-30T15:02:06.000Z",
-      "outlet": "via MSN",
-      "headline": "Murdaugh defense team seeks evidence on police involvement with murder weapons",
-      "url": "https://www.msn.com/en-us/news/other/murdaugh-defense-team-seeks-evidence-on-police-involvement-with-murder-weapons/ar-AA2diRtI",
-      "flag": null
     }
   ],
   "seen": [
-    "r9fc0v",
     "p2j04e",
     "wstbqy",
     "1tyosnc",
@@ -1301,6 +1300,7 @@
     "1gx2w2y",
     "1biewun",
     "1ykgemm",
-    "10dgvpd"
+    "10dgvpd",
+    "478hy1"
   ]
 }

@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-17T17:30:00.000Z",
+      "outlet": "soapoperaspy.com",
+      "headline": "Alex Murdaugh Scores Major Win Ahead Of Murder Retrial",
+      "url": "https://www.soapoperaspy.com/2026/alex-murdaugh-scores-major-win-ahead-of-murder-retrial/",
+      "flag": null
+    },
+    {
       "ts": "2026-10-17T15:22:13.000Z",
       "outlet": "FITSNews",
       "headline": "Week in Review &#8211; Judge Drops Hammers Amid Murdaugh Evidence Battle",
@@ -692,17 +699,9 @@
       "headline": "Alex Murdaugh’s legal team demands records tied to grand jury police probe",
       "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-s-legal-team-demands-records-tied-to-grand-jury-police-probe/ar-AA2dj6oc",
       "flag": null
-    },
-    {
-      "ts": "2026-09-30T14:14:00.000Z",
-      "outlet": "FITSNews",
-      "headline": "Murdaugh Attorneys Demand Evidence From Alleged Crime Scene Coverup",
-      "url": "https://www.fitsnews.com/2026/09/30/murdaugh-attorneys-demand-evidence-from-alleged-crime-scene-coverup/",
-      "flag": null
     }
   ],
   "seen": [
-    "183qrvy",
     "r94yb4",
     "27faln",
     "eah5cj",
@@ -1301,6 +1300,7 @@
     "1xx0eth",
     "1kmogi8",
     "1gd7wkb",
-    "1gd8inw"
+    "1gd8inw",
+    "1gx2w2y"
   ]
 }

@@ -113,6 +113,13 @@
       "flag": null
     },
     {
+      "ts": "2026-10-16T12:10:00.000Z",
+      "outlet": "mercurynews.com",
+      "headline": "Fight over evidence in Alex Murdaugh retrial turns to DNA and missing murder weapons",
+      "url": "https://www.mercurynews.com/2026/10/16/alex-murdaugh-pretrial-hearing/",
+      "flag": null
+    },
+    {
       "ts": "2026-10-16T12:04:19.000Z",
       "outlet": "via MSN",
       "headline": "Alex Murdaugh in court for evidence hearing",
@@ -692,17 +699,9 @@
       "headline": "Murdaugh defense: State hid claims police chief took key evidence in homicides",
       "url": "https://www.courttv.com/news/murdaugh-defense-state-hid-claims-police-chief-took-key-evidence-in-homicides/",
       "flag": null
-    },
-    {
-      "ts": "2026-10-01T02:22:59.000Z",
-      "outlet": "via MSN",
-      "headline": "Murdaugh defense asks state to release more details on alleged murder weapon",
-      "url": "https://www.msn.com/en-us/news/other/murdaugh-defense-asks-state-to-release-more-details-on-alleged-murder-weapon/ar-AA2dkHWg",
-      "flag": null
     }
   ],
   "seen": [
-    "1tyosnc",
     "solgkl",
     "1s26tdz",
     "1k3e1rd",
@@ -1301,6 +1300,7 @@
     "10dgvpd",
     "478hy1",
     "1gdwru6",
-    "x9wvzh"
+    "x9wvzh",
+    "1bmlray"
   ]
 }

@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-19T12:16:05.000Z",
+      "outlet": "fox5dc.com",
+      "headline": "Murder trial of Naresh Bhatt resumes Monday; jury shown bedroom carpet as evidence last week",
+      "url": "https://www.fox5dc.com/news/murder-trial-naresh-bhatt-resumes-monday-jury-shown-bedroom-carpet-evidence-last-week",
+      "flag": null
+    },
+    {
       "ts": "2026-10-15T12:45:41.000Z",
       "outlet": "fox5dc.com",
       "headline": "Naresh Bhatt trial resumes Thursday after jurors shown suspected blood evidence",
@@ -129,6 +136,7 @@
     "1mh8yo9",
     "1hm2rll",
     "1vpmzqf",
-    "1vhyre3"
+    "1vhyre3",
+    "btszo9"
   ]
 }

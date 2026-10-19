@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-18T21:54:45.000Z",
+      "outlet": "via MSN",
+      "headline": "Lil Durk trial: Full timeline, verdict and what happens next",
+      "url": "https://www.msn.com/en-us/news/news/lil-durk-trial-full-timeline-verdict-and-what-happens-next/ar-AA2fyan6",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-10-16T12:36:29.000Z",
       "outlet": "via MSN",
       "headline": "Lil Durk’s co-defendants argue Lul Pab’s death shouldn’t count as stalking: Prosecutors say the evidence proves otherwise",
@@ -692,13 +699,6 @@
       "headline": "Keith Jones Testifies Durk Never Paid Him For Quando Rondo Hit",
       "url": "https://www.xxlmag.com/keith-jones-lil-durk-quando-rondo-hit-trial-testimony/",
       "flag": null
-    },
-    {
-      "ts": "2026-08-31T13:45:00.000Z",
-      "outlet": "thesource.com",
-      "headline": "Lil Durk Trial Takes Dramatic Turn As Witness Testifies About Alleged $1 Million Bounty",
-      "url": "https://thesource.com/2026/08/31/lil-durk-trial-takes-dramatic-turn-as-witness-testifies-about-alleged-1-million-bounty/",
-      "flag": null
     }
   ],
   "seen": [
@@ -917,6 +917,7 @@
     "109fb30",
     "lzq5hl",
     "1gd62u1",
-    "vn8j46"
+    "vn8j46",
+    "1gdw2to"
   ]
 }

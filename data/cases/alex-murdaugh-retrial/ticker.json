@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-19T04:00:00.000Z",
+      "outlet": "Fox News",
+      "headline": "Alex Murdaugh Takes a High-Stakes DNA Gamble Ahead of Retrial | True Crime Minute",
+      "url": "https://radio.foxnews.com/2026/10/19/alex-murdaugh-takes-a-high-stakes-dna-gamble-ahead-of-retrial-true-crime-minute/",
+      "flag": null
+    },
+    {
       "ts": "2026-10-19T01:29:28.000Z",
       "outlet": "via MSN",
       "headline": "Alex Murdaugh was convicted of murdering his wife and 22-year-old son; he now awaits an April 2027 retrial South Carolina's top court ordered",
@@ -692,17 +699,9 @@
       "headline": "Murdaugh defense asks state to release more details on alleged murder weapon",
       "url": "https://www.msn.com/en-us/news/other/murdaugh-defense-asks-state-to-release-more-details-on-alleged-murder-weapon/ar-AA2dkHWg",
       "flag": null
-    },
-    {
-      "ts": "2026-09-30T22:01:00.000Z",
-      "outlet": "The Post and Courier",
-      "headline": "Murdaugh lawyers demand more info on supposed murder cover-up",
-      "url": "https://www.postandcourier.com/murdaugh-updates/murdaugh-alleged-police-coverup-murder/article_ad2377db-3462-4a34-9228-b8dad7056342.html",
-      "flag": null
     }
   ],
   "seen": [
-    "wstbqy",
     "1tyosnc",
     "solgkl",
     "1s26tdz",
@@ -1301,6 +1300,7 @@
     "1ykgemm",
     "10dgvpd",
     "478hy1",
-    "1gdwru6"
+    "1gdwru6",
+    "x9wvzh"
   ]
 }

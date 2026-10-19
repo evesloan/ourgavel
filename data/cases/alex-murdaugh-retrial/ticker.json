@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-19T01:29:28.000Z",
+      "outlet": "via MSN",
+      "headline": "Alex Murdaugh was convicted of murdering his wife and 22-year-old son; he now awaits an April 2027 retrial South Carolina's top court ordered",
+      "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-was-convicted-of-murdering-his-wife-and-22-year-old-son-he-now-awaits-an-april-2027-retrial-south-carolina-s-top-court-ordered/ar-AA2fzddl",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-10-17T17:30:00.000Z",
       "outlet": "soapoperaspy.com",
       "headline": "Alex Murdaugh Scores Major Win Ahead Of Murder Retrial",
@@ -692,17 +699,9 @@
       "headline": "Murdaugh lawyers demand more info on supposed murder cover-up",
       "url": "https://www.postandcourier.com/murdaugh-updates/murdaugh-alleged-police-coverup-murder/article_ad2377db-3462-4a34-9228-b8dad7056342.html",
       "flag": null
-    },
-    {
-      "ts": "2026-09-30T17:08:51.000Z",
-      "outlet": "via MSN",
-      "headline": "Alex Murdaugh’s legal team demands records tied to grand jury police probe",
-      "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-s-legal-team-demands-records-tied-to-grand-jury-police-probe/ar-AA2dj4BQ",
-      "flag": null
     }
   ],
   "seen": [
-    "p2j04e",
     "wstbqy",
     "1tyosnc",
     "solgkl",
@@ -1301,6 +1300,7 @@
     "1biewun",
     "1ykgemm",
     "10dgvpd",
-    "478hy1"
+    "478hy1",
+    "1gdwru6"
   ]
 }

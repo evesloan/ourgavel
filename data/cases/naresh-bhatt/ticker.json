@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-20T12:11:07.000Z",
+      "outlet": "fox5dc.com",
+      "headline": "Naresh Bhatt trial resumes Tuesday following surveillance footage, roommate testimony",
+      "url": "https://www.fox5dc.com/news/naresh-bhatt-trial-resumes-tuesday-following-surveillance-footage-roommate-testimony",
+      "flag": null
+    },
+    {
       "ts": "2026-10-19T18:29:17.000Z",
       "outlet": "nbcwashington.com",
       "headline": "‘I never lie': Naresh Bhatt's interrogation played in court",
@@ -145,6 +152,7 @@
     "1vpmzqf",
     "1vhyre3",
     "btszo9",
-    "d1fcfr"
+    "d1fcfr",
+    "tosuzy"
   ]
 }

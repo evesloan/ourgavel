@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-20T17:19:05.000Z",
+      "outlet": "nbcwashington.com",
+      "headline": "Video shows Naresh Bhatt tell police ‘I don't know' why wife Mamta disappeared",
+      "url": "https://www.nbcwashington.com/news/local/northern-virginia/video-shows-naresh-bhatt-tell-police-i-dont-know-why-wife-mamta-disappeared/4169759/",
+      "flag": null
+    },
+    {
       "ts": "2026-10-20T12:11:07.000Z",
       "outlet": "fox5dc.com",
       "headline": "Naresh Bhatt trial resumes Tuesday following surveillance footage, roommate testimony",
@@ -153,6 +160,7 @@
     "1vhyre3",
     "btszo9",
     "d1fcfr",
-    "tosuzy"
+    "tosuzy",
+    "e8j0wc"
   ]
 }

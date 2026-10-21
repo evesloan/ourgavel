@@ -1,6 +1,20 @@
 {
   "items": [
     {
+      "ts": "2026-10-21T21:29:12.000Z",
+      "outlet": "Court TV",
+      "headline": "Judge refuses to hold evidentiary hearing into issues with holdout juror in Lindsay Clancy’s trial",
+      "url": "https://www.courttv.com/news/judge-refuses-to-hold-evidentiary-hearing-into-issues-with-holdout-juror-in-lindsay-clancys-trial/",
+      "flag": null
+    },
+    {
+      "ts": "2026-10-21T20:51:00.000Z",
+      "outlet": "WCVB",
+      "headline": "Judge denies Clancy's request for hearing about holdout juror",
+      "url": "https://www.wcvb.com/article/judge-denies-clancy-request-hearing-holdout-juror/74208923",
+      "flag": null
+    },
+    {
       "ts": "2026-10-21T20:13:37.000Z",
       "outlet": "Boston 25 News",
       "headline": "Judge denies Lindsay Clancy’s bid to further investigate holdout juror",
@@ -685,20 +699,6 @@
       "headline": "Attorney says mom ‘invested’ in Lindsay Clancy trial had psychotic episode before son was killed",
       "url": "https://www.courttv.com/news/attorney-says-mom-invested-in-lindsay-clancy-trial-had-psychotic-episode-before-son-was-killed/",
       "flag": null
-    },
-    {
-      "ts": "2026-09-08T19:59:55.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "What’s next for Lindsay Clancy? Attorney asks for presidential pardon after mistrial",
-      "url": "https://www.boston25news.com/news/local/whats-next-lindsay-clancy-attorney-asks-presidential-pardon-after-mistrial/ZPLKYR6LKZF3DO4SFG6DZTL4WE/",
-      "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-09-08T16:06:06.000Z",
-      "outlet": "NBC10 Boston",
-      "headline": "3 Lindsay Clancy jurors speak out in new interview",
-      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-trial-juror-interview-video/4011169/",
-      "flag": null
     }
   ],
   "seen": [
@@ -1042,6 +1042,8 @@
     "1azua6u",
     "pvtx8r",
     "44hl31",
-    "celofo"
+    "celofo",
+    "14ab0f4",
+    "1lfbjfs"
   ]
 }

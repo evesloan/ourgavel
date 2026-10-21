@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-21T20:13:37.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Judge denies Lindsay Clancy’s bid to further investigate holdout juror",
+      "url": "https://www.boston25news.com/news/local/judge-denies-lindsay-clancys-bid-further-investigate-holdout-juror/6LVQLJ63MZG4LJYYALT6265NJE/",
+      "flag": null
+    },
+    {
       "ts": "2026-10-15T15:10:05.000Z",
       "outlet": "Boston.com",
       "headline": "The holdout juror in Lindsay Clancy’s trial was interviewed on Fox News. Here’s what he said.",
@@ -692,13 +699,6 @@
       "headline": "3 Lindsay Clancy jurors speak out in new interview",
       "url": "https://www.nbcboston.com/news/local/lindsay-clancy-trial-juror-interview-video/4011169/",
       "flag": null
-    },
-    {
-      "ts": "2026-09-08T15:45:41.000Z",
-      "outlet": "Boston.com",
-      "headline": "Lindsay Clancy attorney Kevin Reddington asks Trump to pardon her on ‘Good Morning America’",
-      "url": "https://www.boston.com/news/crime/2026/09/08/lindsay-clancy-kevin-reddington-trump-pardon-gma/",
-      "flag": null
     }
   ],
   "seen": [
@@ -1041,6 +1041,7 @@
     "18qzz8l",
     "1azua6u",
     "pvtx8r",
-    "44hl31"
+    "44hl31",
+    "celofo"
   ]
 }

@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-21T15:45:00.000Z",
+      "outlet": "FITSNews",
+      "headline": "Murdaugh Retrial Drama: Defense (Finally) Gets Crime Scene Scan",
+      "url": "https://www.fitsnews.com/2026/10/21/murdaugh-retrial-drama-defense-finally-gets-crime-scene-scan/",
+      "flag": null
+    },
+    {
       "ts": "2026-10-20T08:00:40.000Z",
       "outlet": "via MSN",
       "headline": "Alex Murdaugh judge declares she will not let retrial 'become a circus,' warns people not to use courtroom for 'publicity or theatrics'",
@@ -692,17 +699,9 @@
       "headline": "Alex Murdaugh's defense team claims SC AG's office withheld evidence",
       "url": "https://www.msn.com/en-us/news/other/alex-murdaughs-defense-team-claims-sc-ags-office-withheld-evidence/ar-AA2dn120",
       "flag": null
-    },
-    {
-      "ts": "2026-10-01T11:03:00.000Z",
-      "outlet": "The Greenville News",
-      "headline": "Judge sets new Alex Murdaugh hearing ahead of retrial",
-      "url": "https://www.greenvilleonline.com/story/news/crime/2026/10/01/alex-murdaughs-attorneys-seek-evidence-in-murder-retrial-battle/92036195007/",
-      "flag": null
     }
   ],
   "seen": [
-    "1k3e1rd",
     "1knbgt3",
     "1aih8mp",
     "1thojj7",
@@ -1301,6 +1300,7 @@
     "x9wvzh",
     "1bmlray",
     "1gdk3kj",
-    "bv1ls6"
+    "bv1ls6",
+    "1168q16"
   ]
 }

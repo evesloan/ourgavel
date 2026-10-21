@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-21T17:21:06.000Z",
+      "outlet": "fox5dc.com",
+      "headline": "Naresh Bhatt trial continues Wednesday following day of witness testimony",
+      "url": "https://www.fox5dc.com/news/naresh-bhatt-trial-continues-wednesday-following-day-witness-testimony",
+      "flag": null
+    },
+    {
       "ts": "2026-10-20T17:19:05.000Z",
       "outlet": "nbcwashington.com",
       "headline": "Video shows Naresh Bhatt tell police ‘I don't know' why wife Mamta disappeared",
@@ -161,6 +168,7 @@
     "btszo9",
     "d1fcfr",
     "tosuzy",
-    "e8j0wc"
+    "e8j0wc",
+    "v3bkfp"
   ]
 }

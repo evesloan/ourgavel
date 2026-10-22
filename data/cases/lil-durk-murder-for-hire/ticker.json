@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-22T15:26:00.000Z",
+      "outlet": "theshaderoom.com",
+      "headline": "Brian Steel: The Man Behind Young Thug, Diddy & Lil Durk’s Defense | SITSR (Exclusive)",
+      "url": "https://theshaderoom.com/brian-steel-the-man-behind-young-thug-diddy-lil-durks-defense-sitsr-exclusive/",
+      "flag": null
+    },
+    {
       "ts": "2026-10-18T21:54:45.000Z",
       "outlet": "via MSN",
       "headline": "Lil Durk trial: Full timeline, verdict and what happens next",
@@ -692,13 +699,6 @@
       "headline": "Keith Jones, a.k.a. Flacka, testifies that Lil Durk never paid him for his role in Quando Rondo hit, repeatedly asked Durk for money",
       "url": "https://www.msn.com/en-us/entertainment/music/keith-jones-a-k-a-flacka-testifies-that-lil-durk-never-paid-him-for-his-role-in-quando-rondo-hit-repeatedly-asked-durk-for-money/ar-AA2biKBe",
       "flag": null
-    },
-    {
-      "ts": "2026-08-31T15:41:00.000Z",
-      "outlet": "xxlmag.com",
-      "headline": "Keith Jones Testifies Durk Never Paid Him For Quando Rondo Hit",
-      "url": "https://www.xxlmag.com/keith-jones-lil-durk-quando-rondo-hit-trial-testimony/",
-      "flag": null
     }
   ],
   "seen": [
@@ -920,6 +920,7 @@
     "vn8j46",
     "1gdw2to",
     "wh83rr",
-    "s6i0zm"
+    "s6i0zm",
+    "rh3ryi"
   ]
 }

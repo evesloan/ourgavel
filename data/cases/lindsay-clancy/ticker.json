@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-22T14:22:21.000Z",
+      "outlet": "Boston.com",
+      "headline": "Lindsay Clancy judge denies defense bid for evidentiary hearing on holdout juror",
+      "url": "https://www.boston.com/news/crime/2026/10/22/lindsay-clancy-judge-denies-evidentiary-hearing-holdout-juror/",
+      "flag": null
+    },
+    {
       "ts": "2026-10-22T07:55:33.000Z",
       "outlet": "NBC10 Boston",
       "headline": "Lindsay Clancy loses request about holdout juror in decision citing Karen Read case",
@@ -692,13 +699,6 @@
       "headline": "Jurors in the Lindsay Clancy trial are starting to break their silence. Here’s what they’re saying.",
       "url": "https://www.boston.com/news/crime/2026/09/08/lindsay-clancy-trial-jurors/",
       "flag": null
-    },
-    {
-      "ts": "2026-09-09T01:13:45.000Z",
-      "outlet": "Boston.com",
-      "headline": "Holdout in Lindsay Clancy trial said he had reasonable doubt but still wouldn’t acquit, juror says",
-      "url": "https://www.boston.com/news/local-news/2026/09/08/holdout-in-lindsay-clancy-trial-said-he-had-reasonable-doubt-but-still-wouldnt-acquit-juror-says/",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
@@ -1045,6 +1045,7 @@
     "celofo",
     "14ab0f4",
     "1lfbjfs",
-    "14penkk"
+    "14penkk",
+    "4dxlkx"
   ]
 }

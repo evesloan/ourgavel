@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-22T07:55:33.000Z",
+      "outlet": "NBC10 Boston",
+      "headline": "Lindsay Clancy loses request about holdout juror in decision citing Karen Read case",
+      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-juror-evidence-hearing-decision-karen-read/4035211/",
+      "flag": null
+    },
+    {
       "ts": "2026-10-21T21:29:12.000Z",
       "outlet": "Court TV",
       "headline": "Judge refuses to hold evidentiary hearing into issues with holdout juror in Lindsay Clancy’s trial",
@@ -692,13 +699,6 @@
       "headline": "Holdout in Lindsay Clancy trial said he had reasonable doubt but still wouldn’t acquit, juror says",
       "url": "https://www.boston.com/news/local-news/2026/09/08/holdout-in-lindsay-clancy-trial-said-he-had-reasonable-doubt-but-still-wouldnt-acquit-juror-says/",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-09-08T20:04:27.000Z",
-      "outlet": "Court TV",
-      "headline": "Attorney says mom ‘invested’ in Lindsay Clancy trial had psychotic episode before son was killed",
-      "url": "https://www.courttv.com/news/attorney-says-mom-invested-in-lindsay-clancy-trial-had-psychotic-episode-before-son-was-killed/",
-      "flag": null
     }
   ],
   "seen": [
@@ -1044,6 +1044,7 @@
     "44hl31",
     "celofo",
     "14ab0f4",
-    "1lfbjfs"
+    "1lfbjfs",
+    "14penkk"
   ]
 }

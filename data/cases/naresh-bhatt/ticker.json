@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-21T23:22:03.000Z",
+      "outlet": "fox5dc.com",
+      "headline": "Naresh Bhatt trial focuses on saw evidence and Tesla data Wednesday",
+      "url": "https://www.fox5dc.com/news/naresh-bhatt-trial-focuses-saw-evidence-tesla-data-wednesday",
+      "flag": null
+    },
+    {
       "ts": "2026-10-21T19:02:08.000Z",
       "outlet": "nbcwashington.com",
       "headline": "Surveillance videos show Naresh Bhatt throwing trash bags into dumpsters miles from home",
@@ -177,6 +184,7 @@
     "tosuzy",
     "e8j0wc",
     "v3bkfp",
-    "df0ftw"
+    "df0ftw",
+    "as1nge"
   ]
 }

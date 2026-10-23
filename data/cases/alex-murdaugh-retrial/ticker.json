@@ -120,6 +120,13 @@
       "flag": null
     },
     {
+      "ts": "2026-10-16T13:29:00.000Z",
+      "outlet": "chicagotribune.com",
+      "headline": "Fight over evidence in Alex Murdaugh retrial turns to DNA and missing murder weapons",
+      "url": "https://www.chicagotribune.com/2026/10/16/murdaugh-murder-retrial/",
+      "flag": null
+    },
+    {
       "ts": "2026-10-16T12:46:52.000Z",
       "outlet": "via MSN",
       "headline": "Murdaugh murder trial judge: 'I will not allow this to become a circus'",
@@ -692,17 +699,9 @@
       "headline": "Murdaugh’s attorney writes letter to judge, said the state ‘resolved nothing’",
       "url": "https://www.msn.com/en-us/news/other/murdaugh-s-attorney-writes-letter-to-judge-said-the-state-resolved-nothing/ar-AA2dmMrf",
       "flag": null
-    },
-    {
-      "ts": "2026-10-01T12:16:25.000Z",
-      "outlet": "via MSN",
-      "headline": "Murdaugh’s attorney writes letter to judge, said the state ‘resolved nothing’",
-      "url": "https://www.msn.com/en-us/news/other/murdaugh-s-attorney-writes-letter-to-judge-said-the-state-resolved-nothing/ar-AA2dmTqa",
-      "flag": null
     }
   ],
   "seen": [
-    "1thojj7",
     "1ivqi7p",
     "wjvg27",
     "zh7ghb",
@@ -1301,6 +1300,7 @@
     "bv1ls6",
     "1168q16",
     "1wbvlu8",
-    "1ehcnn2"
+    "1ehcnn2",
+    "7pr8rp"
   ]
 }

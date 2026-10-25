@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-25T03:38:27.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Plymouth man arrested on drug distribution charges in Duxbury",
+      "url": "https://www.boston25news.com/news/local/plymouth-man-arrested-drug-distribution-charges-duxbury/YIZDFSZXTBA5FG3UQWCXDXSA3Y/",
+      "flag": null
+    },
+    {
       "ts": "2026-10-22T14:22:21.000Z",
       "outlet": "Boston.com",
       "headline": "Lindsay Clancy judge denies defense bid for evidentiary hearing on holdout juror",
@@ -692,13 +699,6 @@
       "headline": "Lindsay Clancy trial jurors break their silence. Here's what they told us",
       "url": "https://www.nbcboston.com/news/local/lindsay-clancy-jurors-speak-about-deliberations-hold-out-juror/4011580/",
       "flag": null
-    },
-    {
-      "ts": "2026-09-09T01:13:45.000Z",
-      "outlet": "Boston.com",
-      "headline": "Jurors in the Lindsay Clancy trial are starting to break their silence. Here’s what they’re saying.",
-      "url": "https://www.boston.com/news/crime/2026/09/08/lindsay-clancy-trial-jurors/",
-      "flag": null
     }
   ],
   "seen": [
@@ -1046,6 +1046,7 @@
     "14ab0f4",
     "1lfbjfs",
     "14penkk",
-    "4dxlkx"
+    "4dxlkx",
+    "fz8wf3"
   ]
 }

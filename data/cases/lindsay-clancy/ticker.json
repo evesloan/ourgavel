@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-26T21:01:28.000Z",
+      "outlet": "Court TV",
+      "headline": "Mom who allegedly killed her 2-year-old son after becoming ‘invested’ in Lindsay Clancy case has full support of family: Attorney",
+      "url": "https://www.courttv.com/news/mom-who-allegedly-killed-her-2-year-old-son-after-becoming-invested-in-lindsay-clancy-case-has-full-support-of-family-attorney/",
+      "flag": null
+    },
+    {
       "ts": "2026-10-25T03:38:27.000Z",
       "outlet": "Boston 25 News",
       "headline": "Plymouth man arrested on drug distribution charges in Duxbury",
@@ -692,13 +699,6 @@
       "headline": "Lindsay Clancy's lawyer shares new details about the trial in NBC News interview",
       "url": "https://www.nbcboston.com/news/local/kevin-reddington-shares-new-details-on-lindsay-clancy-trial/4011762/",
       "flag": null
-    },
-    {
-      "ts": "2026-09-09T09:27:56.000Z",
-      "outlet": "NBC10 Boston",
-      "headline": "Lindsay Clancy trial jurors break their silence. Here's what they told us",
-      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-jurors-speak-about-deliberations-hold-out-juror/4011580/",
-      "flag": null
     }
   ],
   "seen": [
@@ -1047,6 +1047,7 @@
     "1lfbjfs",
     "14penkk",
     "4dxlkx",
-    "fz8wf3"
+    "fz8wf3",
+    "13xr34c"
   ]
 }

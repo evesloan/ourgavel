@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-26T16:51:54.000Z",
+      "outlet": "FITSNews",
+      "headline": "Murdaugh Jury Tampering Files: Where Are They?",
+      "url": "https://www.fitsnews.com/2026/10/26/murdaugh-jury-tampering-files-where-are-they/",
+      "flag": null
+    },
+    {
       "ts": "2026-10-21T15:45:00.000Z",
       "outlet": "FITSNews",
       "headline": "Murdaugh Retrial Drama: Defense (Finally) Gets Crime Scene Scan",
@@ -692,17 +699,9 @@
       "headline": "‘At a standstill;’ Harpootlian urges judge to help speed up Murdaugh retrial discovery",
       "url": "https://www.abccolumbia.com/2026/10/01/at-a-standstill-harpootlian-urges-judge-to-help-speed-up-murdaugh-retrial-discovery/",
       "flag": null
-    },
-    {
-      "ts": "2026-10-01T13:00:00.000Z",
-      "outlet": "via MSN",
-      "headline": "Murdaugh’s attorney writes letter to judge, said the state ‘resolved nothing’",
-      "url": "https://www.msn.com/en-us/news/other/murdaugh-s-attorney-writes-letter-to-judge-said-the-state-resolved-nothing/ar-AA2dmMrf",
-      "flag": null
     }
   ],
   "seen": [
-    "17sgn2r",
     "akklf6",
     "1tohnin",
     "1so09v3",
@@ -1301,6 +1300,7 @@
     "7pr8rp",
     "1dbpkjd",
     "1tp6yqs",
-    "5tcgas"
+    "5tcgas",
+    "1r6cwxv"
   ]
 }

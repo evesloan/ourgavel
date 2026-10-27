@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-27T17:20:08.000Z",
+      "outlet": "nbcwashington.com",
+      "headline": "Blood found in saw likely was Mamta Kafle's, forensics pro testifies",
+      "url": "https://www.nbcwashington.com/news/local/northern-virginia/blood-found-in-saw-likely-was-mamta-kafles-forensics-pro-testifies/4172879/",
+      "flag": null
+    },
+    {
       "ts": "2026-10-27T16:31:14.000Z",
       "outlet": "fox5dc.com",
       "headline": "Naresh Bhatt trial continues Tuesday after investigator testifies on power saw",
@@ -193,6 +200,7 @@
     "v3bkfp",
     "df0ftw",
     "as1nge",
-    "13b9800"
+    "13b9800",
+    "15mdgx1"
   ]
 }

@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-26T17:20:06.000Z",
+      "outlet": "via MSN",
+      "headline": "Former prosecutor weighs in on new forensic evidence in Alex Murdaugh retrial",
+      "url": "https://www.msn.com/en-us/news/other/former-prosecutor-weighs-in-on-new-forensic-evidence-in-alex-murdaugh-retrial/ar-AA2g7ZPr",
+      "flag": null
+    },
+    {
       "ts": "2026-10-26T16:51:54.000Z",
       "outlet": "FITSNews",
       "headline": "Murdaugh Jury Tampering Files: Where Are They?",
@@ -692,17 +699,9 @@
       "headline": "Alex Murdaugh's defense demands DNA, phone and crime scene records ahead of double murder retrial",
       "url": "https://www.wjcl.com/article/alex-murdaugh-retrial-dna-phone-crime-scene/73983836",
       "flag": null
-    },
-    {
-      "ts": "2026-10-01T13:01:00.000Z",
-      "outlet": "abccolumbia.com",
-      "headline": "‘At a standstill;’ Harpootlian urges judge to help speed up Murdaugh retrial discovery",
-      "url": "https://www.abccolumbia.com/2026/10/01/at-a-standstill-harpootlian-urges-judge-to-help-speed-up-murdaugh-retrial-discovery/",
-      "flag": null
     }
   ],
   "seen": [
-    "akklf6",
     "1tohnin",
     "1so09v3",
     "w6w67o",
@@ -1301,6 +1300,7 @@
     "1dbpkjd",
     "1tp6yqs",
     "5tcgas",
-    "1r6cwxv"
+    "1r6cwxv",
+    "1gda8wy"
   ]
 }

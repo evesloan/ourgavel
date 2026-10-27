@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-27T16:31:14.000Z",
+      "outlet": "fox5dc.com",
+      "headline": "Naresh Bhatt trial continues Tuesday after investigator testifies on power saw",
+      "url": "https://www.fox5dc.com/news/naresh-bhatt-trial-continues-tuesday-after-investigator-testifies-power-saw",
+      "flag": null
+    },
+    {
       "ts": "2026-10-21T23:22:03.000Z",
       "outlet": "fox5dc.com",
       "headline": "Naresh Bhatt trial focuses on saw evidence and Tesla data Wednesday",
@@ -185,6 +192,7 @@
     "e8j0wc",
     "v3bkfp",
     "df0ftw",
-    "as1nge"
+    "as1nge",
+    "13b9800"
   ]
 }

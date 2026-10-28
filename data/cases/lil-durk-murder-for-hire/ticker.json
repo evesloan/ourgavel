@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-28T07:50:00.000Z",
+      "outlet": "hotnewhiphop.com",
+      "headline": "Lul Pab's Mom Reveals She's Okay With Lil Durk Receiving Bond",
+      "url": "https://www.hotnewhiphop.com/1014727-lil-durk-lul-pab-mom-bail",
+      "flag": null
+    },
+    {
       "ts": "2026-10-27T19:30:30.000Z",
       "outlet": "via MSN",
       "headline": "Lil Durk seeks bond as slain rapper Lul Pab’s mother says she does not oppose release",
@@ -692,13 +699,6 @@
       "headline": "Lil Durk Trial: OTF Jam's Claims About the Quando Rondo Shooting, Explained",
       "url": "https://www.ibtimes.sg/lil-durk-trial-otf-jams-claims-about-quando-rondo-shooting-explained-93192",
       "flag": null
-    },
-    {
-      "ts": "2026-08-31T17:57:00.000Z",
-      "outlet": "via MSN",
-      "headline": "Trap Lore Ross Mulls Social Media Break Due to Repeated Interference at Lil Durk Trial",
-      "url": "https://www.msn.com/en-us/news/other/trap-lore-ross-mulls-social-media-break-due-to-repeated-interference-at-lil-durk-trial/ar-AA2b07Xd",
-      "flag": null
     }
   ],
   "seen": [
@@ -925,6 +925,7 @@
     "1dbnsv2",
     "kkr6ho",
     "1rednii",
-    "1ge2b8k"
+    "1ge2b8k",
+    "kxh40d"
   ]
 }

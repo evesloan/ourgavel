@@ -288,6 +288,13 @@
       "flag": null
     },
     {
+      "ts": "2026-10-16T06:23:00.000Z",
+      "outlet": "The Greenville News",
+      "headline": "Alex Murdaugh heads back to court for motions leading up to retrial",
+      "url": "https://www.greenvilleonline.com/story/news/crime/2026/10/16/livestream-alex-murdaugh-court-date-today-south-carolina-double-homicide/92278985007/",
+      "flag": null
+    },
+    {
       "ts": "2026-10-16T06:21:00.000Z",
       "outlet": "Fox News",
       "headline": "Alex Murdaugh returns to court for hearing on what evidence can be used in retrial",
@@ -341,13 +348,6 @@
       "outlet": "via MSN",
       "headline": "Murdaugh defense, prosecutors head back to court before double murder retrial",
       "url": "https://www.msn.com/en-us/news/other/murdaugh-defense-prosecutors-head-back-to-court-before-double-murder-retrial/ar-AA2enaNg",
-      "flag": null
-    },
-    {
-      "ts": "2026-10-16T05:23:00.000Z",
-      "outlet": "via Yahoo News",
-      "headline": "Alex Murdaugh heads back to court for motions leading up to retrial",
-      "url": "https://www.yahoo.com/news/us/articles/alex-murdaugh-heads-back-court-122338830.html",
       "flag": null
     },
     {
@@ -702,7 +702,6 @@
     }
   ],
   "seen": [
-    "e07b5r",
     "1ygjufj",
     "183s93v",
     "1yz55k9",
@@ -1301,6 +1300,7 @@
     "1gdk8jr",
     "k87mx0",
     "1vg2rck",
-    "1gckz0f"
+    "1gckz0f",
+    "z6v5l7"
   ]
 }

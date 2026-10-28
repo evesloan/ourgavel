@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-28T17:12:01.000Z",
+      "outlet": "fox5dc.com",
+      "headline": "Naresh Bhatt murder trial continues after cellphone, vehicle records presented",
+      "url": "https://www.fox5dc.com/news/naresh-bhatt-murder-trial-continues-after-cellphone-vehicle-records-presented",
+      "flag": null
+    },
+    {
       "ts": "2026-10-27T17:20:08.000Z",
       "outlet": "nbcwashington.com",
       "headline": "Blood found in saw likely was Mamta Kafle's, forensics pro testifies",
@@ -201,6 +208,7 @@
     "df0ftw",
     "as1nge",
     "13b9800",
-    "15mdgx1"
+    "15mdgx1",
+    "h11qnx"
   ]
 }

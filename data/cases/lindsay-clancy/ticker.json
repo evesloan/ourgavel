@@ -1,6 +1,27 @@
 {
   "items": [
     {
+      "ts": "2026-10-28T21:27:05.000Z",
+      "outlet": "Court TV",
+      "headline": "‘There was no foreseeability’: Attorneys for doctors push judge to dismiss lawsuit filed by Lindsay Clancy’s ex-husband",
+      "url": "https://www.courttv.com/news/there-was-no-foreseeability-attorneys-for-doctors-push-judge-to-dismiss-lawsuit-filed-by-lindsay-clancys-ex-husband/",
+      "flag": null
+    },
+    {
+      "ts": "2026-10-28T21:09:00.000Z",
+      "outlet": "WCVB",
+      "headline": "Prosecutors file opposition to Lindsay Clancy's motion to dismiss murder case",
+      "url": "https://www.wcvb.com/article/clancy-prosecution-opposition-motions-possible-retrial-oct-28/74276735",
+      "flag": null
+    },
+    {
+      "ts": "2026-10-28T20:49:13.000Z",
+      "outlet": "Boston.com",
+      "headline": "‘A disaster waiting to happen’: Patrick Clancy’s wrongful death lawsuit faces motion to dismiss",
+      "url": "https://www.boston.com/news/local-news/2026/10/28/patrick-clancy-wrongful-death-lawsuit-motion-to-dismiss/",
+      "flag": null
+    },
+    {
       "ts": "2026-10-28T15:07:00.000Z",
       "outlet": "WCVB",
       "headline": "Patrick Clancy's attorneys due in court in wrongful death lawsuit",
@@ -678,27 +699,6 @@
       "headline": "DA must decide how to proceed in cases of Lindsay Clancy and Latarsha Sanders",
       "url": "https://www.nbcboston.com/news/local/da-must-decide-how-to-proceed-in-cases-of-lindsay-clancy-and-latarsha-sanders/4012221/",
       "flag": null
-    },
-    {
-      "ts": "2026-09-09T22:23:00.000Z",
-      "outlet": "WCVB",
-      "headline": "Lindsay Clancy defense to seek dismissal after hung jury",
-      "url": "https://www.wcvb.com/article/lindsay-clancy-double-jeopardy-motion/73658045",
-      "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-09-09T16:56:29.000Z",
-      "outlet": "NBC10 Boston",
-      "headline": "Have questions about our Lindsay Clancy juror interview? Ask Sue O'Connell here",
-      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-trial-jury-interview-questions/4011932/",
-      "flag": null
-    },
-    {
-      "ts": "2026-09-09T16:36:23.000Z",
-      "outlet": "Boston.com",
-      "headline": "Lindsay Clancy defense attorney says he will file motion to dismiss on double jeopardy grounds",
-      "url": "https://www.boston.com/news/crime/2026/09/09/lindsay-clancy-kevin-reddington-motion-to-dismiss/",
-      "flag": null
     }
   ],
   "seen": [
@@ -1050,6 +1050,9 @@
     "fz8wf3",
     "13xr34c",
     "1g2nylc",
-    "s2n3ry"
+    "s2n3ry",
+    "1kjlajq",
+    "gcctmg",
+    "agd342"
   ]
 }

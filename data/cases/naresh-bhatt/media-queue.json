@@ -1,11 +1,11 @@
 {
-  "updated": "2026-10-28T02:40:20.641Z",
+  "updated": "2026-10-28T03:25:14.997Z",
   "published": [],
   "heldForReview": [],
   "refused": [
     {
       "query": "Manassas Virginia old courthouse",
-      "reason": "verify failed: HTTP 503"
+      "reason": "search failed: HTTP 503"
     }
   ]
 }

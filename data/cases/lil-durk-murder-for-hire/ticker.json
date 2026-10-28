@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-27T19:30:30.000Z",
+      "outlet": "via MSN",
+      "headline": "Lil Durk seeks bond as slain rapper Lul Pab’s mother says she does not oppose release",
+      "url": "https://www.msn.com/en-in/news/world/lil-durk-seeks-bond-as-slain-rapper-lul-pab-s-mother-says-she-does-not-oppose-release/ar-AA2gcyaR",
+      "flag": null
+    },
+    {
       "ts": "2026-10-27T12:36:00.000Z",
       "outlet": "AllHipHop",
       "headline": "EXCLUSIVE: Lil Durk Offers Up Music Income To Get Out Of Jail, Lul Pab’s Mom Doesn’t Object",
@@ -692,13 +699,6 @@
       "headline": "Trap Lore Ross Mulls Social Media Break Due to Repeated Interference at Lil Durk Trial",
       "url": "https://www.msn.com/en-us/news/other/trap-lore-ross-mulls-social-media-break-due-to-repeated-interference-at-lil-durk-trial/ar-AA2b07Xd",
       "flag": null
-    },
-    {
-      "ts": "2026-08-31T17:00:00.000Z",
-      "outlet": "via Yahoo News",
-      "headline": "Trap Lore Ross Mulls Social Media Break Over Lil Durk Trial Interference",
-      "url": "https://www.yahoo.com/entertainment/celebrity/articles/trap-lore-ross-mulls-social-005704409.html",
-      "flag": null
     }
   ],
   "seen": [
@@ -924,6 +924,7 @@
     "rh3ryi",
     "1dbnsv2",
     "kkr6ho",
-    "1rednii"
+    "1rednii",
+    "1ge2b8k"
   ]
 }

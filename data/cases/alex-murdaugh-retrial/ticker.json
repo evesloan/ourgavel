@@ -24,6 +24,13 @@
     {
       "ts": "2026-10-20T08:00:40.000Z",
       "outlet": "via MSN",
+      "headline": "Alex Murdaugh judge declares she will not let retrial become a circus, warns people not to use courtroom for publicity or theatrics",
+      "url": "https://www.msn.com/en-ca/news/other/alex-murdaugh-judge-declares-she-will-not-let-retrial-become-a-circus-warns-people-not-to-use-courtroom-for-publicity-or-theatrics/ar-AA2fFopR",
+      "flag": null
+    },
+    {
+      "ts": "2026-10-20T08:00:40.000Z",
+      "outlet": "via MSN",
       "headline": "Alex Murdaugh judge declares she will not let retrial 'become a circus,' warns people not to use courtroom for 'publicity or theatrics'",
       "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-judge-declares-she-will-not-let-retrial-become-a-circus-warns-people-not-to-use-courtroom-for-publicity-or-theatrics/ar-AA2fFHYn",
       "flag": null
@@ -194,6 +201,13 @@
       "outlet": "nypost.com",
       "headline": "Alex Murdaugh judge warns against courtroom ‘circus’ as defense wins DNA fight, loses ballistics bid",
       "url": "https://nypost.com/2026/10/17/us-news/alex-murdaugh-judge-warns-against-courtroom-circus-as-defense-wins-dna-fight-loses-ballistics-bid/",
+      "flag": null
+    },
+    {
+      "ts": "2026-10-16T10:30:00.000Z",
+      "outlet": "via Yahoo News",
+      "headline": "Alex Murdaugh Judge Lays Down the Law, Warns She Won’t Let Retrial ‘Become a Circus’",
+      "url": "https://ca.news.yahoo.com/alex-murdaugh-judge-lays-down-173154342.html",
       "flag": null
     },
     {
@@ -685,26 +699,9 @@
       "headline": "Alex Murdaugh attorneys ask judge to order state to respond to discovery requests ahead of retrial",
       "url": "https://www.counton2.com/the-murdaugh-investigation/alex-murdaugh-attorneys-ask-judge-to-order-state-to-respond-to-discovery-requests-ahead-of-retrial/",
       "flag": null
-    },
-    {
-      "ts": "2026-10-01T14:31:00.000Z",
-      "outlet": "WLTX News19",
-      "headline": "Alex Murdaugh defense asks judge to intervene in discovery disputes ahead of 2027 trial",
-      "url": "https://www.wltx.com/article/news/special-reports/alex-murdaugh/alex-murdaugh-defense-discovery-disputes-2027-trial/101-38cca1d3-469c-450b-aed4-886861b49aee",
-      "flag": null
-    },
-    {
-      "ts": "2026-10-01T13:06:00.000Z",
-      "outlet": "wjcl.com",
-      "headline": "Alex Murdaugh's defense demands DNA, phone and crime scene records ahead of double murder retrial",
-      "url": "https://www.wjcl.com/article/alex-murdaugh-retrial-dna-phone-crime-scene/73983836",
-      "flag": null
     }
   ],
   "seen": [
-    "1so09v3",
-    "w6w67o",
-    "3drte4",
     "23a19a",
     "e07b5r",
     "1ygjufj",
@@ -1301,6 +1298,9 @@
     "5tcgas",
     "1r6cwxv",
     "1gda8wy",
-    "1ww0yxi"
+    "1ww0yxi",
+    "1gdk8jr",
+    "k87mx0",
+    "1vg2rck"
   ]
 }

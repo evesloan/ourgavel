@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-28T22:00:00.000Z",
+      "outlet": "News 3 Las Vegas",
+      "headline": "How Duane 'Keffe D' Davis received 40 years to life for Tupac's murder 30 years later",
+      "url": "https://news3lv.com/news/local/how-duane-keffe-d-davis-sentenced-40-years-to-life-in-prison-tupac-shakur-murder-shooting-las-vegas-30-years-later-clark-county-investigation-cold-case-homicide-rapper-icon-justice-nevada-prosecution-witnesses-verdict",
+      "flag": null
+    },
+    {
       "ts": "2026-10-13T22:29:33.000Z",
       "outlet": "News 3 Las Vegas",
       "headline": "Reactions on Duane 'Keffe D' Davis sentenced in Tupac Shakur killing",
@@ -712,6 +719,7 @@
     "obb24b",
     "8drmub",
     "1moqriw",
-    "sv6osq"
+    "sv6osq",
+    "1wyb2v"
   ]
 }

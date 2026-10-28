@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-28T12:43:08.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Patrick Clancy due in court as lawsuit against Lindsay Clancy’s medical providers continues",
+      "url": "https://www.boston25news.com/news/local/patrick-clancy-due-court-lawsuit-against-lindsay-clancys-medical-providers-continues/DPKRXBWCKVE2LIF4QSS52VPQGY/",
+      "flag": null
+    },
+    {
       "ts": "2026-10-26T21:01:28.000Z",
       "outlet": "Court TV",
       "headline": "Mom who allegedly killed her 2-year-old son after becoming ‘invested’ in Lindsay Clancy case has full support of family: Attorney",
@@ -692,13 +699,6 @@
       "headline": "Lindsay Clancy jurors say prosecution was ‘biased’ and ‘unprofessional’",
       "url": "https://www.courttv.com/news/lindsay-clancy-jurors-say-prosecution-was-biased-and-unprofessional/",
       "flag": null
-    },
-    {
-      "ts": "2026-09-09T12:51:34.000Z",
-      "outlet": "NBC10 Boston",
-      "headline": "Lindsay Clancy's lawyer shares new details about the trial in NBC News interview",
-      "url": "https://www.nbcboston.com/news/local/kevin-reddington-shares-new-details-on-lindsay-clancy-trial/4011762/",
-      "flag": null
     }
   ],
   "seen": [
@@ -1048,6 +1048,7 @@
     "14penkk",
     "4dxlkx",
     "fz8wf3",
-    "13xr34c"
+    "13xr34c",
+    "1g2nylc"
   ]
 }

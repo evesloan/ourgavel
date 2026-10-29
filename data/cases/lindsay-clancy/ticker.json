@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-29T20:23:10.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Will Lindsay Clancy testify in ex-husbands lawsuit?",
+      "url": "https://www.boston25news.com/news/local/will-lindsay-clancy-testify-ex-husbands-lawsuit/JFYV2EJOBZAKDJW6WT3OFZOTBY/",
+      "flag": null
+    },
+    {
       "ts": "2026-10-29T14:15:33.000Z",
       "outlet": "NBC10 Boston",
       "headline": "New motions filed in Lindsay Clancy case — here's latest ahead of Monday's hearing",
@@ -692,13 +699,6 @@
       "headline": "Lindsay Clancy’s attorney to seek dismissal of case, argues retrial would violate double jeopardy",
       "url": "https://www.boston25news.com/news/local/lindsay-clancys-attorney-seek-dismissal-case-argues-retrial-would-violate-double-jeopardy/3KQCNSDHE5BA3JBNZB7HHYZA7E/",
       "flag": null
-    },
-    {
-      "ts": "2026-09-10T10:00:42.000Z",
-      "outlet": "NBC10 Boston",
-      "headline": "Lindsay Clancy juror reveals ‘shocking' behavior by lone holdout",
-      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-juror-reveals-shocking-behavior-by-lone-holdout/4012473/",
-      "flag": null
     }
   ],
   "seen": [
@@ -1055,6 +1055,7 @@
     "gcctmg",
     "agd342",
     "1pkqmvq",
-    "1roixdw"
+    "1roixdw",
+    "1quv9qv"
   ]
 }

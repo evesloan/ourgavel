@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-29T13:26:53.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Lindsay Clancy could face retrial as separate legal battle intensifies",
+      "url": "https://www.boston25news.com/news/local/lindsay-clancy-could-face-retrial-separate-legal-battle-intensifies/JCK2E4OH2BC2XC3SLBEUYU2PYM/",
+      "flag": null
+    },
+    {
       "ts": "2026-10-28T21:27:05.000Z",
       "outlet": "Court TV",
       "headline": "‘There was no foreseeability’: Attorneys for doctors push judge to dismiss lawsuit filed by Lindsay Clancy’s ex-husband",
@@ -692,13 +699,6 @@
       "headline": "Male juror details contentious deliberations in Lindsay Clancy trial",
       "url": "https://www.wcvb.com/article/lindsay-clancy-male-juror-speaks-out-mistrial/73658980",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-09-10T00:46:29.000Z",
-      "outlet": "NBC10 Boston",
-      "headline": "DA must decide how to proceed in cases of Lindsay Clancy and Latarsha Sanders",
-      "url": "https://www.nbcboston.com/news/local/da-must-decide-how-to-proceed-in-cases-of-lindsay-clancy-and-latarsha-sanders/4012221/",
-      "flag": null
     }
   ],
   "seen": [
@@ -1053,6 +1053,7 @@
     "s2n3ry",
     "1kjlajq",
     "gcctmg",
-    "agd342"
+    "agd342",
+    "1pkqmvq"
   ]
 }

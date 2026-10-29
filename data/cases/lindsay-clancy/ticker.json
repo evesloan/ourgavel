@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-29T14:15:33.000Z",
+      "outlet": "NBC10 Boston",
+      "headline": "New motions filed in Lindsay Clancy case — here's latest ahead of Monday's hearing",
+      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-case-update-new-motions/4039723/",
+      "flag": null
+    },
+    {
       "ts": "2026-10-29T13:26:53.000Z",
       "outlet": "Boston 25 News",
       "headline": "Lindsay Clancy could face retrial as separate legal battle intensifies",
@@ -692,13 +699,6 @@
       "headline": "Lindsay Clancy juror reveals ‘shocking' behavior by lone holdout",
       "url": "https://www.nbcboston.com/news/local/lindsay-clancy-juror-reveals-shocking-behavior-by-lone-holdout/4012473/",
       "flag": null
-    },
-    {
-      "ts": "2026-09-10T02:10:00.000Z",
-      "outlet": "WCVB",
-      "headline": "Male juror details contentious deliberations in Lindsay Clancy trial",
-      "url": "https://www.wcvb.com/article/lindsay-clancy-male-juror-speaks-out-mistrial/73658980",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
@@ -1054,6 +1054,7 @@
     "1kjlajq",
     "gcctmg",
     "agd342",
-    "1pkqmvq"
+    "1pkqmvq",
+    "1roixdw"
   ]
 }

@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-29T17:44:27.000Z",
+      "outlet": "fox5dc.com",
+      "headline": "Naresh Bhatt murder trial continues Thursday after jurors see digital search evidence",
+      "url": "https://www.fox5dc.com/news/naresh-bhatt-murder-trial-continues-thursday-after-jurors-see-digital-search-evidence",
+      "flag": null
+    },
+    {
       "ts": "2026-10-28T17:12:01.000Z",
       "outlet": "fox5dc.com",
       "headline": "Naresh Bhatt murder trial continues after cellphone, vehicle records presented",
@@ -209,6 +216,7 @@
     "as1nge",
     "13b9800",
     "15mdgx1",
-    "h11qnx"
+    "h11qnx",
+    "1akcfpq"
   ]
 }

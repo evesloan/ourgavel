@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-30T16:52:00.000Z",
+      "outlet": "WCVB",
+      "headline": "Florida woman accused of wiretapping Lindsay Clancy's ex-father-in-law",
+      "url": "https://www.wcvb.com/article/lindsay-christopher-patrick-clancy-shawna-gramkow-wiretapping-oct-30-2026/74296925",
+      "flag": null
+    },
+    {
       "ts": "2026-10-29T20:23:10.000Z",
       "outlet": "Boston 25 News",
       "headline": "Will Lindsay Clancy testify in ex-husbands lawsuit?",
@@ -692,13 +699,6 @@
       "headline": "Lindsay Clancy's attorney files motion arguing for not guilty ruling by court",
       "url": "https://www.nbcboston.com/news/local/lindsay-clancy-motion-kevin-reddington-update/4012575/",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-09-10T12:46:35.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "Lindsay Clancy’s attorney to seek dismissal of case, argues retrial would violate double jeopardy",
-      "url": "https://www.boston25news.com/news/local/lindsay-clancys-attorney-seek-dismissal-case-argues-retrial-would-violate-double-jeopardy/3KQCNSDHE5BA3JBNZB7HHYZA7E/",
-      "flag": null
     }
   ],
   "seen": [
@@ -1056,6 +1056,7 @@
     "agd342",
     "1pkqmvq",
     "1roixdw",
-    "1quv9qv"
+    "1quv9qv",
+    "wc0mdf"
   ]
 }

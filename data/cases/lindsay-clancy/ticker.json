@@ -8,6 +8,13 @@
       "flag": null
     },
     {
+      "ts": "2026-10-30T14:51:44.000Z",
+      "outlet": "NBC10 Boston",
+      "headline": "Woman charged over video recording of Lindsay Clancy's former father-in-law",
+      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-father-law-wiretapping/4040817/",
+      "flag": null
+    },
+    {
       "ts": "2026-10-29T20:23:10.000Z",
       "outlet": "Boston 25 News",
       "headline": "Will Lindsay Clancy testify in ex-husbands lawsuit?",
@@ -692,13 +699,6 @@
       "headline": "One juror, no verdict: What the Lindsay Clancy mistrial tells us about jury unanimity",
       "url": "https://lawandcrime.com/analysis/one-juror-no-verdict-what-the-lindsay-clancy-mistrial-tells-us-about-jury-unanimity/",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-09-10T13:07:22.000Z",
-      "outlet": "NBC10 Boston",
-      "headline": "Lindsay Clancy's attorney files motion arguing for not guilty ruling by court",
-      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-motion-kevin-reddington-update/4012575/",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
@@ -1057,6 +1057,7 @@
     "1pkqmvq",
     "1roixdw",
     "1quv9qv",
-    "wc0mdf"
+    "wc0mdf",
+    "1sc39rr"
   ]
 }

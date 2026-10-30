@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-30T20:25:00.000Z",
+      "outlet": "Boston.com",
+      "headline": "Florida woman charged with wiretapping Lindsay Clancy’s former father-in-law",
+      "url": "https://www.boston.com/news/crime/2026/10/30/woman-charged-wiretap-lindsay-clancy-former-father-in-law/",
+      "flag": null
+    },
+    {
       "ts": "2026-10-30T20:08:22.000Z",
       "outlet": "Boston 25 News",
       "headline": "Influencer accused of wiretapping over alleged secret recording of Lindsay Clancy’s ex-father-in-law",
@@ -692,13 +699,6 @@
       "headline": "Lindsay Clancy and her ex-husband both filed lawsuits over their children’s deaths. Where do those cases stand?",
       "url": "https://www.boston.com/news/crime/2026/09/10/lindsay-clancy-patrick-clancy-civil-lawsuits/",
       "flag": null
-    },
-    {
-      "ts": "2026-09-10T15:58:29.000Z",
-      "outlet": "Boston.com",
-      "headline": "Lindsay Clancy juror says holdout scrolled his phone during deliberations and couldn’t back up his stance",
-      "url": "https://www.boston.com/news/crime/2026/09/10/lindsay-clancy-juror-interview-nick-dargie/",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
@@ -1059,6 +1059,7 @@
     "1quv9qv",
     "wc0mdf",
     "1sc39rr",
-    "9sx4ek"
+    "9sx4ek",
+    "1gmhfbz"
   ]
 }

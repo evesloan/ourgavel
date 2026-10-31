@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-30T23:14:00.000Z",
+      "outlet": "The State",
+      "headline": "SC attorney general candidates Stumbo and Hricik differ on Alex Murdaugh retrial",
+      "url": "https://www.thestate.com/news/politics-government/article317835150.html",
+      "flag": null
+    },
+    {
       "ts": "2026-10-30T17:29:00.000Z",
       "outlet": "FITSNews",
       "headline": "Murdaugh Retrial: Defense Seeks Dismissal of Indictments Over False Evidence",
@@ -692,17 +699,9 @@
       "headline": "Murdaugh lawyers allege prosecutors withheld witness claim that police chief handled murder weapons: filing",
       "url": "https://www.yahoo.com/news/us/articles/murdaugh-lawyers-allege-prosecutors-withheld-182303648.html",
       "flag": null
-    },
-    {
-      "ts": "2026-10-02T04:39:04.000Z",
-      "outlet": "via MSN",
-      "headline": "Alex Murdaugh defense asks judge to intervene ahead of murder retrial",
-      "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-defense-asks-judge-to-intervene-ahead-of-murder-retrial/vi-AA2dqc6T",
-      "flag": null
     }
   ],
   "seen": [
-    "1yz55k9",
     "1i326j9",
     "1faj0zb",
     "adxed5",
@@ -1301,6 +1300,7 @@
     "1gckz0f",
     "z6v5l7",
     "1tfxv3f",
-    "16x3ds1"
+    "16x3ds1",
+    "1r2pcs2"
   ]
 }

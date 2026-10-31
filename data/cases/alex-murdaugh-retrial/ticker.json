@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-30T17:29:00.000Z",
+      "outlet": "FITSNews",
+      "headline": "Murdaugh Retrial: Defense Seeks Dismissal of Indictments Over False Evidence",
+      "url": "https://www.fitsnews.com/2026/10/30/murdaugh-retrial-indictment-dismissal/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-10-26T17:20:06.000Z",
       "outlet": "via MSN",
       "headline": "Former prosecutor weighs in on new forensic evidence in Alex Murdaugh retrial",
@@ -692,17 +699,9 @@
       "headline": "Alex Murdaugh defense asks judge to intervene ahead of murder retrial",
       "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-defense-asks-judge-to-intervene-ahead-of-murder-retrial/vi-AA2dqc6T",
       "flag": null
-    },
-    {
-      "ts": "2026-10-02T02:06:00.000Z",
-      "outlet": "WCBD News 2",
-      "headline": "Alex Murdaugh attorneys ask judge to order state to respond to discovery requests ahead of retrial",
-      "url": "https://www.counton2.com/the-murdaugh-investigation/alex-murdaugh-attorneys-ask-judge-to-order-state-to-respond-to-discovery-requests-ahead-of-retrial/",
-      "flag": null
     }
   ],
   "seen": [
-    "183s93v",
     "1yz55k9",
     "1i326j9",
     "1faj0zb",
@@ -1301,6 +1300,7 @@
     "1vg2rck",
     "1gckz0f",
     "z6v5l7",
-    "1tfxv3f"
+    "1tfxv3f",
+    "16x3ds1"
   ]
 }

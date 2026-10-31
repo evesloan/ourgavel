@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-10-31T00:45:26.000Z",
+      "outlet": "FOX5 Las Vegas",
+      "headline": "Duane ‘Keffe D’ Davis convicted in Tupac Shakur’s killing transferred to Nevada State Prison",
+      "url": "https://www.fox5vegas.com/2026/10/31/duane-keffe-d-davis-convicted-tupac-shakurs-killing-transferred-nevada-state-prison/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-10-28T22:00:00.000Z",
       "outlet": "News 3 Las Vegas",
       "headline": "How Duane 'Keffe D' Davis received 40 years to life for Tupac's murder 30 years later",
@@ -720,6 +727,7 @@
     "8drmub",
     "1moqriw",
     "sv6osq",
-    "1wyb2v"
+    "1wyb2v",
+    "1mqvkre"
   ]
 }

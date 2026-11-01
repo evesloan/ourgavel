@@ -176,6 +176,13 @@
       "flag": null
     },
     {
+      "ts": "2026-10-16T12:07:00.000Z",
+      "outlet": "enidnews.com",
+      "headline": "Fight over evidence in Alex Murdaugh retrial turns to DNA and missing murder weapons",
+      "url": "https://www.enidnews.com/region/fight-over-evidence-in-alex-murdaugh-retrial-turns-to-dna-and-missing-murder-weapons/article_eed8ecd2-140a-5fd8-a80c-c093e3cbbb3d.html",
+      "flag": null
+    },
+    {
       "ts": "2026-10-16T12:04:19.000Z",
       "outlet": "via MSN",
       "headline": "Alex Murdaugh in court for evidence hearing",
@@ -526,6 +533,13 @@
       "flag": null
     },
     {
+      "ts": "2026-10-15T17:12:00.000Z",
+      "outlet": "usnews.com",
+      "headline": "Fight Over Evidence in Alex Murdaugh Retrial Turns to DNA and Missing Murder Weapons",
+      "url": "https://www.usnews.com/news/us/articles/2026-10-16/alex-murdaughs-defense-and-prosecutors-expect-to-clash-over-evidence-during-pretrial-hearing",
+      "flag": null
+    },
+    {
       "ts": "2026-10-15T17:01:00.000Z",
       "outlet": "Fox News",
       "headline": "Former prosecutor calls Alex Murdaugh defense's murder weapon claims a 'wild goose chase'",
@@ -685,25 +699,9 @@
       "headline": "Hearing on DNA, ballistics evidence in Murdaugh case scheduled for Oct. 16",
       "url": "https://www.msn.com/en-us/news/other/hearing-on-dna-ballistics-evidence-in-murdaugh-case-scheduled-for-oct-16/ar-AA2drAqH",
       "flag": null
-    },
-    {
-      "ts": "2026-10-02T11:23:03.000Z",
-      "outlet": "via MSN",
-      "headline": "Murdaugh lawyers allege prosecutors withheld witness claim that police chief handled murder weapons: filing",
-      "url": "https://www.msn.com/en-us/news/other/murdaugh-lawyers-allege-prosecutors-withheld-witness-claim-that-police-chief-handled-murder-weapons-filing/ar-AA2driIj",
-      "flag": null
-    },
-    {
-      "ts": "2026-10-02T11:23:00.000Z",
-      "outlet": "via Yahoo News",
-      "headline": "Murdaugh lawyers allege prosecutors withheld witness claim that police chief handled murder weapons: filing",
-      "url": "https://www.yahoo.com/news/us/articles/murdaugh-lawyers-allege-prosecutors-withheld-182303648.html",
-      "flag": null
     }
   ],
   "seen": [
-    "adxed5",
-    "p6wkfb",
     "15nx5dt",
     "zc2ro7",
     "jgo3dx",
@@ -1301,6 +1299,8 @@
     "16x3ds1",
     "1r2pcs2",
     "b2e0ku",
-    "1ged5lh"
+    "1ged5lh",
+    "lmkmpx",
+    "34rgo3"
   ]
 }

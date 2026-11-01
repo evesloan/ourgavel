@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-01T15:37:00.000Z",
+      "outlet": "WCVB",
+      "headline": "Lindsay Clancy scheduled to attend hearing on Monday",
+      "url": "https://www.wcvb.com/article/lindsay-clancy-hearing-preview-nov-1-2026/74305253",
+      "flag": null
+    },
+    {
       "ts": "2026-10-30T20:25:00.000Z",
       "outlet": "Boston.com",
       "headline": "Florida woman charged with wiretapping Lindsay Clancy’s former father-in-law",
@@ -692,13 +699,6 @@
       "headline": "Lindsay Clancy asks judge to find her not guilty after mistrial",
       "url": "https://www.wcvb.com/article/lindsay-clancy-motion-for-required-finding-sept-10/73669616",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-09-10T16:53:16.000Z",
-      "outlet": "Boston.com",
-      "headline": "Lindsay Clancy and her ex-husband both filed lawsuits over their children’s deaths. Where do those cases stand?",
-      "url": "https://www.boston.com/news/crime/2026/09/10/lindsay-clancy-patrick-clancy-civil-lawsuits/",
-      "flag": null
     }
   ],
   "seen": [
@@ -1060,6 +1060,7 @@
     "wc0mdf",
     "1sc39rr",
     "9sx4ek",
-    "1gmhfbz"
+    "1gmhfbz",
+    "yjbadd"
   ]
 }

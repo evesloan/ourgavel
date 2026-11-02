@@ -1,6 +1,27 @@
 {
   "items": [
     {
+      "ts": "2026-11-02T11:10:00.000Z",
+      "outlet": "baltimoresun.com",
+      "headline": "Why Alex Murdaugh says original indictments for murder should be thrown out",
+      "url": "https://www.baltimoresun.com/2026/11/02/why-alex-murdaugh-says-original-indictments-for-murder-should-be-thrown-out/",
+      "flag": "verdict-watch"
+    },
+    {
+      "ts": "2026-11-02T10:57:00.000Z",
+      "outlet": "via MSN",
+      "headline": "Alex Murdaugh's legal team seeks to toss murder indictments over grand jury testimony",
+      "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-s-legal-team-seeks-to-toss-murder-indictments-over-grand-jury-testimony/ar-AA2gCaeT",
+      "flag": "verdict-watch"
+    },
+    {
+      "ts": "2026-11-02T10:27:00.000Z",
+      "outlet": "via Yahoo News",
+      "headline": "Alex Murdaugh seeks dismissal of murder indictments ahead of retrial",
+      "url": "https://www.yahoo.com/news/us/articles/alex-murdaugh-seeks-dismissal-murder-182647463.html",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-11-02T09:43:00.000Z",
       "outlet": "WCSC Live 5 News",
       "headline": "Murdaugh’s legal team asks for murder charge dismissal, claims lead agent lied on stand",
@@ -678,33 +699,9 @@
       "headline": "Alex Murdaugh On I-95? Pump The Brakes",
       "url": "https://www.fitsnews.com/2026/10/05/murdaugh/",
       "flag": null
-    },
-    {
-      "ts": "2026-10-05T05:12:47.000Z",
-      "outlet": "via MSN",
-      "headline": "Murdaugh defense team asks judge to force evidence release before retrial",
-      "url": "https://www.msn.com/en-us/news/other/murdaugh-defense-team-asks-judge-to-force-evidence-release-before-retrial/ar-AA2dBzMN",
-      "flag": null
-    },
-    {
-      "ts": "2026-10-03T06:41:00.000Z",
-      "outlet": "FITSNews",
-      "headline": "Week in Review: Murdaugh Murder Weapons Fallout",
-      "url": "https://www.fitsnews.com/2026/10/03/week-in-review-murdaugh-murder-weapons-fallout/",
-      "flag": null
-    },
-    {
-      "ts": "2026-10-02T15:01:00.000Z",
-      "outlet": "WLTX News19",
-      "headline": "Judge to hear Alex Murdaugh evidence disputes at Oct. 16 hearing",
-      "url": "https://www.wltx.com/article/news/special-reports/alex-murdaugh/judge-alex-murdaugh-evidence-disputes-oct16-hearing/101-af6c3c88-5532-4c18-aa0a-ab2a9dbdbf81",
-      "flag": null
     }
   ],
   "seen": [
-    "jwnkqn",
-    "11fh23p",
-    "172407x",
     "7afzhk",
     "nwchq3",
     "1u6tz43",
@@ -1301,6 +1298,9 @@
     "34rgo3",
     "gj23cu",
     "zix0jg",
-    "1ge1adl"
+    "1ge1adl",
+    "1aan6iq",
+    "1ge1tje",
+    "12wt27t"
   ]
 }

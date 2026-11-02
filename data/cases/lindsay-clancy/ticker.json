@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-02T12:03:00.000Z",
+      "outlet": "WCVB",
+      "headline": "Lindsay Clancy to appear in court as District Attorney considers retrial",
+      "url": "https://www.wcvb.com/article/lindsay-clancy-hearing-nov-1-2026/74309854",
+      "flag": null
+    },
+    {
       "ts": "2026-11-02T11:38:37.000Z",
       "outlet": "Boston 25 News",
       "headline": "Lindsay Clancy due back in court as questions remain over second murder trial",
@@ -692,13 +699,6 @@
       "headline": "'We let down Lindsay,' says juror who served in Clancy trial",
       "url": "https://www.wcvb.com/article/juror-interview-lindsay-clancy-trial-paula/73671485",
       "flag": null
-    },
-    {
-      "ts": "2026-09-10T18:33:00.000Z",
-      "outlet": "Boston.com",
-      "headline": "Lindsay Clancy’s lawyer renews motion for not-guilty finding ahead of potential retrial",
-      "url": "https://www.boston.com/news/crime/2026/09/10/lindsay-clancy-kevin-reddington-required-finding-motion/",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
@@ -1063,6 +1063,7 @@
     "1gmhfbz",
     "yjbadd",
     "1bi998t",
-    "nfcmkt"
+    "nfcmkt",
+    "1gc7lqh"
   ]
 }

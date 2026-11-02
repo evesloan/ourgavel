@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-02T17:10:54.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Judge weighs motions as DA plans to retry Lindsay Clancy",
+      "url": "https://www.boston25news.com/news/local/judge-weighs-motions-da-plans-retry-lindsay-clancy/3ASH6J67WFHK5OZ55BYRJDKT4M/",
+      "flag": null
+    },
+    {
       "ts": "2026-11-02T14:07:01.000Z",
       "outlet": "Boston 25 News",
       "headline": "Lindsay Clancy (live updates): Lindsay Clancy returns to court as retrial question remains",
@@ -692,13 +699,6 @@
       "headline": "Trump responds to calls for Lindsay Clancy pardon: ‘I hope they can work it out’",
       "url": "https://www.boston.com/news/crime/2026/09/14/lindsay-clancy-donald-trump-pardon-plea/",
       "flag": null
-    },
-    {
-      "ts": "2026-09-14T17:58:20.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "President Trump says he won’t intervene in Lindsay Clancy case after mistrial",
-      "url": "https://www.boston25news.com/news/local/president-trump-says-he-wont-intervene-lindsay-clancy-case-after-mistrial/2EW74M7OTBA4DOAG2FY7YBTOFE/",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
@@ -1067,6 +1067,7 @@
     "1gc7lqh",
     "1c2peod",
     "197th3j",
-    "t0t1ot"
+    "t0t1ot",
+    "1r2k90g"
   ]
 }

@@ -1,6 +1,20 @@
 {
   "items": [
     {
+      "ts": "2026-11-02T09:43:00.000Z",
+      "outlet": "WCSC Live 5 News",
+      "headline": "Murdaugh’s legal team asks for murder charge dismissal, claims lead agent lied on stand",
+      "url": "https://www.live5news.com/2026/11/02/murdaughs-legal-team-asks-murder-charge-dismissal-claims-lead-agent-lied-stand/",
+      "flag": "verdict-watch"
+    },
+    {
+      "ts": "2026-11-02T09:41:00.000Z",
+      "outlet": "abcnews4.com",
+      "headline": "Why Alex Murdaugh thinks his original indictments for murder should be thrown out",
+      "url": "https://abcnews4.com/news/local/why-alex-murdaugh-thinks-his-original-indictments-for-murder-should-be-thrown-out",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-10-30T23:14:00.000Z",
       "outlet": "The State",
       "headline": "SC attorney general candidates Stumbo and Hricik differ on Alex Murdaugh retrial",
@@ -685,25 +699,9 @@
       "headline": "Judge to hear Alex Murdaugh evidence disputes at Oct. 16 hearing",
       "url": "https://www.wltx.com/article/news/special-reports/alex-murdaugh/judge-alex-murdaugh-evidence-disputes-oct16-hearing/101-af6c3c88-5532-4c18-aa0a-ab2a9dbdbf81",
       "flag": null
-    },
-    {
-      "ts": "2026-10-02T12:46:39.000Z",
-      "outlet": "via MSN",
-      "headline": "Murdaugh trial judge calls urgent evidentiary hearing following defense’s letter",
-      "url": "https://www.msn.com/en-us/news/other/murdaugh-trial-judge-calls-urgent-evidentiary-hearing-following-defense-s-letter/ar-AA2drje7",
-      "flag": null
-    },
-    {
-      "ts": "2026-10-02T12:42:34.000Z",
-      "outlet": "via MSN",
-      "headline": "Hearing on DNA, ballistics evidence in Murdaugh case scheduled for Oct. 16",
-      "url": "https://www.msn.com/en-us/news/other/hearing-on-dna-ballistics-evidence-in-murdaugh-case-scheduled-for-oct-16/ar-AA2drAqH",
-      "flag": null
     }
   ],
   "seen": [
-    "15nx5dt",
-    "zc2ro7",
     "jgo3dx",
     "jwnkqn",
     "11fh23p",
@@ -1301,6 +1299,8 @@
     "b2e0ku",
     "1ged5lh",
     "lmkmpx",
-    "34rgo3"
+    "34rgo3",
+    "gj23cu",
+    "zix0jg"
   ]
 }

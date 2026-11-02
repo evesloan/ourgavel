@@ -1,6 +1,20 @@
 {
   "items": [
     {
+      "ts": "2026-11-02T14:07:01.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Lindsay Clancy (live updates): Lindsay Clancy returns to court as retrial question remains",
+      "url": "https://www.boston25news.com/news/local/lindsay-clancy-live-updates-lindsay-clancy-returns-court-retrial-question-remains/3ASH6J67WFHK5OZ55BYRJDKT4M/",
+      "flag": null
+    },
+    {
+      "ts": "2026-11-02T13:43:53.000Z",
+      "outlet": "Boston.com",
+      "headline": "Livestream: Lindsay Clancy returns to court for key hearing",
+      "url": "https://www.boston.com/news/crime/2026/11/02/livestream-lindsay-clancy-hearing-monday-nov-2-2026/",
+      "flag": null
+    },
+    {
       "ts": "2026-11-02T12:03:00.000Z",
       "outlet": "WCVB",
       "headline": "Lindsay Clancy to appear in court as District Attorney considers retrial",
@@ -12,6 +26,13 @@
       "outlet": "Boston 25 News",
       "headline": "Lindsay Clancy due back in court as questions remain over second murder trial",
       "url": "https://www.boston25news.com/news/local/lindsay-clancy-due-back-court-questions-remain-over-second-murder-trial/QXJSSYVK7NA4DISVHK6TOXDMXM/",
+      "flag": null
+    },
+    {
+      "ts": "2026-11-02T08:50:14.000Z",
+      "outlet": "NBC10 Boston",
+      "headline": "Livestream, live updates: Watch Lindsay Clancy's latest court hearing today",
+      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-murder-trial/lindsay-clancy-trial-hearing-live-stream-live-updates/4041526/",
       "flag": null
     },
     {
@@ -678,27 +699,6 @@
       "headline": "President Trump says he won’t intervene in Lindsay Clancy case after mistrial",
       "url": "https://www.boston25news.com/news/local/president-trump-says-he-wont-intervene-lindsay-clancy-case-after-mistrial/2EW74M7OTBA4DOAG2FY7YBTOFE/",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-09-14T10:10:00.000Z",
-      "outlet": "WCVB",
-      "headline": "'State situation, not federal': Trump responds to Lindsay Clancy pardon request",
-      "url": "https://www.wcvb.com/article/pardon-request-lindsay-clancy-trump-response/73717801",
-      "flag": null
-    },
-    {
-      "ts": "2026-09-11T16:00:04.000Z",
-      "outlet": "NBC10 Boston",
-      "headline": "Domestic violence allegations raise questions about holdout juror in Lindsay Clancy trial",
-      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-holdout-juror-had-history-of-domestic-violence-allegations/4013408/",
-      "flag": null
-    },
-    {
-      "ts": "2026-09-11T14:31:00.000Z",
-      "outlet": "WCVB",
-      "headline": "'We let down Lindsay,' says juror who served in Clancy trial",
-      "url": "https://www.wcvb.com/article/juror-interview-lindsay-clancy-trial-paula/73671485",
-      "flag": null
     }
   ],
   "seen": [
@@ -1064,6 +1064,9 @@
     "yjbadd",
     "1bi998t",
     "nfcmkt",
-    "1gc7lqh"
+    "1gc7lqh",
+    "1c2peod",
+    "197th3j",
+    "t0t1ot"
   ]
 }

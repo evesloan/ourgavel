@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-02T13:51:15.000Z",
+      "outlet": "fox5dc.com",
+      "headline": "Naresh Bhatt murder trial: Prosecution expected to rest case Monday",
+      "url": "https://www.fox5dc.com/news/naresh-bhatt-murder-trial-prosecution-expected-rest-case-monday",
+      "flag": null
+    },
+    {
       "ts": "2026-10-29T17:44:27.000Z",
       "outlet": "fox5dc.com",
       "headline": "Naresh Bhatt murder trial continues Thursday after jurors see digital search evidence",
@@ -217,6 +224,7 @@
     "13b9800",
     "15mdgx1",
     "h11qnx",
-    "1akcfpq"
+    "1akcfpq",
+    "1fvn2hv"
   ]
 }

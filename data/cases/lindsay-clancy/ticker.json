@@ -1,6 +1,20 @@
 {
   "items": [
     {
+      "ts": "2026-11-02T11:38:37.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Lindsay Clancy due back in court as questions remain over second murder trial",
+      "url": "https://www.boston25news.com/news/local/lindsay-clancy-due-back-court-questions-remain-over-second-murder-trial/QXJSSYVK7NA4DISVHK6TOXDMXM/",
+      "flag": null
+    },
+    {
+      "ts": "2026-11-02T06:22:20.000Z",
+      "outlet": "NBC10 Boston",
+      "headline": "Will the Lindsay Clancy trial be retried? Judge hears motions today.",
+      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-trial-retried-judge-hears-motions/4041593/",
+      "flag": null
+    },
+    {
       "ts": "2026-11-01T15:37:00.000Z",
       "outlet": "WCVB",
       "headline": "Lindsay Clancy scheduled to attend hearing on Monday",
@@ -685,20 +699,6 @@
       "headline": "Lindsay Clancy’s lawyer renews motion for not-guilty finding ahead of potential retrial",
       "url": "https://www.boston.com/news/crime/2026/09/10/lindsay-clancy-kevin-reddington-required-finding-motion/",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-09-10T18:29:54.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "Lindsay Clancy seeks acquittal following mistrial, arguing evidence was legally insufficient",
-      "url": "https://www.boston25news.com/news/local/lindsay-clancy-seeks-acquittal-following-mistrial-arguing-evidence-was-legally-insufficient/OO33X5EBWZC7HILK2ORTAVJH7E/",
-      "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-09-10T17:13:00.000Z",
-      "outlet": "WCVB",
-      "headline": "Lindsay Clancy asks judge to find her not guilty after mistrial",
-      "url": "https://www.wcvb.com/article/lindsay-clancy-motion-for-required-finding-sept-10/73669616",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
@@ -1061,6 +1061,8 @@
     "1sc39rr",
     "9sx4ek",
     "1gmhfbz",
-    "yjbadd"
+    "yjbadd",
+    "1bi998t",
+    "nfcmkt"
   ]
 }

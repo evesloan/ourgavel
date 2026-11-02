@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-02T13:38:00.000Z",
+      "outlet": "FITSNews",
+      "headline": "Murdaugh Retrial: Indictment Dismissal Discussion",
+      "url": "https://www.fitsnews.com/2026/11/02/murdaugh-retrial-indictment-dismissal-discussion/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-11-02T12:44:00.000Z",
       "outlet": "via Yahoo News",
       "headline": "Murdaugh lawyers ask judge to toss double-murder charges ahead of retrial",
@@ -692,17 +699,9 @@
       "headline": "State disputes Alex Murdaugh defense claims over cell phone evidence ahead of retrial",
       "url": "https://www.wltx.com/article/news/special-reports/alex-murdaugh/state-disputes-alex-murdaugh-defense-claims-cell-phone-evidence-ahead-of-retrial/101-0540b714-56f5-478c-b2ea-cf2e33c38665",
       "flag": null
-    },
-    {
-      "ts": "2026-10-06T12:25:00.000Z",
-      "outlet": "wjcl.com",
-      "headline": "South Carolina prosecutors clash with Alex Murdaugh defense over cellphone evidence in retrial fight",
-      "url": "https://www.wjcl.com/article/alex-murdaugh-cellphone-evidence-dispute/74055671",
-      "flag": null
     }
   ],
   "seen": [
-    "1u6tz43",
     "1laios8",
     "1ebqdpc",
     "1bd6acy",
@@ -1301,6 +1300,7 @@
     "1ge1tje",
     "12wt27t",
     "1ge18qa",
-    "1sbz3h"
+    "1sbz3h",
+    "1ook7sg"
   ]
 }

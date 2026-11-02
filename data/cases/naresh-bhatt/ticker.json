@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-02T18:37:39.000Z",
+      "outlet": "nbcwashington.com",
+      "headline": "Prosecution rests in Naresh Bhatt trial after emotional testimony from Mamta's brother",
+      "url": "https://www.nbcwashington.com/news/local/northern-virginia/prosecution-rests-in-naresh-bhatt-trial-after-emotional-testimony-from-mamtas-brother/4175615/",
+      "flag": null
+    },
+    {
       "ts": "2026-11-02T13:51:15.000Z",
       "outlet": "fox5dc.com",
       "headline": "Naresh Bhatt murder trial: Prosecution expected to rest case Monday",
@@ -225,6 +232,7 @@
     "15mdgx1",
     "h11qnx",
     "1akcfpq",
-    "1fvn2hv"
+    "1fvn2hv",
+    "o21wrx"
   ]
 }

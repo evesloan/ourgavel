@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-02T12:44:00.000Z",
+      "outlet": "via Yahoo News",
+      "headline": "Murdaugh lawyers ask judge to toss double-murder charges ahead of retrial",
+      "url": "https://www.yahoo.com/news/us/articles/murdaugh-lawyers-ask-judge-toss-204500921.html",
+      "flag": null
+    },
+    {
       "ts": "2026-11-02T11:10:00.000Z",
       "outlet": "baltimoresun.com",
       "headline": "Why Alex Murdaugh says original indictments for murder should be thrown out",
@@ -692,17 +699,9 @@
       "headline": "South Carolina prosecutors clash with Alex Murdaugh defense over cellphone evidence in retrial fight",
       "url": "https://www.wjcl.com/article/alex-murdaugh-cellphone-evidence-dispute/74055671",
       "flag": null
-    },
-    {
-      "ts": "2026-10-06T11:13:54.000Z",
-      "outlet": "FITSNews",
-      "headline": "Murdaugh Murders: Retracing Greg Alexander’s Road To Moselle",
-      "url": "https://www.fitsnews.com/2026/10/06/murdaugh-murders-retracing-greg-alexander/",
-      "flag": null
     }
   ],
   "seen": [
-    "nwchq3",
     "1u6tz43",
     "1laios8",
     "1ebqdpc",
@@ -1301,6 +1300,7 @@
     "1aan6iq",
     "1ge1tje",
     "12wt27t",
-    "1ge18qa"
+    "1ge18qa",
+    "1sbz3h"
   ]
 }

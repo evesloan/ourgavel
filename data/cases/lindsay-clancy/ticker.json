@@ -1,6 +1,20 @@
 {
   "items": [
     {
+      "ts": "2026-11-02T18:39:37.000Z",
+      "outlet": "Court TV",
+      "headline": "‘You’re not going to stop me’: Lindsay Clancy’s attorney spars with judge in push to dismiss murder charges",
+      "url": "https://www.courttv.com/news/youre-not-going-to-stop-me-lindsay-clancys-attorney-spars-with-judge-in-push-to-dismiss-murder-charges/",
+      "flag": null
+    },
+    {
+      "ts": "2026-11-02T18:32:43.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Lindsay Clancy returns to court in a bid to dismiss charges she killed her three young children",
+      "url": "https://www.boston25news.com/news/local/lindsay-clancy-returns-court-bid-dismiss-charges-she-killed-her-three-young-children/JPX3TXQNZZBMREHAVS6T2HHCHU/",
+      "flag": null
+    },
+    {
       "ts": "2026-11-02T17:10:54.000Z",
       "outlet": "Boston 25 News",
       "headline": "Judge weighs motions as DA plans to retry Lindsay Clancy",
@@ -685,20 +699,6 @@
       "headline": "Judge keeping names of jurors in Lindsay Clancy trial impounded",
       "url": "https://www.nbcboston.com/news/local/lindsay-clancy-juror-list-impounded/4014797/",
       "flag": null
-    },
-    {
-      "ts": "2026-09-15T02:14:07.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "Doxing to death threats to six-figure fundraiser, Lindsay Clancy jurors face intense public scrutiny",
-      "url": "https://www.boston25news.com/news/local/doxing-death-threats-six-figure-fundraiser-lindsay-clancy-jurors-face-intense-public-scrutiny/VQ6D7747FBCOVA2VWD4RF3WSNA/",
-      "flag": null
-    },
-    {
-      "ts": "2026-09-14T19:18:28.000Z",
-      "outlet": "Boston.com",
-      "headline": "Trump responds to calls for Lindsay Clancy pardon: ‘I hope they can work it out’",
-      "url": "https://www.boston.com/news/crime/2026/09/14/lindsay-clancy-donald-trump-pardon-plea/",
-      "flag": null
     }
   ],
   "seen": [
@@ -1068,6 +1068,8 @@
     "1c2peod",
     "197th3j",
     "t0t1ot",
-    "1r2k90g"
+    "1r2k90g",
+    "1cx9g3p",
+    "18e3ddn"
   ]
 }

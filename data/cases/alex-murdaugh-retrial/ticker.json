@@ -16,6 +16,13 @@
     },
     {
       "ts": "2026-11-02T10:27:00.000Z",
+      "outlet": "via MSN",
+      "headline": "Alex Murdaugh seeks dismissal of murder indictments ahead of retrial",
+      "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-seeks-dismissal-of-murder-indictments-ahead-of-retrial/ar-AA2gBDCv",
+      "flag": "verdict-watch"
+    },
+    {
+      "ts": "2026-11-02T10:27:00.000Z",
       "outlet": "via Yahoo News",
       "headline": "Alex Murdaugh seeks dismissal of murder indictments ahead of retrial",
       "url": "https://www.yahoo.com/news/us/articles/alex-murdaugh-seeks-dismissal-murder-182647463.html",
@@ -692,17 +699,9 @@
       "headline": "Murdaugh Murders: Retracing Greg Alexander’s Road To Moselle",
       "url": "https://www.fitsnews.com/2026/10/06/murdaugh-murders-retracing-greg-alexander/",
       "flag": null
-    },
-    {
-      "ts": "2026-10-05T08:41:00.000Z",
-      "outlet": "FITSNews",
-      "headline": "Alex Murdaugh On I-95? Pump The Brakes",
-      "url": "https://www.fitsnews.com/2026/10/05/murdaugh/",
-      "flag": null
     }
   ],
   "seen": [
-    "7afzhk",
     "nwchq3",
     "1u6tz43",
     "1laios8",
@@ -1301,6 +1300,7 @@
     "1ge1adl",
     "1aan6iq",
     "1ge1tje",
-    "12wt27t"
+    "12wt27t",
+    "1ge18qa"
   ]
 }

@@ -8,6 +8,13 @@
       "flag": null
     },
     {
+      "ts": "2026-11-02T21:00:00.000Z",
+      "outlet": "The State",
+      "headline": "Citing alleged false evidence, Murdaugh lawyers seek dismissal of murder charges",
+      "url": "https://www.thestate.com/news/local/crime/article317884153.html",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-11-02T13:38:00.000Z",
       "outlet": "FITSNews",
       "headline": "Murdaugh Retrial: Indictment Dismissal Discussion",
@@ -692,17 +699,9 @@
       "headline": "State asks judge to deny Murdaugh request for additional cellphone data ahead of retrial",
       "url": "https://www.wistv.com/2026/10/07/state-asks-judge-deny-murdaugh-request-additional-cellphone-data-ahead-retrial/",
       "flag": null
-    },
-    {
-      "ts": "2026-10-06T21:59:00.000Z",
-      "outlet": "The Post and Courier",
-      "headline": "Whom to trust? Allegations of lies and mistruths begin to overwhelm Alex Murdaugh saga",
-      "url": "https://www.postandcourier.com/murdaugh-updates/alex-murdaugh-murder-lies/article_933ee2b0-0404-4177-8f49-cf6b3ddaac88.html",
-      "flag": null
     }
   ],
   "seen": [
-    "1bd6acy",
     "1y291nv",
     "md2d8n",
     "1d0qled",
@@ -1301,6 +1300,7 @@
     "1sbz3h",
     "1ook7sg",
     "1ge1f40",
-    "19t4hqe"
+    "19t4hqe",
+    "1ode3h6"
   ]
 }

@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-03T08:14:42.000Z",
+      "outlet": "via MSN",
+      "headline": "Alex Murdaugh seeks dismissal of murder indictments ahead of retrial",
+      "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-seeks-dismissal-of-murder-indictments-ahead-of-retrial/ar-AA2gGjNE",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-11-03T03:45:00.000Z",
       "outlet": "foxcarolina.com",
       "headline": "Murdaugh defense accuses the state, SLED investigators of misconduct",
@@ -692,17 +699,9 @@
       "headline": "Prosecutors ask judge to deny Alex Murdaugh's cellphone data motion",
       "url": "https://www.southcarolinapublicradio.org/sc-news/2026-10-07/prosecutors-ask-judge-to-deny-alex-murdaughs-cellphone-data-motion",
       "flag": null
-    },
-    {
-      "ts": "2026-10-07T03:21:00.000Z",
-      "outlet": "WIS News 10",
-      "headline": "State asks judge to deny Murdaugh request for additional cellphone data ahead of retrial",
-      "url": "https://www.wistv.com/2026/10/07/state-asks-judge-deny-murdaugh-request-additional-cellphone-data-ahead-retrial/",
-      "flag": null
     }
   ],
   "seen": [
-    "md2d8n",
     "1d0qled",
     "no9k21",
     "uhbduz",
@@ -1301,6 +1300,7 @@
     "1ge1f40",
     "19t4hqe",
     "1ode3h6",
-    "1ge3znf"
+    "1ge3znf",
+    "1ge4kd3"
   ]
 }

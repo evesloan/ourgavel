@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-03T03:45:00.000Z",
+      "outlet": "foxcarolina.com",
+      "headline": "Murdaugh defense accuses the state, SLED investigators of misconduct",
+      "url": "https://www.foxcarolina.com/2026/11/03/murdaugh-defense-accuses-state-sled-investigators-misconduct/",
+      "flag": null
+    },
+    {
       "ts": "2026-11-02T13:38:00.000Z",
       "outlet": "FITSNews",
       "headline": "Murdaugh Retrial: Indictment Dismissal Discussion",
@@ -692,17 +699,9 @@
       "headline": "Whom to trust? Allegations of lies and mistruths begin to overwhelm Alex Murdaugh saga",
       "url": "https://www.postandcourier.com/murdaugh-updates/alex-murdaugh-murder-lies/article_933ee2b0-0404-4177-8f49-cf6b3ddaac88.html",
       "flag": null
-    },
-    {
-      "ts": "2026-10-06T18:50:02.000Z",
-      "outlet": "FITSNews",
-      "headline": "Murdaugh Retrial: State Accuses Defense Of ‘Brazen Falsehoods’",
-      "url": "https://www.fitsnews.com/2026/10/06/murdaugh-retrial/",
-      "flag": null
     }
   ],
   "seen": [
-    "1ebqdpc",
     "1bd6acy",
     "1y291nv",
     "md2d8n",
@@ -1301,6 +1300,7 @@
     "1ge18qa",
     "1sbz3h",
     "1ook7sg",
-    "1ge1f40"
+    "1ge1f40",
+    "19t4hqe"
   ]
 }

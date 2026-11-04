@@ -1,6 +1,20 @@
 {
   "items": [
     {
+      "ts": "2026-11-04T17:04:36.000Z",
+      "outlet": "fox5dc.com",
+      "headline": "Naresh Bhatt takes stand in murder trial over death of wife",
+      "url": "https://www.fox5dc.com/news/naresh-bhatt-takes-stand-murder-trial-over-death-wife",
+      "flag": null
+    },
+    {
+      "ts": "2026-11-04T11:42:50.000Z",
+      "outlet": "nbcwashington.com",
+      "headline": "Naresh Bhatt takes the stand in his murder trial",
+      "url": "https://www.nbcwashington.com/news/local/northern-virginia/naresh-bhatt-takes-the-stand-in-his-murder-trial/4177744/",
+      "flag": null
+    },
+    {
       "ts": "2026-11-02T18:37:39.000Z",
       "outlet": "nbcwashington.com",
       "headline": "Prosecution rests in Naresh Bhatt trial after emotional testimony from Mamta's brother",
@@ -233,6 +247,8 @@
     "h11qnx",
     "1akcfpq",
     "1fvn2hv",
-    "o21wrx"
+    "o21wrx",
+    "xlvmnx",
+    "b72zmq"
   ]
 }

@@ -43,20 +43,6 @@
       "flag": "verdict-watch"
     },
     {
-      "ts": "2026-11-02T12:45:00.000Z",
-      "outlet": "via MSN",
-      "headline": "Murdaugh lawyers ask judge to toss double-murder charges ahead of retrial",
-      "url": "https://www.msn.com/en-us/news/news/murdaugh-lawyers-ask-judge-to-toss-double-murder-charges-ahead-of-retrial/ar-AA2gBLX1",
-      "flag": null
-    },
-    {
-      "ts": "2026-11-02T12:44:00.000Z",
-      "outlet": "via Yahoo News",
-      "headline": "Murdaugh lawyers ask judge to toss double-murder charges ahead of retrial",
-      "url": "https://www.yahoo.com/news/us/articles/murdaugh-lawyers-ask-judge-toss-204500921.html",
-      "flag": null
-    },
-    {
       "ts": "2026-11-02T11:10:00.000Z",
       "outlet": "baltimoresun.com",
       "headline": "Why Alex Murdaugh says original indictments for murder should be thrown out",
@@ -97,6 +83,13 @@
       "headline": "Why Alex Murdaugh thinks his original indictments for murder should be thrown out",
       "url": "https://abcnews4.com/news/local/why-alex-murdaugh-thinks-his-original-indictments-for-murder-should-be-thrown-out",
       "flag": "verdict-watch"
+    },
+    {
+      "ts": "2026-11-02T07:45:00.000Z",
+      "outlet": "The Post and Courier",
+      "headline": "Murdaugh lawyers ask judge to toss double-murder charges ahead of retrial",
+      "url": "https://www.postandcourier.com/murdaugh-updates/murdaugh-motion-double-murder-indictment-dismissal/article_f033b67b-4482-4c1f-811b-8761c62ec920.html",
+      "flag": null
     },
     {
       "ts": "2026-10-30T23:14:00.000Z",
@@ -702,7 +695,6 @@
     }
   ],
   "seen": [
-    "uhbduz",
     "ap17b9",
     "1hknuer",
     "m8mgnh",
@@ -1301,6 +1293,7 @@
     "1ge3znf",
     "1ge4kd3",
     "ureez0",
-    "118odnn"
+    "118odnn",
+    "185uodh"
   ]
 }

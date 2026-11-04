@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-04T06:44:00.000Z",
+      "outlet": "southcarolinapublicradio.org",
+      "headline": "Murdaugh's lawyers ask for double-murder charges to be thrown out",
+      "url": "https://www.southcarolinapublicradio.org/sc-news/2026-11-04/murdaughs-lawyers-ask-for-double-murder-charges-to-be-thrown-out",
+      "flag": null
+    },
+    {
       "ts": "2026-11-03T21:01:00.000Z",
       "outlet": "The Post and Courier",
       "headline": "Yemassee police chief’s name again surfaces in Murdaugh double homicide investigation",
@@ -692,17 +699,9 @@
       "headline": "State responds to Murdaugh evidence disputes ahead of Oct. 16 hearing",
       "url": "https://www.wltx.com/article/news/special-reports/alex-murdaugh/state-responds-murdaugh-evidence-disputes-oct16-hearing/101-e7a3133f-207b-41cd-94dc-3a74bf89c4a7",
       "flag": null
-    },
-    {
-      "ts": "2026-10-08T17:16:59.000Z",
-      "outlet": "FITSNews",
-      "headline": "Murdaugh Retrial: Secrecy, Science And A Flood Of Filings",
-      "url": "https://www.fitsnews.com/2026/10/08/murdaugh-retrial-secrecy-science-and-a-flood-of-filings/",
-      "flag": null
     }
   ],
   "seen": [
-    "no9k21",
     "uhbduz",
     "ap17b9",
     "1hknuer",
@@ -1301,6 +1300,7 @@
     "1ode3h6",
     "1ge3znf",
     "1ge4kd3",
-    "ureez0"
+    "ureez0",
+    "118odnn"
   ]
 }

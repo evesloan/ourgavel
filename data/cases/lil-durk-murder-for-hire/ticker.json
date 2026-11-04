@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-03T22:20:44.000Z",
+      "outlet": "AllHipHop",
+      "headline": "Quando Rondo Leaves Federal Custody After Completing Halfway-House Term",
+      "url": "https://allhiphop.com/news/quando-rondo-leaves-federal-custody-after-completing-halfway-house-term/",
+      "flag": null
+    },
+    {
       "ts": "2026-10-28T07:50:00.000Z",
       "outlet": "hotnewhiphop.com",
       "headline": "Lul Pab's Mom Reveals She's Okay With Lil Durk Receiving Bond",
@@ -692,13 +699,6 @@
       "headline": "Trap Lore Ross Immediately Refuted After Claiming Brian Steel Was About To Cry During Lil Durk Trial",
       "url": "https://www.hotnewhiphop.com/1008066-trap-lore-ross-brian-steel-cried-lil-durk-trial",
       "flag": null
-    },
-    {
-      "ts": "2026-09-01T03:14:00.000Z",
-      "outlet": "ibtimes.sg",
-      "headline": "Lil Durk Trial: OTF Jam's Claims About the Quando Rondo Shooting, Explained",
-      "url": "https://www.ibtimes.sg/lil-durk-trial-otf-jams-claims-about-quando-rondo-shooting-explained-93192",
-      "flag": null
     }
   ],
   "seen": [
@@ -927,6 +927,7 @@
     "1rednii",
     "1ge2b8k",
     "kxh40d",
-    "1g9yqpy"
+    "1g9yqpy",
+    "abqjju"
   ]
 }

@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-04T10:01:00.000Z",
+      "outlet": "via Yahoo News",
+      "headline": "Murdaugh asks to dismiss murder indictments ahead of retrial",
+      "url": "https://www.yahoo.com/news/videos/murdaugh-asks-dismiss-murder-indictments-180043132.html",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-11-04T06:44:00.000Z",
       "outlet": "southcarolinapublicradio.org",
       "headline": "Murdaugh's lawyers ask for double-murder charges to be thrown out",
@@ -695,7 +702,6 @@
     }
   ],
   "seen": [
-    "1hknuer",
     "m8mgnh",
     "1qa5gaz",
     "386vyx",
@@ -1294,6 +1300,7 @@
     "ureez0",
     "118odnn",
     "185uodh",
-    "1ge72n5"
+    "1ge72n5",
+    "1co1trt"
   ]
 }

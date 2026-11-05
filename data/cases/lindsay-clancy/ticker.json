@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-05T21:55:12.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Plymouth DA considers legal fate of two moms accused of killing their children: Clancy and Sanders",
+      "url": "https://www.boston25news.com/news/local/plymouth-da-considers-legal-fate-two-moms-accused-killing-their-children-clancy-sanders/2IZP4YWGWBB2VAHGIGPNO6DKR4/",
+      "flag": null
+    },
+    {
       "ts": "2026-11-02T18:39:37.000Z",
       "outlet": "Court TV",
       "headline": "‘You’re not going to stop me’: Lindsay Clancy’s attorney spars with judge in push to dismiss murder charges",
@@ -692,13 +699,6 @@
       "headline": "Lindsay Clancy judge indefinitely extends order shielding identities of jurors",
       "url": "https://www.boston25news.com/news/local/lindsay-clancy-judge-indefinitely-extends-order-shielding-identities-jurors/C7M7GI6HJVHYFMWI52NGPZ3LQ4/",
       "flag": null
-    },
-    {
-      "ts": "2026-09-15T12:07:40.000Z",
-      "outlet": "NBC10 Boston",
-      "headline": "Judge keeping names of jurors in Lindsay Clancy trial impounded",
-      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-juror-list-impounded/4014797/",
-      "flag": null
     }
   ],
   "seen": [
@@ -1070,6 +1070,7 @@
     "t0t1ot",
     "1r2k90g",
     "1cx9g3p",
-    "18e3ddn"
+    "18e3ddn",
+    "a6oiws"
   ]
 }

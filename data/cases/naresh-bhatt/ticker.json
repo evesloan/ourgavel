@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-05T11:12:03.000Z",
+      "outlet": "nbcwashington.com",
+      "headline": "Naresh Bhatt testifies wife killed herself, he tried to dispose of her body",
+      "url": "https://www.nbcwashington.com/news/local/northern-virginia/naresh-bhatt-testifies-wife-killed-herself-he-tried-to-dispose-of-her-body/4178386/",
+      "flag": null
+    },
+    {
       "ts": "2026-11-04T17:04:36.000Z",
       "outlet": "fox5dc.com",
       "headline": "Naresh Bhatt takes stand in murder trial over death of wife",
@@ -249,6 +256,7 @@
     "1fvn2hv",
     "o21wrx",
     "xlvmnx",
-    "b72zmq"
+    "b72zmq",
+    "ngwtmi"
   ]
 }

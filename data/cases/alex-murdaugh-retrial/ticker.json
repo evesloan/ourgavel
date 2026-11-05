@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-05T02:08:38.000Z",
+      "outlet": "via MSN",
+      "headline": "Alex Murdaugh seeks dismissal of murder charges before retrial",
+      "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-seeks-dismissal-of-murder-charges-before-retrial/ar-AA2gNB55",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-11-04T10:01:00.000Z",
       "outlet": "via Yahoo News",
       "headline": "Murdaugh asks to dismiss murder indictments ahead of retrial",
@@ -692,17 +699,9 @@
       "headline": "Murdaugh prosecutors: 'We can't \"confirm or deny\" Greg Alexander probe'",
       "url": "https://www.msn.com/en-us/news/other/murdaugh-prosecutors-we-cant-confirm-or-deny-greg-alexander-probe/ar-AA2dSTZ7",
       "flag": null
-    },
-    {
-      "ts": "2026-10-08T17:57:54.000Z",
-      "outlet": "WLTX News19",
-      "headline": "State responds to Murdaugh evidence disputes ahead of Oct. 16 hearing",
-      "url": "https://www.wltx.com/article/news/special-reports/alex-murdaugh/state-responds-murdaugh-evidence-disputes-oct16-hearing/101-e7a3133f-207b-41cd-94dc-3a74bf89c4a7",
-      "flag": null
     }
   ],
   "seen": [
-    "m8mgnh",
     "1qa5gaz",
     "386vyx",
     "1v9ks97",
@@ -1301,6 +1300,7 @@
     "118odnn",
     "185uodh",
     "1ge72n5",
-    "1co1trt"
+    "1co1trt",
+    "1ge8txt"
   ]
 }

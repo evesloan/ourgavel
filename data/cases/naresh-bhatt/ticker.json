@@ -1,6 +1,20 @@
 {
   "items": [
     {
+      "ts": "2026-11-05T16:42:55.000Z",
+      "outlet": "fox5dc.com",
+      "headline": "Naresh Bhatt testifies he dismembered wife's body after finding her dead in bedroom",
+      "url": "https://www.fox5dc.com/news/naresh-bhatt-testifies-he-dismembered-wifes-body-after-finding-her-dead-bedroom",
+      "flag": null
+    },
+    {
+      "ts": "2026-11-05T11:12:03.000Z",
+      "outlet": "nbcwashington.com",
+      "headline": "Naresh Bhatt testifies he found his wife dead, then disposed of her body",
+      "url": "https://www.nbcwashington.com/news/local/northern-virginia/naresh-bhatt-testifies-he-found-his-wife-dead-then-disposed-of-her-body/4178386/",
+      "flag": null
+    },
+    {
       "ts": "2026-11-05T11:12:03.000Z",
       "outlet": "nbcwashington.com",
       "headline": "Naresh Bhatt testifies wife killed herself, he tried to dispose of her body",
@@ -257,6 +271,8 @@
     "o21wrx",
     "xlvmnx",
     "b72zmq",
-    "ngwtmi"
+    "ngwtmi",
+    "aslh9q",
+    "1jhbj5y"
   ]
 }

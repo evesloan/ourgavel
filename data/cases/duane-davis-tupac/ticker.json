@@ -1,6 +1,20 @@
 {
   "items": [
     {
+      "ts": "2026-11-06T20:53:46.000Z",
+      "outlet": "Las Vegas Review-Journal",
+      "headline": "Michael Sanft, attorney for defendant in Tupac murder trial has died, friend says",
+      "url": "https://www.reviewjournal.com/crime/courts/michael-sanft-attorney-for-defendant-in-tupac-murder-trial-has-died-friend-says-3910940/",
+      "flag": null
+    },
+    {
+      "ts": "2026-11-06T20:36:23.000Z",
+      "outlet": "KTNV Las Vegas",
+      "headline": "Michael Sanft, Las Vegas attorney who represented 'Keefe D', dead at 54",
+      "url": "https://www.ktnv.com/news/michael-sanft-las-vegas-attorney-who-represented-keefe-d-dead-at-54",
+      "flag": null
+    },
+    {
       "ts": "2026-11-06T20:19:46.000Z",
       "outlet": "FOX5 Las Vegas",
       "headline": "Sources: Attorney who represented ‘Keffe D’ in Tupac murder trial dies",
@@ -744,6 +758,8 @@
     "1wyb2v",
     "1mqvkre",
     "qui4w6",
-    "14hrwv3"
+    "14hrwv3",
+    "15ma7kq",
+    "r7tmd4"
   ]
 }

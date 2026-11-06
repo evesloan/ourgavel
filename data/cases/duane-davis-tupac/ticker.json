@@ -10,6 +10,13 @@
     {
       "ts": "2026-11-06T20:36:23.000Z",
       "outlet": "KTNV Las Vegas",
+      "headline": "Michael Sanft, Las Vegas attorney who represented 'Keefe D', dead at 55",
+      "url": "https://www.ktnv.com/news/michael-sanft-las-vegas-attorney-who-represented-keefe-d-michele-fiore-dead-at-55",
+      "flag": null
+    },
+    {
+      "ts": "2026-11-06T20:36:23.000Z",
+      "outlet": "KTNV Las Vegas",
       "headline": "Michael Sanft, Las Vegas attorney who represented 'Keefe D', dead at 54",
       "url": "https://www.ktnv.com/news/michael-sanft-las-vegas-attorney-who-represented-keefe-d-dead-at-54",
       "flag": null
@@ -760,6 +767,7 @@
     "qui4w6",
     "14hrwv3",
     "15ma7kq",
-    "r7tmd4"
+    "r7tmd4",
+    "y4fkbb"
   ]
 }

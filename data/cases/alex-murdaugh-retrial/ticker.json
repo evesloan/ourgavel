@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-06T23:27:00.000Z",
+      "outlet": "FITSNews",
+      "headline": "Murdaugh Retrial: State Concedes Errors, Rejects Claims Of Fabricated Evidence",
+      "url": "https://www.fitsnews.com/2026/11/06/murdaugh-states-response/",
+      "flag": null
+    },
+    {
       "ts": "2026-11-05T19:20:00.000Z",
       "outlet": "abccolumbia.com",
       "headline": "Why Alex Murdaugh thinks his original indictments for murder should be thrown out",
@@ -692,17 +699,9 @@
       "headline": "Week in Review: S.C. Lawmaker Charges, Tragic Child Cases, Murdaugh Filing Flurry",
       "url": "https://www.fitsnews.com/2026/10/10/week-in-review-s-c-lawmaker-charges-tragic-child-cases-murdaugh-filing-flurry/",
       "flag": null
-    },
-    {
-      "ts": "2026-10-09T16:00:44.000Z",
-      "outlet": "FITSNews",
-      "headline": "Murdaugh Retrial: Defense Challenges State’s Secrecy",
-      "url": "https://www.fitsnews.com/2026/10/09/murdaugh-retrial-defense-challenges-states-secrecy/",
-      "flag": null
     }
   ],
   "seen": [
-    "1v9ks97",
     "1isg55l",
     "sknivl",
     "1b2qjks",
@@ -1301,6 +1300,7 @@
     "1co1trt",
     "1ge8txt",
     "19mre1b",
-    "ajnqdc"
+    "ajnqdc",
+    "1085tce"
   ]
 }

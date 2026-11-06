@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-05T19:20:00.000Z",
+      "outlet": "abccolumbia.com",
+      "headline": "Why Alex Murdaugh thinks his original indictments for murder should be thrown out",
+      "url": "https://www.abccolumbia.com/2026/11/05/why-alex-murdaugh-thinks-his-original-indictments-for-murder-should-be-thrown-out/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-11-05T02:08:38.000Z",
       "outlet": "via MSN",
       "headline": "Alex Murdaugh seeks dismissal of murder charges before retrial",
@@ -692,17 +699,9 @@
       "headline": "Alex Murdaugh retrial: State opposes evidence requests",
       "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-retrial-state-opposes-evidence-requests/ar-AA2dTdzb",
       "flag": null
-    },
-    {
-      "ts": "2026-10-09T02:07:59.000Z",
-      "outlet": "via MSN",
-      "headline": "Murdaugh prosecutors: 'We can't \"confirm or deny\" Greg Alexander probe'",
-      "url": "https://www.msn.com/en-us/news/other/murdaugh-prosecutors-we-cant-confirm-or-deny-greg-alexander-probe/ar-AA2dSTZ7",
-      "flag": null
     }
   ],
   "seen": [
-    "1qa5gaz",
     "386vyx",
     "1v9ks97",
     "1isg55l",
@@ -1301,6 +1300,7 @@
     "185uodh",
     "1ge72n5",
     "1co1trt",
-    "1ge8txt"
+    "1ge8txt",
+    "19mre1b"
   ]
 }

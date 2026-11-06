@@ -289,6 +289,13 @@
     },
     {
       "ts": "2026-10-16T12:07:00.000Z",
+      "outlet": "mankatofreepress.com",
+      "headline": "Fight over evidence in Alex Murdaugh retrial turns to DNA and missing murder weapons",
+      "url": "https://www.mankatofreepress.com/news/state_national_news/fight-over-evidence-in-alex-murdaugh-retrial-turns-to-dna-and-missing-murder-weapons/article_9a5b4fdd-56d1-57ba-a509-3d3c996f671d.html",
+      "flag": null
+    },
+    {
+      "ts": "2026-10-16T12:07:00.000Z",
       "outlet": "enidnews.com",
       "headline": "Fight over evidence in Alex Murdaugh retrial turns to DNA and missing murder weapons",
       "url": "https://www.enidnews.com/region/fight-over-evidence-in-alex-murdaugh-retrial-turns-to-dna-and-missing-murder-weapons/article_eed8ecd2-140a-5fd8-a80c-c093e3cbbb3d.html",
@@ -692,17 +699,9 @@
       "headline": "Murdaugh Retrial: Defense Challenges State’s Secrecy",
       "url": "https://www.fitsnews.com/2026/10/09/murdaugh-retrial-defense-challenges-states-secrecy/",
       "flag": null
-    },
-    {
-      "ts": "2026-10-09T05:02:46.000Z",
-      "outlet": "via MSN",
-      "headline": "Alex Murdaugh retrial: State opposes evidence requests",
-      "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-retrial-state-opposes-evidence-requests/ar-AA2dTdzb",
-      "flag": null
     }
   ],
   "seen": [
-    "386vyx",
     "1v9ks97",
     "1isg55l",
     "sknivl",
@@ -1301,6 +1300,7 @@
     "1ge72n5",
     "1co1trt",
     "1ge8txt",
-    "19mre1b"
+    "19mre1b",
+    "ajnqdc"
   ]
 }

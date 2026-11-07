@@ -8,6 +8,13 @@
       "flag": null
     },
     {
+      "ts": "2026-11-06T10:42:00.000Z",
+      "outlet": "seattletimes.com",
+      "headline": "Murdaugh prosecutors admit errors but deny falsifying evidence",
+      "url": "https://www.seattletimes.com/nation-world/murdaugh-prosecutors-admit-errors-but-deny-falsifying-evidence/",
+      "flag": null
+    },
+    {
       "ts": "2026-11-05T19:20:00.000Z",
       "outlet": "abccolumbia.com",
       "headline": "Why Alex Murdaugh thinks his original indictments for murder should be thrown out",
@@ -692,17 +699,9 @@
       "headline": "Becky Hill Lawsuit: Murdaugh Takes Fight To Appeals Court",
       "url": "https://www.fitsnews.com/2026/10/11/becky-hill-lawsuit-murdaugh-takes-fight-to-appeals-court/",
       "flag": null
-    },
-    {
-      "ts": "2026-10-10T13:29:36.000Z",
-      "outlet": "FITSNews",
-      "headline": "Week in Review: S.C. Lawmaker Charges, Tragic Child Cases, Murdaugh Filing Flurry",
-      "url": "https://www.fitsnews.com/2026/10/10/week-in-review-s-c-lawmaker-charges-tragic-child-cases-murdaugh-filing-flurry/",
-      "flag": null
     }
   ],
   "seen": [
-    "1isg55l",
     "sknivl",
     "1b2qjks",
     "g9f3cs",
@@ -1301,6 +1300,7 @@
     "1ge8txt",
     "19mre1b",
     "ajnqdc",
-    "1085tce"
+    "1085tce",
+    "17uyjg8"
   ]
 }

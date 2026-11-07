@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-07T01:20:49.000Z",
+      "outlet": "News 3 Las Vegas",
+      "headline": "Las Vegas legal community mourns attorney Michael Sanft",
+      "url": "https://news3lv.com/news/local/las-vegas-legal-community-mourns-attorney-michael-sanft",
+      "flag": null
+    },
+    {
       "ts": "2026-11-06T20:53:46.000Z",
       "outlet": "Las Vegas Review-Journal",
       "headline": "Michael Sanft, attorney for defendant in Tupac murder trial has died, friend says",
@@ -768,6 +775,7 @@
     "14hrwv3",
     "15ma7kq",
     "r7tmd4",
-    "y4fkbb"
+    "y4fkbb",
+    "1iigiei"
   ]
 }

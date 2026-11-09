@@ -15,6 +15,13 @@
       "flag": null
     },
     {
+      "ts": "2026-11-09T06:19:11.000Z",
+      "outlet": "NBC10 Boston",
+      "headline": "Lindsay Clancy loses bid to dismiss murder charges, question ‘holdout juror'",
+      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-case-update-judge-ruling-murder-juror/4046440/",
+      "flag": null
+    },
+    {
       "ts": "2026-11-05T21:55:12.000Z",
       "outlet": "Boston 25 News",
       "headline": "Plymouth DA considers legal fate of two moms accused of killing their children: Clancy and Sanders",
@@ -692,13 +699,6 @@
       "headline": "How are juries selected in Mass.? Lindsay Clancy case puts process in spotlight",
       "url": "https://www.nbcboston.com/news/local/massachusetts-jury-selection-process-lindsay-clancy/4015471/",
       "flag": null
-    },
-    {
-      "ts": "2026-09-15T16:36:25.000Z",
-      "outlet": "Boston.com",
-      "headline": "Judge in Lindsay Clancy case impounds jurors’ names indefinitely, says at least one has gotten threats",
-      "url": "https://www.boston.com/news/crime/2026/09/15/lindsay-clancy-juror-names-impounded-indefinitely/",
-      "flag": null
     }
   ],
   "seen": [
@@ -1073,6 +1073,7 @@
     "18e3ddn",
     "a6oiws",
     "dzk0nr",
-    "1rcaevv"
+    "1rcaevv",
+    "1fn5eky"
   ]
 }

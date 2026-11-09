@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-09T02:26:00.000Z",
+      "outlet": "newsnationnow.com",
+      "headline": "Alex Murdaugh bid to dismiss murder case faces long odds, experts say",
+      "url": "https://www.newsnationnow.com/crime/murdaugh-murder-trial/alex-murdaugh-retrial-dna-evidence/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-11-07T15:10:54.000Z",
       "outlet": "FITSNews",
       "headline": "Week in Review &#8211; Election Upheaval, Logan Federico Update, Murdaugh Pushback",
@@ -692,18 +699,9 @@
       "headline": "Alex Murdaugh's defense and prosecutors expect to clash over evidence during pretrial hearing",
       "url": "https://www.newsday.com/news/nation/alex-murdaugh-killings-pretrial-hearing-r14066",
       "flag": null
-    },
-    {
-      "ts": "2026-10-15T17:12:00.000Z",
-      "outlet": "usnews.com",
-      "headline": "Fight Over Evidence in Alex Murdaugh Retrial Turns to DNA and Missing Murder Weapons",
-      "url": "https://www.usnews.com/news/us/articles/2026-10-16/alex-murdaughs-defense-and-prosecutors-expect-to-clash-over-evidence-during-pretrial-hearing",
-      "flag": null
     }
   ],
   "seen": [
-    "hbnfj5",
-    "dvt3o1",
     "zonht8",
     "zb3z9k",
     "1nz0vx2",
@@ -1301,6 +1299,8 @@
     "1v6fyip",
     "kirs9j",
     "1dnygp1",
-    "1gd6jda"
+    "1gd6jda",
+    "16j0vyc",
+    "nm3isk"
   ]
 }

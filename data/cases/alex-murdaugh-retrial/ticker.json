@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-09T10:36:00.000Z",
+      "outlet": "newsnationnow.com",
+      "headline": "Why Alex Murdaugh could win even if his case isn’t tossed | NewsNation Prime",
+      "url": "https://www.newsnationnow.com/latest-video/why-alex-murdaugh-could-win-even-if-his-case-isnt-tossed-newsnation-prime-clewzspn5lq/",
+      "flag": null
+    },
+    {
       "ts": "2026-11-09T02:26:00.000Z",
       "outlet": "newsnationnow.com",
       "headline": "Alex Murdaugh bid to dismiss murder case faces long odds, experts say",
@@ -692,17 +699,9 @@
       "headline": "Murdaugh Retrial: Evidence Fights Head To Court",
       "url": "https://www.fitsnews.com/2026/10/15/murdaugh-evidence-fights-court/",
       "flag": null
-    },
-    {
-      "ts": "2026-10-15T17:15:00.000Z",
-      "outlet": "newsday.com",
-      "headline": "Alex Murdaugh's defense and prosecutors expect to clash over evidence during pretrial hearing",
-      "url": "https://www.newsday.com/news/nation/alex-murdaugh-killings-pretrial-hearing-r14066",
-      "flag": null
     }
   ],
   "seen": [
-    "zb3z9k",
     "1nz0vx2",
     "roxjo3",
     "7ejapn",
@@ -1301,6 +1300,7 @@
     "1gd6jda",
     "16j0vyc",
     "nm3isk",
-    "1gdracm"
+    "1gdracm",
+    "7ln793"
   ]
 }

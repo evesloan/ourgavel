@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-09T22:13:07.000Z",
+      "outlet": "Court TV",
+      "headline": "‘Not entitled’: Judge thwarts Lindsay Clancy’s attempts to have charges dismissed, question juror",
+      "url": "https://www.courttv.com/news/not-entitled-judge-thwarts-lindsay-clancys-attempts-to-have-charges-dismissed-question-juror/",
+      "flag": null
+    },
+    {
       "ts": "2026-11-09T20:39:49.000Z",
       "outlet": "Boston 25 News",
       "headline": "Judge clears way for Lindsay Clancy retrial, rejecting bid to dismiss murder charges",
@@ -692,13 +699,6 @@
       "headline": "Lindsay Clancy juror reacts to recently proposed state postpartum proposal",
       "url": "https://www.boston25news.com/news/local/lindsay-clancy-juror-reacts-recently-proposed-state-postpartum-proposal/5G5B4ECA3RE6JMNYOTAHNZYNR4/",
       "flag": null
-    },
-    {
-      "ts": "2026-09-15T22:42:22.000Z",
-      "outlet": "NBC10 Boston",
-      "headline": "How are juries selected in Mass.? Lindsay Clancy case puts process in spotlight",
-      "url": "https://www.nbcboston.com/news/local/massachusetts-jury-selection-process-lindsay-clancy/4015471/",
-      "flag": null
     }
   ],
   "seen": [
@@ -1074,6 +1074,7 @@
     "a6oiws",
     "dzk0nr",
     "1rcaevv",
-    "1fn5eky"
+    "1fn5eky",
+    "1mcrvkj"
   ]
 }

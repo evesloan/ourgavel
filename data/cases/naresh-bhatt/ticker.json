@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-09T18:26:16.000Z",
+      "outlet": "fox5dc.com",
+      "headline": "Defense rests in Naresh Bhatt murder trial after defendant testifies about finding his wife’s body",
+      "url": "https://www.fox5dc.com/news/bhatt-takes-stand-monday-discuss-finding-mamtas-body-internet-searches",
+      "flag": null
+    },
+    {
       "ts": "2026-11-06T15:26:44.000Z",
       "outlet": "nbcwashington.com",
       "headline": "Will the charges against Naresh Bhatt change after his bombshell testimony?",
@@ -289,6 +296,7 @@
     "aslh9q",
     "1jhbj5y",
     "k3nle",
-    "1uu4rbf"
+    "1uu4rbf",
+    "y6e5aw"
   ]
 }

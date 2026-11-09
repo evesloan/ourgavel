@@ -1,6 +1,20 @@
 {
   "items": [
     {
+      "ts": "2026-11-09T20:39:49.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Judge clears way for Lindsay Clancy retrial, rejecting bid to dismiss murder charges",
+      "url": "https://www.boston25news.com/news/local/judge-clears-way-lindsay-clancy-retrial-rejecting-bid-dismiss-murder-charges/DDVAS3W3LBE3XGUCCKCPHJKY2Q/",
+      "flag": null
+    },
+    {
+      "ts": "2026-11-09T20:33:00.000Z",
+      "outlet": "WCVB",
+      "headline": "Judge denies motions in Clancy case, clearing path for decision about retrial",
+      "url": "https://www.wcvb.com/article/clancy-motions-denied-double-jeopardy-juror-doe-nov-9-2026/74378763",
+      "flag": null
+    },
+    {
       "ts": "2026-11-05T21:55:12.000Z",
       "outlet": "Boston 25 News",
       "headline": "Plymouth DA considers legal fate of two moms accused of killing their children: Clancy and Sanders",
@@ -685,20 +699,6 @@
       "headline": "Judge in Lindsay Clancy case impounds jurors’ names indefinitely, says at least one has gotten threats",
       "url": "https://www.boston.com/news/crime/2026/09/15/lindsay-clancy-juror-names-impounded-indefinitely/",
       "flag": null
-    },
-    {
-      "ts": "2026-09-15T15:48:56.000Z",
-      "outlet": "Boston.com",
-      "headline": "Who is Kelsie Cote? What to know about Lindsay Clancy’s attorney’s other big murder case.",
-      "url": "https://www.boston.com/news/crime/2026/09/15/kevin-reddington-defense-attorney-kelsie-cote-lindsay-clancy/",
-      "flag": null
-    },
-    {
-      "ts": "2026-09-15T13:22:21.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "Lindsay Clancy judge indefinitely extends order shielding identities of jurors",
-      "url": "https://www.boston25news.com/news/local/lindsay-clancy-judge-indefinitely-extends-order-shielding-identities-jurors/C7M7GI6HJVHYFMWI52NGPZ3LQ4/",
-      "flag": null
     }
   ],
   "seen": [
@@ -1071,6 +1071,8 @@
     "1r2k90g",
     "1cx9g3p",
     "18e3ddn",
-    "a6oiws"
+    "a6oiws",
+    "dzk0nr",
+    "1rcaevv"
   ]
 }

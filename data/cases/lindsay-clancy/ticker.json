@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-10T02:56:17.000Z",
+      "outlet": "Boston.com",
+      "headline": "Judge denies Lindsay Clancy’s motion to dismiss murder charges",
+      "url": "https://www.boston.com/news/crime/2026/11/09/lindsay-clancy-motion-to-dismiss-denied/",
+      "flag": null
+    },
+    {
       "ts": "2026-11-09T22:13:07.000Z",
       "outlet": "Court TV",
       "headline": "‘Not entitled’: Judge thwarts Lindsay Clancy’s attempts to have charges dismissed, question juror",
@@ -692,13 +699,6 @@
       "headline": "Patrick Clancy gives his 1st interview after the Lindsay Clancy trial",
       "url": "https://www.nbcboston.com/news/local/patrick-clancy-first-interview/4015837/",
       "flag": null
-    },
-    {
-      "ts": "2026-09-16T01:49:00.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "Lindsay Clancy juror reacts to recently proposed state postpartum proposal",
-      "url": "https://www.boston25news.com/news/local/lindsay-clancy-juror-reacts-recently-proposed-state-postpartum-proposal/5G5B4ECA3RE6JMNYOTAHNZYNR4/",
-      "flag": null
     }
   ],
   "seen": [
@@ -1075,6 +1075,7 @@
     "dzk0nr",
     "1rcaevv",
     "1fn5eky",
-    "1mcrvkj"
+    "1mcrvkj",
+    "14int4b"
   ]
 }

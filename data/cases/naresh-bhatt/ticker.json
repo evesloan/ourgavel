@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-10T12:06:43.000Z",
+      "outlet": "nbcwashington.com",
+      "headline": "Prosecution tells jury not to believe Naresh Bhatt's ‘crazy story' about finding wife dead",
+      "url": "https://www.nbcwashington.com/news/local/northern-virginia/verdict-watch-naresh-bhatt-trial-heads-to-jury-after-closing-arguments/4180502/",
+      "flag": null
+    },
+    {
       "ts": "2026-11-09T18:26:16.000Z",
       "outlet": "fox5dc.com",
       "headline": "Defense rests in Naresh Bhatt murder trial after defendant testifies about finding his wife’s body",
@@ -305,6 +312,7 @@
     "k3nle",
     "1uu4rbf",
     "y6e5aw",
-    "15anixn"
+    "15anixn",
+    "1bgkhio"
   ]
 }

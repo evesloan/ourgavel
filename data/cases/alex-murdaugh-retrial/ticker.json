@@ -1,6 +1,27 @@
 {
   "items": [
     {
+      "ts": "2026-11-10T09:52:52.000Z",
+      "outlet": "via MSN",
+      "headline": "Murdaugh defense responds to state's opposition to motion to dismiss indictments",
+      "url": "https://www.msn.com/en-us/news/other/murdaugh-defense-responds-to-states-opposition-to-motion-to-dismiss-indictments/ar-AA2habr3",
+      "flag": "verdict-watch"
+    },
+    {
+      "ts": "2026-11-10T09:00:00.000Z",
+      "outlet": "FITSNews",
+      "headline": "Murdaugh Attorneys Challenge Indictments as Becky Hill Disputes Tainted Trial’s Cost",
+      "url": "https://www.fitsnews.com/2026/11/10/murdaugh-indictments-becky-hill/",
+      "flag": "verdict-watch"
+    },
+    {
+      "ts": "2026-11-10T08:11:00.000Z",
+      "outlet": "FITSNews",
+      "headline": "‘Sizzle Reel’ Controversy Engulfs Second Prosecution of Alex Murdaugh",
+      "url": "https://www.fitsnews.com/2026/11/10/sizzle-reel-controversy-engulfs-second-prosecution-of-alex-murdaugh/",
+      "flag": null
+    },
+    {
       "ts": "2026-11-10T05:46:00.000Z",
       "outlet": "baltimoresun.com",
       "headline": "South Carolina prosecutors respond after Murdaugh push to dismiss murder indictments",
@@ -678,33 +699,9 @@
       "headline": "Alex Murdaugh is back in court Friday. Here's what could be decided",
       "url": "https://www.wltx.com/article/news/special-reports/alex-murdaugh/alex-murdaugh-hearing-october-16-preview/101-ffe8a9fb-6c57-429a-8a32-c09c241e9eaf",
       "flag": null
-    },
-    {
-      "ts": "2026-10-15T21:21:00.000Z",
-      "outlet": "lanacion.com.ar",
-      "headline": "Alex Murdaugh's defense and prosecutors expect to clash over evidence during pretrial hearing",
-      "url": "https://www.lanacion.com.ar/usa/alex-murdaughs-defense-and-prosecutors-expect-to-clash-over-evidence-during-pretrial-hearing-nid16102026/",
-      "flag": null
-    },
-    {
-      "ts": "2026-10-15T21:16:00.000Z",
-      "outlet": "washingtonpost.com",
-      "headline": "Alex Murdaugh's defense and prosecutors expect to clash over evidence during pretrial hearing",
-      "url": "https://www.washingtonpost.com/national/2026/10/16/alex-murdaugh-killings-pretrial-hearing/4fc67d7e-c918-11f1-aefb-abe4112d087e_story.html",
-      "flag": null
-    },
-    {
-      "ts": "2026-10-15T21:12:00.000Z",
-      "outlet": "AP",
-      "headline": "Fight over evidence in Alex Murdaugh retrial turns to DNA and missing murder weapons",
-      "url": "https://apnews.com/article/alex-murdaugh-killings-pretrial-hearing-8543a045e48ee026a25dbd74ade3af3d",
-      "flag": null
     }
   ],
   "seen": [
-    "1dqea6b",
-    "17dzp43",
-    "179y0np",
     "18ptdc1",
     "bpbyxv",
     "1ujr2hn",
@@ -1301,6 +1298,9 @@
     "qjngyx",
     "aiv1he",
     "n15rat",
-    "xx6j00"
+    "xx6j00",
+    "1klh8b3",
+    "1gekd5s",
+    "n68p1m"
   ]
 }

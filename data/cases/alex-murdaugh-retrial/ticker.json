@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-09T15:10:00.000Z",
+      "outlet": "WLTX News19",
+      "headline": "Murdaugh seeks dismissal of indictments",
+      "url": "https://www.wltx.com/video/news/special-reports/alex-murdaugh/murdaugh-seeks-dismissal-of-indictments/101-04068bf0-0532-47bb-bfe1-58f451bf376e",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-11-09T13:52:02.000Z",
       "outlet": "via MSN",
       "headline": "Prosecutors deny falsifying evidence in Alex Murdaugh case: 'Simply incorrect'",
@@ -299,6 +306,13 @@
       "outlet": "FITSNews",
       "headline": "Murdaugh Retrial Hearing: New Tests, Old Grievances",
       "url": "https://www.fitsnews.com/2026/10/16/murdaugh-retrial-hearing-new-tests-old-grievances/",
+      "flag": null
+    },
+    {
+      "ts": "2026-10-16T15:01:00.000Z",
+      "outlet": "via AOL",
+      "headline": "Judge McCaslin at Murdaugh hearing: ‘I’ll not allow proceedings to become a circus’",
+      "url": "https://www.aol.com/articles/judge-mccaslin-murdaugh-hearing-ll-220258000.html",
       "flag": null
     },
     {
@@ -685,26 +699,9 @@
       "headline": "Alex Murdaugh’s lawyers raise explosive questions about possible accomplice",
       "url": "https://www.inkl.com/news/alex-murdaughs-defense-and-prosecutors-expect-to-clash-over-evidence-during-pretrial-hearing",
       "flag": null
-    },
-    {
-      "ts": "2026-10-15T21:06:00.000Z",
-      "outlet": "Fox News",
-      "headline": "Alex Murdaugh retrial set as evidentiary hearings begin",
-      "url": "https://www.foxnews.com/video/6406955558112",
-      "flag": null
-    },
-    {
-      "ts": "2026-10-15T21:00:00.000Z",
-      "outlet": "Fox News",
-      "headline": "Alex Murdaugh judge warns against courtroom 'circus' as defense wins DNA fight, loses ballistics bid",
-      "url": "https://www.foxnews.com/us/alex-murdaughs-wild-goose-chase-missing-murder-guns-targets-police-chief-expert",
-      "flag": null
     }
   ],
   "seen": [
-    "roxjo3",
-    "7ejapn",
-    "2ygga1",
     "1a1ymph",
     "1dqea6b",
     "17dzp43",
@@ -1301,6 +1298,9 @@
     "nm3isk",
     "1gdracm",
     "7ln793",
-    "1gdsk7e"
+    "1gdsk7e",
+    "qjngyx",
+    "aiv1he",
+    "n15rat"
   ]
 }

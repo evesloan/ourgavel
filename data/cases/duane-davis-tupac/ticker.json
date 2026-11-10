@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-10T15:15:06.000Z",
+      "outlet": "News 3 Las Vegas",
+      "headline": "Duane Davis appeals Tupac Shakur murder conviction to Nevada Supreme Court",
+      "url": "https://news3lv.com/news/local/duane-davis-appeals-tupac-shakur-murder-conviction-to-nevada-supreme-court",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-11-10T04:35:21.000Z",
       "outlet": "FOX5 Las Vegas",
       "headline": "Nevada Supreme Court accepts Duane ‘Keffe D’ Davis’ appeal",
@@ -784,6 +791,7 @@
     "r7tmd4",
     "y4fkbb",
     "1iigiei",
-    "1c4q596"
+    "1c4q596",
+    "1nnd5qg"
   ]
 }

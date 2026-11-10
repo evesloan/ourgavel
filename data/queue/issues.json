@@ -1,6 +1,22 @@
 {
-  "synced": "2026-11-10T18:50:35.202Z",
+  "synced": "2026-11-10T23:55:29.833Z",
   "open": [
+    {
+      "number": 56,
+      "title": "VERDICT WATCH: 2 newsrooms report a Naresh Bhatt No-Body Murder Trial Guilty verdict — engine can't self-confirm, nothing published",
+      "body": "2 independent newsrooms report the same outcome — **Guilty** — and no outlet asserts a different one, but that is below the 3-family bar the engine requires to publish a criminal verdict on its own. The site has published NOTHING and set no verdict.\n\nReported by: fox5dccom, nbcwashingtoncom\n\n- fox5dc.com: Naresh Bhatt convicted of murder in death of wife Mamta Kafle Bhatt\n  https://www.fox5dc.com/news/jury-begins-deliberations-naresh-bhatt-murder-trial\n- nbcwashington.com: Naresh Bhatt found guilty of first-degree murder in killing of wife, Mamta Kafle\n  https://www.nbcwashington.com/news/local/northern-virginia/naresh-bhatt-found-guilty-of-first-degree-murder-in-killing-of-wife-mamta-kafle/4180627/\n\nThis is the RED LANE (AGENT.md §3b). A human confirms the outcome against the sources, then EITHER the aftermath is written on approval, OR the engine publishes on its own once a 3th independent family drops a fresh report inside the 12h window. The verdict is never inferred from this alert and never published automatically from it.",
+      "labels": [
+        "verdict-watch",
+        "red-lane"
+      ],
+      "user": "github-actions[bot]",
+      "created": "2026-11-10T23:56:04Z",
+      "reactions": {
+        "up": 0,
+        "down": 0
+      },
+      "url": "https://github.com/evesloan/ourgavel/issues/56"
+    },
     {
       "number": 55,
       "title": "VERDICT WATCH: 2 newsrooms report a Lindsay Clancy Trial Not guilty verdict — engine can't self-confirm, nothing published",

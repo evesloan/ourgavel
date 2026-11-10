@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-10T05:46:00.000Z",
+      "outlet": "baltimoresun.com",
+      "headline": "South Carolina prosecutors respond after Murdaugh push to dismiss murder indictments",
+      "url": "https://www.baltimoresun.com/2026/11/10/south-carolina-prosecutors-respond-after-murdaugh-push-to-dismiss-murder-indictments/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-11-09T15:10:00.000Z",
       "outlet": "WLTX News19",
       "headline": "Murdaugh seeks dismissal of indictments",
@@ -692,17 +699,9 @@
       "headline": "Fight over evidence in Alex Murdaugh retrial turns to DNA and missing murder weapons",
       "url": "https://apnews.com/article/alex-murdaugh-killings-pretrial-hearing-8543a045e48ee026a25dbd74ade3af3d",
       "flag": null
-    },
-    {
-      "ts": "2026-10-15T21:12:00.000Z",
-      "outlet": "via inkl",
-      "headline": "Alex Murdaugh’s lawyers raise explosive questions about possible accomplice",
-      "url": "https://www.inkl.com/news/alex-murdaughs-defense-and-prosecutors-expect-to-clash-over-evidence-during-pretrial-hearing",
-      "flag": null
     }
   ],
   "seen": [
-    "1a1ymph",
     "1dqea6b",
     "17dzp43",
     "179y0np",
@@ -1301,6 +1300,7 @@
     "1gdsk7e",
     "qjngyx",
     "aiv1he",
-    "n15rat"
+    "n15rat",
+    "xx6j00"
   ]
 }

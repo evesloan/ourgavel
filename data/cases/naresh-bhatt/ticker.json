@@ -1,6 +1,20 @@
 {
   "items": [
     {
+      "ts": "2026-11-11T02:16:01.000Z",
+      "outlet": "fox5dc.com",
+      "headline": "Attorney discusses pivot by defense, possible next steps after conviction in Naresh Bhatt trial",
+      "url": "https://www.fox5dc.com/news/attorney-discusses-pivot-defense-possible-next-steps-after-conviction-naresh-bhatt-trial",
+      "flag": "verdict-watch"
+    },
+    {
+      "ts": "2026-11-10T23:39:54.000Z",
+      "outlet": "fox5dc.com",
+      "headline": "Naresh Bhatt set for March 2027 sentencing hearing",
+      "url": "https://www.fox5dc.com/news/naresh-bhatt-set-march-2027-sentencing-hearing",
+      "flag": null
+    },
+    {
       "ts": "2026-11-10T18:29:00.000Z",
       "outlet": "fox5dc.com",
       "headline": "Naresh Bhatt convicted of murder in death of wife Mamta Kafle Bhatt",
@@ -329,6 +343,8 @@
     "15anixn",
     "1bgkhio",
     "1cmz56x",
-    "efzlg6"
+    "efzlg6",
+    "13y66rr",
+    "jef95p"
   ]
 }

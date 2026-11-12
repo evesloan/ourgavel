@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-11T19:37:27.000Z",
+      "outlet": "News4JAX",
+      "headline": "If judge denies new trial, Mario Fernandez will be sentenced Thursday in Jared Bridegan murder-for-hire plot",
+      "url": "https://www.news4jax.com/news/local/2026/11/11/high-stakes-court-day-for-fernandez-as-possible-sentencing-molestation-case-loom/",
+      "flag": null
+    },
+    {
       "ts": "2026-10-07T20:13:59.000Z",
       "outlet": "Action News Jax",
       "headline": "Jared Bridegan murder: Accused gunman Henry Tenon pleads not guilty",
@@ -446,6 +453,7 @@
     "17s8rty",
     "k0qiwz",
     "s07hr5",
-    "1wt2jzw"
+    "1wt2jzw",
+    "kxzter"
   ]
 }

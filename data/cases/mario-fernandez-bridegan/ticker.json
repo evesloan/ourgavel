@@ -1,6 +1,20 @@
 {
   "items": [
     {
+      "ts": "2026-11-12T22:55:43.000Z",
+      "outlet": "Action News Jax",
+      "headline": "‘(I) envision he’s there with me’: Widow speaks, and Fernandez Saldana gets life for Bridegan murder",
+      "url": "https://www.actionnewsjax.com/news/local/i-envision-hes-there-with-me-widow-speaks-fernandez-saldana-gets-life-bridegan-murder/TNFAVVS2TZCJZCGAQRSGKY672M/",
+      "flag": null
+    },
+    {
+      "ts": "2026-11-12T22:51:06.000Z",
+      "outlet": "Action News Jax",
+      "headline": "Jared Bridegan’s family speaks out as Mario Fernandez-Saldana receives life sentence for murder",
+      "url": "https://www.actionnewsjax.com/news/local/jared-bridegans-family-speaks-out-mario-fernandez-saldana-receives-life-sentence-murder/TVMHT6UEYRDWXPWG2BBDBSAUVQ/",
+      "flag": null
+    },
+    {
       "ts": "2026-11-12T21:12:47.000Z",
       "outlet": "News4JAX",
       "headline": "‘He will never be forgotten’: Jared Bridegan’s family describes a loss that reaches generations",
@@ -470,6 +484,8 @@
     "1wt2jzw",
     "kxzter",
     "1u7yl7",
-    "1sngh3d"
+    "1sngh3d",
+    "6rgtyo",
+    "pikef7"
   ]
 }

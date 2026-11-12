@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-11T21:00:00.000Z",
+      "outlet": "The Post and Courier",
+      "headline": "Crime scene confusion still rampant as Murdaugh asks judge to toss murder charges",
+      "url": "https://www.postandcourier.com/murdaugh-updates/crime-scene-confusion-alex-murdaugh-murders/article_3c906485-d5d3-494b-8a9f-f6007ade385a.html",
+      "flag": null
+    },
+    {
       "ts": "2026-11-10T09:52:52.000Z",
       "outlet": "via MSN",
       "headline": "Murdaugh defense responds to state's opposition to motion to dismiss indictments",
@@ -692,17 +699,9 @@
       "headline": "Murdaugh hearing to focus on murder scene evidence, possible cover-up",
       "url": "https://www.postandcourier.com/murdaugh-updates/murdaugh-evidence-dna-guns-possible-cover-up/article_7aee1061-262d-41f9-bcc3-88a7f5f50906.html",
       "flag": null
-    },
-    {
-      "ts": "2026-10-15T21:28:49.000Z",
-      "outlet": "WLTX News19",
-      "headline": "Alex Murdaugh is back in court Friday. Here's what could be decided",
-      "url": "https://www.wltx.com/article/news/special-reports/alex-murdaugh/alex-murdaugh-hearing-october-16-preview/101-ffe8a9fb-6c57-429a-8a32-c09c241e9eaf",
-      "flag": null
     }
   ],
   "seen": [
-    "18ptdc1",
     "bpbyxv",
     "1ujr2hn",
     "25x6p2",
@@ -1301,6 +1300,7 @@
     "xx6j00",
     "1klh8b3",
     "1gekd5s",
-    "n68p1m"
+    "n68p1m",
+    "1j6b7cj"
   ]
 }

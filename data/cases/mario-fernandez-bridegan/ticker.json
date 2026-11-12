@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-12T21:12:47.000Z",
+      "outlet": "News4JAX",
+      "headline": "‘He will never be forgotten’: Jared Bridegan’s family describes a loss that reaches generations",
+      "url": "https://www.news4jax.com/news/local/2026/11/12/he-will-never-be-forgotten-jared-bridegans-family-describes-a-loss-that-reaches-generations/",
+      "flag": null
+    },
+    {
       "ts": "2026-11-12T15:14:34.000Z",
       "outlet": "Action News Jax",
       "headline": "Mario Fernandez Saldana appears in court on motion for new trial in Jared Bridegan’s murder",
@@ -462,6 +469,7 @@
     "s07hr5",
     "1wt2jzw",
     "kxzter",
-    "1u7yl7"
+    "1u7yl7",
+    "1sngh3d"
   ]
 }

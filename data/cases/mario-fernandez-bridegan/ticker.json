@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-12T15:14:34.000Z",
+      "outlet": "Action News Jax",
+      "headline": "Mario Fernandez Saldana appears in court on motion for new trial in Jared Bridegan’s murder",
+      "url": "https://www.actionnewsjax.com/news/local/mario-fernandez-saldana-appears-court-motion-new-trial-jared-bridegans-murder/3SSPSDZBNBHFDBNJ2WW45XIVEU/",
+      "flag": null
+    },
+    {
       "ts": "2026-11-11T19:37:27.000Z",
       "outlet": "News4JAX",
       "headline": "If judge denies new trial, Mario Fernandez will be sentenced Thursday in Jared Bridegan murder-for-hire plot",
@@ -454,6 +461,7 @@
     "k0qiwz",
     "s07hr5",
     "1wt2jzw",
-    "kxzter"
+    "kxzter",
+    "1u7yl7"
   ]
 }

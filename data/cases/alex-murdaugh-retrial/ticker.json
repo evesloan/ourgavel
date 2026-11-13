@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-12T21:01:00.000Z",
+      "outlet": "AP",
+      "headline": "Alex Murdaugh wants murder indictments dismissed, saying agent lied to grand jury",
+      "url": "https://apnews.com/article/alex-murdaugh-killings-pretrial-hearing-c9260af3981cf71efacb42377d93326d",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-11-12T16:29:22.000Z",
       "outlet": "via MSN",
       "headline": "Sumter clerk says court is prepared for Murdaugh retrial as jury safeguards face scrutiny",
@@ -692,17 +699,9 @@
       "headline": "Mystery cop and missing weapons haunt Alex Murdaugh retrial",
       "url": "https://www.msn.com/en-za/news/other/mystery-cop-and-missing-weapons-haunt-alex-murdaugh-retrial/ar-AA2emkDk",
       "flag": null
-    },
-    {
-      "ts": "2026-10-16T02:03:22.000Z",
-      "outlet": "via MSN",
-      "headline": "Mystery cop and missing weapons haunt Alex Murdaugh retrial",
-      "url": "https://www.msn.com/en-us/news/other/mystery-cop-and-missing-weapons-haunt-alex-murdaugh-retrial/ar-AA2em2Rg",
-      "flag": null
     }
   ],
   "seen": [
-    "5g4fgk",
     "8z64be",
     "10r8vl5",
     "1hu6n0h",
@@ -1301,6 +1300,7 @@
     "1j6b7cj",
     "16f9233",
     "1geqy5r",
-    "mi43i3"
+    "mi43i3",
+    "efr0z9"
   ]
 }

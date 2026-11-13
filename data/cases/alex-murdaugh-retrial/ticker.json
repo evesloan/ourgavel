@@ -8,6 +8,13 @@
       "flag": "verdict-watch"
     },
     {
+      "ts": "2026-11-13T07:30:00.000Z",
+      "outlet": "via MSN",
+      "headline": "Alex Murdaugh pushes for murder indictments dismissed, alleging investigator lied to grand jury",
+      "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-pushes-for-murder-indictments-dismissed-alleging-investigator-lied-to-grand-jury/ar-AA2hnZdw",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-11-13T06:58:00.000Z",
       "outlet": "wsav.com",
       "headline": "WATCH LIVE: Alex Murdaugh evidentiary hearing in Lexington County",
@@ -692,17 +699,9 @@
       "headline": "Murdaugh defense, prosecutors head back to court before double murder retrial",
       "url": "https://www.msn.com/en-us/news/other/murdaugh-defense-prosecutors-head-back-to-court-before-double-murder-retrial/ar-AA2enaNg",
       "flag": null
-    },
-    {
-      "ts": "2026-10-16T05:09:00.000Z",
-      "outlet": "sfgate.com",
-      "headline": "Fight over evidence in Alex Murdaugh retrial turns to DNA and missing murder weapons",
-      "url": "https://www.sfgate.com/news/article/alex-murdaugh-s-defense-and-prosecutors-expect-to-22479693.php",
-      "flag": null
     }
   ],
   "seen": [
-    "g3r3sk",
     "1sj6u6c",
     "1puea6q",
     "1rh7302",
@@ -1301,6 +1300,7 @@
     "1gesxiw",
     "yn66bp",
     "1lu6fn3",
-    "1ft4sp2"
+    "1ft4sp2",
+    "1get5i5"
   ]
 }

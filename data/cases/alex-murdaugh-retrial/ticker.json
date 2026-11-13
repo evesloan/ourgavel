@@ -8,6 +8,13 @@
       "flag": "verdict-watch"
     },
     {
+      "ts": "2026-11-13T09:00:24.000Z",
+      "outlet": "via MSN",
+      "headline": "Live: Alex Murdaugh defense alleges false evidence presented to grand jury",
+      "url": "https://www.msn.com/en-us/news/other/live-alex-murdaugh-defense-alleges-false-evidence-presented-to-grand-jury/ar-AA2hnATK",
+      "flag": null
+    },
+    {
       "ts": "2026-11-13T08:49:00.000Z",
       "outlet": "CBS News",
       "headline": "Alex Murdaugh lawyers say top investigator lied to grand jury, want murder indictments tossed",
@@ -692,17 +699,9 @@
       "headline": "Alex Murdaugh’s defense and prosecutors expect to clash over evidence during pretrial hearing",
       "url": "https://www.orlandosentinel.com/2026/10/16/alex-murdaugh-pretrial-hearing/",
       "flag": null
-    },
-    {
-      "ts": "2026-10-16T05:46:00.000Z",
-      "outlet": "twincities.com",
-      "headline": "Alex Murdaugh’s defense and prosecutors expect to clash over evidence during pretrial hearing",
-      "url": "https://www.twincities.com/2026/10/16/alex-murdaugh-pretrial-hearing/",
-      "flag": null
     }
   ],
   "seen": [
-    "99f32t",
     "1wy4le",
     "79bndo",
     "ece0e7",
@@ -1301,6 +1300,7 @@
     "1m4phaw",
     "1gesrtd",
     "1gesabc",
-    "1gesqu6"
+    "1gesqu6",
+    "1gesnc8"
   ]
 }

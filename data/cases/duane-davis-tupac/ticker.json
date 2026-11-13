@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-13T07:13:11.000Z",
+      "outlet": "News 3 Las Vegas",
+      "headline": "Attorney's Death Raises Questions About Duane Davis' Tupac Murder Appeal",
+      "url": "https://news3lv.com/news/local/attorneys-death-raises-questions-about-duane-davis-tupac-murder-appeal",
+      "flag": null
+    },
+    {
       "ts": "2026-11-10T15:15:06.000Z",
       "outlet": "News 3 Las Vegas",
       "headline": "Duane Davis appeals Tupac Shakur murder conviction to Nevada Supreme Court",
@@ -792,6 +799,7 @@
     "y4fkbb",
     "1iigiei",
     "1c4q596",
-    "1nnd5qg"
+    "1nnd5qg",
+    "1r3g9k2"
   ]
 }

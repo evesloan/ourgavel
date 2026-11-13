@@ -8,6 +8,20 @@
       "flag": "verdict-watch"
     },
     {
+      "ts": "2026-11-13T10:11:29.000Z",
+      "outlet": "via MSN",
+      "headline": "Alex Murdaugh’s lawyers seek dismissal of murder charges ahead of 2027 retrial",
+      "url": "https://www.msn.com/en-in/news/other/alex-murdaugh-s-lawyers-seek-dismissal-of-murder-charges-ahead-of-2027-retrial/ar-AA2hnjpH",
+      "flag": "verdict-watch"
+    },
+    {
+      "ts": "2026-11-13T09:46:40.000Z",
+      "outlet": "via MSN",
+      "headline": "Alex Murdaugh defense alleges false evidence presented to grand jury",
+      "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-defense-alleges-false-evidence-presented-to-grand-jury/ar-AA2hnVaV",
+      "flag": null
+    },
+    {
       "ts": "2026-11-13T09:00:24.000Z",
       "outlet": "via MSN",
       "headline": "Live: Alex Murdaugh defense alleges false evidence presented to grand jury",
@@ -685,25 +699,9 @@
       "headline": "Alex Murdaugh returns to court for hearing on what evidence can be used in retrial",
       "url": "https://www.foxnews.com/live-news/alex-murdaugh-returns-to-court-for-hearing-on-what-evidence-can-be-used-in-retrial",
       "flag": null
-    },
-    {
-      "ts": "2026-10-16T05:48:00.000Z",
-      "outlet": "mysuncoast.com",
-      "headline": "Alex Murdaugh due back in court for retrial hearing",
-      "url": "https://www.mysuncoast.com/video/2026/10/16/alex-murdaugh-due-back-court-retrial-hearing/",
-      "flag": null
-    },
-    {
-      "ts": "2026-10-16T05:46:00.000Z",
-      "outlet": "orlandosentinel.com",
-      "headline": "Alex Murdaugh’s defense and prosecutors expect to clash over evidence during pretrial hearing",
-      "url": "https://www.orlandosentinel.com/2026/10/16/alex-murdaugh-pretrial-hearing/",
-      "flag": null
     }
   ],
   "seen": [
-    "1wy4le",
-    "79bndo",
     "ece0e7",
     "s5w8yv",
     "kxmcy3",
@@ -1301,6 +1299,8 @@
     "1gesrtd",
     "1gesabc",
     "1gesqu6",
-    "1gesnc8"
+    "1gesnc8",
+    "1gestwy",
+    "1get2gr"
   ]
 }

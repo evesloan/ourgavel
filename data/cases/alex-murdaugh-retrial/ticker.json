@@ -1,10 +1,24 @@
 {
   "items": [
     {
+      "ts": "2026-11-13T23:27:44.000Z",
+      "outlet": "WLTX News19",
+      "headline": "Murdaugh asks judge to toss murder indictment over disputed blood evidence presented to grand jury",
+      "url": "https://www.wltx.com/article/news/special-reports/alex-murdaugh/murdaugh-judge-toss-murder-indictment-disputed-blood-evidence-presented-grand-jury/101-26a4c015-bae2-4665-8c51-ce35760bc3da",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-11-13T18:50:42.000Z",
       "outlet": "WLTX News19",
       "headline": "Murdaugh asks judge to toss murder indictments, saying grand jury heard false blood evidence",
       "url": "https://www.wltx.com/article/news/special-reports/alex-murdaugh/judge-rule-murdaugh-bid-toss-indictments-grand-jury-testimony/101-75f3b709-9308-4548-a352-2c2487e09475",
+      "flag": "verdict-watch"
+    },
+    {
+      "ts": "2026-11-13T15:34:00.000Z",
+      "outlet": "abccolumbia.com",
+      "headline": "Alex Murdaugh wants murder indictments dismissed",
+      "url": "https://www.abccolumbia.com/2026/11/13/alex-murdaugh-wants-murder-indictments-dismissed/",
       "flag": "verdict-watch"
     },
     {
@@ -685,25 +699,9 @@
       "headline": "Judge tells attorneys to work out evidence disputes in Alex Murdaugh trial",
       "url": "https://www.msn.com/en-us/news/other/judge-tells-attorneys-to-work-out-evidence-disputes-in-alex-murdaugh-trial/ar-AA2enTvk",
       "flag": null
-    },
-    {
-      "ts": "2026-10-16T10:15:00.000Z",
-      "outlet": "via Yahoo News",
-      "headline": "Alex Murdaugh hearing to focus on DNA, retrial evidence",
-      "url": "https://www.yahoo.com/news/videos/alex-murdaugh-hearing-focus-dna-171521311.html",
-      "flag": null
-    },
-    {
-      "ts": "2026-10-16T09:46:00.000Z",
-      "outlet": "dailymail.com",
-      "headline": "Alex Murdaugh's lawyer suggests his wife and son were killed in '$165k drug deal gone bad' as sensational theory takes center stage at retrial hearing",
-      "url": "https://www.dailymail.com/crime-desk/article-16214735/alex-murdaugh-trial-hearing-today.html",
-      "flag": null
     }
   ],
   "seen": [
-    "d1fgiq",
-    "12b4rf5",
     "yszzkt",
     "ihc86j",
     "6jasu3",
@@ -1301,6 +1299,8 @@
     "1getrdw",
     "donybn",
     "1get4aq",
-    "16cq9v9"
+    "16cq9v9",
+    "1bccr6k",
+    "mdyvr9"
   ]
 }

@@ -8,6 +8,34 @@
       "flag": "verdict-watch"
     },
     {
+      "ts": "2026-11-13T08:49:00.000Z",
+      "outlet": "CBS News",
+      "headline": "Alex Murdaugh lawyers say top investigator lied to grand jury, want murder indictments tossed",
+      "url": "https://www.cbsnews.com/news/alex-murdaugh-wants-murder-indictments-dismissed/",
+      "flag": "verdict-watch"
+    },
+    {
+      "ts": "2026-11-13T08:42:34.000Z",
+      "outlet": "via MSN",
+      "headline": "Alex Murdaugh defense alleges false evidence presented to grand jury",
+      "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-defense-alleges-false-evidence-presented-to-grand-jury/ar-AA2hnI7O",
+      "flag": null
+    },
+    {
+      "ts": "2026-11-13T08:28:00.000Z",
+      "outlet": "huffpost.com",
+      "headline": "Alex Murdaugh Claims Agent Lied To Grand Jury, Wants Murder Indictments Dismissed",
+      "url": "https://www.huffpost.com/entry/alex-murdaugh-case-agent-lied_n_6af73828e4b065342906db10",
+      "flag": "verdict-watch"
+    },
+    {
+      "ts": "2026-11-13T08:25:21.000Z",
+      "outlet": "via MSN",
+      "headline": "Live: Alex Murdaugh’s defense to question evidence in bid to avoid retrial",
+      "url": "https://www.msn.com/en-us/news/other/live-alex-murdaugh-s-defense-to-question-evidence-in-bid-to-avoid-retrial/ar-AA2hmOBz",
+      "flag": null
+    },
+    {
       "ts": "2026-11-13T07:30:00.000Z",
       "outlet": "via MSN",
       "headline": "Alex Murdaugh pushes for murder indictments dismissed, alleging investigator lied to grand jury",
@@ -671,42 +699,9 @@
       "headline": "Alex Murdaugh’s defense and prosecutors expect to clash over evidence during pretrial hearing",
       "url": "https://www.twincities.com/2026/10/16/alex-murdaugh-pretrial-hearing/",
       "flag": null
-    },
-    {
-      "ts": "2026-10-16T05:46:00.000Z",
-      "outlet": "baltimoresun.com",
-      "headline": "Alex Murdaugh’s defense and prosecutors expect to clash over evidence during pretrial hearing",
-      "url": "https://www.baltimoresun.com/2026/10/16/alex-murdaugh-pretrial-hearing/",
-      "flag": null
-    },
-    {
-      "ts": "2026-10-16T05:46:00.000Z",
-      "outlet": "Boston Herald",
-      "headline": "Alex Murdaugh’s defense and prosecutors expect to clash over evidence during pretrial hearing",
-      "url": "https://www.bostonherald.com/2026/10/16/alex-murdaugh-pretrial-hearing/",
-      "flag": null
-    },
-    {
-      "ts": "2026-10-16T05:46:00.000Z",
-      "outlet": "courant.com",
-      "headline": "Alex Murdaugh’s defense and prosecutors expect to clash over evidence during pretrial hearing",
-      "url": "https://www.courant.com/2026/10/16/alex-murdaugh-pretrial-hearing/",
-      "flag": null
-    },
-    {
-      "ts": "2026-10-16T05:24:39.000Z",
-      "outlet": "via MSN",
-      "headline": "Murdaugh defense, prosecutors head back to court before double murder retrial",
-      "url": "https://www.msn.com/en-us/news/other/murdaugh-defense-prosecutors-head-back-to-court-before-double-murder-retrial/ar-AA2enaNg",
-      "flag": null
     }
   ],
   "seen": [
-    "1sj6u6c",
-    "1puea6q",
-    "1rh7302",
-    "c0kpjm",
-    "mgx2h6",
     "99f32t",
     "1wy4le",
     "79bndo",
@@ -1301,6 +1296,11 @@
     "yn66bp",
     "1lu6fn3",
     "1ft4sp2",
-    "1get5i5"
+    "1get5i5",
+    "1uleumo",
+    "1m4phaw",
+    "1gesrtd",
+    "1gesabc",
+    "1gesqu6"
   ]
 }

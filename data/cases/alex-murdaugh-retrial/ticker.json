@@ -3,6 +3,13 @@
     {
       "ts": "2026-11-13T00:56:57.000Z",
       "outlet": "via MSN",
+      "headline": "Could Alex Murdaugh’s murder charges be thrown out over police lies?",
+      "url": "https://www.msn.com/en-us/news/other/could-alex-murdaugh-s-murder-charges-be-thrown-out-over-police-lies/ar-AA2hlF7j",
+      "flag": null
+    },
+    {
+      "ts": "2026-11-13T00:56:57.000Z",
+      "outlet": "via MSN",
       "headline": "Could Alex Murdaugh’s murder charges be thrown out over 'police lies'?",
       "url": "https://www.msn.com/en-ie/news/other/could-alex-murdaugh-s-murder-charges-be-thrown-out-over-police-lies/ar-AA2hlKp4",
       "flag": null
@@ -692,17 +699,9 @@
       "headline": "Alex Murdaugh retrial: Key evidence fight heads to court",
       "url": "https://www.msn.com/en-us/news/news/alex-murdaugh-retrial-key-evidence-fight-heads-to-court/ar-AA2emLSP",
       "flag": null
-    },
-    {
-      "ts": "2026-10-16T02:03:22.000Z",
-      "outlet": "via MSN",
-      "headline": "Mystery cop and missing weapons haunt Alex Murdaugh retrial",
-      "url": "https://www.msn.com/en-ca/news/other/mystery-cop-and-missing-weapons-haunt-alex-murdaugh-retrial/ar-AA2en3FN",
-      "flag": null
     }
   ],
   "seen": [
-    "1hu6n0h",
     "197cqx5",
     "1u1ved0",
     "1cq2sb4",
@@ -1301,6 +1300,7 @@
     "mi43i3",
     "efr0z9",
     "1gd6ayv",
-    "1gerkn5"
+    "1gerkn5",
+    "1gerfm3"
   ]
 }

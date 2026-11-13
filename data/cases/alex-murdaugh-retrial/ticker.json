@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-12T16:29:22.000Z",
+      "outlet": "via MSN",
+      "headline": "Sumter clerk says court is prepared for Murdaugh retrial as jury safeguards face scrutiny",
+      "url": "https://www.msn.com/en-us/news/other/sumter-clerk-says-court-is-prepared-for-murdaugh-retrial-as-jury-safeguards-face-scrutiny/ar-AA2hklDT",
+      "flag": null
+    },
+    {
       "ts": "2026-11-12T15:38:00.000Z",
       "outlet": "WLTX News19",
       "headline": "How to watch Alex Murdaugh's Nov. 13 pretrial hearing",
@@ -692,17 +699,9 @@
       "headline": "Alex Murdaugh’s lawyers raise explosive questions about possible accomplice",
       "url": "https://www.aol.com/articles/alex-murdaugh-lawyers-raise-explosive-090322000.html",
       "flag": null
-    },
-    {
-      "ts": "2026-10-16T00:30:00.000Z",
-      "outlet": "The State",
-      "headline": "Live updates: Murdaugh returns to court as attorneys seek new retrial evidence",
-      "url": "https://www.thestate.com/news/local/crime/article317639302.html",
-      "flag": null
     }
   ],
   "seen": [
-    "1ujr2hn",
     "25x6p2",
     "5g4fgk",
     "8z64be",
@@ -1301,6 +1300,7 @@
     "1gekd5s",
     "n68p1m",
     "1j6b7cj",
-    "16f9233"
+    "16f9233",
+    "1geqy5r"
   ]
 }

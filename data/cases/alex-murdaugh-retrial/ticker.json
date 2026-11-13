@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-13T02:43:00.000Z",
+      "outlet": "newsnationnow.com",
+      "headline": "Alex Murdaugh’s defense to question evidence in bid to avoid retrial",
+      "url": "https://www.newsnationnow.com/crime/murdaugh-murder-trial/alex-murdaugh-evidence-hearing-retrial/",
+      "flag": null
+    },
+    {
       "ts": "2026-11-13T00:56:57.000Z",
       "outlet": "via MSN",
       "headline": "Could Alex Murdaugh’s murder charges be thrown out over police lies?",
@@ -692,17 +699,9 @@
       "headline": "Murdaugh defense, prosecutors head back to court ahead of retrial",
       "url": "https://www.msn.com/en-us/news/other/murdaugh-defense-prosecutors-head-back-to-court-ahead-of-retrial/ar-AA2emniT",
       "flag": null
-    },
-    {
-      "ts": "2026-10-16T02:07:00.000Z",
-      "outlet": "via MSN",
-      "headline": "Alex Murdaugh retrial: Key evidence fight heads to court",
-      "url": "https://www.msn.com/en-us/news/news/alex-murdaugh-retrial-key-evidence-fight-heads-to-court/ar-AA2emLSP",
-      "flag": null
     }
   ],
   "seen": [
-    "197cqx5",
     "1u1ved0",
     "1cq2sb4",
     "pcjmse",
@@ -1301,6 +1300,7 @@
     "efr0z9",
     "1gd6ayv",
     "1gerkn5",
-    "1gerfm3"
+    "1gerfm3",
+    "y1yfa9"
   ]
 }

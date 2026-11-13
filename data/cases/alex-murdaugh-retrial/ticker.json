@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-13T04:22:39.000Z",
+      "outlet": "via MSN",
+      "headline": "Judge to hear Murdaugh defense request as case shifts toward Sumter retrial",
+      "url": "https://www.msn.com/en-us/news/other/judge-to-hear-murdaugh-defense-request-as-case-shifts-toward-sumter-retrial/ar-AA2hmMQK",
+      "flag": null
+    },
+    {
       "ts": "2026-11-13T02:43:00.000Z",
       "outlet": "newsnationnow.com",
       "headline": "Alex Murdaugh’s defense to question evidence in bid to avoid retrial",
@@ -20,6 +27,13 @@
       "headline": "Could Alex Murdaugh’s murder charges be thrown out over 'police lies'?",
       "url": "https://www.msn.com/en-ie/news/other/could-alex-murdaugh-s-murder-charges-be-thrown-out-over-police-lies/ar-AA2hlKp4",
       "flag": null
+    },
+    {
+      "ts": "2026-11-12T23:00:00.000Z",
+      "outlet": "The State",
+      "headline": "Live Updates: Will Murdaugh’s murder indictment be dismissed?",
+      "url": "https://www.thestate.com/news/local/crime/article318049846.html",
+      "flag": "verdict-watch"
     },
     {
       "ts": "2026-11-12T21:01:00.000Z",
@@ -685,25 +699,9 @@
       "headline": "Alex Murdaugh returns to court for key pretrial hearing",
       "url": "https://www.newsnationnow.com/crime/alex-murdaugh-in-court-pretrial-hearing/",
       "flag": null
-    },
-    {
-      "ts": "2026-10-16T02:28:00.000Z",
-      "outlet": "WCBD News 2",
-      "headline": "Alex Murdaugh due in court for status hearing ahead of 2027 murder retrial",
-      "url": "https://www.counton2.com/news/south-carolina-news/alex-murdaugh-due-in-court-for-status-hearing-ahead-of-2027-murder-retrial/",
-      "flag": null
-    },
-    {
-      "ts": "2026-10-16T02:18:22.000Z",
-      "outlet": "via MSN",
-      "headline": "Murdaugh defense, prosecutors head back to court ahead of retrial",
-      "url": "https://www.msn.com/en-us/news/other/murdaugh-defense-prosecutors-head-back-to-court-ahead-of-retrial/ar-AA2emniT",
-      "flag": null
     }
   ],
   "seen": [
-    "1u1ved0",
-    "1cq2sb4",
     "pcjmse",
     "18mjgzm",
     "7x5jc4",
@@ -1301,6 +1299,8 @@
     "1gd6ayv",
     "1gerkn5",
     "1gerfm3",
-    "y1yfa9"
+    "y1yfa9",
+    "1ges96g",
+    "1w67gdr"
   ]
 }

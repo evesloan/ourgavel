@@ -8,6 +8,13 @@
       "flag": "verdict-watch"
     },
     {
+      "ts": "2026-11-13T06:58:00.000Z",
+      "outlet": "wsav.com",
+      "headline": "WATCH LIVE: Alex Murdaugh evidentiary hearing in Lexington County",
+      "url": "https://www.wsav.com/news/watch-live-alex-murdaugh-evidentiary-hearing-in-lexington-county/",
+      "flag": null
+    },
+    {
       "ts": "2026-11-13T05:33:00.000Z",
       "outlet": "WLTX News19",
       "headline": "Alex Murdaugh's attorneys seek dismissal of murder indictments at Friday hearing",
@@ -692,17 +699,9 @@
       "headline": "Fight over evidence in Alex Murdaugh retrial turns to DNA and missing murder weapons",
       "url": "https://www.sfgate.com/news/article/alex-murdaugh-s-defense-and-prosecutors-expect-to-22479693.php",
       "flag": null
-    },
-    {
-      "ts": "2026-10-16T04:55:00.000Z",
-      "outlet": "ijr.com",
-      "headline": "Murdaugh Retrial Evidence Disputes Set for Hearing",
-      "url": "https://ijr.com/discover/murdaugh-retrial-evidence-disputes-set-for-hearing-5fa87731",
-      "flag": null
     }
   ],
   "seen": [
-    "1l3co0q",
     "g3r3sk",
     "1sj6u6c",
     "1puea6q",
@@ -1301,6 +1300,7 @@
     "543lmv",
     "1gesxiw",
     "yn66bp",
-    "1lu6fn3"
+    "1lu6fn3",
+    "1ft4sp2"
   ]
 }

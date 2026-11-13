@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-13T04:44:43.000Z",
+      "outlet": "via MSN",
+      "headline": "Alex Murdaugh returns to Lexington County court for further retrial proceedings",
+      "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-returns-to-lexington-county-court-for-further-retrial-proceedings/ar-AA2hnoLe",
+      "flag": null
+    },
+    {
       "ts": "2026-11-13T04:22:39.000Z",
       "outlet": "via MSN",
       "headline": "Judge to hear Murdaugh defense request as case shifts toward Sumter retrial",
@@ -48,6 +55,13 @@
       "headline": "Sumter clerk says court is prepared for Murdaugh retrial as jury safeguards face scrutiny",
       "url": "https://www.msn.com/en-us/news/other/sumter-clerk-says-court-is-prepared-for-murdaugh-retrial-as-jury-safeguards-face-scrutiny/ar-AA2hklDT",
       "flag": null
+    },
+    {
+      "ts": "2026-11-12T16:00:00.000Z",
+      "outlet": "usnews.com",
+      "headline": "Alex Murdaugh Wants Murder Indictments Dismissed, Saying Agent Lied to Grand Jury",
+      "url": "https://www.usnews.com/news/us/articles/2026-11-13/alex-murdaugh-wants-murder-indictments-dismissed-saying-agent-lied-to-grand-jury",
+      "flag": "verdict-watch"
     },
     {
       "ts": "2026-11-12T15:38:00.000Z",
@@ -685,25 +699,9 @@
       "headline": "Alex Murdaugh due back in court amid defense questions about police handling of missing murder weapons",
       "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-due-back-in-court-amid-defense-questions-about-police-handling-of-missing-murder-weapons/ar-AA2emZ7z",
       "flag": null
-    },
-    {
-      "ts": "2026-10-16T03:00:00.000Z",
-      "outlet": "kxly.com",
-      "headline": "Judge in Alex Murdaugh’s retrial insists case will not ‘become a circus’ as parties clash over evidence",
-      "url": "https://www.kxly.com/news/national-and-world-news/judge-in-alex-murdaugh-s-retrial-insists-case-will-not-become-a-circus-as-parties/article_4b8c1166-82ed-54f0-8be4-5389adb865ce.html",
-      "flag": null
-    },
-    {
-      "ts": "2026-10-16T03:00:00.000Z",
-      "outlet": "newsnationnow.com",
-      "headline": "Alex Murdaugh returns to court for key pretrial hearing",
-      "url": "https://www.newsnationnow.com/crime/alex-murdaugh-in-court-pretrial-hearing/",
-      "flag": null
     }
   ],
   "seen": [
-    "pcjmse",
-    "18mjgzm",
     "7x5jc4",
     "1htvg30",
     "1l3co0q",
@@ -1301,6 +1299,8 @@
     "1gerfm3",
     "y1yfa9",
     "1ges96g",
-    "1w67gdr"
+    "1w67gdr",
+    "543lmv",
+    "1gesxiw"
   ]
 }

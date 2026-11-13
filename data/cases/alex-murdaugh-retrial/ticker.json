@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-13T14:55:13.000Z",
+      "outlet": "FITSNews",
+      "headline": "LIVE FEED: Murdaugh Defense Asks Judge To Toss Murder Indictments",
+      "url": "https://www.fitsnews.com/2026/11/13/murdaugh-live-feed-dismiss-indictments/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-11-13T05:33:00.000Z",
       "outlet": "WLTX News19",
       "headline": "Alex Murdaugh's attorneys seek dismissal of murder indictments at Friday hearing",
@@ -692,17 +699,9 @@
       "headline": "Murdaugh Retrial Evidence Disputes Set for Hearing",
       "url": "https://ijr.com/discover/murdaugh-retrial-evidence-disputes-set-for-hearing-5fa87731",
       "flag": null
-    },
-    {
-      "ts": "2026-10-16T04:30:00.000Z",
-      "outlet": "via MSN",
-      "headline": "Live updates: What happened when Alex Murdaugh returned to court for new hearing",
-      "url": "https://www.msn.com/en-us/news/other/live-updates-what-happened-when-alex-murdaugh-returned-to-court-for-new-hearing/ar-AA2enSXf",
-      "flag": null
     }
   ],
   "seen": [
-    "1htvg30",
     "1l3co0q",
     "g3r3sk",
     "1sj6u6c",
@@ -1301,6 +1300,7 @@
     "1w67gdr",
     "543lmv",
     "1gesxiw",
-    "yn66bp"
+    "yn66bp",
+    "1lu6fn3"
   ]
 }

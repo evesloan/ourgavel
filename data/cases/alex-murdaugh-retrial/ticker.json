@@ -15,6 +15,13 @@
       "flag": "verdict-watch"
     },
     {
+      "ts": "2026-11-13T11:33:44.000Z",
+      "outlet": "via MSN",
+      "headline": "Alex Murdaugh defense alleges false evidence presented to grand jury",
+      "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-defense-alleges-false-evidence-presented-to-grand-jury/ar-AA2hniXA",
+      "flag": null
+    },
+    {
       "ts": "2026-11-13T10:52:30.000Z",
       "outlet": "via MSN",
       "headline": "Alex Murdaugh has hearing on indictments, testimony",
@@ -692,17 +699,9 @@
       "headline": "‘This isn’t a sound bite’: Judge scolds attorneys at Alex Murdaugh pretrial hearing",
       "url": "https://www.courttv.com/news/this-isnt-a-sound-bite-judge-scolds-attorneys-at-alex-murdaugh-pretrial-hearing/",
       "flag": null
-    },
-    {
-      "ts": "2026-10-16T07:06:12.000Z",
-      "outlet": "via MSN",
-      "headline": "Live updates from Alex Murdaugh back in court for retrial hearing",
-      "url": "https://www.msn.com/en-us/news/other/live-updates-from-alex-murdaugh-back-in-court-for-retrial-hearing/ar-AA2eo4Eg",
-      "flag": null
     }
   ],
   "seen": [
-    "pik4y",
     "xznmj2",
     "1fquckc",
     "ph6948",
@@ -1301,6 +1300,7 @@
     "1get2gr",
     "15b6zqw",
     "1gesxet",
-    "uejck6"
+    "uejck6",
+    "1gestcy"
   ]
 }

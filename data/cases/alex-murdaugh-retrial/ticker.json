@@ -15,6 +15,13 @@
       "flag": "verdict-watch"
     },
     {
+      "ts": "2026-11-13T13:46:02.000Z",
+      "outlet": "via MSN",
+      "headline": "Alex Murdaugh defense alleges false evidence presented to grand jury",
+      "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-defense-alleges-false-evidence-presented-to-grand-jury/ar-AA2hnZ2j",
+      "flag": null
+    },
+    {
       "ts": "2026-11-13T13:06:05.000Z",
       "outlet": "via MSN",
       "headline": "Live: Alex Murdaugh defense alleges false evidence presented to grand jury",
@@ -36,10 +43,10 @@
       "flag": null
     },
     {
-      "ts": "2026-11-13T10:52:30.000Z",
-      "outlet": "via MSN",
-      "headline": "Alex Murdaugh has hearing on indictments, testimony",
-      "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-has-hearing-on-indictments-testimony/ar-AA2hnOgM",
+      "ts": "2026-11-13T10:37:00.000Z",
+      "outlet": "Boston Herald",
+      "headline": "Alex Murdaugh wants murder indictments dismissed, saying agent lied to grand jury",
+      "url": "https://www.bostonherald.com/2026/11/13/alex-murdaugh-murder-indictments/",
       "flag": "verdict-watch"
     },
     {
@@ -111,6 +118,13 @@
       "headline": "WATCH LIVE: Alex Murdaugh evidentiary hearing in Lexington County",
       "url": "https://www.wsav.com/news/watch-live-alex-murdaugh-evidentiary-hearing-in-lexington-county/",
       "flag": null
+    },
+    {
+      "ts": "2026-11-13T05:52:00.000Z",
+      "outlet": "UPI",
+      "headline": "Alex Murdaugh has hearing on indictments, testimony",
+      "url": "https://www.upi.com/Top_News/US/2026/11/13/south-carolina-alex-murdaugh-indictment-hearing/2751794592790/",
+      "flag": "verdict-watch"
     },
     {
       "ts": "2026-11-13T05:33:00.000Z",
@@ -685,26 +699,9 @@
       "headline": "Alex Murdaugh's lawyer suggests his wife and son were killed in '$165k drug deal gone bad' as sensational theory takes center stage at retrial hearing",
       "url": "https://www.dailymail.com/crime-desk/article-16214735/alex-murdaugh-trial-hearing-today.html",
       "flag": null
-    },
-    {
-      "ts": "2026-10-16T09:39:00.000Z",
-      "outlet": "wsav.com",
-      "headline": "Alex Murdaugh defense wins request for new DNA testing ahead of retrial",
-      "url": "https://www.wsav.com/news/local-news/south-carolina-news/alex-murdaugh-defense-wins-request-for-new-dna-testing-ahead-of-retrial/",
-      "flag": null
-    },
-    {
-      "ts": "2026-10-16T09:24:00.000Z",
-      "outlet": "Fox News",
-      "headline": "Alex Murdaugh retrial hearing begins over key evidence in South Carolina",
-      "url": "https://www.foxnews.com/video/6406970645112",
-      "flag": null
     }
   ],
   "seen": [
-    "ph6948",
-    "5pbevh",
-    "ibc677",
     "d1fgiq",
     "12b4rf5",
     "yszzkt",
@@ -1301,6 +1298,9 @@
     "uejck6",
     "1gestcy",
     "1gesqly",
-    "1getrdw"
+    "1getrdw",
+    "donybn",
+    "1get4aq",
+    "16cq9v9"
   ]
 }

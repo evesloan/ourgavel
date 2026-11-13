@@ -15,6 +15,13 @@
       "flag": null
     },
     {
+      "ts": "2026-11-12T13:25:00.000Z",
+      "outlet": "wach.com",
+      "headline": "Alex Murdaugh scheduled for pretrial hearing in Lexington County",
+      "url": "https://wach.com/news/local/alex-murdaugh-scheduled-for-pretrial-hearing-in-lexington-county-courtroom",
+      "flag": null
+    },
+    {
       "ts": "2026-11-11T21:00:00.000Z",
       "outlet": "The Post and Courier",
       "headline": "Crime scene confusion still rampant as Murdaugh asks judge to toss murder charges",
@@ -692,17 +699,9 @@
       "headline": "Mystery cop and missing weapons haunt Alex Murdaugh retrial",
       "url": "https://www.msn.com/en-us/news/other/mystery-cop-and-missing-weapons-haunt-alex-murdaugh-retrial/ar-AA2em2Rg",
       "flag": null
-    },
-    {
-      "ts": "2026-10-16T02:03:00.000Z",
-      "outlet": "via AOL",
-      "headline": "Alex Murdaugh’s lawyers raise explosive questions about possible accomplice",
-      "url": "https://www.aol.com/articles/alex-murdaugh-lawyers-raise-explosive-090322000.html",
-      "flag": null
     }
   ],
   "seen": [
-    "25x6p2",
     "5g4fgk",
     "8z64be",
     "10r8vl5",
@@ -1301,6 +1300,7 @@
     "n68p1m",
     "1j6b7cj",
     "16f9233",
-    "1geqy5r"
+    "1geqy5r",
+    "mi43i3"
   ]
 }

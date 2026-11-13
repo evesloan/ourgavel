@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-12T15:38:00.000Z",
+      "outlet": "WLTX News19",
+      "headline": "How to watch Alex Murdaugh's Nov. 13 pretrial hearing",
+      "url": "https://www.wltx.com/article/news/special-reports/alex-murdaugh/how-to-watch-alex-murdaughs-latest-hearing/101-3d2e1f32-518b-4521-b311-f3046ad1d95c",
+      "flag": null
+    },
+    {
       "ts": "2026-11-11T21:00:00.000Z",
       "outlet": "The Post and Courier",
       "headline": "Crime scene confusion still rampant as Murdaugh asks judge to toss murder charges",
@@ -692,17 +699,9 @@
       "headline": "Live updates: Murdaugh returns to court as attorneys seek new retrial evidence",
       "url": "https://www.thestate.com/news/local/crime/article317639302.html",
       "flag": null
-    },
-    {
-      "ts": "2026-10-15T22:00:00.000Z",
-      "outlet": "The Post and Courier",
-      "headline": "Murdaugh hearing to focus on murder scene evidence, possible cover-up",
-      "url": "https://www.postandcourier.com/murdaugh-updates/murdaugh-evidence-dna-guns-possible-cover-up/article_7aee1061-262d-41f9-bcc3-88a7f5f50906.html",
-      "flag": null
     }
   ],
   "seen": [
-    "bpbyxv",
     "1ujr2hn",
     "25x6p2",
     "5g4fgk",
@@ -1301,6 +1300,7 @@
     "1klh8b3",
     "1gekd5s",
     "n68p1m",
-    "1j6b7cj"
+    "1j6b7cj",
+    "16f9233"
   ]
 }

@@ -1,10 +1,31 @@
 {
   "items": [
     {
+      "ts": "2026-11-13T18:50:42.000Z",
+      "outlet": "WLTX News19",
+      "headline": "Murdaugh asks judge to toss murder indictments, saying grand jury heard false blood evidence",
+      "url": "https://www.wltx.com/article/news/special-reports/alex-murdaugh/judge-rule-murdaugh-bid-toss-indictments-grand-jury-testimony/101-75f3b709-9308-4548-a352-2c2487e09475",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-11-13T14:55:13.000Z",
       "outlet": "FITSNews",
       "headline": "LIVE FEED: Murdaugh Defense Asks Judge To Toss Murder Indictments",
       "url": "https://www.fitsnews.com/2026/11/13/murdaugh-live-feed-dismiss-indictments/",
+      "flag": "verdict-watch"
+    },
+    {
+      "ts": "2026-11-13T10:52:30.000Z",
+      "outlet": "via MSN",
+      "headline": "Alex Murdaugh has hearing on indictments, testimony",
+      "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-has-hearing-on-indictments-testimony/ar-AA2hnOgM",
+      "flag": "verdict-watch"
+    },
+    {
+      "ts": "2026-11-13T10:37:00.000Z",
+      "outlet": "mercurynews.com",
+      "headline": "Alex Murdaugh wants murder indictments dismissed, saying agent lied to grand jury",
+      "url": "https://www.mercurynews.com/2026/11/13/alex-murdaugh-murder-indictments/",
       "flag": "verdict-watch"
     },
     {
@@ -678,33 +699,9 @@
       "headline": "Live updates from Alex Murdaugh back in court for retrial hearing",
       "url": "https://www.msn.com/en-us/news/other/live-updates-from-alex-murdaugh-back-in-court-for-retrial-hearing/ar-AA2eo4Eg",
       "flag": null
-    },
-    {
-      "ts": "2026-10-16T06:54:43.000Z",
-      "outlet": "via MSN",
-      "headline": "LIVE: Murdaugh defense, prosecutors head back to court",
-      "url": "https://www.msn.com/en-us/news/other/live-murdaugh-defense-prosecutors-head-back-to-court/ar-AA2eo9zT",
-      "flag": null
-    },
-    {
-      "ts": "2026-10-16T06:23:00.000Z",
-      "outlet": "The Greenville News",
-      "headline": "Alex Murdaugh heads back to court for motions leading up to retrial",
-      "url": "https://www.greenvilleonline.com/story/news/crime/2026/10/16/livestream-alex-murdaugh-court-date-today-south-carolina-double-homicide/92278985007/",
-      "flag": null
-    },
-    {
-      "ts": "2026-10-16T06:21:00.000Z",
-      "outlet": "Fox News",
-      "headline": "Alex Murdaugh returns to court for hearing on what evidence can be used in retrial",
-      "url": "https://www.foxnews.com/live-news/alex-murdaugh-returns-to-court-for-hearing-on-what-evidence-can-be-used-in-retrial",
-      "flag": null
     }
   ],
   "seen": [
-    "ece0e7",
-    "s5w8yv",
-    "kxmcy3",
     "pik4y",
     "xznmj2",
     "1fquckc",
@@ -1301,6 +1298,9 @@
     "1gesqu6",
     "1gesnc8",
     "1gestwy",
-    "1get2gr"
+    "1get2gr",
+    "15b6zqw",
+    "1gesxet",
+    "uejck6"
   ]
 }

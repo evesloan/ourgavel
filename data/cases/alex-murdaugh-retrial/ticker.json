@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-13T05:33:00.000Z",
+      "outlet": "WLTX News19",
+      "headline": "Alex Murdaugh's attorneys seek dismissal of murder indictments at Friday hearing",
+      "url": "https://www.wltx.com/article/news/special-reports/alex-murdaugh/alex-murdaugh-hearing-november-13/101-18e50b33-fca4-47b8-bf11-16a201811064",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-11-13T04:44:43.000Z",
       "outlet": "via MSN",
       "headline": "Alex Murdaugh returns to Lexington County court for further retrial proceedings",
@@ -692,17 +699,9 @@
       "headline": "Live updates: What happened when Alex Murdaugh returned to court for new hearing",
       "url": "https://www.msn.com/en-us/news/other/live-updates-what-happened-when-alex-murdaugh-returned-to-court-for-new-hearing/ar-AA2enSXf",
       "flag": null
-    },
-    {
-      "ts": "2026-10-16T03:00:46.000Z",
-      "outlet": "via MSN",
-      "headline": "Alex Murdaugh due back in court amid defense questions about police handling of missing murder weapons",
-      "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-due-back-in-court-amid-defense-questions-about-police-handling-of-missing-murder-weapons/ar-AA2emZ7z",
-      "flag": null
     }
   ],
   "seen": [
-    "7x5jc4",
     "1htvg30",
     "1l3co0q",
     "g3r3sk",
@@ -1301,6 +1300,7 @@
     "1ges96g",
     "1w67gdr",
     "543lmv",
-    "1gesxiw"
+    "1gesxiw",
+    "yn66bp"
   ]
 }

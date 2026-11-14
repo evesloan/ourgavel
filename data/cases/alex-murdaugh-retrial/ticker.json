@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-14T15:23:27.000Z",
+      "outlet": "FITSNews",
+      "headline": "Week in Review &#8211; ‘Sizzle Reel’ Drama and Alex Murdaugh’s Imperiled Indictments",
+      "url": "https://www.fitsnews.com/2026/11/14/week-in-review-sizzle-reel-drama-and-alex-murdaughs-imperiled-indictments/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-11-14T06:10:29.000Z",
       "outlet": "via MSN",
       "headline": "Did a South Carolina investigator’s false testimony taint the Alex Murdaugh murder charges?",
@@ -692,17 +699,9 @@
       "headline": "Alex Murdaugh in court for evidence hearing",
       "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-in-court-for-evidence-hearing/vi-AA2ep7u2",
       "flag": null
-    },
-    {
-      "ts": "2026-10-16T11:55:29.000Z",
-      "outlet": "FITSNews",
-      "headline": "LIVE FEED: Murdaugh Retrial Evidence Battles",
-      "url": "https://www.fitsnews.com/2026/10/16/murdaugh-pretrial-hearing/",
-      "flag": null
     }
   ],
   "seen": [
-    "30x61y",
     "rmy8k7",
     "1460t8z",
     "dgr3r",
@@ -1301,6 +1300,7 @@
     "1geu9so",
     "wts1a3",
     "18ne4rc",
-    "1geuy1s"
+    "1geuy1s",
+    "1u5unhg"
   ]
 }

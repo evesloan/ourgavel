@@ -92,6 +92,13 @@
       "flag": null
     },
     {
+      "ts": "2026-11-13T11:33:49.000Z",
+      "outlet": "via MSN",
+      "headline": "Alex Murdaugh defense alleges false evidence presented to grand jury",
+      "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-defense-alleges-false-evidence-presented-to-grand-jury/ar-AA2hnAX7",
+      "flag": null
+    },
+    {
       "ts": "2026-11-13T11:33:44.000Z",
       "outlet": "via MSN",
       "headline": "Alex Murdaugh defense alleges false evidence presented to grand jury",
@@ -692,17 +699,9 @@
       "headline": "Fight over evidence in Alex Murdaugh retrial turns to DNA and missing murder weapons",
       "url": "https://www.enidnews.com/region/fight-over-evidence-in-alex-murdaugh-retrial-turns-to-dna-and-missing-murder-weapons/article_eed8ecd2-140a-5fd8-a80c-c093e3cbbb3d.html",
       "flag": null
-    },
-    {
-      "ts": "2026-10-16T12:04:19.000Z",
-      "outlet": "via MSN",
-      "headline": "Alex Murdaugh in court for evidence hearing",
-      "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-in-court-for-evidence-hearing/vi-AA2ep7u2",
-      "flag": null
     }
   ],
   "seen": [
-    "rmy8k7",
     "1460t8z",
     "dgr3r",
     "14b282p",
@@ -1301,6 +1300,7 @@
     "wts1a3",
     "18ne4rc",
     "1geuy1s",
-    "1u5unhg"
+    "1u5unhg",
+    "1gesne8"
   ]
 }

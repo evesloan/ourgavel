@@ -43,6 +43,13 @@
       "flag": null
     },
     {
+      "ts": "2026-11-13T13:29:00.000Z",
+      "outlet": "wwaytv3.com",
+      "headline": "Judge hears Murdaugh defense request as case shifts toward retrial in seperate county",
+      "url": "https://www.wwaytv3.com/judge-hears-murdaugh-defense-request-as-case-shifts-toward-retrial-in-seperate-county/",
+      "flag": null
+    },
+    {
       "ts": "2026-11-13T13:06:05.000Z",
       "outlet": "via MSN",
       "headline": "Live: Alex Murdaugh defense alleges false evidence presented to grand jury",
@@ -692,17 +699,9 @@
       "headline": "Alex Murdaugh Judge Lays Down the Law, Warns She Won’t Let Retrial ‘Become a Circus’",
       "url": "https://ca.news.yahoo.com/alex-murdaugh-judge-lays-down-173154342.html",
       "flag": null
-    },
-    {
-      "ts": "2026-10-16T10:30:00.000Z",
-      "outlet": "via Yahoo News",
-      "headline": "Alex Murdaugh Judge Lays Down the Law, Warns She Won’t Let Retrial ‘Become a Circus’",
-      "url": "https://www.yahoo.com/entertainment/us/articles/alex-murdaugh-judge-lays-down-173154342.html",
-      "flag": null
     }
   ],
   "seen": [
-    "blj0nx",
     "1cy0lrd",
     "ga2a5a",
     "zeadl3",
@@ -1301,6 +1300,7 @@
     "mdyvr9",
     "1getjpi",
     "1geu816",
-    "8bfxbv"
+    "8bfxbv",
+    "b0be1i"
   ]
 }

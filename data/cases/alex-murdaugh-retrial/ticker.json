@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-14T06:10:29.000Z",
+      "outlet": "via MSN",
+      "headline": "Did a South Carolina investigator’s false testimony taint the Alex Murdaugh murder charges?",
+      "url": "https://www.msn.com/en-us/news/other/did-a-south-carolina-investigator-s-false-testimony-taint-the-alex-murdaugh-murder-charges/ar-AA2hqTFE",
+      "flag": null
+    },
+    {
       "ts": "2026-11-13T23:27:44.000Z",
       "outlet": "WLTX News19",
       "headline": "Murdaugh asks judge to toss murder indictment over disputed blood evidence presented to grand jury",
@@ -692,17 +699,9 @@
       "headline": "LIVE FEED: Murdaugh Retrial Evidence Battles",
       "url": "https://www.fitsnews.com/2026/10/16/murdaugh-pretrial-hearing/",
       "flag": null
-    },
-    {
-      "ts": "2026-10-16T11:38:53.000Z",
-      "outlet": "via MSN",
-      "headline": "Judge in Alex Murdaugh case warns she won't let retrial ‘become a circus’",
-      "url": "https://www.msn.com/en-us/news/other/judge-in-alex-murdaugh-case-warns-she-wont-let-retrial-become-a-circus/ar-AA2epPyS",
-      "flag": null
     }
   ],
   "seen": [
-    "qzt56s",
     "30x61y",
     "rmy8k7",
     "1460t8z",
@@ -1301,6 +1300,7 @@
     "xk5d16",
     "1geu9so",
     "wts1a3",
-    "18ne4rc"
+    "18ne4rc",
+    "1geuy1s"
   ]
 }

@@ -8,6 +8,13 @@
       "flag": "verdict-watch"
     },
     {
+      "ts": "2026-11-13T21:00:00.000Z",
+      "outlet": "The State",
+      "headline": "Alex Murdaugh's defense asked a judge to toss his murder indictment. What to know",
+      "url": "https://www.thestate.com/news/local/crime/article318068152.html",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-11-13T19:47:00.000Z",
       "outlet": "via MSN",
       "headline": "Alex Murdaugh defense team seeks dismal in recent hearing",
@@ -692,17 +699,9 @@
       "headline": "Judge in Alex Murdaugh case warns she won't let retrial ‘become a circus’",
       "url": "https://www.msn.com/en-us/news/other/judge-in-alex-murdaugh-case-warns-she-wont-let-retrial-become-a-circus/ar-AA2epPyS",
       "flag": null
-    },
-    {
-      "ts": "2026-10-16T11:38:00.000Z",
-      "outlet": "usmagazine.com",
-      "headline": "Judge in Alex Murdaugh Case Warns She Won’t Let Murder Retrial ‘Become a Circus’",
-      "url": "https://www.usmagazine.com/crime-news/news/alex-murdaugh-judge-says-retrial-wont-become-a-circus/",
-      "flag": null
     }
   ],
   "seen": [
-    "1w7klm4",
     "qzt56s",
     "30x61y",
     "rmy8k7",
@@ -1301,6 +1300,7 @@
     "1gete27",
     "xk5d16",
     "1geu9so",
-    "wts1a3"
+    "wts1a3",
+    "18ne4rc"
   ]
 }

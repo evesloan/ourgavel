@@ -8,6 +8,13 @@
       "flag": "verdict-watch"
     },
     {
+      "ts": "2026-11-13T19:47:00.000Z",
+      "outlet": "via MSN",
+      "headline": "Alex Murdaugh defense team seeks dismal in recent hearing",
+      "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-defense-team-seeks-dismal-in-recent-hearing/ar-AA2hoH7O",
+      "flag": null
+    },
+    {
       "ts": "2026-11-13T18:50:42.000Z",
       "outlet": "WLTX News19",
       "headline": "Murdaugh asks judge to toss murder indictments, saying grand jury heard false blood evidence",
@@ -19,6 +26,13 @@
       "outlet": "via MSN",
       "headline": "Live: Alex Murdaugh defense alleges false evidence presented to grand jury",
       "url": "https://www.msn.com/en-us/news/other/live-alex-murdaugh-defense-alleges-false-evidence-presented-to-grand-jury/ar-AA2hppCO",
+      "flag": null
+    },
+    {
+      "ts": "2026-11-13T16:00:00.000Z",
+      "outlet": "WCSC Live 5 News",
+      "headline": "Deep Dive: Murdaugh Murders Retrial Ep. 5",
+      "url": "https://www.live5news.com/2026/11/14/deep-dive-murdaugh-murders-retrial-ep-5/",
       "flag": null
     },
     {
@@ -685,25 +699,9 @@
       "headline": "Alex Murdaugh Judge Lays Down the Law, Warns She Won’t Let Retrial ‘Become a Circus’",
       "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-judge-lays-down-the-law-warns-she-won-t-let-retrial-become-a-circus/ar-AA2eoKnM",
       "flag": null
-    },
-    {
-      "ts": "2026-10-16T11:02:00.000Z",
-      "outlet": "nypost.com",
-      "headline": "Alex Murdaugh judge warns against courtroom ‘circus’ as defense wins DNA fight, loses ballistics bid",
-      "url": "https://nypost.com/2026/10/17/us-news/alex-murdaugh-judge-warns-against-courtroom-circus-as-defense-wins-dna-fight-loses-ballistics-bid/",
-      "flag": null
-    },
-    {
-      "ts": "2026-10-16T10:30:00.000Z",
-      "outlet": "via Yahoo News",
-      "headline": "Alex Murdaugh Judge Lays Down the Law, Warns She Won’t Let Retrial ‘Become a Circus’",
-      "url": "https://ca.news.yahoo.com/alex-murdaugh-judge-lays-down-173154342.html",
-      "flag": null
     }
   ],
   "seen": [
-    "1cy0lrd",
-    "ga2a5a",
     "zeadl3",
     "16egnw7",
     "1w7klm4",
@@ -1301,6 +1299,8 @@
     "1getjpi",
     "1geu816",
     "8bfxbv",
-    "b0be1i"
+    "b0be1i",
+    "1gete27",
+    "xk5d16"
   ]
 }

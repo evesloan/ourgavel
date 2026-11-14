@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-14T22:03:34.000Z",
+      "outlet": "FITSNews",
+      "headline": "Murdaugh Retrial: Judge Takes Indictment Challenge Under Advisement",
+      "url": "https://www.fitsnews.com/2026/11/14/murdaugh-judge-indictment-challenge/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-11-14T15:23:27.000Z",
       "outlet": "FITSNews",
       "headline": "Week in Review &#8211; ‘Sizzle Reel’ Drama and Alex Murdaugh’s Imperiled Indictments",
@@ -96,6 +103,13 @@
       "outlet": "via MSN",
       "headline": "Live: Alex Murdaugh defense alleges false evidence presented to grand jury",
       "url": "https://www.msn.com/en-us/news/other/live-alex-murdaugh-defense-alleges-false-evidence-presented-to-grand-jury/ar-AA2hoxTQ",
+      "flag": null
+    },
+    {
+      "ts": "2026-11-13T11:33:52.000Z",
+      "outlet": "via MSN",
+      "headline": "Alex Murdaugh defense alleges false evidence presented to grand jury",
+      "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-defense-alleges-false-evidence-presented-to-grand-jury/ar-AA2hnPOj",
       "flag": null
     },
     {
@@ -685,25 +699,9 @@
       "headline": "Murdaugh murder trial judge: 'I will not allow this to become a circus'",
       "url": "https://www.msn.com/en-us/news/other/murdaugh-murder-trial-judge-i-will-not-allow-this-to-become-a-circus/ar-AA2ep5fP",
       "flag": null
-    },
-    {
-      "ts": "2026-10-16T12:10:00.000Z",
-      "outlet": "mercurynews.com",
-      "headline": "Fight over evidence in Alex Murdaugh retrial turns to DNA and missing murder weapons",
-      "url": "https://www.mercurynews.com/2026/10/16/alex-murdaugh-pretrial-hearing/",
-      "flag": null
-    },
-    {
-      "ts": "2026-10-16T12:07:00.000Z",
-      "outlet": "mankatofreepress.com",
-      "headline": "Fight over evidence in Alex Murdaugh retrial turns to DNA and missing murder weapons",
-      "url": "https://www.mankatofreepress.com/news/state_national_news/fight-over-evidence-in-alex-murdaugh-retrial-turns-to-dna-and-missing-murder-weapons/article_9a5b4fdd-56d1-57ba-a509-3d3c996f671d.html",
-      "flag": null
     }
   ],
   "seen": [
-    "dgr3r",
-    "14b282p",
     "1lrt3np",
     "1o46gw2",
     "4wqzt5",
@@ -1301,6 +1299,8 @@
     "1geuy1s",
     "1u5unhg",
     "1gesne8",
-    "evt9ws"
+    "evt9ws",
+    "1gesycb",
+    "ozasqo"
   ]
 }

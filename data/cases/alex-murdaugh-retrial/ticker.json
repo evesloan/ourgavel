@@ -218,6 +218,13 @@
       "flag": null
     },
     {
+      "ts": "2026-11-12T23:43:00.000Z",
+      "outlet": "courtroominsider.com",
+      "headline": "WATCH LIVE: Alex Murdaugh asks judge to throw out grand jury murder indictments",
+      "url": "https://www.courtroominsider.com/2026/11/watch-live-alex-murdaugh-asks-judge-to-throw-out-grand-jury-murder-indictments/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-11-12T23:00:00.000Z",
       "outlet": "The State",
       "headline": "Live Updates: Will Murdaugh’s murder indictment be dismissed?",
@@ -692,17 +699,9 @@
       "headline": "Judge in Alex Murdaugh Case Warns She Won’t Let Murder Retrial ‘Become a Circus’",
       "url": "https://www.usmagazine.com/crime-news/news/alex-murdaugh-judge-says-retrial-wont-become-a-circus/",
       "flag": null
-    },
-    {
-      "ts": "2026-10-16T11:14:00.000Z",
-      "outlet": "via MSN",
-      "headline": "Alex Murdaugh Judge Lays Down the Law, Warns She Won’t Let Retrial ‘Become a Circus’",
-      "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-judge-lays-down-the-law-warns-she-won-t-let-retrial-become-a-circus/ar-AA2eoKnM",
-      "flag": null
     }
   ],
   "seen": [
-    "16egnw7",
     "1w7klm4",
     "qzt56s",
     "30x61y",
@@ -1301,6 +1300,7 @@
     "b0be1i",
     "1gete27",
     "xk5d16",
-    "1geu9so"
+    "1geu9so",
+    "wts1a3"
   ]
 }

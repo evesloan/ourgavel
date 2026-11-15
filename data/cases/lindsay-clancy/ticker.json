@@ -8,6 +8,13 @@
       "flag": null
     },
     {
+      "ts": "2026-11-14T13:21:10.000Z",
+      "outlet": "NBC10 Boston",
+      "headline": "Small classroom fire at Duxbury Middle School",
+      "url": "https://www.nbcboston.com/news/local/small-classroom-fire-at-duxbury-middle-school/4049642/",
+      "flag": null
+    },
+    {
       "ts": "2026-11-10T02:56:17.000Z",
       "outlet": "Boston.com",
       "headline": "Judge denies Lindsay Clancy’s motion to dismiss murder charges",
@@ -692,13 +699,6 @@
       "headline": "Lindsay Clancy hires attorney who was briefly part of Karen Read's legal team",
       "url": "https://www.wcvb.com/article/lindsay-clancy-hires-martin-weinberg/73759765",
       "flag": null
-    },
-    {
-      "ts": "2026-09-16T14:05:56.000Z",
-      "outlet": "Boston.com",
-      "headline": "Massachusetts governor proposes improved postpartum healthcare after Lindsay Clancy trial",
-      "url": "https://www.boston.com/news/health/2026/09/16/massachusetts-governor-proposes-improved-postpartum-healthcare-after-lindsay-clancy-trial/",
-      "flag": null
     }
   ],
   "seen": [
@@ -1077,6 +1077,7 @@
     "1fn5eky",
     "1mcrvkj",
     "14int4b",
-    "1iqq21p"
+    "1iqq21p",
+    "18dn24h"
   ]
 }

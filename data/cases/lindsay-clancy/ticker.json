@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-15T13:00:00.000Z",
+      "outlet": "WCVB",
+      "headline": "Sprinkler system helps stop Saturday night fire at Duxbury High School",
+      "url": "https://www.wcvb.com/article/sprinkler-system-helps-stop-saturday-night-fire-at-duxbury-high-school/74431927",
+      "flag": null
+    },
+    {
       "ts": "2026-11-10T02:56:17.000Z",
       "outlet": "Boston.com",
       "headline": "Judge denies Lindsay Clancy’s motion to dismiss murder charges",
@@ -692,13 +699,6 @@
       "headline": "Massachusetts governor proposes improved postpartum healthcare after Lindsay Clancy trial",
       "url": "https://www.boston.com/news/health/2026/09/16/massachusetts-governor-proposes-improved-postpartum-healthcare-after-lindsay-clancy-trial/",
       "flag": null
-    },
-    {
-      "ts": "2026-09-16T14:03:11.000Z",
-      "outlet": "NBC10 Boston",
-      "headline": "Patrick Clancy gives his 1st interview after the Lindsay Clancy trial",
-      "url": "https://www.nbcboston.com/news/local/patrick-clancy-first-interview/4015837/",
-      "flag": null
     }
   ],
   "seen": [
@@ -1076,6 +1076,7 @@
     "1rcaevv",
     "1fn5eky",
     "1mcrvkj",
-    "14int4b"
+    "14int4b",
+    "1iqq21p"
   ]
 }

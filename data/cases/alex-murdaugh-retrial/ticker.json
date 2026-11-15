@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-15T22:18:18.000Z",
+      "outlet": "FITSNews",
+      "headline": "Murdaugh Retrial: Prosecution’s ‘Sizzle Reel’ Scandal Snowballs",
+      "url": "https://www.fitsnews.com/2026/11/15/murdaugh-retrial-prosecutions-sizzle-reel-scandal-snowballs/",
+      "flag": null
+    },
+    {
       "ts": "2026-11-14T22:03:34.000Z",
       "outlet": "FITSNews",
       "headline": "Murdaugh Retrial: Judge Takes Indictment Challenge Under Advisement",
@@ -692,17 +699,9 @@
       "headline": "Judge rules on DNA testing, evidence motions ahead of Murdaugh retrial",
       "url": "https://www.msn.com/en-us/news/other/judge-rules-on-dna-testing-evidence-motions-ahead-of-murdaugh-retrial/ar-AA2eppNH",
       "flag": null
-    },
-    {
-      "ts": "2026-10-16T13:38:00.000Z",
-      "outlet": "wng.org",
-      "headline": "Retrial set for Alex Murdaugh’s alleged murder of wife, son",
-      "url": "https://wng.org/sift/retrial-set-for-alex-murdaughs-alleged-murder-of-wife-son-1792182765",
-      "flag": null
     }
   ],
   "seen": [
-    "4wqzt5",
     "k59quv",
     "pltmr",
     "p8jkup",
@@ -1301,6 +1300,7 @@
     "1gesycb",
     "ozasqo",
     "1gesumv",
-    "1geshst"
+    "1geshst",
+    "1i3lfvs"
   ]
 }

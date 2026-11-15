@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-15T14:09:32.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Sprinkler stops fire in Duxbury High School classroom",
+      "url": "https://www.boston25news.com/news/local/sprinkler-stops-fire-duxbury-high-school-classroom/PJ7VFF6DL5C2VPCREEWV7WW23E/",
+      "flag": null
+    },
+    {
       "ts": "2026-11-15T13:00:00.000Z",
       "outlet": "WCVB",
       "headline": "Sprinkler system helps stop Saturday night fire at Duxbury High School",
@@ -692,13 +699,6 @@
       "headline": "Patrick Clancy to give first interview since Lindsay Clancy mistrial Sunday night on ‘60 Minutes’",
       "url": "https://www.boston.com/news/crime/2026/09/16/patrick-clancy-interview-60-minutes/",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-09-16T15:19:00.000Z",
-      "outlet": "WCVB",
-      "headline": "Lindsay Clancy hires attorney who was briefly part of Karen Read's legal team",
-      "url": "https://www.wcvb.com/article/lindsay-clancy-hires-martin-weinberg/73759765",
-      "flag": null
     }
   ],
   "seen": [
@@ -1078,6 +1078,7 @@
     "1mcrvkj",
     "14int4b",
     "1iqq21p",
-    "18dn24h"
+    "18dn24h",
+    "1ptetvd"
   ]
 }

@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-16T16:34:01.000Z",
+      "outlet": "Court TV",
+      "headline": "‘The die has been cast’: State refuses to lower charges against Lindsay Clancy, forcing retrial",
+      "url": "https://www.courttv.com/news/the-die-has-been-cast-state-refuses-to-lower-charges-against-lindsay-clancy-forcing-retrial/",
+      "flag": null
+    },
+    {
       "ts": "2026-11-16T15:44:50.000Z",
       "outlet": "Boston 25 News",
       "headline": "Live updates: Lindsay Clancy new trial date set for March 29th",
@@ -692,13 +699,6 @@
       "headline": "Holdout juror in the Lindsay Clancy Murder Trial speaks out",
       "url": "https://www.boston25news.com/news/local/holdout-juror-lindsay-clancy-murder-trial-speaks-out/2O5WMUKYKNAOLLRQABV7FM2NNA/",
       "flag": null
-    },
-    {
-      "ts": "2026-09-18T19:55:11.000Z",
-      "outlet": "Law & Crime",
-      "headline": "Clancy holdout juror called 'Champion of Justice' by his Trump-connected lawyer who declares war on 'evil people' upset he wanted to convict",
-      "url": "https://lawandcrime.com/high-profile/clancy-holdout-juror-called-champion-of-justice-by-his-trump-connected-lawyer-who-declares-war-on-evil-people-upset-he-wanted-to-convict/",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
@@ -1088,6 +1088,7 @@
     "figoqr",
     "zwoen0",
     "122c4u9",
-    "zewzoc"
+    "zewzoc",
+    "kv5z56"
   ]
 }

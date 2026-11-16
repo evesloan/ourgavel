@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-16T12:12:08.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Lindsay Clancy due back in court as case moves toward possible retrial",
+      "url": "https://www.boston25news.com/news/local/lindsay-clancy-due-back-court-case-moves-toward-possible-retrial/ZFEVGPZPSFEGRMOPWO776KA3YQ/",
+      "flag": null
+    },
+    {
       "ts": "2026-11-16T10:18:00.000Z",
       "outlet": "WCVB",
       "headline": "Key hearing could determine whether Lindsay Clancy faces retrial",
@@ -692,13 +699,6 @@
       "headline": "Patrick Clancy, wife to give joint ‘60 Minutes' interview Sunday. Here's what we know",
       "url": "https://www.nbcboston.com/news/local/patrick-clancy-wife-rachel-danis-60-minutes-interview-sunday-how-to-watch/4017030/",
       "flag": null
-    },
-    {
-      "ts": "2026-09-17T15:39:24.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "What comes next after former Karen Read attorney joins Lindsay Clancy’s legal team?",
-      "url": "https://www.boston25news.com/news/local/what-comes-next-after-former-karen-read-attorney-joins-lindsay-clancys-legal-team/FSJMF5UFZJGXVMZ4GSASNXJQDI/",
-      "flag": null
     }
   ],
   "seen": [
@@ -1082,6 +1082,7 @@
     "1ptetvd",
     "doiesh",
     "1ptmb81",
-    "1q27zw9"
+    "1q27zw9",
+    "jkg02c"
   ]
 }

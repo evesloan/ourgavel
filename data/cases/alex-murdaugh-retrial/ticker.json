@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-16T10:59:00.000Z",
+      "outlet": "via MSN",
+      "headline": "Alex Murdaugh claims investigator lied about evidence in wife and son’s murders, wants indictment dropped",
+      "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-claims-investigator-lied-about-evidence-in-wife-and-son-s-murders-wants-indictment-dropped/ar-AA2hyHLk",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-11-16T02:21:00.000Z",
       "outlet": "newsnationnow.com",
       "headline": "Murdaugh investigator could be problem witness at retrial: Attorney",
@@ -692,17 +699,9 @@
       "headline": "Murdaugh Retrial Hearing: New Tests, Old Grievances",
       "url": "https://www.fitsnews.com/2026/10/16/murdaugh-retrial-hearing-new-tests-old-grievances/",
       "flag": null
-    },
-    {
-      "ts": "2026-10-16T15:01:00.000Z",
-      "outlet": "via AOL",
-      "headline": "Judge McCaslin at Murdaugh hearing: ‘I’ll not allow proceedings to become a circus’",
-      "url": "https://www.aol.com/articles/judge-mccaslin-murdaugh-hearing-ll-220258000.html",
-      "flag": null
     }
   ],
   "seen": [
-    "dt3vx1",
     "cztgvj",
     "uugnf3",
     "idrynn",
@@ -1301,6 +1300,7 @@
     "1i3lfvs",
     "1getcoh",
     "1e4ozkz",
-    "1geywst"
+    "1geywst",
+    "1gezt70"
   ]
 }

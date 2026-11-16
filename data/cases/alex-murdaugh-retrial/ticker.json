@@ -155,6 +155,13 @@
       "flag": null
     },
     {
+      "ts": "2026-11-13T11:20:00.000Z",
+      "outlet": "via MSN",
+      "headline": "Alex Murdaugh defense lawyers asks judge to dismiss double-murder indictment",
+      "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-defense-lawyers-asks-judge-to-dismiss-double-murder-indictment/ar-AA2hodyW",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-11-13T10:37:00.000Z",
       "outlet": "eastbaytimes.com",
       "headline": "Alex Murdaugh wants murder indictments dismissed, saying agent lied to grand jury",
@@ -692,17 +699,9 @@
       "headline": "Judge McCaslin at Murdaugh hearing: ‘I'll not allow proceedings to become a circus'",
       "url": "https://www.msn.com/en-us/news/other/judge-mccaslin-at-murdaugh-hearing-i-ll-not-allow-proceedings-to-become-a-circus/ar-AA2epAO1",
       "flag": null
-    },
-    {
-      "ts": "2026-10-16T14:41:57.000Z",
-      "outlet": "via MSN",
-      "headline": "Judge rules on DNA testing, evidence motions ahead of Murdaugh retrial",
-      "url": "https://www.msn.com/en-us/news/other/judge-rules-on-dna-testing-evidence-motions-ahead-of-murdaugh-retrial/ar-AA2eppNH",
-      "flag": null
     }
   ],
   "seen": [
-    "k59quv",
     "pltmr",
     "p8jkup",
     "dt3vx1",
@@ -1301,6 +1300,7 @@
     "ozasqo",
     "1gesumv",
     "1geshst",
-    "1i3lfvs"
+    "1i3lfvs",
+    "1getcoh"
   ]
 }

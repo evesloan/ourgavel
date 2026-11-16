@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-16T10:18:00.000Z",
+      "outlet": "WCVB",
+      "headline": "Key hearing could determine whether Lindsay Clancy faces retrial",
+      "url": "https://www.wcvb.com/article/live-updates-clancy-case-hearing-trial-decision-nov-16-2026/74411379",
+      "flag": null
+    },
+    {
       "ts": "2026-11-15T21:51:00.000Z",
       "outlet": "WCVB",
       "headline": "Monday hearing to decide if Lindsay Clancy can be retried in deaths of her three children",
@@ -692,13 +699,6 @@
       "headline": "What comes next after former Karen Read attorney joins Lindsay Clancy’s legal team?",
       "url": "https://www.boston25news.com/news/local/what-comes-next-after-former-karen-read-attorney-joins-lindsay-clancys-legal-team/FSJMF5UFZJGXVMZ4GSASNXJQDI/",
       "flag": null
-    },
-    {
-      "ts": "2026-09-16T22:36:21.000Z",
-      "outlet": "NBC10 Boston",
-      "headline": "Retired judge weighs in on Lindsay Clancy mistrial and jury questions",
-      "url": "https://www.nbcboston.com/news/local/retired-judge-weighs-in-on-lindsay-clancy-mistrial-and-jury-questions/4016095/",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
@@ -1081,6 +1081,7 @@
     "18dn24h",
     "1ptetvd",
     "doiesh",
-    "1ptmb81"
+    "1ptmb81",
+    "1q27zw9"
   ]
 }

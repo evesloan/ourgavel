@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-16T02:21:00.000Z",
+      "outlet": "newsnationnow.com",
+      "headline": "Murdaugh investigator could be problem witness at retrial: Attorney",
+      "url": "https://www.newsnationnow.com/crime/murdaugh-murder-trial/alex-murdaugh-david-owen-dna-evidence/",
+      "flag": null
+    },
+    {
       "ts": "2026-11-15T22:18:18.000Z",
       "outlet": "FITSNews",
       "headline": "Murdaugh Retrial: Prosecution’s ‘Sizzle Reel’ Scandal Snowballs",
@@ -692,17 +699,9 @@
       "headline": "Judge McCaslin at Murdaugh hearing: ‘I’ll not allow proceedings to become a circus’",
       "url": "https://www.aol.com/articles/judge-mccaslin-murdaugh-hearing-ll-220258000.html",
       "flag": null
-    },
-    {
-      "ts": "2026-10-16T15:01:00.000Z",
-      "outlet": "via MSN",
-      "headline": "Judge McCaslin at Murdaugh hearing: ‘I'll not allow proceedings to become a circus'",
-      "url": "https://www.msn.com/en-us/news/other/judge-mccaslin-at-murdaugh-hearing-i-ll-not-allow-proceedings-to-become-a-circus/ar-AA2epAO1",
-      "flag": null
     }
   ],
   "seen": [
-    "pltmr",
     "p8jkup",
     "dt3vx1",
     "cztgvj",
@@ -1301,6 +1300,7 @@
     "1gesumv",
     "1geshst",
     "1i3lfvs",
-    "1getcoh"
+    "1getcoh",
+    "1e4ozkz"
   ]
 }

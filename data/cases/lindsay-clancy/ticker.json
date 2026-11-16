@@ -15,6 +15,13 @@
       "flag": null
     },
     {
+      "ts": "2026-11-16T08:02:32.000Z",
+      "outlet": "NBC10 Boston",
+      "headline": "Lindsay Clancy defense ready for retrial after Judge Sullivan denies motions",
+      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-defense-retrial-judge-sullivan-denies-motions/4050000/",
+      "flag": null
+    },
+    {
       "ts": "2026-11-15T21:51:00.000Z",
       "outlet": "WCVB",
       "headline": "Monday hearing to decide if Lindsay Clancy can be retried in deaths of her three children",
@@ -692,13 +699,6 @@
       "headline": "Holdout Lindsay Clancy juror will not be giving interviews, his attorney says",
       "url": "https://www.nbcboston.com/news/national-international/lindsay-clancy-holdout-juror-no-interviews/4017053/",
       "flag": null
-    },
-    {
-      "ts": "2026-09-18T11:29:41.000Z",
-      "outlet": "NBC10 Boston",
-      "headline": "Patrick Clancy, wife to give joint ‘60 Minutes' interview Sunday. Here's what we know",
-      "url": "https://www.nbcboston.com/news/local/patrick-clancy-wife-rachel-danis-60-minutes-interview-sunday-how-to-watch/4017030/",
-      "flag": null
     }
   ],
   "seen": [
@@ -1083,6 +1083,7 @@
     "doiesh",
     "1ptmb81",
     "1q27zw9",
-    "jkg02c"
+    "jkg02c",
+    "1rc88yk"
   ]
 }

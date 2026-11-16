@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-16T11:47:27.000Z",
+      "outlet": "News4JAX",
+      "headline": "Accused gunman appears in court days after his former landlord sentenced to life in prison in Jared Bridegan murder",
+      "url": "https://www.news4jax.com/news/local/2026/11/16/accused-gunman-appears-in-court-days-after-his-former-landlord-sentenced-to-life-in-prison-in-jared-bridegan-murder/",
+      "flag": null
+    },
+    {
       "ts": "2026-11-12T22:55:43.000Z",
       "outlet": "Action News Jax",
       "headline": "‘(I) envision he’s there with me’: Widow speaks, and Fernandez Saldana gets life for Bridegan murder",
@@ -486,6 +493,7 @@
     "1u7yl7",
     "1sngh3d",
     "6rgtyo",
-    "pikef7"
+    "pikef7",
+    "19xmkzg"
   ]
 }

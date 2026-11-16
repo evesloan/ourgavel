@@ -1,6 +1,20 @@
 {
   "items": [
     {
+      "ts": "2026-11-16T14:54:17.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Live updates: Lindsay Clancy due back in court as case moves toward possible retrial",
+      "url": "https://www.boston25news.com/news/local/live-updates-lindsay-clancy-due-back-court-case-moves-toward-possible-retrial/B5CKTXE2OBBN5FCJDDJCJJZE24/",
+      "flag": null
+    },
+    {
+      "ts": "2026-11-16T14:44:08.000Z",
+      "outlet": "Boston.com",
+      "headline": "Livestream: Lindsay Clancy may get a new trial date in hearing on next steps",
+      "url": "https://www.boston.com/news/crime/2026/11/16/lindsay-clancy-hearing-nov-16-retrial-date/",
+      "flag": null
+    },
+    {
       "ts": "2026-11-16T12:12:08.000Z",
       "outlet": "Boston 25 News",
       "headline": "Lindsay Clancy due back in court as case moves toward possible retrial",
@@ -19,6 +33,13 @@
       "outlet": "NBC10 Boston",
       "headline": "Lindsay Clancy defense ready for retrial after Judge Sullivan denies motions",
       "url": "https://www.nbcboston.com/news/local/lindsay-clancy-defense-retrial-judge-sullivan-denies-motions/4050000/",
+      "flag": null
+    },
+    {
+      "ts": "2026-11-16T07:19:20.000Z",
+      "outlet": "NBC10 Boston",
+      "headline": "Livestream, live updates: Lindsay Clancy case in court to discuss next steps",
+      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-trial-live-stream-live-updates-today/4050017/",
       "flag": null
     },
     {
@@ -678,27 +699,6 @@
       "headline": "'I didn't have any doubts': Lindsay Clancy trial holdout juror speaks out",
       "url": "https://www.wcvb.com/article/holdout-juror-clancy-desronvil-statement/73790855",
       "flag": null
-    },
-    {
-      "ts": "2026-09-18T15:08:08.000Z",
-      "outlet": "Boston.com",
-      "headline": "Holdout juror says he ‘didn’t have any doubts’ about Lindsay Clancy’s criminal responsibility",
-      "url": "https://www.boston.com/news/crime/2026/09/18/lindsay-clancy-trial-holdout-juror-michael-desronvil/",
-      "flag": null
-    },
-    {
-      "ts": "2026-09-18T14:01:02.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "‘Didn’t have any doubts’: Holdout juror in Lindsay Clancy trial speaks out",
-      "url": "https://www.boston25news.com/news/local/didnt-have-any-doubts-holdout-juror-lindsay-clancy-trial-speaks-out/HZ3XEJMRFNH4ZHEFCNM7QQ4BSA/",
-      "flag": null
-    },
-    {
-      "ts": "2026-09-18T12:04:07.000Z",
-      "outlet": "NBC10 Boston",
-      "headline": "Holdout Lindsay Clancy juror will not be giving interviews, his attorney says",
-      "url": "https://www.nbcboston.com/news/national-international/lindsay-clancy-holdout-juror-no-interviews/4017053/",
-      "flag": null
     }
   ],
   "seen": [
@@ -1084,6 +1084,9 @@
     "1ptmb81",
     "1q27zw9",
     "jkg02c",
-    "1rc88yk"
+    "1rc88yk",
+    "figoqr",
+    "zwoen0",
+    "122c4u9"
   ]
 }

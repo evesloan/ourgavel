@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-16T15:44:50.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Live updates: Lindsay Clancy new trial date set for March 29th",
+      "url": "https://www.boston25news.com/news/local/live-updates-lindsay-clancy-new-trial-date-set-march-29th/B5CKTXE2OBBN5FCJDDJCJJZE24/",
+      "flag": null
+    },
+    {
       "ts": "2026-11-16T14:54:17.000Z",
       "outlet": "Boston 25 News",
       "headline": "Live updates: Lindsay Clancy due back in court as case moves toward possible retrial",
@@ -692,13 +699,6 @@
       "headline": "Clancy holdout juror called 'Champion of Justice' by his Trump-connected lawyer who declares war on 'evil people' upset he wanted to convict",
       "url": "https://lawandcrime.com/high-profile/clancy-holdout-juror-called-champion-of-justice-by-his-trump-connected-lawyer-who-declares-war-on-evil-people-upset-he-wanted-to-convict/",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-09-18T16:23:00.000Z",
-      "outlet": "WCVB",
-      "headline": "'I didn't have any doubts': Lindsay Clancy trial holdout juror speaks out",
-      "url": "https://www.wcvb.com/article/holdout-juror-clancy-desronvil-statement/73790855",
-      "flag": null
     }
   ],
   "seen": [
@@ -1087,6 +1087,7 @@
     "1rc88yk",
     "figoqr",
     "zwoen0",
-    "122c4u9"
+    "122c4u9",
+    "zewzoc"
   ]
 }

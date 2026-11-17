@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-17T09:04:53.000Z",
+      "outlet": "via MSN",
+      "headline": "Judge orders release of redacted records tied to Murdaugh jury investigations",
+      "url": "https://www.msn.com/en-us/news/other/judge-orders-release-of-redacted-records-tied-to-murdaugh-jury-investigations/ar-AA2hDru2",
+      "flag": null
+    },
+    {
       "ts": "2026-11-16T15:29:00.000Z",
       "outlet": "FITSNews",
       "headline": "Murdaugh’s Murder Indictments: The Legal Consequences Of Starting Over",
@@ -692,17 +699,9 @@
       "headline": "Judge in Alex Murdaugh’s retrial insists case will not ‘become a circus’",
       "url": "https://www.hirunews.lk/goldfmnews/494595/judge-in-alex-murdaughs-retrial-insists-case-will-not-become-a-circus",
       "flag": null
-    },
-    {
-      "ts": "2026-10-16T16:14:29.000Z",
-      "outlet": "via MSN",
-      "headline": "Judge rules on DNA testing, denies ballistics request in Alex Murdaugh retrial hearing",
-      "url": "https://www.msn.com/en-us/news/other/judge-rules-on-dna-testing-denies-ballistics-request-in-alex-murdaugh-retrial-hearing/ar-AA2eoOqN",
-      "flag": null
     }
   ],
   "seen": [
-    "uugnf3",
     "idrynn",
     "11y6uc2",
     "8wk5lk",
@@ -1301,6 +1300,7 @@
     "1e4ozkz",
     "1geywst",
     "1gezt70",
-    "1y770nd"
+    "1y770nd",
+    "1gemm21"
   ]
 }

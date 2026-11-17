@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-16T15:29:00.000Z",
+      "outlet": "FITSNews",
+      "headline": "Murdaugh’s Murder Indictments: The Legal Consequences Of Starting Over",
+      "url": "https://www.fitsnews.com/2026/11/16/murdaughs-murder-indictments-the-legal-consequences-of-starting-over/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-11-16T10:59:00.000Z",
       "outlet": "via MSN",
       "headline": "Alex Murdaugh claims investigator lied about evidence in wife and son’s murders, wants indictment dropped",
@@ -692,17 +699,9 @@
       "headline": "Judge rules on DNA testing, denies ballistics request in Alex Murdaugh retrial hearing",
       "url": "https://www.msn.com/en-us/news/other/judge-rules-on-dna-testing-denies-ballistics-request-in-alex-murdaugh-retrial-hearing/ar-AA2eoOqN",
       "flag": null
-    },
-    {
-      "ts": "2026-10-16T15:40:00.000Z",
-      "outlet": "FITSNews",
-      "headline": "Murdaugh Retrial Hearing: New Tests, Old Grievances",
-      "url": "https://www.fitsnews.com/2026/10/16/murdaugh-retrial-hearing-new-tests-old-grievances/",
-      "flag": null
     }
   ],
   "seen": [
-    "cztgvj",
     "uugnf3",
     "idrynn",
     "11y6uc2",
@@ -1301,6 +1300,7 @@
     "1getcoh",
     "1e4ozkz",
     "1geywst",
-    "1gezt70"
+    "1gezt70",
+    "1y770nd"
   ]
 }

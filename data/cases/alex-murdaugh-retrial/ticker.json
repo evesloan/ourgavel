@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-17T13:01:41.000Z",
+      "outlet": "via MSN",
+      "headline": "Alex Murdaugh juror records to be released with redactions, judge orders",
+      "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-juror-records-to-be-released-with-redactions-judge-orders/ar-AA2hDZLS",
+      "flag": null
+    },
+    {
       "ts": "2026-11-17T11:55:31.000Z",
       "outlet": "via MSN",
       "headline": "Alex Murdaugh juror records to be released with redactions, judge orders",
@@ -692,17 +699,9 @@
       "headline": "Judge allows new DNA testing in Alex Murdaugh trial, warns both sides she won't allow trial to become 'circus'",
       "url": "https://www.wltx.com/article/news/special-reports/alex-murdaugh/judge-allows-new-dna-testing-in-alex-murdaugh-trial/101-07d36990-c26f-4533-be4f-89592fc01e7d",
       "flag": null
-    },
-    {
-      "ts": "2026-10-16T17:00:00.000Z",
-      "outlet": "timesdaily.com",
-      "headline": "Fight over evidence in Murdaugh retrial turns to DNA",
-      "url": "https://www.timesdaily.com/news/crime/fight-over-evidence-in-murdaugh-retrial-turns-to-dna/article_356ab14a-5e13-4533-9b6a-ec73082cd8f5.html",
-      "flag": null
     }
   ],
   "seen": [
-    "11y6uc2",
     "8wk5lk",
     "1b5cds6",
     "uawkcd",
@@ -1301,6 +1300,7 @@
     "1gezt70",
     "1y770nd",
     "1gemm21",
-    "1gemm4a"
+    "1gemm4a",
+    "1gemrtn"
   ]
 }

@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-18T10:15:57.000Z",
+      "outlet": "via MSN",
+      "headline": "Alex Murdaugh's defense wants murder charges sent back to grand jury",
+      "url": "https://www.msn.com/en-us/news/other/alex-murdaughs-defense-wants-murder-charges-sent-back-to-grand-jury/ar-AA2hnYkn",
+      "flag": null
+    },
+    {
       "ts": "2026-11-17T13:01:41.000Z",
       "outlet": "via MSN",
       "headline": "Alex Murdaugh juror records to be released with redactions, judge orders",
@@ -692,17 +699,9 @@
       "headline": "Alex Murdaugh's defense makes 'high risk' move to show DNA proves he didn't kill family, prosecutor says",
       "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-s-defense-makes-high-risk-move-to-show-dna-proves-he-didn-t-kill-family-prosecutor-says/ar-AA2eqIRe",
       "flag": null
-    },
-    {
-      "ts": "2026-10-16T18:56:00.000Z",
-      "outlet": "wyff4.com",
-      "headline": "Alex Murdaugh back in court for pretrial hearing ahead of double murder retrial",
-      "url": "https://www.wyff4.com/article/murdaugh-hearing-dna/74164265",
-      "flag": null
     }
   ],
   "seen": [
-    "1b5cds6",
     "uawkcd",
     "16z61hx",
     "4sfvs6",
@@ -1301,6 +1300,7 @@
     "1gemm21",
     "1gemm4a",
     "1gemrtn",
-    "1gesrq7"
+    "1gesrq7",
+    "1get4x8"
   ]
 }

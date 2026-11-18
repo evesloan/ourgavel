@@ -1,10 +1,24 @@
 {
   "items": [
     {
+      "ts": "2026-11-18T20:27:24.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Lindsay Clancy’s defense team files appeal with state’s highest court to dismiss murder charges",
+      "url": "https://www.boston25news.com/news/local/lindsay-clancys-defense-team-files-appeal-with-states-highest-court-dismiss-murder-charges/D2EF7Y4S3VDQFKOJX4SPYKWKYI/",
+      "flag": null
+    },
+    {
       "ts": "2026-11-18T17:52:00.000Z",
       "outlet": "WCVB",
       "headline": "Prosecutors abandon wiretapping case linked to Lindsay Clancy trial",
       "url": "https://www.wcvb.com/article/lindsay-christopher-patrick-clancy-shawna-gramkow-wiretapping-nov-18-2026/74466979",
+      "flag": null
+    },
+    {
+      "ts": "2026-11-18T15:18:16.000Z",
+      "outlet": "NBC10 Boston",
+      "headline": "Lindsay Clancy's defense files new appeal to dismiss murder charges",
+      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-case-update-new-appeal-sjc/4051337/",
       "flag": null
     },
     {
@@ -685,20 +699,6 @@
       "headline": "Patrick Clancy's first TV interview after mistrial: Here's what we learned.",
       "url": "https://www.nbcboston.com/news/local/patrick-clancy-interview-mistrial-new-wife/4017963/",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-09-21T01:13:06.000Z",
-      "outlet": "Boston.com",
-      "headline": "Patrick Clancy’s ‘60 Minutes’ interview: Lindsay Clancy’s former husband says he and new wife are starting a family",
-      "url": "https://www.boston.com/news/crime/2026/09/20/patrick-clancys-60-minutes-interview/",
-      "flag": null
-    },
-    {
-      "ts": "2026-09-21T00:34:48.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "Patrick Clancy gives first TV interview on ’60 Minutes’ after Lindsay Clancy mistrial",
-      "url": "https://www.boston25news.com/news/local/patrick-clancy-gives-first-tv-interview-60-minutes-after-lindsay-clancy-mistrial/CK7JENVFCVFEHLOYUERFE7LO34/",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
@@ -1092,6 +1092,8 @@
     "kv5z56",
     "escd0d",
     "1gqkykh",
-    "1jrnl5e"
+    "1jrnl5e",
+    "139fooc",
+    "is0nvi"
   ]
 }

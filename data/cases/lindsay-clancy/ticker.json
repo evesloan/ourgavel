@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-18T23:08:00.000Z",
+      "outlet": "WCVB",
+      "headline": "Lindsay Clancy trial notes reveal jury fight over reasonable doubt",
+      "url": "https://www.wcvb.com/article/lindsay-clancy-trial-notes-reveal-jury-fight-over-reasonable-doubt/74470680",
+      "flag": null
+    },
+    {
       "ts": "2026-11-18T20:27:24.000Z",
       "outlet": "Boston 25 News",
       "headline": "Lindsay Clancy’s defense team files appeal with state’s highest court to dismiss murder charges",
@@ -692,13 +699,6 @@
       "headline": "Lindsay Clancy’s lawyer probes ‘Juror Doe’s’ domestic violence record, alleged phone use during deliberations",
       "url": "https://www.boston.com/news/crime/2026/09/21/lindsay-clancy-lawyer-juror-doe-domestic-violence-cellphone/",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-09-21T07:54:51.000Z",
-      "outlet": "NBC10 Boston",
-      "headline": "Patrick Clancy's first TV interview after mistrial: Here's what we learned.",
-      "url": "https://www.nbcboston.com/news/local/patrick-clancy-interview-mistrial-new-wife/4017963/",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
@@ -1094,6 +1094,7 @@
     "1gqkykh",
     "1jrnl5e",
     "139fooc",
-    "is0nvi"
+    "is0nvi",
+    "1p0gqpd"
   ]
 }

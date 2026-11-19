@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-19T00:27:43.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Newly released notes reveal juror concerns during Lindsay Clancy murder trial",
+      "url": "https://www.boston25news.com/news/local/newly-released-notes-reveal-juror-concerns-during-lindsay-clancy-murder-trial/2OK4ZTWSOBEJHOT4GYO2GLPX34/",
+      "flag": null
+    },
+    {
       "ts": "2026-11-18T23:08:00.000Z",
       "outlet": "WCVB",
       "headline": "Lindsay Clancy trial notes reveal jury fight over reasonable doubt",
@@ -692,13 +699,6 @@
       "headline": "Kevin Reddington responds to Patrick Clancy's interview",
       "url": "https://www.wcvb.com/article/kevin-reddington-responds-patrick-clancy-interview/73823599",
       "flag": null
-    },
-    {
-      "ts": "2026-09-21T15:31:39.000Z",
-      "outlet": "Boston.com",
-      "headline": "Lindsay Clancy’s lawyer probes ‘Juror Doe’s’ domestic violence record, alleged phone use during deliberations",
-      "url": "https://www.boston.com/news/crime/2026/09/21/lindsay-clancy-lawyer-juror-doe-domestic-violence-cellphone/",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
@@ -1095,6 +1095,7 @@
     "1jrnl5e",
     "139fooc",
     "is0nvi",
-    "1p0gqpd"
+    "1p0gqpd",
+    "1a82dyp"
   ]
 }

@@ -1,6 +1,20 @@
 {
   "items": [
     {
+      "ts": "2026-11-19T15:54:26.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Mass. Supreme Judicial Court to hear Lindsay Clancy’s appeal in January",
+      "url": "https://www.boston25news.com/news/local/mass-supreme-judicial-court-hear-lindsay-clancys-appeal-january/VERNBZGW4ZCFRFURYHQ4AO5MBQ/",
+      "flag": null
+    },
+    {
+      "ts": "2026-11-19T15:43:00.000Z",
+      "outlet": "WCVB",
+      "headline": "Massachusetts' highest court to hear Lindsay Clancy's appeal to throw out murder case",
+      "url": "https://www.wcvb.com/article/massachusetts-highest-court-to-hear-lindsay-clancys-appeal-to-throw-out-murder-case/74477560",
+      "flag": null
+    },
+    {
       "ts": "2026-11-19T13:37:00.000Z",
       "outlet": "Boston 25 News",
       "headline": "Read: Lindsay Clancy jury notes reveal dispute that preceded mistrial in Duxbury murder case",
@@ -685,20 +699,6 @@
       "headline": "Lindsay Clancy’s attorney requests investigation into holdout juror",
       "url": "https://www.wcvb.com/article/lindsay-clancy-attorney-reddington-investigation-holdout-juror/73825923",
       "flag": null
-    },
-    {
-      "ts": "2026-09-21T19:43:11.000Z",
-      "outlet": "NBC10 Boston",
-      "headline": "Lindsay Clancy files to dismiss charges as attorney speaks on ex-husband's interview",
-      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-attorney-motion-dismiss-lawyer-interview/4018193/",
-      "flag": null
-    },
-    {
-      "ts": "2026-09-21T18:30:31.000Z",
-      "outlet": "NBC10 Boston",
-      "headline": "Lindsay Clancy's lawyer wants review of holdout juror's record",
-      "url": "https://www.nbcboston.com/news/local/lindsay-clancys-lawyer-wants-juror-records-preserved-access-to-holdout-jurors-record/4018031/",
-      "flag": null
     }
   ],
   "seen": [
@@ -1098,6 +1098,8 @@
     "1p0gqpd",
     "1a82dyp",
     "19zay8u",
-    "13t20p1"
+    "13t20p1",
+    "13i8vqd",
+    "1ae8kq2"
   ]
 }

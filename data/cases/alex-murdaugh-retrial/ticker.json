@@ -29,6 +29,13 @@
       "flag": null
     },
     {
+      "ts": "2026-11-17T03:13:31.000Z",
+      "outlet": "via MSN",
+      "headline": "Alex Murdaugh's defense claims an official lied to a grand jury and urges judge to toss original murder indictment",
+      "url": "https://www.msn.com/en-us/news/other/alex-murdaughs-defense-claims-an-official-lied-to-a-grand-jury-and-urges-judge-to-toss-original-murder-indictment/ar-AA2hGeh5",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-11-16T15:29:00.000Z",
       "outlet": "FITSNews",
       "headline": "Murdaugh’s Murder Indictments: The Legal Consequences Of Starting Over",
@@ -692,17 +699,9 @@
       "headline": "Judge says she won't allow 'circus' in Alex Murdaugh's retrial over killings of wife and son",
       "url": "https://www.msn.com/en-us/news/other/judge-says-she-won-t-allow-circus-in-alex-murdaugh-s-retrial-over-killings-of-wife-and-son/ar-AA2esf4b",
       "flag": null
-    },
-    {
-      "ts": "2026-10-17T12:42:57.000Z",
-      "outlet": "via MSN",
-      "headline": "Judge says she won't allow 'circus' in Alex Murdaugh's retrial over killings of wife and son",
-      "url": "https://www.msn.com/en-us/news/other/judge-says-she-wont-allow-circus-in-alex-murdaughs-retrial-over-killings-of-wife-and-son/ar-AA2erEXe",
-      "flag": null
     }
   ],
   "seen": [
-    "4sfvs6",
     "p5ad2t",
     "k2xh1k",
     "uub7xg",
@@ -1301,6 +1300,7 @@
     "1gesrq7",
     "1get4x8",
     "194jv0l",
-    "1mp3ngt"
+    "1mp3ngt",
+    "1geo92h"
   ]
 }

@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-19T20:24:52.000Z",
+      "outlet": "Court TV",
+      "headline": "New filing offers first look at juror notes from Lindsay Clancy’s trial",
+      "url": "https://www.courttv.com/news/new-filing-offers-first-look-at-juror-notes-from-lindsay-clancys-trial/",
+      "flag": null
+    },
+    {
       "ts": "2026-11-19T15:54:26.000Z",
       "outlet": "Boston 25 News",
       "headline": "Mass. Supreme Judicial Court to hear Lindsay Clancy’s appeal in January",
@@ -692,13 +699,6 @@
       "headline": "Lindsay Clancy seeks dismissal, argues retrial violates double jeopardy",
       "url": "https://www.wcvb.com/article/lindsay-clancy-motion-to-dismiss-double-jeopardy/73827174",
       "flag": null
-    },
-    {
-      "ts": "2026-09-21T20:19:00.000Z",
-      "outlet": "WCVB",
-      "headline": "Lindsay Clancy’s attorney requests investigation into holdout juror",
-      "url": "https://www.wcvb.com/article/lindsay-clancy-attorney-reddington-investigation-holdout-juror/73825923",
-      "flag": null
     }
   ],
   "seen": [
@@ -1100,6 +1100,7 @@
     "19zay8u",
     "13t20p1",
     "13i8vqd",
-    "1ae8kq2"
+    "1ae8kq2",
+    "ve5tak"
   ]
 }

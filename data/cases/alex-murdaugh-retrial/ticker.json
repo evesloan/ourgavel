@@ -1,13 +1,6 @@
 {
   "items": [
     {
-      "ts": "2026-11-18T10:15:57.000Z",
-      "outlet": "via MSN",
-      "headline": "Alex Murdaugh's defense wants murder charges sent back to grand jury",
-      "url": "https://www.msn.com/en-us/news/other/alex-murdaughs-defense-wants-murder-charges-sent-back-to-grand-jury/ar-AA2hnYkn",
-      "flag": null
-    },
-    {
       "ts": "2026-11-17T13:01:41.000Z",
       "outlet": "via MSN",
       "headline": "Alex Murdaugh juror records to be released with redactions, judge orders",
@@ -159,6 +152,13 @@
       "outlet": "via MSN",
       "headline": "Live: Alex Murdaugh defense alleges false evidence presented to grand jury",
       "url": "https://www.msn.com/en-us/news/other/live-alex-murdaugh-defense-alleges-false-evidence-presented-to-grand-jury/ar-AA2hoxTQ",
+      "flag": null
+    },
+    {
+      "ts": "2026-11-13T12:13:00.000Z",
+      "outlet": "The Greenville News",
+      "headline": "Alex Murdaugh's defense wants murder charges sent back to grand jury",
+      "url": "https://www.greenvilleonline.com/story/news/crime/2026/11/13/grand-jury-was-misled-what-murdaugh-wants-judge-to-do-before-retrial/92760435007/",
       "flag": null
     },
     {
@@ -702,7 +702,6 @@
     }
   ],
   "seen": [
-    "uawkcd",
     "16z61hx",
     "4sfvs6",
     "p5ad2t",
@@ -1301,6 +1300,7 @@
     "1gemm4a",
     "1gemrtn",
     "1gesrq7",
-    "1get4x8"
+    "1get4x8",
+    "194jv0l"
   ]
 }

@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-19T13:37:00.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Read: Lindsay Clancy jury notes reveal dispute that preceded mistrial in Duxbury murder case",
+      "url": "https://www.boston25news.com/news/local/read-lindsay-clancy-jury-notes-reveal-dispute-that-preceded-mistrial-duxbury-murder-case/CQYHHPGX3ZDXTPZIGEUDCCSZGI/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-11-19T00:27:43.000Z",
       "outlet": "Boston 25 News",
       "headline": "Newly released notes reveal juror concerns during Lindsay Clancy murder trial",
@@ -19,6 +26,13 @@
       "outlet": "Boston 25 News",
       "headline": "Lindsay Clancy’s defense team files appeal with state’s highest court to dismiss murder charges",
       "url": "https://www.boston25news.com/news/local/lindsay-clancys-defense-team-files-appeal-with-states-highest-court-dismiss-murder-charges/D2EF7Y4S3VDQFKOJX4SPYKWKYI/",
+      "flag": null
+    },
+    {
+      "ts": "2026-11-18T18:59:13.000Z",
+      "outlet": "NBC10 Boston",
+      "headline": "Lindsay Clancy jury notes released as part of her latest appeal",
+      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-trial-jury-notes-released-appeal/4051881/",
       "flag": null
     },
     {
@@ -685,20 +699,6 @@
       "headline": "Lindsay Clancy's lawyer wants review of holdout juror's record",
       "url": "https://www.nbcboston.com/news/local/lindsay-clancys-lawyer-wants-juror-records-preserved-access-to-holdout-jurors-record/4018031/",
       "flag": null
-    },
-    {
-      "ts": "2026-09-21T17:07:15.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "Lindsay Clancy’s attorney seeks investigation into holdout juror after mistrial",
-      "url": "https://www.boston25news.com/news/local/lindsay-clancys-attorney-seeks-investigation-into-juror-after-mistrial/TOLCXJJLOBFXLO3JGEPBL3DYLU/",
-      "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-09-21T16:33:00.000Z",
-      "outlet": "WCVB",
-      "headline": "Kevin Reddington responds to Patrick Clancy's interview",
-      "url": "https://www.wcvb.com/article/kevin-reddington-responds-patrick-clancy-interview/73823599",
-      "flag": null
     }
   ],
   "seen": [
@@ -1096,6 +1096,8 @@
     "139fooc",
     "is0nvi",
     "1p0gqpd",
-    "1a82dyp"
+    "1a82dyp",
+    "19zay8u",
+    "13t20p1"
   ]
 }

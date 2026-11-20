@@ -1,6 +1,27 @@
 {
   "items": [
     {
+      "ts": "2026-11-20T21:26:38.000Z",
+      "outlet": "FITSNews",
+      "headline": "Judge Declines To Dismiss Alex Murdaugh’s Murder Indictments",
+      "url": "https://www.fitsnews.com/2026/11/20/judge-declines-to-dismiss-murdaugh-indictments/",
+      "flag": "verdict-watch"
+    },
+    {
+      "ts": "2026-11-20T21:16:42.000Z",
+      "outlet": "WLTX News19",
+      "headline": "Judge refuses to dismiss Alex Murdaugh’s original indictments in killings of his wife and son",
+      "url": "https://www.wltx.com/article/news/special-reports/alex-murdaugh/judge-refuses-to-dismiss-alex-murdaughs-original-indictments-in-killings-of-his-wife-and-son/616-af61c722-0b49-43df-a3f1-d6e0d846050c",
+      "flag": "verdict-watch"
+    },
+    {
+      "ts": "2026-11-20T12:57:26.000Z",
+      "outlet": "via MSN",
+      "headline": "Judge rejects Alex Murdaugh's push to toss murder indictment over blood and ammo claims",
+      "url": "https://www.msn.com/en-us/news/other/judge-rejects-alex-murdaugh-s-push-to-toss-murder-indictment-over-blood-and-ammo-claims/ar-AA2hT7zm",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-11-19T02:08:00.000Z",
       "outlet": "The Greenville News",
       "headline": "Judge orders Murdaugh 'Egg Juror,' jury tampering files unsealed",
@@ -678,34 +699,9 @@
       "headline": "Alex Murdaugh was convicted of murdering his wife and 22-year-old son; he now awaits an April 2027 retrial South Carolina's top court ordered",
       "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-was-convicted-of-murdering-his-wife-and-22-year-old-son-he-now-awaits-an-april-2027-retrial-south-carolina-s-top-court-ordered/ar-AA2fzddl",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-10-17T17:30:00.000Z",
-      "outlet": "soapoperaspy.com",
-      "headline": "Alex Murdaugh Scores Major Win Ahead Of Murder Retrial",
-      "url": "https://www.soapoperaspy.com/2026/alex-murdaugh-scores-major-win-ahead-of-murder-retrial/",
-      "flag": null
-    },
-    {
-      "ts": "2026-10-17T15:22:13.000Z",
-      "outlet": "FITSNews",
-      "headline": "Week in Review &#8211; Judge Drops Hammers Amid Murdaugh Evidence Battle",
-      "url": "https://www.fitsnews.com/2026/10/17/week-in-review-judge-drops-hammers-amid-murdaugh-evidence-battle/",
-      "flag": null
-    },
-    {
-      "ts": "2026-10-17T12:42:57.000Z",
-      "outlet": "via MSN",
-      "headline": "Judge says she won't allow 'circus' in Alex Murdaugh's retrial over killings of wife and son",
-      "url": "https://www.msn.com/en-us/news/other/judge-says-she-won-t-allow-circus-in-alex-murdaugh-s-retrial-over-killings-of-wife-and-son/ar-AA2esf4b",
-      "flag": null
     }
   ],
   "seen": [
-    "p5ad2t",
-    "k2xh1k",
-    "uub7xg",
-    "1crrrjm",
     "1387oy9",
     "jt5ipp",
     "1huj3vv",
@@ -1301,6 +1297,10 @@
     "1get4x8",
     "194jv0l",
     "1mp3ngt",
-    "1geo92h"
+    "1geo92h",
+    "1gevm9g",
+    "1gew09s",
+    "1rt24nz",
+    "1mk4net"
   ]
 }

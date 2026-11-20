@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-20T21:12:11.000Z",
+      "outlet": "FOX5 Las Vegas",
+      "headline": "‘He’s not alive’: Caller describes finding Keffe D attorney at Las Vegas home",
+      "url": "https://www.fox5vegas.com/2026/11/20/hes-not-alive-caller-describes-finding-keffe-d-attorney-las-vegas-home/",
+      "flag": null
+    },
+    {
       "ts": "2026-11-17T00:55:51.000Z",
       "outlet": "FOX5 Las Vegas",
       "headline": "Dispatch records detail medical call linked to attorney Michael Sanft’s death",
@@ -808,6 +815,7 @@
     "1c4q596",
     "1nnd5qg",
     "1r3g9k2",
-    "l0r0c3"
+    "l0r0c3",
+    "69wcdu"
   ]
 }

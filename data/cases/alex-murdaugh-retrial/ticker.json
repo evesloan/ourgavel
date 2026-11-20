@@ -15,6 +15,13 @@
       "flag": "verdict-watch"
     },
     {
+      "ts": "2026-11-20T13:52:00.000Z",
+      "outlet": "wjcl.com",
+      "headline": "Alex Murdaugh retrial moves forward after South Carolina judge refuses to toss murder indictments",
+      "url": "https://www.wjcl.com/article/alex-murdaugh-retrial-south-carolina-judge-ruling/74494590",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-11-20T13:35:54.000Z",
       "outlet": "via MSN",
       "headline": "Disgraced legal dynasty heir Alex Murdaugh loses Hail Mary bid to toss murder charges",
@@ -54,6 +61,13 @@
       "outlet": "via MSN",
       "headline": "Judge denies Alex Murdaugh bid to toss murder indictments, retrial still set for April",
       "url": "https://www.msn.com/en-us/news/news/judge-denies-alex-murdaugh-bid-to-toss-murder-indictments-retrial-still-set-for-april/ar-AA2hSwbP",
+      "flag": "verdict-watch"
+    },
+    {
+      "ts": "2026-11-20T13:01:00.000Z",
+      "outlet": "lanacion.com.ar",
+      "headline": "Judge refuses to dismiss Alex Murdaugh’s original indictments in killings of his wife and son",
+      "url": "https://www.lanacion.com.ar/usa/judge-refuses-to-dismiss-alex-murdaughs-original-indictments-in-killings-of-his-wife-and-son-nid20112026/",
       "flag": "verdict-watch"
     },
     {
@@ -685,25 +699,9 @@
       "headline": "Murdaugh Retrial: Defense Seeks Dismissal of Indictments Over False Evidence",
       "url": "https://www.fitsnews.com/2026/10/30/murdaugh-retrial-indictment-dismissal/",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-10-26T17:20:06.000Z",
-      "outlet": "via MSN",
-      "headline": "Former prosecutor weighs in on new forensic evidence in Alex Murdaugh retrial",
-      "url": "https://www.msn.com/en-us/news/other/former-prosecutor-weighs-in-on-new-forensic-evidence-in-alex-murdaugh-retrial/ar-AA2g7ZPr",
-      "flag": null
-    },
-    {
-      "ts": "2026-10-26T16:51:54.000Z",
-      "outlet": "FITSNews",
-      "headline": "Murdaugh Jury Tampering Files: Where Are They?",
-      "url": "https://www.fitsnews.com/2026/10/26/murdaugh-jury-tampering-files-where-are-they/",
-      "flag": null
     }
   ],
   "seen": [
-    "1hs9br7",
-    "1ty4869",
     "1rxf1qx",
     "727mxw",
     "1kwl5ez",
@@ -1301,6 +1299,8 @@
     "uvmg9e",
     "1ufx0cn",
     "1gevwdk",
-    "1gevv21"
+    "1gevv21",
+    "t5c91m",
+    "qd2hsb"
   ]
 }

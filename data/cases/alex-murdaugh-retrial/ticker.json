@@ -15,6 +15,41 @@
       "flag": "verdict-watch"
     },
     {
+      "ts": "2026-11-20T13:35:00.000Z",
+      "outlet": "dailymail.com",
+      "headline": "Disgraced legal dynasty heir Alex Murdaugh loses Hail Mary bid to toss murder charges over police 'lies'... paving way for second murder trial",
+      "url": "https://www.dailymail.com/crime-desk/article-16310197/alex-murdaugh-murder-charges-denied-south-carolina.html",
+      "flag": null
+    },
+    {
+      "ts": "2026-11-20T13:32:00.000Z",
+      "outlet": "post-gazette.com",
+      "headline": "Judge refuses to dismiss Alex Murdaugh’s original indictments in killings of his wife and son",
+      "url": "https://www.post-gazette.com/nation-world/alex-murdaugh-murder-trial-south-carolina-Z5VFSZZAS2536SO3H6ASYFNKRU/",
+      "flag": "verdict-watch"
+    },
+    {
+      "ts": "2026-11-20T13:30:17.000Z",
+      "outlet": "via MSN",
+      "headline": "Judge denies Alex Murdaugh's bid to dismiss murder charges",
+      "url": "https://www.msn.com/en-us/news/other/judge-denies-alex-murdaugh-s-bid-to-dismiss-murder-charges/ar-AA2hTcFC",
+      "flag": "verdict-watch"
+    },
+    {
+      "ts": "2026-11-20T13:17:00.000Z",
+      "outlet": "newser.com",
+      "headline": "Murdaugh Case Judge Won't Toss Original Indictments",
+      "url": "https://www.newser.com/story/400397/murdaugh-case-judge-wont-toss-original-indictments.html",
+      "flag": "verdict-watch"
+    },
+    {
+      "ts": "2026-11-20T13:15:15.000Z",
+      "outlet": "via MSN",
+      "headline": "Judge denies Alex Murdaugh bid to toss murder indictments, retrial still set for April",
+      "url": "https://www.msn.com/en-us/news/news/judge-denies-alex-murdaugh-bid-to-toss-murder-indictments-retrial-still-set-for-april/ar-AA2hSwbP",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-11-20T12:57:26.000Z",
       "outlet": "via MSN",
       "headline": "Judge rejects Alex Murdaugh's push to toss murder indictment over blood and ammo claims",
@@ -664,49 +699,9 @@
       "headline": "Murdaugh Retrial Drama: Defense (Finally) Gets Crime Scene Scan",
       "url": "https://www.fitsnews.com/2026/10/21/murdaugh-retrial-drama-defense-finally-gets-crime-scene-scan/",
       "flag": null
-    },
-    {
-      "ts": "2026-10-20T08:00:40.000Z",
-      "outlet": "via MSN",
-      "headline": "Alex Murdaugh judge declares she will not let retrial become a circus, warns people not to use courtroom for publicity or theatrics",
-      "url": "https://www.msn.com/en-ca/news/other/alex-murdaugh-judge-declares-she-will-not-let-retrial-become-a-circus-warns-people-not-to-use-courtroom-for-publicity-or-theatrics/ar-AA2fFopR",
-      "flag": null
-    },
-    {
-      "ts": "2026-10-20T08:00:40.000Z",
-      "outlet": "via MSN",
-      "headline": "Alex Murdaugh judge declares she will not let retrial 'become a circus,' warns people not to use courtroom for 'publicity or theatrics'",
-      "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-judge-declares-she-will-not-let-retrial-become-a-circus-warns-people-not-to-use-courtroom-for-publicity-or-theatrics/ar-AA2fFHYn",
-      "flag": null
-    },
-    {
-      "ts": "2026-10-20T08:00:00.000Z",
-      "outlet": "via Yahoo News",
-      "headline": "Alex Murdaugh Judge Declares She Will Not Let Retrial 'Become a Circus,' Warns People Not to Use Courtroom for 'Publicity or Theatrics'",
-      "url": "https://ca.style.yahoo.com/alex-murdaugh-judge-declares-she-150040361.html",
-      "flag": null
-    },
-    {
-      "ts": "2026-10-19T04:00:00.000Z",
-      "outlet": "Fox News",
-      "headline": "Alex Murdaugh Takes a High-Stakes DNA Gamble Ahead of Retrial | True Crime Minute",
-      "url": "https://radio.foxnews.com/2026/10/19/alex-murdaugh-takes-a-high-stakes-dna-gamble-ahead-of-retrial-true-crime-minute/",
-      "flag": null
-    },
-    {
-      "ts": "2026-10-19T01:29:28.000Z",
-      "outlet": "via MSN",
-      "headline": "Alex Murdaugh was convicted of murdering his wife and 22-year-old son; he now awaits an April 2027 retrial South Carolina's top court ordered",
-      "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-was-convicted-of-murdering-his-wife-and-22-year-old-son-he-now-awaits-an-april-2027-retrial-south-carolina-s-top-court-ordered/ar-AA2fzddl",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
-    "1387oy9",
-    "jt5ipp",
-    "1huj3vv",
-    "bgrmnr",
-    "1xm9m6d",
     "5tkm1t",
     "1hi76s3",
     "1hs9br7",
@@ -1301,6 +1296,11 @@
     "1gevm9g",
     "1gew09s",
     "1rt24nz",
-    "1mk4net"
+    "1mk4net",
+    "1gewiei",
+    "1gewa5s",
+    "hc1fcq",
+    "uvmg9e",
+    "1ufx0cn"
   ]
 }

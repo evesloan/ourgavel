@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-20T21:58:19.000Z",
+      "outlet": "News 3 Las Vegas",
+      "headline": "New 911 calls detail co-workers finding attorney Michael Sanft dead at his home",
+      "url": "https://news3lv.com/news/local/new-911-calls-detail-co-workers-finding-attorney-michael-sanft-dead-at-his-home",
+      "flag": null
+    },
+    {
       "ts": "2026-11-20T21:12:11.000Z",
       "outlet": "FOX5 Las Vegas",
       "headline": "‘He’s not alive’: Caller describes finding Keffe D attorney at Las Vegas home",
@@ -816,6 +823,7 @@
     "1nnd5qg",
     "1r3g9k2",
     "l0r0c3",
-    "69wcdu"
+    "69wcdu",
+    "1v28a6v"
   ]
 }

@@ -29,6 +29,13 @@
       "flag": "verdict-watch"
     },
     {
+      "ts": "2026-11-20T14:45:01.000Z",
+      "outlet": "via MSN",
+      "headline": "Judge rejects Alex Murdaugh's bid to dismiss murder charges",
+      "url": "https://www.msn.com/en-us/news/other/judge-rejects-alex-murdaughs-bid-to-dismiss-murder-charges/ar-AA2hT0hv",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-11-20T13:52:00.000Z",
       "outlet": "wjcl.com",
       "headline": "Alex Murdaugh retrial moves forward after South Carolina judge refuses to toss murder indictments",
@@ -692,17 +699,9 @@
       "headline": "Alex Murdaugh seeks dismissal of murder indictments ahead of retrial",
       "url": "https://www.yahoo.com/news/us/articles/alex-murdaugh-seeks-dismissal-murder-182647463.html",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-11-02T09:43:00.000Z",
-      "outlet": "WCSC Live 5 News",
-      "headline": "Murdaugh’s legal team asks for murder charge dismissal, claims lead agent lied on stand",
-      "url": "https://www.live5news.com/2026/11/02/murdaughs-legal-team-asks-murder-charge-dismissal-claims-lead-agent-lied-stand/",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
-    "1b0ijtc",
     "8vqyug",
     "1sszcoy",
     "1s6m7bv",
@@ -1301,6 +1300,7 @@
     "1gewac9",
     "1gew6s9",
     "oktdro",
-    "1gew3gc"
+    "1gew3gc",
+    "1gevgnc"
   ]
 }

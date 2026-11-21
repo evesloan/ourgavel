@@ -8,6 +8,13 @@
       "flag": "verdict-watch"
     },
     {
+      "ts": "2026-11-21T08:55:00.000Z",
+      "outlet": "el-balad.com",
+      "headline": "Judge McCaslin Denies Murdaugh Indictment Dismissal Bid",
+      "url": "https://www.el-balad.com/17068853",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-11-21T05:06:55.000Z",
       "outlet": "via MSN",
       "headline": "Alex Murdaugh’s hail Mary to escape murder retrial backfires big time",
@@ -692,17 +699,9 @@
       "headline": "Murdaugh defense accuses the state, SLED investigators of misconduct",
       "url": "https://www.foxcarolina.com/2026/11/03/murdaugh-defense-accuses-state-sled-investigators-misconduct/",
       "flag": null
-    },
-    {
-      "ts": "2026-11-02T21:00:00.000Z",
-      "outlet": "The State",
-      "headline": "Citing alleged false evidence, Murdaugh lawyers seek dismissal of murder charges",
-      "url": "https://www.thestate.com/news/local/crime/article317884153.html",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
-    "zkpwrn",
     "1oj8z63",
     "xi1o0o",
     "kprjl3",
@@ -1301,6 +1300,7 @@
     "mqbysb",
     "c8iskd",
     "lud3yw",
-    "1gey8zk"
+    "1gey8zk",
+    "lbxef0"
   ]
 }

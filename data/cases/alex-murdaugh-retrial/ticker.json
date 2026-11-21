@@ -22,6 +22,13 @@
       "flag": "verdict-watch"
     },
     {
+      "ts": "2026-11-20T13:38:58.000Z",
+      "outlet": "via MSN",
+      "headline": "Judge refuses to dismiss Alex Murdaugh's murder indictments over grand jury testimony",
+      "url": "https://www.msn.com/en-us/news/news/judge-refuses-to-dismiss-alex-murdaugh-s-murder-indictments-over-grand-jury-testimony/ar-AA2hSwja",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-11-20T13:35:54.000Z",
       "outlet": "via MSN",
       "headline": "Disgraced legal dynasty heir Alex Murdaugh loses Hail Mary bid to toss murder charges",
@@ -692,17 +699,9 @@
       "headline": "SC attorney general candidates Stumbo and Hricik differ on Alex Murdaugh retrial",
       "url": "https://www.thestate.com/news/politics-government/article317835150.html",
       "flag": null
-    },
-    {
-      "ts": "2026-10-30T17:29:00.000Z",
-      "outlet": "FITSNews",
-      "headline": "Murdaugh Retrial: Defense Seeks Dismissal of Indictments Over False Evidence",
-      "url": "https://www.fitsnews.com/2026/10/30/murdaugh-retrial-indictment-dismissal/",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
-    "1rxf1qx",
     "727mxw",
     "1kwl5ez",
     "1jdfmkz",
@@ -1301,6 +1300,7 @@
     "1gevwdk",
     "1gevv21",
     "t5c91m",
-    "qd2hsb"
+    "qd2hsb",
+    "1gewac9"
   ]
 }

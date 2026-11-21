@@ -11,6 +11,13 @@
       "ts": "2026-11-21T05:06:55.000Z",
       "outlet": "via MSN",
       "headline": "Alex Murdaugh’s hail Mary to escape murder retrial backfires big time",
+      "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-s-hail-mary-to-escape-murder-retrial-backfires-big-time/ar-AA2hVyrQ",
+      "flag": null
+    },
+    {
+      "ts": "2026-11-21T05:06:55.000Z",
+      "outlet": "via MSN",
+      "headline": "Alex Murdaugh’s hail Mary to escape murder retrial backfires big time",
       "url": "https://www.msn.com/en-ca/news/other/alex-murdaugh-s-hail-mary-to-escape-murder-retrial-backfires-big-time/ar-AA2hV4si",
       "flag": null
     },
@@ -692,17 +699,9 @@
       "headline": "Citing alleged false evidence, Murdaugh lawyers seek dismissal of murder charges",
       "url": "https://www.thestate.com/news/local/crime/article317884153.html",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-11-02T13:38:00.000Z",
-      "outlet": "FITSNews",
-      "headline": "Murdaugh Retrial: Indictment Dismissal Discussion",
-      "url": "https://www.fitsnews.com/2026/11/02/murdaugh-retrial-indictment-dismissal-discussion/",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
-    "y62h2w",
     "zkpwrn",
     "1oj8z63",
     "xi1o0o",
@@ -1301,6 +1300,7 @@
     "1gewtua",
     "mqbysb",
     "c8iskd",
-    "lud3yw"
+    "lud3yw",
+    "1gey8zk"
   ]
 }

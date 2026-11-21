@@ -85,13 +85,6 @@
       "flag": "verdict-watch"
     },
     {
-      "ts": "2026-11-20T13:30:17.000Z",
-      "outlet": "via MSN",
-      "headline": "Judge denies Alex Murdaugh's bid to dismiss murder charges",
-      "url": "https://www.msn.com/en-us/news/other/judge-denies-alex-murdaugh-s-bid-to-dismiss-murder-charges/ar-AA2hTcFC",
-      "flag": "verdict-watch"
-    },
-    {
       "ts": "2026-11-20T13:25:53.000Z",
       "outlet": "via MSN",
       "headline": "Judge: Original Alex Murdaugh murder indictments will not be dismissed",
@@ -131,6 +124,13 @@
       "outlet": "The Post and Courier",
       "headline": "Judge declines to dismiss Murdaugh’s double-murder charges despite police misstatements",
       "url": "https://www.postandcourier.com/murdaugh-updates/judge-declines-to-dismiss-murdaugh-murder-indictment/article_7a465465-2ef0-468a-b641-07a10ed691ab.html",
+      "flag": "verdict-watch"
+    },
+    {
+      "ts": "2026-11-20T05:36:00.000Z",
+      "outlet": "ABC7 Los Angeles",
+      "headline": "Judge denies Alex Murdaugh's bid to dismiss murder charges",
+      "url": "https://abc7.com/story/judge-denies-alex-murdaughs-bid-dismiss-murder-charges/20060596/",
       "flag": "verdict-watch"
     },
     {
@@ -702,7 +702,6 @@
     }
   ],
   "seen": [
-    "1uvxm11",
     "peirmu",
     "y62h2w",
     "zkpwrn",
@@ -1301,6 +1300,7 @@
     "1gewaq7",
     "4q902k",
     "1gewtua",
-    "mqbysb"
+    "mqbysb",
+    "c8iskd"
   ]
 }

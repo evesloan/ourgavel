@@ -120,6 +120,13 @@
       "flag": "verdict-watch"
     },
     {
+      "ts": "2026-11-20T09:34:00.000Z",
+      "outlet": "The Post and Courier",
+      "headline": "Judge declines to dismiss Murdaugh’s double-murder charges despite police misstatements",
+      "url": "https://www.postandcourier.com/murdaugh-updates/judge-declines-to-dismiss-murdaugh-murder-indictment/article_7a465465-2ef0-468a-b641-07a10ed691ab.html",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-11-19T02:08:00.000Z",
       "outlet": "The Greenville News",
       "headline": "Judge orders Murdaugh 'Egg Juror,' jury tampering files unsealed",
@@ -692,17 +699,9 @@
       "headline": "Alex Murdaugh's legal team seeks to toss murder indictments over grand jury testimony",
       "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-s-legal-team-seeks-to-toss-murder-indictments-over-grand-jury-testimony/ar-AA2gCaeT",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-11-02T10:27:00.000Z",
-      "outlet": "via MSN",
-      "headline": "Alex Murdaugh seeks dismissal of murder indictments ahead of retrial",
-      "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-seeks-dismissal-of-murder-indictments-ahead-of-retrial/ar-AA2gBDCv",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
-    "1sszcoy",
     "1s6m7bv",
     "uc6y5z",
     "1uvxm11",
@@ -1301,6 +1300,7 @@
     "oktdro",
     "1gew3gc",
     "1gevgnc",
-    "1gewaq7"
+    "1gewaq7",
+    "4q902k"
   ]
 }

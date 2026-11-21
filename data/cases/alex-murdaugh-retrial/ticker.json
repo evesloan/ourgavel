@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-21T17:06:26.000Z",
+      "outlet": "FITSNews",
+      "headline": "Week in Review: Susan Smith, Scott Spivey, Murdaugh Indictment Ruling",
+      "url": "https://www.fitsnews.com/2026/11/21/week-in-review-susan-smith-scott-spivey-murdaugh-indictment-ruling/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-11-21T05:06:55.000Z",
       "outlet": "via MSN",
       "headline": "Alex Murdaugh’s hail Mary to escape murder retrial backfires big time",
@@ -692,17 +699,9 @@
       "headline": "Murdaugh Retrial: Indictment Dismissal Discussion",
       "url": "https://www.fitsnews.com/2026/11/02/murdaugh-retrial-indictment-dismissal-discussion/",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-11-02T11:10:00.000Z",
-      "outlet": "baltimoresun.com",
-      "headline": "Why Alex Murdaugh says original indictments for murder should be thrown out",
-      "url": "https://www.baltimoresun.com/2026/11/02/why-alex-murdaugh-says-original-indictments-for-murder-should-be-thrown-out/",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
-    "peirmu",
     "y62h2w",
     "zkpwrn",
     "1oj8z63",
@@ -1301,6 +1300,7 @@
     "4q902k",
     "1gewtua",
     "mqbysb",
-    "c8iskd"
+    "c8iskd",
+    "lud3yw"
   ]
 }

@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-21T05:06:55.000Z",
+      "outlet": "via MSN",
+      "headline": "Alex Murdaugh’s hail Mary to escape murder retrial backfires big time",
+      "url": "https://www.msn.com/en-ca/news/other/alex-murdaugh-s-hail-mary-to-escape-murder-retrial-backfires-big-time/ar-AA2hV4si",
+      "flag": null
+    },
+    {
       "ts": "2026-11-20T21:26:38.000Z",
       "outlet": "FITSNews",
       "headline": "Judge Declines To Dismiss Alex Murdaugh’s Murder Indictments",
@@ -692,17 +699,9 @@
       "headline": "Why Alex Murdaugh says original indictments for murder should be thrown out",
       "url": "https://www.baltimoresun.com/2026/11/02/why-alex-murdaugh-says-original-indictments-for-murder-should-be-thrown-out/",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-11-02T10:57:00.000Z",
-      "outlet": "via MSN",
-      "headline": "Alex Murdaugh's legal team seeks to toss murder indictments over grand jury testimony",
-      "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-s-legal-team-seeks-to-toss-murder-indictments-over-grand-jury-testimony/ar-AA2gCaeT",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
-    "1s6m7bv",
     "uc6y5z",
     "1uvxm11",
     "peirmu",
@@ -1301,6 +1300,7 @@
     "1gew3gc",
     "1gevgnc",
     "1gewaq7",
-    "4q902k"
+    "4q902k",
+    "1gewtua"
   ]
 }

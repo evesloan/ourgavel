@@ -351,13 +351,6 @@
       "flag": null
     },
     {
-      "ts": "2026-11-13T11:20:00.000Z",
-      "outlet": "via MSN",
-      "headline": "Alex Murdaugh defense lawyers asks judge to dismiss double-murder indictment",
-      "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-defense-lawyers-asks-judge-to-dismiss-double-murder-indictment/ar-AA2hodyW",
-      "flag": "verdict-watch"
-    },
-    {
       "ts": "2026-11-13T10:39:00.000Z",
       "outlet": "via MSN",
       "headline": "Alex Murdaugh defense alleges false evidence presented to grand jury",
@@ -447,6 +440,13 @@
       "headline": "WATCH LIVE: Alex Murdaugh evidentiary hearing in Lexington County",
       "url": "https://www.wsav.com/news/watch-live-alex-murdaugh-evidentiary-hearing-in-lexington-county/",
       "flag": null
+    },
+    {
+      "ts": "2026-11-13T06:20:00.000Z",
+      "outlet": "The Post and Courier",
+      "headline": "Alex Murdaugh defense lawyers asks judge to dismiss double-murder indictment",
+      "url": "https://www.postandcourier.com/murdaugh-updates/alex-murdaugh-double-murder-indictment-grand-jury/article_8c738ee6-6c40-445d-8a6e-49ad619f41a8.html",
+      "flag": "verdict-watch"
     },
     {
       "ts": "2026-11-13T05:52:00.000Z",
@@ -702,7 +702,6 @@
     }
   ],
   "seen": [
-    "uc6y5z",
     "1uvxm11",
     "peirmu",
     "y62h2w",
@@ -1301,6 +1300,7 @@
     "1gevgnc",
     "1gewaq7",
     "4q902k",
-    "1gewtua"
+    "1gewtua",
+    "mqbysb"
   ]
 }

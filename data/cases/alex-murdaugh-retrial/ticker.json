@@ -15,6 +15,20 @@
       "flag": "verdict-watch"
     },
     {
+      "ts": "2026-11-20T16:58:34.000Z",
+      "outlet": "via MSN",
+      "headline": "Fox News true crime newsletter: Susan Smith parole, Alex Murdaugh ruling, Lindsay Clancy appeal",
+      "url": "https://www.msn.com/en-us/news/other/fox-news-true-crime-newsletter-susan-smith-parole-alex-murdaugh-ruling-lindsay-clancy-appeal/ar-AA2hSRpL",
+      "flag": null
+    },
+    {
+      "ts": "2026-11-20T16:00:00.000Z",
+      "outlet": "tag24.com",
+      "headline": "Alex Murdaugh hits roadblock in attempt to toss murder indictments after judge's latest move",
+      "url": "https://www.tag24.com/en/justice/alex-murdaugh-hits-roadblock-in-attempt-to-toss-murder-indictments-after-judges-latest-move-3551197",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-11-20T13:52:00.000Z",
       "outlet": "wjcl.com",
       "headline": "Alex Murdaugh retrial moves forward after South Carolina judge refuses to toss murder indictments",
@@ -54,6 +68,13 @@
       "outlet": "via MSN",
       "headline": "Judge denies Alex Murdaugh's bid to dismiss murder charges",
       "url": "https://www.msn.com/en-us/news/other/judge-denies-alex-murdaugh-s-bid-to-dismiss-murder-charges/ar-AA2hTcFC",
+      "flag": "verdict-watch"
+    },
+    {
+      "ts": "2026-11-20T13:25:53.000Z",
+      "outlet": "via MSN",
+      "headline": "Judge: Original Alex Murdaugh murder indictments will not be dismissed",
+      "url": "https://www.msn.com/en-us/news/other/judge-original-alex-murdaugh-murder-indictments-will-not-be-dismissed/ar-AA2hSNAd",
       "flag": "verdict-watch"
     },
     {
@@ -678,33 +699,9 @@
       "headline": "Murdaugh’s legal team asks for murder charge dismissal, claims lead agent lied on stand",
       "url": "https://www.live5news.com/2026/11/02/murdaughs-legal-team-asks-murder-charge-dismissal-claims-lead-agent-lied-stand/",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-11-02T09:41:00.000Z",
-      "outlet": "abcnews4.com",
-      "headline": "Why Alex Murdaugh thinks his original indictments for murder should be thrown out",
-      "url": "https://abcnews4.com/news/local/why-alex-murdaugh-thinks-his-original-indictments-for-murder-should-be-thrown-out",
-      "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-11-02T07:45:00.000Z",
-      "outlet": "The Post and Courier",
-      "headline": "Murdaugh lawyers ask judge to toss double-murder charges ahead of retrial",
-      "url": "https://www.postandcourier.com/murdaugh-updates/murdaugh-motion-double-murder-indictment-dismissal/article_f033b67b-4482-4c1f-811b-8761c62ec920.html",
-      "flag": null
-    },
-    {
-      "ts": "2026-10-30T23:14:00.000Z",
-      "outlet": "The State",
-      "headline": "SC attorney general candidates Stumbo and Hricik differ on Alex Murdaugh retrial",
-      "url": "https://www.thestate.com/news/politics-government/article317835150.html",
-      "flag": null
     }
   ],
   "seen": [
-    "727mxw",
-    "1kwl5ez",
-    "1jdfmkz",
     "1b0ijtc",
     "8vqyug",
     "1sszcoy",
@@ -1301,6 +1298,9 @@
     "1gevv21",
     "t5c91m",
     "qd2hsb",
-    "1gewac9"
+    "1gewac9",
+    "1gew6s9",
+    "oktdro",
+    "1gew3gc"
   ]
 }

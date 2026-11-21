@@ -50,6 +50,13 @@
       "flag": null
     },
     {
+      "ts": "2026-11-20T17:34:00.000Z",
+      "outlet": "Fox News",
+      "headline": "South Carolina judge denies attempt to dismiss murder indictments in Alex Murdaugh retrial",
+      "url": "https://www.foxnews.com/video/6408713630112",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-11-20T16:58:34.000Z",
       "outlet": "via MSN",
       "headline": "Fox News true crime newsletter: Susan Smith parole, Alex Murdaugh ruling, Lindsay Clancy appeal",
@@ -692,17 +699,9 @@
       "headline": "Alex Murdaugh seeks dismissal of murder indictments ahead of retrial",
       "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-seeks-dismissal-of-murder-indictments-ahead-of-retrial/ar-AA2gGjNE",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-11-03T03:45:00.000Z",
-      "outlet": "foxcarolina.com",
-      "headline": "Murdaugh defense accuses the state, SLED investigators of misconduct",
-      "url": "https://www.foxcarolina.com/2026/11/03/murdaugh-defense-accuses-state-sled-investigators-misconduct/",
-      "flag": null
     }
   ],
   "seen": [
-    "1oj8z63",
     "xi1o0o",
     "kprjl3",
     "1nn4ety",
@@ -1301,6 +1300,7 @@
     "c8iskd",
     "lud3yw",
     "1gey8zk",
-    "lbxef0"
+    "lbxef0",
+    "1gtnyx0"
   ]
 }

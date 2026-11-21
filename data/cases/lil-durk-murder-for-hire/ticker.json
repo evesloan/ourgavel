@@ -155,6 +155,13 @@
       "flag": null
     },
     {
+      "ts": "2026-09-12T13:46:00.000Z",
+      "outlet": "hindustantimes.com",
+      "headline": "Why was Quinn Cook at Lil Durk's trial? OTF chain moment with Drew Findling viral after not guilty verdict",
+      "url": "https://www.hindustantimes.com/world-news/us-news/why-was-quinn-cook-at-lil-durks-trial-otf-chain-moment-with-drew-findling-viral-after-not-guilty-verdict-101789243680948.html",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-09-11T21:08:00.000Z",
       "outlet": "hindustantimes.com",
       "headline": "Will Lil Durk be released from jail in 2026? Arrest date, new trial in focus after acquittal in Quando Rondo case",
@@ -692,13 +699,6 @@
       "headline": "DJ Akademiks Rips Doodie Lo For Streaming With N3on Amid Lil Durk Trial",
       "url": "https://www.hotnewhiphop.com/1008084-dj-akademiks-doodie-lo-n3on-lil-durk-trial",
       "flag": null
-    },
-    {
-      "ts": "2026-09-01T06:55:00.000Z",
-      "outlet": "hotnewhiphop.com",
-      "headline": "Trap Lore Ross Immediately Refuted After Claiming Brian Steel Was About To Cry During Lil Durk Trial",
-      "url": "https://www.hotnewhiphop.com/1008066-trap-lore-ross-brian-steel-cried-lil-durk-trial",
-      "flag": null
     }
   ],
   "seen": [
@@ -931,6 +931,7 @@
     "abqjju",
     "zo4yp6",
     "1nafkfd",
-    "1kjtgjw"
+    "1kjtgjw",
+    "3ckff2"
   ]
 }

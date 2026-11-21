@@ -15,6 +15,13 @@
       "flag": "verdict-watch"
     },
     {
+      "ts": "2026-11-20T19:02:33.000Z",
+      "outlet": "via MSN",
+      "headline": "Alex Murdaugh suffers major blow ahead of murder retrial",
+      "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-suffers-major-blow-ahead-of-murder-retrial/ar-AA2hSWzg",
+      "flag": null
+    },
+    {
       "ts": "2026-11-20T16:58:34.000Z",
       "outlet": "via MSN",
       "headline": "Fox News true crime newsletter: Susan Smith parole, Alex Murdaugh ruling, Lindsay Clancy appeal",
@@ -692,17 +699,9 @@
       "headline": "Alex Murdaugh seeks dismissal of murder indictments ahead of retrial",
       "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-seeks-dismissal-of-murder-indictments-ahead-of-retrial/ar-AA2gBDCv",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-11-02T10:27:00.000Z",
-      "outlet": "via Yahoo News",
-      "headline": "Alex Murdaugh seeks dismissal of murder indictments ahead of retrial",
-      "url": "https://www.yahoo.com/news/us/articles/alex-murdaugh-seeks-dismissal-murder-182647463.html",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
-    "8vqyug",
     "1sszcoy",
     "1s6m7bv",
     "uc6y5z",
@@ -1301,6 +1300,7 @@
     "1gew6s9",
     "oktdro",
     "1gew3gc",
-    "1gevgnc"
+    "1gevgnc",
+    "1gewaq7"
   ]
 }

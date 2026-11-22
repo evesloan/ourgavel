@@ -148,6 +148,13 @@
       "flag": "verdict-watch"
     },
     {
+      "ts": "2026-11-20T12:57:00.000Z",
+      "outlet": "via Yahoo News",
+      "headline": "Judge rejects Alex Murdaugh's push to toss murder indictment over blood and ammo claims",
+      "url": "https://www.yahoo.com/news/us/articles/judge-rejects-alex-murdaughs-push-205726982.html",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-11-20T09:34:00.000Z",
       "outlet": "The Post and Courier",
       "headline": "Judge declines to dismiss Murdaugh’s double-murder charges despite police misstatements",
@@ -692,17 +699,9 @@
       "headline": "Yemassee police chief’s name again surfaces in Murdaugh double homicide investigation",
       "url": "https://www.postandcourier.com/murdaugh-updates/murdaugh-double-murder-yemassee-police-chief/article_938b11f4-022c-4c26-a16f-e22ac8bd37bf.html",
       "flag": null
-    },
-    {
-      "ts": "2026-11-03T08:14:42.000Z",
-      "outlet": "via MSN",
-      "headline": "Alex Murdaugh seeks dismissal of murder indictments ahead of retrial",
-      "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-seeks-dismissal-of-murder-indictments-ahead-of-retrial/ar-AA2gGjNE",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
-    "1nn4ety",
     "1vs9jea",
     "z58340",
     "1b94p0k",
@@ -1301,6 +1300,7 @@
     "lbxef0",
     "1gtnyx0",
     "1lt1h75",
-    "1x4hwo3"
+    "1x4hwo3",
+    "1lu27g5"
   ]
 }

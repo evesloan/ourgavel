@@ -8,6 +8,13 @@
       "flag": "verdict-watch"
     },
     {
+      "ts": "2026-11-21T15:59:00.000Z",
+      "outlet": "theintelligencer.net",
+      "headline": "Judge refuses to dismiss Alex Murdaugh's original indictments in killings of his wife and son",
+      "url": "https://www.theintelligencer.net/wire/?ID=402626",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-11-21T08:55:00.000Z",
       "outlet": "el-balad.com",
       "headline": "Judge McCaslin Denies Murdaugh Indictment Dismissal Bid",
@@ -692,17 +699,9 @@
       "headline": "Murdaugh's lawyers ask for double-murder charges to be thrown out",
       "url": "https://www.southcarolinapublicradio.org/sc-news/2026-11-04/murdaughs-lawyers-ask-for-double-murder-charges-to-be-thrown-out",
       "flag": null
-    },
-    {
-      "ts": "2026-11-03T21:01:00.000Z",
-      "outlet": "The Post and Courier",
-      "headline": "Yemassee police chief’s name again surfaces in Murdaugh double homicide investigation",
-      "url": "https://www.postandcourier.com/murdaugh-updates/murdaugh-double-murder-yemassee-police-chief/article_938b11f4-022c-4c26-a16f-e22ac8bd37bf.html",
-      "flag": null
     }
   ],
   "seen": [
-    "1vs9jea",
     "z58340",
     "1b94p0k",
     "g2hkzq",
@@ -1301,6 +1300,7 @@
     "1gtnyx0",
     "1lt1h75",
     "1x4hwo3",
-    "1lu27g5"
+    "1lu27g5",
+    "15qhr2i"
   ]
 }

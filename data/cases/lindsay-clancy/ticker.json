@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-23T22:09:00.000Z",
+      "outlet": "WCVB",
+      "headline": "Patrick Clancy's lawsuit against Lindsay Clancy's doctors allowed to proceed",
+      "url": "https://www.wcvb.com/article/patrick-clancy-lawsuit-continue-nov-23-2026/74512234",
+      "flag": null
+    },
+    {
       "ts": "2026-11-23T21:23:55.000Z",
       "outlet": "Court TV",
       "headline": "Lawsuit filed by Lindsay Clancy’s ex-husband against her clinicians can move forward",
@@ -692,13 +699,6 @@
       "headline": "Lindsay Clancy’s lawyers filed a motion to dismiss her case on double jeopardy grounds. Here’s what that means.",
       "url": "https://www.boston.com/news/crime/2026/09/22/lindsay-clancy-motion-to-dismiss-double-jeopardy/",
       "flag": null
-    },
-    {
-      "ts": "2026-09-22T15:01:47.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "‘Going to backfire’: Holdout juror’s attorney reacts to Lindsay Clancy’s defense team’s request",
-      "url": "https://www.boston25news.com/news/local/going-backfire-holdout-jurors-attorney-reacts-lindsay-clancys-defense-teams-request/EEBJZLXGTRBJTFV2VLWYHSNLAU/",
-      "flag": null
     }
   ],
   "seen": [
@@ -1103,6 +1103,7 @@
     "1ae8kq2",
     "ve5tak",
     "1qngkb6",
-    "qmco3j"
+    "qmco3j",
+    "vyyw2"
   ]
 }

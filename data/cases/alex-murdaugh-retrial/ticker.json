@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-23T09:28:00.000Z",
+      "outlet": "The State",
+      "headline": "Murdaugh lawyers tell judge she’s ‘wrong’ on facts and law in indictment matter",
+      "url": "https://www.thestate.com/latest-news/article318219789.html",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-11-23T06:22:00.000Z",
       "outlet": "Primetimer",
       "headline": "Alex Murdaugh retrial: Why the dispute over his white shirt remains important",
@@ -692,17 +699,9 @@
       "headline": "Murdaugh prosecutors admit errors but deny falsifying evidence",
       "url": "https://www.seattletimes.com/nation-world/murdaugh-prosecutors-admit-errors-but-deny-falsifying-evidence/",
       "flag": null
-    },
-    {
-      "ts": "2026-11-05T19:20:00.000Z",
-      "outlet": "abccolumbia.com",
-      "headline": "Why Alex Murdaugh thinks his original indictments for murder should be thrown out",
-      "url": "https://www.abccolumbia.com/2026/11/05/why-alex-murdaugh-thinks-his-original-indictments-for-murder-should-be-thrown-out/",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
-    "1njihrs",
     "7lpwxw",
     "67k8k2",
     "vr9y7o",
@@ -1301,6 +1300,7 @@
     "1vuj4vk",
     "1ptfes5",
     "1ayyrkf",
-    "1raj9km"
+    "1raj9km",
+    "1xgm291"
   ]
 }

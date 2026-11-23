@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-23T23:37:47.000Z",
+      "outlet": "FITSNews",
+      "headline": "Murdaugh Defense Attorneys Renew Bid to Dismiss Murder Indictments",
+      "url": "https://www.fitsnews.com/2026/11/23/murdaugh-defense-renews-bid/",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-11-23T09:28:00.000Z",
       "outlet": "The State",
       "headline": "Murdaugh lawyers tell judge she’s ‘wrong’ on facts and law in indictment matter",
@@ -692,17 +699,9 @@
       "headline": "Murdaugh Retrial: State Concedes Errors, Rejects Claims Of Fabricated Evidence",
       "url": "https://www.fitsnews.com/2026/11/06/murdaugh-states-response/",
       "flag": null
-    },
-    {
-      "ts": "2026-11-06T10:42:00.000Z",
-      "outlet": "seattletimes.com",
-      "headline": "Murdaugh prosecutors admit errors but deny falsifying evidence",
-      "url": "https://www.seattletimes.com/nation-world/murdaugh-prosecutors-admit-errors-but-deny-falsifying-evidence/",
-      "flag": null
     }
   ],
   "seen": [
-    "7lpwxw",
     "67k8k2",
     "vr9y7o",
     "11bft1s",
@@ -1301,6 +1300,7 @@
     "1ptfes5",
     "1ayyrkf",
     "1raj9km",
-    "1xgm291"
+    "1xgm291",
+    "dvuurg"
   ]
 }

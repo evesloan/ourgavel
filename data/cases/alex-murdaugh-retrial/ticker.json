@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-23T06:22:00.000Z",
+      "outlet": "Primetimer",
+      "headline": "Alex Murdaugh retrial: Why the dispute over his white shirt remains important",
+      "url": "https://www.primetimer.com/news/alex-murdaugh-retrial-why-the-dispute-over-his-white-shirt-remains-important",
+      "flag": null
+    },
+    {
       "ts": "2026-11-21T17:06:26.000Z",
       "outlet": "FITSNews",
       "headline": "Week in Review: Susan Smith, Scott Spivey, Murdaugh Indictment Ruling",
@@ -692,17 +699,9 @@
       "headline": "Why Alex Murdaugh thinks his original indictments for murder should be thrown out",
       "url": "https://www.abccolumbia.com/2026/11/05/why-alex-murdaugh-thinks-his-original-indictments-for-murder-should-be-thrown-out/",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-11-05T02:08:38.000Z",
-      "outlet": "via MSN",
-      "headline": "Alex Murdaugh seeks dismissal of murder charges before retrial",
-      "url": "https://www.msn.com/en-us/news/other/alex-murdaugh-seeks-dismissal-of-murder-charges-before-retrial/ar-AA2gNB55",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
-    "12ge96y",
     "1njihrs",
     "7lpwxw",
     "67k8k2",
@@ -1301,6 +1300,7 @@
     "15qhr2i",
     "1vuj4vk",
     "1ptfes5",
-    "1ayyrkf"
+    "1ayyrkf",
+    "1raj9km"
   ]
 }

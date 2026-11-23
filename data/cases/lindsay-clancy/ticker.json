@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-23T19:58:41.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Judge allows Patrick Clancy’s lawsuit against ex-wife’s mental health providers to move forward",
+      "url": "https://www.boston25news.com/news/local/judge-allows-patrick-clancys-lawsuit-against-ex-wifes-mental-health-providers-move-forward/INL25V4OH5ADXOYFLEG3P7QUDA/",
+      "flag": null
+    },
+    {
       "ts": "2026-11-19T20:24:52.000Z",
       "outlet": "Court TV",
       "headline": "New filing offers first look at juror notes from Lindsay Clancy’s trial",
@@ -692,13 +699,6 @@
       "headline": "Holdout juror's lawyer predicts Clancy's request is 'going to backfire'",
       "url": "https://www.wcvb.com/article/desronvil-paltzik-reddington-clancy-objection-6th-amendment-sept-22/73833000",
       "flag": null
-    },
-    {
-      "ts": "2026-09-21T22:05:00.000Z",
-      "outlet": "WCVB",
-      "headline": "Lindsay Clancy seeks dismissal, argues retrial violates double jeopardy",
-      "url": "https://www.wcvb.com/article/lindsay-clancy-motion-to-dismiss-double-jeopardy/73827174",
-      "flag": null
     }
   ],
   "seen": [
@@ -1101,6 +1101,7 @@
     "13t20p1",
     "13i8vqd",
     "1ae8kq2",
-    "ve5tak"
+    "ve5tak",
+    "1qngkb6"
   ]
 }

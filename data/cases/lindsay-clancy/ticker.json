@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-24T15:23:32.000Z",
+      "outlet": "Court TV",
+      "headline": "Woman accused of intimidating Lindsay Clancy jurors wants to see the 6-second video that led to her arrest",
+      "url": "https://www.courttv.com/news/woman-accused-of-intimidating-lindsay-clancy-jurors-wants-to-see-the-6-second-video-that-led-to-her-arrest/",
+      "flag": null
+    },
+    {
       "ts": "2026-11-24T14:56:38.000Z",
       "outlet": "Boston.com",
       "headline": "Officers enter Duxbury Bay, cut through convertible’s roof to rescue driver",
@@ -692,13 +699,6 @@
       "headline": "Will Lindsay Clancy face a second murder trial? Key court hearing set for Tuesday",
       "url": "https://www.boston25news.com/news/local/will-lindsay-clancy-face-second-murder-trial-key-court-hearing-set-tuesday/7HVXPGGNA5CSXG7RBFEQOWEZLI/",
       "flag": null
-    },
-    {
-      "ts": "2026-09-28T13:05:00.000Z",
-      "outlet": "WCVB",
-      "headline": "Tuesday hearing could determine future of Lindsay Clancy prosecution",
-      "url": "https://www.wcvb.com/article/clancy-sept-29-hearing-preview/73923730",
-      "flag": null
     }
   ],
   "seen": [
@@ -1109,6 +1109,7 @@
     "henmoi",
     "1uoj7um",
     "1lu7sqf",
-    "nlnjvn"
+    "nlnjvn",
+    "727az6"
   ]
 }

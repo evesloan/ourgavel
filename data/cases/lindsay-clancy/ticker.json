@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-24T04:01:00.000Z",
+      "outlet": "WCVB",
+      "headline": "Driver, 3 officers taken to hospital after car crashes into bay in Duxbury, Mass.",
+      "url": "https://www.wcvb.com/article/car-crashes-into-bay-in-duxbury-mass/74514504",
+      "flag": null
+    },
+    {
       "ts": "2026-11-23T22:09:00.000Z",
       "outlet": "WCVB",
       "headline": "Patrick Clancy's lawsuit against Lindsay Clancy's doctors allowed to proceed",
@@ -692,13 +699,6 @@
       "headline": "Patrick Clancy suggests a ‘compassionate way’ to handle cases like Lindsay Clancy’s in ‘60 Minutes’ extended cut",
       "url": "https://www.boston.com/news/crime/2026/09/22/patrick-clancy-60-minutes-interview-extended-cut/",
       "flag": null
-    },
-    {
-      "ts": "2026-09-22T15:41:41.000Z",
-      "outlet": "Boston.com",
-      "headline": "Lindsay Clancy’s lawyers filed a motion to dismiss her case on double jeopardy grounds. Here’s what that means.",
-      "url": "https://www.boston.com/news/crime/2026/09/22/lindsay-clancy-motion-to-dismiss-double-jeopardy/",
-      "flag": null
     }
   ],
   "seen": [
@@ -1104,6 +1104,7 @@
     "ve5tak",
     "1qngkb6",
     "qmco3j",
-    "vyyw2"
+    "vyyw2",
+    "1o15h4n"
   ]
 }

@@ -8,6 +8,13 @@
       "flag": null
     },
     {
+      "ts": "2026-11-24T16:03:58.000Z",
+      "outlet": "NBC10 Boston",
+      "headline": "Prosecution wants to pause Lindsay Clancy retrial preparations",
+      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-retrial-prosecution-pause/4054559/",
+      "flag": null
+    },
+    {
       "ts": "2026-11-24T15:23:32.000Z",
       "outlet": "Court TV",
       "headline": "Woman accused of intimidating Lindsay Clancy jurors wants to see the 6-second video that led to her arrest",
@@ -692,13 +699,6 @@
       "headline": "What to expect at Lindsay Clancy's 1st hearing since murder case mistrial",
       "url": "https://www.nbcboston.com/news/local/lindsay-clancy-first-hearing-after-mistrial/4022299/",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-09-28T16:25:00.000Z",
-      "outlet": "WCVB",
-      "headline": "Kevin Reddington crisscrossing Mass. for Cote, Clancy hearings",
-      "url": "https://www.wcvb.com/article/reddington-clancy-cote-sept-28/73925495",
-      "flag": null
     }
   ],
   "seen": [
@@ -1111,6 +1111,7 @@
     "1lu7sqf",
     "nlnjvn",
     "727az6",
-    "1avom3v"
+    "1avom3v",
+    "k3vu3r"
   ]
 }

@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-24T21:43:00.000Z",
+      "outlet": "WCVB",
+      "headline": "Prosecutors seek delay in Lindsay Clancy retrial from Mass. SJC",
+      "url": "https://www.wcvb.com/article/prosecutors-seek-delay-lindsay-clancy-retrial-sjc-massachusetts/74523796",
+      "flag": null
+    },
+    {
       "ts": "2026-11-24T19:25:54.000Z",
       "outlet": "Boston 25 News",
       "headline": "Prosecutors ask state’s highest court to postpone Lindsay Clancy’s retrial",
@@ -692,13 +699,6 @@
       "headline": "Will Lindsay Clancy face a 2nd trial? She returns to court today for important hearing",
       "url": "https://www.nbcboston.com/news/local/lindsay-clancy-court-hearing-livestream-second-trial-updates/4022412/",
       "flag": null
-    },
-    {
-      "ts": "2026-09-28T19:59:50.000Z",
-      "outlet": "NBC10 Boston",
-      "headline": "What to expect at Lindsay Clancy's 1st hearing since murder case mistrial",
-      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-first-hearing-after-mistrial/4022299/",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
@@ -1112,6 +1112,7 @@
     "nlnjvn",
     "727az6",
     "1avom3v",
-    "k3vu3r"
+    "k3vu3r",
+    "ivzvb5"
   ]
 }

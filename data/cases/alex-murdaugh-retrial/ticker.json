@@ -8,6 +8,13 @@
       "flag": "verdict-watch"
     },
     {
+      "ts": "2026-11-23T20:22:36.000Z",
+      "outlet": "via MSN",
+      "headline": "Murdaugh attorneys ask judge to reconsider ruling on murder indictments",
+      "url": "https://www.msn.com/en-us/news/other/murdaugh-attorneys-ask-judge-to-reconsider-ruling-on-murder-indictments/ar-AA2i5wys",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-11-23T09:28:00.000Z",
       "outlet": "The State",
       "headline": "Murdaugh lawyers tell judge she’s ‘wrong’ on facts and law in indictment matter",
@@ -692,18 +699,9 @@
       "headline": "Week in Review &#8211; Election Upheaval, Logan Federico Update, Murdaugh Pushback",
       "url": "https://www.fitsnews.com/2026/11/07/week-in-review-election-upheaval-logan-federico-update-murdaugh-pushback/",
       "flag": null
-    },
-    {
-      "ts": "2026-11-06T23:27:00.000Z",
-      "outlet": "FITSNews",
-      "headline": "Murdaugh Retrial: State Concedes Errors, Rejects Claims Of Fabricated Evidence",
-      "url": "https://www.fitsnews.com/2026/11/06/murdaugh-states-response/",
-      "flag": null
     }
   ],
   "seen": [
-    "67k8k2",
-    "vr9y7o",
     "11bft1s",
     "10f4d51",
     "tkzues",
@@ -1301,6 +1299,8 @@
     "1ayyrkf",
     "1raj9km",
     "1xgm291",
-    "dvuurg"
+    "dvuurg",
+    "1geci4b",
+    "18qa53x"
   ]
 }

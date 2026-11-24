@@ -1,10 +1,24 @@
 {
   "items": [
     {
+      "ts": "2026-11-24T04:23:44.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Duxbury police cut through roof of car to save life of woman who crashed into water",
+      "url": "https://www.boston25news.com/news/local/duxbury-police-cut-through-roof-car-save-life-woman-who-crashed-into-water/PNVQURKUHZAHBIVFSG3B7BC6S4/",
+      "flag": null
+    },
+    {
       "ts": "2026-11-24T04:01:00.000Z",
       "outlet": "WCVB",
       "headline": "Driver, 3 officers taken to hospital after car crashes into bay in Duxbury, Mass.",
       "url": "https://www.wcvb.com/article/car-crashes-into-bay-in-duxbury-mass/74514504",
+      "flag": null
+    },
+    {
+      "ts": "2026-11-23T23:43:11.000Z",
+      "outlet": "NBC10 Boston",
+      "headline": "Woman rescued after car goes into water in Duxbury",
+      "url": "https://www.nbcboston.com/news/local/woman-rescued-after-car-goes-into-water-in-duxbury/4054123/",
       "flag": null
     },
     {
@@ -685,20 +699,6 @@
       "headline": "Judge keeps Clancy juror names, questionnaires sealed after mistrial",
       "url": "https://www.wcvb.com/article/judge-keeps-clancy-juror-records-sealed/73852120",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-09-23T12:30:54.000Z",
-      "outlet": "NBC10 Boston",
-      "headline": "Judge in Lindsay Clancy trial extends impoundment order on juror list, questionnaires",
-      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-juror-questionnaires-impoundment-order/4019426/",
-      "flag": null
-    },
-    {
-      "ts": "2026-09-22T18:17:55.000Z",
-      "outlet": "Boston.com",
-      "headline": "Patrick Clancy suggests a ‘compassionate way’ to handle cases like Lindsay Clancy’s in ‘60 Minutes’ extended cut",
-      "url": "https://www.boston.com/news/crime/2026/09/22/patrick-clancy-60-minutes-interview-extended-cut/",
-      "flag": null
     }
   ],
   "seen": [
@@ -1105,6 +1105,8 @@
     "1qngkb6",
     "qmco3j",
     "vyyw2",
-    "1o15h4n"
+    "1o15h4n",
+    "henmoi",
+    "1uoj7um"
   ]
 }

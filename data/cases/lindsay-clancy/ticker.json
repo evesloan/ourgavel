@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-24T19:25:54.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "Prosecutors ask state’s highest court to postpone Lindsay Clancy’s retrial",
+      "url": "https://www.boston25news.com/news/local/prosecutors-ask-states-highest-court-postpone-lindsay-clancys-retrial/DPLQPLFSGNGZJH6FEHYE2FNBFU/",
+      "flag": null
+    },
+    {
       "ts": "2026-11-24T15:23:32.000Z",
       "outlet": "Court TV",
       "headline": "Woman accused of intimidating Lindsay Clancy jurors wants to see the 6-second video that led to her arrest",
@@ -692,13 +699,6 @@
       "headline": "Kevin Reddington crisscrossing Mass. for Cote, Clancy hearings",
       "url": "https://www.wcvb.com/article/reddington-clancy-cote-sept-28/73925495",
       "flag": null
-    },
-    {
-      "ts": "2026-09-28T14:56:50.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "Will Lindsay Clancy face a second murder trial? Key court hearing set for Tuesday",
-      "url": "https://www.boston25news.com/news/local/will-lindsay-clancy-face-second-murder-trial-key-court-hearing-set-tuesday/7HVXPGGNA5CSXG7RBFEQOWEZLI/",
-      "flag": null
     }
   ],
   "seen": [
@@ -1110,6 +1110,7 @@
     "1uoj7um",
     "1lu7sqf",
     "nlnjvn",
-    "727az6"
+    "727az6",
+    "1avom3v"
   ]
 }

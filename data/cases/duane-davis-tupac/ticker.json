@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-24T01:16:09.000Z",
+      "outlet": "8 News Now",
+      "headline": "911 audiotapes reveal what happened after discovery of 'Keffe D' lawyer's body",
+      "url": "https://www.8newsnow.com/news/tupac-murder-trial/911-audiotapes-reveal-what-happened-after-discovery-of-keffe-d-lawyers-body/",
+      "flag": null
+    },
+    {
       "ts": "2026-11-20T21:58:19.000Z",
       "outlet": "News 3 Las Vegas",
       "headline": "New 911 calls detail co-workers finding attorney Michael Sanft dead at his home",
@@ -692,13 +699,6 @@
       "headline": "Witness list released for Keffe D Tupac murder trial; Suge Knight, Lombardo, others to testify",
       "url": "https://www.8newsnow.com/news/tupac-murder-trial/witness-list-released-for-keefe-d-tupac-murder-trial-suge-knight-lombardo-others-to-testify/",
       "flag": null
-    },
-    {
-      "ts": "2026-07-31T22:19:29.000Z",
-      "outlet": "8 News Now",
-      "headline": "EXCLUSIVE: 'Why would I kill our money': Keffe D denies role in Tupac killing before trial",
-      "url": "https://www.8newsnow.com/investigators/exclusive-i-wasnt-in-nevada-keffe-d-denies-role-in-tupac-killing-before-trial/",
-      "flag": null
     }
   ],
   "seen": [
@@ -824,6 +824,7 @@
     "1r3g9k2",
     "l0r0c3",
     "69wcdu",
-    "1v28a6v"
+    "1v28a6v",
+    "1mvjh86"
   ]
 }

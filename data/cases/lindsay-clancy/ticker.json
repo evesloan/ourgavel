@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-24T14:56:38.000Z",
+      "outlet": "Boston.com",
+      "headline": "Officers enter Duxbury Bay, cut through convertible’s roof to rescue driver",
+      "url": "https://www.boston.com/news/local-news/2026/11/24/officers-enter-duxbury-bay-cut-through-convertibles-roof-to-rescue-driver/",
+      "flag": null
+    },
+    {
       "ts": "2026-11-24T07:07:04.000Z",
       "outlet": "NBC10 Boston",
       "headline": "Police officers race into frigid water in Duxbury to rescue woman from sinking car",
@@ -692,13 +699,6 @@
       "headline": "Tuesday hearing could determine future of Lindsay Clancy prosecution",
       "url": "https://www.wcvb.com/article/clancy-sept-29-hearing-preview/73923730",
       "flag": null
-    },
-    {
-      "ts": "2026-09-23T16:26:55.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "Judge extends secrecy orders protecting jurors in Lindsay Clancy trial",
-      "url": "https://www.boston25news.com/news/local/judge-extends-secrecy-orders-protecting-jurors-lindsay-clancy-trial/IVOYIFUSUBCJRDWNGGNP3JHE7I/",
-      "flag": null
     }
   ],
   "seen": [
@@ -1108,6 +1108,7 @@
     "1o15h4n",
     "henmoi",
     "1uoj7um",
-    "1lu7sqf"
+    "1lu7sqf",
+    "nlnjvn"
   ]
 }

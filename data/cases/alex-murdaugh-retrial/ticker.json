@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-24T09:17:00.000Z",
+      "outlet": "WLTX News19",
+      "headline": "Alex Murdaugh's attorneys ask judge to reconsider ruling on murder indictments",
+      "url": "https://www.wltx.com/article/news/special-reports/alex-murdaugh/alex-murdaughs-motion-reconsider-ruling-murder-indictments/101-c8bcdc27-8be5-444b-bff2-05a97ac4db5b",
+      "flag": "verdict-watch"
+    },
+    {
       "ts": "2026-11-23T23:37:47.000Z",
       "outlet": "FITSNews",
       "headline": "Murdaugh Defense Attorneys Renew Bid to Dismiss Murder Indictments",
@@ -692,17 +699,9 @@
       "headline": "Alex Murdaugh bid to dismiss murder case faces long odds, experts say",
       "url": "https://www.newsnationnow.com/crime/murdaugh-murder-trial/alex-murdaugh-retrial-dna-evidence/",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-11-07T15:10:54.000Z",
-      "outlet": "FITSNews",
-      "headline": "Week in Review &#8211; Election Upheaval, Logan Federico Update, Murdaugh Pushback",
-      "url": "https://www.fitsnews.com/2026/11/07/week-in-review-election-upheaval-logan-federico-update-murdaugh-pushback/",
-      "flag": null
     }
   ],
   "seen": [
-    "10f4d51",
     "tkzues",
     "mf0ckx",
     "1kzbfvo",
@@ -1301,6 +1300,7 @@
     "dvuurg",
     "1geci4b",
     "18qa53x",
-    "1gec1dc"
+    "1gec1dc",
+    "1oj5vww"
   ]
 }

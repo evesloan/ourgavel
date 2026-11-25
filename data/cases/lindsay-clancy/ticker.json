@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-25T18:02:07.000Z",
+      "outlet": "Boston 25 News",
+      "headline": "SJC denies prosecutors’ request to delay Lindsay Clancy’s retrial",
+      "url": "https://www.boston25news.com/news/local/sjc-denies-prosecutors-request-delay-lindsay-clancys-retrial/STYSL32F45D5ZNENHRGIBQEYGQ/",
+      "flag": null
+    },
+    {
       "ts": "2026-11-25T15:02:48.000Z",
       "outlet": "Court TV",
       "headline": "Lindsay Clancy prosecutors suffer another defeat when state’s high court quickly denies request to delay retrial",
@@ -692,13 +699,6 @@
       "headline": "Livestream: Lindsay Clancy returns to court for hearing on defense motions, potential next steps",
       "url": "https://www.boston.com/news/crime/2026/09/29/lindsay-clancy-hearing-livestream-september-29/",
       "flag": null
-    },
-    {
-      "ts": "2026-09-29T12:28:00.000Z",
-      "outlet": "WCVB",
-      "headline": "Lindsay Clancy hearing: Will prosecution retry case?",
-      "url": "https://www.wcvb.com/article/lindsay-clancy-hearing-live-updates-sept-29/73937969",
-      "flag": null
     }
   ],
   "seen": [
@@ -1116,6 +1116,7 @@
     "ivzvb5",
     "1ob2bn",
     "14u7dsx",
-    "coa2lt"
+    "coa2lt",
+    "i46mug"
   ]
 }

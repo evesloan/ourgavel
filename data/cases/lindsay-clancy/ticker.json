@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-25T00:13:00.000Z",
+      "outlet": "WCVB",
+      "headline": "Officers recognized for rescuing woman from submerged car in Duxbury, Mass.",
+      "url": "https://www.wcvb.com/article/car-crashes-into-bay-in-duxbury-mass-1795563747/74525055",
+      "flag": null
+    },
+    {
       "ts": "2026-11-24T21:43:00.000Z",
       "outlet": "WCVB",
       "headline": "Prosecutors seek delay in Lindsay Clancy retrial from Mass. SJC",
@@ -692,13 +699,6 @@
       "headline": "Livestream, live updates: Lindsay Clancy back in court for key hearing",
       "url": "https://www.nbcboston.com/news/local/lindsay-clancy-hearing-live-stream-live-updates-will-she-face-a-second-trial/4022458/",
       "flag": null
-    },
-    {
-      "ts": "2026-09-29T06:54:54.000Z",
-      "outlet": "NBC10 Boston",
-      "headline": "Will Lindsay Clancy face a 2nd trial? She returns to court today for important hearing",
-      "url": "https://www.nbcboston.com/news/local/lindsay-clancy-court-hearing-livestream-second-trial-updates/4022412/",
-      "flag": null
     }
   ],
   "seen": [
@@ -1113,6 +1113,7 @@
     "727az6",
     "1avom3v",
     "k3vu3r",
-    "ivzvb5"
+    "ivzvb5",
+    "1ob2bn"
   ]
 }

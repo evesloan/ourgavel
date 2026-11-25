@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-25T15:02:48.000Z",
+      "outlet": "Court TV",
+      "headline": "Lindsay Clancy prosecutors suffer another defeat when state’s high court quickly denies request to delay retrial",
+      "url": "https://www.courttv.com/news/lindsay-clancy-prosecutors-suffer-another-defeat-when-states-high-court-quickly-denies-request-to-delay-retrial/",
+      "flag": null
+    },
+    {
       "ts": "2026-11-25T00:57:13.000Z",
       "outlet": "Boston 25 News",
       "headline": "Duxbury officers relive rescuing a woman who drove into the bay Monday",
@@ -692,13 +699,6 @@
       "headline": "Lindsay Clancy hearing: Will prosecution retry case?",
       "url": "https://www.wcvb.com/article/lindsay-clancy-hearing-live-updates-sept-29/73937969",
       "flag": null
-    },
-    {
-      "ts": "2026-09-29T11:02:44.000Z",
-      "outlet": "Boston 25 News",
-      "headline": "Lindsay Clancy returns to court as defense moves to dismiss case after mistrial",
-      "url": "https://www.boston25news.com/news/local/lindsay-clancy-returns-court-defense-moves-dismiss-case-after-mistrial/5LIT5X7QHFEU3EVYPVQEEITIG4/",
-      "flag": "verdict-watch"
     }
   ],
   "seen": [
@@ -1115,6 +1115,7 @@
     "k3vu3r",
     "ivzvb5",
     "1ob2bn",
-    "14u7dsx"
+    "14u7dsx",
+    "coa2lt"
   ]
 }

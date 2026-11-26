@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-26T12:00:00.000Z",
+      "outlet": "AllHipHop",
+      "headline": "King Von’s “Took Her To The O” Reaches 1 Billion Spotify Streams",
+      "url": "https://allhiphop.com/news/king-vons-took-her-to-the-o-reaches-1-billion-spotify-streams/",
+      "flag": null
+    },
+    {
       "ts": "2026-11-03T22:20:44.000Z",
       "outlet": "AllHipHop",
       "headline": "Quando Rondo Leaves Federal Custody After Completing Halfway-House Term",
@@ -692,13 +699,6 @@
       "headline": "Flacka Accuses Lil Durk Of Stiffing Him On Payment For Alleged Quando Rondo Hit",
       "url": "https://www.hotnewhiphop.com/1008105-lil-durk-flacka-quando-rondo-hit-payment",
       "flag": null
-    },
-    {
-      "ts": "2026-09-01T10:42:00.000Z",
-      "outlet": "hotnewhiphop.com",
-      "headline": "DJ Akademiks Rips Doodie Lo For Streaming With N3on Amid Lil Durk Trial",
-      "url": "https://www.hotnewhiphop.com/1008084-dj-akademiks-doodie-lo-n3on-lil-durk-trial",
-      "flag": null
     }
   ],
   "seen": [
@@ -932,6 +932,7 @@
     "zo4yp6",
     "1nafkfd",
     "1kjtgjw",
-    "3ckff2"
+    "3ckff2",
+    "xi37mi"
   ]
 }

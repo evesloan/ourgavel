@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-27T04:07:00.000Z",
+      "outlet": "newsnationnow.com",
+      "headline": "Will Alex Murdaugh testify again? Experts weigh in on retrial l Brian Entin Reports",
+      "url": "https://www.newsnationnow.com/latest-video/will-alex-murdaugh-testify-again-experts-weigh-in-on-retrial-l-brian-entin-reports-zwrqxwgjxoq/",
+      "flag": null
+    },
+    {
       "ts": "2026-11-26T11:43:00.000Z",
       "outlet": "newsnationnow.com",
       "headline": "Will Murdaugh take the stand again? Criminologist weighs in",
@@ -692,17 +699,9 @@
       "headline": "Murdaugh seeks dismissal of indictments",
       "url": "https://www.wltx.com/video/news/special-reports/alex-murdaugh/murdaugh-seeks-dismissal-of-indictments/101-04068bf0-0532-47bb-bfe1-58f451bf376e",
       "flag": "verdict-watch"
-    },
-    {
-      "ts": "2026-11-09T13:52:02.000Z",
-      "outlet": "via MSN",
-      "headline": "Prosecutors deny falsifying evidence in Alex Murdaugh case: 'Simply incorrect'",
-      "url": "https://www.msn.com/en-us/news/other/prosecutors-deny-falsifying-evidence-in-alex-murdaugh-case-simply-incorrect/ar-AA2h5Pte",
-      "flag": null
     }
   ],
   "seen": [
-    "3fjgix",
     "18gddne",
     "15hq6hg",
     "1qp6wfk",
@@ -1301,6 +1300,7 @@
     "4abuuz",
     "vm57go",
     "1gd62cv",
-    "1gf9k1z"
+    "1gf9k1z",
+    "1diauck"
   ]
 }

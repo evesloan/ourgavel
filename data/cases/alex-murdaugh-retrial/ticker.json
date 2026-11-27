@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "ts": "2026-11-26T11:43:00.000Z",
+      "outlet": "newsnationnow.com",
+      "headline": "Will Murdaugh take the stand again? Criminologist weighs in",
+      "url": "https://www.newsnationnow.com/crime/murdaugh-murder-trial/alex-murdaugh-retrial-testimony-casey-jordan/",
+      "flag": null
+    },
+    {
       "ts": "2026-11-25T07:33:18.000Z",
       "outlet": "via MSN",
       "headline": "Alex Murdaugh makes bold move in murder case",
@@ -692,18 +699,9 @@
       "headline": "Prosecutors deny falsifying evidence in Alex Murdaugh case: 'Simply incorrect'",
       "url": "https://www.msn.com/en-us/news/other/prosecutors-deny-falsifying-evidence-in-alex-murdaugh-case-simply-incorrect/ar-AA2h5Pte",
       "flag": null
-    },
-    {
-      "ts": "2026-11-09T10:36:00.000Z",
-      "outlet": "newsnationnow.com",
-      "headline": "Why Alex Murdaugh could win even if his case isn’t tossed | NewsNation Prime",
-      "url": "https://www.newsnationnow.com/latest-video/why-alex-murdaugh-could-win-even-if-his-case-isnt-tossed-newsnation-prime-clewzspn5lq/",
-      "flag": null
     }
   ],
   "seen": [
-    "1yemgze",
-    "15a230p",
     "v404wx",
     "3fjgix",
     "18gddne",
@@ -1301,6 +1299,8 @@
     "1oj5vww",
     "cxquzf",
     "1e3q9if",
-    "4abuuz"
+    "4abuuz",
+    "vm57go",
+    "1gd62cv"
   ]
 }

@@ -484,10 +484,10 @@
       "flag": "verdict-watch"
     },
     {
-      "ts": "2026-11-13T10:11:29.000Z",
-      "outlet": "via MSN",
+      "ts": "2026-11-13T10:11:00.000Z",
+      "outlet": "hindustantimes.com",
       "headline": "Alex Murdaugh’s lawyers seek dismissal of murder charges ahead of 2027 retrial",
-      "url": "https://www.msn.com/en-in/news/other/alex-murdaugh-s-lawyers-seek-dismissal-of-murder-charges-ahead-of-2027-retrial/ar-AA2hnjpH",
+      "url": "https://www.hindustantimes.com/world-news/us-news/alex-murdaugh-s-lawyers-seek-dismissal-of-murder-charges-ahead-of-2027-retrial-101794591174677.html",
       "flag": "verdict-watch"
     },
     {
@@ -702,7 +702,6 @@
     }
   ],
   "seen": [
-    "15hq6hg",
     "1qp6wfk",
     "1xwc9ha",
     "t2lbz7",
@@ -1301,6 +1300,7 @@
     "1gd62cv",
     "1gf9k1z",
     "1diauck",
-    "mayr3h"
+    "mayr3h",
+    "cdcfty"
   ]
 }
